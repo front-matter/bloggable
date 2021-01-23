@@ -3,7 +3,10 @@ import Router from "next/router";
 
 export default class Error404 extends Component {
   componentDidMount = () => {
-    Router.push("/");
+    Router.push(
+      (process.env.NODE_ENV === "production" ? "/notus-nextjs" : "") +
+        "/"
+    );
   };
 
   render() {
