@@ -111,7 +111,14 @@ export default function Login() {
                 </a>
               </div>
               <div className="w-1/2 text-right">
-                <Link href="/auth/register">
+                <Link
+                  href="/auth/register"
+                  as={
+                    (process.env.NODE_ENV === "production"
+                      ? "/notus-nextjs"
+                      : "") + "/auth/register"
+                  }
+                >
                   <a href="#pablo" className="text-gray-300">
                     <small>Create new account</small>
                   </a>

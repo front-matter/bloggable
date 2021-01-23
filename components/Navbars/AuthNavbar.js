@@ -11,7 +11,14 @@ export default function Navbar(props) {
       <nav className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <Link href="/">
+            <Link
+              href="/"
+              as={
+                (process.env.NODE_ENV === "production"
+                  ? "/notus-nextjs"
+                  : "") + "/"
+              }
+            >
               <a
                 className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
                 href="#pablo"
@@ -83,12 +90,13 @@ export default function Navbar(props) {
               </li>
 
               <li className="flex items-center">
-                <button
-                  className="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                  type="button"
+                <a
+                  className="inline-block text-white bg-gray-800 active:bg-gray-700 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                  href="https://www.creative-tim.com/product/notus-nextjs?ref=nnjs-auth"
+                  target="_blank"
                 >
-                  <i className="fas fa-arrow-alt-circle-down"></i> Download
-                </button>
+                  <i class="fas fa-arrow-alt-circle-down"></i> Download
+                </a>
               </li>
             </ul>
           </div>

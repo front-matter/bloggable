@@ -395,7 +395,14 @@ export default function Index() {
                   <h5 className="text-xl font-semibold pb-4 text-center">
                     Login Page
                   </h5>
-                  <Link href="/auth/login">
+                  <Link
+                    href="/auth/login"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/notus-nextjs"
+                        : "") + "/auth/login"
+                    }
+                  >
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
@@ -410,7 +417,14 @@ export default function Index() {
                   <h5 className="text-xl font-semibold pb-4 text-center">
                     Profile Page
                   </h5>
-                  <Link href="/profile">
+                  <Link
+                    href="/profile"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/notus-nextjs"
+                        : "") + "/profile"
+                    }
+                  >
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
@@ -425,7 +439,14 @@ export default function Index() {
                   <h5 className="text-xl font-semibold pb-4 text-center">
                     Landing Page
                   </h5>
-                  <Link href="/landing">
+                  <Link
+                    href="/landing"
+                    as={
+                      (process.env.NODE_ENV === "production"
+                        ? "/notus-nextjs"
+                        : "") + "/landing"
+                    }
+                  >
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
