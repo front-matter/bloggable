@@ -270,21 +270,6 @@ export default function CardTable({ color }) {
                 </td>
               </tr>
               <tr>
-                <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
-                  <img
-                    src={require('assets/img/react.jpg')}
-                    className="h-12 w-12 bg-white rounded-full border"
-                    alt="..."
-                  ></img>{' '}
-                  <span
-                    className={
-                      'ml-3 font-bold ' +
-                      +(color === 'light' ? 'text-gray-700' : 'text-white')
-                    }
-                  >
-                    React Material Dashboard
-                  </span>
-                </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
                   $4,400 USD
                 </td>
@@ -334,21 +319,6 @@ export default function CardTable({ color }) {
                 </td>
               </tr>
               <tr>
-                <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
-                  <img
-                    src={require('assets/img/vue.jpg')}
-                    className="h-12 w-12 bg-white rounded-full border"
-                    alt="..."
-                  ></img>{' '}
-                  <span
-                    className={
-                      'ml-3 font-bold ' +
-                      +(color === 'light' ? 'text-gray-700' : 'text-white')
-                    }
-                  >
-                    React Material Dashboard
-                  </span>
-                </th>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4">
                   $2,200 USD
                 </td>
