@@ -482,10 +482,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #a0aec0;
 }
 
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: #a0aec0;
-}
-
 input::placeholder,
 textarea::placeholder {
   color: #a0aec0;
@@ -1916,8 +1912,20 @@ video {
   margin: 0.5rem;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .m-4 {
   margin: 1rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-16 {
+  margin: 4rem;
 }
 
 .-m-16 {
@@ -2549,12 +2557,6 @@ video {
 }
 
 .placeholder-gray-400:-ms-input-placeholder {
-  --placeholder-opacity: 1;
-  color: #cbd5e0;
-  color: rgba(203, 213, 224, var(--placeholder-opacity));
-}
-
-.placeholder-gray-400::-ms-input-placeholder {
   --placeholder-opacity: 1;
   color: #cbd5e0;
   color: rgba(203, 213, 224, var(--placeholder-opacity));
@@ -3222,22 +3224,9 @@ video {
   transition-duration: 150ms;
 }
 
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
   }
 }
 
@@ -3248,49 +3237,26 @@ video {
   }
 }
 
-@-webkit-keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
 @keyframes pulse {
   50% {
     opacity: .5;
   }
 }
 
-@-webkit-keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
   50% {
     transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
 .animate-spin {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @media (min-width: 640px) {

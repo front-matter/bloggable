@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "experimentalComponentTesting": true,
+  "experimentalNetworkStubbing": true,
+  "experimentalFetchPolyfill": true,
+  "componentFolder": "components",
+  "testFiles": "**/*.test.*",
+  "video": false,
+  "projectId": "bejv76",
+  "retries": 2
+}
