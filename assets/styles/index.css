@@ -1,5 +1,32 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  h3 {
+    @apply font-semibold;
+  }
+  ol {
+    @apply list-decimal list-outside;
+    @apply mb-3;
+  }
+  ul {
+    @apply list-disc list-outside;
+    @apply mb-3;
+  }
+  blockquote {
+    @apply italic mb-3;
+  }
+  p {
+    @apply mb-3;
+  }
+  strong {
+    @apply font-semibold;
+  }
+}

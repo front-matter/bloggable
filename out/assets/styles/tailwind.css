@@ -1730,7 +1730,7 @@ video {
   float: none;
 }
 
-.clearfix:after {
+.flow-root:after {
   content: "";
   display: table;
   clear: both;

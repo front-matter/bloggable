@@ -1,8 +1,4 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
-  },
   purge: {
     enabled: true,
     content: ['./**/*.html', './*.html', './**/*.js', './*.js'],
@@ -84,5 +80,5 @@ module.exports = {
     'visited',
     'disabled'
   ],
-  plugins: [require('@tailwindcss/custom-forms')]
+  plugins: [require('@tailwindcss/forms')]
 }

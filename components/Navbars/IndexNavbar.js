@@ -19,7 +19,7 @@ export default function Navbar(props) {
               }
             >
               <a
-                className="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
+                className="text-gray-800 text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
                 href="/"
                 data-cy="navbarLink"
               >

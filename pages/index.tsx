@@ -31,12 +31,12 @@ const IndexPage = (props) => {
           <section className="">
             <div className="flex flex-col my-4">
               <Link href={`/posts/${post.slug}`}>
-                <a className="text-xl font-sans font-bold no-underline sm:text-4xl hover:underline">
+                <a className="text-2xl font-sans font-bold no-underline sm:text-4xl hover:underline">
                   {post.title}
                 </a>
               </Link>
             </div>
-            <div className="text-med leading-normal sm:text-2xl">
+            <div className="text-xl leading-normal sm:text-2xl">
               <ReactMarkdown className="font-serif" plugins={[gfm]}>
                 {post.excerpt}
               </ReactMarkdown>
