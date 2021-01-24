@@ -10,7 +10,6 @@ import Footer from '../components/Footers/Footer.js'
 
 export async function getStaticProps(context) {
   const posts = await getPosts()
-  console.log(posts)
 
   if (!posts) {
     return {
