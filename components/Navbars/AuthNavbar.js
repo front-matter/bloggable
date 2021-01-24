@@ -1,11 +1,11 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react'
+import Link from 'next/link'
 // components
 
-import PagesDropdown from "components/Dropdowns/PagesDropdown.js";
+import PagesDropdown from 'components/Dropdowns/PagesDropdown.js'
 
 export default function Navbar(props) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = React.useState(false)
   return (
     <>
       <nav className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
@@ -14,9 +14,8 @@ export default function Navbar(props) {
             <Link
               href="/"
               as={
-                (process.env.NODE_ENV === "production"
-                  ? "/notus-nextjs"
-                  : "") + "/"
+                (process.env.NODE_ENV === 'production' ? '/notus-nextjs' : '') +
+                '/'
               }
             >
               <a
@@ -36,8 +35,8 @@ export default function Navbar(props) {
           </div>
           <div
             className={
-              "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
-              (navbarOpen ? " block rounded shadow-lg" : " hidden")
+              'lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none' +
+              (navbarOpen ? ' block rounded shadow-lg' : ' hidden')
             }
             id="example-navbar-warning"
           >
@@ -47,7 +46,7 @@ export default function Navbar(props) {
                   className="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-auth-navbar"
                 >
-                  <i className="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2" />{" "}
+                  <i className="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2" />{' '}
                   Docs
                 </a>
               </li>
@@ -95,7 +94,7 @@ export default function Navbar(props) {
                   href="https://www.creative-tim.com/product/notus-nextjs?ref=nnjs-auth"
                   target="_blank"
                 >
-                  <i class="fas fa-arrow-alt-circle-down"></i> Download
+                  <i className="fas fa-arrow-alt-circle-down"></i> Download
                 </a>
               </li>
             </ul>
@@ -103,5 +102,5 @@ export default function Navbar(props) {
         </div>
       </nav>
     </>
-  );
+  )
 }

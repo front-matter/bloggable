@@ -1,5 +1,5 @@
-import React from "react";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import React from 'react'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   render() {
@@ -8,7 +8,7 @@ class MyDocument extends Document {
         <Head>
           <style
             dangerouslySetInnerHTML={{
-              __html: `.async-hide { opacity: 0 !important} `,
+              __html: `.async-hide { opacity: 0 !important} `
             }}
           ></style>
           <script
@@ -17,7 +17,7 @@ class MyDocument extends Document {
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
 })(window,document.documentElement,'async-hide','dataLayer',4000,
-{'GTM-K9BGS8K':true});`,
+{'GTM-K9BGS8K':true});`
             }}
           ></script>
           {/*Analytics-Optimize Snippet*/}
@@ -32,7 +32,7 @@ ga('set', 'anonymizeIp', true);
 ga('require', 'GTM-K9BGS8K');
 ga('require', 'displayfeatures');
 ga('require', 'linker');
-ga('linker:autoLink', ["2checkout.com","avangate.com"]);`,
+ga('linker:autoLink', ["2checkout.com","avangate.com"]);`
             }}
           ></script>
           {/*End Analytics-Optimize Snippet*/}
@@ -43,7 +43,7 @@ ga('linker:autoLink', ["2checkout.com","avangate.com"]);`,
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NKDMSK6');`,
+})(window,document,'script','dataLayer','GTM-NKDMSK6');`
             }}
           ></script>
           {/*§nd Google Tag Manager*/}
@@ -65,44 +65,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
 
           {/* Schema.org markup for Google+ */}
+          <meta itemProp="name" content="Notus NextJS by Creative Tim" />
           <meta
-            itemprop="name"
-            content="Notus NextJS by Creative Tim"
-          />
-          <meta
-            itemprop="description"
+            itemProp="description"
             content="Start your development with a Free Tailwind CSS and NextJS UI Kit and Admin. Let Notus NextJS amaze you with its cool features and build tools and get your project to a whole new level."
           />
 
-          <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/393/original/opt_notus_nextjs_thumbnail.jpg" />
+          <meta
+            itemProp="image"
+            content="https://s3.amazonaws.com/creativetim_bucket/products/393/original/opt_notus_nextjs_thumbnail.jpg"
+          />
 
           {/* Twitter Card data */}
           <meta name="twitter:card" content="product" />
           <meta name="twitter:site" content="@creativetim" />
-          <meta
-            name="twitter:title"
-            content="Notus NextJS by Creative Tim"
-          />
+          <meta name="twitter:title" content="Notus NextJS by Creative Tim" />
 
           <meta
             name="twitter:description"
             content="Start your development with a Free Tailwind CSS and NextJS UI Kit and Admin. Let Notus NextJS amaze you with its cool features and build tools and get your project to a whole new level."
           />
           <meta name="twitter:creator" content="@creativetim" />
-          <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/393/original/opt_notus_nextjs_thumbnail.jpg" />
+          <meta
+            name="twitter:image"
+            content="https://s3.amazonaws.com/creativetim_bucket/products/393/original/opt_notus_nextjs_thumbnail.jpg"
+          />
 
           {/* Open Graph data */}
           <meta property="fb:app_id" content="655968634437471" />
-          <meta
-            property="og:title"
-            content="Notus NextJS by Creative Tim"
-          />
+          <meta property="og:title" content="Notus NextJS by Creative Tim" />
           <meta property="og:type" content="article" />
           <meta
             property="og:url"
             content="http://demos.creative-tim.com/now-ui-dashboard-pro/examples/dashboard.html"
           />
-          <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/393/original/opt_notus_nextjs_thumbnail.jpg" />
+          <meta
+            property="og:image"
+            content="https://s3.amazonaws.com/creativetim_bucket/products/393/original/opt_notus_nextjs_thumbnail.jpg"
+          />
           <meta
             property="og:description"
             content="Start your development with a Free Tailwind CSS and NextJS UI Kit and Admin. Let Notus NextJS amaze you with its cool features and build tools and get your project to a whole new level."
@@ -112,12 +112,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <meta name="theme-color" content="#000000" />
           <link
             rel="shortcut icon"
-            href={require("assets/img/brand/favicon.ico")}
+            href={require('assets/img/brand/favicon.ico')}
           />
           <link
             rel="apple-touch-icon"
             sizes="76x76"
-            href={require("assets/img/brand/apple-icon.png")}
+            href={require('assets/img/brand/apple-icon.png')}
           />
         </Head>
         <body className="text-gray-800 antialiased">
@@ -128,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               height="0"
               width="0"
               title="JavaScript Enable"
-              style={{ display: "none", visibility: "hidden" }}
+              style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
           </noscript>
           {/* End Google Tag Manager (noscript) */}
@@ -137,8 +137,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument
