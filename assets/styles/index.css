@@ -3,25 +3,41 @@
 @tailwind utilities;
 
 @layer base {
+  a {
+    @apply pb-0.5 border-b border-blue-600 hover:border-blue-800 visited:border-blue-600;
+  }
+  code {
+    @apply font-mono text-base;
+  }
+  figcaption {
+    @apply font-sans;
+  }
+  figure {
+    @apply mb-3;
+  }
   h1 {
-    @apply text-2xl;
+    @apply text-3xl font-sans font-semibold mt-8 text-green-600;
   }
   h2 {
-    @apply text-xl font-semibold;
+    @apply text-2xl font-sans font-semibold;
   }
   h3 {
-    @apply font-semibold;
+    @apply text-xl font-sans font-semibold;
+  }
+  h4 {
+    @apply font-sans font-semibold;
+  }
+  html {
+    @apply font-serif;
   }
   ol {
-    @apply list-decimal list-outside;
-    @apply mb-3;
+    @apply list-decimal list-outside mb-3;
   }
   ul {
-    @apply list-disc list-outside;
-    @apply mb-3;
+    @apply list-disc list-outside mb-3;
   }
   blockquote {
-    @apply italic mb-3;
+    @apply italic px-6 border-l-2 border-blue-400 mb-3;
   }
   p {
     @apply mb-3;

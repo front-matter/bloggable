@@ -36,28 +36,20 @@ const Post = (props) => {
   return (
     <>
       <IndexNavbar fixed />
-      <div className="container px-4 py-16 mx-auto grid grid-rows-3 grid-flow-col gap-4">
-        <section className="col-start-2 col-span-2">
-          <div className="flex flex-col my-4 text-green-800">
-            <Link href={`/posts/${props.post.slug}`}>
-              <a className="text-2xl font-sans font-bold no-underline sm:text-4xl hover:underline">
-                {props.post.title}
-              </a>
-            </Link>
-          </div>
-          <div className="text-lg font-serif">
-            {ReactHtmlParser(props.post.html)}
-          </div>
+      <div className="container mx-auto px-4 py-16 grid grid-cols-3 gap-4">
+        <div>
+          <h1>{props.post.title}</h1>
+          <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
           <div className="flex flex-row pt-2">
             <img
               className="h-10 shadow rounded-full mr-2"
               src={props.post.primary_author.profile_image}
             />
             <div className="">
-              <div className="font-bold uppercase text-sm">
+              <div className="font-bold font-sans uppercase text-sm">
                 {props.post.primary_author.name}
               </div>
-              <div className="uppercase text-sm text-gray-600">
+              <div className="uppercase font-sans text-sm text-gray-600">
                 {new Date(props.post.published_at).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
@@ -67,7 +59,7 @@ const Post = (props) => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
       <Footer />
     </>

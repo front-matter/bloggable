@@ -28,14 +28,14 @@ const IndexPage = (props) => {
       <IndexNavbar fixed />
       <section className="container px-4 py-16 mx-auto">
         {props.posts.map((post) => (
-          <section className="">
-            <div className="flex flex-col my-4">
+          <section className="mt-8">
+            <h2>
               <Link href={`/posts/${post.slug}`}>
                 <a className="text-2xl font-sans font-bold no-underline sm:text-4xl hover:underline">
                   {post.title}
                 </a>
               </Link>
-            </div>
+            </h2>
             <div className="text-xl leading-normal sm:text-2xl">
               <ReactMarkdown className="font-serif" plugins={[gfm]}>
                 {post.excerpt}
