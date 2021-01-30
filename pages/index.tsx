@@ -32,7 +32,7 @@ const IndexPage = (props) => {
         {props.posts.map((post) => (
           <div className="w-6/12 pr-4">
             <h1>
-              <Link href={`/posts/${post.url.substring(30)}`}>
+              <Link href={`/posts/${post.slug}`}>
                 <a className="text-2xl border-b-0 font-sans font-bold no-underline sm:text-4xl hover:underline">
                   {post.title}
                 </a>

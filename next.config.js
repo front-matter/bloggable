@@ -22,5 +22,16 @@ module.exports = withFonts(
         }
       })
     )
-  )
+  ),
+  {
+    async redirects() {
+      return [
+        {
+          source: '/posts/:slug*',
+          destination: '/posts/:slug',
+          permanent: true
+        }
+      ]
+    }
+  }
 )
