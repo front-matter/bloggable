@@ -7,6 +7,8 @@ import gfm from 'remark-gfm'
 import { getPosts } from '../lib/posts'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
 import Footer from '../components/Footers/Footer.js'
+import Byline from '../components/Byline'
+import Post from './posts/[slug]'
 
 export async function getStaticProps(context) {
   const posts = await getPosts()
@@ -25,42 +27,35 @@ export async function getStaticProps(context) {
 const IndexPage = (props) => {
   return (
     <>
-      <IndexNavbar fixed />
-      <section className="container px-4 py-16 mx-auto">
+      <IndexNavbar />
+      <section className="container px-4 py-16 flex flex-wrap justify-center mx-auto">
         {props.posts.map((post) => (
-          <section className="mt-8">
-            <h2>
+          <div className="w-6/12 pr-4">
+            <h1>
               <Link href={`/posts/${post.slug}`}>
-                <a className="text-2xl font-sans font-bold no-underline sm:text-4xl hover:underline">
+                <a className="text-2xl border-b-0 font-sans font-bold no-underline sm:text-4xl hover:underline">
                   {post.title}
                 </a>
               </Link>
-            </h2>
-            <div className="text-xl leading-normal sm:text-2xl">
-              <ReactMarkdown className="font-serif" plugins={[gfm]}>
+            </h1>
+            <Byline post={post} />
+            <div className="text-lg leading-normal sm:text-2xl">
+              <ReactMarkdown
+                plugins={[gfm]}
+                allowedTypes={['paragraph', 'text']}
+                unwrapDisallowed={true}
+              >
                 {post.excerpt}
               </ReactMarkdown>
             </div>
-            <div className="flex flex-row pt-2">
-              <img
-                className="h-10 shadow rounded-full mr-2"
-                src={post.primary_author.profile_image}
-              />
-              <div className="">
-                <div className="font-bold uppercase text-sm">
-                  {post.primary_author.name}
-                </div>
-                <div className="uppercase text-sm text-gray-600">
-                  {new Date(post.published_at).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  })}{' '}
-                  &bull; {post.reading_time} min read
-                </div>
-              </div>
+            <div>
+              {post.tags.map((tag) => (
+                <span className="text-lg font-bold py-1 pr-4 rounded text-indigo-600 bg-indigo-200 uppercase">
+                  {tag.name}
+                </span>
+              ))}
             </div>
-          </section>
+          </div>
         ))}
       </section>
       <Footer />

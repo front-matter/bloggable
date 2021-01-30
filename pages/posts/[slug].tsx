@@ -1,23 +1,27 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/head'
 import ReactHtmlParser from 'react-html-parser'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 
 import { GetStaticPaths } from 'next'
-import { getSinglePost } from '../../lib/posts'
+import { getPosts, getSinglePost } from '../../lib/posts'
 import IndexNavbar from '../../components/Navbars/IndexNavbar.js'
 import Footer from '../../components/Footers/Footer.js'
+import Byline from '../../components/Byline'
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [{ params: { slug: '1' } }, { params: { slug: '2' } }],
-    fallback: true
-  }
+  const posts = await getPosts()
+  const paths = posts.map((post) => ({
+    params: { slug: post.slug }
+  }))
+
+  return { paths, fallback: false }
 }
 
 export async function getStaticProps(context) {
-  const post = await getSinglePost(context.params.slug)
+  let post = await getSinglePost(context.params.slug)
 
   if (!post) {
     return {
@@ -35,30 +39,39 @@ const Post = (props) => {
 
   return (
     <>
-      <IndexNavbar fixed />
-      <div className="container mx-auto px-4 py-16 grid grid-cols-3 gap-4">
-        <div>
+      <Head>
+        <title>{props.post.title}</title>
+        <meta name="og:title" content={props.post.title} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'http://schema.org',
+            '@type': 'BlogPosting',
+            '@id': props.post.uuid,
+            url: props.post.url,
+            name: props.post.title,
+            headline: props.post.title,
+            description: props.post.excerpt,
+            author: {
+              '@type': 'Person',
+              '@id': props.post.primary_author.website,
+              name: props.post.primary_author.name
+            },
+            publisher: { '@type': 'Organization', name: 'Gobbledygook' },
+            keywords: props.post.tags.map((tag) => tag.name),
+            inLanguage: 'en',
+            license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
+            dateCreated: props.post.created_at,
+            dateModified: props.post.updated_at,
+            datePublished: props.post.published_at
+          })}
+        </script>
+      </Head>
+      <IndexNavbar fluid />
+      <div className="container mx-auto px-6 py-16 flex flex-wrap justify-center">
+        <div className="w-auto md:w-6/12 ">
           <h1>{props.post.title}</h1>
+          <Byline post={props.post} />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
-          <div className="flex flex-row pt-2">
-            <img
-              className="h-10 shadow rounded-full mr-2"
-              src={props.post.primary_author.profile_image}
-            />
-            <div className="">
-              <div className="font-bold font-sans uppercase text-sm">
-                {props.post.primary_author.name}
-              </div>
-              <div className="uppercase font-sans text-sm text-gray-600">
-                {new Date(props.post.published_at).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}{' '}
-                &bull; {props.post.reading_time} min read
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <Footer />

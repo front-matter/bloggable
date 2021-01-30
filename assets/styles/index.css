@@ -7,7 +7,7 @@
     @apply pb-0.5 border-b border-blue-600 hover:border-blue-800 visited:border-blue-600;
   }
   code {
-    @apply font-mono text-base;
+    @apply font-mono text-sm p-1 bg-gray-50 mb-3;
   }
   figcaption {
     @apply font-sans;
@@ -27,9 +27,6 @@
   h4 {
     @apply font-sans font-semibold;
   }
-  html {
-    @apply font-serif;
-  }
   ol {
     @apply list-decimal list-outside mb-3;
   }
@@ -37,10 +34,13 @@
     @apply list-disc list-outside mb-3;
   }
   blockquote {
-    @apply italic px-6 border-l-2 border-blue-400 mb-3;
+    @apply italic px-4 border-l-2 border-blue-400 mb-3;
   }
   p {
     @apply mb-3;
+  }
+  pre {
+    @apply bg-gray-50 mb-3 p-2;
   }
   strong {
     @apply font-semibold;
