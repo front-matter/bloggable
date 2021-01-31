@@ -1,5 +1,85 @@
 {
   "redirects": [{
+      "source": "/2013/12/11/example-article-with-embedded-code-and-data",
+      "destination": "/posts/example-article-with-embedded-code-and-data"
+    },
+    {
+      "source": "/2013/12/12/from-markdown-to-jats-xml-in-one-step",
+      "destination": "/posts/from-markdown-to-jats-xml-in-one-step"
+    },
+    {
+      "source": "/2014/03/04/six-misunderstandings-about-scholarly-markdown",
+      "destination": "/posts/six-misunderstandings-about-scholarly-markdown"
+    },
+    {
+      "source": "/2014/03/05/are-static-websites-the-future-or-the-past",
+      "destination": "/posts/are-static-websites-the-future-or-the-past"
+    },
+    {
+      "source": "/2014/03/10/continuous-publishing",
+      "destination": "/posts/continuous-publishing"
+    },
+    {
+      "source": "/2014/04/14/literate-blogging",
+      "destination": "/posts/literate-blogging"
+    },
+    {
+      "source": "/2014/07/18/build-roads-not-stagecoaches",
+      "destination": "/posts/build-roads-not-stagecoaches"
+    },
+    {
+      "source": "/2014/07/24/dont-reinvent-the-wheel",
+      "destination": "/posts/dont-reinvent-the-wheel"
+    },
+    {
+      "source": "/2014/07/30/one-ring-to-rule-them-all",
+      "destination": "/posts/one-ring-to-rule-them-all"
+    },
+    {
+      "source": "/2014/08/02/fragment-identifiers-and-dois",
+      "destination": "/posts/fragment-identifiers-and-dois"
+    },
+    {
+      "source": "/2014/08/06/what-is-doi",
+      "destination": "/posts/what-is-doi"
+    },
+    {
+      "source": "/2014/08/09/visualizing-scholarly-content",
+      "destination": "/posts/visualizing-scholarly-content"
+    },
+    {
+      "source": "/2014/08/18/introducing-rakali",
+      "destination": "/posts/introducing-rakali"
+    },
+    {
+      "source": "/2014/08/25/using-microsoft-word-with-git",
+      "destination": "/posts/using-microsoft-word-with-git"
+    },
+    {
+      "source": "/2014/09/07/commonmark-and-the-future-of-scholarly-markdown",
+      "destination": "/posts/commonmark-and-the-future-of-scholarly-markdown"
+    },
+    {
+      "source": "/2010/09/16/please-keep-it-simple",
+      "destination": "/posts/please-keep-it-simple"
+    },
+    {
+      "source": "/2014/10/01/please-keep-it-simple-citations-links-and-references",
+      "destination": "/posts/please-keep-it-simple-citations-links-and-references"
+    },
+    {
+      "source": "/2014/10/14/lets-do-an-unconference",
+      "destination": "/posts/lets-do-an-unconference"
+    },
+    {
+      "source": "/2014/10/17/webinar-on-writing-zotero-translators",
+      "destination": "/posts/webinar-on-writing-zotero-translators"
+    },
+    {
+      "source": "/2015/01/05/data-citation-support-in-reference-managers",
+      "destination": "/posts/data-citation-support-in-reference-managers"
+    },
+    {
       "source": "/2015/02/05/manifests-and-reference-lists",
       "destination": "/posts/manifests-and-reference-lists"
     },
