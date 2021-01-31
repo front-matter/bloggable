@@ -1,6 +1,31 @@
 {
   "redirects": [{
-    "source": "/2015/07/09/component-dois-revisited",
-    "destination": "/posts/component-dois-revisited"
-  }]
+      "source": "/2015/03/23/posts/blogging-beyond-jekyll",
+      "destination": "/posts/blogging-beyond-jekyll"
+    },
+    {
+      "source": "/2015/04/23/posts/introducing-the-scholarly-markdown-bundle",
+      "destination": "/posts/introducing-the-scholarly-markdown-bundle"
+    },
+    {
+      "source": "/2015/05/27/posts/human-readable-and-machine-readable-persistent-identifiers",
+      "destination": "/posts/human-readable-and-machine-readable-persistent-identifiers"
+    },
+    {
+      "source": "/2015/06/03/posts/persistent-identifiers-and-urls",
+      "destination": "/posts/persistent-identifiers-and-urls"
+    },
+    {
+      "source": "/2015/06/28/posts/why-should-we-work-where-we-live",
+      "destination": "/posts/why-should-we-work-where-we-live"
+    },
+    {
+      "source": "/2015/07/09/component-dois-revisited",
+      "destination": "/posts/component-dois-revisited"
+    },
+    {
+      "source": "/2015/07/29/posts/thank-you-plos",
+      "destination": "/posts/thank-you-plos"
+    }
+  ]
 }
