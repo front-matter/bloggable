@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 
 import { getPosts } from '../lib/posts'
+import { generateRssFeed } from '../lib/feed'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
 import Footer from '../components/Footers/Footer.js'
 import Byline from '../components/Byline'
@@ -18,6 +19,8 @@ export async function getStaticProps(context) {
       props: { notFound: true }
     }
   }
+
+  await generateRssFeed()
 
   return {
     props: { posts }

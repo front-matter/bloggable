@@ -34,7 +34,7 @@ export default function Footer() {
                     className="border-b-0"
                     href="https://creativecommons.org/licenses/by/4.0/legalcode"
                   >
-                    Creative Commons Attribution License.
+                    Creative Commons Attribution 4.0 License.
                   </a>
                 </p>
               </div>
