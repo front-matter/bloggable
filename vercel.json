@@ -1,5 +1,117 @@
 {
   "redirects": [{
+      "source": "/2012/12/13/a-call-for-scholarly-markdown",
+      "destination": "/posts/a-call-for-scholarly-markdown"
+    },
+    {
+      "source": "/2012/12/18/additional-markdown-we-need-in-scholarly-texts",
+      "destination": "/posts/additional-markdown-we-need-in-scholarly-texts"
+    },
+    {
+      "source": "/2013/05/08/announcing-markdown-for-science-workshop-on-june-8th",
+      "destination": "/posts/announcing-markdown-for-science-workshop-on-june-8th"
+    },
+    {
+      "source": "/2013/06/15/goodbye-plos-blogs-welcome-github-pages",
+      "destination": "/posts/goodbye-plos-blogs-welcome-github-pages"
+    },
+    {
+      "source": "/2013/06/17/what-is-scholarly-markdown",
+      "destination": "/posts/what-is-scholarly-markdown"
+    },
+    {
+      "source": "/2013/06/19/citations-in-scholarly-markdown",
+      "destination": "/posts/citations-in-scholarly-markdown"
+    },
+    {
+      "source": "/2013/06/21/what-flavor-is-scholarly-markdown",
+      "destination": "/posts/what-flavor-is-scholarly-markdown"
+    },
+    {
+      "source": "/2013/06/24/citations-in-markdown-part-3",
+      "destination": "/posts/citations-in-markdown-part-3"
+    },
+    {
+      "source": "/2013/06/25/nine-simple-ways-to-make-it-easier-to-re-use-your-data",
+      "destination": "/posts/nine-simple-ways-to-make-it-easier-to-re-use-your-data"
+    },
+    {
+      "source": "/2013/06/29/metadata-in-scholarly-markdown",
+      "destination": "/posts/metadata-in-scholarly-markdown"
+    },
+    {
+      "source": "/2013/07/02/auto-generating-links-to-data-and-resources",
+      "destination": "/posts/auto-generating-links-to-data-and-resources"
+    },
+    {
+      "source": "/2013/07/19/creating-charts-with-datawrapper",
+      "destination": "/posts/creating-charts-with-datawrapper"
+    },
+    {
+      "source": "/2013/07/23/the-trouble-with-keynotes",
+      "destination": "/posts/the-trouble-with-keynotes"
+    },
+    {
+      "source": "/2013/07/26/rss-feeds-for-scholarly-authors",
+      "destination": "/posts/rss-feeds-for-scholarly-authors"
+    },
+    {
+      "source": "/2013/07/30/citeproc-yaml-for-bibliographies",
+      "destination": "/posts/citeproc-yaml-for-bibliographies"
+    },
+    {
+      "source": "/2013/08/04/automatically-list-all-your-publications-in-your-blog",
+      "destination": "/posts/automatically-list-all-your-publications-in-your-blog"
+    },
+    {
+      "source": "/2013/08/06/what-a-publication-timeline-can-tell-you",
+      "destination": "/posts/what-a-publication-timeline-can-tell-you"
+    },
+    {
+      "source": "/2013/08/08/csl-is-more-than-citation-styles",
+      "destination": "/posts/csl-is-more-than-citation-styles"
+    },
+    {
+      "source": "/2013/08/10/altmetrics-coming-of-age-not-for-wikipedia",
+      "destination": "/posts/altmetrics-coming-of-age-not-for-wikipedia"
+    },
+    {
+      "source": "/2013/10/13/challenges-in-automated-doi-resolution",
+      "destination": "/posts/challenges-in-automated-doi-resolution"
+    },
+    {
+      "source": "/2013/10/20/the-complete-article",
+      "destination": "/posts/the-complete-article"
+    },
+    {
+      "source": "/2013/10/23/what-can-article-level-metrics-do-for-you-2",
+      "destination": "/posts/what-can-article-level-metrics-do-for-you-2"
+    },
+    {
+      "source": "/2013/10/25/commenting-on-scientific-papers",
+      "destination": "/posts/commenting-on-scientific-papers"
+    },
+    {
+      "source": "/2013/11/04/what-is-the-value-of-hack-days",
+      "destination": "/posts/what-is-the-value-of-hack-days"
+    },
+    {
+      "source": "/2013/11/11/what-is-holding-us-back",
+      "destination": "/posts/what-is-holding-us-back"
+    },
+    {
+      "source": "/2013/11/17/the-grammar-of-scholarly-communication",
+      "destination": "/posts/the-grammar-of-scholarly-communication"
+    },
+    {
+      "source": "/2013/12/05/opening-science-the-book",
+      "destination": "/posts/opening-science-the-book"
+    },
+    {
+      "source": "/2013/12/11/what-can-article-level-metrics-do-for-you",
+      "destination": "/posts/what-can-article-level-metrics-do-for-you"
+    },
+    {
       "source": "/2013/12/11/example-article-with-embedded-code-and-data",
       "destination": "/posts/example-article-with-embedded-code-and-data"
     },
