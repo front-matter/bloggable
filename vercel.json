@@ -1,3 +1,6 @@
 {
-  "routes": [{ "src": "/2015/07/09/component-dois-revisited", "dest": "/posts/component-dois-revisited" }]
+  "redirects": [{
+    "source": "/2015/07/09/component-dois-revisited",
+    "destination": "/posts/component-dois-revisited"
+  }]
 }
