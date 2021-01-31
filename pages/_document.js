@@ -5,6 +5,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
+        <Head />
         <body className="text-gray-800 antialiased">
           <div id="page-transition"></div>
           <Main />
