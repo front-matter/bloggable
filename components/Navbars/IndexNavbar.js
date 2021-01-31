@@ -40,7 +40,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   className="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
-                  href="https://feedly.com/i/subscription/feed/https://martinfenner.ghost.io/rss/"
+                  href="https://feedly.com/i/subscription/feed/https://blog.martinfenner.org/rss.xml"
                   target="_blank"
                 >
                   <i className="text-gray-500 fas fa-rss text-lg leading-lg " />
