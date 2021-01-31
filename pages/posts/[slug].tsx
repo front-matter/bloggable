@@ -57,7 +57,7 @@ const Post = (props) => {
               name: props.post.primary_author.name
             },
             publisher: { '@type': 'Organization', name: 'Gobbledygook' },
-            keywords: props.post.tags.map((tag) => tag.name),
+            keywords: props.post.ta,
             inLanguage: 'en',
             license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
             dateCreated: props.post.created_at,
@@ -70,7 +70,14 @@ const Post = (props) => {
       <div className="container mx-auto px-6 py-16 flex flex-wrap justify-center">
         <div className="w-auto md:w-6/12 ">
           <h1>{props.post.title}</h1>
-          <Byline post={props.post} />
+          <Byline
+            author={{
+              name: props.post.primary_author.name,
+              imageUrl: props.post.primary_author.profile_image
+            }}
+            published={new Date(props.post.published_at)}
+            readingTime={props.post.reading_time}
+          />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
         </div>
       </div>

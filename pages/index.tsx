@@ -1,15 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 import ReactHtmlParser from 'react-html-parser'
-import ReactMarkdown from 'react-markdown'
-import gfm from 'remark-gfm'
+import algoliasearch from 'algoliasearch/lite'
+import { InstantSearch, connectHits, Stats } from 'react-instantsearch-dom'
 
 import { getPosts } from '../lib/posts'
 import { generateRssFeed } from '../lib/feed'
+// import { updateIndex } from '../lib/algolia'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
 import Footer from '../components/Footers/Footer.js'
 import Byline from '../components/Byline'
-import Post from './posts/[slug]'
 
 export async function getStaticProps(context) {
   const posts = await getPosts()
@@ -21,6 +21,7 @@ export async function getStaticProps(context) {
   }
 
   await generateRssFeed()
+  // await updateIndex()
 
   return {
     props: { posts }
@@ -28,42 +29,63 @@ export async function getStaticProps(context) {
 }
 
 const IndexPage = (props) => {
+  const searchClient = algoliasearch(
+    '8ZJ4A0DNVF',
+    'e4232510cdb1da6514f8f278e1c1b852'
+  )
+
+  const Hits = ({ hits }) => (
+    <>
+      {hits.map((hit) => (
+        <div key={hit.uuid}>
+          <h1>
+            <Link href={`/posts/${hit.slug}`}>
+              <a className="text-2xl border-b-0 font-sans font-bold no-underline sm:text-4xl hover:underline">
+                {hit.title}
+              </a>
+            </Link>
+          </h1>
+          <Byline
+            author={{
+              name: hit.author.name,
+              imageUrl: hit.author.imageUrl
+            }}
+            published={new Date(hit.published)}
+            readingTime={hit.readingTime}
+          />
+          <div className="text-lg leading-normal sm:text-2xl">
+            {ReactHtmlParser(hit.description)}
+          </div>
+          <div>
+            {hit._tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-lg font-bold py-1 pr-4 rounded text-indigo-600 bg-indigo-200 uppercase"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </>
+  )
+
+  const Posts = connectHits(Hits)
+
   return (
     <>
-      <IndexNavbar />
-      <section className="container px-4 py-16 flex flex-wrap justify-center mx-auto">
-        {props.posts.map((post) => (
-          <div key={post.id} className="w-6/12 pr-4">
-            <h1>
-              <Link href={`/posts/${post.slug}`}>
-                <a className="text-2xl border-b-0 font-sans font-bold no-underline sm:text-4xl hover:underline">
-                  {post.title}
-                </a>
-              </Link>
-            </h1>
-            <Byline post={post} />
-            <div className="text-lg leading-normal sm:text-2xl">
-              <ReactMarkdown
-                plugins={[gfm]}
-                allowedTypes={['paragraph', 'text']}
-                unwrapDisallowed={true}
-              >
-                {post.excerpt}
-              </ReactMarkdown>
+      <InstantSearch indexName="zeitgeber" searchClient={searchClient}>
+        <IndexNavbar searchBox={true} />
+        <div className="container mx-auto px-6 py-16 flex flex-wrap justify-center">
+          <div className="w-auto md:w-6/12">
+            <div className="mt-4">
+              <Stats />
             </div>
-            <div>
-              {post.tags.map((tag) => (
-                <span
-                  key={tag.name}
-                  className="text-lg font-bold py-1 pr-4 rounded text-indigo-600 bg-indigo-200 uppercase"
-                >
-                  {tag.name}
-                </span>
-              ))}
-            </div>
+            <Posts />
           </div>
-        ))}
-      </section>
+        </div>
+      </InstantSearch>
       <Footer />
     </>
   )
