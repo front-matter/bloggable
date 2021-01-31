@@ -30,7 +30,7 @@ const IndexPage = (props) => {
       <IndexNavbar />
       <section className="container px-4 py-16 flex flex-wrap justify-center mx-auto">
         {props.posts.map((post) => (
-          <div className="w-6/12 pr-4">
+          <div key={post.id} className="w-6/12 pr-4">
             <h1>
               <Link href={`/posts/${post.slug}`}>
                 <a className="text-2xl border-b-0 font-sans font-bold no-underline sm:text-4xl hover:underline">
@@ -50,7 +50,10 @@ const IndexPage = (props) => {
             </div>
             <div>
               {post.tags.map((tag) => (
-                <span className="text-lg font-bold py-1 pr-4 rounded text-indigo-600 bg-indigo-200 uppercase">
+                <span
+                  key={tag.name}
+                  className="text-lg font-bold py-1 pr-4 rounded text-indigo-600 bg-indigo-200 uppercase"
+                >
                   {tag.name}
                 </span>
               ))}

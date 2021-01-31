@@ -46,7 +46,7 @@ const Post = (props) => {
           {JSON.stringify({
             '@context': 'http://schema.org',
             '@type': 'BlogPosting',
-            '@id': props.post.uuid,
+            '@id': 'https://blog.martinfenner.org/' + props.post.uuid,
             url: props.post.url,
             name: props.post.title,
             headline: props.post.title,
