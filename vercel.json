@@ -1,22 +1,42 @@
 {
   "redirects": [{
-      "source": "/2015/03/23/posts/blogging-beyond-jekyll",
+      "source": "/2015/02/05/manifests-and-reference-lists",
+      "destination": "/posts/manifests-and-reference-lists"
+    },
+    {
+      "source": "/2015/02/19/metrics-for-scientific-software",
+      "destination": "/posts/metrics-for-scientific-software"
+    },
+    {
+      "source": "/2015/02/23/why-there-is-no-itunes-for-science-papers",
+      "destination": "/posts/why-there-is-no-itunes-for-science-papers"
+    },
+    {
+      "source": "/2015/02/28/first-analysis-of-software-metrics",
+      "destination": "/posts/first-analysis-of-software-metrics"
+    },
+    {
+      "source": "/2015/03/20/metadata-in-microsoft-word-documents",
+      "destination": "/posts/metadata-in-microsoft-word-documents"
+    },
+    {
+      "source": "/2015/03/23/blogging-beyond-jekyll",
       "destination": "/posts/blogging-beyond-jekyll"
     },
     {
-      "source": "/2015/04/23/posts/introducing-the-scholarly-markdown-bundle",
+      "source": "/2015/04/23/introducing-the-scholarly-markdown-bundle",
       "destination": "/posts/introducing-the-scholarly-markdown-bundle"
     },
     {
-      "source": "/2015/05/27/posts/human-readable-and-machine-readable-persistent-identifiers",
+      "source": "/2015/05/27/human-readable-and-machine-readable-persistent-identifiers",
       "destination": "/posts/human-readable-and-machine-readable-persistent-identifiers"
     },
     {
-      "source": "/2015/06/03/posts/persistent-identifiers-and-urls",
+      "source": "/2015/06/03/persistent-identifiers-and-urls",
       "destination": "/posts/persistent-identifiers-and-urls"
     },
     {
-      "source": "/2015/06/28/posts/why-should-we-work-where-we-live",
+      "source": "/2015/06/28/why-should-we-work-where-we-live",
       "destination": "/posts/why-should-we-work-where-we-live"
     },
     {
@@ -24,7 +44,7 @@
       "destination": "/posts/component-dois-revisited"
     },
     {
-      "source": "/2015/07/29/posts/thank-you-plos",
+      "source": "/2015/07/29/thank-you-plos",
       "destination": "/posts/thank-you-plos"
     }
   ]
