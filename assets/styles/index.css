@@ -6,6 +6,9 @@
   a {
     @apply pb-0.5 border-b border-blue-600 hover:border-blue-800 visited:border-blue-600;
   }
+  body {
+    @apply font-serif;
+  }
   code {
     @apply font-mono text-sm p-1 bg-gray-50 mb-3;
   }
@@ -14,6 +17,9 @@
   }
   figure {
     @apply mb-3;
+  }
+  footer {
+    @apply font-sans text-base;
   }
   h1 {
     @apply text-3xl font-sans font-semibold mt-8 text-green-600;
@@ -26,6 +32,12 @@
   }
   h4 {
     @apply font-sans font-semibold;
+  }
+  html {
+    @apply text-lg;
+  }
+  nav {
+    @apply font-sans text-base;
   }
   ol {
     @apply list-decimal list-outside mb-3;

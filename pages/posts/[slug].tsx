@@ -68,7 +68,7 @@ const Post = (props) => {
       </Head>
       <IndexNavbar fluid />
       <div className="container mx-auto px-6 py-16 flex flex-wrap justify-center">
-        <div className="w-auto md:w-6/12 ">
+        <div className="w-auto md:w-8/12 ">
           <h1>{props.post.title}</h1>
           <Byline
             author={{

@@ -6,6 +6,7 @@
   "repository": "https://github.com/creativetimofficial/notus-nextjs",
   "license": "MIT",
   "dependencies": {
+    "@formatjs/intl-numberformat": "4.2.10",
     "@fortawesome/fontawesome-free": "5.14.0",
     "@popperjs/core": "2.5.1",
     "@tailwindcss/forms": "^0.2.1",

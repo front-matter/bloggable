@@ -1,14 +1,23 @@
 import React from 'react'
 import Link from 'next/link'
-import { SearchBox } from 'react-instantsearch-dom'
+import { connectSearchBox } from 'react-instantsearch-dom'
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false)
 
+  const SearchBox = ({ currentRefinement, refine }) => (
+    <div className="relative flex flex-wrap lg:ml-auto text-base">
+      <i className="fas fa-search absolute ml-3 mt-3 text-gray-700"></i>
+      <input type="search" value={currentRefinement} onChange={event => refine(event.currentTarget.value)} className="pl-10 pr-1 py-1 h-10 border border-solid border-gray-600 rounded-lg text-lg text-gray-700 shadow-none outline-none focus:outline-none font-normal flex-1 placeholder-gray-300" placeholder="Search..." />
+    </div>
+  )
+
+  const CustomSearchBox = connectSearchBox(SearchBox)
+
   return (
     <>
-      <nav className="container mx-auto flex flex-auto items-center justify-between">
-        <div className="w-full pr-4 justify-between lg:w-auto lg:static lg:block lg:justify-start">
+      <nav className="container mx-auto flex flex-auto items-center justify-between font-sans">
+        <div className="pr-4 justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link href="/">
             <a
               className="text-gray-800 text-xl font-bold leading-relaxed inline-block mr-4 py-2 border-b-0 whitespace-no-wrap uppercase"
@@ -19,8 +28,8 @@ export default function Navbar(props) {
             </a>
           </Link>
         </div>
-        <div className="w-full md:w-8/12 mx-4">
-          {props.searchBox && <SearchBox />}
+        <div className="w-full md:w-4/12 mx-3">
+          {props.searchBox && <CustomSearchBox />}
         </div>
         <div
           className={
@@ -32,7 +41,7 @@ export default function Navbar(props) {
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="flex items-center">
               <a
-                className="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
+                className="hover:text-gray-600 text-gray-800 px-3 py-8 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
                 href="https://twitter.com/mfenner"
                 target="_blank"
               >
@@ -43,7 +52,7 @@ export default function Navbar(props) {
 
             <li className="flex items-center">
               <a
-                className="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
+                className="hover:text-gray-600 text-gray-800 px-3 py-8 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
                 href="https://feedly.com/i/subscription/feed/https://blog.martinfenner.org/rss.xml"
                 target="_blank"
               >

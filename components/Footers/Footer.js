@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap md:justify-between justify-center">
             <div className="w-auto md:w-6/12 mx-auto">
-              <div className="text-gray-600 py-1" data-cy="copyright">
+              <div className="text-base leading-snug text-gray-600 py-1" data-cy="copyright">
                 Copyright © 2007-{new Date().getFullYear()} Martin Fenner.
                 <p>
                   Distributed under the terms of the{' '}
