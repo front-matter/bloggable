@@ -16,7 +16,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <nav className="container mx-auto flex flex-auto items-center justify-between font-sans">
+      <nav className="container mx-4 md:mx-auto flex flex-auto items-center justify-between font-sans">
         <div className="pr-4 justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link href="/">
             <a

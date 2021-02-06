@@ -67,8 +67,8 @@ const Post = (props) => {
         </script>
       </Head>
       <IndexNavbar fluid />
-      <div className="container mx-auto px-6 py-16 flex flex-wrap justify-center">
-        <div className="w-auto md:w-8/12 ">
+      <div className="container mx-4 md:mx-auto px-6 py-16 flex flex-wrap justify-center">
+        <div className="w-full md:w-8/12 ">
           {props.post.primary_tag && (
             <div
               className="text-sm font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1"
