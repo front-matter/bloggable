@@ -69,13 +69,11 @@ const Post = (props) => {
       <IndexNavbar fluid />
       <div className="container mx-4 md:mx-auto px-6 py-16 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
-          {props.post.primary_tag && (
-            <div
-              className="text-sm font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1"
-            >
-              {props.post.primary_tag.name}
-            </div>
-          )}
+          <div
+            className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1"
+          >
+            {props.post.primary_tag.name}
+          </div>
           <h1 className="mt-1">{props.post.title}</h1>
           <Byline
             author={{
@@ -86,6 +84,8 @@ const Post = (props) => {
             readingTime={props.post.reading_time}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
+          <div><a className="font-sans border-b-0" href={'/' + props.post.slug + '.epub'}>
+            <i className="fas fa-book"></i> Download post as ePub</a></div>
         </div>
       </div>
       <Footer />
