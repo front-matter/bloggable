@@ -742,6 +742,8 @@ code {
 
 figcaption {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.375;
+  font-style: italic;
 }
 
 figure {
@@ -3439,10 +3441,6 @@ strong {
 
   .md\:w-4\/12 {
     width: 33.333333%;
-  }
-
-  .md\:w-6\/12 {
-    width: 50%;
   }
 
   .md\:w-8\/12 {

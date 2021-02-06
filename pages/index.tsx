@@ -61,7 +61,7 @@ const IndexPage = (props) => {
             {hit._tags.map((tag) => (
               <span
                 key={tag}
-                className="text-lg font-sans font-bold py-1 pr-4 rounded text-indigo-600 bg-indigo-200 uppercase"
+                className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1"
               >
                 {tag}
               </span>

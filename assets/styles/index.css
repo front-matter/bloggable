@@ -13,7 +13,7 @@
     @apply font-mono text-sm p-1 bg-gray-50 mb-3;
   }
   figcaption {
-    @apply font-sans;
+    @apply font-sans leading-snug italic;
   }
   figure {
     @apply mb-3;

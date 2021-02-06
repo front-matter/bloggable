@@ -57,7 +57,7 @@ const Post = (props) => {
               name: props.post.primary_author.name
             },
             publisher: { '@type': 'Organization', name: 'Gobbledygook' },
-            keywords: props.post.ta,
+            keywords: props.post.primary_tag.name,
             inLanguage: 'en',
             license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
             dateCreated: props.post.created_at,
@@ -79,6 +79,16 @@ const Post = (props) => {
             readingTime={props.post.reading_time}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
+          <div>
+            {props.post.primary_tag && (
+              <span
+                key={props.post.primary_tag.name}
+                className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1"
+              >
+                {props.post.primary_tag.name}
+              </span>
+            )}
+          </div>
         </div>
       </div>
       <Footer />
