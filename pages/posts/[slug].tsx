@@ -84,8 +84,17 @@ const Post = (props) => {
             readingTime={props.post.reading_time}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
-          <div><a className="font-sans border-b-0" href={'/' + props.post.slug + '.epub'}>
-            <i className="fas fa-book"></i> Download post as ePub</a></div>
+          <h2>Other Formats</h2>
+          <div>
+            <span className="mr-4">
+              <a className="font-sans border-b-0" href={'/epub/' + props.post.slug + '.epub'}>
+              <i className="fas fa-book"></i> ePub</a>
+            </span>
+            <span>
+              <a className="font-sans border-b-0" href={'/pdf/' + props.post.slug + '.pdf'}>
+              <i className="fas fa-file-pdf"></i> PDF</a>
+            </span>
+          </div>
         </div>
       </div>
       <Footer />
