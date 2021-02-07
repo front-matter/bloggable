@@ -24,7 +24,7 @@ export async function generateEpub() {
     nodePandoc(src, epubArgs, callback)
 
     // generate pdf
-    const pdfArgs = ['-f', 'html', '-t', 'pdf', '-o', './public/pdf/' + post.slug + '.pdf', '--standalone', '--data-dir', './', '--metadata', 'title=' + post.title, '--metadata', 'author=' + post.primary_author.name, '--metadata', 'date=' + date]
+    const pdfArgs = ['-f', 'html', '-t', 'pdf', '-o', './public/pdf/' + post.slug + '.pdf', '--standalone', '--data-dir', './', '--metadata', 'title=' + post.title, '--metadata', 'author=' + post.primary_author.name + ', Gobbledygook', '--metadata', 'date=' + date]
     nodePandoc(src, pdfArgs, callback)
   })
 }
