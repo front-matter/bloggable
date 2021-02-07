@@ -90,9 +90,13 @@ const Post = (props) => {
               <a className="font-sans border-b-0" href={'/epub/' + props.post.slug + '.epub'}>
               <i className="fas fa-book"></i> ePub</a>
             </span>
-            <span>
+            <span className="mr-4">
               <a className="font-sans border-b-0" href={'/pdf/' + props.post.slug + '.pdf'}>
               <i className="fas fa-file-pdf"></i> PDF</a>
+            </span>
+            <span>
+              <a className="font-sans border-b-0" href={'/jats/' + props.post.slug + '.xml'}>
+              <i className="fas fa-file-code"></i> JATS</a>
             </span>
           </div>
         </div>
