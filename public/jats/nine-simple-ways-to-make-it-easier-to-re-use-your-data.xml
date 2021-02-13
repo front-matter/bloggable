@@ -657,54 +657,303 @@ data</article-title>
   <ext-link ext-link-type="uri" xlink:href="http://databib.org/">Databib</ext-link>
   and
   <ext-link ext-link-type="uri" xlink:href="http://re3data.org/">re3data</ext-link>.</p>
-  <p><bold>Table 2. Popular repositories for scientific datasets</bold>.
-  This table does not include well-known molecular repositories
-  (e.g. GenBank, EMBL, MG-RAST) that have become <italic>de
-  facto</italic> standards in molecular and evolutionary biology.
-  Consequently, several of these primarily serve the ecological
-  community. These repositories are not exclusively used by members of
-  specific institutions or museums, but accept data from the general
-  scientific community.</p>
-  <p>Repository</p>
-  <p>License</p>
-  <p>DOI</p>
-  <p>Metadata</p>
-  <p>Access</p>
-  <p>Notes</p>
-  <p>Dryad</p>
-  <p>CC0</p>
-  <p>Yes</p>
-  <p>Suggested</p>
-  <p>Open</p>
-  <p>Ecology &amp; evolution data associated with publications</p>
-  <p>Ecological Archives</p>
-  <p>No</p>
-  <p>Yes</p>
-  <p>Required</p>
-  <p>Open</p>
-  <p>Publishes supplemental data for ESA journals and stand alone data
-  papers</p>
-  <p>Knowledge Network for Biocomplexity</p>
-  <p>No</p>
-  <p>Yes</p>
-  <p>Required</p>
-  <p>Variable</p>
-  <p>Partners with ESA, NCEAS, DataONE</p>
-  <p>Paleobiology Database</p>
-  <p>Various CC</p>
-  <p>No</p>
-  <p>Optional</p>
-  <p>Variable</p>
-  <p>Paleontology specific</p>
-  <p>Data Basin</p>
-  <p>Various CC</p>
-  <p>No</p>
-  <p>Optional</p>
-  <p>Open</p>
-  <p>GIS data in ESRI files, limited free space</p>
-  <p>Pangaea</p>
-  <p>Various CC</p>
-  <p>Yes</p>
+  <table-wrap>
+    <caption>
+      <p><bold>Table 2. Popular repositories for scientific
+      datasets</bold>. This table does not include well-known molecular
+      repositories (e.g. GenBank, EMBL, MG-RAST) that have
+      become <italic>de facto</italic> standards in molecular and
+      evolutionary biology. Consequently, several of these primarily
+      serve the ecological community. These repositories are not
+      exclusively used by members of specific institutions or museums,
+      but accept data from the general scientific community.</p>
+    </caption>
+    <table style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; max-width: 100%; background-color: rgb(255, 255, 255); font-size: 19px; font-family: ff-tisa-sans-web-pro, Arial, sans-serif; width: 750px; margin-bottom: 21px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+      <thead style="box-sizing: border-box;">
+        <tr style="box-sizing: border-box;">
+          <th align="left" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">Repository</th>
+          <th align="left" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">License</th>
+          <th align="left" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">DOI</th>
+          <th align="left" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">Metadata</th>
+          <th align="left" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">Access</th>
+          <th align="left" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">Notes</th>
+        </tr>
+      </thead>
+      <tbody style="box-sizing: border-box;">
+        <tr style="box-sizing: border-box;">
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Dryad</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>CC0</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Yes</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Suggested</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Open</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Ecology
+          &amp; evolution data associated with publications</p></td>
+        </tr>
+        <tr style="box-sizing: border-box;">
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Ecological
+          Archives</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>No</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Yes</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Required</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Open</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Publishes
+          supplemental data for ESA journals and stand alone data
+          papers</p></td>
+        </tr>
+        <tr style="box-sizing: border-box;">
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Knowledge
+          Network for Biocomplexity</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>No</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Yes</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Required</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Variable</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Partners
+          with ESA, NCEAS, DataONE</p></td>
+        </tr>
+        <tr style="box-sizing: border-box;">
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Paleobiology
+          Database</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Various
+          CC</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>No</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Optional</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Variable</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Paleontology
+          specific</p></td>
+        </tr>
+        <tr style="box-sizing: border-box;">
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Data
+          Basin</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Various
+          CC</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>No</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Optional</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Open</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>GIS
+          data in ESRI files, limited free space</p></td>
+        </tr>
+        <tr style="box-sizing: border-box;">
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Pangaea</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Various
+          CC</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Yes</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Required</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Variable</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Editors
+          participate in QA/QC</p></td>
+        </tr>
+        <tr style="box-sizing: border-box;">
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>figshare</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>CC0</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Yes</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Optional</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Open</p></td>
+          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)"><p>Also
+          allows deposition of other research outputs and private
+          datasets</p></td>
+        </tr>
+      </tbody>
+    </table>
+  </table-wrap>
+</sec>
+<sec id="9-use-an-established-and-liberal-license">
+  <title>9. Use an established and liberal license</title>
+  <p>Including an explicit license with your data is the best way to let
+  others know exactly what they can and cannot do with the data you
+  shared. Following the
+  <ext-link ext-link-type="uri" xlink:href="http://pantonprinciples.org/">Panton
+  Principles</ext-link> we recommend:</p>
+  <list list-type="order">
+    <list-item>
+      <p>Using well established licenses in order to clearly communicate
+      the rights and responsibilities of both the people providing the
+      data and the people using it.</p>
+    </list-item>
+    <list-item>
+      <p>Using the most open license possible, because even minor
+      restrictions on data use can have unintended consequences for the
+      reuse of the data (Poisot et al., 2013; Schofield et al.,
+      2009).</p>
+    </list-item>
+  </list>
+  <p>The Creative Commons Zero license (CC0) places no restrictions on
+  data use and is considered by many to be one of the best license for
+  sharing data (e.g., (Poisot et al., 2013; Schofield et al., 2009),
+  <ext-link ext-link-type="uri" xlink:href="http://blog.datadryad.org/2011/10/05/why-does-dryad-use-cc0/">Why
+  does Dryad use CC0</ext-link>). Having a clear and open license will
+  increase the chance that other scientists will be comfortable using
+  your data.</p>
+</sec>
+<sec id="concluding-remarks">
+  <title>Concluding remarks</title>
+  <p>Data sharing has the potential to transform the way we conduct
+  ecological and evolutionary research (Fienberg &amp; Martin, 1985;
+  Poisot et al., 2013; Whitlock et al., 2010). As a result, there are an
+  increasing number of initiatives at the federal, funding agency, and
+  journal levels to encourage or require the sharing of the data
+  associated with scientific research (Heather A Piwowar &amp; Chapman,
+  2008; Poisot et al., 2013; Whitlock et al., 2010). However, making the
+  data available is only the first step. To make data sharing as useful
+  as possible it is necessary to make the data usable with as little
+  effort as possible (M. B. Jones et al., 2006; O. J. Reichman et al.,
+  2011). This allows scientists to spend their time doing science rather
+  than cleaning up data.</p>
+  <p>We have provided a list of 9 practices that require only a small
+  additional time investment but substantially improve the usability of
+  data. These practices can be broken down into three major groups.</p>
+  <list list-type="order">
+    <list-item>
+      <p>Well documented data are easier to understand.</p>
+    </list-item>
+    <list-item>
+      <p>Properly formatted data are easier to use in a variety of
+      software.</p>
+    </list-item>
+    <list-item>
+      <p>Data that is shared in established repositories with open
+      licenses is easier for others to find and use.</p>
+    </list-item>
+  </list>
+  <p>Most of these recommendations are simply good practice for working
+  with data regardless of whether that data are shared or not. This
+  means that following these recommendations (2-7) make the data easier
+  to work with for anyone, including you. This is particularly true when
+  returning to your own data for further analysis months or years after
+  you originally collected or analyzed it. In addition, data sharing
+  often occurs within a lab or research group. Good data sharing
+  practices make these in-house collaborations faster, easier, and less
+  dependent on lab members who may have graduated or moved on to other
+  things.</p>
+  <p>By following these practices we can assure that the data collected
+  in ecology and evolution can be used to its full potential to improve
+  our understanding of biological systems.</p>
+</sec>
+<sec id="acknowledgments">
+  <title>Acknowledgments</title>
+  <p>Thanks to Karthik Ram for organizing this special section and
+  inviting us to contribute. Carly Strasser and Kara Woo recommended
+  important references and David Harris and Carly Strasser provided
+  valuable feedback on null values, all via Twitter. Carl Boettiger,
+  Matt Davis, Daniel Hocking, Heinz Pampel, Karthik Ram, Thiago Silva,
+  Carly Strasser, Tom Webb, and beroe (Twitter handle) provided value
+  comments on the manuscript. Many of these comments were part of the
+  informal review process facilitated by posting this manuscript as a
+  preprint. The writing of this paper was supported by a CAREER grant
+  from the U.S. National Science Foundation (DEB 0953694) to EPW.</p>
+</sec>
+<sec id="references">
+  <title>References</title>
+  <p>Borer, E. T., Seabloom, E. W., Jones, M. B., &amp; Schildhauer, M.
+  (2009). Some simple guidelines for effective data management.
+  <italic>Bulletin of the Ecological Society of America</italic>,
+  <italic>90</italic>(2), 205–214. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1890/0012-9623-90.2.205">http://dx.doi.org/10.1890/0012-9623-90.2.205</ext-link></p>
+  <p>Brunt, J. W., McCartney, P., Baker, K., &amp; Stafford, S. G.
+  (2002). The future of ecoinformatics in long term ecological research.
+  In <italic>Proceedings of the 6th world multiconference on systemics,
+  cybernetics and informatics: SCI</italic> (pp. 14–18).</p>
+  <p>Fienberg, S. E., &amp; Martin, M. E. (1985). <italic>Sharing
+  research data</italic>. Natl Academy Pr.</p>
+  <p>Fraser, B., &amp; Gluck, M. (1999). Usability of geospatial
+  metadata or space-time matters. <italic>Bulletin of the American
+  Society for Information Science and Technology</italic>,
+  <italic>25</italic>(6), 24–28. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/bult.134">http://dx.doi.org/10.1002/bult.134</ext-link></p>
+  <p>Hampton, S. E., Strasser, C. A., Tewksbury, J. J., Gram, W. K.,
+  Budden, A. E., Batcheller, A. L., … Porter, J. H. (2013). Big data and
+  the future of ecology. <italic>Frontiers in Ecology and the
+  Environment</italic>, <italic>11</italic>(3), 156–162. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1890/120103">http://dx.doi.org/10.1890/120103</ext-link></p>
+  <p>Jones, M. B., Schildhauer, M. P., Reichman, O., &amp; Bowers, S.
+  (2006). The new bioinformatics: Integrating ecological data from the
+  gene to the biosphere. <italic>Annual Review of Ecology, Evolution,
+  and Systematics</italic>, <italic>37</italic>(1), 519–54. Retrieved
+  from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.ecolsys.37.091305.110031">http://dx.doi.org/10.1146/annurev.ecolsys.37.091305.110031</ext-link></p>
+  <p>Kowalczyk, S., &amp; Shankar, K. (2011). Data sharing in the
+  sciences. <italic>Annual Review of Information Science and
+  Technology</italic>, <italic>45</italic>(1), 247–294. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/aris.2011.1440450113">http://dx.doi.org/10.1002/aris.2011.1440450113</ext-link></p>
+  <p>Lampe, A., &amp; Weiler, J. (1998). Data capture from the sponsors’
+  and investigators’ perspectives: Balancing quality, speed, and cost.
+  <italic>Drug Information Journal</italic>, <italic>32</italic>(4),
+  871–886.</p>
+  <p>Michener, W. K., Brunt, J. W., Helly, J. J., Kirchner, T. B., &amp;
+  Stafford, S. G. (1997). Nongeospatial metadata for the ecological
+  sciences. <italic>Ecological Applications</italic>,
+  <italic>7</italic>(1), 330–342. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1890/1051-0761(1997)007%5B0330:nmftes%5D2.0.co;2">http://dx.doi.org/10.1890/1051-0761(1997)007[0330:nmftes]2.0.co;2</ext-link></p>
+  <p>Palmer, M. A., Bernhardt, E. S., Chornesky, E. A., Collins, S. L.,
+  Dobson, A. P., Duke, C. S., … Turner, M. G. (2004). Ecological science
+  and sustainability for a crowded planet. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://www.esa.org/ecovisions/ppfiles/EcologicalVisionsReport.pdf">http://www.esa.org/ecovisions/ppfiles/EcologicalVisionsReport.pdf</ext-link></p>
+  <p>Parr, C., &amp; Cummings, M. (2005). Data sharing in ecology and
+  evolution. <italic>Trends in Ecology &amp; Evolution</italic>,
+  <italic>20</italic>(7), 362–363. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tree.2005.04.023">http://dx.doi.org/10.1016/j.tree.2005.04.023</ext-link></p>
+  <p>Paulsen, A., Overgaard, S., &amp; Lauritsen, J. M. (2012). Quality
+  of data entry using single entry, double entry and automated forms
+  processing–An example based on a study of patient-reported outcomes.
+  <italic>PloS ONE</italic>, <italic>7</italic>(4), e35087. Retrieved
+  from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0035087">http://dx.doi.org/10.1371/journal.pone.0035087</ext-link></p>
+  <p>Piwowar, H. A., &amp; Chapman, W. W. (2008). A review of journal
+  policies for sharing research data. In <italic>ELPUB2008</italic>.</p>
+  <p>Piwowar, H. A., &amp; Vision, T. J. (2013). Data reuse and the open
+  data citation advantage. <italic>PeerJ PrePrints</italic>,
+  <italic>1</italic>, e1. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.7287/peerj.preprints.1">http://dx.doi.org/10.7287/peerj.preprints.1</ext-link></p>
+  <p>Piwowar, H. A., Day, R. S., &amp; Fridsma, D. B. (2007). Sharing
+  detailed research data is associated with increased citation rate.
+  <italic>PLoS ONE</italic>, <italic>2</italic>(3), e308. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0000308">http://dx.doi.org/10.1371/journal.pone.0000308</ext-link></p>
+  <p>Poisot, T., Mounce, R., &amp; Gravel, D. (2013). Moving toward a
+  sustainable ecological science: Don’t let data go to waste! Retrieved
+  from
+  <ext-link ext-link-type="uri" xlink:href="https://github.com/tpoisot/DataSharingPaper/blob/master/DataSharing-MS.md">https://github.com/tpoisot/DataSharingPaper/blob/master/DataSharing-MS.md</ext-link></p>
+  <p>Reichman, O. J., Jones, M. B., &amp; Schildhauer, M. P. (2011).
+  Challenges and opportunities of open data in ecology.
+  <italic>Science</italic>, <italic>331</italic>(6018), 703–705.
+  Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1197962">http://dx.doi.org/10.1126/science.1197962</ext-link></p>
+  <p>Schofield, P. N., Bubela, T., Weaver, T., Portilla, L., Brown, S.
+  D., Hancock, J. M., … Rosenthal, N. (2009). Post-publication sharing
+  of data and tools. <italic>Nature</italic>,
+  <italic>461</italic>(7261), 171–173. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/461171a">http://dx.doi.org/10.1038/461171a</ext-link></p>
+  <p>Strasser, C. A., Cook, R. B., Michener, W. K., Budden, A., &amp;
+  Koskela, R. (2011). Promoting data stewardship through best practices.
+  In <italic>Proceedings of the environmental information management
+  conference 2011 (eIM 2011)</italic>. Oak Ridge National Laboratory
+  (ORNL).</p>
+  <p>Strasser, C. A., Cook, R., Michener, W. K., &amp; Budden, A.
+  (2012). Primer on data management: What you always wanted to know.
+  DataONE. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.5060/D2251G48">http://dx.doi.org/10.5060/D2251G48</ext-link></p>
+  <p>Whitlock, M. C. (2011). Data archiving in ecology and evolution:
+  Best practices. <italic>Trends in Ecology &amp; Evolution</italic>,
+  <italic>26</italic>(2), 61–65. Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tree.2010.11.006">http://dx.doi.org/10.1016/j.tree.2010.11.006</ext-link></p>
+  <p>Whitlock, M. C., McPeek, M. A., Rausher, M. D., Rieseberg, L.,
+  &amp; Moore, A. J. (2010). Data archiving. <italic>The American
+  Naturalist</italic>, <italic>175</italic>(2), 145–146.
+  <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1086/650340">doi:10.1086/650340</ext-link></p>
+  <p>Wickham, H. (2007). Reshaping data with the reshape package.
+  <italic>Journal of Statistical Software</italic>,
+  <italic>21</italic>(12). Retrieved from
+  <ext-link ext-link-type="uri" xlink:href="http://www.jstatsoft.org/v21/i12/paper">http://www.jstatsoft.org/v21/i12/paper</ext-link></p>
+  <p>Wieczorek, J., Bloom, D., Guralnick, R., Blum, S., Döring, M.,
+  Giovanni, R., … Vieglais, D. (2012). Darwin core: An evolving
+  community-developed biodiversity data standard. <italic>PLoS
+  ONE</italic>, <italic>7</italic>(1), e29715.
+  <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pone.0029715">doi:10.1371/journal.pone.0029715</ext-link></p>
+  <p>Zimmerman, A. (2007). Not by metadata alone: The use of diverse
+  forms of knowledge to locate data for reuse. <italic>International
+  Journal on Digital Libraries</italic>, <italic>7</italic>(1-2), 5–16.
+  <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1007/s00799-007-0015-8">doi:10.1007/s00799-007-0015-8</ext-link></p>
+  <p>Zimmerman, A. S. (2003). <italic>Data sharing and secondary use of
+  scientific data: Experiences of ecologists</italic> (PhD thesis). The
+  University of Michigan.</p>
 </sec>
 </body>
 <back>
