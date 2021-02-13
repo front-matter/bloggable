@@ -12,8 +12,8 @@ import {
 import { getPosts } from '../lib/posts'
 import { pluralize } from '../lib/helpers'
 import { generateRssFeed } from '../lib/feed'
-import { generateEpub } from '../lib/pandoc'
-import { updateIndex } from '../lib/algolia'
+// import { generateEpub } from '../lib/pandoc'
+// import { updateIndex } from '../lib/algolia'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
 import Footer from '../components/Footers/Footer.js'
 import Byline from '../components/Byline'
@@ -28,8 +28,8 @@ export async function getStaticProps(context) {
   }
 
   await generateRssFeed()
-  await generateEpub()
-  await updateIndex()
+  // await generateEpub()
+  // await updateIndex()
 
   return {
     props: { posts }
