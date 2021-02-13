@@ -36,6 +36,9 @@
   html {
     @apply text-lg;
   }
+  iframe {
+    @apply mb-3;
+  }
   nav {
     @apply font-sans text-base;
   }
