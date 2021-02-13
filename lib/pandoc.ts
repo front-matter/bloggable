@@ -29,24 +29,24 @@ export async function generateEpub() {
     nodePandoc(src, epubArgs)
 
     // generate pdf
-    pdfArgs = [
-      '-f',
-      'html',
-      '-t',
-      'pdf',
-      '-o',
-      './public/pdf/' + post.slug + '.pdf',
-      '--standalone',
-      '--data-dir',
-      './',
-      '--metadata',
-      'title=' + post.title,
-      '--metadata',
-      'author=' + post.primary_author.name + ', Gobbledygook',
-      '--metadata',
-      'date=' + date
-    ]
-    nodePandoc(src, pdfArgs)
+    // pdfArgs = [
+    //   '-f',
+    //   'html',
+    //   '-t',
+    //   'pdf',
+    //   '-o',
+    //   './public/pdf/' + post.slug + '.pdf',
+    //   '--standalone',
+    //   '--data-dir',
+    //   './',
+    //   '--metadata',
+    //   'title=' + post.title,
+    //   '--metadata',
+    //   'author=' + post.primary_author.name + ', Gobbledygook',
+    //   '--metadata',
+    //   'date=' + date
+    // ]
+    // nodePandoc(src, pdfArgs)
 
     // generate jats
     jatsArgs = [
