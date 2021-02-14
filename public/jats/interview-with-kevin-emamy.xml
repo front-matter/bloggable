@@ -169,7 +169,45 @@ person from the right.</italic></italic></p>
   developers are making an effort. We have a very active newsgroup where
   users make feature and functionality requests or report problems. I
   have regularly seen my colleagues put stuff live in a matter of hours
-  following a user request, which is</p>
+  following a user request, which is one of the advantages of a service
+  that is run by it's developers.</p>
+  <p>We have wanted to do some kind of recommendation system for a long
+  time; automated collaborative filtering or whatever. We certainly have
+  the data to do it. But it is, I'm told, a hard problem if you want to
+  get useful results. It's possible we'll work with someone else on
+  this.</p>
+  <p>It was really interesting to see
+  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150922174120/http://www.plos.org/">PLoS</ext-link>
+  announcing the variety of impact metrics they want to publish about
+  their articles, a small part of which is going to be social
+  bookmarking posts. We are currently giving them this data on request,
+  it would be nice to allow anyone to get this sort of data out of
+  CiteULike themselves (we do already make the whole CiteULike dataset
+  freely available for download).</p>
+  <p>Another example of that is that a lot of other sites want to
+  display CiteULike tag data along with the relevant articles; there are
+  6.7 million user created tags on CiteULike now (that's total not
+  distinct)
+  and those tags have been given by people who know the subjects. I
+  suppose I am talking about some kind of API, which would also allow
+  reference managers etc. to integrate with CiteULike more easily, as
+  you asked about above.</p>
+  <p>Having said that, there is a great temptation to continually add
+  more features or try to make it into something different to what it
+  really is and I'm not sure if that is the right approach (though we
+  have been guilty of it).</p>
+  <p>For example, one of the biggest issues we have is that CiteULike is
+  good at matching articles that have been posted by hand but not
+  articles imported by file upload. By “match” I mean identify that two
+  articles from different sources are in fact the same, which is the
+  basis of the social stuff; seeing who is reading what you're reading
+  etc. Seeing as 40% or so of our posts come via file upload, it would
+  be great to fix. Matching is done by DOI and PMID; however we ran some
+  tests that showed only 5% of file uploaded articles contain these, so
+  maybe we'll try a different approach.</p>
+  <p>So what we try to focus on is to make it better and more efficient
+  at what it does well: social bookmarking for research papers. There is
+  plenty of work to do in that regard.</p>
 </sec>
 </body>
 <back>

@@ -178,23 +178,38 @@ opportunities to participate.</p>
 </sec>
 <sec id="some-ideas-to-improve-science-hackdays">
   <title>Some ideas to improve science hackdays</title>
-  <p>Go beyond software development. We
-  <ext-link ext-link-type="uri" xlink:href="http://blogs.plos.org/tech/alm-data-challenge-metrics-for-a-standard-set-of-dois/">recently
-  tried a data challenge using Altmetrics data</ext-link>, and at a
-  <ext-link ext-link-type="uri" xlink:href="http://blog.martinfenner.org/2013/07/02/auto-generating-links-to-data-and-resources/">hackathon
-  between IGSN, DataCite, PANGAEA and ORCID in July</ext-link> we
-  focussed on a high-level discussion of technical issues. There is a
-  continuum towards the
-  <ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/BarCamp">BarCamp</ext-link>
-  format, although I don’t like to drift too much from
-  <italic>doing</italic> to <italic>talking</italic>. A good example of
-  a workshop open to everyone and not just software developers is the
-  SpotOn London workshop this Saturday on
-  <ext-link ext-link-type="uri" xlink:href="http://www.nature.com/spoton/event/spoton-london-2013-wikipedia-editing-workshop/">Wikipedia
-  Editing</ext-link> run by Brian Kelly and Toni Sant.</p>
-  <p>Meet before and after the hackathon. This can be done online, but
-  it helps to focus on what can be achieved in the limited time
-  available for a hackathon, and to follow up on projects</p>
+  <list list-type="bullet">
+    <list-item>
+      <p>Go beyond software development. We
+      <ext-link ext-link-type="uri" xlink:href="http://blogs.plos.org/tech/alm-data-challenge-metrics-for-a-standard-set-of-dois/">recently
+      tried a data challenge using Altmetrics data</ext-link>, and at a
+      <ext-link ext-link-type="uri" xlink:href="http://blog.martinfenner.org/2013/07/02/auto-generating-links-to-data-and-resources/">hackathon
+      between IGSN, DataCite, PANGAEA and ORCID in July</ext-link> we
+      focussed on a high-level discussion of technical issues. There is
+      a continuum towards the
+      <ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/BarCamp">BarCamp</ext-link>
+      format, although I don’t like to drift too much from
+      <italic>doing</italic> to <italic>talking</italic>. A good example
+      of a workshop open to everyone and not just software developers is
+      the SpotOn London workshop this Saturday on
+      <ext-link ext-link-type="uri" xlink:href="http://www.nature.com/spoton/event/spoton-london-2013-wikipedia-editing-workshop/">Wikipedia
+      Editing</ext-link> run by Brian Kelly and Toni Sant.</p>
+    </list-item>
+    <list-item>
+      <p>Meet before and after the hackathon. This can be done online,
+      but it helps to focus on what can be achieved in the limited time
+      available for a hackathon, and to follow up on projects that have
+      just been started. But a hackathon is also a great opportunity to
+      meet new people and new ideas, so meeting afterwards is more
+      important than before.</p>
+    </list-item>
+    <list-item>
+      <p>Involve remote people. A lot of the fun of hackdays comes from
+      sitting around a table and doing something together. But sometimes
+      this is not possible for everyone, so think about remote
+      participation where it makes sense.</p>
+    </list-item>
+  </list>
 </sec>
 </body>
 <back>

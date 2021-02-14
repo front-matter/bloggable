@@ -38,10 +38,9 @@ event</ext-link> of the
 conference in Oxford. This blog post summarizes some of the issues and
 work that needs to be done.</p>
 <p>Data Citation is one of the big themes of the Force15 conference, and
-a lot of progress has been made, including the
-<ext-link ext-link-type="uri" xlink:href="https://www.force11.org/datacitation">Joint
-Declaration of Data Citation Principles</ext-link> that start with the
-following paragraph on <bold><bold>Importance</bold></bold>:</p>
+a lot of progress has been made, including the Joint Declaration of Data
+Citation Principles (Data Citation Synthesis Group 2014) that start with
+the following paragraph on <bold><bold>Importance</bold></bold>:</p>
 <p specific-use="wrapper">
   <disp-quote>
     <p>Data should be considered legitimate, citable products of
@@ -86,9 +85,8 @@ three bullet points.</p>
   2014):</p>
   <fig>
     <caption><p>From Fig. 2: STM articles and URI references per
-    publication year - Elsevier corpus <milestone-start />(Klein et al.,
-    2014)<milestone-end />.</p></caption>
-    <graphic mimetype="image" mime-subtype="png" xlink:href="http://blog.martinfenner.org/images/journal.pone.0115253.g002.png" xlink:title="" />
+    publication year - Elsevier corpus (Klein et al. 2014)</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="https://martinfenner.ghost.io/content/images/2021/02/journal.pone.0115253.g002.png" xlink:title="" />
   </fig>
   <p>References managers have started to adapt to these changes in
   citation patterns. Similarly they have become better in handling
@@ -118,7 +116,7 @@ three bullet points.</p>
   <ext-link ext-link-type="uri" xlink:href="http://wokinfo.com/products_tools/multidisciplinary/dci/">Data
   Citation Index</ext-link> and
   <ext-link ext-link-type="uri" xlink:href="https://www.datacite.org/">DataCite</ext-link>
-  are two examples in this category.. But there are also thousands of
+  are two examples in this category. But there are also thousands of
   data repositories, many of them listed in re3data (Pampel et al.,
   2013).</p>
   <p>The reference manager
@@ -159,18 +157,20 @@ three bullet points.</p>
   <title>References</title>
   <p>Kafkas, Ş., Kim, J.-H., &amp; McEntyre, J. R. (2013). Database
   Citation in Full Text Biomedical Articles. <italic>PLoS ONE</italic>.
-  <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pone.0063184">doi:10.1371/journal.pone.0063184</ext-link></p>
+  https://doi.org/<ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pone.0063184">10.1371/journal.pone.0063184</ext-link></p>
   <p>Klein, M., Van de Sompel, H., Sanderson, R., Shankar, H.,
   Balakireva, L., Zhou, K., &amp; Tobin, R. (2014). Scholarly context
   not found: one in five articles suffers from reference rot.
   <italic>PLoS ONE</italic>, <italic>9</italic>(12), e115253.
-  <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pone.0115253">doi:10.1371/journal.pone.0115253</ext-link></p>
+  https://doi.org/<ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pone.0115253">10.1371/journal.pone.0115253</ext-link></p>
   <p>Pampel, H., Vierkant, P., Scholze, F., Bertelmann, R., Kindling,
   M., Klump, J., … Dierolf, U. (2013). Making Research Data Repositories
   Visible: The re3data.org Registry. <italic>PLoS ONE</italic>,
   <italic>8</italic>(11), e78080.
-  <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pone.0078080">doi:10.1371/journal.pone.0078080</ext-link>
-  </p>
+  https://doi.org/<ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pone.0078080">10.1371/journal.pone.0078080</ext-link></p>
+  <p>Data Citation Synthesis Group. (2014). <italic>Joint Declaration of
+  Data Citation Principles</italic>. Force11.
+  <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.25490/A97F-EGYK">https://doi.org/10.25490/A97F-EGYK</ext-link></p>
 </sec>
 </body>
 <back>

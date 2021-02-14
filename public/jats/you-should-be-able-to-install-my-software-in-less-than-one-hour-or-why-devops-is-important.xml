@@ -164,7 +164,22 @@ application to AWS really simple:</p>
   </list-item>
 </list>
 <p>Step #4 took 898 sec or about 15 min on my computer (see screenshot),
-and</p>
+and at the end I had a PLOS ALM server where I could access the admin
+dashboard via the web interface. If you are familiar with Amazon Web
+Services – you have to think about  the right size for the EC2 instance,
+an appropriate AMI, security groups, elastic IPs, and DNS service – then
+the whole process should be done in well under an hour. I will use this
+instance to load and analyze some articles from a publisher for a
+presentation next week. When I’m done, another command (<bold>vagrant
+destroy</bold>) will destroy this server and Amazon will stop billing
+me. During testing I have created and destroyed many servers, and the
+<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20171029102958/http://www.hashicorp.com/blog/preview-vagrant-aws.html">vagrant-aws
+video</ext-link> shows you how easy this process is.</p>
+<p>At this stage the installation process is working (and has been
+working for a local Virtualbox install for many months), but needs
+testing and documentation. I therefore invite everyone interested in
+testing this out to contact me so that we can make this well-documented
+and working reliably.</p>
 </body>
 <back>
 </back>

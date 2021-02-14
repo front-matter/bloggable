@@ -174,7 +174,62 @@ and different perspective.</p>
   Principal Component Analysis of 39 Scientific Impact
   Measures</ext-link>). Alternatives to citations are usage statistics
   such as HTML page views and PDF downloads, popularity in social
-  bookmarking sites, coverage in blog post</p>
+  bookmarking sites, coverage in blog posts, and comments to articles.
+  The <italic><italic>PLoS</italic></italic>
+  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611101936/http://article-level-metrics.plos.org/">article
+  level metrics</ext-link> introduced in September 2009 combine these
+  different metrics, and make the data openly available.</p>
+  <p>How best to measure the other aspects of scientific output is
+  largely unknown. It is possible to count the number of research grants
+  or the total amount of money awarded, but should we simply count the
+  number of submitted research datasets, invited lectures, science blog
+  posts, etc., or do we need some quality indicator similar to
+  citations?</p>
+</sec>
+<sec id="why-do-we-need-all-this">
+  <title><bold><bold>Why do we need all this?</bold></bold></title>
+  <p>Julia Lane emphasizes that we need science metrics to make the
+  right decisions about funding and academic positions. And I fully
+  agree with her that we need more research by social scientists and
+  economists to better understand what these data mean and how best to
+  use them. There is a lot of anecdotal evidence that suggests that
+  science metrics alone may be poor indicators of future scientific
+  achievements, simply because there are too many confounding factors.
+  Maybe we also need to find a better term, as metric implies that
+  scientific output can be reduced to
+  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611101936/http://friendfeed.com/jcbradley/18e76233/binfield-article-level-metrics-should-be">one
+  or more numbers</ext-link>.</p>
+  <p>Another important motivation for improving science metrics, and not
+  mentioned in the article, is to reduce the burden on researchers and
+  administrators in evaluating research. The proportion of time spent
+  doing research vs. time spent applying for funding, submitting
+  manuscripts, filling out evaluation forms, doing peer review, etc. has
+  become ridiculous for many active scientists. Initiatives such as the
+  standardized <bold><bold>Research Performance Progress
+  Report</bold></bold> format mentioned in the paper or automated tools
+  to created a publication list or CV can reduce this burden. Funding
+  organizations are also trying to reduce the burden of evaluating
+  research , e.g. by increasing the time of funding from 3 to 5 years,
+  reducing the number of papers that can be listed in grant applications
+  (<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611101936/http://blogs.nature.com/mfenner/2010/03/01/german-research-foundation-says-that-numbers-arent-everything">German
+  Research Foundation says that numbers aren't everything</ext-link>),
+  or funding
+  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611101936/http://www.wellcome.ac.uk/Funding/investigator-awards/Implementation/index.htm">investigators
+  and not projects</ext-link>.</p>
+  <p>Science metrics are not only important for evaluating scientific
+  output, they are also great discovery tools, and this may indeed be
+  their more important use. Traditional ways of discovering science
+  (e.g. keyword searches in bibliographic databases) are increasingly
+  superseded by
+  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611101936/http://blogs.nature.com/mfenner/2010/02/22/there-is-still-so-much-to-learn-in-reference-management">non-traditional
+  approaches</ext-link> that use social networking tools for awareness,
+  evaluations and popularity measurements of research findings.</p>
+</sec>
+<sec id="references">
+  <title>References</title>
+  <p>Lane, J. (2010). Let's make science metrics more scientific
+  <italic>Nature, 464</italic> (7288), 488-489
+  https://doi.org/<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611101936/http://dx.doi.org/10.1038/464488a">10.1038/464488a</ext-link></p>
 </sec>
 </body>
 <back>

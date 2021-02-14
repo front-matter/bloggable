@@ -199,8 +199,54 @@ myths about DOIs.</p>
     the metadata in a format we specify (e.g. Citeproc JSON, bibtex or
     even a formatted citation in one of thousands of citation styles)
     instead of getting redirected to the resource. This is a great way
-    to collect bibliographic information,</p>
+    to collect bibliographic information, e.g. to format citations for a
+    manuscript. In theory we could also use content negotiation to get a
+    particular representation of a resource, e.g.
+    <monospace>application/pdf</monospace> for a PDF of a paper or
+    <monospace>text/csv</monospace> for a dataset in CSV format. This is
+    not widely support and I don’t know the details of the
+    implementation in the DOI resolver, but you can try this (content
+    negotation is easier with the command line than with a browser):</p>
+    <preformat>curl -LH &quot;Accept: application/pdf&quot; http://dx.doi.org/10.7717/peerj.500 &gt;peerj.500.pdf</preformat>
+    <p>This will save the PDF of the 500th PeerJ paper published last
+    week.</p>
   </sec>
+  <sec id="fragment-identifiers">
+    <title>Fragment identifiers</title>
+    <p>As discussed in
+    <ext-link ext-link-type="uri" xlink:href="http://blog.martinfenner.org/2014/08/02/fragment-identifiers-and-dois/">my
+    last blog post</ext-link>, we can use frament identifiers to
+    subsections of a document with DOIs, e.g.
+    <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0103437#s2">http://dx.doi.org/10.1371/journal.pone.0103437#s2</ext-link>
+    or
+    <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.5446/12780#t=00:20,00:27">http://doi.org/10.5446/12780#t=00:20,00:27</ext-link>,
+    just as we can with every other URL. This is a nice way to directly
+    link to a specific document section, e.g. when discussing a paper on
+    Twitter. Fragment identifiers are implemented by the client
+    (typically web browser) and depend on the document type, but for
+    DOIs that resolve to fulltext HTML documents they can add
+    granularity to the DOI without much effort.</p>
+  </sec>
+  <sec id="queries">
+    <title>Queries</title>
+    <p>URLs obviously support queries, but that is a feature I haven’t
+    yet seen with DOIs. Queries would allow interesting features, partly
+    overlapping with what is possible with fragment identifiers and
+    content negotiation, e.g.
+    <monospace>http://dx.doi.org/10.7717/peerj.500?format=pdf</monospace>.
+    II hope to find out more until Sunday.</p>
+  </sec>
+</sec>
+<sec id="outlook">
+  <title>Outlook</title>
+  <p>My biggest wish? Make DOIs more machine-readable. They are
+  primarily intended for human users, enabling them to find the content
+  associated with a DOI. But they sometimes don’t work as well as they
+  could with automated tools, one example are the
+  <ext-link ext-link-type="uri" xlink:href="http://blog.martinfenner.org/2013/10/13/broken-dois/">challenges
+  automatically resolving a DOI</ext-link> that I described in a blog
+  post last year. Thinking about DOIs as URLs - and using them this way
+  - is the right direction.</p>
 </sec>
 </body>
 <back>
