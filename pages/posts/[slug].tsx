@@ -56,6 +56,12 @@ const Post = (props) => {
         <meta name="citation_journal_title" content="Gobbledygook" />
         <meta name="citation_language" content="en" />
         <meta name="citation_keywords" content={props.post.primary_tag.name} />
+        <meta
+          name="citation_pdf_url"
+          content={
+            'https://blog.martinfenner.org/pdf/' + props.post.slug + '.pdf'
+          }
+        />
 
         <meta name="og:title" content={props.post.title} />
         <script type="application/ld+json">
