@@ -180,69 +180,7 @@ following questions:</p>
   place of treatment, rare disease or treatment, occupation or place of
   work, etc. It is the consensus of the authors of the
   <italic><italic>BMJ</italic></italic> paper that datasets with three
-  or more indirect identifiers should be evaluated for the risk that
-  individuals might be identifiable before they are made available,</p>
-  <p>In contrast to
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://usefulchem.wikispaces.com/">Open
-  Notebook Science</ext-link>, it is impossible to make the results of a
-  clinical trial publicly available before the trial is completed. The
-  statistical design of the clinical trial is based on the number of
-  patients needed to show a significant difference – looking at interim
-  data could influence patient recruitment. Double-blind designs (where
-  neither patient nor treating physician now which treatment arm the
-  patient is in) are based on the same principle.</p>
-  <p>In clinical research there is often more at stake than the
-  well-being of patients and the careers of the scientists involved.
-  <italic><italic>Pfizer</italic></italic> and
-  <italic><italic>Roche</italic></italic> last week each lost $1 billion
-  in
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://www.marketwatch.com/story/abbott-pfizer-lead-drug-stocks-lower-2010-03-12">stock
-  market value</ext-link> after they both announced
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://www.pharmastrategyblog.com/2010/03/more-phase-iii-cancer-trials-flop-pfizer-sutent-and-roche-avastin.html">negative
-  results of large phase III cancer trials</ext-link>. Drug companies
-  therefore have a great interest in whether and when research findings
-  are published, and that includes the raw clinical data. The selective
-  publication of positive research findings is called
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://blogs.nature.com/mfenner/2009/11/18/publication-bias-in-clinical-trials">publication
-  bias</ext-link> and the
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://blogs.nature.com/mfenner/2008/08/02/fdaaa-push-to-open-data-in-clinical-medicine">mandatory
-  reporting of clinical trial results in ClinicalTrials.gov</ext-link>
-  was introduced by the FDA to reduce publication bias.</p>
-</sec>
-<sec id="summary">
-  <title>Summary</title>
-  <p>Online tools can help with doing clinical research and there is
-  probably a lot of untapped potential. From the perspective of an
-  individual researcher or a small research group, it probably makes the
-  most sense to develop and/or use tools that solve specific problems. I
-  use the online project management tool
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://basecamphq.com/">Basecamp</ext-link>
-  to coordinate one clinical research project. And I have created a
-  web-based
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://www.mh-hannover.de/studien/">clinical
-  trials registry</ext-link> for our university hospital. The internet
-  version of this registry helps patients and referring physicians to
-  find clinical trials at our institution. The intranet version helps us
-  manage our clinical trials, e.g. by keeping all required documents in
-  one place, keeping track of the patients registered in clinical
-  trials, and serious adverse event reporting. And I don't see why
-  clinical researchers can't adopt the
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://pantonprinciples.org/">Panton
-  Principles</ext-link> – which endorse that data related to published
-  science should be explicitly placed in the public domain – whenever
-  possible.</p>
-</sec>
-<sec id="references">
-  <title>References</title>
-  <p><italic><italic>Hrynaszkiewicz et al</italic></italic>. Preparing
-  raw clinical data for publication: guidance for journal editors,
-  authors, and peer reviewers. <italic><italic>BMJ</italic></italic>
-  2010
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://dx.doi.org/10.1136/bmj.c181">https://doi.org/10.1136/bmj.c181</ext-link></p>
-  <p><italic><italic>Simmonds et al</italic></italic>. Meta-analysis of
-  individual patient data from randomized trials: a review of methods
-  used in practice. <italic><italic>Clin Trials</italic></italic> 2005
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611095611/http://dx.doi.org/10.1191/1740774505cn087oa">https://doi.org/10.1191/1740774505cn087oa</ext-link></p>
+  or m</p>
 </sec>
 </body>
 <back>

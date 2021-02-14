@@ -130,18 +130,18 @@ easy to add a Creative Commons license so that it is clear how the chart
 can be reused. Datawrapper is intended for online use, but the service
 can also save the charts as PNG or PDF. We would want to add saving to
 SVG (already used for online rendering) for easier embedding into the
-XML and epub versions of articles.</p>
+XML and ePub versions of articles.</p>
 <sec id="references">
   <title>References</title>
   <p>D’Arcy, E., &amp; Moynihan, R. (2009). Can the relationship between
   doctors and drug companies ever be a healthy one? <italic>PLoS
   Medicine</italic>, <italic>6</italic>(7), e1000075. Retrieved from
-  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1000075">http://dx.doi.org/10.1371/journal.pmed.1000075</ext-link></p>
+  <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pmed.1000075">http://doi.org/10.1371/journal.pmed.1000075</ext-link></p>
   <p>Moher, D., Liberati, A., Tetzlaff, J., &amp; Altman, D. G. (2009).
   Preferred reporting items for systematic reviews and meta-analyses:
   The pRISMA statement. <italic>PLoS Medicine</italic>,
   <italic>6</italic>(7), e1000097. Retrieved from
-  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1000097">http://dx.doi.org/10.1371/journal.pmed.1000097</ext-link></p>
+  <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pmed.1000097">http://doi.org/10.1371/journal.pmed.1000097</ext-link></p>
 </sec>
 </body>
 <back>

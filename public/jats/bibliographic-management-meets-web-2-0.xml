@@ -31,9 +31,9 @@
 <body>
 <p>Regular readers of this blog know that I often talk about
 bibliographic management tools (most recently
-<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://network.nature.com/people/mfenner/blog/2009/05/17/what-is-the-right-reference-manager-for-you">here</ext-link>
+<ext-link ext-link-type="uri" xlink:href="https://blog.martinfenner.org/posts/what-is-the-right-reference-manager-for-you">here</ext-link>
 and
-<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://network.nature.com/people/mfenner/blog/2009/03/15/reference-manager-overview">here</ext-link>),
+<ext-link ext-link-type="uri" xlink:href="https://blog.martinfenner.org/posts/reference-manager-overview">here</ext-link>),
 and it was probably for this reason that I was invited to an interesting
 full-day workshop last week at the
 <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://www.royalfree.nhs.uk/">Royal
@@ -49,7 +49,7 @@ Anagnostelis</ext-link>, and was attended by about 20 science
 librarians. We had demos of the following software:</p>
 <list list-type="bullet">
   <list-item>
-    <p><ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://www.endnoteweb.com/">EndnoteWeb</ext-link>,
+    <p><ext-link ext-link-type="uri" xlink:href="https://endnote.com/">EndnoteWeb</ext-link>,
     demo by Stephanie Marshall</p>
   </list-item>
   <list-item>
@@ -57,19 +57,19 @@ librarians. We had demos of the following software:</p>
     demo by Aaron Maierhofer</p>
   </list-item>
   <list-item>
-    <p><ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://www.connotea.org/">Connotea</ext-link>,
+    <p><ext-link ext-link-type="uri" xlink:href="https://en.wikipedia.org/wiki/Connotea">Connotea</ext-link>,
     demo by Grace Barnes</p>
   </list-item>
   <list-item>
-    <p><ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://www.citeulike.org/">CiteULike</ext-link>,
+    <p><ext-link ext-link-type="uri" xlink:href="https://en.wikipedia.org/wiki/CiteULike">CiteULike</ext-link>,
     demo by Kevin Emamy</p>
   </list-item>
   <list-item>
-    <p><ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://www.zotero.org/">Zotero</ext-link>,
+    <p><ext-link ext-link-type="uri" xlink:href="https://www.zotero.org/">Zotero</ext-link>,
     demo by Rintze Zelle</p>
   </list-item>
   <list-item>
-    <p><ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://www.mendeley.com/">Mendeley</ext-link>,
+    <p><ext-link ext-link-type="uri" xlink:href="https://www.mendeley.com/">Mendeley</ext-link>,
     demo by Victor Henning and Jan Reichelt</p>
   </list-item>
 </list>
@@ -84,7 +84,7 @@ several popular programs without these features
 Manager</ext-link>,
 <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://www.citavi.com/">Citavi</ext-link>
 and
-<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://mekentosj.com/papers/">Papers</ext-link>),
+<ext-link ext-link-type="uri" xlink:href="https://www.papersapp.com/">Papers</ext-link>),
 and
 <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://jabref.sourceforge.net/">JabRef</ext-link>
 and similar tools for
@@ -131,19 +131,19 @@ be an issue when licenses have to be renewed. I've set up a
 manager feature comparison chart</ext-link> a few months ago, and have
 updated this chart after the workshop.</p>
 <p>One feature I really like in <italic><italic>Papers</italic></italic>
-is fulltext search of the PDF files in your library, which I think is a
+is full-text search of the PDF files in your library, which I think is a
 much easier way to find information than tagging (and David Crotty
 agrees with me:
 <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://www.cshblogs.org/cshprotocols/2009/02/23/why-article-tagging-doesnt-work/">Why
-article tagging doesnâ€™t work</ext-link>). I was therefore happy to see
+article tagging doesn't work</ext-link>). I was therefore happy to see
 that <italic><italic>Zotero</italic></italic>,
 <italic><italic>Mendeley</italic></italic>,
 <italic><italic>CiteULike</italic></italic> and
 <italic><italic>Refworks</italic></italic> all support this feature,
-something I have overlooked before. Fulltext search is one more reason
+something I have overlooked before. Full-text search is one more reason
 that online reference managers should be able to store PDF files.
-Another reason is that several people working on the same reearch
-project shouldn't all have to go out and download the fulltext files
+Another reason is that several people working on the same research
+project shouldn't all have to go out and download the full-text files
 themselves – or even worse, email them to each other. This sharing is
 not only an important features of Web 2.0 bibliographic tools, but is
 obviously also an area of potential problems with copyright (for papers
@@ -181,19 +181,8 @@ Source and <italic><italic>Mendeley</italic></italic>: Web 2.0 company
 that plans free and paid services. This might actually be a deciding
 factor in determining which of these tools will be the most successful
 in the long-term future.</p>
-<p>But in the end, the similarities far outweight the differences
-between these tools. We didn't have time left to talk more about this,
-but for Bibliographic Management to move to Web 2.0, it's not really
-just about technology, but rather mostly about the users. We had an
-interesting discussion about that topic a few weeks ago
-(<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20150908064949/http://network.nature.com/people/mfenner/blog/2009/06/14/how-to-close-the-digital-divide-among-scientists">How
-to close the digital divide among scientists</ext-link>). I believe that
-ultimately your collection of references should sit in a database that
-is accessible from the web. Some references you want to share with
-everybody (e.g. via tools like FriendFeed), and that includes your own
-publications. And some references you want to share with private groups
-of people, e.g. people in your lab or when coauthoring a paper. All the
-tools presented in the workshop allow you to do that.</p>
+<p>But in the end, the similarities far outweigh the differences between
+these tools. We didn't</p>
 </body>
 <back>
 </back>

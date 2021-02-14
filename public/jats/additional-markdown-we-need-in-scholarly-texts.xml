@@ -95,26 +95,23 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     <table style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; max-width: 100%; background-color: rgb(255, 255, 255); font-size: 19px; font-family: ff-tisa-sans-web-pro, Arial, sans-serif; width: 750px; margin-bottom: 21px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
       <thead style="box-sizing: border-box;">
         <tr style="box-sizing: border-box;">
-          <th align="center" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">Centered
-          Header</th>
-          <th align="right" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">Right
-          Aligned</th>
-          <th align="left" style="box-sizing: border-box; padding: 8px; vertical-align: bottom; border-top: 0px; font-weight: bold">Left
-          Aligned</th>
+          <th align="center">Centered Header</th>
+          <th align="right">Right Aligned</th>
+          <th align="left">Left Aligned</th>
         </tr>
       </thead>
       <tbody style="box-sizing: border-box;">
         <tr style="box-sizing: border-box;">
-          <td align="center" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)">First</td>
-          <td align="right" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)">12.0</td>
-          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)">Example
-          of a row that spans multiple lines.</td>
+          <td align="center">First</td>
+          <td align="right">12.0</td>
+          <td align="left">Example of a row that spans multiple
+          lines.</td>
         </tr>
         <tr style="box-sizing: border-box;">
-          <td align="center" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)">Second</td>
-          <td align="right" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)">5.0</td>
-          <td align="left" style="box-sizing: border-box; padding: 8px; vertical-align: top; border-top: 1px solid rgb(221, 221, 221)">Here’s
-          another one. Note the blank line between rows.</td>
+          <td align="center">Second</td>
+          <td align="right">5.0</td>
+          <td align="left">Here’s another one. Note the blank line
+          between rows.</td>
         </tr>
       </tbody>
     </table>

@@ -141,13 +141,12 @@ or provide APIs or libraries. Some examples would be</p>
   </list-item>
 </list>
 <p>This list doesn’t include all the generic software needed to build
-open science tools, with <bold><bold>git</bold></bold> being a perfect
-example. The last project is obviously the project I have been working
-on the past two years for PLOS, but I have tried to support the other
-projects mentioned in various ways from small code contributions to
-promotion via this blog and presentations, or direct work in these
-projects. But strangely enough, I haven’t really realized this until
-now.</p>
+open science tools, with <bold>git</bold> being a perfect example. The
+last project is obviously the project I have been working on the past
+two years for PLOS, but I have tried to support the other projects
+mentioned in various ways from small code contributions to promotion via
+this blog and presentations, or direct work in these projects. But
+strangely enough, I haven’t really realized this until now.</p>
 <p>Not surprisingly infrastructure, servers, libraries and other
 building blocks are exactly the areas where open source software has
 been most successful so far, and this is of course a core part of the

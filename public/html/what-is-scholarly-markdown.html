@@ -1,0 +1,54 @@
+<p>One of the important discussions taking place at the <a href="https://github.com/scholmd/scholmd/wiki">Markdown for Science</a> workshop last weekend was about the definition of Scholarly Markdown. We came up with <a href="https://github.com/scholmd/scholmd/wiki/What-is-Markdown">this</a>:</p>
+<ol>
+<li>Markdown that supports the requirements of scientific texts</li>
+<li>Markdown as format that glues open scientific text resources together</li>
+<li>A reference implementation with documentation and tests</li>
+<li>A community</li>
+</ol>
+<p>We also agreed that <strong><strong>Scholarly Markdown</strong></strong> is a better term than <strong><strong>Markdown for Science</strong></strong>, as it also includes the Social Sciences and Humanities. And we agreed on a hashtag, <a href="https://twitter.com/search?q=%23scholmd&amp;src=typd">#scholmd</a>.</p>
+<p>I like #3 and #4, and I was not surprised to see #1. #2 is one of the most important outcomes of the workshop for me personally, and was reflected in the discussion we had in the breakout session on <em>What is needed for Markdown to be adopted by the scientific community?</em> One important strategy is the following:</p>
+<blockquote>
+We need an online tool that makes it easy for scholars to write scholarly markdown in a collaborative manner.
+</blockquote>
+<p>We called this the <strong><strong>Google Docs for Scientists</strong></strong> (Google Docs is a good collaborative tool, but is lacking some important features required for scientific documents, e.g. integrated citation management). <a href="https://www.authorea.com/">Authorea</a> was mentioned as a promising example of this concept. It was also noted that some previous efforts failed, because the tool looked too different from Microsoft Word. But building such a tool wouldn’t really require markdown as a file format, and could for example also be done directly in HTML5. This would be a reasonable strategy, but in my mind is falling short because I think the problem we need to solve is more complicated than making collaboration easier with tools that look like Microsoft Word. We therefore also discussed a different strategy:</p>
+<blockquote>
+We need multiple tools that make it easy for scholars to create scholarly markdown documents and openly share them. This collaborative work is not limited to authoring scholarly papers, but also includes shorter scholarly texts, e.g. experimental results, lab notebooks, lecture notes, blog posts and working papers. Ease of use is not only defined by the writing experience, but also how easy it is to share documents with others.
+</blockquote>
+<p>This definition almost sounds like a definition for Open Science, and assumes that data - and increasingly software - are an integral part of reporting science. This makes <a href="https://www.scienceexchange.com/reproducibility">reproducibility</a> of scientific results much easier, and one nice example how this can be done is the integration of markdown into the R statistical software, using the <a href="http://yihui.name/knitr/">knitr package</a>. Using the <a href="http://article-level-metrics.plos.org/plos-alm-data/">May 2013 PLOS article-level metrics data</a> which are freely available for download, the R code below can be embedded into a markdown file and will produce the bar plot below when the markdown file is run in R (to try this yourself, download the ALM data and <a href="https://github.com/articlemetrics/plosOpenR/blob/master/barPlotSummary.Rmd">markdown file for this article</a>).</p>
+<pre><code># Load required libraries
+library(reshape2)
+
+# Load the data from the bulk download, filter out DOIs that are not from PLoS journals
+alm &lt;- read.csv(&quot;data-alm/alm_report_2013-05-20.csv&quot;, encoding = &quot;UTF8&quot;, sep = &quot;,&quot;, stringsAsFactors=FALSE, na.strings=c(&quot;0&quot;))
+alm &lt;- subset(alm, (substr(alm$doi,1,15) == &quot;10.1371/journal&quot;))
+alm$publication_date &lt;- as.Date(alm$publication_date)
+alm$counter_html &lt;- as.numeric(alm$counter_html)
+
+# Options
+plos.start_date &lt;- NA
+plos.end_date &lt;- NA
+plos.colors &lt;- c(&quot;#304345&quot;,&quot;#304345&quot;,&quot;#789aa1&quot;,&quot;#789aa1&quot;,&quot;#789aa1&quot;,&quot;#ad9a27&quot;,&quot;#ad9a27&quot;,&quot;#ad9a27&quot;,&quot;#ad9a27&quot;,&quot;#ad9a27&quot;,&quot;#ad9a27&quot;,&quot;#ad9a27&quot;)
+
+# Aggregate notes and comments
+alm$comments &lt;- as.numeric(alm$comments)
+
+# Aggregate Mendeley
+alm$mendeley &lt;- rowSums(subset(alm, select=c(&quot;mendeley_readers&quot;,&quot;mendeley_groups&quot;)), na.rm=TRUE)
+alm$mendeley[alm$mendeley == 0] &lt;- NA
+
+# Use subset of columns
+alm &lt;- subset(alm, select=c(&quot;counter_html&quot;,&quot;pmc_html&quot;,&quot;crossref&quot;,&quot;scopus&quot;,&quot;pubmed&quot;,&quot;mendeley&quot;,&quot;citeulike&quot;,&quot;comments&quot;,&quot;researchblogging&quot;,&quot;facebook&quot;,&quot;twitter&quot;,&quot;wikipedia&quot;))
+
+# Calculate percentage of values that are not missing (i.e. have a count of at least 1)
+colSums &lt;- colSums(!is.na(alm)) * 100 / length(alm$counter_html)
+exactSums &lt;- sum(as.numeric(alm$pmc_html),na.rm =TRUE)
+
+# Plot the chart.
+opar &lt;- par(mar=c(1,7,2,1)+0.1,omi=c(1,0.3,1,1))
+plos.names &lt;- c(&quot;PLoS HTML Views&quot;, &quot;PMC HTML Views&quot;,&quot;CrossRef&quot;,&quot;Scopus&quot;,&quot;PubMed Citations&quot;, &quot;Mendeley&quot;,&quot;CiteULike&quot;,&quot;PLoS Comments&quot;,&quot;Research Blogging&quot;,&quot;Facebook&quot;,&quot;Twitter&quot;,&quot;Wikipedia&quot;)
+y &lt;- barplot(colSums,horiz=TRUE,col=plos.colors, border = NA, xlab=plos.names, xlim=c(0,120), axes=FALSE, names.arg=plos.names,las=1, adj=0)
+text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
+<figure>
+<img src="http://blog.martinfenner.org/images/barplot-2013-06-17.svg" class="kg-image" alt="Proportion of articles covered by source. Article-level metrics for all 80,602 PLOS journal articles published until May 20, 2013." /><figcaption aria-hidden="true"><strong>Proportion of articles covered by source</strong>. Article-level metrics for all 80,602 PLOS journal articles published until May 20, 2013.</figcaption>
+</figure>
+<p>In a way this approach to scholarly markdown is much more difficult than building a nice online collaborative writing tool. But for me scholarly markdown is not about competing with Microsoft Word, it is about building something new that scholars want to use because it allows them to do something that is impossible with the existing tools. For the same reason my todo item at the end of the workshop was <em>think about document type where markdown shines</em>. The R example above is a great example where markdown shines. If you can think of additional examples, please add them to the comments.</p>

@@ -167,20 +167,7 @@ your papers and other research outputs to your ORCID profile.</p>
   e.g. <monospace>Accept: application/x-bibtex</monospace>. I’ve also
   added basic error checking with cleanup of names and removal of
   duplicates.</italic></p>
-  <list list-type="bullet">
-    <list-item>
-      <p>html (the default): forward to profile on the ORCID website</p>
-    </list-item>
-    <list-item>
-      <p>rss - RSS feed</p>
-    </list-item>
-    <list-item>
-      <p>bib - bibtex file</p>
-    </list-item>
-    <list-item>
-      <p>json - Citeproc JSON</p>
-    </list-item>
-  </list>
+  <p>html (the default): forward to pr</p>
 </sec>
 </body>
 <back>

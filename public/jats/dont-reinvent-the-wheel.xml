@@ -37,9 +37,9 @@ customer-facing apps. One important aspect of that infrastructure work
 is to not duplicate efforts.</p>
 <fig>
   <caption><p>Image by Cocoabiscuit
-  <ext-link ext-link-type="uri" xlink:href="http://www.flickr.com/photos/jfgallery/5673321593/">on
+  <ext-link ext-link-type="uri" xlink:href="https://www.flickr.com/photos/jfgallery/5673321593/">on
   Flickr</ext-link></p></caption>
-  <graphic mimetype="image" mime-subtype="jpeg" xlink:href="http://blog.martinfenner.org/images/5673321593_e6a7faa36d_z.jpg" xlink:title="" />
+  <graphic mimetype="image" mime-subtype="jpeg" xlink:href="https://martinfenner.ghost.io/content/images/2021/02/5673321593_e6a7faa36d_w.jpg" xlink:title="" />
 </fig>
 <p>A good example is information (or metadata) about scholarly
 publications. I am the technical lead for the open source
@@ -139,7 +139,7 @@ publishers can own more than one DOI prefix. To make this task a little
 easier I built a CrossRef member search interface into the ALM
 application:</p>
 <fig>
-  <graphic mimetype="image" mime-subtype="png" xlink:href="http://blog.martinfenner.org/images/crossref_api.png" xlink:title="" />
+  <graphic mimetype="image" mime-subtype="png" xlink:href="https://martinfenner.ghost.io/content/images/2021/02/crossref_api.png" xlink:title="" />
 </fig>
 <p>We can filter API responses by publication date, but it is a better
 idea to use the update date, as it is possible that the metadata have

@@ -165,137 +165,22 @@ particular authoring environment.</p>
 <sec id="going-forward">
   <title>Going Forward</title>
   <p>How can we move forward? I would suggest the following:</p>
-  <list list-type="order">
-    <list-item>
-      <p>Publishers should accept manuscripts in any reasonable file
-      format, which means at least Microsoft Word, Open Office, LaTeX,
-      Markdown, HTML and PDF, but possibly more. This will create a lot
-      of extra work for publishers, but will open the doors for
-      innovation, both in the academic and commercial sector. We will
-      never see significant progress in scholarly authoring tools if the
-      submission step requires manuscripts to be in a single file format
-      (Microsoft Word) - in particular since this file format is a
-      general purpose word processsing format and not something designed
-      specifically for scholarly content. And we want researchers to
-      spend their time doing research and writing up their research, not
-      formatting documents.</p>
-    </list-item>
-    <list-item>
-      <p>To handle this avalanche of unstructured documents, publishers
-      need conversion tools that can transform all these documents into
-      a format that can feed into their editorial and publishing
-      workflows. A limited number of these tools exist already, but this
-      will require a significant development effort. Again, opening up
-      submissions to a variety of file formats will not only foster
-      innovation in authoring tools, but also in document conversion
-      tools.</p>
-    </list-item>
-    <list-item>
-      <p>We should think beyond XML. Many of the workflows designed
-      today center around conversions from one XML format to another,
-      e.g. Microsoft Word to JATS or
-      <ext-link ext-link-type="uri" xlink:href="http://www.tei-c.org/index.xml">TEI</ext-link>
-      (popular in the humanities), often using XLST transforms. Not only
-      is XML difficult for humans to read or edit, but the web and many
-      of the technologies built around it are moving away from XML
-      towards HTML5 and JSON. XML is fine as an important output format
-      for publishing, but maybe not the best format to hold everything
-      together.</p>
-    </list-item>
-    <list-item>
-      <p>As we haven’t come up with a canoical file format for scholarly
-      documents by now, we should give up that idea. XML is great for
-      publisher workflows, but is not something humans can easily edit
-      or read. PDF is still the most widely read format by humans, but
-      is not a good intermediary format. LaTeX is too complex for
-      authors outside of mathematics, physics and related fields, and is
-      not built with web standards in mind. Markdown is promising, but
-      doesn’t easily support highly structured content. And HTML5 and
-      the related ePub are widely popular, but can be hard to edit
-      without a visual editor, and currently don’t include enough
-      standard metadata to support scholarly content out of the box.</p>
-    </list-item>
-    <list-item>
-      <p>The focus should not be on canonical file formats for scholarly
-      documents, but on tools that understand the manuscripts created by
-      researchers and can transform them into something more structured.
-      As we have learned from document conversion tools such as
-      <ext-link ext-link-type="uri" xlink:href="http://johnmacfarlane.net/pandoc/">Pandoc</ext-link>,
-      we can’t do this with a simple find and replace using regular
-      expressions, but need a more structured approach. Pandoc is taking
-      the input document (markdown, LaTeX or HTML) apart and is
-      constructing an abstract syntax tree
-      (<ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</ext-link>)
-      of the document, using parsing expression grammar
-      (<ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/Parsing_expression_grammar">PEG</ext-link>),
-      which includes a set of parsing rules. Parsing expression grammars
-      are fairly new,
-      <ext-link ext-link-type="uri" xlink:href="http://bford.info/pub/lang/peg">first
-      described by Bryan Ford</ext-link> about 10 years ago, but in my
-      mind are a very good fit for the formal grammar of scientific
-      documents. It should be fairly straightforward to generate a
-      variety of output formats from the AST (Pandoc can convert into
-      more than 30 document formats), the hard part is the parsing of
-      the input.</p>
-    </list-item>
-  </list>
-  <p>All this requires a lot of work. Pandoc is a good model to start,
-  but is written in Haskell, a functional programming language that not
-  many people are familar with. For small changes Pandoc allows you to
-  directly manipulate the AST (represented as JSON) using
-  <ext-link ext-link-type="uri" xlink:href="http://johnmacfarlane.net/pandoc/scripting.html">filters</ext-link>
-  written in Haskell or Python. And
-  <ext-link ext-link-type="uri" xlink:href="https://github.com/jgm/pandoc">custom
-  writers</ext-link> for other document formats can be written using
-  <ext-link ext-link-type="uri" xlink:href="http://www.lua.org/">Lua</ext-link>,
-  another interesting programming language that not many people know
-  about. Lua is a fast and relatively easy to learn scripting language
-  that can be easily embedded into other languages, and for similar
-  reasons is also used to
-  <ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/Wikipedia:Lua">extend
-  the functionality of Wikipedia</ext-link>. PEG parsers in other
-  languages include
-  <ext-link ext-link-type="uri" xlink:href="http://treetop.rubyforge.org/">Treetop</ext-link>
-  (Ruby),
-  <ext-link ext-link-type="uri" xlink:href="http://pegjs.majda.cz/">PEG.js</ext-link>
-  (Javascript), and
-  <ext-link ext-link-type="uri" xlink:href="http://www.antlr.org/">ANTLR</ext-link>,
-  a popular parser generator that also includes PEG features.</p>
-  <p>But I think the effort to build a solid open source conversion tool
-  for scholarly documents is worth it, in particular for smaller
-  publishers and publishing platforms who can’t afford the commercial
-  Microsoft Word to JATS conversion tools. We shouldn’t take any
-  shortcuts - e.g. by focussing on XML and XLST transforms - and we can
-  improve this tool over time, e.g. by starting with a few input and
-  output formats. This tool will be valuable beyond authoring, as it can
-  also be very helpful to convert published scholarly content into other
-  formats such as ePub, and in text mining, which in many ways tries to
-  solve many of the same problems. The
-  <ext-link ext-link-type="uri" xlink:href="http://johnmacfarlane.net/pandoc/scripting.html">Pandoc
-  documentation</ext-link> includes an example of extracting all URLs
-  out of a document, and this can be modified to extract other content.
-  In case you wonder whether I gave up on the idea of
-  <ext-link ext-link-type="uri" xlink:href="http://blog.martinfenner.org/tags.html#markdown-ref">Scholarly
-  Markdown</ext-link> - not at all. To me this is a logical next step,
-  opening up journal submission systems to Scholarly Markdown and other
-  evolving file formats. And Pandoc, one of the most interesting tools
-  in this space, is a markdown conversion tool at its heart. The next
-  steps could be the following:</p>
-  <list list-type="bullet">
-    <list-item>
-      <p>write a custom writer in Lua that generates JATS output from
-      Pandoc</p>
-    </list-item>
-    <list-item>
-      <p>explore how difficult it would be to add Microsoft Word .docx
-      as Pandoc input format</p>
-    </list-item>
-    <list-item>
-      <p>develop Pandoc filters relevant for scholarly documents (e.g.
-      <ext-link ext-link-type="uri" xlink:href="http://blog.martinfenner.org/2013/07/02/auto-generating-links-to-data-and-resources/">auto-linking
-      accession numbers of biomedical databases</ext-link>)</p>
-    </list-item>
-  </list>
+  <p>Publishers should accept manuscripts in any reasonable file format,
+  which means at least Microsoft Word, Open Office, LaTeX, Markdown,
+  HTML and PDF, but possibly more. This will create a lot of extra work
+  for publishers, but will open the doors for innovation, both in the
+  academic and commercial sector. We will never see significant progress
+  in scholarly authoring tools if the submission step requires
+  manuscripts to be in a single file format (Microsoft Word) - in
+  particular since this file format is a general purpose word
+  processsing format and not something designed specifically for
+  scholarly content. And we want researchers to spend their time doing
+  research and writing up their research, not formatting documents.</p>
+  <p>To handle this avalanche of unstructured documents, publishers need
+  conversion tools that can transform all these documents into a format
+  that can feed into their editorial and publishing workflows. A limited
+  number of these tools exist already, but this will require a
+  significant development effort. Again, opening up submissions to a</p>
 </sec>
 </body>
 <back>

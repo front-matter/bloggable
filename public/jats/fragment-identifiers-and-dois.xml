@@ -63,7 +63,7 @@ usually much more structured, with most journal articles following the
 - introduction, methods, results, and discussion - format, usually with
 additional sections such as abstract, references, etc. One approach to
 link to figures and tables within a scholarly articles is using
-<ext-link ext-link-type="uri" xlink:href="http://blogs.plos.org/mfenner/2011/03/26/direct-links-to-figures-and-tables-using-component-dois/">component
+<ext-link ext-link-type="uri" xlink:href="https://blog.martinfenner.org/posts/direct-links-to-figures-and-tables-using-component-dois/">component
 DOIs</ext-link>, e.g. specific DOIs for parts of a larger document. The
 publisher <bold><bold>PLOS</bold></bold> has been using them for a long
 time, and the
@@ -79,19 +79,19 @@ We can therefore use a DOI with a fragment identifier to</p>
 <list list-type="bullet">
   <list-item>
     <p>Results section:
-    <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0103437#s2">http://dx.doi.org/10.1371/journal.pone.0103437#s2</ext-link></p>
+    <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.1371/journal.pone.0103437#s2">http://doi.org/10.1371/journal.pone.0103437#s2</ext-link></p>
   </list-item>
   <list-item>
     <p>Specific reference:
-    <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.12688/f1000research.4263.1#ref-7">http://dx.doi.org/10.12688/f1000research.4263.1#ref-7</ext-link></p>
+    <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.12688/f1000research.4263.1#ref-7">http://doi.org/10.12688/f1000research.4263.1#ref-7</ext-link></p>
   </list-item>
   <list-item>
     <p>Decision letter:
-    <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.7554/eLife.00471#decision-letter">http://dx.doi.org/10.7554/eLife.00471#decision-letter</ext-link></p>
+    <ext-link ext-link-type="uri" xlink:href="http://doi.org/10.7554/eLife.00471#decision-letter">http://doi.org/10.7554/eLife.00471#decision-letter</ext-link></p>
   </list-item>
 </list>
-<p>Obviously this only works if the DOI is resolved to the fulltext of a
-resource, and not a landing page. And how the fragment identifiers are
+<p>Obviously this only works if the DOI is resolved to the full-text of
+a resource, and not a landing page. And how the fragment identifiers are
 named and implemented is up to the publisher, and the DOI resolver has
 no information about them. These specific links are particularly nice
 for discussions of a paper, whether it is on Twitter or in a discussion
@@ -102,7 +102,7 @@ to
 This kind of linking works particularly well if the publisher is using a
 fine-grained system of fragment identifiers, the publisher PeerJ for
 example allows links to a specific paragraph - e.g.
-<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.7717/peerj.500#p-15">http://dx.doi.org/10.7717/peerj.500#p-15</ext-link>
+<ext-link ext-link-type="uri" xlink:href="http://doi.org/10.7717/peerj.500#p-15">http://doi.org/10.7717/peerj.500#p-15</ext-link>
 - and allows users to
 <ext-link ext-link-type="uri" xlink:href="http://blog.peerj.com/post/62886292466/peerj-questions-a-new-way-to-never-publish-forget">ask
 a question</ext-link> right next to that section.</p>
@@ -125,7 +125,7 @@ this, whereas JSON – using
 <ext-link ext-link-type="uri" xlink:href="http://tools.ietf.org/html/rfc6901">JSON
 Pointer</ext-link> – would work well.</p>
 <p><italic>Update 8/2/14:
-<ext-link ext-link-type="uri" xlink:href="https://twitter.com/ldodds">Leight
+<ext-link ext-link-type="uri" xlink:href="https://twitter.com/ldodds">Leigh
 Dodds</ext-link> points out that handling the fragment identifier is up
 to the client and the fragment identifier is not sent to the server.
 Acrobat reader for example supports the <monospace>#page=</monospace>

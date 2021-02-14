@@ -4,6 +4,7 @@ import Head from 'next/head'
 import ReactHtmlParser from 'react-html-parser'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import fs from 'fs'
 
 import { GetStaticPaths } from 'next'
 import { getPosts, getSinglePost } from '../../lib/posts'
@@ -28,6 +29,8 @@ export async function getStaticProps(context) {
       props: { notFound: true }
     }
   }
+
+  post.htmlout = fs.readFileSync('./public/html/' + post.slug + '.html', 'utf8')
 
   return {
     props: { post }
@@ -69,9 +72,7 @@ const Post = (props) => {
       <IndexNavbar fluid />
       <div className="container mx-4 md:mx-auto px-6 py-16 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
-          <div
-            className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1"
-          >
+          <div className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1">
             {props.post.primary_tag.name}
           </div>
           <h1 className="mt-1">{props.post.title}</h1>
@@ -83,20 +84,32 @@ const Post = (props) => {
             published={new Date(props.post.published_at)}
             readingTime={props.post.reading_time}
           />
-          <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
+          <div className="text-lg">{ReactHtmlParser(props.post.htmlout)}</div>
           <h2>Other Formats</h2>
           <div>
             <span className="mr-4">
-              <a className="font-sans border-b-0" href={'/epub/' + props.post.slug + '.epub'}>
-              <i className="fas fa-book"></i> ePub</a>
+              <a
+                className="font-sans border-b-0"
+                href={'/epub/' + props.post.slug + '.epub'}
+              >
+                <i className="fas fa-book"></i> ePub
+              </a>
             </span>
             <span className="mr-4">
-              <a className="font-sans border-b-0" href={'/pdf/' + props.post.slug + '.pdf'}>
-              <i className="fas fa-file-pdf"></i> PDF</a>
+              <a
+                className="font-sans border-b-0"
+                href={'/pdf/' + props.post.slug + '.pdf'}
+              >
+                <i className="fas fa-file-pdf"></i> PDF
+              </a>
             </span>
             <span>
-              <a className="font-sans border-b-0" href={'/jats/' + props.post.slug + '.xml'}>
-              <i className="fas fa-file-code"></i> JATS</a>
+              <a
+                className="font-sans border-b-0"
+                href={'/jats/' + props.post.slug + '.xml'}
+              >
+                <i className="fas fa-file-code"></i> JATS
+              </a>
             </span>
           </div>
         </div>

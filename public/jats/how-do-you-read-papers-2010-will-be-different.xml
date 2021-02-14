@@ -168,65 +168,7 @@ will see some significant changes in how we read papers in 2010.</p>
   interesting device for reading scholarly papers. In contrast to
   e-Readers it will not use electronic ink. This means a shorter battery
   life, but allows color documents and many other more traditional
-  computer uses. Based on the iPod and iPhone experience, many people
-  think that the iSlate will change the way we use tablet computers. One
-  of them is <italic><italic>Kent Anderson</italic></italic>
-  (<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611111551/http://scholarlykitchen.sspnet.org/2009/10/02/game-over-man-has-the-disruption-of-publishing-already-occurred/">Game
-  Over, Man – Has the Disruption of Publishing Already
-  Occurred?</ext-link>).</p>
-  <p>Sports Illustrated did a very nice
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611111551/http://sportsillustrated.cnn.com/2009/magazine/12/02/tablet/index.html">demo
-  of a fictional tablet computer</ext-link> in December, and it is
-  obvious that many of these concepts can also be applied to scholarly
-  publishing.</p>
-</sec>
-<sec id="reading-web-pages">
-  <title>Reading Web Pages</title>
-  <p>Most examples mentioned above try to reproduce the experience of
-  reading something printed on paper on an electronic device. An
-  alternative approach would move beyond the traditional format of a
-  paper and rather takes advantage of the electronic medium. And it
-  looks like the web technologies HTML5 and Flash are best suited for
-  this. Cell Press was
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611111551/http://network.nature.com/people/mfenner/blog/2009/07/26/how-does-the-article-of-the-future-look-like">experimenting
-  with this approach</ext-link> in 2009, and officially launched their
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611111551/http://beta.cell.com/index.php/2010/01/cell-launches-article-of-the-future-format/">Article
-  of the Future</ext-link> with the first 2010 issue of Cell (all papers
-  will be available without subscription for 60 days, you can provide
-  feedback
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611111551/http://beta.cell.com/index.php/feedback-cell-press-new-article-format/">here</ext-link>).
-  The basic idea of the Article of the Future is to break away from the
-  concept of reading a paper from beginning to end, and to make
-  navigation between the different parts of a paper much easier.</p>
-  <p>Whereas the <italic><italic>Article of the Future</italic></italic>
-  tries to make navigation with a paper easier, the
-  <italic><italic>PLoS</italic></italic>
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611111551/http://network.nature.com/people/mfenner/blog/2009/08/15/plos-one-interview-with-peter-binfield">article-level
-  metrics</ext-link> help with navigating to related content: citations,
-  blog posts, reader comments, etc. The
-  <italic><italic>Notes</italic></italic> feature lets registered users
-  highlight text for specific comments – very much what you would do on
-  a printed paper (but with the added benefit that everybody can see
-  this note).</p>
-  <p>I'm most excited about projects that enhance the scientific paper
-  instead of recreating an exact electronic version of the traditional
-  paper. And HTML is a more promising format than PDF for these
-  approaches. <italic><italic>Michael Clarke</italic></italic> (with
-  whom I had the pleasure to do a session at SciFoo 2009) reminded us
-  that <italic><italic>Tim Berners-Lee</italic></italic> invented the
-  WWW in 1991 to facilitate scientific communication (with HTML and
-  navigation both within and between documents as central concepts), but
-  papers and journals have changed surprisingly little in the last 18
-  years
-  (<ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611111551/http://scholarlykitchen.sspnet.org/2010/01/04/why-hasnt-scientific-publishing-been-disrupted-already/">Why
-  Hasn't Scientific Publishing Been Disrupted Already?</ext-link>).</p>
-  <p>fn1. Many journals are scanning their older papers and make them
-  available in electronic form, e.g.
-  <italic><italic>Nature</italic></italic>. The first issue of
-  <italic><italic>Nature</italic></italic> from 1869 can be seen
-  <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20120611111551/http://www.nature.com/nature/about/first/index.html">here</ext-link>.</p>
-  <p>fn2. We all know that computers haven't brought us the paperless
-  office, but that we all use more paper than 10 years ago.</p>
+  computer uses. Based on the iPod and iPhone experien</p>
 </sec>
 </body>
 <back>
