@@ -44,6 +44,17 @@ const Post = (props) => {
     <>
       <Head>
         <title>{props.post.title}</title>
+
+        <meta name="citation_title" content={props.post.title} />
+        <meta name="citation_author" content={props.post.primary_author.name} />
+        <meta
+          name="citation_publication_date"
+          content={new Date(props.post.published_at).toLocaleDateString(
+            'en-US'
+          )}
+        />
+        <meta name="citation_journal_title" content="Gobbledygook" />
+
         <meta name="og:title" content={props.post.title} />
         <script type="application/ld+json">
           {JSON.stringify({
