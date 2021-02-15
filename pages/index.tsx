@@ -12,13 +12,13 @@ import {
 import { getPosts } from '../lib/posts'
 import { pluralize } from '../lib/helpers'
 import { generateRssFeed } from '../lib/feed'
-// import {
-//   generateHtml,
-//   generateEpub,
-//   generatePdf,
-//   generateJats
-// } from '../lib/pandoc'
-// import { updateIndex } from '../lib/algolia'
+import {
+  generateHtml
+  //   generateEpub,
+  //   generatePdf,
+  //   generateJats
+} from '../lib/pandoc'
+import { updateIndex } from '../lib/algolia'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
 import Footer from '../components/Footers/Footer.js'
 import Byline from '../components/Byline'

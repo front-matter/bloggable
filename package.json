@@ -30,6 +30,7 @@
     "next-plausible": "^1.3.1",
     "node-pandoc-promise": "^0.0.6",
     "node-sass": "4.14.1",
+    "pandoc-url2cite": "^0.6.6",
     "path": "0.12.7",
     "postcss": "^8.2.4",
     "react": "16.13.1",
