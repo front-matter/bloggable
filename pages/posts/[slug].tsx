@@ -79,7 +79,9 @@ const Post = (props) => {
               name: props.post.primary_author.name
             },
             publisher: { '@type': 'Organization', name: 'Gobbledygook' },
-            keywords: props.post.primary_tag.name,
+            keywords: props.post.primary_tag
+              ? props.post.primary_tag.name
+              : null,
             inLanguage: 'en',
             license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
             dateCreated: props.post.created_at,
