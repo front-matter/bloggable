@@ -13,10 +13,10 @@ import { getPosts } from '../lib/posts'
 import { pluralize } from '../lib/helpers'
 import { generateRssFeed } from '../lib/feed'
 import {
-  generateHtml
-  //   generateEpub,
-  //   generatePdf,
-  //   generateJats
+  generateHtml,
+  generateEpub,
+  generatePdf,
+  generateJats
 } from '../lib/pandoc'
 import { updateIndex } from '../lib/algolia'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
@@ -34,9 +34,9 @@ export async function getStaticProps(context) {
 
   await generateRssFeed()
   await generateHtml()
-  // await generateEpub()
-  // await generatePdf()
-  // await generateJats()
+  await generateEpub()
+  //await generatePdf()
+  await generateJats()
   // await updateIndex()
 
   return {

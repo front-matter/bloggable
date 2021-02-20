@@ -43,7 +43,7 @@ are a big problem for the adoption of Scholarly Markdown and that we
 <p>As described by Karthik Ram
 (<ext-link ext-link-type="uri" xlink:href="https://github.com/scholmd/scholmd/wiki/workshop">31
 flavors is great for ice cream but not markdown</ext-link>),
-<ext-link ext-link-type="uri" xlink:href="http://blog.martinfenner.org/2012/12/13/a-call-for-scholarly-markdown/">me</ext-link>
+<ext-link ext-link-type="uri" xlink:href="https://martinfenner.ghost.io/2013/06/21/what-flavor-is-scholarly-markdown/@flavor">me</ext-link>
 and
 <ext-link ext-link-type="uri" xlink:href="http://www.codinghorror.com/blog/2012/10/the-future-of-markdown.html">others</ext-link>,
 there is really a large number of markdown implementations to choose
@@ -122,6 +122,11 @@ publisher) can run to make sure that the markdown in the document
 conforms with the reference implementation. This could also include
 basic checks for required metadata (title, author, publication date,
 etc.), and could optionally validate the citations as well.</p>
+<sec id="references">
+  <title>References</title>
+  <p>[@flavor]:
+  https://blog.martinfenner.org/posts/a-call-for-scholarly-markdown/</p>
+</sec>
 </body>
 <back>
 </back>
