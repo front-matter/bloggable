@@ -3,9 +3,9 @@
 <li>the data used to draw the chart are not available or difficult to obtain</li>
 <li>charts are drawn as static images with no interactivity, e.g. to see the values of individual data points</li>
 </ul>
-<p>Ross Mounce and others did a <strong><strong>Figures → Data</strong></strong> project at the recent <a href="http://hacka4ac.com/" data-cite-meta="{}">hack4ac <span class="citation" data-cites="http://hacka4ac.com/">(<strong>http://hacka4ac.com/?</strong>)</span></a> to extract data from figures, described in a <a href="http://rossmounce.co.uk/2013/07/09/hack4ac-recap/" data-cite-meta="{}">blog post <span class="citation" data-cites="http://rossmounce.co.uk/2013/07/09/hack4ac-recap/">(<strong>http://rossmounce.co.uk/2013/07/09/hack4ac-recap/?</strong>)</span></a>. The experience was painful, even though they started with a <em>really</em> simple chart.</p>
-<p>While we should of course <a href="http://datadryad.org/" data-cite-meta="{}">publish all data associated with a paper <span class="citation" data-cites="http://datadryad.org/">(<strong>http://datadryad.org/?</strong>)</span></a>, the smarter strategy to overcome the two limitations above would be to embed the data used for a chart directly into the document. We have many tools that can accomplish this, and I have given an example using R in an <a href="http://blog.martinfenner.org/2013/06/17/what-is-scholarly-markdown/" data-cite-meta="{}">earlier blog post <span class="citation" data-cites="http://blog.martinfenner.org/2013/06/17/what-is-scholarly-markdown/">(<strong>http://blog.martinfenner.org/2013/06/17/what-is-scholarly-markdown/?</strong>)</span></a>. The problem is the sometimes steep learning curve.</p>
-<p>One approach is to build an easy-to use online tool, and <a href="http://datawrapper.de/" data-cite-meta="{}">Datawrapper <span class="citation" data-cites="http://datawrapper.de/">(<strong>http://datawrapper.de/?</strong>)</span></a> is exactly that:</p>
+<p>Ross Mounce and others did a <strong><strong>Figures → Data</strong></strong> project at the recent <a href="http://hacka4ac.com/">hack4ac</a> to extract data from figures, described in a <a href="http://rossmounce.co.uk/2013/07/09/hack4ac-recap/">blog post</a>. The experience was painful, even though they started with a <em>really</em> simple chart.</p>
+<p>While we should of course <a href="http://datadryad.org/">publish all data associated with a paper</a>, the smarter strategy to overcome the two limitations above would be to embed the data used for a chart directly into the document. We have many tools that can accomplish this, and I have given an example using R in an <a href="http://blog.martinfenner.org/2013/06/17/what-is-scholarly-markdown/">earlier blog post</a>. The problem is the sometimes steep learning curve.</p>
+<p>One approach is to build an easy-to use online tool, and <a href="http://datawrapper.de/">Datawrapper</a> is exactly that:</p>
 <blockquote>
 An open source tool helping anyone to create simple, correct and embeddable charts in minutes.
 </blockquote>
@@ -14,38 +14,24 @@ An open source tool helping anyone to create simple, correct and embeddable char
 <div id="header">
 <h1 id="monthly-article-views-over-time"><span>Monthly Article Views Over Time</span></h1>
 <p>Monthly HTML views from the PLOS website for two PLOS Medicine articles published July 21, 2009. The striking difference in usage between "Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement" and "Can the Relationship between Doctors and Drug Companies Ever Be a Healthy One?" becomes apparent only 18 months after publication.</p>
-<a href="http://s3.datawrapper.de/7PqqU/?fs=1" class="fs-btn top-right" data-cite-meta="{}" title="Fullscreen"> <span class="citation" data-cites="http://s3.datawrapper.de/7PqqU/?fs=1">(<strong>http://s3.datawrapper.de/7PqqU/?fs=1?</strong>)</span></a>
+<a href="http://s3.datawrapper.de/7PqqU/?fs=1" class="fs-btn top-right" title="Fullscreen"></a>
 </div>
 <div id="chart">
 
 </div>
 <div id="footer">
 <div class="footer-left">
-Created with <a href="http://datawrapper.de/" class="lgo" data-cite-meta="{}">Datawrapper <span class="citation" data-cites="http://datawrapper.de/">(<strong>http://datawrapper.de/?</strong>)</span></a>
+Created with <a href="http://datawrapper.de/" class="lgo">Datawrapper</a>
 </div>
 <div class="footer-right">
-Source: <a href="http://www.plosmedicine.org/" class="source" data-cite-meta="{}">PLOS <span class="citation" data-cites="http://www.plosmedicine.org/">(<strong>http://www.plosmedicine.org/?</strong>)</span></a>, <a href="data">Get the data</a>
+Source: <a href="http://www.plosmedicine.org/" class="source">PLOS</a>, <a href="data">Get the data</a>
 </div>
 </div>
 </div>
 <p>Most journal articles see the highest usage immediately after publication, and the light purple line shows this pattern for Darcy et al. (2009). The dark purple line for Moher et al. (2009) – published on the same day – on the other hand shows a highly unusual usage pattern, as the usage actually increases over time, starting about 1 1/2 years after publication. The article is a guideline for reporting systematic reviews and meta-analyses, and is now viewed more often than directly after publication four years ago.</p>
-<p>Datawrapper does three things: it makes it easy to generate charts, it allows you to embed them directly into your webpage (using an <code>&lt;iframe&gt;</code> tag), and it is Open Source software (MIT license, Github repo <a href="https://github.com/datawrapper/datawrapper" data-cite-meta="{}">here <span class="citation" data-cites="https://github.com/datawrapper/datawrapper">(<strong>https://github.com/datawrapper/datawrapper?</strong>)</span></a>) so that you can help improve the code and host this service on your own. DataWrapper was written in Javascript and PHP by a group of German journalists, and the main focus is data journalism where the service has become really <a href="http://blog.datawrapper.de/2013/datawrapper-crosses-mark-of-10-million-visits/" data-cite-meta="{}">popular <span class="citation" data-cites="http://blog.datawrapper.de/2013/datawrapper-crosses-mark-of-10-million-visits/">(<strong>http://blog.datawrapper.de/2013/datawrapper-crosses-mark-of-10-million-visits/?</strong>)</span></a> with more than 3.5 million views of embedded charts in May 2013 alone.</p>
+<p>Datawrapper does three things: it makes it easy to generate charts, it allows you to embed them directly into your webpage (using an <code>&lt;iframe&gt;</code> tag), and it is Open Source software (MIT license, Github repo <a href="https://github.com/datawrapper/datawrapper">here</a>) so that you can help improve the code and host this service on your own. DataWrapper was written in Javascript and PHP by a group of German journalists, and the main focus is data journalism where the service has become really <a href="http://blog.datawrapper.de/2013/datawrapper-crosses-mark-of-10-million-visits/">popular</a> with more than 3.5 million views of embedded charts in May 2013 alone.</p>
 <p>Datawrapper is a perfect tool for science blogs and websites with scientific content, but it can also enhance the charts in scientific articles. We need a few additional chart types, error bars and more flexible labeling. And we might want to add a license picker, making it easy to add a Creative Commons license so that it is clear how the chart can be reused. Datawrapper is intended for online use, but the service can also save the charts as PNG or PDF. We would want to add saving to SVG (already used for online rendering) for easier embedding into the XML and ePub versions of articles.</p>
 <h2 id="references">References</h2>
-<p>D’Arcy, E., &amp; Moynihan, R. (2009). Can the relationship between doctors and drug companies ever be a healthy one? <em>PLoS Medicine</em>, <em>6</em>(7), e1000075. Retrieved from <a href="http://doi.org/10.1371/journal.pmed.1000075" data-cite-meta="{}">http://doi.org/10.1371/journal.pmed.1000075 <span class="citation" data-cites="http://doi.org/10.1371/journal.pmed.1000075">(<strong>http://doi.org/10.1371/journal.pmed.1000075?</strong>)</span></a></p>
-<p>Moher, D., Liberati, A., Tetzlaff, J., &amp; Altman, D. G. (2009). Preferred reporting items for systematic reviews and meta-analyses: The pRISMA statement. <em>PLoS Medicine</em>, <em>6</em>(7), e1000097. Retrieved from <a href="http://doi.org/10.1371/journal.pmed.1000097" data-cite-meta="{}">http://doi.org/10.1371/journal.pmed.1000097 <span class="citation" data-cites="http://doi.org/10.1371/journal.pmed.1000097">(<strong>http://doi.org/10.1371/journal.pmed.1000097?</strong>)</span></a></p>
+<p>D’Arcy, E., &amp; Moynihan, R. (2009). Can the relationship between doctors and drug companies ever be a healthy one? <em>PLoS Medicine</em>, <em>6</em>(7), e1000075. Retrieved from <a href="http://doi.org/10.1371/journal.pmed.1000075">http://doi.org/10.1371/journal.pmed.1000075</a></p>
+<p>Moher, D., Liberati, A., Tetzlaff, J., &amp; Altman, D. G. (2009). Preferred reporting items for systematic reviews and meta-analyses: The pRISMA statement. <em>PLoS Medicine</em>, <em>6</em>(7), e1000097. Retrieved from <a href="http://doi.org/10.1371/journal.pmed.1000097">http://doi.org/10.1371/journal.pmed.1000097</a></p>
 <hr />
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
-<div id="ref-https://web.archive.org/web/20150922174101/http://blogs.plos.org/dx.doi/org/10.1038/nature04478" class="csl-entry" role="doc-biblioentry">
-Carmeliet, P. (2005). Angiogenesis in life, disease and medicine. <em>Nature</em>, <em>438</em>(7070), 932–936. <a href="https://doi.org/10.1038/nature04478">https://doi.org/10.1038/nature04478</a>
-</div>
-<div id="ref-https://web.archive.org/web/20150922174101/http://dx.doi.org/10.1126/science.1160622" class="csl-entry" role="doc-biblioentry">
-Contopoulos-Ioannidis, D. G., Alexiou, G. A., Gouvias, T. C., &amp; Ioannidis, J. P. A. (2008). Life Cycle of Translational Research for Medical Interventions. <em>Science</em>, <em>321</em>(5894), 1298–1299. <a href="https://doi.org/10.1126/science.1160622">https://doi.org/10.1126/science.1160622</a>
-</div>
-<div id="ref-https://web.archive.org/web/20160528080207/http://api.plos.org/2012/07/20/example-visualizations-using-the-plos-search-and-alm-apis/" class="csl-entry" role="doc-biblioentry">
-Example Visualizations using the PLOS Search and ALM APIs PLOS API. (2016). In <em>web.archive.org</em>. <a href="https://web.archive.org/web/20160502085552/http://api.plos.org/2012/07/20/example-visualizations-using-the-plos-search-and-alm-apis/">https://web.archive.org/web/20160502085552/http://api.plos.org/2012/07/20/example-visualizations-using-the-plos-search-and-alm-apis/</a>
-</div>
-<div id="ref-https://web.archive.org/web/20150922174101/http://nobelprize.org/nobel_prizes/medicine/laureates/2005/index.html" class="csl-entry" role="doc-biblioentry">
-The Nobel Prize in Physiology or Medicine 2005. (2015). In <em>web.archive.org</em>. <a href="https://web.archive.org/web/20150814032045/http://www.nobelprize.org/nobel_prizes/medicine/laureates/2005/index.html">https://web.archive.org/web/20150814032045/http://www.nobelprize.org/nobel_prizes/medicine/laureates/2005/index.html</a>
-</div>
-</div>

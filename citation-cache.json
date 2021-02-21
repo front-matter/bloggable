@@ -851,6 +851,300 @@
 				""
 			],
 			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://altmetrics.org/altmetrics12/": {
+			"fetched": "2021-02-21T17:54:13.434Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://altmetrics.org/altmetrics12/program/": {
+			"fetched": "2021-02-21T17:54:16.974Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/https://twitter.com/search/%23altmetrics12": {
+			"fetched": "2021-02-21T17:54:19.022Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/https://speakerdeck.com/u/mfenner/p/altmetrics-will-be-taken-personally-at-plos": {
+			"fetched": "2021-02-21T17:54:21.918Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://altmetrics.org/altmetrics12/barr/": {
+			"fetched": "2021-02-21T17:54:24.360Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://ssrnblog.com/2012/05/18/alternative-is-the-new-grey/": {
+			"fetched": "2021-02-21T17:54:27.808Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://mesur.informatics.indiana.edu/": {
+			"fetched": "2021-02-21T17:54:30.789Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://dx.doi.org/10.1371/journal.pone.0004803": {
+			"fetched": "2021-02-21T17:54:33.334Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://dx.doi.org/10.1371/journal.pone.0006022": {
+			"fetched": "2021-02-21T17:54:35.312Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://arxiv.org/abs/1010.3003": {
+			"fetched": "2021-02-21T17:54:36.587Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://dx.doi.org/10.1016/j.jocs.2010.12.007": {
+			"fetched": "2021-02-21T17:54:38.202Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://ssrn.com/": {
+			"fetched": "2021-02-21T17:54:39.316Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1346397": {
+			"fetched": "2021-02-21T17:54:40.850Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://article-level-metrics.plos.org/": {
+			"fetched": "2021-02-21T17:54:42.254Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://altmetrics.org/altmetrics12/lin/": {
+			"fetched": "2021-02-21T17:54:42.904Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://altmetrics.org/altmetrics12/fenner/": {
+			"fetched": "2021-02-21T17:54:43.559Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://total-impact.org/": {
+			"fetched": "2021-02-21T17:54:44.260Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://www.plumanalytics.com/": {
+			"fetched": "2021-02-21T17:54:44.788Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://www.altmetric.com/": {
+			"fetched": "2021-02-21T17:54:45.421Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://alm.plos.org/": {
+			"fetched": "2021-02-21T17:54:45.891Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://knodeinc.com/": {
+			"fetched": "2021-02-21T17:54:46.380Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://academia.edu/": {
+			"fetched": "2021-02-21T17:54:56.468Z",
+			"bibtex": [
+				"",
+				"@misc{noauthor_academia.edu_2016,",
+				"   title = {Academia.edu - {Share} research},",
+				"   url = {https://web.archive.org/web/20160523171434/https://www.academia.edu/},",
+				"   urldate = {2021-02-21},",
+				"   journal = {web.archive.org},",
+				"   month = may,",
+				"   year = {2016},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "https://web.archive.org/web/20160523171434/https://www.academia.edu/",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							2,
+							21
+						]
+					]
+				},
+				"container-title": "web.archive.org",
+				"id": "https://web.archive.org/web/20160528073512/http://academia.edu/",
+				"issued": {
+					"date-parts": [
+						[
+							2016,
+							5
+						]
+					]
+				},
+				"title": "Academia.edu - Share research",
+				"type": ""
+			}
+		},
+		"https://web.archive.org/web/20160528073512/http://www.biomedcentral.com/": {
+			"fetched": "2021-02-21T17:54:56.756Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://www.ubiquitypress.com/": {
+			"fetched": "2021-02-21T17:54:56.941Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://openarchaeologydata.metajnl.com/article/intensive-survey-data-from-antikythera-greece/": {
+			"fetched": "2021-02-21T17:54:57.145Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://www.niso.org/home/": {
+			"fetched": "2021-02-21T17:54:57.452Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://web.archive.org/web/20160528073512/http://casrai.org/": {
+			"fetched": "2021-02-21T17:55:25.198Z",
+			"bibtex": [
+				"",
+				"@misc{noauthor_casrai_2016,",
+				"   title = {{CASRAI} {\\textbar} {Consortia} {Advancing} {Standards} in {Research} {Administration} {Information}},",
+				"   url = {https://web.archive.org/web/20160528161500/http://casrai.org/},",
+				"   urldate = {2021-02-21},",
+				"   journal = {web.archive.org},",
+				"   month = may,",
+				"   year = {2016},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "https://web.archive.org/web/20160528161500/http://casrai.org/",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							2,
+							21
+						]
+					]
+				},
+				"container-title": "web.archive.org",
+				"id": "https://web.archive.org/web/20160528073512/http://casrai.org/",
+				"issued": {
+					"date-parts": [
+						[
+							2016,
+							5
+						]
+					]
+				},
+				"title": "CASRAI  Consortia Advancing Standards in Research Administration Information",
+				"type": ""
+			}
+		},
+		"https://web.archive.org/web/20160528073512/http://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-115.html": {
+			"fetched": "2021-02-21T17:55:38.269Z",
+			"bibtex": [
+				"",
+				"@misc{noauthor_not-od-12-115:_2016,",
+				"   title = {{NOT}-{OD}-12-115: {Request} for {Information} ({RFI}): {Input} on {Proposed} {Modifications} of the {Biographical} {Sketch} {Used} in {NIH} {Grant} {Applications}},",
+				"   shorttitle = {{NOT}-{OD}-12-115},",
+				"   url = {https://web.archive.org/web/20160520192959/http://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-115.html},",
+				"   urldate = {2021-02-21},",
+				"   journal = {web.archive.org},",
+				"   month = may,",
+				"   year = {2016},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "https://web.archive.org/web/20160520192959/http://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-115.html",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							2,
+							21
+						]
+					]
+				},
+				"container-title": "web.archive.org",
+				"id": "https://web.archive.org/web/20160528073512/http://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-115.html",
+				"issued": {
+					"date-parts": [
+						[
+							2016,
+							5
+						]
+					]
+				},
+				"title": "NOT-OD-12-115: Request for Information (RFI): Input on Proposed Modifications of the Biographical Sketch Used in NIH Grant Applications",
+				"title-short": "NOT-OD-12-115",
+				"type": ""
+			}
 		}
 	}
 }
