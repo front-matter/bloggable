@@ -22,7 +22,7 @@
     @apply font-sans text-base;
   }
   h1 {
-    @apply text-3xl font-sans font-semibold mt-8 text-green-600;
+    @apply text-3xl font-sans font-semibold mt-8;
   }
   h2 {
     @apply text-2xl font-sans font-semibold;
