@@ -33,7 +33,7 @@ export async function getStaticProps(context) {
   }
 
   await generateRssFeed()
-  await generateHtml()
+  // await generateHtml()
   // await generateEpub()
   // await generatePdf()
   // await generateJats()
