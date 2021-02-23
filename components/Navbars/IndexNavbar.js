@@ -8,7 +8,13 @@ export default function Navbar(props) {
   const SearchBox = ({ currentRefinement, refine }) => (
     <div className="relative flex flex-wrap lg:ml-auto text-base">
       <i className="fas fa-search absolute ml-3 mt-3 text-gray-700"></i>
-      <input type="search" value={currentRefinement} onChange={event => refine(event.currentTarget.value)} className="pl-10 pr-1 py-1 h-10 border border-solid border-gray-600 rounded-lg text-lg text-gray-700 shadow-none outline-none focus:outline-none font-normal flex-1 placeholder-gray-300" placeholder="Search..." />
+      <input
+        type="search"
+        value={currentRefinement}
+        onChange={(event) => refine(event.currentTarget.value)}
+        className="pl-10 pr-1 py-1 h-10 border border-solid border-gray-600 rounded-lg text-lg text-gray-700 shadow-none outline-none focus:outline-none font-normal flex-1 placeholder-gray-300"
+        placeholder="Search..."
+      />
     </div>
   )
 
@@ -53,7 +59,7 @@ export default function Navbar(props) {
             <li className="flex items-center">
               <a
                 className="hover:text-gray-600 text-gray-800 px-3 py-8 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
-                href="https://feedly.com/i/subscription/feed/https://blog.martinfenner.org/rss.xml"
+                href="https://blog.martinfenner.org/index.xml"
                 target="_blank"
               >
                 <i className="text-gray-500 fas fa-rss text-lg leading-lg " />

@@ -2,7 +2,7 @@ import { Feed } from 'feed'
 import { getPosts } from './posts'
 const fs = require('fs')
 
-export async function generateRssFeed() {
+export async function generateAtomFeed() {
   const feed = new Feed({
     title: 'Gobbledygook',
     description:
@@ -15,7 +15,7 @@ export async function generateRssFeed() {
       new Date().getFullYear() +
       ' Martin Fenner. Distributed under the terms of the Creative Commons Attribution 4.0 License.',
     feedLinks: {
-      atom: 'https://blog.martinfenner.org/rss'
+      atom: 'https://blog.martinfenner.org/index.xml'
     },
     author: {
       name: 'Martin Fenner',
@@ -28,6 +28,12 @@ export async function generateRssFeed() {
   posts.forEach((post) => {
     feed.addItem({
       title: post.title,
+      author: [
+        {
+          name: post.primary_author.name,
+          link: post.primary_author.website
+        }
+      ],
       id: post.uuid,
       link: 'https://blog.martinfenner.org/posts/' + post.slug,
       description: post.excerpt,
@@ -36,5 +42,5 @@ export async function generateRssFeed() {
     })
   })
 
-  fs.writeFileSync('./public/rss.xml', feed.rss2())
+  fs.writeFileSync('./public/index.xml', feed.atom1())
 }
