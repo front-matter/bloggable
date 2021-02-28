@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://blog.martinfenner.org</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-23T07:11:19.940Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/thank-you-plos</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/component-dois-revisited</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/why-should-we-work-where-we-live</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/persistent-identifiers-and-urls</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/human-readable-and-machine-readable-persistent-identifiers</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/introducing-the-scholarly-markdown-bundle</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/blogging-beyond-jekyll</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/metadata-in-microsoft-word-documents</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/first-analysis-of-software-metrics</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
+<url><loc>https://blog.martinfenner.org/posts/why-there-is-no-itunes-for-science-papers</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-02-28T16:32:13.175Z</lastmod></url>
 </urlset>
