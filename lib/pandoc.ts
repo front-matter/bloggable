@@ -1,5 +1,5 @@
-// import { getPosts } from './posts'
-// import axios from 'axios'
+import { getPosts } from './posts'
+import axios from 'axios'
 // import nodePandoc from 'node-pandoc-promise'
 
 // const fs = require('filesync')

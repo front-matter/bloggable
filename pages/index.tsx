@@ -12,7 +12,7 @@ import {
 import { getPosts } from '../lib/posts'
 import { pluralize } from '../lib/helpers'
 import { generateAtomFeed } from '../lib/feed'
-import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
+// import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
 import { updateIndex } from '../lib/algolia'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
 import Footer from '../components/Footers/Footer.js'
