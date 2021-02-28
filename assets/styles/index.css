@@ -60,4 +60,20 @@
   strong {
     @apply font-semibold;
   }
+
+  .csl-bib-body { }
+
+  .csl-entry {
+    @apply clear-left;
+  }
+  .csl-block { }
+  .csl-left-margin {
+    @apply clear-left float-left w-8;
+  }
+  .csl-right-inline {
+    @apply ml-8 mb-3;
+  }
+  .csl-indent { 
+    @apply ml-8;
+  }
 }

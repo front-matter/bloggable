@@ -835,6 +835,31 @@ strong {
   font-weight: 600;
 }
 
+.csl-bib-body {
+}
+
+.csl-entry {
+  clear: left;
+}
+
+.csl-block {
+}
+
+.csl-left-margin {
+  float: left;
+  clear: left;
+  width: 2rem;
+}
+
+.csl-right-inline {
+  margin-bottom: 0.75rem;
+  margin-left: 2rem;
+}
+
+.csl-indent {
+  margin-left: 2rem;
+}
+
 .container {
   width: 100%;
 }
