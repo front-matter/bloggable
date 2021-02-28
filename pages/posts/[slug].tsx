@@ -1,11 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import nodePandoc from 'node-pandoc-promise'
+import axios from 'axios'
 import ReactHtmlParser from 'react-html-parser'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
-import fs from 'fs'
 
 import { GetStaticPaths } from 'next'
 import { getPosts, getSinglePost } from '../../lib/posts'
@@ -31,51 +30,18 @@ export async function getStaticProps(context) {
     }
   }
 
-  let src, date, htmlArgs
-
-  src = post.html
-
-  date = new Date(post.published_at).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-
-  // generate HTML with Pandoc post-processing
-  htmlArgs = [
-    '-f',
-    'html',
-    '-t',
-    'html',
-    '--filter',
-    './node_modules/pandoc-url2cite/dist/pandoc-url2cite.js',
-    '--citeproc',
-    '--csl',
-    './lib/apa.csl',
-    '-o',
-    `./public/html/${post.slug}.html`,
-    '--data-dir',
-    './',
-    '--metadata',
-    'title=' + post.title,
-    '--metadata',
-    'author=' + post.primary_author.name,
-    '--metadata',
-    'date=' + date,
-    '--metadata',
-    'url2cite=all-links',
-    '--metadata',
-    'journal.title=Gobbledygook',
-    '--metadata',
-    'license.type=Open Access',
-    '--metadata',
-    'license.link=https://creativecommons.org/licenses/by/4.0/legalcode',
-    '--metadata',
-    'license.text=Distributed under the terms of the Creative Commons Attribution 4.0 License.'
-  ]
-  nodePandoc(src, htmlArgs)
-
-  post.htmlout = fs.readFileSync('./public/html/' + post.slug + '.html', 'utf8')
+  post.htmlout = await axios
+    .post('http://localhost:4000', post.html, {
+      headers: { 'Content-Type': 'text/html', Accept: 'text/html' }
+    })
+    .then(
+      (response) => {
+        return response.data
+      },
+      (error) => {
+        console.log(error)
+      }
+    )
 
   return {
     props: { post }
@@ -100,7 +66,12 @@ const Post = (props) => {
         />
         <meta name="citation_journal_title" content="Gobbledygook" />
         <meta name="citation_language" content="en" />
-        <meta name="citation_keywords" content={props.post.primary_tag.name} />
+        {props.post.primary_tag && (
+          <meta
+            name="citation_keywords"
+            content={props.post.primary_tag.name}
+          />
+        )}
         <meta
           name="citation_pdf_url"
           content={
@@ -139,7 +110,7 @@ const Post = (props) => {
       <div className="container mx-4 md:mx-auto px-6 py-16 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
           <div className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1">
-            {props.post.primary_tag.name}
+            {props.post.primary_tag ? props.post.primary_tag.name : null}
           </div>
           <h1 className="mt-1">{props.post.title}</h1>
           <Byline
@@ -151,33 +122,6 @@ const Post = (props) => {
             readingTime={props.post.reading_time}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.htmlout)}</div>
-          <h2>Other Formats</h2>
-          <div>
-            <span className="mr-4">
-              <a
-                className="font-sans border-b-0"
-                href={'/epub/' + props.post.slug + '.epub'}
-              >
-                <i className="fas fa-book"></i> ePub
-              </a>
-            </span>
-            <span className="mr-4">
-              <a
-                className="font-sans border-b-0"
-                href={'/pdf/' + props.post.slug + '.pdf'}
-              >
-                <i className="fas fa-file-pdf"></i> PDF
-              </a>
-            </span>
-            <span>
-              <a
-                className="font-sans border-b-0"
-                href={'/jats/' + props.post.slug + '.xml'}
-              >
-                <i className="fas fa-file-code"></i> JATS
-              </a>
-            </span>
-          </div>
         </div>
       </div>
       <Footer />
@@ -186,3 +130,31 @@ const Post = (props) => {
 }
 
 export default Post
+
+// <h2>Other Formats</h2>
+// <div>
+//   <span className="mr-4">
+//     <a
+//       className="font-sans border-b-0"
+//       href={'/epub/' + props.post.slug + '.epub'}
+//     >
+//       <i className="fas fa-book"></i> ePub
+//     </a>
+//   </span>
+//   <span className="mr-4">
+//     <a
+//       className="font-sans border-b-0"
+//       href={'/pdf/' + props.post.slug + '.pdf'}
+//     >
+//       <i className="fas fa-file-pdf"></i> PDF
+//     </a>
+//   </span>
+//   <span>
+//     <a
+//       className="font-sans border-b-0"
+//       href={'/jats/' + props.post.slug + '.xml'}
+//     >
+//       <i className="fas fa-file-code"></i> JATS
+//     </a>
+//   </span>
+// </div>
