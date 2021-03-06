@@ -30,7 +30,7 @@ export async function getStaticProps(context) {
     }
   }
 
-  post.htmlout = await axios
+  let result = await axios
     .post('http://localhost:4000', post.html, {
       headers: { 'Content-Type': 'text/html', Accept: 'text/html' }
     })
@@ -42,6 +42,12 @@ export async function getStaticProps(context) {
         console.log(error)
       }
     )
+
+  if (result !== undefined) {
+    post.htmlout = result
+  } else {
+    post.htmlout = post.html
+  }
 
   return {
     props: { post }
