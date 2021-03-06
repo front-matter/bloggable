@@ -30,24 +30,26 @@ export async function getStaticProps(context) {
     }
   }
 
-  let result = await axios
-    .post('http://localhost:4000', post.html, {
-      headers: { 'Content-Type': 'text/html', Accept: 'text/html' }
-    })
-    .then(
-      (response) => {
-        return response.data
-      },
-      (error) => {
-        console.log(error)
-      }
-    )
+  // let result = await axios
+  //   .post('http://localhost:4000', post.html, {
+  //     headers: { 'Content-Type': 'text/html', Accept: 'text/html' }
+  //   })
+  //   .then(
+  //     (response) => {
+  //       return response.data
+  //     },
+  //     (error) => {
+  //       console.log(error)
+  //     }
+  //   )
 
-  if (result !== undefined) {
-    post.htmlout = result
-  } else {
-    post.htmlout = post.html
-  }
+  // if (result !== undefined) {
+  //   post.htmlout = result
+  // } else {
+  //   post.htmlout = post.html
+  // }
+
+  post.htmlout = post.html
 
   return {
     props: { post }
