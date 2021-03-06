@@ -30,7 +30,7 @@ export default function Navbar(props) {
               href="/"
               data-cy="navbarLink"
             >
-              Gobbledygook
+              Sensible Science
             </a>
           </Link>
         </div>

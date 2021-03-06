@@ -1,10 +1,12 @@
 /// <reference types="cypress" />
 
-describe("Navbar", () => {
-  it("link", () => {
-    cy.visit("/");
-    cy.get("[data-cy=navbarLink]", { timeout: 30000 }).contains("Gobbledygook");
-  });
-});
+describe('Navbar', () => {
+  it('link', () => {
+    cy.visit('/')
+    cy.get('[data-cy=navbarLink]', { timeout: 30000 }).contains(
+      'Sensible Science'
+    )
+  })
+})
 
-export {};
+export {}

@@ -62,7 +62,7 @@ export default class MyApp extends App {
               name="viewport"
               content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
-            <title>Gobbledygook</title>
+            <title>Sensible Science</title>
           </Head>
           <Layout>
             <Component {...pageProps} />

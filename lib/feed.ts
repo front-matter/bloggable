@@ -4,18 +4,18 @@ const fs = require('fs')
 
 export async function generateAtomFeed() {
   const feed = new Feed({
-    title: 'Gobbledygook',
+    title: 'Sensible Science',
     description:
       'Martin Fenner writes about how the internet is changing scholarly communication.',
-    id: 'https://blog.martinfenner.org/',
-    link: 'https://blog.martinfenner.org/',
+    id: 'https://blog.sensiblescience.io/',
+    link: 'https://blog.sensiblescience.io/',
     language: 'en',
     copyright:
       'Copyright © 2007-' +
       new Date().getFullYear() +
       ' Martin Fenner. Distributed under the terms of the Creative Commons Attribution 4.0 License.',
     feedLinks: {
-      atom: 'https://blog.martinfenner.org/index.xml'
+      atom: 'https://blog.sensiblescience.io/index.xml'
     },
     author: {
       name: 'Martin Fenner',
@@ -35,7 +35,7 @@ export async function generateAtomFeed() {
         }
       ],
       id: post.uuid,
-      link: 'https://blog.martinfenner.org/posts/' + post.slug,
+      link: 'https://blog.sensiblescience.io/posts/' + post.slug,
       description: post.excerpt,
       content: post.html,
       date: new Date(post.published_at)
