@@ -15,7 +15,7 @@ export async function generateAtomFeed() {
       new Date().getFullYear() +
       ' Martin Fenner. Distributed under the terms of the Creative Commons Attribution 4.0 License.',
     feedLinks: {
-      atom: 'https://blog.sensiblescience.io/index.xml'
+      atom: 'https://blog.sensiblescience.io/feed.xml'
     },
     author: {
       name: 'Martin Fenner',
@@ -42,5 +42,5 @@ export async function generateAtomFeed() {
     })
   })
 
-  fs.writeFileSync('./public/index.xml', feed.atom1())
+  fs.writeFileSync('./public/feed.xml', feed.atom1())
 }
