@@ -132,7 +132,7 @@ const IndexPage = (props) => {
 
   return (
     <>
-      <InstantSearch indexName="zeitgeber" searchClient={searchClient}>
+      <InstantSearch indexName="sensible-science" searchClient={searchClient}>
         <IndexNavbar searchBox={true} />
         <div className="container mx-auto px-6 py-16 flex flex-wrap justify-center">
           <div className="w-auto md:w-8/12">
