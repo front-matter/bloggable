@@ -132,7 +132,7 @@ const Post = (props) => {
             readingTime={props.post.reading_time}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.htmlout)}</div>
-          <DiscourseForum slug={props.post.slug} />
+          <DiscourseForum post={props.post} />
         </div>
       </div>
       <Footer />
