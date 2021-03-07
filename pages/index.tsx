@@ -31,7 +31,7 @@ export async function getStaticProps(context) {
   // await generateEpub()
   // await generatePdf()
   // await generateJats()
-  await updateIndex()
+  // await updateIndex()
 
   return {
     props: { posts }
