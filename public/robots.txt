@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://blog.sensiblescience.io
+Host: https://sensiblescience.io
 
 # Sitemaps
-Sitemap: https://blog.sensiblescience.io/sitemap.xml
+Sitemap: https://sensiblescience.io/sitemap.xml

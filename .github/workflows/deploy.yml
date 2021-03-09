@@ -49,6 +49,6 @@ jobs:
           vercel-org-id: ${{ secrets.ORG_ID}}
           vercel-project-id: ${{ secrets.PROJECT_ID}}
           scope: ${{ secrets.TEAM_ID}}
-          vercel-project-name: 'zeitgeber'
+          vercel-project-name: 'sensible-science'
           alias-domains: |
-            blog.martinfenner.vercel.app
+            sensiblescience.vercel.app

@@ -83,9 +83,7 @@ const Post = (props) => {
         )}
         <meta
           name="citation_pdf_url"
-          content={
-            'https://blog.sensiblescience.io/pdf/' + props.post.slug + '.pdf'
-          }
+          content={'https://sensiblescience.io/pdf/' + props.post.slug + '.pdf'}
         />
 
         <meta name="og:title" content={props.post.title} />
@@ -94,7 +92,7 @@ const Post = (props) => {
           {JSON.stringify({
             '@context': 'http://schema.org',
             '@type': 'BlogPosting',
-            '@id': 'https://blog.sensiblescience.io/' + props.post.uuid,
+            '@id': 'https://sensiblescience.io/' + props.post.uuid,
             url: props.post.url,
             name: props.post.title,
             headline: props.post.title,

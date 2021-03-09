@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://blog.sensiblescience.io',
+  siteUrl: 'https://sensiblescience.io',
   generateRobotsTxt: true
 }

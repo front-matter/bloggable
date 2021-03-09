@@ -7,15 +7,15 @@ export async function generateAtomFeed() {
     title: 'Sensible Science',
     description:
       'Martin Fenner writes about how the internet is changing scholarly communication.',
-    id: 'https://blog.sensiblescience.io/',
-    link: 'https://blog.sensiblescience.io/',
+    id: 'https://sensiblescience.io/',
+    link: 'https://sensiblescience.io/',
     language: 'en',
     copyright:
       'Copyright © 2007-' +
       new Date().getFullYear() +
       ' Martin Fenner. Distributed under the terms of the Creative Commons Attribution 4.0 License.',
     feedLinks: {
-      atom: 'https://blog.sensiblescience.io/feed.xml'
+      atom: 'https://sensiblescience.io/feed.xml'
     },
     author: {
       name: 'Martin Fenner',
@@ -35,7 +35,7 @@ export async function generateAtomFeed() {
         }
       ],
       id: post.uuid,
-      link: 'https://blog.sensiblescience.io/posts/' + post.slug,
+      link: 'https://sensiblescience.io/posts/' + post.slug,
       description: post.excerpt,
       content: post.html,
       date: new Date(post.published_at)

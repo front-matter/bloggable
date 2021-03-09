@@ -56,7 +56,7 @@ export default class MyApp extends App {
 
     return (
       <React.Fragment>
-        <PlausibleProvider domain="blog.sensiblescience.io">
+        <PlausibleProvider domain="sensiblescience.io">
           <Head>
             <meta
               name="viewport"
