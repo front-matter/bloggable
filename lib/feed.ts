@@ -35,7 +35,7 @@ export async function generateAtomFeed() {
         }
       ],
       id: post.uuid,
-      link: 'https://sensiblescience.io/posts/' + post.slug,
+      link: 'https://sensiblescience.io/mfenner/' + post.slug,
       description: post.excerpt,
       content: post.html,
       date: new Date(post.published_at)

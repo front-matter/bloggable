@@ -49,7 +49,7 @@ const IndexPage = (props) => {
       {hits.map((hit) => (
         <div key={hit.uuid}>
           <h1>
-            <Link href={`/posts/${hit.slug}`}>
+            <Link href={`/mfenner/${hit.slug}`}>
               <a className="text-2xl leading-tight border-b-0 font-sans font-bold no-underline sm:text-4xl hover:underline">
                 {hit.title}
               </a>
