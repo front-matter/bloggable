@@ -2,8 +2,8 @@ import GhostContentAPI from '@tryghost/content-api'
 
 // Create API instance with site credentials
 const api = new GhostContentAPI({
-  url: 'https://martinfenner.ghost.io',
-  key: '94083b57c2a3a1e3012610e16b',
+  url: 'https://editor.sensiblescience.io',
+  key: '0cd2662483cb6da8d6ee6047e6',
   version: 'v3'
 })
 
