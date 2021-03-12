@@ -117,9 +117,6 @@ const Post = (props) => {
       <IndexNavbar fluid />
       <div className="container mx-4 md:mx-auto px-6 py-16 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
-          <div className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1">
-            {props.post.primary_tag ? props.post.primary_tag.name : null}
-          </div>
           <h1 className="mt-1">{props.post.title}</h1>
           <Byline
             author={{
@@ -130,6 +127,22 @@ const Post = (props) => {
             readingTime={props.post.reading_time}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.htmlout)}</div>
+          <div
+            className="text-base leading-snug text-gray-600 py-1"
+            data-cy="copyright"
+          >
+            Copyright © {new Date(props.post.published_at).getFullYear()}{' '}
+            {props.post.primary_author.name}. Distributed under the terms of the{' '}
+            <a
+              className="border-b-0"
+              href="https://creativecommons.org/licenses/by/4.0/legalcode"
+            >
+              Creative Commons Attribution 4.0 License.
+            </a>
+          </div>
+          <div className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200 uppercase last:mr-0 mr-1">
+            {props.post.primary_tag ? props.post.primary_tag.name : null}
+          </div>
           <DiscourseForum post={props.post} />
         </div>
       </div>
