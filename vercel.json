@@ -242,6 +242,26 @@
     {
       "source": "/posts/using-microsoft-word-with-git",
       "destination": "/mfenner/using-microsoft-word-with-git"
+    },
+    {
+      "source": "/posts/citations-in-markdown-part-3",
+      "destination": "/mfenner/citations-in-markdown-part-3"
+    },
+    {
+      "source": "/posts/from-markdown-to-jats-xml-in-one-step",
+      "destination": "/mfenner/from-markdown-to-jats-xml-in-one-step"
+    },
+    {
+      "source": "/posts/metadata-in-microsoft-word-documents",
+      "destination": "/mfenner/metadata-in-microsoft-word-documents"
+    },
+    {
+      "source": "/posts/citations-in-scholarly-markdown",
+      "destination": "/mfenner/citations-in-scholarly-markdown"
+    },
+    {
+      "source": "/posts/component-dois-revisited",
+      "destination": "/mfenner/component-dois-revisited"
     }
   ]
 }
