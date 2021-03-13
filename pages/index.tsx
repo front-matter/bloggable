@@ -47,7 +47,7 @@ const IndexPage = (props) => {
   const Hits = ({ hits }) => (
     <>
       {hits.map((hit) => (
-        <div key={hit.uuid}>
+        <div key={hit.objectID}>
           <h1>
             <Link href={`/mfenner/${hit.slug}`}>
               <a className="text-2xl leading-tight border-b-0 font-sans font-bold no-underline sm:text-4xl hover:underline">
@@ -142,7 +142,6 @@ const IndexPage = (props) => {
           </div>
         </div>
       </InstantSearch>
-      <Footer />
     </>
   )
 }

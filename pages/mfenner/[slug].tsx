@@ -146,7 +146,6 @@ const Post = (props) => {
           <DiscourseForum post={props.post} />
         </div>
       </div>
-      <Footer />
     </>
   )
 }
