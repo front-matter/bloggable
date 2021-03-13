@@ -1,243 +1,247 @@
 {
   "redirects": [{
       "source": "/2012/12/13/a-call-for-scholarly-markdown",
-      "destination": "/posts/a-call-for-scholarly-markdown"
+      "destination": "/mfenner/a-call-for-scholarly-markdown"
     },
     {
       "source": "/2012/12/18/additional-markdown-we-need-in-scholarly-texts",
-      "destination": "/posts/additional-markdown-we-need-in-scholarly-texts"
+      "destination": "/mfenner/additional-markdown-we-need-in-scholarly-texts"
     },
     {
       "source": "/2013/05/08/announcing-markdown-for-science-workshop-on-june-8th",
-      "destination": "/posts/announcing-markdown-for-science-workshop-on-june-8th"
+      "destination": "/mfenner/announcing-markdown-for-science-workshop-on-june-8th"
     },
     {
       "source": "/2013/06/15/goodbye-plos-blogs-welcome-github-pages",
-      "destination": "/posts/goodbye-plos-blogs-welcome-github-pages"
+      "destination": "/mfenner/goodbye-plos-blogs-welcome-github-pages"
     },
     {
       "source": "/2013/06/17/what-is-scholarly-markdown",
-      "destination": "/posts/what-is-scholarly-markdown"
+      "destination": "/mfenner/what-is-scholarly-markdown"
     },
     {
       "source": "/2013/06/19/citations-in-scholarly-markdown",
-      "destination": "/posts/citations-in-scholarly-markdown"
+      "destination": "/mfenner/citations-in-scholarly-markdown"
     },
     {
       "source": "/2013/06/21/what-flavor-is-scholarly-markdown",
-      "destination": "/posts/what-flavor-is-scholarly-markdown"
+      "destination": "/mfenner/what-flavor-is-scholarly-markdown"
     },
     {
       "source": "/2013/06/24/citations-in-markdown-part-3",
-      "destination": "/posts/citations-in-markdown-part-3"
+      "destination": "/mfenner/citations-in-markdown-part-3"
     },
     {
       "source": "/2013/06/25/nine-simple-ways-to-make-it-easier-to-re-use-your-data",
-      "destination": "/posts/nine-simple-ways-to-make-it-easier-to-re-use-your-data"
+      "destination": "/mfenner/nine-simple-ways-to-make-it-easier-to-re-use-your-data"
     },
     {
       "source": "/2013/06/29/metadata-in-scholarly-markdown",
-      "destination": "/posts/metadata-in-scholarly-markdown"
+      "destination": "/mfenner/metadata-in-scholarly-markdown"
     },
     {
       "source": "/2013/07/02/auto-generating-links-to-data-and-resources",
-      "destination": "/posts/auto-generating-links-to-data-and-resources"
+      "destination": "/mfenner/auto-generating-links-to-data-and-resources"
     },
     {
       "source": "/2013/07/19/creating-charts-with-datawrapper",
-      "destination": "/posts/creating-charts-with-datawrapper"
+      "destination": "/mfenner/creating-charts-with-datawrapper"
     },
     {
       "source": "/2013/07/23/the-trouble-with-keynotes",
-      "destination": "/posts/the-trouble-with-keynotes"
+      "destination": "/mfenner/the-trouble-with-keynotes"
     },
     {
       "source": "/2013/07/26/rss-feeds-for-scholarly-authors",
-      "destination": "/posts/rss-feeds-for-scholarly-authors"
+      "destination": "/mfenner/rss-feeds-for-scholarly-authors"
     },
     {
       "source": "/2013/07/30/citeproc-yaml-for-bibliographies",
-      "destination": "/posts/citeproc-yaml-for-bibliographies"
+      "destination": "/mfenner/citeproc-yaml-for-bibliographies"
     },
     {
       "source": "/2013/08/04/automatically-list-all-your-publications-in-your-blog",
-      "destination": "/posts/automatically-list-all-your-publications-in-your-blog"
+      "destination": "/mfenner/automatically-list-all-your-publications-in-your-blog"
     },
     {
       "source": "/2013/08/06/what-a-publication-timeline-can-tell-you",
-      "destination": "/posts/what-a-publication-timeline-can-tell-you"
+      "destination": "/mfenner/what-a-publication-timeline-can-tell-you"
     },
     {
       "source": "/2013/08/08/csl-is-more-than-citation-styles",
-      "destination": "/posts/csl-is-more-than-citation-styles"
+      "destination": "/mfenner/csl-is-more-than-citation-styles"
     },
     {
       "source": "/2013/08/10/altmetrics-coming-of-age-not-for-wikipedia",
-      "destination": "/posts/altmetrics-coming-of-age-not-for-wikipedia"
+      "destination": "/mfenner/altmetrics-coming-of-age-not-for-wikipedia"
     },
     {
       "source": "/2013/10/13/challenges-in-automated-doi-resolution",
-      "destination": "/posts/challenges-in-automated-doi-resolution"
+      "destination": "/mfenner/challenges-in-automated-doi-resolution"
     },
     {
       "source": "/2013/10/20/the-complete-article",
-      "destination": "/posts/the-complete-article"
+      "destination": "/mfenner/the-complete-article"
     },
     {
       "source": "/2013/10/23/what-can-article-level-metrics-do-for-you-2",
-      "destination": "/posts/what-can-article-level-metrics-do-for-you-2"
+      "destination": "/mfenner/what-can-article-level-metrics-do-for-you-2"
     },
     {
       "source": "/2013/10/25/commenting-on-scientific-papers",
-      "destination": "/posts/commenting-on-scientific-papers"
+      "destination": "/mfenner/commenting-on-scientific-papers"
     },
     {
       "source": "/2013/11/04/what-is-the-value-of-hack-days",
-      "destination": "/posts/what-is-the-value-of-hack-days"
+      "destination": "/mfenner/what-is-the-value-of-hack-days"
     },
     {
       "source": "/2013/11/11/what-is-holding-us-back",
-      "destination": "/posts/what-is-holding-us-back"
+      "destination": "/mfenner/what-is-holding-us-back"
     },
     {
       "source": "/2013/11/17/the-grammar-of-scholarly-communication",
-      "destination": "/posts/the-grammar-of-scholarly-communication"
+      "destination": "/mfenner/the-grammar-of-scholarly-communication"
     },
     {
       "source": "/2013/12/05/opening-science-the-book",
-      "destination": "/posts/opening-science-the-book"
+      "destination": "/mfenner/opening-science-the-book"
     },
     {
       "source": "/2013/12/11/what-can-article-level-metrics-do-for-you",
-      "destination": "/posts/what-can-article-level-metrics-do-for-you"
+      "destination": "/mfenner/what-can-article-level-metrics-do-for-you"
     },
     {
       "source": "/2013/12/11/example-article-with-embedded-code-and-data",
-      "destination": "/posts/example-article-with-embedded-code-and-data"
+      "destination": "/mfenner/example-article-with-embedded-code-and-data"
     },
     {
       "source": "/2013/12/12/from-markdown-to-jats-xml-in-one-step",
-      "destination": "/posts/from-markdown-to-jats-xml-in-one-step"
+      "destination": "/mfenner/from-markdown-to-jats-xml-in-one-step"
     },
     {
       "source": "/2014/03/04/six-misunderstandings-about-scholarly-markdown",
-      "destination": "/posts/six-misunderstandings-about-scholarly-markdown"
+      "destination": "/mfenner/six-misunderstandings-about-scholarly-markdown"
     },
     {
       "source": "/2014/03/05/are-static-websites-the-future-or-the-past",
-      "destination": "/posts/are-static-websites-the-future-or-the-past"
+      "destination": "/mfenner/are-static-websites-the-future-or-the-past"
     },
     {
       "source": "/2014/03/10/continuous-publishing",
-      "destination": "/posts/continuous-publishing"
+      "destination": "/mfenner/continuous-publishing"
     },
     {
       "source": "/2014/04/14/literate-blogging",
-      "destination": "/posts/literate-blogging"
+      "destination": "/mfenner/literate-blogging"
     },
     {
       "source": "/2014/07/18/build-roads-not-stagecoaches",
-      "destination": "/posts/build-roads-not-stagecoaches"
+      "destination": "/mfenner/build-roads-not-stagecoaches"
     },
     {
       "source": "/2014/07/24/dont-reinvent-the-wheel",
-      "destination": "/posts/dont-reinvent-the-wheel"
+      "destination": "/mfenner/dont-reinvent-the-wheel"
     },
     {
       "source": "/2014/07/30/one-ring-to-rule-them-all",
-      "destination": "/posts/one-ring-to-rule-them-all"
+      "destination": "/mfenner/one-ring-to-rule-them-all"
     },
     {
       "source": "/2014/08/02/fragment-identifiers-and-dois",
-      "destination": "/posts/fragment-identifiers-and-dois"
+      "destination": "/mfenner/fragment-identifiers-and-dois"
     },
     {
       "source": "/2014/08/06/what-is-doi",
-      "destination": "/posts/what-is-doi"
+      "destination": "/mfenner/what-is-doi"
     },
     {
       "source": "/2014/08/09/visualizing-scholarly-content",
-      "destination": "/posts/visualizing-scholarly-content"
+      "destination": "/mfenner/visualizing-scholarly-content"
     },
     {
       "source": "/2014/08/18/introducing-rakali",
-      "destination": "/posts/introducing-rakali"
+      "destination": "/mfenner/introducing-rakali"
     },
     {
       "source": "/2014/08/25/using-microsoft-word-with-git",
-      "destination": "/posts/using-microsoft-word-with-git"
+      "destination": "/mfenner/using-microsoft-word-with-git"
     },
     {
       "source": "/2014/09/07/commonmark-and-the-future-of-scholarly-markdown",
-      "destination": "/posts/commonmark-and-the-future-of-scholarly-markdown"
+      "destination": "/mfenner/commonmark-and-the-future-of-scholarly-markdown"
     },
     {
       "source": "/2010/09/16/please-keep-it-simple",
-      "destination": "/posts/please-keep-it-simple"
+      "destination": "/mfenner/please-keep-it-simple"
     },
     {
       "source": "/2014/10/01/please-keep-it-simple-citations-links-and-references",
-      "destination": "/posts/please-keep-it-simple-citations-links-and-references"
+      "destination": "/mfenner/please-keep-it-simple-citations-links-and-references"
     },
     {
       "source": "/2014/10/14/lets-do-an-unconference",
-      "destination": "/posts/lets-do-an-unconference"
+      "destination": "/mfenner/lets-do-an-unconference"
     },
     {
       "source": "/2014/10/17/webinar-on-writing-zotero-translators",
-      "destination": "/posts/webinar-on-writing-zotero-translators"
+      "destination": "/mfenner/webinar-on-writing-zotero-translators"
     },
     {
       "source": "/2015/01/05/data-citation-support-in-reference-managers",
-      "destination": "/posts/data-citation-support-in-reference-managers"
+      "destination": "/mfenner/data-citation-support-in-reference-managers"
     },
     {
       "source": "/2015/02/05/manifests-and-reference-lists",
-      "destination": "/posts/manifests-and-reference-lists"
+      "destination": "/mfenner/manifests-and-reference-lists"
     },
     {
       "source": "/2015/02/19/metrics-for-scientific-software",
-      "destination": "/posts/metrics-for-scientific-software"
+      "destination": "/mfenner/metrics-for-scientific-software"
     },
     {
       "source": "/2015/02/23/why-there-is-no-itunes-for-science-papers",
-      "destination": "/posts/why-there-is-no-itunes-for-science-papers"
+      "destination": "/mfenner/why-there-is-no-itunes-for-science-papers"
     },
     {
       "source": "/2015/02/28/first-analysis-of-software-metrics",
-      "destination": "/posts/first-analysis-of-software-metrics"
+      "destination": "/mfenner/first-analysis-of-software-metrics"
     },
     {
       "source": "/2015/03/20/metadata-in-microsoft-word-documents",
-      "destination": "/posts/metadata-in-microsoft-word-documents"
+      "destination": "/mfenner/metadata-in-microsoft-word-documents"
     },
     {
       "source": "/2015/03/23/blogging-beyond-jekyll",
-      "destination": "/posts/blogging-beyond-jekyll"
+      "destination": "/mfenner/blogging-beyond-jekyll"
     },
     {
       "source": "/2015/04/23/introducing-the-scholarly-markdown-bundle",
-      "destination": "/posts/introducing-the-scholarly-markdown-bundle"
+      "destination": "/mfenner/introducing-the-scholarly-markdown-bundle"
     },
     {
       "source": "/2015/05/27/human-readable-and-machine-readable-persistent-identifiers",
-      "destination": "/posts/human-readable-and-machine-readable-persistent-identifiers"
+      "destination": "/mfenner/human-readable-and-machine-readable-persistent-identifiers"
     },
     {
       "source": "/2015/06/03/persistent-identifiers-and-urls",
-      "destination": "/posts/persistent-identifiers-and-urls"
+      "destination": "/mfenner/persistent-identifiers-and-urls"
     },
     {
       "source": "/2015/06/28/why-should-we-work-where-we-live",
-      "destination": "/posts/why-should-we-work-where-we-live"
+      "destination": "/mfenner/why-should-we-work-where-we-live"
     },
     {
       "source": "/2015/07/09/component-dois-revisited",
-      "destination": "/posts/component-dois-revisited"
+      "destination": "/mfenner/component-dois-revisited"
     },
     {
       "source": "/2015/07/29/thank-you-plos",
-      "destination": "/posts/thank-you-plos"
+      "destination": "/mfenner/thank-you-plos"
+    },
+    {
+      "source": "/posts/using-microsoft-word-with-git",
+      "destination": "/mfenner/using-microsoft-word-with-git"
     }
   ]
 }
