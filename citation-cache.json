@@ -129848,6 +129848,51 @@
 				"title": "Towards an open access to research output…Four French research institutes, CNRS, INSERM, INRA and INRIA are taking advantage of their respective characteristics to create institutional repositories for researchers. - CNRS Web site - CNRS",
 				"type": ""
 			}
+		},
+		"https://en.wikipedia.org/wiki/Chernoff_face": {
+			"fetched": "2021-03-14T15:42:11.385Z",
+			"bibtex": [
+				"",
+				"@misc{noauthor_chernoff_2021,",
+				"   title = {Chernoff face},",
+				"   copyright = {Creative Commons Attribution-ShareAlike License},",
+				"   url = {https://en.wikipedia.org/w/index.php?title=Chernoff_face&oldid=1010554070},",
+				"   abstract = {Chernoff faces, invented by Herman Chernoff in 1973, display multivariate data in the shape of a human face. The individual parts, such as eyes, ears, mouth and nose represent values of the variables by their shape, size, placement and orientation. The idea behind using faces is that humans easily recognize faces and notice small changes without difficulty. Chernoff faces handle each variable differently. Because the features of the faces vary in perceived importance, the way in which variables are mapped to the features should be carefully chosen (e.g. eye size and eyebrow-slant have been found to carry significant weight).},",
+				"   language = {en},",
+				"   urldate = {2021-03-14},",
+				"   journal = {Wikipedia},",
+				"   month = mar,",
+				"   year = {2021},",
+				"   note = {Page Version ID: 1010554070},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "https://en.wikipedia.org/w/index.php?title=Chernoff_face&oldid=1010554070",
+				"abstract": "Chernoff faces, invented by Herman Chernoff in 1973, display multivariate data in the shape of a human face. The individual parts, such as eyes, ears, mouth and nose represent values of the variables by their shape, size, placement and orientation. The idea behind using faces is that humans easily recognize faces and notice small changes without difficulty. Chernoff faces handle each variable differently. Because the features of the faces vary in perceived importance, the way in which variables are mapped to the features should be carefully chosen (e.g. eye size and eyebrow-slant have been found to carry significant weight).",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							3,
+							14
+						]
+					]
+				},
+				"container-title": "Wikipedia",
+				"id": "https://en.wikipedia.org/wiki/Chernoff_face",
+				"issued": {
+					"date-parts": [
+						[
+							2021,
+							3
+						]
+					]
+				},
+				"note": "Page Version ID: 1010554070",
+				"title": "Chernoff face",
+				"type": ""
+			}
 		}
 	}
 }
