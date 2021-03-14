@@ -54,6 +54,7 @@
     "dev": "next dev",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "install:pandoc": "cd /home && yum install wget tar gzip texlive-xetex -y && wget https://github.com/jgm/pandoc/releases/download/2.12/pandoc-2.12-linux-amd64.tar.gz && tar -xvf pandoc-2.12-linux-amd64.tar.gz && ln -s /home/pandoc-2.12/bin/pandoc /usr/bin/pandoc && pandoc -v",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
     "build:tailwind": "tailwind build assets/styles/index.css -o assets/styles/tailwind.css",
     "export": "next export",
