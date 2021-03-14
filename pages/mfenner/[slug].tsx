@@ -7,14 +7,14 @@ import ReactHtmlParser from 'react-html-parser'
 // import gfm from 'remark-gfm'
 
 import { GetStaticPaths } from 'next'
-import { getPosts, getSinglePost } from '../../lib/posts'
+import { getAllPosts, getSinglePost } from '../../lib/posts'
 import IndexNavbar from '../../components/Navbars/IndexNavbar.js'
 // import Footer from '../../components/Footers/Footer.js'
 import Byline from '../../components/Byline'
 import DiscourseForum from '../../lib/discourse-forum.js'
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const posts = await getPosts('')
+  const posts = await getAllPosts()
   const paths = posts.map((post) => ({
     params: { slug: post.slug }
   }))
