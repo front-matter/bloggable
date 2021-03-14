@@ -22,3 +22,17 @@ export const pluralize = (
   const resultString = val === 1 || uncountable.includes(word) ? word : plural
   return resultNumber + resultString
 }
+
+// Helper method to wait for a middleware to execute before continuing
+// And to throw an error when an error happens in a middleware
+export const initMiddleware = (middleware) => {
+  return (req, res) =>
+    new Promise((resolve, reject) => {
+      middleware(req, res, (result) => {
+        if (result instanceof Error) {
+          return reject(result)
+        }
+        return resolve(result)
+      })
+    })
+}

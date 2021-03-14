@@ -23,22 +23,22 @@ export async function generateAtomFeed() {
     }
   })
 
-  const posts = await getPosts()
+  const posts = await getPosts('')
 
   posts.forEach((post) => {
     feed.addItem({
       title: post.title,
       author: [
         {
-          name: post.primary_author.name,
-          link: post.primary_author.website
+          name: post.author.name,
+          link: post.author.id
         }
       ],
-      id: post.uuid,
-      link: 'https://sensiblescience.io/mfenner/' + post.slug,
-      description: post.excerpt,
-      content: post.html,
-      date: new Date(post.published_at)
+      id: post.objectID,
+      link: 'https://sensiblescience.io/' + post.blog.id + '/' + post.slug,
+      description: post.description,
+      content: post.content,
+      date: new Date(post.published)
     })
   })
 

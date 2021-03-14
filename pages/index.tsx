@@ -9,17 +9,17 @@ import {
   connectPagination
 } from 'react-instantsearch-dom'
 
-import { getPosts } from '../lib/posts'
+import { getAllPosts } from '../lib/posts'
 import { pluralize } from '../lib/helpers'
 import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
 import { updateIndex } from '../lib/algolia'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
-import Footer from '../components/Footers/Footer.js'
+// import Footer from '../components/Footers/Footer.js'
 import Byline from '../components/Byline'
 
 export async function getStaticProps(context) {
-  const posts = await getPosts()
+  const posts = await getAllPosts()
 
   if (!posts) {
     return {
