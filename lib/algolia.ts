@@ -2,7 +2,6 @@ import { getGhostPosts } from './posts'
 import { generateHtml } from './pandoc'
 import trimText from './trimText'
 import sanitizeHtml from 'sanitize-html'
-import reduce from 'awaity/reduce'
 const fs = require('fs')
 
 export async function updateIndex() {
