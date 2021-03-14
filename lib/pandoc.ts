@@ -1,30 +1,24 @@
-import { getPosts } from './posts'
-import axios from 'axios'
-// import nodePandoc from 'node-pandoc-promise'
+import nodePandoc from 'node-pandoc-promise'
 
 // const fs = require('filesync')
 
-// export async function generateHtml() {
-//   const posts = await getPosts()
-//   await posts.forEach((post) => {
-//     axios
-//       .post('http://localhost:4000/html', post.html, {
-//         headers: { 'Content-Type': 'text/html' }
-//       })
-//       .then((response) => {
-//         fs.writeFileSync(`./public/html/${post.slug}.html`, response.data)
-//       })
-//       .catch((err) => {
-//         if (err.response) {
-//           console.log(err.response.data)
-//         } else if (err.request) {
-//           console.log(err.request)
-//         } else {
-//           console.log(err)
-//         }
-//       })
-//   })
-// }
+export async function generateHtml(input: string) {
+  let args = [
+    '-f',
+    'html',
+    '-t',
+    'html'
+    // '--filter',
+    // 'pandoc-url2cite',
+    // '--citeproc',
+    // '--csl',
+    // './american-medical-association.csl',
+    // '--metadata',
+    // 'url2cite=all-links'
+  ]
+
+  return await nodePandoc(input, args)
+}
 
 // export async function generateEpub() {
 //   const posts = await getPosts()

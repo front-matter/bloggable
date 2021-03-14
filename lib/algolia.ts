@@ -1,13 +1,17 @@
 import { getGhostPosts } from './posts'
+import { generateHtml } from './pandoc'
 import trimText from './trimText'
 import sanitizeHtml from 'sanitize-html'
+import reduce from 'awaity/reduce'
 const fs = require('fs')
 
 export async function updateIndex() {
   const posts = await getGhostPosts()
-  const objects = posts.reduce((accumulator, currentValue) => {
+  const objects = []
+
+  for (const post of posts) {
     const description = trimText(
-      sanitizeHtml(currentValue.html, {
+      sanitizeHtml(post.html, {
         allowedTags: ['b', 'i', 'em', 'strong']
       }),
       200,
@@ -15,57 +19,57 @@ export async function updateIndex() {
       300
     )[0]
 
-    accumulator.push({
-      objectID: currentValue.uuid,
+    const object = {
+      objectID: post.uuid,
       blog: {
         id: 'mfenner',
         name: 'Gobbledygook'
       },
-      title: currentValue.title,
-      slug: currentValue.slug,
+      title: post.title,
+      slug: post.slug,
       author: {
-        id: currentValue.primary_author.website,
-        name: currentValue.primary_author.name,
-        imageUrl: 'https:' + currentValue.primary_author.profile_image
+        id: post.primary_author.website,
+        name: post.primary_author.name,
+        imageUrl: 'https:' + post.primary_author.profile_image
       },
       description: description + '...',
-      content: currentValue.html,
-      readingTime: currentValue.reading_time,
-      _tags: currentValue.tags && currentValue.tags.map((tag) => tag.name),
-      featureImage: currentValue.feature_image,
-      visibility: currentValue.visibility,
-      created: currentValue.created_at,
-      published: currentValue.published_at,
-      updated: currentValue.updated_at,
+      content: await generateHtml(post.html),
+      readingTime: post.reading_time,
+      _tags: post.tags && post.tags.map((tag) => tag.name),
+      featureImage: post.feature_image,
+      visibility: post.visibility,
+      created: post.created_at,
+      published: post.published_at,
+      updated: post.updated_at,
       schemaOrg: {
         '@context': 'http://schema.org',
         '@type': 'BlogPosting',
-        '@id': 'https://sensiblescience.io/' + currentValue.uuid,
-        url: 'https://sensiblescience.io/mfenner/' + currentValue.slug,
-        name: currentValue.title,
-        headline: currentValue.title,
+        '@id': 'https://sensiblescience.io/' + post.uuid,
+        url: 'https://sensiblescience.io/mfenner/' + post.slug,
+        name: post.title,
+        headline: post.title,
         description: description + '...',
         author: {
           '@type': 'Person',
-          '@id': currentValue.primary_author.website,
-          name: currentValue.primary_author.name,
-          image: currentValue.primary_author.profile_image
-            ? 'https:' + currentValue.primary_author.profile_image
+          '@id': post.primary_author.website,
+          name: post.primary_author.name,
+          image: post.primary_author.profile_image
+            ? 'https:' + post.primary_author.profile_image
             : null
         },
         publisher: { '@type': 'Organization', name: 'Gobbledygook' },
-        keywords: currentValue.tags
-          ? currentValue.tags.map((tag) => tag.name).join(', ')
+        keywords: post.tags
+          ? post.tags.map((tag) => tag.name).join(', ')
           : null,
         inLanguage: 'en',
         license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
-        dateCreated: currentValue.created,
-        dateModified: currentValue.updated,
-        datePublished: currentValue.published
+        dateCreated: post.created_at,
+        dateModified: post.updated_at,
+        datePublished: post.published_at
       }
-    })
-    return accumulator
-  }, [])
+    }
+    objects.push(object)
+  }
 
   fs.writeFileSync('./public/algolia.json', JSON.stringify(objects))
 }
