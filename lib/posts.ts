@@ -1,7 +1,7 @@
 import algoliasearch from 'algoliasearch'
 import GhostContentAPI from '@tryghost/content-api'
 
-const searchClient = algoliasearch(
+export const searchClient = algoliasearch(
   '8ZJ4A0DNVF',
   process.env.NEXT_PUBLIC_ALGOLIA_API_KEY
 )

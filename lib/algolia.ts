@@ -1,10 +1,11 @@
-import { getGhostPosts } from './posts'
+import { getGhostPosts, searchClient } from './posts'
 import { generateHtml } from './pandoc'
 import trimText from './trimText'
 import sanitizeHtml from 'sanitize-html'
-const fs = require('fs')
 
 export async function updateIndex() {
+  const index = searchClient.initIndex('sensible-science')
+
   const posts = await getGhostPosts()
   const objects = []
 
@@ -70,5 +71,5 @@ export async function updateIndex() {
     objects.push(object)
   }
 
-  fs.writeFileSync('./public/algolia.json', JSON.stringify(objects))
+  index.saveObjects(objects, { autoGenerateObjectIDIfNotExist: true })
 }
