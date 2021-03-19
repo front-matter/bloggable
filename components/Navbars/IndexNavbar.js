@@ -50,6 +50,7 @@ export default function Navbar(props) {
                 className="hover:text-gray-600 text-gray-800 px-3 py-8 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
                 href="https://twitter.com/sens_science"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="text-gray-500 fab fa-twitter text-lg leading-lg " />
                 <span className="lg:hidden inline-block ml-2">Tweet</span>
@@ -61,6 +62,7 @@ export default function Navbar(props) {
                 className="hover:text-gray-600 text-gray-800 px-3 py-8 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
                 href="https://sensiblescience.io/feed.xml"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="text-gray-500 fas fa-rss text-lg leading-lg " />
                 <span className="lg:hidden inline-block ml-2">Feed</span>

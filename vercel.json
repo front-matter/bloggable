@@ -64,6 +64,10 @@
       "destination": "/mfenner/automatically-list-all-your-publications-in-your-blog"
     },
     {
+      "source": "/posts/automatically-list-all-your-publications-in-your-blog",
+      "destination": "/mfenner/automatically-list-all-your-publications-in-your-blog"
+    },
+    {
       "source": "/2013/08/06/what-a-publication-timeline-can-tell-you",
       "destination": "/mfenner/what-a-publication-timeline-can-tell-you"
     },
@@ -211,6 +215,10 @@
       "source": "/2015/03/20/metadata-in-microsoft-word-documents",
       "destination": "/mfenner/metadata-in-microsoft-word-documents"
     },
+        {
+      "source": "/2015/03/20/metadata-in-microsoft-word-documents",
+      "destination": "/mfenner/metadata-in-microsoft-word-documents"
+    },
     {
       "source": "/2015/03/23/blogging-beyond-jekyll",
       "destination": "/mfenner/blogging-beyond-jekyll"
@@ -225,6 +233,10 @@
     },
     {
       "source": "/2015/06/03/persistent-identifiers-and-urls",
+      "destination": "/mfenner/persistent-identifiers-and-urls"
+    },
+    {
+      "source": "/2015/06/03/persistent-idenfiers-urls",
       "destination": "/mfenner/persistent-identifiers-and-urls"
     },
     {
@@ -262,6 +274,22 @@
     {
       "source": "/posts/component-dois-revisited",
       "destination": "/mfenner/component-dois-revisited"
+    },
+    {
+      "source": "/posts/paperpile-an-open-source-reference-manager-for-mac-and-linux",
+      "destination": "/mfenner/paperpile-an-open-source-reference-manager-for-mac-and-linux"
+    },
+    {
+      "source": "/posts/csl-is-more-than-citation-styles",
+      "destination": "/mfenner/csl-is-more-than-citation-styles"
+    },
+    {
+      "source": "/posts/how-to-use-citation-typing-ontology-cito-in-your-blog-posts",
+      "destination": "/mfenner/how-to-use-citation-typing-ontology-cito-in-your-blog-posts"
+    },
+    {
+      "source": "/about",
+      "destination": "/"
     }
   ]
 }
