@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -18,6 +19,15 @@ export default function Hero() {
             <p className="mt-1 max-w-sm mx-auto text-center text-2xl font-sans text-gray-900 sm:max-w-3xl">
               A better way of communicating Science. Launching soon.
             </p>
+            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+              <div className="rounded-md shadow">
+                <Link href="/features">
+                  <a className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 font-sans">
+                    Learn More
+                  </a>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

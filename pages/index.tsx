@@ -45,7 +45,6 @@ const IndexPage = ({ posts }) => {
       <Header />
       <Hero />
       <Featured posts={posts} />
-      <Newsletter />
       <Footer />
     </>
   )

@@ -70,10 +70,10 @@ export default function Features() {
               A better way of communicating Science
             </h2>
             <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
-              Publishing and consuming scholarly content is too complicated, too
-              slow, too expensive, and too exclusive. Sensible Science tries to
-              help address these barriers, allowing authors and readers to
-              instead focus on the science.
+              Publishing, reading and re-using scholarly content is too
+              complicated, too expensive, and too exclusive. Sensible Science
+              tries to help address these barriers, allowing authors and readers
+              to instead focus on the science.
             </p>
           </div>
 
