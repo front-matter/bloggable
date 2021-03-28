@@ -19,7 +19,7 @@ export default function Navbar(props) {
             type="search"
             value={currentRefinement}
             onChange={(event) => refine(event.currentTarget.value)}
-            className="pl-10 pr-1 py-1 h-10 border border-solid border-green-600 rounded-lg text-lg text-gray-700 shadow-none outline-none focus:outline-none font-normal flex-1 placeholder-gray-300"
+            className="pl-10 pr-1 py-1 h-10 border border-solid border-green-600 rounded-lg text-lg text-gray-700 shadow-none focus:ring-green-600 focus:border-green-600 font-normal flex-1 placeholder-gray-300"
             placeholder="Search..."
           />
         </div>
@@ -41,7 +41,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <nav className="bg-white shadow">
+      <nav className="bg-white">
         <div className="container mx-auto flex flex-auto items-center justify-between font-sans">
           <div className="flex justify-between h-16">
             <div className="flex px-2 lg:px-0">
