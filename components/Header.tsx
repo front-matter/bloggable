@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { connectSearchBox } from 'react-instantsearch-dom'
 
 export default function Navbar(props) {
@@ -46,6 +46,11 @@ export default function Navbar(props) {
                 </Link>
               </div>
               <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
+                <Link href="/posts">
+                  <a className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 border-b-0 text-sm font-medium">
+                    Posts
+                  </a>
+                </Link>
                 <Link href="/features">
                   <a className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 border-b-0 text-sm font-medium">
                     Features
