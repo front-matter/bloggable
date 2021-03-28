@@ -16,7 +16,7 @@ export default function Hero() {
               </span>
             </h1>
             <p className="mt-1 max-w-sm mx-auto text-center text-2xl font-sans text-gray-900 sm:max-w-3xl">
-              A better way of communicating Science, launching soon.
+              A better way of communicating Science. Launching soon.
             </p>
           </div>
         </div>

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
   faTwitter,
-  faYoutube,
   faDiscourse
 } from '@fortawesome/free-brands-svg-icons'
 
@@ -49,114 +48,62 @@ export default function Footer() {
           </div>
           <div className="mt-2 md:mt-0">
             <h3 className="text-base font-semibold text-gray-400 tracking-wider uppercase">
-              Solutions
+              Features
             </h3>
             <ul className="mt-1 list-none">
               <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  Marketing
-                </a>
+                <Link href="/features#editor">
+                  <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
+                    Easy-to-use powerful editor
+                  </a>
+                </Link>
               </li>
-
               <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  Analytics
-                </a>
+                <Link href="/features#scientific">
+                  <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
+                    Editing scientific content
+                  </a>
+                </Link>
               </li>
-
               <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  Commerce
-                </a>
+                <Link href="/features#publishing">
+                  <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
+                    Flexible publishing options
+                  </a>
+                </Link>
               </li>
-
               <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  Insights
-                </a>
+                <Link href="/features#discovery">
+                  <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
+                    Discovery, discussion and reuse
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="mt-2 md:mt-0">
             <h3 className="text-base font-semibold text-gray-400 tracking-wider uppercase">
-              Support
+              Services
             </h3>
             <ul className="mt-1 list-none">
               <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  Pricing
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  Documentation
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  Guides
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-base font-semibold text-gray-400 tracking-wider uppercase">
-              Company
-            </h3>
-            <ul className="mt-1 list-none">
-              <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                >
-                  Blog
-                </a>
-              </li>
-
-              <li>
-                <Link href="/privacy">
+                <Link href="https://discuss.sensiblescience.io">
                   <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
-                    Privacy Policy
+                    Discussion Forum
                   </a>
                 </Link>
               </li>
-
               <li>
-                <Link href="/terms">
+                <Link href="https://graphs.sensiblescience.io">
                   <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
-                    Terms
+                    Graphs Editor
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="https://plausible.io/sensiblescience.io">
+                  <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
+                    Usage Stats
                   </a>
                 </Link>
               </li>

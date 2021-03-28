@@ -24,6 +24,7 @@ import {
   faYoutube,
   faDiscourse
 } from '@fortawesome/free-brands-svg-icons'
+import Link from 'next/link'
 
 export default function Features() {
   return (
@@ -78,8 +79,9 @@ export default function Features() {
 
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
+              <a id="editor" />
               <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                An easy-to-use but powerful editor
+                Easy-to-use powerful editor
               </h3>
               <p className="mt-3 mr-16 text-lg text-gray-500">
                 Sensible Science uses the Open Source Ghost blogging software,
@@ -221,8 +223,9 @@ export default function Features() {
           <div className="relative mt-12 sm:mt-16 lg:mt-24">
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="lg:col-start-2">
+                <a id="scientific" />
                 <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                  An editor for scientific content
+                  Editing scientific content
                 </h3>
                 <p className="mt-3 text-lg text-gray-500">
                   Authors of scientific content have specific needs not covered
@@ -362,6 +365,7 @@ export default function Features() {
 
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
+              <a id="publishing" />
               <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                 Flexible publishing options
               </h3>
@@ -493,6 +497,7 @@ export default function Features() {
           <div className="relative mt-12 sm:mt-16 lg:mt-24">
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="lg:col-start-2">
+                <a id="discovery" />
                 <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                   Discovery, discussion and reuse
                 </h3>
