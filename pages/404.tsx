@@ -1,7 +1,7 @@
 import React from 'react'
 import { usePlausible } from 'next-plausible'
-import IndexNavbar from '../components/Navbars/IndexNavbar.js'
-import Footer from '../components/Footers/Footer.js'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const ErrorPage = () => {
   const plausible = usePlausible()
@@ -11,7 +11,7 @@ const ErrorPage = () => {
 
   return (
     <>
-      <IndexNavbar />
+      <Header />
       <div className="container px-4 pt-16 flex flex-wrap mx-auto h-screen">
         <h1 className="text-red-500">404 Page Not Found</h1>
       </div>

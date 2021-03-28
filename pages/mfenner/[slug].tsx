@@ -5,10 +5,12 @@ import Head from 'next/head'
 import ReactHtmlParser from 'react-html-parser'
 // import ReactMarkdown from 'react-markdown'
 // import gfm from 'remark-gfm'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 import { GetStaticPaths } from 'next'
 import { getAllPosts, getSinglePost } from '../../lib/posts'
-import IndexNavbar from '../../components/Navbars/IndexNavbar.js'
+import IndexNavbar from '../../components/IndexNavbar.js'
 // import Footer from '../../components/Footers/Footer.js'
 import Byline from '../../components/Byline'
 import DiscourseForum from '../../lib/discourse-forum.js'
@@ -87,10 +89,10 @@ const Post = (props) => {
           {JSON.stringify(hit.schemaOrg)}
         </script>
       </Head>
-      <IndexNavbar fluid />
-      <div className="container mx-4 md:mx-auto px-6 py-16 flex flex-wrap justify-center">
+      <Header />
+      <div className="container mx-4 md:mx-auto px-6 py-8 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
-          <h1 className="mt-1">{hit.title}</h1>
+          <h1 className="mt-1 mb-2 text-green-600">{hit.title}</h1>
           <Byline
             author={{
               name: hit.author.name,
@@ -120,6 +122,7 @@ const Post = (props) => {
           <DiscourseForum post={hit} />
         </div>
       </div>
+      <Footer />
     </>
   )
 }
