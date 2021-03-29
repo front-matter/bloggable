@@ -5,15 +5,14 @@ const fs = require('fs')
 export async function generateAtomFeed() {
   const feed = new Feed({
     title: 'Sensible Science',
-    description:
-      'Martin Fenner writes about how the internet is changing scholarly communication.',
+    description: 'Sensible Science is a science blogging platform.',
     id: 'https://sensiblescience.io/',
     link: 'https://sensiblescience.io/',
     language: 'en',
     copyright:
       'Copyright © 2007-' +
       new Date().getFullYear() +
-      ' Martin Fenner. Distributed under the terms of the Creative Commons Attribution 4.0 License.',
+      ' Sensible Science. Distributed under the terms of the Creative Commons Attribution 4.0 License.',
     feedLinks: {
       atom: 'https://sensiblescience.io/feed.xml'
     },

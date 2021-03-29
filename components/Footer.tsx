@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRss } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
   faTwitter,
@@ -33,6 +34,13 @@ export default function Footer() {
                     <a className="text-gray-500 hover:text-gray-400 border-b-0">
                       <span className="sr-only">Discourse</span>
                       <FontAwesomeIcon icon={faDiscourse} />
+                    </a>
+                  </Link>
+
+                  <Link href="https://sensiblescience.io/feed.xml">
+                    <a className="text-gray-500 hover:text-gray-400 border-b-0">
+                      <span className="sr-only">RSS</span>
+                      <FontAwesomeIcon icon={faRss} />
                     </a>
                   </Link>
 
