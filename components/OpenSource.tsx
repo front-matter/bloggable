@@ -14,7 +14,7 @@ export default function Pricing() {
           </h2>
           <p className="mt-4 text-lg text-gray-500">
             Sensible Science is built with open source software, including the
-            following key projects:
+            following key components:
           </p>
         </div>
         <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
@@ -146,7 +146,7 @@ export default function Pricing() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Citation Style Language
+                  CSL
                 </a>
               </Link>
             </dt>

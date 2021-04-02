@@ -7,6 +7,11 @@ import ReactHtmlParser from 'react-html-parser'
 // import gfm from 'remark-gfm'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faCreativeCommons,
+  faCreativeCommonsBy
+} from '@fortawesome/free-brands-svg-icons'
 
 import { GetStaticPaths } from 'next'
 import { getAllPosts, getSinglePost } from '../../lib/posts'
@@ -106,6 +111,10 @@ const Post = (props) => {
             className="text-base leading-snug text-gray-600 py-1 font-sans"
             data-cy="copyright"
           >
+            <span className="text-lg text-gray-900 mr-1">
+              <FontAwesomeIcon icon={faCreativeCommons} className="mr-0.5" />
+              <FontAwesomeIcon icon={faCreativeCommonsBy} />
+            </span>
             Copyright © {new Date(hit.published).getFullYear()}{' '}
             {hit.author.name}. Distributed under the terms of the{' '}
             <a
