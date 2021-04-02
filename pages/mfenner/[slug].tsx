@@ -103,7 +103,7 @@ const Post = (props) => {
           />
           <div className="text-lg">{ReactHtmlParser(hit.content)}</div>
           <div
-            className="text-base leading-snug text-gray-600 py-1"
+            className="text-base leading-snug text-gray-600 py-1 font-sans"
             data-cy="copyright"
           >
             Copyright © {new Date(hit.published).getFullYear()}{' '}

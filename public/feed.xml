@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sensiblescience.io/</id>
     <title>Sensible Science</title>
-    <updated>2021-03-28T20:23:55.440Z</updated>
+    <updated>2021-04-02T06:19:04.734Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -10,8 +10,8 @@
     </author>
     <link rel="alternate" href="https://sensiblescience.io/"/>
     <link rel="self" href="https://sensiblescience.io/feed.xml"/>
-    <subtitle>Martin Fenner writes about how the internet is changing scholarly communication.</subtitle>
-    <rights>Copyright © 2007-2021 Martin Fenner. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
+    <subtitle>Sensible Science is a science blogging platform.</subtitle>
+    <rights>Copyright © 2007-2021 Sensible Science. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
     <entry>
         <title type="html"><![CDATA[Thank you PLOS]]></title>
         <id>ae704746-6ec6-4d90-b126-d88206036d2f</id>

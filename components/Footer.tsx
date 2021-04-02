@@ -117,6 +117,20 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          <div className="mt-2 md:mt-0">
+            <h3 className="text-base font-semibold text-gray-400 tracking-wider uppercase">
+              About
+            </h3>
+            <ul className="mt-1 list-none">
+              <li>
+                <Link href="https://sensiblescience.io/open-source">
+                  <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
+                    Open Source
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
