@@ -129893,6 +129893,199 @@
 				"title": "Chernoff face",
 				"type": ""
 			}
+		},
+		"https://www.youtube.com/watch?v=0UNRZEsLxKc": {
+			"fetched": "2021-04-04T13:33:50.305Z",
+			"bibtex": [
+				"",
+				"@misc{noauthor_open_nodate,",
+				"   title = {Open {Knowledge} {Festival} - {Day} 2},",
+				"   url = {https://www.youtube.com/watch?v=0UNRZEsLxKc},",
+				"   language = {en},",
+				"   urldate = {2021-04-04},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "https://www.youtube.com/watch?v=0UNRZEsLxKc",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							4,
+							4
+						]
+					]
+				},
+				"id": "https://www.youtube.com/watch?v=0UNRZEsLxKc",
+				"title": "Open Knowledge Festival - Day 2",
+				"type": ""
+			}
+		},
+		"http://s3.datawrapper.de/7PqqU/?fs=1": {
+			"fetched": "2021-04-04T13:34:08.053Z",
+			"bibtex": [
+				"",
+				"@misc{noauthor_monthly_nodate,",
+				"   title = {Monthly {Article} {Views} {Over} {Time}},",
+				"   url = {http://s3.datawrapper.de/7PqqU/?fs=1},",
+				"   urldate = {2021-04-04},",
+				"   journal = {s3.datawrapper.de},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "http://s3.datawrapper.de/7PqqU/?fs=1",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							4,
+							4
+						]
+					]
+				},
+				"container-title": "s3.datawrapper.de",
+				"id": "http://s3.datawrapper.de/7PqqU/?fs=1",
+				"title": "Monthly Article Views Over Time",
+				"type": ""
+			}
+		},
+		"http://www.plosmedicine.org/": {
+			"fetched": "2021-04-04T13:34:11.536Z",
+			"bibtex": [
+				"",
+				"@misc{noauthor_plos_nodate,",
+				"   title = {{PLOS} {Medicine}: {A} {Peer}-{Reviewed} {Open}-{Access} {Journal}},",
+				"   url = {http://www.plosmedicine.org/},",
+				"   language = {en},",
+				"   urldate = {2021-04-04},",
+				"   journal = {www.plosmedicine.org},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "http://www.plosmedicine.org/",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							4,
+							4
+						]
+					]
+				},
+				"container-title": "www.plosmedicine.org",
+				"id": "http://www.plosmedicine.org/",
+				"title": "PLOS Medicine: A Peer-Reviewed Open-Access Journal",
+				"title-short": "PLOS Medicine",
+				"type": ""
+			}
+		},
+		"https://sensiblescience.io/mfenner/beyond-the-pdf-%E2%80%A6-is-epub/": {
+			"fetched": "2021-04-04T13:34:52.441Z",
+			"bibtex": [
+				""
+			],
+			"csl": {}
+		},
+		"https://sensiblescience.io/mfenner/beyond-the-pdf-is-epub": {
+			"fetched": "2021-04-04T13:34:53.355Z",
+			"bibtex": [
+				"",
+				"@article{fenner_beyond_2011,",
+				"   title = {Beyond the {PDF} … is {ePub}},",
+				"   url = {https://sensiblescience.io/mfenner/beyond-the-pdf-is-epub},",
+				"   abstract = {Having breakfast at the end of a conference is a good way to recap what was discussed and can help to generate new ideas. Two years ago at ScienceOnline09 a conversation with Cameron Neylon that followed up on the session Reputation, authority and incentives....},",
+				"   language = {en},",
+				"   urldate = {2021-04-04},",
+				"   journal = {Gobbledygook},",
+				"   author = {Fenner, Martin},",
+				"   month = jan,",
+				"   year = {2011},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "https://sensiblescience.io/mfenner/beyond-the-pdf-is-epub",
+				"abstract": "Having breakfast at the end of a conference is a good way to recap what was discussed and can help to generate new ideas. Two years ago at ScienceOnline09 a conversation with Cameron Neylon that followed up on the session Reputation, authority and incentives....",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							4,
+							4
+						]
+					]
+				},
+				"author": [
+					{
+						"family": "Fenner",
+						"given": "Martin"
+					}
+				],
+				"container-title": "Gobbledygook",
+				"id": "https://sensiblescience.io/mfenner/beyond-the-pdf-is-epub",
+				"issued": {
+					"date-parts": [
+						[
+							2011,
+							1
+						]
+					]
+				},
+				"title": "Beyond the PDF … is ePub",
+				"type": "article-journal"
+			}
+		},
+		"https://sensiblescience.io/mfenner/beyond-the-pdf-is-epub/": {
+			"fetched": "2021-04-04T13:34:54.337Z",
+			"bibtex": [
+				"",
+				"@article{fenner_beyond_2011,",
+				"   title = {Beyond the {PDF} … is {ePub}},",
+				"   url = {https://sensiblescience.io/mfenner/beyond-the-pdf-is-epub},",
+				"   abstract = {Having breakfast at the end of a conference is a good way to recap what was discussed and can help to generate new ideas. Two years ago at ScienceOnline09 a conversation with Cameron Neylon that followed up on the session Reputation, authority and incentives....},",
+				"   language = {en},",
+				"   urldate = {2021-04-04},",
+				"   journal = {Gobbledygook},",
+				"   author = {Fenner, Martin},",
+				"   month = jan,",
+				"   year = {2011},",
+				"}",
+				""
+			],
+			"csl": {
+				"URL": "https://sensiblescience.io/mfenner/beyond-the-pdf-is-epub",
+				"abstract": "Having breakfast at the end of a conference is a good way to recap what was discussed and can help to generate new ideas. Two years ago at ScienceOnline09 a conversation with Cameron Neylon that followed up on the session Reputation, authority and incentives....",
+				"accessed": {
+					"date-parts": [
+						[
+							2021,
+							4,
+							4
+						]
+					]
+				},
+				"author": [
+					{
+						"family": "Fenner",
+						"given": "Martin"
+					}
+				],
+				"container-title": "Gobbledygook",
+				"id": "https://sensiblescience.io/mfenner/beyond-the-pdf-is-epub/",
+				"issued": {
+					"date-parts": [
+						[
+							2011,
+							1
+						]
+					]
+				},
+				"title": "Beyond the PDF … is ePub",
+				"type": "article-journal"
+			}
 		}
 	}
 }
