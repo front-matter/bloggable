@@ -125,7 +125,7 @@ export default function Footer() {
               <li>
                 <Link href="https://sensiblescience.io/open-source">
                   <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
-                    Open Source
+                    Open Source Software
                   </a>
                 </Link>
               </li>
