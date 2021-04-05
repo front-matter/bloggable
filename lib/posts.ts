@@ -1,21 +1,31 @@
-import algoliasearch from 'algoliasearch'
 import GhostContentAPI from '@tryghost/content-api'
+import { Client } from 'typesense'
 
-export const searchClient = algoliasearch(
-  '8ZJ4A0DNVF',
-  process.env.NEXT_PUBLIC_ALGOLIA_API_KEY
-)
-const index = searchClient.initIndex('sensible-science')
+let client = new Client({
+  nodes: [
+    {
+      host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,
+      port: '443',
+      protocol: 'https'
+    }
+  ],
+  apiKey: process.env.NEXT_PUBLIC_TYPESENSE_API_KEY,
+  connectionTimeoutSeconds: 2
+})
 
 export async function getPosts(
   query: string,
   hitsPerPage?: number,
   page?: number
 ) {
-  return await index
-    .search(query, {
-      hitsPerPage: hitsPerPage ? hitsPerPage : 25,
-      page: page > 0 ? page - 1 : 0
+  return await client
+    .collections('sensible-science')
+    .documents()
+    .search({
+      q: query,
+      query_by: '_tags,title,content',
+      per_page: hitsPerPage ? hitsPerPage : 25,
+      page: page > 0 ? page : 1
     })
     .then(({ hits }) => {
       return hits
@@ -27,11 +37,10 @@ export async function getPosts(
 }
 
 export async function getAllPosts() {
-  return await index
-    .search('', {
-      hitsPerPage: 500,
-      page: 0
-    })
+  return await client
+    .collections('sensible-science')
+    .documents()
+    .search({ q: '*', per_page: 250, page: 1 })
     .then(({ hits }) => {
       return hits
     })
@@ -41,11 +50,27 @@ export async function getAllPosts() {
     })
 }
 
-export async function getSinglePost(postSlug: string) {
-  return await index
-    .findObject((hit) => hit['slug'] === postSlug)
-    .then((obj) => {
-      return obj
+export async function getSinglePost(id: string) {
+  return await client
+    .collections('sensible-science')
+    .documents(id)
+    .retrieve()
+    .then(function (data) {
+      return data
+    })
+    .catch((err) => {
+      console.error(err)
+      return err
+    })
+}
+
+export async function getSinglePostBySlug(slug: string) {
+  return await client
+    .collections('sensible-science')
+    .documents()
+    .search({ q: slug, query_by: 'slug', per_page: 1, page: 1 })
+    .then((document) => {
+      return document
     })
     .catch((err) => {
       console.error(err)

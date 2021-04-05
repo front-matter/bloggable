@@ -25,4 +25,4 @@ yarn-error.log*
 
 .next/
 
-public/algolia.json
+public/typesense.json

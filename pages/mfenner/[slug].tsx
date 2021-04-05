@@ -1,10 +1,6 @@
 import React from 'react'
-// import Link from 'next/link'
 import Head from 'next/head'
-// import axios from 'axios'
 import ReactHtmlParser from 'react-html-parser'
-// import ReactMarkdown from 'react-markdown'
-// import gfm from 'remark-gfm'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,14 +10,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 import { GetStaticPaths } from 'next'
-import { getAllPosts, getSinglePost } from '../../lib/posts'
-import IndexNavbar from '../../components/IndexNavbar.js'
-// import Footer from '../../components/Footers/Footer.js'
+import { getGhostPosts, getSinglePostBySlug } from '../../lib/posts'
 import Byline from '../../components/Byline'
 import DiscourseForum from '../../lib/discourse-forum.js'
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const posts = await getAllPosts()
+  const posts = await getGhostPosts()
   const paths = posts.map((post) => ({
     params: { slug: post.slug }
   }))
@@ -30,32 +24,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export async function getStaticProps(context) {
-  let post = await getSinglePost(context.params.slug)
+  let post = await getSinglePostBySlug(context.params.slug)
 
   if (!post) {
     return {
       props: { notFound: true }
     }
   }
-
-  // let result = await axios
-  //   .post('http://localhost:4000', post.html, {
-  //     headers: { 'Content-Type': 'text/html', Accept: 'text/html' }
-  //   })
-  //   .then(
-  //     (response) => {
-  //       return response.data
-  //     },
-  //     (error) => {
-  //       console.log(error)
-  //     }
-  //   )
-
-  // if (result !== undefined) {
-  //   post.htmlout = result
-  // } else {
-  //   post.htmlout = post.html
-  // }
 
   return {
     props: { post }
@@ -65,7 +40,7 @@ export async function getStaticProps(context) {
 const Post = (props) => {
   if (!props.post) return <div>Not found</div>
 
-  const hit = props.post.object
+  const hit = props.post.hits[0] && props.post.hits[0].document
 
   return (
     <>
@@ -137,31 +112,3 @@ const Post = (props) => {
 }
 
 export default Post
-
-// <h2>Other Formats</h2>
-// <div>
-//   <span className="mr-4">
-//     <a
-//       className="font-sans border-b-0"
-//       href={'/epub/' + hit.slug + '.epub'}
-//     >
-//       <i className="fas fa-book"></i> ePub
-//     </a>
-//   </span>
-//   <span className="mr-4">
-//     <a
-//       className="font-sans border-b-0"
-//       href={'/pdf/' + hit.slug + '.pdf'}
-//     >
-//       <i className="fas fa-file-pdf"></i> PDF
-//     </a>
-//   </span>
-//   <span>
-//     <a
-//       className="font-sans border-b-0"
-//       href={'/jats/' + hit.slug + '.xml'}
-//     >
-//       <i className="fas fa-file-code"></i> JATS
-//     </a>
-//   </span>
-// </div>

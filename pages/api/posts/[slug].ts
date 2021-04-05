@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
 import omit from 'lodash/omit'
-import { getSinglePost } from '../../../lib/posts'
+import { getSinglePostBySlug } from '../../../lib/posts'
 import { initMiddleware } from '../../../lib/helpers'
 
 // Initialize the cors middleware
@@ -17,8 +17,8 @@ export default async function handler(
 ) {
   await cors(req, res)
 
-  const post = await getSinglePost(req.query['slug'] as string)
-
+  const post = await getSinglePostBySlug(req.query['slug'] as string)
+  console.log(post)
   if (post && post.name === 'ObjectNotFoundError') {
     res.status(404).json({
       name: post.name,

@@ -23,40 +23,40 @@ export default function Featured(posts) {
               {posts.posts.map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.ObjectID}
+                  key={post.document.id}
                 >
                   <div className="flex-shrink-0">
                     <img
                       className="h-48 w-full object-cover"
-                      src={post.featureImage}
+                      src={post.document.featureImage}
                       alt=""
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <span className="inline-flex items-center px-3 py-0.5 rounded-full text-base font-medium font-sans bg-green-100 text-green-600 capitalize">
-                        {post._tags[0]}
+                        {post.document._tags[0]}
                       </span>
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/mfenner/' + post.document.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.title}
+                          {post.document.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.description)}
+                          {ReactHtmlParser(post.document.description)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
-                          name: post.author.name,
-                          imageUrl: post.author.imageUrl
+                          name: post.document.author.name,
+                          imageUrl: post.document.author.imageUrl
                         }}
-                        published={new Date(post.published)}
-                        readingTime={post.readingTime}
+                        published={new Date(post.document.published * 1000)}
+                        readingTime={post.document.readingTime}
                       />
                     </div>
                   </div>

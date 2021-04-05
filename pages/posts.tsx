@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import ReactHtmlParser from 'react-html-parser'
-import algoliasearch from 'algoliasearch/lite'
 import {
   InstantSearch,
   connectHits,
   connectStats,
   connectPagination
 } from 'react-instantsearch-dom'
+import TypesenseInstantSearchAdapter from 'typesense-instantsearch-adapter'
 
 import { getAllPosts } from '../lib/posts'
 import { pluralize } from '../lib/helpers'
@@ -29,16 +29,29 @@ export async function getStaticProps(context) {
   }
 }
 
-const PostsPage = (props) => {
-  const searchClient = algoliasearch(
-    '8ZJ4A0DNVF',
-    'e4232510cdb1da6514f8f278e1c1b852'
-  )
+const PostsPage = ({ posts }) => {
+  const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
+    server: {
+      apiKey: process.env.NEXT_PUBLIC_TYPESENSE_API_KEY,
+      nodes: [
+        {
+          host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,
+          port: '443',
+          protocol: 'https'
+        }
+      ]
+    },
+    additionalSearchParameters: {
+      queryBy: '_tags,title,content'
+    }
+  })
+
+  const searchClient = typesenseInstantsearchAdapter.searchClient
 
   const Hits = ({ hits }) => (
     <>
       {hits.map((hit) => (
-        <div key={hit.objectID}>
+        <div key={hit.id}>
           <h1>
             <Link href={`/mfenner/${hit.slug}`}>
               <a className="leading-tight border-b-0 font-sans text-green-600 no-underline">
@@ -51,7 +64,7 @@ const PostsPage = (props) => {
               name: hit.author.name,
               imageUrl: hit.author.imageUrl
             }}
-            published={new Date(hit.published)}
+            published={new Date(hit.published * 1000)}
             readingTime={hit.readingTime}
           />
           <div className="text-lg leading-normal">
@@ -76,7 +89,7 @@ const PostsPage = (props) => {
 
   const Stats = ({ nbHits }) => (
     <div className="mt-4">
-      <h1>{pluralize(nbHits, 'Result')}</h1>
+      <h1>{pluralize(nbHits, 'Post')}</h1>
     </div>
   )
 

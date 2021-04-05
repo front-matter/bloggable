@@ -25,16 +25,6 @@ export default function Navbar(props) {
         </div>
       </div>
     </div>
-    // <div className="relative flex flex-wrap lg:ml-auto text-base">
-    //   <i className="fas fa-search absolute ml-3 mt-3 text-gray-700"></i>
-    //   <input
-    //     type="search"
-    //     value={currentRefinement}
-    //     onChange={(event) => refine(event.currentTarget.value)}
-    //     className="pl-10 pr-1 py-1 h-10 border border-solid border-gray-600 rounded-lg text-lg text-gray-700 shadow-none outline-none focus:outline-none font-normal flex-1 placeholder-gray-300"
-    //     placeholder="Search..."
-    //   />
-    // </div>
   )
 
   const CustomSearchBox = connectSearchBox(SearchBox)

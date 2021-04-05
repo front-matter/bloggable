@@ -522,11 +522,11 @@ export default function Features() {
                       Core metadata to improve discoverability. A full-text
                       search of all content is powered by{' '}
                       <a
-                        href="https://algolia.com/"
+                        href="https://typesense.org/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Algolia
+                        Typesense
                       </a>
                       .
                     </dd>
