@@ -122,24 +122,6 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/phiresky/pandoc-url2cite">
-                <a
-                  className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  pandoc-url2cite
-                </a>
-              </Link>
-            </dt>
-            <dd className="mt-0 ml-9 text-base text-gray-500">
-              pandoc-url2cite allows you to instantly and transparently cite
-              most papers directly given only a single URL.
-            </dd>
-          </div>
-
-          <div className="relative">
-            <dt>
               <Link href="https://github.com/citation-style-language/styles">
                 <a
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
@@ -155,6 +137,48 @@ export default function Pricing() {
               citations and bibliographies.
               <p className="mt-2 text-sm font-sans">
                 Original authors Bruce D'Arcus, Frank Bennett, Rintze Zelle
+              </p>
+            </dd>
+          </div>
+
+          <div className="relative">
+            <dt>
+              <Link href="https://github.com/typesense/typesense">
+                <a
+                  className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Typesense
+                </a>
+              </Link>
+            </dt>
+            <dd className="mt-0 ml-9 text-base text-gray-500">
+              Typesense is a fast, typo-tolerant search engine for building
+              delightful search experiences.
+              <p className="mt-2 text-sm font-sans">
+                Original authors Jason Bosco, Kishore Nallan
+              </p>
+            </dd>
+          </div>
+
+          <div className="relative">
+            <dt>
+              <Link href="https://github.com/plausible/hosting">
+                <a
+                  className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Plausible
+                </a>
+              </Link>
+            </dt>
+            <dd className="mt-0 ml-9 text-base text-gray-500">
+              Plausible provides all website traffic metrics at a glance in a
+              simple and modern web analytics dashboard.
+              <p className="mt-2 text-sm font-sans">
+                Original authors Marko Saric, Uku Täht
               </p>
             </dd>
           </div>

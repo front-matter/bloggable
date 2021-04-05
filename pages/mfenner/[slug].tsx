@@ -51,7 +51,7 @@ const Post = (props) => {
         <meta name="citation_author" content={hit.author.name} />
         <meta
           name="citation_publication_date"
-          content={new Date(hit.published).toLocaleDateString('en-US')}
+          content={new Date(hit.published * 1000).toLocaleDateString('en-US')}
         />
         <meta name="citation_journal_title" content="Gobbledygook" />
         <meta name="citation_language" content="en" />
@@ -78,7 +78,7 @@ const Post = (props) => {
               name: hit.author.name,
               imageUrl: hit.author.imageUrl
             }}
-            published={new Date(hit.published)}
+            published={new Date(hit.published * 1000)}
             readingTime={hit.readingTime}
           />
           <div className="text-lg">{ReactHtmlParser(hit.content)}</div>
