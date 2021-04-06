@@ -93,7 +93,7 @@ const Post = (props) => {
               <FontAwesomeIcon icon={faCreativeCommons} className="mr-0.5" />
               <FontAwesomeIcon icon={faCreativeCommonsBy} />
             </span>
-            Copyright © {new Date(hit.published).getFullYear()}{' '}
+            Copyright © {new Date(hit.published * 1000).getFullYear()}{' '}
             {hit.author.name}. Distributed under the terms of the{' '}
             <a
               className="border-b-0"
