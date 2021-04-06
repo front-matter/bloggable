@@ -80,7 +80,7 @@ export async function getSinglePostBySlug(slug: string) {
 
 // Create API instance with site credentials
 const api = new GhostContentAPI({
-  url: 'https://editor.front-matter.io',
+  url: 'https://editor.sensiblescience.io',
   key: process.env.NEXT_PUBLIC_GHOST_API_KEY,
   version: 'v3'
 })
