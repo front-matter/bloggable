@@ -53,6 +53,9 @@ const PostsPage = ({ posts }) => {
       {hits.map((hit) => (
         <div key={hit.id}>
           <h1>
+            <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
+              {hit._tags[0]}
+            </p>
             <Link href={`/mfenner/${hit.slug}`}>
               <a className="leading-tight border-b-0 font-sans text-green-600 no-underline">
                 {hit.title}
@@ -69,16 +72,6 @@ const PostsPage = ({ posts }) => {
           />
           <div className="text-lg leading-normal">
             {ReactHtmlParser(hit.description)}
-          </div>
-          <div>
-            {hit._tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-xs font-sans font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-100 last:mr-0 mr-1"
-              >
-                {tag}
-              </span>
-            ))}
           </div>
         </div>
       ))}

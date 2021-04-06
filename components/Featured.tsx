@@ -34,9 +34,9 @@ export default function Featured(posts) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <span className="inline-flex items-center px-3 py-0.5 rounded-full text-base font-medium font-sans bg-green-100 text-green-600 capitalize">
+                      <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document._tags[0]}
-                      </span>
+                      </p>
                       <a
                         href={'/mfenner/' + post.document.slug}
                         className="block mt-2 border-b-0"

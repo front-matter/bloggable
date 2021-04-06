@@ -72,7 +72,10 @@ const Post = (props) => {
       <Header />
       <div className="container mx-4 md:mx-auto px-6 py-8 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
-          <h1 className="mt-1 mb-2 text-green-600">{hit.title}</h1>
+          <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
+            {hit._tags[0]}
+          </p>
+          <h1 className="mt-0 mb-2 text-green-600">{hit.title}</h1>
           <Byline
             author={{
               name: hit.author.name,
@@ -98,11 +101,7 @@ const Post = (props) => {
             >
               Creative Commons Attribution 4.0 License.
             </a>
-          </div>{' '}
-          {hit._tags &&
-            hit._tags.forEach((tag) => {
-              tag
-            })}
+          </div>
           <DiscourseForum post={hit} />
         </div>
       </div>
