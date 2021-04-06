@@ -60,7 +60,7 @@ export default function Navbar(props) {
             <li className="flex items-center">
               <a
                 className="hover:text-gray-600 text-gray-800 px-3 py-8 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
-                href="https://sensiblescience.io/feed.xml"
+                href="https://front-matter.io/feed.xml"
                 target="_blank"
                 rel="noopener noreferrer"
               >

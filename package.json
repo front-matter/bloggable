@@ -1,9 +1,9 @@
 {
   "name": "bloggable",
-  "homepage": "https://sensiblescience.io",
+  "homepage": "https://front-matter.io",
   "version": "1.0.0",
   "description": "Bloggable",
-  "repository": "https://github.com/sensible-science/bloggable",
+  "repository": "https://github.com/front-matter/bloggable",
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.13.10",

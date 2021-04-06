@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://sensiblescience.io',
+  siteUrl: 'https://front-matter.io',
   generateRobotsTxt: true
 }
