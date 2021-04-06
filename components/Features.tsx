@@ -71,9 +71,9 @@ export default function Features() {
             </h2>
             <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
               Publishing, reading and re-using scholarly content is too
-              complicated, too expensive, and too exclusive. Sensible Science
-              tries to help address these barriers, allowing authors and readers
-              to instead focus on the science.
+              complicated, too expensive, and too exclusive. Front Matter tries
+              to help address these barriers, allowing authors and readers to
+              instead focus on the science.
             </p>
           </div>
 
@@ -84,8 +84,8 @@ export default function Features() {
                 Easy-to-use powerful editor
               </h3>
               <p className="mt-3 mr-16 text-lg text-gray-500">
-                Sensible Science uses the Open Source Ghost blogging software,
-                and posts are written using the visual{' '}
+                Front Matter uses the Open Source Ghost blogging software, and
+                posts are written using the visual{' '}
                 <a
                   href="https://ghost.org/help/using-the-editor/"
                   target="_blank"
@@ -297,7 +297,7 @@ export default function Features() {
                       </p>
                     </dt>
                     <dd className="mt-1 ml-16 text-base text-gray-500">
-                      Sensible Science provides an easy to use{' '}
+                      Front Matter provides an easy to use{' '}
                       <a
                         href="https://graphs.sensiblescience.io"
                         target="_blank"
@@ -370,7 +370,7 @@ export default function Features() {
                 Flexible publishing options
               </h3>
               <p className="mt-3 mr-16 text-lg text-gray-500">
-                Sensible Science uses the Open Source{' '}
+                Front Matter uses the Open Source{' '}
                 <a
                   href="https://pandoc.org/"
                   target="_blank"
@@ -503,7 +503,7 @@ export default function Features() {
                 </h3>
                 <p className="mt-3 text-lg text-gray-500">
                   Published scientific content becomes part of the scholarly
-                  record. Sensible Science tracks the reuse and helps users to
+                  record. Front Matter tracks the reuse and helps users to
                   engage in the discussion.
                 </p>
 
@@ -518,9 +518,9 @@ export default function Features() {
                       </p>
                     </dt>
                     <dd className="mt-1 ml-16 text-base text-gray-500">
-                      Sensible Science makes heavy use of schema.org and Dublin
-                      Core metadata to improve discoverability. A full-text
-                      search of all content is powered by{' '}
+                      Front Matter makes heavy use of schema.org and Dublin Core
+                      metadata to improve discoverability. A full-text search of
+                      all content is powered by{' '}
                       <a
                         href="https://typesense.org/"
                         target="_blank"
@@ -541,10 +541,10 @@ export default function Features() {
                       </p>
                     </dt>
                     <dd className="mt-1 ml-16 text-base text-gray-500">
-                      Commenting and further discussion is provided by the
-                      Sensible Science{' '}
+                      Commenting and further discussion is provided by the Front
+                      Matter{' '}
                       <a
-                        href="https://discuss.sensiblescience.io/"
+                        href="https://discuss.front-matter.io/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -595,10 +595,10 @@ export default function Features() {
                       </p>
                     </dt>
                     <dd className="mt-1 ml-16 text-base text-gray-500">
-                      Sensible Science helps its registered users via a
-                      dedicated blog, its{' '}
+                      Front Matter helps its registered users via a dedicated
+                      blog, its{' '}
                       <a
-                        href="https://discuss.sensiblescience.io/"
+                        href="https://discuss.front-matter.io/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

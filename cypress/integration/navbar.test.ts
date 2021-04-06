@@ -3,9 +3,7 @@
 describe('Navbar', () => {
   it('link', () => {
     cy.visit('/')
-    cy.get('[data-cy=navbarLink]', { timeout: 30000 }).contains(
-      'Sensible Science'
-    )
+    cy.get('[data-cy=navbarLink]', { timeout: 30000 }).contains('Front Matter')
   })
 })
 

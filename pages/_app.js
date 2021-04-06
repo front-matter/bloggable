@@ -28,13 +28,13 @@ export default class MyApp extends App {
 
     return (
       <>
-        <PlausibleProvider domain="sensiblescience.io">
+        <PlausibleProvider domain="front-matter.io">
           <Head>
             <meta
               name="viewport"
               content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
-            <title>Sensible Science</title>
+            <title>Front Matter</title>
             <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
           </Head>
           <Layout>

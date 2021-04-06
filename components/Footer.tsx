@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="mt-8 w-full grid grid-cols-4 gap-8 xl:mt-0">
           <div className="mt-2 md:mt-0">
             <h3 className="text-base font-semibold text-gray-400 tracking-wider uppercase">
-              Sensible Science
+              Front Matter
             </h3>
             <ul className="mt-1 list-none">
               <li>
@@ -30,14 +30,14 @@ export default function Footer() {
                     </a>
                   </Link>
 
-                  <Link href="https://discuss.sensiblescience.io">
+                  <Link href="https://discuss.front-matter.io">
                     <a className="text-gray-500 hover:text-gray-400 border-b-0">
                       <span className="sr-only">Discourse</span>
                       <FontAwesomeIcon icon={faDiscourse} />
                     </a>
                   </Link>
 
-                  <Link href="https://sensiblescience.io/feed.xml">
+                  <Link href="https://front-matter.io/feed.xml">
                     <a className="text-gray-500 hover:text-gray-400 border-b-0">
                       <span className="sr-only">RSS</span>
                       <FontAwesomeIcon icon={faRss} />
@@ -95,14 +95,14 @@ export default function Footer() {
             </h3>
             <ul className="mt-1 list-none">
               <li>
-                <Link href="https://discuss.sensiblescience.io">
+                <Link href="https://discuss.front-matter.io">
                   <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
                     Discussion Forum
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="https://graphs.sensiblescience.io">
+                <Link href="https://graphs.front-matter.io">
                   <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
                     Graphs Editor
                   </a>
@@ -123,7 +123,7 @@ export default function Footer() {
             </h3>
             <ul className="mt-1 list-none">
               <li>
-                <Link href="https://sensiblescience.io/open-source">
+                <Link href="/open-source">
                   <a className="text-sm border-b-0 text-gray-500 hover:text-gray-400">
                     Open Source Software
                   </a>

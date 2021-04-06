@@ -41,15 +41,15 @@ export default function Navbar(props) {
                     <img
                       className="block lg:hidden h-8 w-auto"
                       src="/img/logo.svg"
-                      alt="Sensible Science"
+                      alt="Front Matter"
                     />
                     <img
                       className="hidden lg:block h-8 w-auto"
                       src="/img/logo.svg"
-                      alt="Sensible Science"
+                      alt="Front Matter"
                     />
                     <span className="text-lg font-semibold pl-1 pt-1">
-                      Sensible Science
+                      Front Matter
                     </span>
                   </a>
                 </Link>

@@ -30,7 +30,7 @@ export default function Navbar(props) {
               href="/"
               data-cy="navbarLink"
             >
-              Sensible Science
+              Front Matter
             </a>
           </Link>
         </div>

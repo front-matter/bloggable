@@ -4,17 +4,15 @@ const fs = require('fs')
 
 export async function generateAtomFeed() {
   const feed = new Feed({
-    title: 'Sensible Science',
-    description: 'Sensible Science is a science blogging platform.',
-    id: 'https://sensiblescience.io/',
-    link: 'https://sensiblescience.io/',
+    title: 'Front Matter',
+    description: 'Front Matter is a science blogging platform.',
+    id: 'https://front-matter.io/',
+    link: 'https://front-matter.io/',
     language: 'en',
     copyright:
-      'Copyright © 2007-' +
-      new Date().getFullYear() +
-      ' Sensible Science. Distributed under the terms of the Creative Commons Attribution 4.0 License.',
+      'Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.',
     feedLinks: {
-      atom: 'https://sensiblescience.io/feed.xml'
+      atom: 'https://front-matter.io/feed.xml'
     },
     author: {
       name: 'Martin Fenner',
@@ -34,7 +32,7 @@ export async function generateAtomFeed() {
         }
       ],
       id: post.objectID,
-      link: 'https://sensiblescience.io/' + post.blog.id + '/' + post.slug,
+      link: 'https://front-matter.io/' + post.blog.id + '/' + post.slug,
       description: post.description,
       content: post.content,
       date: new Date(post.published)

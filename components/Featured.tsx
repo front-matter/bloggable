@@ -16,7 +16,7 @@ export default function Featured(posts) {
                 From the Archives
               </h2>
               <p className="mt-0 pt-0 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 font-sans">
-                Featured content from the Sensible Science Archives.
+                Featured content from the Front Matter Archives.
               </p>
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">

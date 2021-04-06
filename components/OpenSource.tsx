@@ -13,7 +13,7 @@ export default function Pricing() {
             Open source software
           </h2>
           <p className="mt-4 text-lg text-gray-500">
-            Sensible Science is built with open source software, including the
+            Front Matter is built with open source software, including the
             following key components:
           </p>
         </div>
