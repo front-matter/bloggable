@@ -180,7 +180,7 @@ export default function Features() {
               <img
                 className="relative mt-16 mx-auto shadow-md"
                 width="720"
-                src="https://assets.front-matter.io/ghost/2021/March/28th/ghost-editor.png"
+                src="https://assets.front-matter.io/ghost/ghost-editor.png"
                 alt="Ghost editor"
               />
             </div>
@@ -356,7 +356,7 @@ export default function Features() {
                 <img
                   className="relative mx-auto mr-16 shadow-md"
                   width="720"
-                  src="https://assets.front-matter.io/ghost/2021/March/28th/rawgraphs.png"
+                  src="https://assets.front-matter.io/ghost/rawgraphs.png"
                   alt=""
                 />
               </div>
@@ -488,7 +488,7 @@ export default function Features() {
               <img
                 className="relative mt-16 mx-auto shadow-md"
                 width="680"
-                src="https://assets.front-matter.io/ghost/2021/March/28th/pdf-export.png"
+                src="https://assets.front-matter.io/ghost/pdf-export.png"
                 alt="PDF Export"
               />
             </div>
@@ -647,7 +647,7 @@ export default function Features() {
                 <img
                   className="relative mx-auto mr-16 shadow-md"
                   width="720"
-                  src="https://assets.front-matter.io/ghost/2021/March/28th/discourse.png"
+                  src="https://assets.front-matter.io/ghost/discourse.png"
                   alt="discourse"
                 />
               </div>
