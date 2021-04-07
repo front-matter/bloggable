@@ -23,7 +23,6 @@ export async function generateAtomFeed() {
   const posts = await getAllPosts()
 
   posts.forEach((post) => {
-    console.log(post)
     feed.addItem({
       title: post.document.title,
       author: [

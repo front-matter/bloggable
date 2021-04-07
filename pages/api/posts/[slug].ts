@@ -18,7 +18,7 @@ export default async function handler(
   await cors(req, res)
 
   const post = await getSinglePostBySlug(req.query['slug'] as string)
-  console.log(post)
+
   if (post && post.name === 'ObjectNotFoundError') {
     res.status(404).json({
       name: post.name,
