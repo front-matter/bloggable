@@ -10,7 +10,7 @@ import Featured from '../components/Featured'
 // import Newsletter from '../components/Newsletter'
 
 export async function getStaticProps(context) {
-  const posts = await getPosts('featured', 6)
+  const posts = await getPosts('featured', 12)
 
   if (!posts) {
     return {
