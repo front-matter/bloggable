@@ -13,11 +13,11 @@ export default function Hero() {
           <div className="relative px-4 mt-48 pt-32 pb-16 sm:px-6 sm:py-24 lg:px-8 justify-center">
             <h1 className="text-center text-4xl font-extrabold tracking-tight">
               <span className="block text-gray-900">
-                Science Blogging Reimagined
+                All Science needs a Front Matter
               </span>
             </h1>
             <p className="mt-1 max-w-sm mx-auto text-center text-2xl font-sans text-gray-900 sm:max-w-3xl">
-              A better way of communicating Science. Launching soon.
+              Launching soon.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
