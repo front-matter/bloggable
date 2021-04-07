@@ -1,6 +1,6 @@
 import React from 'react'
 import { getPosts } from '../lib/posts'
-// import { generateAtomFeed } from '../lib/feed'
+import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
 // import { updateIndex } from '../lib/typesense'
 import Header from '../components/Header'
@@ -18,7 +18,7 @@ export async function getStaticProps(context) {
     }
   }
 
-  // await generateAtomFeed()
+  await generateAtomFeed()
   // await generateEpub()
   // await generatePdf()
   // await generateJats()
