@@ -1,5 +1,5 @@
 import { Feed } from 'feed'
-import { getPosts } from './posts'
+import { getAllPosts } from './posts'
 const fs = require('fs')
 
 export async function generateAtomFeed() {
@@ -20,22 +20,27 @@ export async function generateAtomFeed() {
     }
   })
 
-  const posts = await getPosts('')
+  const posts = await getAllPosts()
 
   posts.forEach((post) => {
+    console.log(post)
     feed.addItem({
-      title: post.title,
+      title: post.document.title,
       author: [
         {
-          name: post.author.name,
-          link: post.author.id
+          name: post.document.author.name,
+          link: post.document.author.id
         }
       ],
-      id: post.objectID,
-      link: 'https://front-matter.io/' + post.blog.id + '/' + post.slug,
-      description: post.description,
-      content: post.content,
-      date: new Date(post.published)
+      id: post.document.id,
+      link:
+        'https://front-matter.io/' +
+        post.document.blogId +
+        '/' +
+        post.document.slug,
+      description: post.document.description,
+      content: post.document.content,
+      date: new Date(post.document.published)
     })
   })
 
