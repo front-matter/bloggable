@@ -7,8 +7,20 @@ import { getTime, parseISO } from 'date-fns'
 const fs = require('fs')
 
 export async function updateIndex() {
+  let client = new Client({
+    nodes: [
+      {
+        host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,
+        port: '443',
+        protocol: 'https'
+      }
+    ],
+    apiKey: process.env.NEXT_PUBLIC_TYPESENSE_ADMIN_API_KEY,
+    connectionTimeoutSeconds: 2
+  })
+
   const posts = await getGhostPosts()
-  let documents = ''
+  let documents = []
 
   for (const post of posts) {
     const description = trimText(
@@ -70,10 +82,105 @@ export async function updateIndex() {
     let cleanedDocument = Object.fromEntries(
       Object.entries(document).filter(([_, v]) => v != null)
     )
-    documents += JSON.stringify(cleanedDocument) + '\n'
+
+    await client
+      .collections('front-matter')
+      .documents()
+      .upsert(cleanedDocument)
+      .catch((err) => {
+        console.error(err)
+      })
+    documents.push(JSON.stringify(cleanedDocument))
   }
 
   await fs.writeFileSync('./public/typesense.json', documents)
+
+  // client
+  //   .collections('front-matter')
+  //   .documents()
+  //   .import(documents, { action: 'create' })
+  //   .then(function (data) {
+  //     console.log(data)
+  //   })
+  //   .catch((err) => {
+  //     console.error(err)
+  //   })
+}
+
+export async function updateSchema() {
+  let schema = {
+    name: 'front-matter',
+    fields: [
+      {
+        name: 'id',
+        type: 'string',
+        facet: false
+      },
+      {
+        name: 'blogId',
+        type: 'string',
+        facet: true
+      },
+      {
+        name: 'title',
+        type: 'string',
+        facet: false
+      },
+      {
+        name: 'slug',
+        type: 'string',
+        facet: false
+      },
+      {
+        name: 'description',
+        type: 'string',
+        facet: false
+      },
+      {
+        name: 'content',
+        type: 'string',
+        facet: false
+      },
+      {
+        name: 'readingTime',
+        type: 'int32',
+        facet: true
+      },
+      {
+        name: '_tags',
+        type: 'string[]',
+        facet: true,
+        optional: true
+      },
+      {
+        name: 'featureImage',
+        type: 'string',
+        facet: false,
+        optional: true
+      },
+      {
+        name: 'visibility',
+        type: 'string',
+        facet: false
+      },
+      {
+        name: 'created',
+        type: 'int32',
+        facet: false
+      },
+      {
+        name: 'published',
+        type: 'int32',
+        facet: true
+      },
+      {
+        name: 'updated',
+        type: 'int32',
+        facet: false
+      }
+    ],
+    default_sorting_field: 'published'
+  }
 
   let client = new Client({
     nodes: [
@@ -87,98 +194,13 @@ export async function updateIndex() {
     connectionTimeoutSeconds: 2
   })
 
-  if (!client.collections('sensible-science').retrieve()) {
-    let schema = {
-      name: 'sensible-science',
-      fields: [
-        {
-          name: 'id',
-          type: 'string',
-          facet: false
-        },
-        {
-          name: 'blogId',
-          type: 'string',
-          facet: true
-        },
-        {
-          name: 'title',
-          type: 'string',
-          facet: false
-        },
-        {
-          name: 'slug',
-          type: 'string',
-          facet: false
-        },
-        {
-          name: 'description',
-          type: 'string',
-          facet: false
-        },
-        {
-          name: 'content',
-          type: 'string',
-          facet: false
-        },
-        {
-          name: 'readingTime',
-          type: 'int32',
-          facet: true
-        },
-        {
-          name: '_tags',
-          type: 'string[]',
-          facet: true
-        },
-        {
-          name: 'featureImage',
-          type: 'string',
-          facet: true
-        },
-        {
-          name: 'visibility',
-          type: 'string',
-          facet: true
-        },
-        {
-          name: 'created',
-          type: 'int32',
-          facet: false
-        },
-        {
-          name: 'published',
-          type: 'int32',
-          facet: true
-        },
-        {
-          name: 'updated',
-          type: 'int32',
-          facet: true
-        }
-      ],
-      default_sorting_field: 'published'
-    }
-
-    client
-      .collections()
-      .create(schema)
-      .then(function (data) {
-        console.log(data)
-      })
-      .catch((err) => {
-        console.error(err)
-      })
-  }
-
-  // client
-  //   .collections('sensible-science')
-  //   .documents()
-  //   .import(documents, { action: 'upsert' })
-  //   .then(function (data) {
-  //     console.log(data)
-  //   })
-  //   .catch((err) => {
-  //     console.error(err)
-  //   })
+  client
+    .collections()
+    .create(schema)
+    .then(function (data) {
+      console.log(data)
+    })
+    .catch((err) => {
+      console.error(err)
+    })
 }

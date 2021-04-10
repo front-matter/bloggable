@@ -2,7 +2,7 @@ import React from 'react'
 import { getPosts } from '../lib/posts'
 import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
-// import { updateIndex } from '../lib/typesense'
+import { updateIndex, updateSchema } from '../lib/typesense'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
@@ -18,11 +18,12 @@ export async function getStaticProps(context) {
     }
   }
 
-  await generateAtomFeed()
+  // await generateAtomFeed()
   // await generateEpub()
   // await generatePdf()
   // await generateJats()
-  // await updateIndex()
+  // await updateSchema()
+  await updateIndex()
 
   return {
     props: { posts }

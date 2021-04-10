@@ -22,7 +22,10 @@ export default function Featured(posts) {
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-1 lg:max-w-none">
               {posts.posts.slice(0, 1).map((post) => (
                 <>
-                  <div className="flex-shrink-0 bg-white pt-6 px-6">
+                  <div
+                    key={post.document.id}
+                    className="flex-shrink-0 bg-white pt-6 px-6"
+                  >
                     <img
                       className="h-48 w-full object-cover"
                       src={post.document.featureImage}

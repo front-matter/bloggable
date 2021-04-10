@@ -19,7 +19,7 @@ export async function getPosts(
   page?: number
 ) {
   return await client
-    .collections('sensible-science')
+    .collections('front-matter')
     .documents()
     .search({
       q: query,
@@ -38,7 +38,7 @@ export async function getPosts(
 
 export async function getAllPosts() {
   return await client
-    .collections('sensible-science')
+    .collections('front-matter')
     .documents()
     .search({ q: '*', per_page: 250, page: 1 })
     .then(({ hits }) => {
@@ -52,7 +52,7 @@ export async function getAllPosts() {
 
 export async function getSinglePost(id: string) {
   return await client
-    .collections('sensible-science')
+    .collections('front-matter')
     .documents(id)
     .retrieve()
     .then(function (data) {
@@ -66,7 +66,7 @@ export async function getSinglePost(id: string) {
 
 export async function getSinglePostBySlug(slug: string) {
   return await client
-    .collections('sensible-science')
+    .collections('front-matter')
     .documents()
     .search({ q: slug, query_by: 'slug', per_page: 1, page: 1 })
     .then((document) => {
