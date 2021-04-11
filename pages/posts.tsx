@@ -53,9 +53,20 @@ const PostsPage = ({ posts }) => {
       {hits.map((hit) => (
         <div key={hit.id}>
           <h1>
-            <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
-              {hit.tags[0]}
-            </p>
+            {hit.tags && (
+              <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
+                {hit.tags.map((tag, index) => (
+                  <>
+                    <Link key={tag} href={`/categories/${tag}`}>
+                      <a className="border-b-0 hover:border-b hover:border-green-600">
+                        {tag.split('-').join(' ')}
+                      </a>
+                    </Link>
+                    {index + 1 < hit.tags.length ? ' · ' : ''}
+                  </>
+                ))}
+              </p>
+            )}
             <Link href={`/mfenner/${hit.slug}`}>
               <a className="leading-tight border-b-0 font-sans text-green-600 no-underline">
                 {hit.title}
@@ -129,7 +140,7 @@ const PostsPage = ({ posts }) => {
 
   return (
     <>
-      <InstantSearch indexName="sensible-science" searchClient={searchClient}>
+      <InstantSearch indexName="front-matter" searchClient={searchClient}>
         <Header searchBox={true} />
         <div className="container mx-auto px-6 py-2 flex flex-wrap justify-center">
           <div className="w-auto md:w-8/12">

@@ -77,7 +77,7 @@ const Post = (props) => {
             <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
               {hit.tags.map((tag, index) => (
                 <>
-                  <Link href={`/categories/${tag}`}>
+                  <Link key={tag} href={`/categories/${tag}`}>
                     <a className="border-b-0 hover:border-b hover:border-green-600">
                       {tag.split('-').join(' ')}
                     </a>

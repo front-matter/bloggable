@@ -41,7 +41,7 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link href={`/categories/${tag}`}>
+                            <Link key={tag} href={`/categories/${tag}`}>
                               <a className="border-b-0 hover:border-b hover:border-green-600">
                                 {tag.split('-').join(' ')}
                               </a>
@@ -100,7 +100,7 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link href={`/categories/${tag}`}>
+                            <Link key={tag} href={`/categories/${tag}`}>
                               <a className="border-b-0 hover:border-b hover:border-green-600">
                                 {tag.split('-').join(' ')}
                               </a>
@@ -159,7 +159,7 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link href={`/categories/${tag}`}>
+                            <Link key={tag} href={`/categories/${tag}`}>
                               <a className="border-b-0 hover:border-b hover:border-green-600">
                                 {tag.split('-').join(' ')}
                               </a>
@@ -218,7 +218,7 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link href={`/categories/${tag}`}>
+                            <Link key={tag} href={`/categories/${tag}`}>
                               <a className="border-b-0 hover:border-b hover:border-green-600">
                                 {tag.split('-').join(' ')}
                               </a>
@@ -277,7 +277,7 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link href={`/categories/${tag}`}>
+                            <Link key={tag} href={`/categories/${tag}`}>
                               <a className="border-b-0 hover:border-b hover:border-green-600">
                                 {tag.split('-').join(' ')}
                               </a>
@@ -336,7 +336,7 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link href={`/categories/${tag}`}>
+                            <Link key={tag} href={`/categories/${tag}`}>
                               <a className="border-b-0 hover:border-b hover:border-green-600">
                                 {tag.split('-').join(' ')}
                               </a>
@@ -395,7 +395,7 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link href={`/categories/${tag}`}>
+                            <Link key={tag} href={`/categories/${tag}`}>
                               <a className="border-b-0 hover:border-b hover:border-green-600">
                                 {tag.split('-').join(' ')}
                               </a>
