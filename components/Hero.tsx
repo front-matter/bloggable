@@ -24,23 +24,23 @@ export default function Hero(tag) {
                   (tag && tag.tag.accent_color ? 'text-white' : 'text-gray-900')
                 }
               >
-                {tag && tag.tag.name
+                {tag && tag.tag.name !== 'Featured'
                   ? tag.tag.name
                   : 'All Science needs a Front Matter'}
               </span>
             </h1>
-            <p className="mt-1 max-w-sm mx-auto text-center text-2xl font-sans sm:max-w-3xl">
-              <span
-                className={
-                  tag && tag.tag.accent_color ? 'text-white' : 'text-gray-900'
-                }
-              >
-                {tag && tag.tag.description
-                  ? tag.tag.description
-                  : 'Coming soon.'}
-              </span>
-            </p>
-            {!tag && (
+            {tag && tag.tag.description && (
+              <p className="mt-1 max-w-sm mx-auto text-center text-2xl font-sans sm:max-w-3xl">
+                <span
+                  className={
+                    tag && tag.tag.accent_color ? 'text-white' : 'text-gray-900'
+                  }
+                >
+                  {tag && tag.tag.description}
+                </span>
+              </p>
+            )}
+            {tag && tag.tag.name === 'Featured' && (
               <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                 <div className="rounded-md shadow">
                   <Link href="/features">

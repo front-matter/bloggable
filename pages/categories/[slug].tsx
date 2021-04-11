@@ -17,10 +17,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   const tag = await getSingleGhostTag(context.params.slug)
-  const posts = await getPostsByTag(
-    context.params.slug.split('-').join(' '),
-    12
-  )
+  const posts = await getPostsByTag(context.params.slug, tag.count.posts)
 
   if (!posts || !tag) {
     return {

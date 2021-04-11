@@ -42,7 +42,7 @@ const PostsPage = ({ posts }) => {
       ]
     },
     additionalSearchParameters: {
-      queryBy: '_tags,title,content'
+      queryBy: 'tags,title,content'
     }
   })
 
@@ -54,7 +54,7 @@ const PostsPage = ({ posts }) => {
         <div key={hit.id}>
           <h1>
             <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
-              {hit._tags[0]}
+              {hit.tags[0]}
             </p>
             <Link href={`/mfenner/${hit.slug}`}>
               <a className="leading-tight border-b-0 font-sans text-green-600 no-underline">

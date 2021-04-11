@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import ReactHtmlParser from 'react-html-parser'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -55,8 +56,8 @@ const Post = (props) => {
         />
         <meta name="citation_journal_title" content="Gobbledygook" />
         <meta name="citation_language" content="en" />
-        {hit._tags && (
-          <meta name="citation_keywords" content={hit._tags.join(', ')} />
+        {hit.tags && (
+          <meta name="citation_keywords" content={hit.tags.join(', ')} />
         )}
         <meta
           name="citation_pdf_url"
@@ -72,9 +73,20 @@ const Post = (props) => {
       <Header />
       <div className="container mx-4 md:mx-auto px-6 py-8 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
-          <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
-            {hit._tags[0]}
-          </p>
+          {hit.tags && (
+            <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
+              {hit.tags.map((tag, index) => (
+                <>
+                  <Link href={`/categories/${tag}`}>
+                    <a className="border-b-0 hover:border-b hover:border-green-600">
+                      {tag.split('-').join(' ')}
+                    </a>
+                  </Link>
+                  {index + 1 < hit.tags.length ? ' · ' : ''}
+                </>
+              ))}
+            </p>
+          )}
           <h1 className="mt-0 mb-2 text-green-600">{hit.title}</h1>
           <Byline
             author={{

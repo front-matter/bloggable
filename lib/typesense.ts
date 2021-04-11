@@ -45,7 +45,7 @@ export async function updateIndex() {
       description: description + '...',
       content: await generateHtml(post.html),
       readingTime: post.reading_time,
-      _tags: post.tags && post.tags.map((tag) => tag.name),
+      tags: post.tags && post.tags.map((tag) => tag.slug),
       featureImage: post.feature_image,
       visibility: post.visibility,
       created: getTime(parseISO(post.created_at)) * 0.001,
@@ -147,7 +147,7 @@ export async function updateSchema() {
         facet: true
       },
       {
-        name: '_tags',
+        name: 'tags',
         type: 'string[]',
         facet: true,
         optional: true

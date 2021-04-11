@@ -23,7 +23,7 @@ export async function getPosts(
     .documents()
     .search({
       q: query,
-      query_by: '_tags,title,content',
+      query_by: 'tags,title,content',
       per_page: hitsPerPage ? hitsPerPage : 25,
       page: page > 0 ? page : 1
     })
@@ -46,7 +46,7 @@ export async function getPostsByTag(
     .documents()
     .search({
       q: query,
-      query_by: '_tags',
+      query_by: 'tags',
       per_page: hitsPerPage ? hitsPerPage : 25,
       page: page > 0 ? page : 1
     })
