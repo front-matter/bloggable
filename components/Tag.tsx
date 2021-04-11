@@ -41,8 +41,15 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link key={tag} href={`/categories/${tag}`}>
-                              <a className="border-b-0 hover:border-b hover:border-green-600">
+                            <Link
+                              key={tag}
+                              href={`/categories/${tag}`}
+                              passHref
+                            >
+                              <a
+                                href="dummy"
+                                className="border-b-0 hover:border-b hover:border-green-600"
+                              >
                                 {tag.split('-').join(' ')}
                               </a>
                             </Link>
@@ -100,8 +107,15 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link key={tag} href={`/categories/${tag}`}>
-                              <a className="border-b-0 hover:border-b hover:border-green-600">
+                            <Link
+                              key={tag}
+                              href={`/categories/${tag}`}
+                              passHref
+                            >
+                              <a
+                                href="dummy"
+                                className="border-b-0 hover:border-b hover:border-green-600"
+                              >
                                 {tag.split('-').join(' ')}
                               </a>
                             </Link>
@@ -159,8 +173,15 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link key={tag} href={`/categories/${tag}`}>
-                              <a className="border-b-0 hover:border-b hover:border-green-600">
+                            <Link
+                              key={tag}
+                              href={`/categories/${tag}`}
+                              passHref
+                            >
+                              <a
+                                href="dummy"
+                                className="border-b-0 hover:border-b hover:border-green-600"
+                              >
                                 {tag.split('-').join(' ')}
                               </a>
                             </Link>
@@ -218,8 +239,15 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link key={tag} href={`/categories/${tag}`}>
-                              <a className="border-b-0 hover:border-b hover:border-green-600">
+                            <Link
+                              key={tag}
+                              href={`/categories/${tag}`}
+                              passHref
+                            >
+                              <a
+                                href="dummy"
+                                className="border-b-0 hover:border-b hover:border-green-600"
+                              >
                                 {tag.split('-').join(' ')}
                               </a>
                             </Link>
@@ -277,8 +305,15 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link key={tag} href={`/categories/${tag}`}>
-                              <a className="border-b-0 hover:border-b hover:border-green-600">
+                            <Link
+                              key={tag}
+                              href={`/categories/${tag}`}
+                              passHref
+                            >
+                              <a
+                                href="dummy"
+                                className="border-b-0 hover:border-b hover:border-green-600"
+                              >
                                 {tag.split('-').join(' ')}
                               </a>
                             </Link>
@@ -336,8 +371,15 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link key={tag} href={`/categories/${tag}`}>
-                              <a className="border-b-0 hover:border-b hover:border-green-600">
+                            <Link
+                              key={tag}
+                              href={`/categories/${tag}`}
+                              passHref
+                            >
+                              <a
+                                href="dummy"
+                                className="border-b-0 hover:border-b hover:border-green-600"
+                              >
                                 {tag.split('-').join(' ')}
                               </a>
                             </Link>
@@ -395,8 +437,15 @@ export default function Tag(posts) {
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
-                            <Link key={tag} href={`/categories/${tag}`}>
-                              <a className="border-b-0 hover:border-b hover:border-green-600">
+                            <Link
+                              key={tag}
+                              href={`/categories/${tag}`}
+                              passHref
+                            >
+                              <a
+                                href="dummy"
+                                className="border-b-0 hover:border-b hover:border-green-600"
+                              >
                                 {tag.split('-').join(' ')}
                               </a>
                             </Link>

@@ -36,8 +36,8 @@ export default function Navbar(props) {
           <div className="flex justify-between h-16">
             <div className="flex px-2 lg:px-0">
               <div className="flex-shrink-0 flex items-center">
-                <Link href="/">
-                  <a className="text-green-600 border-b-0 flex">
+                <Link href="/" passHref>
+                  <a href="dummy" className="text-green-600 border-b-0 flex">
                     <img
                       className="block lg:hidden h-8 w-auto"
                       src="/img/logo.svg"
@@ -55,13 +55,19 @@ export default function Navbar(props) {
                 </Link>
               </div>
               <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
-                <Link href="/posts">
-                  <a className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 border-b-0 text-sm font-medium">
+                <Link href="/posts" passHref>
+                  <a
+                    href="dummy"
+                    className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                  >
                     Posts
                   </a>
                 </Link>
-                <Link href="/features">
-                  <a className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 border-b-0 text-sm font-medium">
+                <Link href="/features" passHref>
+                  <a
+                    href="dummy"
+                    className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                  >
                     Features
                   </a>
                 </Link>
@@ -73,8 +79,11 @@ export default function Navbar(props) {
 
         <div className="lg:hidden" id="mobile-menu">
           <div className="pt-2 pb-3 space-y-1">
-            <Link href="/features">
-              <a className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 border-b-0 text-sm font-medium">
+            <Link href="/features" passHref>
+              <a
+                href="dummy"
+                className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 text-sm font-medium"
+              >
                 Features
               </a>
             </Link>

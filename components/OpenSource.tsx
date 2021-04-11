@@ -1,8 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import next from 'next'
 
 export default function Pricing() {
   return (
@@ -20,8 +17,9 @@ export default function Pricing() {
         <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
           <div className="relative">
             <dt>
-              <Link href="https://github.com/TryGhost/Ghost">
+              <Link href="https://github.com/TryGhost/Ghost" passHref>
                 <a
+                  href="dummy"
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -41,8 +39,9 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/TryGhost/Ghost">
+              <Link href="https://github.com/TryGhost/Ghost" passHref>
                 <a
+                  href="dummy"
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -62,8 +61,9 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/vercel/next.js/">
+              <Link href="https://github.com/vercel/next.js/" passHref>
                 <a
+                  href="dummy"
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -83,8 +83,9 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/jgm/pandoc">
+              <Link href="https://github.com/jgm/pandoc" passHref>
                 <a
+                  href="dummy"
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -104,8 +105,9 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/rawgraphs/rawgraphs-app">
+              <Link href="https://github.com/rawgraphs/rawgraphs-app" passHref>
                 <a
+                  href="dummy"
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -122,8 +124,12 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/citation-style-language/styles">
+              <Link
+                href="https://github.com/citation-style-language/styles"
+                passHref
+              >
                 <a
+                  href="dummy"
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -143,8 +149,9 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/typesense/typesense">
+              <Link href="https://github.com/typesense/typesense" passHref>
                 <a
+                  href="dummy"
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -164,8 +171,9 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/plausible/hosting">
+              <Link href="https://github.com/plausible/hosting" passHref>
                 <a
+                  href="dummy"
                   className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
                   target="_blank"
                   rel="noopener noreferrer"
