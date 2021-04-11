@@ -6,7 +6,7 @@ import { updateIndex, updateSchema } from '../lib/typesense'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
-import Featured from '../components/Featured'
+import Tag from '../components/Tag'
 // import Newsletter from '../components/Newsletter'
 
 export async function getStaticProps(context) {
@@ -35,7 +35,7 @@ const IndexPage = ({ posts }) => {
     <>
       <Header />
       <Hero />
-      <Featured posts={posts} />
+      <Tag posts={posts} />
       <Footer />
     </>
   )

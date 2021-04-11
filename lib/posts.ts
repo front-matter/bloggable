@@ -36,6 +36,29 @@ export async function getPosts(
     })
 }
 
+export async function getPostsByTag(
+  query: string,
+  hitsPerPage?: number,
+  page?: number
+) {
+  return await client
+    .collections('front-matter')
+    .documents()
+    .search({
+      q: query,
+      query_by: '_tags',
+      per_page: hitsPerPage ? hitsPerPage : 25,
+      page: page > 0 ? page : 1
+    })
+    .then(({ hits }) => {
+      return hits
+    })
+    .catch((err) => {
+      console.error(err)
+      return err
+    })
+}
+
 export async function getAllPosts() {
   return await client
     .collections('front-matter')
@@ -101,6 +124,28 @@ export async function getSingleGhostPost(postSlug) {
     .read({
       slug: postSlug,
       include: 'tags,authors'
+    })
+    .catch((err) => {
+      console.error(err)
+    })
+}
+
+export async function getGhostTags() {
+  return await api.tags
+    .browse({
+      limit: 'all',
+      include: 'count.posts'
+    })
+    .catch((err) => {
+      console.error(err)
+    })
+}
+
+export async function getSingleGhostTag(tagSlug) {
+  return await api.tags
+    .read({
+      slug: tagSlug,
+      include: 'count.posts'
     })
     .catch((err) => {
       console.error(err)
