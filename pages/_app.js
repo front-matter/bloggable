@@ -34,6 +34,12 @@ export default class MyApp extends App {
             />
             <title>Front Matter</title>
             <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+            <link
+              rel="apple-touch-icon"
+              sizes="180x180"
+              href="/apple-touch-icon.png"
+            />
+            <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           </Head>
           <Layout>
             <Component {...pageProps} />
