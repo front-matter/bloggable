@@ -1,4 +1,5 @@
 import GhostContentAPI from '@tryghost/content-api'
+import { id } from 'date-fns/locale'
 import { Client } from 'typesense'
 
 let client = new Client({
@@ -26,6 +27,26 @@ export async function getPosts(
       query_by: 'tags,title,content',
       per_page: hitsPerPage ? hitsPerPage : 25,
       page: page > 0 ? page : 1
+    })
+    .then(({ hits }) => {
+      return hits
+    })
+    .catch((err) => {
+      console.error(err)
+      return err
+    })
+}
+
+export async function getSimilarPosts(query: string, recordId: string) {
+  return await client
+    .collections('front-matter')
+    .documents()
+    .search({
+      q: query,
+      query_by: 'title,content,tags',
+      hidden_hits: recordId,
+      per_page: 3,
+      page: 1
     })
     .then(({ hits }) => {
       return hits

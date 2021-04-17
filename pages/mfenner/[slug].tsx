@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import ReactHtmlParser from 'react-html-parser'
+import SimilarPosts from '../../components/SimilarPosts'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,7 +12,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 import { GetStaticPaths } from 'next'
-import { getGhostPosts, getSinglePostBySlug } from '../../lib/posts'
+import {
+  getGhostPosts,
+  getSinglePostBySlug,
+  getSimilarPosts
+} from '../../lib/posts'
 import Byline from '../../components/Byline'
 import DiscourseForum from '../../lib/discourse-forum.js'
 
@@ -26,6 +31,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   let post = await getSinglePostBySlug(context.params.slug)
+  let similarPosts = await getSimilarPosts(
+    post.hits[0].document.title + ' ' + post.hits[0].document.tags.join(' '),
+    post.hits[0].document.id
+  )
 
   if (!post) {
     return {
@@ -34,7 +43,7 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { post }
+    props: { post, similarPosts }
   }
 }
 
@@ -117,6 +126,7 @@ const Post = (props) => {
           <DiscourseForum post={hit} />
         </div>
       </div>
+      <SimilarPosts posts={props.similarPosts} />
       <Footer />
     </>
   )
