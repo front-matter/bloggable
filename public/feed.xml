@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-04-18T05:14:10.047Z</updated>
+    <updated>2021-04-18T18:49:54.362Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -42,7 +42,7 @@
         <link href="https://front-matter.io/mfenner/component-dois-revisited"/>
         <updated>1970-01-17T15:00:37.140Z</updated>
         <summary type="html"><![CDATA[Four years ago I wrote a blog post about component DOIs. It is time to revisit the topic, in particular since our approach to citing data associated with a publication has changed since 2011.Component DOIs are explained in the CrossRef Help System:DOIs...]]></summary>
-        <content type="html"><![CDATA[<p>Four years ago I wrote a <a href="https://sensiblescience.io/mfenner/direct-links-to-figures-and-tables-using-component-dois/">blog post</a> about component DOIs. It is time to revisit the topic, in particular since our approach to citing data associated with a publication has changed since 2011.</p>
+        <content type="html"><![CDATA[<p>Four years ago I wrote a <a href="https://front-matter.io/mfenner/direct-links-to-figures-and-tables-using-component-dois/">blog post</a> about component DOIs. It is time to revisit the topic, in particular since our approach to citing data associated with a publication has changed since 2011.</p>
 <p>Component DOIs are explained in the <a href="http://help.crossref.org/components">CrossRef Help System</a>:</p>
 <blockquote>
 DOIs may be assigned to items that are part of a journal article, book chapter, or any other content item. A component would typically be a figure, table, or image which is part of or referred to by the parent item. Assigning a DOI to a component allows direct linking to the component item.
@@ -483,7 +483,7 @@ The challenges of balancing the public and the private in the digital age
 <li>the study was limited to Open Access journals, as only for them the full-text articles could be text mined</li>
 </ul>
 <figure>
-<img src="https://editor.front-matter.io/content/images/2021/01/ena_overlap.png" class="kg-image" width="415" height="194" alt="Comparison between article-to-database and database to citations (Kafkas et al., 2013)." /><figcaption aria-hidden="true">Comparison between article-to-database and database to citations (Kafkas et al., 2013).</figcaption>
+<img src="https://assets.front-matter.io/ghost/2021/April/18th/ena_overlap.png" class="kg-image" width="415" height="194" alt="Comparison between article-to-database and database to citations (Kafkas et al., 2013)." /><figcaption aria-hidden="true">Comparison between article-to-database and database to citations (Kafkas et al., 2013).</figcaption>
 </figure>
 <p>In other words, even though including identifiers for biological databases has been an accepted community standard that every author and publisher is following for a long time, the proper citation of these identifiers is still often broken. The picture doesn’t seem to be any better for DOIs for datasets: while they are fairly common by now, their use in scholarly articles differs widely from appearance in the references list to links in the materials and methods section to no mention at all.</p>
 <p>There are various ways how this can be fixed (e.g. requiring authors to use biological database identifiers in a consistent way, better text mining tools, opening up subscription content to text mining), but the best solution is the simplest one: every citation in a paper should go into the references list. As an example I have added the ENA mRNA U65091 (Shioda, Fenner, &amp; Isselbacher, 1997) - something I worked on a long time ago - to the references list of this post.</p>
@@ -799,9 +799,6 @@ One Ring to rule them all, One Ring to find them, One Ring to bring them all and
 <li>list all books with a Creative Commons CC-BY license that were published this year</li>
 </ul>
 <p>Funder (via FundRef) information is also included, but is still incomplete. Another interesting result is the number of <a href="https://sensiblescience.io/mfenner/direct-links-to-figures-and-tables-using-component-dois/">component DOIs</a> (DOIs for figures, tables or other parts of a document) per year:</p>
-<figure>
-<img src="https://assets.front-matter.io/ghost/2021/April/10th/viz.svg" class="kg-image" width="480" height="480" alt="Number of component DOIs (DOIs for figures, tables or other parts of a document) per year." /><figcaption aria-hidden="true">Number of <a href="https://sensiblescience.io/mfenner/direct-links-to-figures-and-tables-using-component-dois/">component DOIs</a> (DOIs for figures, tables or other parts of a document) per year.</figcaption>
-</figure>
 <p>For my specific use case I wanted an API call that returns all articles published by PLOS (or any other publisher) in the last day which I can then run regularly. To get all DOIs from a specific publisher, use their CrossRef member ID - DOI prefixes don’t work, as publishers can own more than one DOI prefix. To make this task a little easier I built a CrossRef member search interface into the ALM application:</p>
 <figure>
 <img src="https://assets.front-matter.io/ghost/2021/April/10th/crossref_api.png" class="kg-image" width="1170" height="774" />
@@ -4023,6 +4020,24 @@ How do people’s names differ around the world, and what are the implications o
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Mendeley 1.0 released Today]]></title>
+        <id>90a2ea8a-930e-4d0c-910b-738b76dfa54c</id>
+        <link href="https://front-matter.io/mfenner/mendeley-1-0-released-today"/>
+        <updated>1970-01-16T04:22:04.800Z</updated>
+        <summary type="html"><![CDATA[Version 1.0 of the reference manager Mendeley was released today. In good Web 2.0 tradition it took three years from the first Beta release to the first “finished” product. I interviewed co-founder Victor Henning back in September 2008,...]]></summary>
+        <content type="html"><![CDATA[<p>Version 1.0 of the reference manager Mendeley was <a href="https://web.archive.org/web/20120525041606/http://www.prnewswire.com/news-releases/mendeley-rips-beta-label-off-award-winning-research-collaboration-software-with-v10-release-126244103.html">released</a> today. In good Web 2.0 tradition it took three years from the first Beta release to the first “finished” product. I <a href="https://web.archive.org/web/20120525041606/http://blogs.plos.org/mfenner/2008/09/05/interview_with_victor_henning_from_mendeley/">interviewed</a> co-founder Victor Henning back in September 2008, and both the software and the company have gone a long way since then. Congratulations.</p>
+<figure>
+<img src="https://web.archive.org/web/20120525041606im_/http://farm4.static.flickr.com/3212/2822759480_c330822084_o.jpg" class="kg-image" alt="Mendeley in 2008. Picture taken from my interview with Victor." /><figcaption aria-hidden="true"><em><em>Mendeley in 2008. Picture taken from <a href="https://web.archive.org/web/20120525041606/http://blogs.plos.org/mfenner/2008/09/05/interview_with_victor_henning_from_mendeley/">my interview</a> with Victor.</em></em></figcaption>
+</figure>
+<p>Mendeley has changed reference management in many ways. Most importantly it has added another choice for users, and their constant push for new features has benefitted everybody, including the competition.</p>
+<p>The Mendeley software has been downloaded one million times and 100 million papers have been uploaded to the service. Mendeley is no longer the new kid on the blog. With their popularity and size also comes an increased responsibility for the community. On top of my wish list: a decent <a href="https://web.archive.org/web/20120525041606/http://blogs.plos.org/mfenner/2010/09/24/citation-style-language-an-interview-with-rintze-zelle-and-ian-mulvany/">Citation Style</a> Editor that would also benefit <strong><strong>Zotero</strong></strong> and <strong><strong>Papers 2</strong></strong> users (<a href="https://web.archive.org/web/20120525041606/http://www.mendeley.com/blog/research-tutorials/howto-edit-citation-styles-for-use-in-mendeley/">hacking the XML files</a> is not an option for most people).</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Google Scholar Citations, Researcher Profiles, and why we need an Open Bibliography]]></title>
         <id>0bb78d66-de9e-490f-959b-6d38a6932981</id>
         <link href="https://front-matter.io/mfenner/google-scholar-citations-researcher-profiles-and-why-we-need-an-open-bibliography"/>
@@ -4044,24 +4059,6 @@ How do people’s names differ around the world, and what are the implications o
 <p>From a researcher perspective it makes little sense to have many different places where you can maintain your publications. It makes much more sense to do this once and then see the information reused in different services. This is the approach the Open Researcher &amp; Contributor ID initiative is <a href="https://web.archive.org/web/20120610140256/http://www.orcid.org/principles">taking</a>:</p>
 <p><strong><strong>All profile data contributed to ORCID by researchers or claimed by them will be available in standard formats for free download (subject to the researchers’ own privacy settings) that is updated once a year and released under the CC0 waiver.</strong></strong></p>
 <p><em><em>Disclaimer: I sit on the Board of Directors of the Open Researcher &amp; Contributor ID (ORCID) initiative which aims to help solve this and related problems.</em></em></p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mendeley 1.0 released Today]]></title>
-        <id>90a2ea8a-930e-4d0c-910b-738b76dfa54c</id>
-        <link href="https://front-matter.io/mfenner/mendeley-1-0-released-today"/>
-        <updated>1970-01-16T04:22:04.800Z</updated>
-        <summary type="html"><![CDATA[Version 1.0 of the reference manager Mendeley was released today. In good Web 2.0 tradition it took three years from the first Beta release to the first “finished” product. I interviewed co-founder Victor Henning back in September 2008,...]]></summary>
-        <content type="html"><![CDATA[<p>Version 1.0 of the reference manager Mendeley was <a href="https://web.archive.org/web/20120525041606/http://www.prnewswire.com/news-releases/mendeley-rips-beta-label-off-award-winning-research-collaboration-software-with-v10-release-126244103.html">released</a> today. In good Web 2.0 tradition it took three years from the first Beta release to the first “finished” product. I <a href="https://web.archive.org/web/20120525041606/http://blogs.plos.org/mfenner/2008/09/05/interview_with_victor_henning_from_mendeley/">interviewed</a> co-founder Victor Henning back in September 2008, and both the software and the company have gone a long way since then. Congratulations.</p>
-<figure>
-<img src="https://web.archive.org/web/20120525041606im_/http://farm4.static.flickr.com/3212/2822759480_c330822084_o.jpg" class="kg-image" alt="Mendeley in 2008. Picture taken from my interview with Victor." /><figcaption aria-hidden="true"><em><em>Mendeley in 2008. Picture taken from <a href="https://web.archive.org/web/20120525041606/http://blogs.plos.org/mfenner/2008/09/05/interview_with_victor_henning_from_mendeley/">my interview</a> with Victor.</em></em></figcaption>
-</figure>
-<p>Mendeley has changed reference management in many ways. Most importantly it has added another choice for users, and their constant push for new features has benefitted everybody, including the competition.</p>
-<p>The Mendeley software has been downloaded one million times and 100 million papers have been uploaded to the service. Mendeley is no longer the new kid on the blog. With their popularity and size also comes an increased responsibility for the community. On top of my wish list: a decent <a href="https://web.archive.org/web/20120525041606/http://blogs.plos.org/mfenner/2010/09/24/citation-style-language-an-interview-with-rintze-zelle-and-ian-mulvany/">Citation Style</a> Editor that would also benefit <strong><strong>Zotero</strong></strong> and <strong><strong>Papers 2</strong></strong> users (<a href="https://web.archive.org/web/20120525041606/http://www.mendeley.com/blog/research-tutorials/howto-edit-citation-styles-for-use-in-mendeley/">hacking the XML files</a> is not an option for most people).</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
@@ -4803,21 +4800,6 @@ Unique identifiers for scholarly authors are still not commonly used, but provid
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[New and emerging technologies for reference software]]></title>
-        <id>355bbe52-e077-4174-a979-96b015755d8b</id>
-        <link href="https://front-matter.io/mfenner/new-and-emerging-technologies-for-reference-software"/>
-        <updated>1970-01-15T23:11:02.400Z</updated>
-        <summary type="html"><![CDATA[Jason Rollins gave a presentation with that topic at the recent STM Innovations Seminar in London. The video of his presentation has now been made available by River Valley TV, and his slides are here.Jason talks about some recent trends in reference management software....]]></summary>
-        <content type="html"><![CDATA[<p>Jason Rollins gave a presentation with that topic at the recent <a href="https://web.archive.org/web/20120612114551/http://www.stm-assoc.org/event.php?event_id=58">STM Innovations Seminar</a> in London. The video of his presentation <a href="https://web.archive.org/web/20120612114551/http://river-valley.tv/new-and-emerging-technologies-for-reference-software/">has now been made available</a> by River Valley TV, and his slides are <a href="https://web.archive.org/web/20120612114551/http://www.stm-assoc.org/2010_12_03_Innovations_Rollins_Bibliographic_Management_Software.pdf">here</a>.</p>
-<p>Jason talks about some recent trends in reference management software. For him one important new trend is APIs/extensions. I fully agree with him, but we haven’t really seen many tools based on these APIs. Reference managers that provide APIs include <a href="https://web.archive.org/web/20120612114551/http://dev.mendeley.com/">Mendeley</a>, <a href="https://web.archive.org/web/20120612114551/http://www.endnote.com/api/">Endnote</a>, Refworks, <a href="https://web.archive.org/web/20120612114551/http://developer.mekentosj.com/">Papers</a>, <a href="https://web.archive.org/web/20120612114551/http://www.zotero.org/blog/zoteros-next-big-step/">Zotero</a> and <a href="https://web.archive.org/web/20120612114551/http://www.connotea.org/wiki/WebAPI">Connotea</a>. The availability of an API has done a lot for the success of Web 2.0 tools such as Twitter and Flickr.</p>
-<p>Another interesting topic was brought up in the discussion: should reference managers track difference versions of an article (e.g. pre-print, post-print, publisher PDF)? According to Jason many Endnote users request this feature. Jason is leading the <a href="https://web.archive.org/web/20120612114551/http://www.endnote.com/">Endnote</a> development team, but also mentions Mendeley, CiteULike and Papers in his presentation. I <a href="https://blog.martinfenner.org/posts/endnote_interview_with_jason_rollins/">interviewed</a> Jason about Endnote back in August.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Paperpile: an open source reference manager for Mac and Linux]]></title>
         <id>826d0791-4187-4120-9216-560c17021337</id>
         <link href="https://front-matter.io/mfenner/paperpile-an-open-source-reference-manager-for-mac-and-linux"/>
@@ -4828,6 +4810,21 @@ Unique identifiers for scholarly authors are still not commonly used, but provid
 <img src="https://assets.front-matter.io/ghost/2021/April/10th/paperpile.jpeg" title="paperpile" class="kg-image" width="500" height="415" />
 </figure>
 <p>What is interesting about Paperpile is that the source code is available at <a href="https://web.archive.org/web/20120612092613/https://github.com/wash/paperpile">github</a> (using the <a href="https://web.archive.org/web/20120612092613/http://www.gnu.org/licenses/">GNU Affero General Public License</a>). Other reference managers that make their source code available include <a href="https://web.archive.org/web/20120612092613/https://www.zotero.org/trac">Zotero</a>, <a href="https://web.archive.org/web/20120612092613/http://sourceforge.net/apps/mediawiki/jabref/index.php?title=Developing_and_extending_JabRef">JabRef</a> and <a href="https://web.archive.org/web/20120612092613/http://www.connotea.org/code">Connotea</a>.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New and emerging technologies for reference software]]></title>
+        <id>355bbe52-e077-4174-a979-96b015755d8b</id>
+        <link href="https://front-matter.io/mfenner/new-and-emerging-technologies-for-reference-software"/>
+        <updated>1970-01-15T23:11:02.400Z</updated>
+        <summary type="html"><![CDATA[Jason Rollins gave a presentation with that topic at the recent STM Innovations Seminar in London. The video of his presentation has now been made available by River Valley TV, and his slides are here.Jason talks about some recent trends in reference management software....]]></summary>
+        <content type="html"><![CDATA[<p>Jason Rollins gave a presentation with that topic at the recent <a href="https://web.archive.org/web/20120612114551/http://www.stm-assoc.org/event.php?event_id=58">STM Innovations Seminar</a> in London. The video of his presentation <a href="https://web.archive.org/web/20120612114551/http://river-valley.tv/new-and-emerging-technologies-for-reference-software/">has now been made available</a> by River Valley TV, and his slides are <a href="https://web.archive.org/web/20120612114551/http://www.stm-assoc.org/2010_12_03_Innovations_Rollins_Bibliographic_Management_Software.pdf">here</a>.</p>
+<p>Jason talks about some recent trends in reference management software. For him one important new trend is APIs/extensions. I fully agree with him, but we haven’t really seen many tools based on these APIs. Reference managers that provide APIs include <a href="https://web.archive.org/web/20120612114551/http://dev.mendeley.com/">Mendeley</a>, <a href="https://web.archive.org/web/20120612114551/http://www.endnote.com/api/">Endnote</a>, Refworks, <a href="https://web.archive.org/web/20120612114551/http://developer.mekentosj.com/">Papers</a>, <a href="https://web.archive.org/web/20120612114551/http://www.zotero.org/blog/zoteros-next-big-step/">Zotero</a> and <a href="https://web.archive.org/web/20120612114551/http://www.connotea.org/wiki/WebAPI">Connotea</a>. The availability of an API has done a lot for the success of Web 2.0 tools such as Twitter and Flickr.</p>
+<p>Another interesting topic was brought up in the discussion: should reference managers track difference versions of an article (e.g. pre-print, post-print, publisher PDF)? According to Jason many Endnote users request this feature. Jason is leading the <a href="https://web.archive.org/web/20120612114551/http://www.endnote.com/">Endnote</a> development team, but also mentions Mendeley, CiteULike and Papers in his presentation. I <a href="https://blog.martinfenner.org/posts/endnote_interview_with_jason_rollins/">interviewed</a> Jason about Endnote back in August.</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
@@ -5212,27 +5209,6 @@ https://doi.org/<a href="https://web.archive.org/web/20101124191225/http://dx.do
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Start Open Access Week with Kick-Off Video]]></title>
-        <id>f30b5c43-c582-4102-a1f0-9df6092bda30</id>
-        <link href="https://front-matter.io/mfenner/start-open-access-week-with-kick-off-video"/>
-        <updated>1970-01-15T21:36:00.000Z</updated>
-        <summary type="html"><![CDATA[Open Access Week 2010 from SPARC on Vimeo.Find out more at the Open Access Week website. And watch this blog for another Open Access story later today....]]></summary>
-        <content type="html"><![CDATA[<div class="iframe">
-<a href="https://vimeo.com/15881200"></a>
-<div id="crawler_player">
-Play
-<img src="https://f.vimeocdn.com/p/images/crawler_logo.png" class="logo" alt="Vimeo" />
-</div>
-</div>
-<p><a href="https://vimeo.com/15881200">Open Access Week 2010</a> from <a href="https://web.archive.org/web/20101114043744/http://vimeo.com/sparcdc">SPARC</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
-<p>Find out more at the <a href="https://web.archive.org/web/20101114043744/http://www.openaccessweek.org/">Open Access Week website</a>. And watch this blog for another Open Access story later today.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[New in PLoS ONE: Citation rates of self-selected vs. mandated Open Access]]></title>
         <id>05d008b8-cfad-4ccc-ad1d-eb70ec097f97</id>
         <link href="https://front-matter.io/mfenner/new-in-plos-one-citation-rates-of-self-selected-vs-mandated-open-access"/>
@@ -5251,6 +5227,27 @@ Play
 <p>For me Open Access week is an opportunity to celebrate what has been achieved over the years. But it is equally important to look at the road ahead. There is no “one size fits all” solution for Open Access, and we shouldn’t look away from the things that aren’t working, and the solutions that haven’t been found yet.</p>
 <h2 id="references">References</h2>
 <p>Gargouri, Y., Hajjem, C., Larivière, V., Gingras, Y., Carr, L., Brody, T., &amp; Harnad, S. (2010). Self-Selected or Mandated, Open Access Increases Citation Impact for Higher Quality Research <em>PLoS ONE, 5</em> (10) https://doi.org/<a href="https://web.archive.org/web/20101114042817/http://dx.doi.org/10.1371/journal.pone.0013636">10.1371/journal.pone.0013636</a></p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Start Open Access Week with Kick-Off Video]]></title>
+        <id>f30b5c43-c582-4102-a1f0-9df6092bda30</id>
+        <link href="https://front-matter.io/mfenner/start-open-access-week-with-kick-off-video"/>
+        <updated>1970-01-15T21:36:00.000Z</updated>
+        <summary type="html"><![CDATA[Open Access Week 2010 from SPARC on Vimeo.Find out more at the Open Access Week website. And watch this blog for another Open Access story later today....]]></summary>
+        <content type="html"><![CDATA[<div class="iframe">
+<a href="https://vimeo.com/15881200"></a>
+<div id="crawler_player">
+Play
+<img src="https://f.vimeocdn.com/p/images/crawler_logo.png" class="logo" alt="Vimeo" />
+</div>
+</div>
+<p><a href="https://vimeo.com/15881200">Open Access Week 2010</a> from <a href="https://web.archive.org/web/20101114043744/http://vimeo.com/sparcdc">SPARC</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+<p>Find out more at the <a href="https://web.archive.org/web/20101114043744/http://www.openaccessweek.org/">Open Access Week website</a>. And watch this blog for another Open Access story later today.</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
@@ -5393,6 +5390,33 @@ Play
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Reference Management with the iPad]]></title>
+        <id>b3c5feeb-24b6-4523-8185-8d5185a1273e</id>
+        <link href="https://front-matter.io/mfenner/reference-management-with-the-ipad"/>
+        <updated>1970-01-15T21:18:43.200Z</updated>
+        <summary type="html"><![CDATA[The iPad was released six months ago, and we already have several reference managers available for the platform. Reading the PDF of a scientific paper on an iPad is a positive experience, and to me very different from reading the PDF on a regular computer....]]></summary>
+        <content type="html"><![CDATA[<p>The iPad was released six months ago, and we already have several reference managers available for the platform. Reading the PDF of a scientific paper on an iPad is a positive experience, and to me very different from reading the PDF on a regular computer. While this could also be done with generic iPad PDF readers such as <strong><strong>iBooks</strong></strong> or <strong><strong>Goodreader</strong></strong>, reference managers make it much easier to organize a large collection of PDF files.</p>
+<h3 id="citeulike">CiteULike</h3>
+<p>CiteULike is a browser-based reference manager and works on the iPad as expected – and this includes the bookmarklet. CiteULike is a good tool to collect references when browsing with the iPad. CiteULike doesn’t allow offline reading of PDF files. While you can read the HTML versions of papers with the iPad web browser, this requires not only online access, but often also access through a paywall.<br />
+<a href="https://web.archive.org/web/20101016090748/http://www.citeulike.org/">More Info</a></p>
+<h3 id="papers-for-ipad">Papers for iPad</h3>
+<p>This was the first reference manager specifically designed for the iPad. Papers for Mac owners can synchronize all their references and fulltext PDF files. The functionality is similar to the Mac version and also includes a good PDF reader and searching for references in PubMed and other online databases. This makes Papers a good stand-alone solution that doesn’t depend on syncing to another applications.<br />
+<a href="https://web.archive.org/web/20101016090748/http://mekentosj.com/papers/ipad/">More Info</a> – <a href="https://web.archive.org/web/20101016090748/http://itunes.apple.com/app/papers/id304655618?mt=8">iTunes</a></p>
+<h3 id="mendeley-lite">Mendeley Lite</h3>
+<p>Mendeley Lite syncs with all references you store in your Mendeley web account. I personally prefer this approach as I don’t particularly like syncing between iPad and desktop computer. Just like Papers, this application works both on iPad and iPhone. You can’t directly add references to Mendeley Lite. Mendeley is currently the only application that has both a web-based and an iPad version. This increases the options, but probably also adds to user confusion. Add reference with the web-based version, sync, then read PDF in Mendeley Lite?<br />
+<a href="https://web.archive.org/web/20101016090748/http://itunes.apple.com/de/app/mendeley-reference-manager/id380669300?mt=8">iTunes</a></p>
+<h3 id="sente-viewer-for-ipad">Sente Viewer for iPad</h3>
+<p>Last Friday <strong><strong>Sente Viewer for iPad</strong></strong> was released. Similar to Papers and Mendeley, Sente Viewer for iPad synchronizes with the desktop version of the application. The application allows browsing of all synchronized references and reading of the associated fulltext PDF papers. The <strong><strong>Sente for iPad</strong></strong> application will be released later and will also allow adding and editing of references. I’m looking forward to “targeted browsing” which will capture both reference information and fulltext PDF files using a built-in web browser – another variation of reference manager integration with the web browser.<br />
+<a href="https://web.archive.org/web/20101016090748/http://www.thirdstreetsoftware.com/site/iPadSente.html">More Info</a> – <a href="https://web.archive.org/web/20101016090748/http://itunes.apple.com/us/app/sente-viewer/id392355663?mt=8">iTunes</a></p>
+<h3 id="further-reading">Further Reading</h3>
+<p>Roderic Page has done <a href="https://web.archive.org/web/20101016090748/http://iphylo.blogspot.com/2010/09/viewing-scientific-articles-on-ipad.html">a lot of writing</a> about reading scientific papers on the iPad, including reviews for <a href="https://web.archive.org/web/20101016090748/http://iphylo.blogspot.com/2010/08/viewing-scientific-articles-on-ipad_31.html">Papers for iPad</a> and <a href="https://web.archive.org/web/20101016090748/http://iphylo.blogspot.com/2010/08/viewing-scientific-articles-on-ipad_3052.html">Mendeley Lite</a>. Wizfolio is another web-based reference manager that <a href="https://web.archive.org/web/20101016090748/http://blog.wizfolio.com/index.php/2010/07/2-thumb-power-surfing-on-the-ipad/">works on the iPad</a>.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Beyond the PDF – it is time for a workshop]]></title>
         <id>69727061-108e-45a8-a1c7-c94ae12cf78d</id>
         <link href="https://front-matter.io/mfenner/beyond-the-pdf-it-is-time-for-a-workshop"/>
@@ -5400,7 +5424,7 @@ Play
         <summary type="html"><![CDATA[PDF has become the standard way we consume scientific papers, but in fact is not a good format for this purpose at all. Or as Martin Robbins said at the recent Science Online London conference: <em><em>PDF is an insult to science</em></em>....]]></summary>
         <content type="html"><![CDATA[<p>PDF has become the standard way we consume scientific papers, but in fact is not a good format for this purpose at all. Or as <a href="https://web.archive.org/web/20101124185433/http://www.mjrobbins.net/">Martin Robbins</a> <a href="https://web.archive.org/web/20101124185433/http://blogs.nature.com/franknorman/2010/09/10/my-science-online-london-2010-impressions">said at the recent Science Online London conference</a>: <em><em>PDF is an insult to science</em></em>. The problem was nicely illustrated by <a href="https://web.archive.org/web/20101124185433/http://wwmm.ch.cam.ac.uk/blogs/murrayrust/">Duncan Hull</a>, using a quote from <a href="https://web.archive.org/web/20101124185433/http://wwmm.ch.cam.ac.uk/blogs/murrayrust/">Peter Murray-Rust</a> from a <a href="https://web.archive.org/web/20101124185433/http://wwmm.ch.cam.ac.uk/blogs/murrayrust/?p=1069">May 2008</a> article:</p>
 <figure>
-<img src="https://web.archive.org/web/20101124185433im_/http://farm4.static.flickr.com/3470/3367901850_5b137da197.jpg" class="kg-image" alt="Flickr image by dullhunk. From his Defrosting the Digital Library slideshow." /><figcaption aria-hidden="true"><em><em>Flickr image by dullhunk. From his <a href="https://www.slideshare.net/dullhunk/defrosting-the-digital-library-a-survey-of-bibliographic-tools-for-the-next-generation-web">Defrosting the Digital Library</a> slideshow.</em></em></figcaption>
+<img src="https://assets.front-matter.io/ghost/2021/April/18th/3367901850_5b137da197.jpeg" class="kg-image" width="500" height="375" alt="Flickr image by dullhunk. From his Defrosting the Digital Library slideshow." /><figcaption aria-hidden="true"><em><em>Flickr image by dullhunk. From his <a href="https://www.slideshare.net/dullhunk/defrosting-the-digital-library-a-survey-of-bibliographic-tools-for-the-next-generation-web">Defrosting the Digital Library</a> slideshow.</em></em></figcaption>
 </figure>
 <p>There are of course ways journal publishers can add metadata to PDF files, e.g. using <a href="https://web.archive.org/web/20101124185433/http://blogs.plos.org/mfenner/2008/12/22/just_doi_it/">XMP</a> markup. But that is only a workaround – what we really want is journal papers in a format that is all about document structure and not about looking good in print. XML is obviously that format with the <a href="https://web.archive.org/web/20101124185433/http://www.inera.com/nlmresources.shtml">NLM-DTD</a> as the de facto standard for scholarly publications. Many journal publishers use that format internally, as does <a href="https://web.archive.org/web/20101124185433/http://www.ncbi.nlm.nih.gov/pmc/">PubMed Central</a> for displaying fulltext papers, as well as archiving projects such as <a href="https://web.archive.org/web/20101124185433/http://www.portico.org/digital-preservation/">Portico</a>.</p>
 <p>But there are two problems with how NLM-DTD is used now. The first problem is that most scientific papers still are ultimately read as printouts of PDF files, even though most journals now are online only. I wrote in January that this reading behavior is starting to change (<a href="https://sensiblescience.io/mfenner/how_do_you_read_papers_2010_will_be_different/">How do you read papers? 2010 will be different</a>), and new article formats – such as the <a href="https://web.archive.org/web/20101124185433/http://blogs.plos.org/mfenner/2009/07/26/how_does_the_article_of_the_future_look_like/">Article of the Future</a> by Cell Press – and the success of the iPad are two major reasons for that.</p>
@@ -5422,33 +5446,6 @@ have several important shortcomings. I suggest the following changes:</p>
 <p>Any authoring tool should obviously use the Citation Style Language (<a href="https://web.archive.org/web/20101124185433/http://blogs.plos.org/mfenner/2010/09/24/citation-style-language-an-interview-with-rintze-zelle-and-ian-mulvany/">CSL</a>) to format citations. And the citations should be provided with a <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC Zero</a> or similar license to allow reuse.</p>
 <h3 id="cited-by">Cited by</h3>
 <p>At least as important as the citations by a particular paper are the incoming citations, the works that cite a paper. We need much better mechanisms to automate these “trackbacks”, and this should go beyond other papers and also include datasets, blog posts, etc. The incoming citations are of course very helpful for discovery, and the basis for <a href="https://altmetrics.org/manifesto/">alternative metrics</a>.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Reference Management with the iPad]]></title>
-        <id>b3c5feeb-24b6-4523-8185-8d5185a1273e</id>
-        <link href="https://front-matter.io/mfenner/reference-management-with-the-ipad"/>
-        <updated>1970-01-15T21:18:43.200Z</updated>
-        <summary type="html"><![CDATA[The iPad was released six months ago, and we already have several reference managers available for the platform. Reading the PDF of a scientific paper on an iPad is a positive experience, and to me very different from reading the PDF on a regular computer....]]></summary>
-        <content type="html"><![CDATA[<p>The iPad was released six months ago, and we already have several reference managers available for the platform. Reading the PDF of a scientific paper on an iPad is a positive experience, and to me very different from reading the PDF on a regular computer. While this could also be done with generic iPad PDF readers such as <strong><strong>iBooks</strong></strong> or <strong><strong>Goodreader</strong></strong>, reference managers make it much easier to organize a large collection of PDF files.</p>
-<h3 id="citeulike">CiteULike</h3>
-<p>CiteULike is a browser-based reference manager and works on the iPad as expected – and this includes the bookmarklet. CiteULike is a good tool to collect references when browsing with the iPad. CiteULike doesn’t allow offline reading of PDF files. While you can read the HTML versions of papers with the iPad web browser, this requires not only online access, but often also access through a paywall.<br />
-<a href="https://web.archive.org/web/20101016090748/http://www.citeulike.org/">More Info</a></p>
-<h3 id="papers-for-ipad">Papers for iPad</h3>
-<p>This was the first reference manager specifically designed for the iPad. Papers for Mac owners can synchronize all their references and fulltext PDF files. The functionality is similar to the Mac version and also includes a good PDF reader and searching for references in PubMed and other online databases. This makes Papers a good stand-alone solution that doesn’t depend on syncing to another applications.<br />
-<a href="https://web.archive.org/web/20101016090748/http://mekentosj.com/papers/ipad/">More Info</a> – <a href="https://web.archive.org/web/20101016090748/http://itunes.apple.com/app/papers/id304655618?mt=8">iTunes</a></p>
-<h3 id="mendeley-lite">Mendeley Lite</h3>
-<p>Mendeley Lite syncs with all references you store in your Mendeley web account. I personally prefer this approach as I don’t particularly like syncing between iPad and desktop computer. Just like Papers, this application works both on iPad and iPhone. You can’t directly add references to Mendeley Lite. Mendeley is currently the only application that has both a web-based and an iPad version. This increases the options, but probably also adds to user confusion. Add reference with the web-based version, sync, then read PDF in Mendeley Lite?<br />
-<a href="https://web.archive.org/web/20101016090748/http://itunes.apple.com/de/app/mendeley-reference-manager/id380669300?mt=8">iTunes</a></p>
-<h3 id="sente-viewer-for-ipad">Sente Viewer for iPad</h3>
-<p>Last Friday <strong><strong>Sente Viewer for iPad</strong></strong> was released. Similar to Papers and Mendeley, Sente Viewer for iPad synchronizes with the desktop version of the application. The application allows browsing of all synchronized references and reading of the associated fulltext PDF papers. The <strong><strong>Sente for iPad</strong></strong> application will be released later and will also allow adding and editing of references. I’m looking forward to “targeted browsing” which will capture both reference information and fulltext PDF files using a built-in web browser – another variation of reference manager integration with the web browser.<br />
-<a href="https://web.archive.org/web/20101016090748/http://www.thirdstreetsoftware.com/site/iPadSente.html">More Info</a> – <a href="https://web.archive.org/web/20101016090748/http://itunes.apple.com/us/app/sente-viewer/id392355663?mt=8">iTunes</a></p>
-<h3 id="further-reading">Further Reading</h3>
-<p>Roderic Page has done <a href="https://web.archive.org/web/20101016090748/http://iphylo.blogspot.com/2010/09/viewing-scientific-articles-on-ipad.html">a lot of writing</a> about reading scientific papers on the iPad, including reviews for <a href="https://web.archive.org/web/20101016090748/http://iphylo.blogspot.com/2010/08/viewing-scientific-articles-on-ipad_31.html">Papers for iPad</a> and <a href="https://web.archive.org/web/20101016090748/http://iphylo.blogspot.com/2010/08/viewing-scientific-articles-on-ipad_3052.html">Mendeley Lite</a>. Wizfolio is another web-based reference manager that <a href="https://web.archive.org/web/20101016090748/http://blog.wizfolio.com/index.php/2010/07/2-thumb-power-surfing-on-the-ipad/">works on the iPad</a>.</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
@@ -5687,7 +5684,7 @@ have several important shortcomings. I suggest the following changes:</p>
         <summary type="html"><![CDATA[All science bloggers do a lot of reading for background information, or write blog posts based on a (newly published) paper, blog post or news item. So I thought that it would be a good idea to collect those references in a single place.Flickr photo by margolove.Reading lists are perfect for this,...]]></summary>
         <content type="html"><![CDATA[<p>All science bloggers do a lot of reading for background information, or write blog posts based on a (newly published) paper, blog post or news item. So I thought that it would be a good idea to collect those references in a single place.</p>
 <figure>
-<img src="https://web.archive.org/web/20120604134625im_/http://farm2.static.flickr.com/1359/1252522330_78b53d7e16.jpg" class="kg-image" alt="Flickr photo by margolove." /><figcaption aria-hidden="true">Flickr photo by margolove.</figcaption>
+<img src="https://assets.front-matter.io/ghost/2021/April/17th/1252522330_78b53d7e16.jpeg" class="kg-image" width="500" height="380" alt="Flickr photo by margolove." /><figcaption aria-hidden="true">Flickr photo by margolove.</figcaption>
 </figure>
 <p>Reading lists are perfect for this, and they are easy to create and maintain with web-based reference managers. Reading lists are used in teaching, e.g. to provide a list of required reading material for a class. But I can also see a number of benefits for science blogs:</p>
 <ul>
@@ -5903,6 +5900,32 @@ I would define post-publication review as the process whereby scientists and oth
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Welcome to Gobbledygook]]></title>
+        <id>9a28381f-b575-4b90-88ed-ccc0891c166f</id>
+        <link href="https://front-matter.io/mfenner/welcome-to-gobbledygook"/>
+        <updated>1970-01-15T20:28:19.200Z</updated>
+        <summary type="html"><![CDATA[<em><em>Flickr photo by {Away until inspiration comes}.</em></em>In his introductory post, PLoS community manager Brian Mossop talks about how PLoS Blogs came to life, and the lessons learned from other blogging networks....]]></summary>
+        <content type="html"><![CDATA[<figure>
+<img src="https://assets.front-matter.io/ghost/2021/April/12th/2187485704_a598c84739.jpeg" class="kg-image" width="500" height="375" />
+</figure>
+<p><em><em>Flickr photo by {Away until inspiration comes}.</em></em></p>
+<p>In his <a href="https://web.archive.org/web/20120506093643/http://blogs.plos.org/blog/2010/08/31/the-niche-blog-network-lessons-from-the-past-visions-for-the-future/">introductory post</a>, PLoS community manager Brian Mossop talks about how PLoS Blogs came to life, and the lessons learned from other blogging networks. For me personally it all started a few weeks ago with a phone call one Friday evening from <a href="https://web.archive.org/web/20120506093643/http://www.plos.org/about/people/one.php#pbinfield">Pete Binfield</a>, Publisher of PLoS ONE and the PLoS Community Journals.</p>
+<p>Since August 2007 and until today I was blogging over at <a href="https://web.archive.org/web/20120506093643/http://blogs.nature.com/mfenner">Nature Network</a>. The focus of that blog was how the internet is changing scientific publishing. This is obviously a very broad topic. A lot of my blog posts looked at rather technical aspects, including new products and services (the <a href="https://web.archive.org/web/20120506093643/http://blogs.nature.com/mfenner/2010/08/29/elsevier-launches-sciverse-integrates-sciencedirect-scopus-more">last post</a> was about Elsevier’s SciVerse that launched last weekend).</p>
+<p>I will continue to write about the same topics. I particularly like to continue <a href="https://web.archive.org/web/20120506093643/http://blogs.nature.com/mfenner/2010/08/31/bye-bye-nature-network">interviews</a>, and I want to write more recipes (<a href="https://web.archive.org/web/20120506093643/http://blogs.nature.com/mfenner/2009/08/08/recipe-distributing-papers-for-a-journal-club">Recipe: Distributing papers for a journal club</a>). Of course I also want to try different things, e.g. shorter blog posts of interesting stuff I find (something I currently post on Twitter). Please contact me if you have something related to scientific publishing that you want me to write about.</p>
+<p>PLoS Blogs is not the only new science blogging network. <a href="https://web.archive.org/web/20120506093643/http://www.guardian.co.uk/science/blog/2010/aug/31/blogging-digital-media">Guardian Science Blogs</a> launched just yesterday, and <a href="https://web.archive.org/web/20120506093643/http://scientopia.org/blogs/">Scientopia</a> and <a href="https://web.archive.org/web/20120506093643/http://www.science3point0.com/blogs/">Science 3.0</a> in the last few weeks. And <a href="https://web.archive.org/web/20120506093643/http://scienceblogging.org/2010/08/19/some-thoughts-about-science-blog-aggregation/">Scienceblogging.org</a>, an aggregator of science blogs (to keep track of all those great blog posts), was launched by Anton Zuiker, Bora Zivkovic and Dave Munger two weeks ago.</p>
+<p>This is a good week for science blogging for another reason. The <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/">Science Online London Conference</a> takes place this Friday and Saturday. Most relevant to the launch of PLoS Blogs is the panel discussion Friday afternoon <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/programme.php?tab=abstracts#panel2">The state of science blogging?</a></p>
+<figure>
+<img src="https://web.archive.org/web/20120506093643im_/http://www.scienceonlinelondon.org/graphics/logo.gif" class="kg-image" />
+</figure>
+<p>There will of course be other exciting sessions. The panel <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/programme.php?tab=abstracts#panel1">“Rebooting” (aka the future of) science journalism</a> with David Dobbs, Ed Yong, Martin Robbins and Alice Bell should be a lot of fun. The closing panel discussion on Saturday <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/programme.php?tab=abstracts#panel3">If you build it, will they come?</a> will look at the adoption (or lack thereof) of  Web 2.0 tools for scholarly communication, based on a <a href="https://web.archive.org/web/20120506093643/http://www.rin.ac.uk/our-work/communicating-and-disseminating-research/use-and-relevance-web-20-researchers">recent report</a> by the Research Information Network. And a number of sessions focus on open data, a trending topic I’m personally very interested in. Together with Geoff Bilder and Gudmundur Thorisson I will moderate a session <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/programme.php?tab=abstracts#breakout11">ORCID as unique author identifier: what is it good for and should we worry or be happy?</a></p>
+<p>Most importantly, Science Online London is a great opportunity to meet many of my fellow science bloggers in person, and this includes Brian Mossop, the PLoS Blogs community manager. Expect more reports from Science Online London in the next few days, for more up to date information please follow me on Twitter (<a href="https://web.archive.org/web/20120506093643/http://twitter.com/mfenner">@mfenner</a>, conference hashtag <a href="https://web.archive.org/web/20120506093643/http://twitter.com/#search?q=%23solo10">#solo10</a>) or try the <a href="https://web.archive.org/web/20120506093643/http://www.science3point0.com/solo10-2/">video stream</a> put together by Graham Steel.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Bye-Bye Nature Network]]></title>
         <id>08341060-3e8f-4966-bbe6-fb719735af01</id>
         <link href="https://front-matter.io/mfenner/bye-bye-nature-network"/>
@@ -5940,32 +5963,6 @@ I would define post-publication review as the process whereby scientists and oth
 </ul>
 <p>Please stay in touch. And if possible, come around to the <a href="https://web.archive.org/web/20120525055619/http://www.scienceonlinelondon.org/">Science Online London Conference</a> this weekend.</p>
 <p>Update: Gobbledygook has moved to <a href="https://web.archive.org/web/20120525055619/http://blogs.plos.org/mfenner">PLoS Blogs</a>.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Welcome to Gobbledygook]]></title>
-        <id>9a28381f-b575-4b90-88ed-ccc0891c166f</id>
-        <link href="https://front-matter.io/mfenner/welcome-to-gobbledygook"/>
-        <updated>1970-01-15T20:28:19.200Z</updated>
-        <summary type="html"><![CDATA[<em><em>Flickr photo by {Away until inspiration comes}.</em></em>In his introductory post, PLoS community manager Brian Mossop talks about how PLoS Blogs came to life, and the lessons learned from other blogging networks....]]></summary>
-        <content type="html"><![CDATA[<figure>
-<img src="https://assets.front-matter.io/ghost/2021/April/12th/2187485704_a598c84739.jpeg" class="kg-image" width="500" height="375" />
-</figure>
-<p><em><em>Flickr photo by {Away until inspiration comes}.</em></em></p>
-<p>In his <a href="https://web.archive.org/web/20120506093643/http://blogs.plos.org/blog/2010/08/31/the-niche-blog-network-lessons-from-the-past-visions-for-the-future/">introductory post</a>, PLoS community manager Brian Mossop talks about how PLoS Blogs came to life, and the lessons learned from other blogging networks. For me personally it all started a few weeks ago with a phone call one Friday evening from <a href="https://web.archive.org/web/20120506093643/http://www.plos.org/about/people/one.php#pbinfield">Pete Binfield</a>, Publisher of PLoS ONE and the PLoS Community Journals.</p>
-<p>Since August 2007 and until today I was blogging over at <a href="https://web.archive.org/web/20120506093643/http://blogs.nature.com/mfenner">Nature Network</a>. The focus of that blog was how the internet is changing scientific publishing. This is obviously a very broad topic. A lot of my blog posts looked at rather technical aspects, including new products and services (the <a href="https://web.archive.org/web/20120506093643/http://blogs.nature.com/mfenner/2010/08/29/elsevier-launches-sciverse-integrates-sciencedirect-scopus-more">last post</a> was about Elsevier’s SciVerse that launched last weekend).</p>
-<p>I will continue to write about the same topics. I particularly like to continue <a href="https://web.archive.org/web/20120506093643/http://blogs.nature.com/mfenner/2010/08/31/bye-bye-nature-network">interviews</a>, and I want to write more recipes (<a href="https://web.archive.org/web/20120506093643/http://blogs.nature.com/mfenner/2009/08/08/recipe-distributing-papers-for-a-journal-club">Recipe: Distributing papers for a journal club</a>). Of course I also want to try different things, e.g. shorter blog posts of interesting stuff I find (something I currently post on Twitter). Please contact me if you have something related to scientific publishing that you want me to write about.</p>
-<p>PLoS Blogs is not the only new science blogging network. <a href="https://web.archive.org/web/20120506093643/http://www.guardian.co.uk/science/blog/2010/aug/31/blogging-digital-media">Guardian Science Blogs</a> launched just yesterday, and <a href="https://web.archive.org/web/20120506093643/http://scientopia.org/blogs/">Scientopia</a> and <a href="https://web.archive.org/web/20120506093643/http://www.science3point0.com/blogs/">Science 3.0</a> in the last few weeks. And <a href="https://web.archive.org/web/20120506093643/http://scienceblogging.org/2010/08/19/some-thoughts-about-science-blog-aggregation/">Scienceblogging.org</a>, an aggregator of science blogs (to keep track of all those great blog posts), was launched by Anton Zuiker, Bora Zivkovic and Dave Munger two weeks ago.</p>
-<p>This is a good week for science blogging for another reason. The <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/">Science Online London Conference</a> takes place this Friday and Saturday. Most relevant to the launch of PLoS Blogs is the panel discussion Friday afternoon <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/programme.php?tab=abstracts#panel2">The state of science blogging?</a></p>
-<figure>
-<img src="https://web.archive.org/web/20120506093643im_/http://www.scienceonlinelondon.org/graphics/logo.gif" class="kg-image" />
-</figure>
-<p>There will of course be other exciting sessions. The panel <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/programme.php?tab=abstracts#panel1">“Rebooting” (aka the future of) science journalism</a> with David Dobbs, Ed Yong, Martin Robbins and Alice Bell should be a lot of fun. The closing panel discussion on Saturday <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/programme.php?tab=abstracts#panel3">If you build it, will they come?</a> will look at the adoption (or lack thereof) of  Web 2.0 tools for scholarly communication, based on a <a href="https://web.archive.org/web/20120506093643/http://www.rin.ac.uk/our-work/communicating-and-disseminating-research/use-and-relevance-web-20-researchers">recent report</a> by the Research Information Network. And a number of sessions focus on open data, a trending topic I’m personally very interested in. Together with Geoff Bilder and Gudmundur Thorisson I will moderate a session <a href="https://web.archive.org/web/20120506093643/http://www.scienceonlinelondon.org/programme.php?tab=abstracts#breakout11">ORCID as unique author identifier: what is it good for and should we worry or be happy?</a></p>
-<p>Most importantly, Science Online London is a great opportunity to meet many of my fellow science bloggers in person, and this includes Brian Mossop, the PLoS Blogs community manager. Expect more reports from Science Online London in the next few days, for more up to date information please follow me on Twitter (<a href="https://web.archive.org/web/20120506093643/http://twitter.com/mfenner">@mfenner</a>, conference hashtag <a href="https://web.archive.org/web/20120506093643/http://twitter.com/#search?q=%23solo10">#solo10</a>) or try the <a href="https://web.archive.org/web/20120506093643/http://www.science3point0.com/solo10-2/">video stream</a> put together by Graham Steel.</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>

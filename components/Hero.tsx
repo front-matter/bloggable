@@ -8,11 +8,7 @@ export default function Hero(tag) {
         <div
           className="absolute bg-cover inset-0"
           style={{
-            backgroundImage: `url(${
-              tag && tag.tag.feature_image
-                ? tag.tag.feature_image
-                : '/img/hero.jpg'
-            })`
+            backgroundImage: `url(${tag.tag.feature_image})`
           }}
         ></div>
         <div className="relative px-4 mt-48 pt-32 pb-16 sm:px-6 sm:py-24 lg:px-8 xl:pt-60 xl:pb-16 justify-center">
@@ -23,9 +19,7 @@ export default function Hero(tag) {
                 (tag && tag.tag.accent_color ? 'text-white' : 'text-gray-900')
               }
             >
-              {tag && tag.tag.name !== 'Featured'
-                ? tag.tag.name
-                : 'All Science needs a Front Matter'}
+              {tag.tag.name}
             </span>
           </h1>
           {tag && tag.tag.description && (
@@ -39,7 +33,7 @@ export default function Hero(tag) {
               </span>
             </p>
           )}
-          {tag && tag.tag.name === 'Featured' && (
+          {tag && tag.tag.featured && (
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow mr-6">
                 <Link href="/features" passHref>

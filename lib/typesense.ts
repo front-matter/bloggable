@@ -46,6 +46,7 @@ export async function updateIndex() {
       content: await generateHtml(post.html),
       readingTime: post.reading_time,
       tags: post.tags && post.tags.map((tag) => tag.slug),
+      featured: post.featured,
       featureImage: post.feature_image,
       visibility: post.visibility,
       created: getTime(parseISO(post.created_at)) * 0.001,
@@ -156,6 +157,12 @@ export async function updateSchema() {
         name: 'featureImage',
         type: 'string',
         facet: false,
+        optional: true
+      },
+      {
+        name: 'featured',
+        type: 'bool',
+        facet: true,
         optional: true
       },
       {

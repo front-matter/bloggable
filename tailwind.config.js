@@ -2,7 +2,7 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: [
     'responsive',
@@ -18,7 +18,5 @@ module.exports = {
     'visited',
     'disabled'
   ],
-  plugins: [
-    require('@tailwindcss/forms')
-  ]
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')]
 }

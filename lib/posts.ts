@@ -80,6 +80,25 @@ export async function getPostsByTag(
     })
 }
 
+export async function getFeaturedPosts(hitsPerPage?: number, page?: number) {
+  return await client
+    .collections('front-matter')
+    .documents()
+    .search({
+      q: '*',
+      filter_by: 'featured:true',
+      per_page: hitsPerPage ? hitsPerPage : 25,
+      page: page > 0 ? page : 1
+    })
+    .then(({ hits }) => {
+      return hits
+    })
+    .catch((err) => {
+      console.error(err)
+      return err
+    })
+}
+
 export async function getAllPosts() {
   return await client
     .collections('front-matter')
