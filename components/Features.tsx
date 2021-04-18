@@ -297,23 +297,16 @@ export default function Features() {
                       </p>
                     </dt>
                     <dd className="mt-1 ml-16 text-base text-gray-500">
-                      Front Matter provides an easy to use{' '}
+                      Front Matter integrates with the{' '}
                       <a
-                        href="https://graphs.front-matter.io"
+                        href="https://datawrapper.de"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Graph editor
+                        Datawrapper
                       </a>{' '}
-                      based on the{' '}
-                      <a
-                        href="https://rawgraphs.io"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        RAWGraphs
-                      </a>{' '}
-                      Open Source software.
+                      service to generate charts, maps, and tables, and can
+                      include a download link to the raw data.
                     </dd>
                   </div>
                 </dl>

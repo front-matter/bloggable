@@ -105,25 +105,6 @@ export default function Pricing() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/rawgraphs/rawgraphs-app" passHref>
-                <a
-                  href="dummy"
-                  className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  RAWGraphs
-                </a>
-              </Link>
-            </dt>
-            <dd className="mt-0 ml-9 text-base text-gray-500">
-              RAWGraphs is an open web tool to create custom vector-based
-              visualizations on top of the amazing d3.js library.
-            </dd>
-          </div>
-
-          <div className="relative">
-            <dt>
               <Link
                 href="https://github.com/citation-style-language/styles"
                 passHref
