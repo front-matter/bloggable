@@ -11,7 +11,7 @@ export default function Categories(tags) {
               Categories
             </h2>
             <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
-              Front Matter accepts contributions for one of these categories.
+              Front Matter accepts contributions in one of these categories.
             </p>
           </div>
           <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
