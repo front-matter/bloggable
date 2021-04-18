@@ -349,7 +349,7 @@ export default function Features() {
                 <img
                   className="relative mx-auto mr-16 shadow-md"
                   width="720"
-                  src="https://assets.front-matter.io/ghost/rawgraphs.png"
+                  src="https://assets.front-matter.io/ghost/datawrapper.png"
                   alt=""
                 />
               </div>
