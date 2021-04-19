@@ -174,7 +174,8 @@ export async function getGhostTags() {
   return await api.tags
     .browse({
       limit: 'all',
-      include: 'count.posts'
+      include: 'count.posts',
+      order: 'count.posts desc'
     })
     .catch((err) => {
       console.error(err)
