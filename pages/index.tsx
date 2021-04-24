@@ -25,7 +25,7 @@ export async function getStaticProps() {
   // await generatePdf()
   // await generateJats()
   // await updateSchema()
-  // await updateIndex()
+  await updateIndex()
 
   return {
     props: { posts, tags }
