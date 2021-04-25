@@ -28,19 +28,17 @@ export default function Categories(tags) {
 
                   <div className="space-y-2">
                     <div className="text-lg leading-6 font-medium space-y-1">
-                      <h3>
-                        <Link href={`/categories/${tag.slug}`}>
-                          <a
-                            href="dummy"
-                            className="border-b-0 hover:border-b hover:border-green-600"
-                          >
-                            {tag.name}
-                          </a>
-                        </Link>
-                      </h3>
-                      <p className="font-light text-medium mt-1">
-                        {tag.description}
-                      </p>
+                      <Link href={`/categories/${tag.slug}`}>
+                        <a
+                          href="dummy"
+                          className="border-b-0 hover:border-b hover:border-green-600"
+                        >
+                          <h3>{tag.name}</h3>
+                          <p className="font-light text-medium mt-1">
+                            {tag.description}
+                          </p>
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
