@@ -34,7 +34,7 @@ export default function Navbar(props) {
       <nav className="bg-white">
         <div className="container mx-auto flex flex-auto items-center justify-between font-sans">
           <div className="flex justify-between h-16">
-            <div className="flex px-2 lg:px-0">
+            <div className="flex mx-4 px-2 lg:px-0">
               <div className="flex-shrink-0 flex items-center">
                 <Link href="/" passHref>
                   <a href="dummy" className="text-green-600 border-b-0 flex">
