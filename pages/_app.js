@@ -33,13 +33,13 @@ export default class MyApp extends App {
               content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
             <title>Front Matter</title>
+            <link rel="shortcut icon" href="/favicon.ico" />
             <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
             <link
               rel="apple-touch-icon"
               sizes="180x180"
               href="/apple-touch-icon.png"
             />
-            <link rel="shortcut icon" href="/favicon.ico" />
           </Head>
           <Layout>
             <Component {...pageProps} />
