@@ -83,15 +83,15 @@ export default function Tag(posts) {
                 </div>
               ))}
             </div>
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-1 lg:max-w-none">
+            <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
               {posts.posts.slice(3, 4).map((post) => (
                 <div
-                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                  className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}
                 >
-                  <div className="flex-shrink-0 bg-white pt-6 px-6">
+                  <div className="flex-shrink-0 bg-white py-6 px-6">
                     <img
-                      className="h-48 w-full object-contain object-left"
+                      className="h-96 w-full object-contain object-left"
                       src={
                         post.document.featureImage
                           ? post.document.featureImage
@@ -104,7 +104,7 @@ export default function Tag(posts) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm font-medium uppercase font-sans text-green-600">
+                      <p className="text-sm mt-2 font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
                             <Link
@@ -281,15 +281,15 @@ export default function Tag(posts) {
                 </div>
               ))}
             </div>
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-1 lg:max-w-none">
+            <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
               {posts.posts.slice(9, 10).map((post) => (
                 <div
-                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                  className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}
                 >
-                  <div className="flex-shrink-0 bg-white pt-6 px-6">
+                  <div className="flex-shrink-0 bg-white py-6 px-6">
                     <img
-                      className="h-48 w-full object-contain object-left"
+                      className="h-96 w-full object-contain object-left"
                       src={
                         post.document.featureImage
                           ? post.document.featureImage
@@ -302,7 +302,7 @@ export default function Tag(posts) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm font-medium uppercase font-sans text-green-600">
+                      <p className="text-sm mt-2 font-medium uppercase font-sans text-green-600">
                         {post.document.tags.map((tag, index) => (
                           <>
                             <Link
