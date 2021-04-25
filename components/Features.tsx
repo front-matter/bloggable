@@ -10,13 +10,14 @@ import {
   faUserFriends,
   faChartArea,
   faChartLine,
-  faTable,
+  faRssSquare,
   faExternalLinkAlt,
   faBarcode,
   faFileArchive,
   faServer,
   faSearch,
-  faComments
+  faComments,
+  faFolderPlus
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
@@ -139,6 +140,23 @@ export default function Features() {
                   <dd className="mt-1 ml-16 text-base text-gray-500">
                     Teams can work together on a post, and users can have
                     different roles such as author, contributor or editor.
+                  </dd>
+                </div>
+                <div className="relative">
+                  <dt>
+                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
+                      <FontAwesomeIcon icon={faRssSquare} />
+                    </div>
+                    <p className="mx-16 mb-0 text-xl text-bold leading-6 font-medium text-gray-900 font-sans">
+                      Import from Blogs and Google Docs{' '}
+                      <span className="text-base text-normal text-yellow-500">
+                        in beta testing
+                      </span>
+                    </p>
+                  </dt>
+                  <dd className="mt-1 ml-16 text-base text-gray-500">
+                    Front Matter can automatically generate blog posts from RSS
+                    feeds and Google Docs.
                   </dd>
                 </div>
               </dl>
@@ -272,24 +290,10 @@ export default function Features() {
                   <div className="relative">
                     <dt>
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
-                        <FontAwesomeIcon icon={faTable} />
-                      </div>
-                      <p className="mx-16 mb-0 text-xl text-bold leading-6 font-medium text-gray-900 font-sans">
-                        Tables
-                      </p>
-                    </dt>
-                    <dd className="mt-1 ml-16 text-base text-gray-500">
-                      Tabular data underlying a table or visualization can we
-                      included with Datawrapper.
-                    </dd>
-                  </div>
-                  <div className="relative">
-                    <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
                         <FontAwesomeIcon icon={faChartArea} />
                       </div>
                       <p className="mx-16 mb-0 text-xl text-bold leading-6 font-medium text-gray-900 font-sans">
-                        Visualizations
+                        Tables and Visualizations
                       </p>
                     </dt>
                     <dd className="mt-1 ml-16 text-base text-gray-500">

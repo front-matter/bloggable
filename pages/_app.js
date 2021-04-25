@@ -39,7 +39,7 @@ export default class MyApp extends App {
               sizes="180x180"
               href="/apple-touch-icon.png"
             />
-            <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+            <link rel="shortcut icon" href="/favicon.ico" />
           </Head>
           <Layout>
             <Component {...pageProps} />

@@ -25,7 +25,7 @@ export async function getStaticProps() {
   // await generatePdf()
   // await generateJats()
   // await updateSchema()
-  await updateIndex()
+  // await updateIndex()
 
   return {
     props: { posts, tags }
@@ -34,7 +34,7 @@ export async function getStaticProps() {
 
 const IndexPage = ({ posts, tags }) => {
   const tag = {
-    name: 'All Science needs a Front Matter',
+    name: 'All Science needs Front Matter',
     description: 'Coming soon.',
     feature_image: '/img/hero.jpg',
     featured: true
