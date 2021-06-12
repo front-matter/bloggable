@@ -95,17 +95,6 @@ export async function updateIndex() {
   }
 
   await fs.writeFileSync('./public/typesense.json', documents)
-
-  // client
-  //   .collections('front-matter')
-  //   .documents()
-  //   .import(documents, { action: 'create' })
-  //   .then(function (data) {
-  //     console.log(data)
-  //   })
-  //   .catch((err) => {
-  //     console.error(err)
-  //   })
 }
 
 export async function updateSchema() {

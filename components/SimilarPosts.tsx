@@ -3,7 +3,7 @@ import ReactHtmlParser from 'react-html-parser'
 import Link from 'next/link'
 import Byline from './Byline'
 
-export default function SimilarPosts(posts) {
+export default function SimilarPosts({ posts }) {
   return (
     <>
       <div className="relative bg-gray-50 pt-16 pb-16 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8">
@@ -18,7 +18,7 @@ export default function SimilarPosts(posts) {
               </h2>
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {posts.posts.map((post) => (
+              {posts.map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}

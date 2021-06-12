@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Byline from './Byline'
 import Pagination from './Pagination'
 
-export default function Tag(posts) {
+export default function Tag({ posts }) {
   return (
     <>
       <div className="relative bg-gray-50 pt-16 pb-16 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8">
@@ -19,7 +19,7 @@ export default function Tag(posts) {
               </h2>
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {posts.posts.slice(0, 3).map((post) => (
+              {posts.slice(0, 3).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}
@@ -85,7 +85,7 @@ export default function Tag(posts) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
-              {posts.posts.slice(3, 4).map((post) => (
+              {posts.slice(3, 4).map((post) => (
                 <div
                   className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}
@@ -151,7 +151,7 @@ export default function Tag(posts) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {posts.posts.slice(4, 7).map((post) => (
+              {posts.slice(4, 7).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}
@@ -217,7 +217,7 @@ export default function Tag(posts) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
-              {posts.posts.slice(7, 9).map((post) => (
+              {posts.slice(7, 9).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}
@@ -283,7 +283,7 @@ export default function Tag(posts) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
-              {posts.posts.slice(9, 10).map((post) => (
+              {posts.slice(9, 10).map((post) => (
                 <div
                   className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}
@@ -349,7 +349,7 @@ export default function Tag(posts) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {posts.posts.slice(10, 13).map((post) => (
+              {posts.slice(10, 13).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}
@@ -415,7 +415,7 @@ export default function Tag(posts) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
-              {posts.posts.slice(13, 15).map((post) => (
+              {posts.slice(13, 15).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.document.id}

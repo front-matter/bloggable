@@ -2,11 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function Pagination({
-  currentRefinement,
-  nbPages,
-  refine,
-  createURL,
-  showFirst
+  currentRefinement = null,
+  nbPages = 1,
+  showFirst = false
 }) {
   if (nbPages === 1) return null
 
