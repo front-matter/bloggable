@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
 import Tag from '../../components/Tag'
+import Pagination from '../../components/Pagination'
 import { GetStaticPaths } from 'next'
 
 export const getStaticPaths: GetStaticPaths = async () => {

@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://front-matter.io',
+  siteUrl: 'https://blog.front-matter.io',
   generateRobotsTxt: true
 }

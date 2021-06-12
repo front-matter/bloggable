@@ -49,6 +49,6 @@ jobs:
           vercel-org-id: ${{ secrets.ORG_ID}}
           vercel-project-id: ${{ secrets.PROJECT_ID}}
           scope: ${{ secrets.TEAM_ID}}
-          vercel-project-name: 'front-matter'
+          vercel-project-name: 'bloggable'
           alias-domains: |
-            front-matter.vercel.app
+            blog.front-matter.io

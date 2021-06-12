@@ -70,7 +70,7 @@ const Post = (props) => {
         )}
         <meta
           name="citation_pdf_url"
-          content={'https://front-matter.io/pdf/' + hit.slug + '.pdf'}
+          content={'https://blog.front-matter.io/pdf/' + hit.slug + '.pdf'}
         />
 
         <meta name="og:title" content={hit.title} />

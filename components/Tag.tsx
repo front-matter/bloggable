@@ -2,6 +2,7 @@ import React from 'react'
 import ReactHtmlParser from 'react-html-parser'
 import Link from 'next/link'
 import Byline from './Byline'
+import Pagination from './Pagination'
 
 export default function Tag(posts) {
   return (
@@ -479,6 +480,7 @@ export default function Tag(posts) {
                 </div>
               ))}
             </div>
+            <Pagination />
           </div>
         </div>
       </div>

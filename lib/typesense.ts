@@ -55,8 +55,8 @@ export async function updateIndex() {
       schemaOrg: {
         '@context': 'http://schema.org',
         '@type': 'BlogPosting',
-        '@id': 'https://front-matter.io/' + post.uuid,
-        url: 'https://front-matter.io/mfenner/' + post.slug,
+        '@id': 'https://blog.front-matter.io/' + post.uuid,
+        url: 'https://blog.front-matter.io/mfenner/' + post.slug,
         name: post.title,
         headline: post.title,
         description: description + '...',

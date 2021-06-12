@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://front-matter.io
+Host: https://blog.front-matter.io
 
 # Sitemaps
-Sitemap: https://front-matter.io/sitemap.xml
+Sitemap: https://blog.front-matter.io/sitemap.xml
