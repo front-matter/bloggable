@@ -1,5 +1,5 @@
 import GhostContentAPI from '@tryghost/content-api'
-import { id } from 'date-fns/locale'
+// import { id } from 'date-fns/locale'
 import { Client } from 'typesense'
 
 let client = new Client({
@@ -19,7 +19,7 @@ export async function getPosts(
   hitsPerPage?: number,
   page?: number
 ) {
-  return await client
+  return client
     .collections('front-matter')
     .documents()
     .search({
@@ -38,7 +38,7 @@ export async function getPosts(
 }
 
 export async function getSimilarPosts(query: string, recordId: string) {
-  return await client
+  return client
     .collections('front-matter')
     .documents()
     .search({
@@ -62,7 +62,7 @@ export async function getPostsByTag(
   hitsPerPage?: number,
   page?: number
 ) {
-  return await client
+  return client
     .collections('front-matter')
     .documents()
     .search({
@@ -81,7 +81,7 @@ export async function getPostsByTag(
 }
 
 export async function getFeaturedPosts(hitsPerPage?: number, page?: number) {
-  return await client
+  return client
     .collections('front-matter')
     .documents()
     .search({
@@ -100,7 +100,7 @@ export async function getFeaturedPosts(hitsPerPage?: number, page?: number) {
 }
 
 export async function getAllPosts() {
-  return await client
+  return client
     .collections('front-matter')
     .documents()
     .search({ q: '*', per_page: 250, page: 1 })
@@ -114,7 +114,7 @@ export async function getAllPosts() {
 }
 
 export async function getSinglePost(id: string) {
-  return await client
+  return client
     .collections('front-matter')
     .documents(id)
     .retrieve()
@@ -128,10 +128,16 @@ export async function getSinglePost(id: string) {
 }
 
 export async function getSinglePostBySlug(slug: string) {
-  return await client
+  return client
     .collections('front-matter')
     .documents()
-    .search({ q: slug, query_by: 'slug', per_page: 1, page: 1 })
+    .search({
+      q: '*',
+      query_by: 'title, description, content',
+      filter_by: 'slug:' + slug,
+      per_page: 1,
+      page: 1
+    })
     .then((document) => {
       return document
     })
@@ -149,7 +155,7 @@ const api = new GhostContentAPI({
 })
 
 export async function getGhostPosts() {
-  return await api.posts
+  return api.posts
     .browse({
       limit: 'all',
       include: 'tags,authors'
@@ -160,7 +166,7 @@ export async function getGhostPosts() {
 }
 
 export async function getSingleGhostPost(postSlug) {
-  return await api.posts
+  return api.posts
     .read({
       slug: postSlug,
       include: 'tags,authors'
@@ -171,7 +177,7 @@ export async function getSingleGhostPost(postSlug) {
 }
 
 export async function getGhostTags() {
-  return await api.tags
+  return api.tags
     .browse({
       limit: 'all',
       include: 'count.posts',
@@ -183,7 +189,7 @@ export async function getGhostTags() {
 }
 
 export async function getSingleGhostTag(tagSlug) {
-  return await api.tags
+  return api.tags
     .read({
       slug: tagSlug,
       include: 'count.posts'
