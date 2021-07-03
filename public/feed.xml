@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-06-17T05:15:54.028Z</updated>
+    <updated>2021-07-03T12:22:23.587Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -14,7 +14,7 @@
     <rights>Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
     <entry>
         <title type="html"><![CDATA[Thank you PLOS]]></title>
-        <id>ae704746-6ec6-4d90-b126-d88206036d2f</id>
+        <id>5ee13mc-vp69p8b-29prg83-06v9f</id>
         <link href="https://blog.front-matter.io/mfenner/thank-you-plos"/>
         <updated>1970-01-17T15:29:27.120Z</updated>
         <summary type="html"><![CDATA[Starting next week I will work as the DataCite Technical Director, and I am excited about this new opportunity. But this is material for another post, here I want to reflect on the last three years working as Technical Lead for the PLOS Article-Level...]]></summary>
@@ -38,7 +38,7 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Component DOIs Revisited]]></title>
-        <id>0983610b-64df-4dff-96dc-5de43c56a237</id>
+        <id>9gdggps-6z9qzsd-q2xwgy5-d8hq</id>
         <link href="https://blog.front-matter.io/mfenner/component-dois-revisited"/>
         <updated>1970-01-17T15:00:37.140Z</updated>
         <summary type="html"><![CDATA[Four years ago I wrote a blog post about component DOIs. It is time to revisit the topic, in particular since our approach to citing data associated with a publication has changed since 2011.Component DOIs are explained in the CrossRef Help System:DOIs...]]></summary>
@@ -61,7 +61,7 @@ DOIs may be assigned to items that are part of a journal article, book chapter, 
     </entry>
     <entry>
         <title type="html"><![CDATA[Why should we work where we live?]]></title>
-        <id>66d00cb0-23c6-4e9d-9561-7dab13ffaa63</id>
+        <id>36t06b0-8y69tes-arbxnc9-zzak3</id>
         <link href="https://blog.front-matter.io/mfenner/why-should-we-work-where-we-live"/>
         <updated>1970-01-17T14:44:46.980Z</updated>
         <summary type="html"><![CDATA[Photo by Danyu Wang / UnsplashAt the SciFoo Camp this weekend Erin McKiernan and I moderated an unconference session on the topic <strong>Why should we work where we live?</strong> This was a spontaneous idea after we had talked about this topic on Friday (Erin lives in Mexico with a job in Canada,...]]></summary>
@@ -85,7 +85,7 @@ DOIs may be assigned to items that are part of a journal article, book chapter, 
     </entry>
     <entry>
         <title type="html"><![CDATA[Persistent Identifiers and URLs]]></title>
-        <id>f89e2997-a9e4-4924-bd70-16231baec3e6</id>
+        <id>7rkrmsf-af494jb-tw0p4cd-txgz6</id>
         <link href="https://blog.front-matter.io/mfenner/persistent-identifiers-and-urls"/>
         <updated>1970-01-17T14:08:48.180Z</updated>
         <summary type="html"><![CDATA[Just like the rest of the internet, much of our scholarly infrastructure is built around the Hypertext Transfer Protocol (HTTP), increasingly HTTPS for security, and soon HTTP/2 for better performance. In this infrastructure Universal Resource Locators (URLs)...]]></summary>
@@ -122,7 +122,7 @@ DOIs may be assigned to items that are part of a journal article, book chapter, 
     </entry>
     <entry>
         <title type="html"><![CDATA[Human-readable and machine-readable Persistent Identifiers]]></title>
-        <id>e92e15e3-4449-4e6e-b901-f36aabc6fb36</id>
+        <id>795ray6-h299sqb-j0fkdan-wdysp</id>
         <link href="https://blog.front-matter.io/mfenner/human-readable-and-machine-readable-persistent-identifiers"/>
         <updated>1970-01-17T13:58:43.500Z</updated>
         <summary type="html"><![CDATA[Yesterday Julie McMurry and co-authors published a preprint <strong><strong>10 Simple rules for design, provision, and reuse of persistent identifiers for life science data</strong></strong>. This is an important paper trying to address a fundamental...]]></summary>
@@ -150,7 +150,7 @@ DOIs may be assigned to items that are part of a journal article, book chapter, 
     </entry>
     <entry>
         <title type="html"><![CDATA[Introducing the Scholarly Markdown Bundle]]></title>
-        <id>c53ee3a5-a102-4482-be12-09f53966469a</id>
+        <id>657vhtb-8828j1b-w4g9ymw-pchmt</id>
         <link href="https://blog.front-matter.io/mfenner/introducing-the-scholarly-markdown-bundle"/>
         <updated>1970-01-17T13:09:49.680Z</updated>
         <summary type="html"><![CDATA[Using Markdown to author scholarly documents is an attractive alternative to the standard authoring tools Microsoft Word and LaTeX. The feeling shared by many is that Scholarly Markdown is 80% there, and that more effort is needed for the remaining 20%...]]></summary>
@@ -172,7 +172,7 @@ DOIs may be assigned to items that are part of a journal article, book chapter, 
     </entry>
     <entry>
         <title type="html"><![CDATA[Blogging Beyond Jekyll]]></title>
-        <id>4bdd1c2c-0b6f-4035-88a2-5c51e9a32055</id>
+        <id>2bvme2r-2vf80tr-h8jwa7m-t682n</id>
         <link href="https://blog.front-matter.io/mfenner/blogging-beyond-jekyll"/>
         <updated>1970-01-17T12:25:11.400Z</updated>
         <summary type="html"><![CDATA[This blog has been on four different platforms since starting in 2007: a custom blogging engine and then Movable Type on Nature Network 2007-2010, Wordpress on the PLOS Blogs Network 2010-2013, and the static blogging engine Jekyll hosted on Github Pages since 2013....]]></summary>
@@ -202,7 +202,7 @@ Build a Javascript frontend where the content is served via an API built around 
     </entry>
     <entry>
         <title type="html"><![CDATA[Metadata in Microsoft Word documents]]></title>
-        <id>5398a86a-fd4c-439d-9773-34527b79ac7d</id>
+        <id>2kk2m6n-zac8ees-ewsma9x-qkb3x</id>
         <link href="https://blog.front-matter.io/mfenner/metadata-in-microsoft-word-documents"/>
         <updated>1970-01-17T12:20:52.320Z</updated>
         <summary type="html"><![CDATA[Metadata such as author, title, journal or persistent identifier are essential for scholarly documents, and some of us are spending a significant part of our time adding or fixing metadata. Unfortunately we sometimes don’t pay enough attention to the flow of metadata,...]]></summary>
@@ -233,7 +233,7 @@ title: Metadata in Microsoft Word documents
     </entry>
     <entry>
         <title type="html"><![CDATA[First analysis of software metrics]]></title>
-        <id>f66851ce-9224-4c1b-b880-4fa675d01b05</id>
+        <id>7pd18wx-4h49gdv-h02fmst-x06r5</id>
         <link href="https://blog.front-matter.io/mfenner/first-analysis-of-software-metrics"/>
         <updated>1970-01-17T11:52:04.500Z</updated>
         <summary type="html"><![CDATA[Last week I wrote about software.lagotto.io, an instance of the lagotto open source software collecting metrics for the about 1,400 software repositories included in Sciencetoolbox. In this post I want to report the first results analyzing the data.Number of software repositories (out of 1,404)...]]></summary>
@@ -265,7 +265,7 @@ title: Metadata in Microsoft Word documents
     </entry>
     <entry>
         <title type="html"><![CDATA[Why there is no iTunes for science papers]]></title>
-        <id>b898d6d8-3030-455c-b08a-108215ba2b97</id>
+        <id>5rk3bdg-c1g8neb-12ggg8a-vmawq</id>
         <link href="https://blog.front-matter.io/mfenner/why-there-is-no-itunes-for-science-papers"/>
         <updated>1970-01-17T11:44:52.680Z</updated>
         <summary type="html"><![CDATA[The iTunes Store was opened by Apple in 2003 to sell digital music and other digital assets. Since 2009 music purchased in the iTunes store is free of Digital Rights Management (DRM). Apple became the largest music vendor worldwide in 2010,...]]></summary>
@@ -305,7 +305,7 @@ title: Metadata in Microsoft Word documents
     </entry>
     <entry>
         <title type="html"><![CDATA[Metrics for scientific software]]></title>
-        <id>31c00475-7abf-4bc8-830c-4b37bafa0359</id>
+        <id>1hr027a-ynz9f48-632b6yx-fm0ts</id>
         <link href="https://blog.front-matter.io/mfenner/metrics-for-scientific-software"/>
         <updated>1970-01-17T11:39:07.200Z</updated>
         <summary type="html"><![CDATA[One of the challenges of collecting metrics for scholarly outputs is persistent identifiers. For journal articles the Digital Object Identifier (DOI) has become the de-facto standard, other popular identifiers are the pmid from PubMed,...]]></summary>
@@ -336,7 +336,7 @@ Make sure PIDs can be referred to as HTTP URI’s, including support for content
     </entry>
     <entry>
         <title type="html"><![CDATA[Manifests and Reference Lists]]></title>
-        <id>c19c5ec6-6e50-47fc-b51a-c5c2a97a9860</id>
+        <id>61khfcc-vjg8zyb-a6p5ram-qn630</id>
         <link href="https://blog.front-matter.io/mfenner/manifests-and-reference-lists"/>
         <updated>1970-01-17T11:18:57.780Z</updated>
         <summary type="html"><![CDATA[Photo by Matthew Waring / UnsplashLast month at the Force15 conference in Oxford Ian Mulvany and I ran a workshop on data citation support in reference managers. The report of that workshop isn’t done yet,...]]></summary>
@@ -357,7 +357,7 @@ Make sure PIDs can be referred to as HTTP URI’s, including support for content
     </entry>
     <entry>
         <title type="html"><![CDATA[Data Citation Support in Reference Managers]]></title>
-        <id>b36a3870-6498-4514-9102-2ee4763ef739</id>
+        <id>5kd8w70-s4r8ma9-20hewhv-3xxss</id>
         <link href="https://blog.front-matter.io/mfenner/data-citation-support-in-reference-managers"/>
         <updated>1970-01-17T10:34:29.700Z</updated>
         <summary type="html"><![CDATA[This is the title of an upcoming workshop next Sunday organized by Ian Mulvany and myself. The workshop is a pre-conference event of the Force15 conference in Oxford. This blog post summarizes some of the issues and work that needs to be done.Data...]]></summary>
@@ -402,7 +402,7 @@ Data should be considered legitimate, citable products of research. Data citatio
     </entry>
     <entry>
         <title type="html"><![CDATA[Webinar on Writing Zotero Translators]]></title>
-        <id>a7068104-63a6-4807-b229-9bf24eac6693</id>
+        <id>570t0g8-rx6903v-4acvy97-arsmk</id>
         <link href="https://blog.front-matter.io/mfenner/webinar-on-writing-zotero-translators"/>
         <updated>1970-01-17T08:39:17.940Z</updated>
         <summary type="html"><![CDATA[In a blog post two weeks ago I argued for the need for reference managers to properly support data citation, if we want data citation to become a standard activity. I am happy to announce two events working towards that goal.November 3rd: Webinar on writing Zotero web translatorsSebastian Karcher,...]]></summary>
@@ -420,7 +420,7 @@ Data should be considered legitimate, citable products of research. Data citatio
     </entry>
     <entry>
         <title type="html"><![CDATA[Let's do an unconference]]></title>
-        <id>03829097-0a63-4baf-b901-ab3d0b84b631</id>
+        <id>3ga89e2-k39eqvj-0db7m5r-9dhh</id>
         <link href="https://blog.front-matter.io/mfenner/lets-do-an-unconference"/>
         <updated>1970-01-17T08:34:58.920Z</updated>
         <summary type="html"><![CDATA[Photo by Anthony DELANOIX / UnsplashThis year’s SpotOn London conference takes place November 14-15 and the registration has opened this Monday. I am helping organize this conference since 2009, and I again look forward to the sessions,...]]></summary>
@@ -460,7 +460,7 @@ The challenges of balancing the public and the private in the digital age
     </entry>
     <entry>
         <title type="html"><![CDATA[Please keep it simple: citations, links and references]]></title>
-        <id>83c6aac6-270c-4c70-97bc-93f1969127c1</id>
+        <id>43rtncc-9rc9hr9-ff4ky6b-929y1</id>
         <link href="https://blog.front-matter.io/mfenner/please-keep-it-simple-citations-links-and-references"/>
         <updated>1970-01-17T08:16:15.960Z</updated>
         <summary type="html"><![CDATA[In my last post I wrote about the importance of keeping things simple in scholarly publishing, today I want to go into more detail with one example: citations in scholarly documents.LEGO scientists discuss how they can cite their dataCitations are an essential part of scholarly documents,...]]></summary>
@@ -515,7 +515,7 @@ The challenges of balancing the public and the private in the digital age
     </entry>
     <entry>
         <title type="html"><![CDATA[Please keep it simple]]></title>
-        <id>f0e984e7-01d3-4899-b91f-10839b40d68c</id>
+        <id>7gx62ee-0ek92cv-j7rgged-m1nmc</id>
         <link href="https://blog.front-matter.io/mfenner/please-keep-it-simple"/>
         <updated>1970-01-17T07:54:40.080Z</updated>
         <summary type="html"><![CDATA[Doing scientific research is becoming increasingly complex, both in terms of the tools and technologies used, and in the collaboration across disciplines and locations that is increasingly commonplace. While the way we write up and publish research is of course also very different from 25 years ago,...]]></summary>
@@ -541,7 +541,7 @@ The challenges of balancing the public and the private in the digital age
     </entry>
     <entry>
         <title type="html"><![CDATA[CommonMark and the Future of Scholarly Markdown]]></title>
-        <id>3acc3fd3-5b94-4486-a9a7-55b578384046</id>
+        <id>1tsgzx6-pwm8j3a-k9tnpnw-3gg26</id>
         <link href="https://blog.front-matter.io/mfenner/commonmark-and-the-future-of-scholarly-markdown"/>
         <updated>1970-01-17T07:41:42.600Z</updated>
         <summary type="html"><![CDATA[One of the important outcomes of the Markdown for Science workshop that took place in June 2013 was a decision on a name - <em>Scholarly Markdown</em> - and a brief definition:Markdown that supports the requirements of scientific textsMarkdown as format...]]></summary>
@@ -572,7 +572,7 @@ We propose a standard, unambiguous syntax specification for Markdown, along with
     </entry>
     <entry>
         <title type="html"><![CDATA[Using Microsoft Word with git]]></title>
-        <id>dcb09e05-e221-4a23-9567-3e72ce02716c</id>
+        <id>6wp2f0b-rh198hs-assyeb7-04wbc</id>
         <link href="https://blog.front-matter.io/mfenner/using-microsoft-word-with-git"/>
         <updated>1970-01-17T07:22:59.520Z</updated>
         <summary type="html"><![CDATA[One of the major challenges of writing a journal article is to keep track of versions - both the different versions you create as the document progresses, and to merge in the changes made by your collaborators. For most academics Microsoft Word is the default writing tool,...]]></summary>
@@ -600,7 +600,7 @@ We propose a standard, unambiguous syntax specification for Markdown, along with
     </entry>
     <entry>
         <title type="html"><![CDATA[Introducing Rakali]]></title>
-        <id>6d23947a-61d8-40c4-b020-51ba50dac3d1</id>
+        <id>3d4ea7m-rer832b-082hq98-dngyh</id>
         <link href="https://blog.front-matter.io/mfenner/introducing-rakali"/>
         <updated>1970-01-17T07:12:54.960Z</updated>
         <summary type="html"><![CDATA[In July and August I attended the Open Knowledge Festival and Wikimania. At both events I had many interesting discussions around open source tools for open access scholarly publishing, and I was part of a panel on that topic at Wikimania last Sunday....]]></summary>
@@ -631,7 +631,7 @@ Fatal: Conversion of file empty.md failed.</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Visualizing Scholarly Content]]></title>
-        <id>cb59dc57-e557-438a-b87d-1d0a26b06fa1</id>
+        <id>6bb7e5f-saq8e5b-gz8x18k-b0vx1</id>
         <link href="https://blog.front-matter.io/mfenner/visualizing-scholarly-content"/>
         <updated>1970-01-17T06:59:57.540Z</updated>
         <summary type="html"><![CDATA[One topic I will cover this Sunday in a presentation on Open Scholarship Tools at <em>Wikimania 2014</em> together with Ian Mulvany is visualization.Data visualization is all about <em>telling stories with data</em>, something that is of course not only important for scholarly content,...]]></summary>
@@ -673,7 +673,7 @@ In brief, the grammar tells us that a statistical graphic is a mapping from data
     </entry>
     <entry>
         <title type="html"><![CDATA[What is a DOI?]]></title>
-        <id>2caa27fe-c069-41a0-bed2-931ab552c163</id>
+        <id>1cn8kzx-g3986gb-xmmk3at-n5gb3</id>
         <link href="https://blog.front-matter.io/mfenner/what-is-doi"/>
         <updated>1970-01-17T06:55:38.640Z</updated>
         <summary type="html"><![CDATA[This Sunday Ian Mulvany and I will do a presentation on Open Scholarship Tools at <em>Wikimania 2014</em> in London. From the abstract:This presentation will give a broad overview of tools and standards that are helping with Open Scholarship today.One...]]></summary>
@@ -731,7 +731,7 @@ This presentation will give a broad overview of tools and standards that are hel
     </entry>
     <entry>
         <title type="html"><![CDATA[Fragment Identifiers and DOIs]]></title>
-        <id>33c7abb9-7959-4fcf-9368-56882a8d5076</id>
+        <id>1krynvj-yas9z7s-6t2ph0n-8tm3p</id>
         <link href="https://blog.front-matter.io/mfenner/fragment-identifiers-and-dois"/>
         <updated>1970-01-17T06:49:53.160Z</updated>
         <summary type="html"><![CDATA[Before all our content turned digital, we already used <strong><strong>page numbers</strong></strong> to describe a specific section of a book or longer document, with older manuscripts using the folio before that....]]></summary>
@@ -758,7 +758,7 @@ This presentation will give a broad overview of tools and standards that are hel
     </entry>
     <entry>
         <title type="html"><![CDATA[One Ring to Rule them All]]></title>
-        <id>57359c3c-929d-492b-957f-03e3ca0ef30b</id>
+        <id>2q6pe3s-4mx94ns-azr3wf5-0xwrb</id>
         <link href="https://blog.front-matter.io/mfenner/one-ring-to-rule-them-all"/>
         <updated>1970-01-17T06:45:34.140Z</updated>
         <summary type="html"><![CDATA[One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.Yesterday 60 years ago the first volume of the <em>Lord of the Rings</em> trilogy by <em>J.R.R. Tolkien</em> was published....]]></summary>
@@ -780,7 +780,7 @@ One Ring to rule them all, One Ring to find them, One Ring to bring them all and
     </entry>
     <entry>
         <title type="html"><![CDATA[Don't Reinvent the Wheel]]></title>
-        <id>f93ac598-d96f-40ec-85ec-e917098eccfe</id>
+        <id>7s7b2sh-pbf83p8-bv792w4-rxk7y</id>
         <link href="https://blog.front-matter.io/mfenner/dont-reinvent-the-wheel"/>
         <updated>1970-01-17T06:36:55.980Z</updated>
         <summary type="html"><![CDATA[In a post last week I talked about roads and stagecoaches, and how work on scholarly infrastructure can often be more important than building customer-facing apps. One important aspect of that infrastructure work is to not duplicate efforts.Image by...]]></summary>
@@ -825,7 +825,7 @@ One Ring to rule them all, One Ring to find them, One Ring to bring them all and
     </entry>
     <entry>
         <title type="html"><![CDATA[Build Roads not Stagecoaches]]></title>
-        <id>068cf033-cea0-469d-9292-0316cfc0f661</id>
+        <id>6hkr37k-n08tes5-4g32v7w-1xk1</id>
         <link href="https://blog.front-matter.io/mfenner/build-roads-not-stagecoaches"/>
         <updated>1970-01-17T06:28:17.760Z</updated>
         <summary type="html"><![CDATA[I attended the Open Knowledge Festival this week and I had a blast. For three days (I also attended the fringe event csv,conf on Tuesday) I listed to wonderful presentations and was involved in great discussions - both within sessions,...]]></summary>
@@ -866,7 +866,7 @@ Ecosystems, not apps – Eric Hysen
     </entry>
     <entry>
         <title type="html"><![CDATA[Literate Blogging]]></title>
-        <id>17bdf428-a25e-45d8-b2a0-a9f26ec1596b</id>
+        <id>qqqt2h8-jy8qcb5-859y9qc-2pbb</id>
         <link href="https://blog.front-matter.io/mfenner/literate-blogging"/>
         <updated>1970-01-17T04:11:29.940Z</updated>
         <summary type="html"><![CDATA[Literate programming is a methodology that combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained, and arguably more fun to write than programs that are written only in a high-level language....]]></summary>
@@ -943,7 +943,7 @@ par(opar)</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Continuous Publishing]]></title>
-        <id>8550cc6b-45e9-4621-aad6-fadf592f7681</id>
+        <id>45a366p-hf98rgt-nnqtvxc-jyxm1</id>
         <link href="https://blog.front-matter.io/mfenner/continuous-publishing"/>
         <updated>1970-01-17T03:21:06.240Z</updated>
         <summary type="html"><![CDATA[Earlier this week Björn Brembs wrote in a blog post (What Is The Difference Between Text, Data And Code?):To sum it up: our intellectual output today manifests itself in code, data and text.The post is about the importance of publication of data and...]]></summary>
@@ -977,7 +977,7 @@ It’s madness really. I’m here to say I shouldn’t be in business.
     </entry>
     <entry>
         <title type="html"><![CDATA[Are static Websites the Future or the Past?]]></title>
-        <id>aedec2a6-2cea-4319-b72a-0ff1c0d03f5e</id>
+        <id>5evv1ac-b7a8ccv-eagfy70-d0fty</id>
         <link href="https://blog.front-matter.io/mfenner/are-static-websites-the-future-or-the-past"/>
         <updated>1970-01-17T03:13:54.420Z</updated>
         <summary type="html"><![CDATA[Last week I had a little discussion on Twitter about a great blog post by Zach Holman: Only 90s Web Developers Remember This. The post is not only fun to read, but also reminded me that it is now almost 20 years (1995)...]]></summary>
@@ -1016,7 +1016,7 @@ It’s madness really. I’m here to say I shouldn’t be in business.
     </entry>
     <entry>
         <title type="html"><![CDATA[Six Misunderstandings about Scholarly Markdown]]></title>
-        <id>8271bf5c-523e-4c4c-907f-a58f9fd09ae8</id>
+        <id>42e6znr-mhy9h69-0zx5hyf-x16q8</id>
         <link href="https://blog.front-matter.io/mfenner/six-misunderstandings-about-scholarly-markdown"/>
         <updated>1970-01-17T03:11:01.800Z</updated>
         <summary type="html"><![CDATA[In this post I want to talk about some of the misunderstandings I frequently encounter when discussing markdown as a format for authoring scholarly documents.Scholars will always use Microsoft WordMicrosoft Word is of course what almost all authors use...]]></summary>
@@ -1058,7 +1058,7 @@ The LaTeX Team, 2014
     </entry>
     <entry>
         <title type="html"><![CDATA[From Markdown to JATS XML in one Step]]></title>
-        <id>bc1e02ba-67b3-444a-9dd4-f0a45ace76a6</id>
+        <id>5w3r1bm-sxk8h59-vn7gmhd-cwxn6</id>
         <link href="https://blog.front-matter.io/mfenner/from-markdown-to-jats-xml-in-one-step"/>
         <updated>1970-01-17T01:14:23.640Z</updated>
         <summary type="html"><![CDATA[The Journal Article Tag Suite (JATS) is a NISO standard that defines a set of XML elements and attributes for tagging journal articles. JATS is not only used for fulltext content at PubMed Central (and JATS has evolved from the NLM Archiving and...]]></summary>
@@ -1082,7 +1082,7 @@ The LaTeX Team, 2014
     </entry>
     <entry>
         <title type="html"><![CDATA[Example article with embedded code and data]]></title>
-        <id>0d59a9aa-6ec9-47c5-9a8b-77c0f1719443</id>
+        <id>db6mtmv-p98z2sn-2vqr3rq-3523</id>
         <link href="https://blog.front-matter.io/mfenner/example-article-with-embedded-code-and-data"/>
         <updated>1970-01-17T01:12:57.840Z</updated>
         <summary type="html"><![CDATA[In October I published an essay on Article-Level Metrics (ALM) in PLOS Biology (Fenner, 2013). The essay is a good introduction into Article-Level Metrics, and I am proud that it is part of the Tenth Anniversary PLOS Biology Collection. Like all PLOS content,...]]></summary>
@@ -1104,7 +1104,7 @@ The LaTeX Team, 2014
     </entry>
     <entry>
         <title type="html"><![CDATA[What Can Article-Level Metrics Do for You?]]></title>
-        <id>9cae933c-062d-4572-8d47-8a6c31f539a7</id>
+        <id>4wnt9kr-1hd8ns8-thwadgr-zaed7</id>
         <link href="https://blog.front-matter.io/mfenner/what-can-article-level-metrics-do-for-you"/>
         <updated>1970-01-17T01:12:57.480Z</updated>
         <summary type="html"><![CDATA[<em>Article-level metrics (ALMs) provide a wide range of metrics about the uptake of an individual journal article by the scientific community after publication. They include citations, usage statistics, discussions in online comments and social media,...]]></summary>
@@ -1354,7 +1354,7 @@ par(opar)</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Opening Science - the Book]]></title>
-        <id>98d1309e-cc0d-4f2d-8d50-66be35f7d9ad</id>
+        <id>4rt4r9x-k0d9wpr-tm36qrt-zfpdd</id>
         <link href="https://blog.front-matter.io/mfenner/opening-science-the-book"/>
         <updated>1970-01-17T01:04:19.560Z</updated>
         <summary type="html"><![CDATA[Opening Science: The Evolving Guide on How the Internet is Changing Research, Collaboration and Scholarly Publishing is a SpringerOpen book (using a Creative Commons Attribution-NonCommercial license) that will be published in a few weeks....]]></summary>
@@ -1372,7 +1372,7 @@ par(opar)</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Grammar of Scholarly Communication]]></title>
-        <id>31f71610-289f-4a49-891e-b49ed9112d4d</id>
+        <id>1hywb10-a4z994r-j7nmkvc-h2bad</id>
         <link href="https://blog.front-matter.io/mfenner/the-grammar-of-scholarly-communication"/>
         <updated>1970-01-17T00:38:24.600Z</updated>
         <summary type="html"><![CDATA[Authoring of scholarly articles is a recurring theme in this blog since it started in 2008. Authoring is still in desperate need for improvement, and nobody has convincingly figured out how to solve this problem. Authoring involves several steps,...]]></summary>
@@ -1426,7 +1426,7 @@ par(opar)</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[What is holding us back?]]></title>
-        <id>d603c9b3-2089-4425-a680-e3c04fcbf5ce</id>
+        <id>6p0f4v6-8498gjt-d073r17-wqxee</id>
         <link href="https://blog.front-matter.io/mfenner/what-is-holding-us-back"/>
         <updated>1970-01-17T00:29:46.440Z</updated>
         <summary type="html"><![CDATA[Last Friday and Saturday the 6th SpotOn London conference tool place at the British Library. I had a great time with many interesting sessions and good conversations both in and between sessions. But I might be biased, since I helped organize the event,...]]></summary>
@@ -1460,7 +1460,7 @@ par(opar)</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[What is the Value of Hack Days?]]></title>
-        <id>eb96ef52-422c-49cd-86eb-9c2d49967461</id>
+        <id>7bjvqn4-ghc976r-dtww5n4-scx31</id>
         <link href="https://blog.front-matter.io/mfenner/what-is-the-value-of-hack-days"/>
         <updated>1970-01-17T00:19:41.880Z</updated>
         <summary type="html"><![CDATA[This Friday and Saturday the SpotOn London Conference will take place at the British Library in London. I am very excited, as I have come to this conference since the first one in 2008, and have helped organize the event since 2009....]]></summary>
@@ -1523,7 +1523,7 @@ A <strong><strong>hackathon</strong></strong> (also known as a <strong><strong>h
     </entry>
     <entry>
         <title type="html"><![CDATA[Commenting on scientific papers]]></title>
-        <id>efacbd9d-fcd9-4ec5-a23d-075f0c1f88d6</id>
+        <id>7fnjysv-z6s9v2t-4f87bw6-1z26p</id>
         <link href="https://blog.front-matter.io/mfenner/commenting-on-scientific-papers"/>
         <updated>1970-01-17T00:05:18.060Z</updated>
         <summary type="html"><![CDATA[I think it is fair to say that commenting on scientific papers is broken. And with commenting I mean online comments that are publicly available, not informal discussions in journal clubs or at meetings....]]></summary>
@@ -1559,7 +1559,7 @@ We hope that PubMed Commons will leverage the social power of the internet to en
     </entry>
     <entry>
         <title type="html"><![CDATA[What Can Article-Level Metrics Do for You?]]></title>
-        <id>9fd59d1c-8d24-4879-93c3-cd37c9f60ecf</id>
+        <id>4ztpehs-39491ws-7gyd6z4-zc3pf</id>
         <link href="https://blog.front-matter.io/mfenner/what-can-article-level-metrics-do-for-you-2"/>
         <updated>1970-01-17T00:02:25.380Z</updated>
         <summary type="html"><![CDATA[Yesterday PLOS Biology published an essay by me: What Can Article Level Metrics Do for You? (Fenner, 2013). I had help from many others in writing the essay, in particular PLOS Biology editor Emma Ganley. I hope that the essay can help researchers get introduced to article-level metrics,...]]></summary>
@@ -1580,7 +1580,7 @@ We hope that PubMed Commons will leverage the social power of the internet to en
     </entry>
     <entry>
         <title type="html"><![CDATA[The Complete Article]]></title>
-        <id>b3200195-69bd-4488-ba19-6706a1ae9db9</id>
+        <id>5k400sa-tdx8j4b-m6b70tg-tx7ds</id>
         <link href="https://blog.front-matter.io/mfenner/the-complete-article"/>
         <updated>1970-01-16T23:58:06.360Z</updated>
         <summary type="html"><![CDATA[Open access to research data is becoming increasingly important, as manifested by memos or press releases from the Wellcome Trust, the European Commission, and the the Office of Science and Technology Policy (OSTP)...]]></summary>
@@ -1603,7 +1603,7 @@ We hope that PubMed Commons will leverage the social power of the internet to en
     </entry>
     <entry>
         <title type="html"><![CDATA[Challenges in automated DOI resolution]]></title>
-        <id>629bdd07-70e5-4e32-bc76-3bf31ec5c061</id>
+        <id>32kfege-w759rsb-rxhvycf-cbg31</id>
         <link href="https://blog.front-matter.io/mfenner/challenges-in-automated-doi-resolution"/>
         <updated>1970-01-16T23:48:01.740Z</updated>
         <summary type="html"><![CDATA[Yesterday we created a set of roughly 10,000 DOIs for journal articles published in 2011 or 2012. We used these DOIs as a reference set in a data hackathon around article-level metrics/altmetrics - material for another blog post.The random DOis were generated using the CrossRef RanDOIm service,...]]></summary>
@@ -1658,7 +1658,7 @@ The HEAD method is identical to GET except that the server MUST NOT return a mes
     </entry>
     <entry>
         <title type="html"><![CDATA[Altmetrics coming of age? Not for Wikipedia]]></title>
-        <id>2f4b11bb-2bb2-4998-8dfa-dad98d706ecd</id>
+        <id>1f9c8vp-axj96c8-vyptv66-q0vpd</id>
         <link href="https://blog.front-matter.io/mfenner/altmetrics-coming-of-age-not-for-wikipedia"/>
         <updated>1970-01-16T22:15:52.260Z</updated>
         <summary type="html"><![CDATA[Ten days ago Information Standards Quarterly (ISQ) published a special issue on altmetrics. I was the guest editor for the five altmetrics articles, and in the editorial that I titled <strong><strong>Altmetrics have come of age</strong></strong> I...]]></summary>
@@ -1681,7 +1681,7 @@ We no longer need to talk about whether it is possible to reliably collect altme
     </entry>
     <entry>
         <title type="html"><![CDATA[CSL is more than citation styles]]></title>
-        <id>7a66bcf9-958d-494a-b4c5-ae875db5231a</id>
+        <id>3tctyfk-5cd955b-9hdegxe-va8rt</id>
         <link href="https://blog.front-matter.io/mfenner/csl-is-more-than-citation-styles"/>
         <updated>1970-01-16T22:12:59.580Z</updated>
         <summary type="html"><![CDATA[According to the description on the Citation Style Language (CSL) website, CSL <em>is an open XML-based language to describe the formatting of citations and bibliographies</em>. We use reference managers such as <strong>Zotero</strong>,...]]></summary>
@@ -1730,7 +1730,7 @@ We no longer need to talk about whether it is possible to reliably collect altme
     </entry>
     <entry>
         <title type="html"><![CDATA[What a publication timeline can tell you]]></title>
-        <id>2fda06c5-a583-4d45-8376-3e580db9c488</id>
+        <id>1fv83cb-9c39n2r-6xhyb06-vkh48</id>
         <link href="https://blog.front-matter.io/mfenner/what-a-publication-timeline-can-tell-you"/>
         <updated>1970-01-16T22:10:06.900Z</updated>
         <summary type="html"><![CDATA[Now that I can automatically import my publications from my ORCID profile and display them in this blog, I also want to visualize them. I have started with d3.js code that displays the number of publications per year - using the list of my publications in Citeproc JSON format....]]></summary>
@@ -1745,7 +1745,7 @@ We no longer need to talk about whether it is possible to reliably collect altme
     </entry>
     <entry>
         <title type="html"><![CDATA[Automatically list all your publications in your blog]]></title>
-        <id>d6eaf4b6-f664-433a-964d-e1e9b6441bab</id>
+        <id>6pxbtbd-xk48cx9-ckf1x6v-486xb</id>
         <link href="https://blog.front-matter.io/mfenner/automatically-list-all-your-publications-in-your-blog"/>
         <updated>1970-01-16T22:07:14.220Z</updated>
         <summary type="html"><![CDATA[A common feature of blogs written by scientists is a listing of all their publications. Publication lists are a great way to provide background information about your research. Publication lists should provide links to the fulltext versions of these publications,...]]></summary>
@@ -1769,7 +1769,7 @@ We no longer need to talk about whether it is possible to reliably collect altme
     </entry>
     <entry>
         <title type="html"><![CDATA[Citeproc YAML for bibliographies]]></title>
-        <id>34df496a-1835-41c8-bb0a-f0d96365c130</id>
+        <id>1mvx4pm-61n874b-p2qgv5h-pbg9g</id>
         <link href="https://blog.front-matter.io/mfenner/citeproc-yaml-for-bibliographies"/>
         <updated>1970-01-16T22:00:02.340Z</updated>
         <summary type="html"><![CDATA[The standard local file formats for bibliographic data are probably bibtex and RIS. They have been around for a long time, and are supported by all reference managers and many other tools and services. Unfortunately these formats are far from perfect:neither...]]></summary>
@@ -1857,7 +1857,7 @@ CSL is an open XML-based language to describe the formatting of citations and bi
     </entry>
     <entry>
         <title type="html"><![CDATA[RSS Feeds for Scholarly Authors]]></title>
-        <id>502c138f-de35-4147-ae94-a226f16c51e3</id>
+        <id>2g5g9rz-qhn853t-x5524vr-prmf3</id>
         <link href="https://blog.front-matter.io/mfenner/rss-feeds-for-scholarly-authors"/>
         <updated>1970-01-16T21:54:17.280Z</updated>
         <summary type="html"><![CDATA[Open Researcher &amp; Contributor ID (ORCID) provides a persistent identifier for researchers and lets them claim their research outputs in the ORCID Registry. I have been involved with ORCID since early 2010 and I am happy to see that nine months after...]]></summary>
@@ -1902,7 +1902,7 @@ CSL is an open XML-based language to describe the formatting of citations and bi
     </entry>
     <entry>
         <title type="html"><![CDATA[The trouble with keynotes]]></title>
-        <id>87320192-6f0b-42e4-b0b6-03907d8466ff</id>
+        <id>47680s4-vrb8bjb-1dg3j1y-r8sqz</id>
         <link href="https://blog.front-matter.io/mfenner/the-trouble-with-keynotes"/>
         <updated>1970-01-16T21:49:58.200Z</updated>
         <summary type="html"><![CDATA[A keynote is a presentation typically given at a start of a conference that sets the central theme for the event. A keynote speaker usually has more time (45-60 min) than other presenters, and has the full attention of everyone attending the conference....]]></summary>
@@ -1932,7 +1932,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[Creating charts with Datawrapper]]></title>
-        <id>3db0ce74-7053-4f2a-a11c-1b779494c341</id>
+        <id>1xp3778-w2k9wna-270veya-99gt1</id>
         <link href="https://blog.front-matter.io/mfenner/creating-charts-with-datawrapper"/>
         <updated>1970-01-16T21:44:12.840Z</updated>
         <summary type="html"><![CDATA[Figures are an important part of any scientific document. While the kind of figure commonly used obviously varies between disciplines, charts are an important part of many publications. There are two problems in how charts are currently used:the data...]]></summary>
@@ -1963,7 +1963,7 @@ An open source tool helping anyone to create simple, correct and embeddable char
     </entry>
     <entry>
         <title type="html"><![CDATA[Altmetrics: first we need the for what? and only then the how? OK?]]></title>
-        <id>c7fe345b-938c-486b-b398-674345e7e52f</id>
+        <id>67zrt5q-4wc91nv-76378d2-yfs9f</id>
         <link href="https://blog.front-matter.io/mfenner/altmetrics-first-we-need-the-for-what-and-only-then-the-how-ok"/>
         <updated>1970-01-16T21:28:48.000Z</updated>
         <summary type="html"><![CDATA[Altmetrics track the impact of scholarly works in the social web. Article-Level Metrics focuses on articles, but also looks at traditional citations and usage statistics. The PLOS Article-Level Metrics project was started in 2008....]]></summary>
@@ -1993,7 +1993,7 @@ An open source tool helping anyone to create simple, correct and embeddable char
     </entry>
     <entry>
         <title type="html"><![CDATA[Auto generating links to data and resources]]></title>
-        <id>84de2484-f805-4df2-b842-f9803c8cd8ea</id>
+        <id>44vrj89-y059qsb-ggqsg0y-8sp7a</id>
         <link href="https://blog.front-matter.io/mfenner/auto-generating-links-to-data-and-resources"/>
         <updated>1970-01-16T21:19:44.280Z</updated>
         <summary type="html"><![CDATA[A few weeks ago Kafkas et al. (2013) published a paper looking at current patterns of how datasets o biological databases are cited in research articles, based on an analysis of the full text Open Access articles available from Europe PMC....]]></summary>
@@ -2038,7 +2038,7 @@ PDB:  1mbn</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Metadata in Scholarly Markdown]]></title>
-        <id>e902cfc5-f699-4a65-b974-2d549adb467f</id>
+        <id>790b7wb-xms99jv-jx1dajd-dphkz</id>
         <link href="https://blog.front-matter.io/mfenner/metadata-in-scholarly-markdown"/>
         <updated>1970-01-16T21:15:25.260Z</updated>
         <summary type="html"><![CDATA[Scholarly documents often need metadata that describe them: typically author(s), title and location (DOI or URL), but possibly many other things. For some metadata it makes sense to store them in the document text, e.g. as is typically done for citations....]]></summary>
@@ -2126,7 +2126,7 @@ authors:
     </entry>
     <entry>
         <title type="html"><![CDATA[Nine simple ways to make it easier to (re)use your data]]></title>
-        <id>94df384d-0c20-40ac-945c-5ede4042763a</id>
+        <id>4mvww4t-31082p9-8q2yvs0-44xht</id>
         <link href="https://blog.front-matter.io/mfenner/nine-simple-ways-to-make-it-easier-to-re-use-your-data"/>
         <updated>1970-01-16T21:09:39.840Z</updated>
         <summary type="html"><![CDATA[This paper in markdown format was written by Ethan White et al. The markdown file and the associated bibliogaphy and figure files are available from the Github repository of the paper.I used this version, an earlier version was published as PeerJ Preprint....]]></summary>
@@ -2410,7 +2410,7 @@ I used <a href="https://github.com/weecology/data-sharing-paper/commit/b5a73eb09
     </entry>
     <entry>
         <title type="html"><![CDATA[Citations in Markdown Part 3]]></title>
-        <id>dd7d89a7-84c2-4e59-bdda-517e976f11d8</id>
+        <id>6xfp4tf-1629scv-vpjhftb-py4er</id>
         <link href="https://blog.front-matter.io/mfenner/citations-in-markdown-part-3"/>
         <updated>1970-01-16T21:08:13.680Z</updated>
         <summary type="html"><![CDATA[After the post last week and the crazy discussion that followed I would understand that you feel you have heard enough about citations in markdown. But I had the feeling last week that something was still missing, and I have done some more thinking....]]></summary>
@@ -2436,7 +2436,7 @@ I used <a href="https://github.com/weecology/data-sharing-paper/commit/b5a73eb09
     </entry>
     <entry>
         <title type="html"><![CDATA[What Flavor is Scholarly Markdown?]]></title>
-        <id>97197639-565a-4090-82da-63f3c8a8507e</id>
+        <id>4q35v3j-njt8288-5pk3yf4-agm3y</id>
         <link href="https://blog.front-matter.io/mfenner/what-flavor-is-scholarly-markdown"/>
         <updated>1970-01-16T21:03:54.660Z</updated>
         <summary type="html"><![CDATA[One important outcome of the recent Markdown for Science workshop was an overall agreement that all the different implementations (or flavors) of markdown that currently exist are a big problem for the adoption of Scholarly Markdown and that we need:A...]]></summary>
@@ -2471,7 +2471,7 @@ A reference implementation with documentation and tests
     </entry>
     <entry>
         <title type="html"><![CDATA[Citations in Scholarly Markdown]]></title>
-        <id>54b4a024-a0d7-4726-8130-5dd7c0e7a63a</id>
+        <id>2mpjg29-86q8wk8-2c2xtz0-ef9ht</id>
         <link href="https://blog.front-matter.io/mfenner/citations-in-scholarly-markdown"/>
         <updated>1970-01-16T21:01:01.980Z</updated>
         <summary type="html"><![CDATA[In the comments on Monday’s blog post about the Markdown for Science workshop, Carl Boettiger had some good arguments against the proposal for how to do citations that we came up with during the workshop. As this is a complex topic,...]]></summary>
@@ -2505,7 +2505,7 @@ This is [an example](http://example.com/ &quot;Title&quot;) inline link.
     </entry>
     <entry>
         <title type="html"><![CDATA[What is Scholarly Markdown?]]></title>
-        <id>c5c6f033-8b9a-4f40-a6e7-3d5ad0f5bc30</id>
+        <id>65rvr37-2wt9x0a-dssxbb8-fbf1g</id>
         <link href="https://blog.front-matter.io/mfenner/what-is-scholarly-markdown"/>
         <updated>1970-01-16T20:58:09.360Z</updated>
         <summary type="html"><![CDATA[One of the important discussions taking place at the Markdown for Science workshop last weekend was about the definition of Scholarly Markdown. We came up with this:Markdown that supports the requirements of scientific textsMarkdown as format that glues...]]></summary>
@@ -2571,7 +2571,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Goodbye PLOS Blogs, Welcome Github Pages]]></title>
-        <id>f5d9c6e3-8b57-429a-b4d1-fbdc1197fdc4</id>
+        <id>7nv73e7-2tq8adb-9mfvvg8-sfze4</id>
         <link href="https://blog.front-matter.io/mfenner/goodbye-plos-blogs-welcome-github-pages"/>
         <updated>1970-01-16T20:55:16.680Z</updated>
         <summary type="html"><![CDATA[This is the last Gobbledygook post on PLOS Blogs, and at the same time the first post at the new Github blog location. I have been blogging at PLOS Blogs since the PLOS Blogs Network was launched in September 2010, so this step wasn’t easy....]]></summary>
@@ -2587,7 +2587,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[re3data.org: registry of research data repositories launched]]></title>
-        <id>28d4e446-ec85-498c-80b0-598e467c03a4</id>
+        <id>18tkj4d-v459668-1c2shs3-7r0x4</id>
         <link href="https://blog.front-matter.io/mfenner/re3data-org-registry-of-research-data-repositories-launched"/>
         <updated>1970-01-16T20:34:04.800Z</updated>
         <summary type="html"><![CDATA[Earlier this week re3data.org – the Registry of Research Data Repositories – officially launched. The registry is nicely described in a preprint also published this week.<em>re3data.org offers researchers, funding organizations,...]]></summary>
@@ -2612,7 +2612,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Metrics and attribution: my thoughts for the panel at the ORCID-Dryad symposium on research attribution]]></title>
-        <id>508d21c3-4237-4e98-9727-b1a6c09d6d5f</id>
+        <id>2ghmgw6-ghq9tc9-e9xhmv0-9tvaz</id>
         <link href="https://blog.front-matter.io/mfenner/metrics-and-attribution-my-thoughts-for-the-panel-at-the-orcid-dryad-symposium-on-research-attribution"/>
         <updated>1970-01-16T20:32:38.400Z</updated>
         <summary type="html"><![CDATA[Oxford. Source: Wikimedia CommonsThis Thursday I take part in a panel discussion at the Joint ORCID – Dryad Symposium on Research Attribution. Together with Trish Groves (BMJ) and Christine Borgman (UCLA) I will discuss several aspects of attribution....]]></summary>
@@ -2664,7 +2664,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[New DataCite / ORCID Integration Tool]]></title>
-        <id>38250d43-50d0-4f1d-8c0b-026f554995a0</id>
+        <id>1r4m6m6-m6g9wer-r2r2dxa-mk5d0</id>
         <link href="https://blog.front-matter.io/mfenner/new-datacite-orcid-integration-tool"/>
         <updated>1970-01-16T20:13:55.200Z</updated>
         <summary type="html"><![CDATA[A new service allows researchers to add research datasets – and other content with DataCite DOIs, including all figshare content – to their ORCID profile by integrating with the DataCite Metadata Store. The tool is an adaption (or fork)...]]></summary>
@@ -2686,7 +2686,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Announcing Markdown for Science Workshop on June 8th]]></title>
-        <id>189d5fd2-1c4e-4d0f-8fae-179c2631a602</id>
+        <id>rknfx47-2e9m7rz-bgqkgk3-39g2</id>
         <link href="https://blog.front-matter.io/mfenner/announcing-markdown-for-science-workshop-on-june-8th"/>
         <updated>1970-01-16T20:00:33.600Z</updated>
         <summary type="html"><![CDATA[On Saturday June 8th – exactly a month from today – the PLOS San Francisco offices will host a workshop/hackathon about using markdown for science. A lot of people are experimenting with markdown for authoring scientific articles – see blog posts here,...]]></summary>
@@ -2702,7 +2702,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Baby steps toward better metrics]]></title>
-        <id>0b290262-b4e8-4e97-9319-3dc6a3113f0b</id>
+        <id>b54165d-789tbs6-69xrthh-2frb</id>
         <link href="https://blog.front-matter.io/mfenner/baby-steps-toward-better-metrics"/>
         <updated>1970-01-16T19:27:50.400Z</updated>
         <summary type="html"><![CDATA[Article-Level Metrics provide new ways to look at the impact of scholarly research. Two important concepts are a) to track metrics for individual scholarly articles instead of using numbers aggregated by journal, and b)...]]></summary>
@@ -2720,7 +2720,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[You should be able to install my software in less than one hour – or why DevOps is important]]></title>
-        <id>85d086e1-3da5-4090-a467-88271646de72</id>
+        <id>45t23e2-fd5828a-8sw84wb-4dqkj</id>
         <link href="https://blog.front-matter.io/mfenner/you-should-be-able-to-install-my-software-in-less-than-one-hour-or-why-devops-is-important"/>
         <updated>1970-01-16T19:24:57.600Z</updated>
         <summary type="html"><![CDATA[Cameron Neylon yesterday wrote a great blog post about appropriate business models for shared scholarly communications infrastructure. This is an area I have also been thinking about a lot recently, and in this post I want to add a technical perspective (and an announcement)...]]></summary>
@@ -2751,7 +2751,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Mendeley and Elsevier]]></title>
-        <id>c40c0865-88e1-417c-8929-b372fd46c8a8</id>
+        <id>641g46b-27185y8-jadkeby-mdj58</id>
         <link href="https://blog.front-matter.io/mfenner/mendeley-and-elsevier"/>
         <updated>1970-01-16T19:20:38.400Z</updated>
         <summary type="html"><![CDATA[Earlier this week the rumors that started in January became official: Elsevier is buying Mendeley (see also here). A lot has been written about this announcement, in particular about the fear that Mendeley as a product and organization will turn into...]]></summary>
@@ -2767,7 +2767,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Comment: the case for open preprints in biology]]></title>
-        <id>f4784bc2-1df2-4825-8d75-c6acfdd21fbb</id>
+        <id>7mf15w4-7fj90jr-txe6nky-x47xv</id>
         <link href="https://blog.front-matter.io/mfenner/comment-the-case-for-open-preprints-in-biology"/>
         <updated>1970-01-16T19:03:21.600Z</updated>
         <summary type="html"><![CDATA[Last week Philippe Desjardins-Prouly et al. published the article The case for open preprints in biology – naturally as a preprint on figshare. The article sees preprint servers as a great opportunity for open science, and discusses the status of preprints in the biological sciences....]]></summary>
@@ -2803,7 +2803,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Using d3.js to visualize Article-Level Metrics over time]]></title>
-        <id>bf2eaf10-e7f2-439f-bb44-1daea383caa8</id>
+        <id>5z5tqh1-szj8efv-ph0xnth-r7jn8</id>
         <link href="https://blog.front-matter.io/mfenner/using-d3-js-to-visualize-article-level-metrics-over-time"/>
         <updated>1970-01-16T18:57:36.000Z</updated>
         <summary type="html"><![CDATA[PLOS Article-Level Metrics (ALM) are a great set of data (available via API and as monthly data dump) for some nice data visualizations. I have recently become a big fan of the d3.js javascript library,...]]></summary>
@@ -2830,7 +2830,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[New version of Article-Level Metrics app released]]></title>
-        <id>a7442b7e-a2b4-46c4-bded-b8cb3be8d856</id>
+        <id>578gnqx-8nm8v2b-vvdrscx-yhp2p</id>
         <link href="https://blog.front-matter.io/mfenner/new-version-of-article-level-metrics-app-released"/>
         <updated>1970-01-16T18:50:24.000Z</updated>
         <summary type="html"><![CDATA[On Tuesday we released the latest version of the PLOS Article-Level Metrics application. As always, the source code is available at Github. The changes in this version focus on improving API performance, making it easier to install the application,...]]></summary>
@@ -2843,7 +2843,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Price of Innovation – my Thoughts for Beyond the PDF]]></title>
-        <id>f6eb230d-9862-4622-9227-d69871a9b2b8</id>
+        <id>7pxchgv-6328rh9-49ypk1r-tkcnr</id>
         <link href="https://blog.front-matter.io/mfenner/the-price-of-innovation-my-thoughts-for-beyond-the-pdf"/>
         <updated>1970-01-16T18:48:57.600Z</updated>
         <summary type="html"><![CDATA[The Beyond the PDF Conference is currently taking place in Amsterdam. Unfortunately I am unable to attend in person this time (I took part in the first Beyond the PDF in January 2011), but I was watching the livestream of the Business Case panel...]]></summary>
@@ -2882,7 +2882,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Some Thoughts on Beyond the Paper]]></title>
-        <id>8d562ed8-7d13-457b-a8ef-ad560e553684</id>
+        <id>4darqdg-z8k8nxt-hvxdar7-5adm4</id>
         <link href="https://blog.front-matter.io/mfenner/some-thoughts-on-beyond-the-paper"/>
         <updated>1970-01-16T18:48:57.600Z</updated>
         <summary type="html"><![CDATA[Today the journal <em>Nature</em> has released a special on the Future of Publishing. It includes a lot of interesting reading, but I want to focus on the comment Beyond the Paper by Jason Priem. In the comment Jason describes his vision of the future of scholarly communication,...]]></summary>
@@ -2901,7 +2901,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Bye-bye Google Reader]]></title>
-        <id>360b1702-d93d-4c32-bcea-0b8e3681bd33</id>
+        <id>1p1cbg5-p9x9gsb-stgbhrv-83f9k</id>
         <link href="https://blog.front-matter.io/mfenner/bye-bye-google-reader"/>
         <updated>1970-01-16T18:40:19.200Z</updated>
         <summary type="html"><![CDATA[Yesterday Google announced that they will shut down Google Reader July 1st. In a way this announcement didn’t surprise me, as my own use of RSS readers has gone down in favor of news readers such as Flipboard and using Twitter as a discovery tool....]]></summary>
@@ -2916,7 +2916,7 @@ text(colSums+6,y,labels=sprintf(&quot;%1.0f%%&quot;, colSums))</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Additional Markdown we need in Scholarly Texts]]></title>
-        <id>8ec4bfc6-eb75-4484-ae36-dcd8fbe76592</id>
+        <id>4erjzwd-tvn8j2a-wdpwv3x-yescj</id>
         <link href="https://blog.front-matter.io/mfenner/additional-markdown-we-need-in-scholarly-texts"/>
         <updated>1970-01-16T16:37:32.040Z</updated>
         <summary type="html"><![CDATA[Following up from my post last week, below is a suggested list of features that should be supported in documents written in scholarly markdown. Please provide feedback via the comments, or by editing the Wiki version I have set up here....]]></summary>
@@ -2990,7 +2990,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[A Call for Scholarly Markdown]]></title>
-        <id>fd7b416a-1cbd-4ca0-8932-03ab2e144464</id>
+        <id>7xfd0pm-75x9jg8-jcg3ncq-18h34</id>
         <link href="https://blog.front-matter.io/mfenner/a-call-for-scholarly-markdown"/>
         <updated>1970-01-16T16:30:20.220Z</updated>
         <summary type="html"><![CDATA[Markdown is a lightweight markup language, originally created by John Gruber for writing content for the web. Other popular lightweight markup languages are Textile and Mediawiki. Whereas Mediawiki markup is of course popular thanks to the ubiquitous Wikipedia,...]]></summary>
@@ -3025,7 +3025,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[ORCID has launched. What’s next?]]></title>
-        <id>29af87a7-69de-4901-97bf-5a1002adea31</id>
+        <id>19ny3te-tey940s-fftt201-avthh</id>
         <link href="https://blog.front-matter.io/mfenner/orcid-has-launched-whats-next"/>
         <updated>1970-01-16T15:14:24.000Z</updated>
         <summary type="html"><![CDATA[Last week has been busy. I went to Berlin for the launch of the Open Researcher &amp; Contributor ID (ORCID) service. ORCID allows researchers to obtain a persistent identifier that can be used to claim publications and other scholarly works....]]></summary>
@@ -3057,7 +3057,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Announcing the ScienceCard Relaunch]]></title>
-        <id>0ca4a671-19ae-44a8-9390-8421e76b4caf</id>
+        <id>cmjk726-de8jm97-44447kp-pk5f</id>
         <link href="https://blog.front-matter.io/mfenner/announcing-the-sciencecard-relaunch"/>
         <updated>1970-01-16T14:26:52.800Z</updated>
         <summary type="html"><![CDATA[Almost exactly a year ago (in the hackathon of the Science Online London 2011 conference) I started the ScienceCard project. ScienceCard is a fork of the Open Source PLOS Article-Level Metrics (ALM) code, personalizing the Article-Level Metrics.A lot has happened in the last 12 months,...]]></summary>
@@ -3076,7 +3076,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Bye bye Nature Network, welcome SciLogs.com]]></title>
-        <id>8da63a54-3f0a-4ceb-9efa-e281125c90d7</id>
+        <id>4dmrx58-fra9kns-xyq2g49-5s46q</id>
         <link href="https://blog.front-matter.io/mfenner/bye-bye-nature-network-welcome-scilogs-com"/>
         <updated>1970-01-16T13:07:40.800Z</updated>
         <summary type="html"><![CDATA[The science blogging network Nature Network is moving to a new home. Today SciLogs.com launched as new home for Nature Network bloggers. I have been blogging at Nature Network for three years, starting with my first blog post (Open access may become mandatory for NIH-funded research)...]]></summary>
@@ -3093,7 +3093,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[What Users do with PLOS ONE Papers]]></title>
-        <id>9188bc59-49b3-483e-be9e-99baaba95f80</id>
+        <id>4hh2y5j-jdk90zb-x7msqan-tjqw0</id>
         <link href="https://blog.front-matter.io/mfenner/what-users-do-with-plos-one-papers"/>
         <updated>1970-01-16T13:04:48.000Z</updated>
         <summary type="html"><![CDATA[Inspired by four recent blog posts and their comments (Comments at journal websites: just turn them off, Open Access and The Dramatic Growth of PLoS ONE, No Comment?, If you email it, they will comment), I created a graphic to show what users do with PLoS ONE papers....]]></summary>
@@ -3110,7 +3110,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Neelie Kroes talks Open Science]]></title>
-        <id>553527dc-105e-4764-9091-f1b793f2ca04</id>
+        <id>2n6mkxr-42y8xj9-14fhpy9-z5jg4</id>
         <link href="https://blog.front-matter.io/mfenner/neelie-kroes-talks-open-science"/>
         <updated>1970-01-16T13:00:28.800Z</updated>
         <summary type="html"><![CDATA[Earlier this week the European Commission announced new measures towards open science. As part of the announcement interviews of three scientists with European Commission Vice President Neelie Kroes were posted on YouTube. Here is a summary:...]]></summary>
@@ -3123,7 +3123,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[More fun with Visualizations]]></title>
-        <id>38f108c5-bd3f-425c-995d-21b9baa35261</id>
+        <id>1ry44cb-f9z89e9-jq91q6x-a6mk1</id>
         <link href="https://blog.front-matter.io/mfenner/more-fun-with-visualizations"/>
         <updated>1970-01-16T12:59:02.400Z</updated>
         <summary type="html"><![CDATA[This has been another week working on visualizations. I have summarized some of the results in a blog post over at the PLoS API website. One of my current favorites is the dot chart. PLoS Computational Biology publishes a collection of Ten Simple Rules....]]></summary>
@@ -3140,7 +3140,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Europe PubMed Central coming in November]]></title>
-        <id>d4756127-88a1-4f09-9c20-780f5a38ff73</id>
+        <id>6mengjf-2519w4s-r83r1xd-3hzvk</id>
         <link href="https://blog.front-matter.io/mfenner/europe-pubmed-central-coming-in-november"/>
         <updated>1970-01-16T12:53:16.800Z</updated>
         <summary type="html"><![CDATA[The European Research Council on Friday announced that they will participate in the UK PubMed Central (UKPMC) open access repository service. They become the third European funder to join UKPMC, and the existing UKPMC funders have agreed to rebrand...]]></summary>
@@ -3157,7 +3157,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Visualizing tweets linking to a paper]]></title>
-        <id>6bf8af26-d49b-4449-b400-92ff2a077086</id>
+        <id>3bz2qjd-n4v8h4v-804jzwn-0ew46</id>
         <link href="https://blog.front-matter.io/mfenner/visualizing-tweets-linking-to-a-paper"/>
         <updated>1970-01-16T12:50:24.000Z</updated>
         <summary type="html"><![CDATA[DNA Barcoding the Native Flowering Plants and Conifers of Wales has been one of the most popular new <em>PLoS ONE</em> papers in June. In the paper Natasha de Vere <em>et al.</em> describe a DNA barcode resource that covers the 1143 native Welsh flowering...]]></summary>
@@ -3182,7 +3182,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Random notes from the altmetrics12 conference]]></title>
-        <id>f5db2039-c880-4d74-8984-739598f31579</id>
+        <id>7nvcg3k-j409nt8-k13kjpc-f65bs</id>
         <link href="https://blog.front-matter.io/mfenner/random-notes-from-the-altmetrics12-conference"/>
         <updated>1970-01-16T12:17:16.800Z</updated>
         <summary type="html"><![CDATA[Last week I attended the altmetrics12 workshop in Chicago. You can read all 11 abstracts here, and the conference had good Twitter coverage (using the hashtag #altmetrics12), at least until Twitter had a total blackout around 12 PM our time.All but two...]]></summary>
@@ -3217,7 +3217,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Speaker Deck for Sharing Presentations]]></title>
-        <id>91015ca7-5601-4c86-aaa4-3e31e8571228</id>
+        <id>4h05eae-ng19j3a-n91y67m-5e4h8</id>
         <link href="https://blog.front-matter.io/mfenner/speaker-deck-for-sharing-presentations"/>
         <updated>1970-01-16T11:44:09.600Z</updated>
         <summary type="html"><![CDATA[It has become common practice to make presentation slides available for those unable to attend in person, or for more in-depth review later. The most popular service to do this is of course Slideshare. Slideshare is a fine service,...]]></summary>
@@ -3242,7 +3242,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[PLoS Article-Level Metrics: Interview with Martin Fenner]]></title>
-        <id>808211bd-0183-46a4-a619-b08c439a042b</id>
+        <id>40g88vt-0c38tja-c6dghh1-sm11b</id>
         <link href="https://blog.front-matter.io/mfenner/plos-article-level-metrics-interview-with-martin-fenner"/>
         <updated>1970-01-16T10:52:19.200Z</updated>
         <summary type="html"><![CDATA[This blog occasionally does interviews with people providing interesting tools for scholars. These interviews have always been among my favorite blog posts. This now is obviously an interview with myself,...]]></summary>
@@ -3274,7 +3274,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Marketing for Scientists]]></title>
-        <id>a460316d-af6b-4183-b3ca-c5889e220d0c</id>
+        <id>54c0rpv-bvb861v-7jp5h2f-2438c</id>
         <link href="https://blog.front-matter.io/mfenner/marketing-for-scientists"/>
         <updated>1970-01-16T10:13:26.400Z</updated>
         <summary type="html"><![CDATA[The April issue of <em>Nature Materials</em> contains three articles that discuss marketing strategies for scientists. The Editorial (“The scientific marketplace”) introduces the topic and explains why scientists should consider marketing their work....]]></summary>
@@ -3291,7 +3291,7 @@ copyright: http://creativecommons.org/licenses/by/3.0/deed.en
     </entry>
     <entry>
         <title type="html"><![CDATA[Why I still like FriendFeed, why Twitter is important and other thoughts about Altmetrics]]></title>
-        <id>01536fe0-9c7a-4379-88c0-083675356400</id>
+        <id>1adqy17-3t8dwrh-g086stk-as00</id>
         <link href="https://blog.front-matter.io/mfenner/why-i-still-like-friendfeed-why-twitter-is-important-and-other-thoughts-about-altmetrics"/>
         <updated>1970-01-16T09:41:45.600Z</updated>
         <summary type="html"><![CDATA[Altmetrics – tools to assess the impact of scholarly works based on alternative online measures such as bookmarks, links, blog posts, etc. –have become a regular topic in this blog. The altmetrics manifesto was published in October 2010,...]]></summary>
@@ -3330,7 +3330,7 @@ It is great that altmetrics increases the variety of available metrics, but too 
     </entry>
     <entry>
         <title type="html"><![CDATA[A Few Questions about Science Spam]]></title>
-        <id>5972ef88-a456-487f-880a-af63686d8f26</id>
+        <id>2sebqrh-92p91zr-g2nfcdm-6v3s6</id>
         <link href="https://blog.front-matter.io/mfenner/a-few-questions-about-science-spam"/>
         <updated>1970-01-16T09:27:21.600Z</updated>
         <summary type="html"><![CDATA[This was another week with a fair amount of spam in my email inbox. We all receive email spam on a regular basis and most of us have probably also received science spam: invitations to scientific conferences about topics we are not working on,...]]></summary>
@@ -3356,7 +3356,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Crowdsourcing the analysis of scholarly tweets]]></title>
-        <id>f170c4cc-6acd-4936-a349-3ed27f2ceb97</id>
+        <id>7he32cr-tpd94va-6j9yt9z-jstwq</id>
         <link href="https://blog.front-matter.io/mfenner/crowdsourcing-the-analysis-of-scholarly-tweets"/>
         <updated>1970-01-16T09:20:09.600Z</updated>
         <summary type="html"><![CDATA[In December Euan Adie and I started the CrowdoMeter project, an analysis of the semantic content of tweets linking to scholarly papers. Because classifying almost 500 tweets is a lot of work, we turned this into a crowdsourcing project. We got help from 36 people,...]]></summary>
@@ -3374,7 +3374,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Reference Manager Papers now available for Windows]]></title>
-        <id>8ccc97d6-1d3c-411b-9f91-3671a8e1cdfe</id>
+        <id>4csjbxc-79w84ds-z49pe6m-e3kfy</id>
         <link href="https://blog.front-matter.io/mfenner/reference-manager-papers-now-available-for-windows"/>
         <updated>1970-01-16T09:17:16.800Z</updated>
         <summary type="html"><![CDATA[Regular readers of this blog know that I’m a big fan of the reference manager Papers – three years ago we even had a poetry contest when the iPhone version was first released. The strength of Papers has always been the very nice user interface,...]]></summary>
@@ -3388,7 +3388,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Figshare: Interview with Mark Hahnel]]></title>
-        <id>8d943c76-1bbc-4653-85ba-036956ca7321</id>
+        <id>4djgy7c-6xw8s9r-beg3d5b-cmws1</id>
         <link href="https://blog.front-matter.io/mfenner/figshare-interview-with-mark-hahnel"/>
         <updated>1970-01-16T09:15:50.400Z</updated>
         <summary type="html"><![CDATA[fig<strong>share</strong> <em>allows researchers to publish all of their research outputs in seconds in an easily citable, sharable and discoverable manner</em>. The service was started by Mark Hahnel last year while still a PhD student....]]></summary>
@@ -3437,7 +3437,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[The Personalized Journal]]></title>
-        <id>a4b430d7-9c91-4e7b-94d6-e60c108b6fc7</id>
+        <id>54pgrdf-74h9sxs-9nq61g8-8pvy7</id>
         <link href="https://blog.front-matter.io/mfenner/the-personalized-journal"/>
         <updated>1970-01-16T09:07:12.000Z</updated>
         <summary type="html"><![CDATA[Earlier this week I wrote a guest post for the <strong>Impact of Social Sciences</strong> blog. In the post I talk about a recent paper correlating tweets and citations (also discussed on this blog). But the main argument I try to make is that tweets...]]></summary>
@@ -3453,7 +3453,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Zotero 3.0 Released]]></title>
-        <id>938846c0-6596-4409-9f4b-e39ae6d987ca</id>
+        <id>4kh13c0-scp8g4s-yjz3kbk-dk1ya</id>
         <link href="https://blog.front-matter.io/mfenner/zotero-3-0-released"/>
         <updated>1970-01-16T08:52:48.000Z</updated>
         <summary type="html"><![CDATA[Zotero 3.0 was officially released today. The big change in version 3.0 of the reference manager is a standalone version that runs outside the Firefox browser. The first beta was released in August 2011....]]></summary>
@@ -3469,7 +3469,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Say Hello to F1000 Research]]></title>
-        <id>96e77700-adc9-43f5-ad4e-bb0da7b45935</id>
+        <id>4pwxvg1-be98ftt-tknv1pk-v8p9n</id>
         <link href="https://blog.front-matter.io/mfenner/say-hello-to-f1000-research"/>
         <updated>1970-01-16T08:51:21.600Z</updated>
         <summary type="html"><![CDATA[Faculty 1000 today announced <strong>F1000 Research</strong>, <em>a new fully Open Access publishing program across biology and medicine, that will start publishing later this year</em>. The default open access license is CC-BY,...]]></summary>
@@ -3493,7 +3493,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Altmetrics – Where Do We Go From Here?]]></title>
-        <id>63154125-ab99-461e-93c9-f57c2366da55</id>
+        <id>332n0jb-aws8rf9-7jfnfgh-pdpjn</id>
         <link href="https://blog.front-matter.io/mfenner/altmetrics-where-do-we-go-from-here"/>
         <updated>1970-01-16T08:42:43.200Z</updated>
         <summary type="html"><![CDATA[The ScienceOnline2012 conference last week again was a wonderful experience. This was my third time in North Carolina, and I had many great conversations in the sessions, hallways – and bars. One of many highlights was a lunch meeting with fellow PLoS...]]></summary>
@@ -3523,7 +3523,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Sloan Foundation funds Columbia and Mendeley to develop a Citation-Style Language Editor]]></title>
-        <id>4cf81991-64e7-4928-b322-f4972e60fbe4</id>
+        <id>2cz0cs2-s7794mb-68qmjwq-61yz4</id>
         <link href="https://blog.front-matter.io/mfenner/sloan-foundation-funds-columbia-and-mendeley-to-develop-a-citation-style-language-editor"/>
         <updated>1970-01-16T08:35:31.200Z</updated>
         <summary type="html"><![CDATA[The Sloan Foundation has awarded a $125,000 grant to Columbia University and Mendeley to fund the development of a Citation-Style Language (CSL) editor. CSL is a XML-based language to format citations and bibliographies, and is used by the reference managers Zotero,...]]></summary>
@@ -3538,7 +3538,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Altmetrics to go – mobile version of ScienceCard available]]></title>
-        <id>14aed51e-4e9d-470c-acff-bacaab825378</id>
+        <id>mnvahwk-mx8w6as-zxtsanr-4mvr</id>
         <link href="https://blog.front-matter.io/mfenner/altmetrics-to-go-mobile-version-of-sciencecard-available"/>
         <updated>1970-01-16T08:19:40.800Z</updated>
         <summary type="html"><![CDATA[ScienceCard is a web service that collects all scientific articles published by an author and displays their aggregate article-level metrics. Yesterday I added a mobile version to ScienceCard, simply browse to ScienceCard with your mobile phone or go to http://mobile.sciencecard.org....]]></summary>
@@ -3563,7 +3563,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[CrowdoMeter goes Mobile]]></title>
-        <id>52c903d9-c4fc-43a7-addc-fe37ec168759</id>
+        <id>2js41xk-h7w8ekt-vq7y6zp-1d1ts</id>
         <link href="https://blog.front-matter.io/mfenner/crowdometer-goes-mobile"/>
         <updated>1970-01-16T08:13:55.200Z</updated>
         <summary type="html"><![CDATA[Two weeks ago Euan Adie from altmetric.com and myself launched the website CrowdoMeter, a crowdsourcing project that tries to classify tweets about scholarly articles using the Citation Typing Ontology (CiTO)....]]></summary>
@@ -3591,7 +3591,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Introducing Annotum to WordPress Bloggers]]></title>
-        <id>f65ed1e6-1792-47d1-8e46-f3e1fb992d37</id>
+        <id>7pbv8yc-5wj8z8r-whqkw7x-sjb9q</id>
         <link href="https://blog.front-matter.io/mfenner/introducing-annotum-to-wordpress-bloggers"/>
         <updated>1970-01-16T07:35:02.400Z</updated>
         <summary type="html"><![CDATA[Version 1.0 of Annotum, the free WordPress theme for writing scholarly articles, was announced in late November. Back in June I wrote about the first public version of Annotum, but until now using Annotum was experimental....]]></summary>
@@ -3640,7 +3640,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[ScienceCard named Finalist in Mendeley/PLoS API Binary Battle]]></title>
-        <id>0b6449f6-40e1-4e76-a4cd-1367ce559fb7</id>
+        <id>bch4zcg-719sva9-k8kcz75-b7xq</id>
         <link href="https://blog.front-matter.io/mfenner/sciencecard-named-finalist-in-mendeley-plos-api-binary-battle"/>
         <updated>1970-01-16T07:09:07.200Z</updated>
         <summary type="html"><![CDATA[I’m very proud to report that ScienceCard last week has been named finalist in the Mendeley/PLoS API Binary Battle. Not bad for a project that started only two months ago in a hackathon following the Science Online London conference and is done in my spare time....]]></summary>
@@ -3679,7 +3679,7 @@ I know this answer. Yes. This blog has seen more than 60,000 spam comments alrea
     </entry>
     <entry>
         <title type="html"><![CDATA[Why BibTeX, RIS and Endnote XML will soon be broken]]></title>
-        <id>6a058b4b-7119-4027-a210-6d04abe1f0e7</id>
+        <id>3a0p5mp-w8s80kt-443d0jn-y3w77</id>
         <link href="https://blog.front-matter.io/mfenner/why-bibtex-ris-and-endnote-xml-will-soon-be-broken"/>
         <updated>1970-01-16T06:51:50.400Z</updated>
         <summary type="html"><![CDATA[BibTeX is one of the most popular file formats for bibliographies, and is therefore commonly used to transfer bibliographies from one reference manager to another, or to other applications that handle bibliographic references....]]></summary>
@@ -3710,7 +3710,7 @@ AI  - 7461414</code></pre>
     </entry>
     <entry>
         <title type="html"><![CDATA[Wikis, Q&As and Cookbooks]]></title>
-        <id>45d4a65a-55ed-411f-ad9f-1e9a98aa1d94</id>
+        <id>25tjk5m-nfd84ft-v7rykac-am7cm</id>
         <link href="https://blog.front-matter.io/mfenner/wikis-q-as-and-cookbooks"/>
         <updated>1970-01-16T06:40:19.200Z</updated>
         <summary type="html"><![CDATA[Last week I attended the Transforming Scholarly Communication workshop in Cambridge, Massachusetts. The main goal of the workshop was to come up with practical recommendations for the topics #resources #review #literature #media #recognition and...]]></summary>
@@ -3732,7 +3732,7 @@ This workshop strives to be different in one important way—rather than focusin
     </entry>
     <entry>
         <title type="html"><![CDATA[Book Review: Reinventing Discovery by Michael Nielsen]]></title>
-        <id>56d54a68-1d4f-497a-9f63-92adc0f95a9c</id>
+        <id>2ptn56g-7af95x9-yrwjnq0-fjpmw</id>
         <link href="https://blog.front-matter.io/mfenner/book-review-reinventing-discovery-by-michael-nielsen"/>
         <updated>1970-01-16T06:27:21.600Z</updated>
         <summary type="html"><![CDATA[Reinventing Discovery, the book by Michael Nielsen we all have been waiting for, has finally been published on Friday. Today I flew to Boston for the Microsoft Research eScience Workshop: Transforming Scholarly Communication,...]]></summary>
@@ -3756,7 +3756,7 @@ This workshop strives to be different in one important way—rather than focusin
     </entry>
     <entry>
         <title type="html"><![CDATA[Data citation how-to guide released by Digital Curation Centre]]></title>
-        <id>592dcae1-dca4-4811-9c11-14b72ebe1f7c</id>
+        <id>2s5q5e3-q54908s-r48mpwq-bw7vw</id>
         <link href="https://blog.front-matter.io/mfenner/data-citation-how-to-guide-released-by-digital-curation-centre"/>
         <updated>1970-01-16T06:23:02.400Z</updated>
         <summary type="html"><![CDATA[Earlier this week <strong><strong>Alex Ball</strong></strong> and <strong><strong>Monica Duke</strong></strong> from the Digital Curation Centre released the how-to guide Cite Datasets and Link to Publications. The guide is highly recommended reading for everyone interested in data citation....]]></summary>
@@ -3777,7 +3777,7 @@ This workshop strives to be different in one important way—rather than focusin
     </entry>
     <entry>
         <title type="html"><![CDATA[Serving shortDOIs]]></title>
-        <id>0e1fb4aa-5afa-4734-9c36-649cc32c6271</id>
+        <id>e3ytamp-qt8wt9r-dk4kk1j-rrkh</id>
         <link href="https://blog.front-matter.io/mfenner/serving-shortdois"/>
         <updated>1970-01-16T06:20:09.600Z</updated>
         <summary type="html"><![CDATA[The shortDOI service was launched by the International DOI Foundation (IDF) in May 2010. The service creates short versions of the often long DOIs, e.g. <strong><strong>10/dvq</strong></strong> instead of <strong><strong>10.1093/hmg/ddp202</strong></strong>...]]></summary>
@@ -3796,7 +3796,7 @@ This workshop strives to be different in one important way—rather than focusin
     </entry>
     <entry>
         <title type="html"><![CDATA[Two reviews of new reference manager ReadCube]]></title>
-        <id>6c98d46a-37c2-4d32-90c6-5074a85cdf38</id>
+        <id>3ck3a6m-dy29ms9-1hjgejm-5sqsr</id>
         <link href="https://blog.front-matter.io/mfenner/two-reviews-of-new-reference-manager-readcube"/>
         <updated>1970-01-16T06:11:31.200Z</updated>
         <summary type="html"><![CDATA[Today, Digital Science announced an investment in startup Labtiva. And Labtiva released a “community preview” of their reference manager ReadCube. The community preview is a free download for Windows and Mac,...]]></summary>
@@ -3823,7 +3823,7 @@ This workshop strives to be different in one important way—rather than focusin
     </entry>
     <entry>
         <title type="html"><![CDATA[The trouble with DOIs]]></title>
-        <id>0b36df04-f907-4ec4-b59b-722dc7ee4d08</id>
+        <id>b6vfg9y-879v2bb-6vj5q3y-wk88</id>
         <link href="https://blog.front-matter.io/mfenner/the-trouble-with-dois"/>
         <updated>1970-01-16T06:08:38.400Z</updated>
         <summary type="html"><![CDATA[ScienceCard is a new service that I started last month with the simple idea to automatically track all journal articles of a given author, and to collect the article-level metrics (citations, bookmarks, etc.) for these papers....]]></summary>
@@ -3862,7 +3862,7 @@ This workshop strives to be different in one important way—rather than focusin
     </entry>
     <entry>
         <title type="html"><![CDATA[Announcing ScienceCard]]></title>
-        <id>a184870b-74d4-4eda-ab58-6592a2b6e366</id>
+        <id>51gj3gp-x6m9vda-pp35jah-bdrv6</id>
         <link href="https://blog.front-matter.io/mfenner/announcing-sciencecard"/>
         <updated>1970-01-16T05:52:48.000Z</updated>
         <summary type="html"><![CDATA[Metrics for scholarly works are used for evaluation and discovery. The Journal Impact Factor is widely used, but is not the best tool to look at the metrics of an individual article. In the past few years we finally started to have the technology to do article-level metrics (citations,...]]></summary>
@@ -3882,7 +3882,7 @@ This workshop strives to be different in one important way—rather than focusin
     </entry>
     <entry>
         <title type="html"><![CDATA[Hacking the PLoS Article-Level Metrics API Server]]></title>
-        <id>ac1f5737-f885-4b01-9be5-4d3554652cdc</id>
+        <id>5c3xbkf-y459c0s-qsad6na-6ab6w</id>
         <link href="https://blog.front-matter.io/mfenner/hacking-the-plos-article-level-metrics-api-server"/>
         <updated>1970-01-16T05:19:40.800Z</updated>
         <summary type="html"><![CDATA[The Science Online London 2011 Conference was a great event that took place last Friday and Saturday. I was able to celebrate the first <em><em>PLoS Blogs</em></em> anniversary together with community manager <strong><strong>Brian Mossop</strong></strong>,...]]></summary>
@@ -3908,7 +3908,7 @@ This workshop strives to be different in one important way—rather than focusin
     </entry>
     <entry>
         <title type="html"><![CDATA[On Microattribution]]></title>
-        <id>e563f4c9-cdfd-44f0-895b-d7e207715acd</id>
+        <id>75cftck-kfx8kr8-jpyqw83-q2ppd</id>
         <link href="https://blog.front-matter.io/mfenner/on-microattribution"/>
         <updated>1970-01-16T05:08:09.600Z</updated>
         <summary type="html"><![CDATA[At the Science Online London Conference later this week I will moderate a session on <strong><strong>microattribution</strong></strong>, together with Mike Peel, Bora Zivkovic and Scott Edmunds. I thought that microattribution would be an established concept,...]]></summary>
@@ -3944,7 +3944,7 @@ Microattribution ascribes a small scholarly contribution to a particular author.
     </entry>
     <entry>
         <title type="html"><![CDATA[Zotero 3.0 Beta released, works with Chrome and Safari]]></title>
-        <id>64d30a73-72f2-401a-8006-921a55afb47f</id>
+        <id>34tc576-wqj80d8-01mj39a-tzd3z</id>
         <link href="https://blog.front-matter.io/mfenner/zotero-3-0-beta-released-works-with-chrome-and-safari"/>
         <updated>1970-01-16T05:00:57.600Z</updated>
         <summary type="html"><![CDATA[The first beta of the reference manager Zotero 3.0 was released yesterday. The big news is that Zotero 3.0 no longer only runs within the Firefox browser, but is now also available as a standalone version similar to other reference managers.Zotero...]]></summary>
@@ -3969,7 +3969,7 @@ Microattribution ascribes a small scholarly contribution to a particular author.
     </entry>
     <entry>
         <title type="html"><![CDATA[Personal names around the world]]></title>
-        <id>c44398cb-f2ae-4b6f-ad5e-27ddae975353</id>
+        <id>648eccq-wne9dqt-tqh7vpq-9emtk</id>
         <link href="https://blog.front-matter.io/mfenner/personal-names-around-the-world"/>
         <updated>1970-01-16T04:48:00.000Z</updated>
         <summary type="html"><![CDATA[Yesterday I discovered (via a tweet by Owen Stephens) a very interesting document Personal names around the world that discusses the following question:How do people’s names differ around the world, and what are the implications of those differences on the design of forms,...]]></summary>
@@ -3994,7 +3994,7 @@ How do people’s names differ around the world, and what are the implications o
     </entry>
     <entry>
         <title type="html"><![CDATA[Book Review: Visualize This by Nathan Yau]]></title>
-        <id>dc5bcf5c-1f42-4827-889b-0005f4724c03</id>
+        <id>6wbf7nr-7t290kr-h6r00qt-74k03</id>
         <link href="https://blog.front-matter.io/mfenner/book-review-visualize-this-by-nathan-yau"/>
         <updated>1970-01-16T04:46:33.600Z</updated>
         <summary type="html"><![CDATA[In July Wiley published the book <strong><strong>Visualize This – The Flowing Data Guide to Design, Visualization and Statistics</strong></strong>. The book is written by <em><em>Nathan Yau</em></em>, and he is of course also behind the popular FlowingData blog about the same topic....]]></summary>
@@ -4021,7 +4021,7 @@ How do people’s names differ around the world, and what are the implications o
     </entry>
     <entry>
         <title type="html"><![CDATA[Mendeley 1.0 released Today]]></title>
-        <id>90a2ea8a-930e-4d0c-910b-738b76dfa54c</id>
+        <id>4gmbn8n-4re9m69-22vkhdv-dz9ac</id>
         <link href="https://blog.front-matter.io/mfenner/mendeley-1-0-released-today"/>
         <updated>1970-01-16T04:22:04.800Z</updated>
         <summary type="html"><![CDATA[Version 1.0 of the reference manager Mendeley was released today. In good Web 2.0 tradition it took three years from the first Beta release to the first “finished” product. I interviewed co-founder Victor Henning back in September 2008,...]]></summary>
@@ -4039,7 +4039,7 @@ How do people’s names differ around the world, and what are the implications o
     </entry>
     <entry>
         <title type="html"><![CDATA[Google Scholar Citations, Researcher Profiles, and why we need an Open Bibliography]]></title>
-        <id>0bb78d66-de9e-490f-959b-6d38a6932981</id>
+        <id>bpy6pdq-my947sb-6vd72k9-6ac1</id>
         <link href="https://blog.front-matter.io/mfenner/google-scholar-citations-researcher-profiles-and-why-we-need-an-open-bibliography"/>
         <updated>1970-01-16T04:22:04.800Z</updated>
         <summary type="html"><![CDATA[Last week Google Scholar announced a new feature on the Google Scholar Blog: <strong><strong>Google Scholar Citations</strong></strong>. The stated purpose of this tool is to allow researchers to calculate their citation metrics, e.g....]]></summary>
@@ -4067,7 +4067,7 @@ How do people’s names differ around the world, and what are the implications o
     </entry>
     <entry>
         <title type="html"><![CDATA[How to formally cite a blog post]]></title>
-        <id>11aaf102-e576-41af-a1bc-b4cb7fb9eaad</id>
+        <id>hnbrg5s-bp86qt3-f5msdzv-ktnd</id>
         <link href="https://blog.front-matter.io/mfenner/how-to-formally-cite-a-blog-post"/>
         <updated>1970-01-16T04:13:26.400Z</updated>
         <summary type="html"><![CDATA[Other blog posts often provide important background material for your own posts, and they are typically cited by inline links in the text. But sometimes we need more formal citations, e.g. when citing blog posts in a journal article or when providing a bibliography....]]></summary>
@@ -4112,7 +4112,7 @@ Gobbledygook<br />
     </entry>
     <entry>
         <title type="html"><![CDATA[Did you receive spam because you published a paper?]]></title>
-        <id>80d3ff98-ecc0-4c7b-a80e-c2dc0f57219e</id>
+        <id>40tfzsh-v609hxt-g3p2vg7-ne8cy</id>
         <link href="https://blog.front-matter.io/mfenner/did-you-receive-spam-because-you-published-a-paper"/>
         <updated>1970-01-16T04:01:55.200Z</updated>
         <summary type="html"><![CDATA[Brendan Thomas has published an interesting paper that looks at author email addresses in the PubMed database of biomedical literature. Email addresses of first authors have been added to PubMed since 1996, and they can be retrieved via the standard web interface or automated software....]]></summary>
@@ -4131,7 +4131,7 @@ Gobbledygook<br />
     </entry>
     <entry>
         <title type="html"><![CDATA[Conference microblogging: FriendFeed, Twitter and now Google+ ?]]></title>
-        <id>8a72f716-9636-4f24-8c4a-9eb75b3c21d9</id>
+        <id>4aebvhd-5hp9wj8-rjmypxd-kr8es</id>
         <link href="https://blog.front-matter.io/mfenner/conference-microblogging-friendfeed-twitter-and-now-google"/>
         <updated>1970-01-16T03:48:57.600Z</updated>
         <summary type="html"><![CDATA[Blogging is a great format to report from conferences. The regular blog format works best for posts written at the end of the day – unless you are typing really fast. Microblogging, i.e. a number of short or very short posts by a group of people,...]]></summary>
@@ -4150,7 +4150,7 @@ Gobbledygook<br />
     </entry>
     <entry>
         <title type="html"><![CDATA[Annotum: Publishing with WordPress soon coming to a journal near you]]></title>
-        <id>b3e002b4-8990-42bd-9d2d-f2418e3f093e</id>
+        <id>5kw01b9-2cg8ays-tbfj867-3y29y</id>
         <link href="https://blog.front-matter.io/mfenner/annotum-publishing-with-wordpress-soon-coming-to-a-journal-near-you"/>
         <updated>1970-01-16T03:43:12.000Z</updated>
         <summary type="html"><![CDATA[Last week the first Alpha version of <strong><strong>Annotum</strong></strong> was released. Annotum is “a scholarly authoring and publishing platform based on WordPress”. I first learned about Annotum at the Beyond the PDF workshop in January....]]></summary>
@@ -4168,7 +4168,7 @@ Gobbledygook<br />
     </entry>
     <entry>
         <title type="html"><![CDATA[Three funding organizations will launch new open access journal]]></title>
-        <id>40c1eb4d-8d77-4f74-ad59-88e4848d199b</id>
+        <id>20r7nmv-3bq9xta-tpc8wj2-8t6cv</id>
         <link href="https://blog.front-matter.io/mfenner/three-funding-organizations-will-launch-new-open-access-journal"/>
         <updated>1970-01-16T03:33:07.200Z</updated>
         <summary type="html"><![CDATA[Three leading funding organizations today made this important announcement:The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Trust announced today that they are to support a new, top-tier,...]]></summary>
@@ -4204,7 +4204,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Is Schema.org about a technical standard or about something else?]]></title>
-        <id>57b99d9a-2d8a-4992-9bcd-bf689d694e74</id>
+        <id>2qq6esm-bca9699-qkdzd2e-pjkkm</id>
         <link href="https://blog.front-matter.io/mfenner/is-schema-org-about-a-technical-standard-or-about-something-else"/>
         <updated>1970-01-16T03:27:21.600Z</updated>
         <summary type="html"><![CDATA[At the beginning of the month Google, Bing and Yahoo announced schema.org, a new initiative for structured markup on the web. Richard MacManus responded with a critical piece at ReadWriteWeb (Is Schema.org really a Google Land Grab?),...]]></summary>
@@ -4219,7 +4219,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Please join us for the Science Online London Conference in September]]></title>
-        <id>66fc0199-4e94-4fce-bd23-4443138fd94d</id>
+        <id>36zg0sj-kmm9z7b-t8t48c9-rzpad</id>
         <link href="https://blog.front-matter.io/mfenner/please-join-us-for-the-science-online-london-conference-in-september"/>
         <updated>1970-01-16T03:18:43.200Z</updated>
         <summary type="html"><![CDATA[The Science Online London 2011 Conference takes place September 2-3 at the British Library. I am again one of the organizers (together with <em><em>Lou Woodley</em></em> from Nature.com and <em><em>Kaitlin Thaney</em></em> from Digital Science),...]]></summary>
@@ -4237,7 +4237,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Schema.org for Scholarly HTML?]]></title>
-        <id>0a47517f-b8db-4e85-9562-8ddfef423ab8</id>
+        <id>a8x8qze-6v9t2sa-rmdvzqm-4enr</id>
         <link href="https://blog.front-matter.io/mfenner/schema-org-for-scholarly-html"/>
         <updated>1970-01-16T03:10:04.800Z</updated>
         <summary type="html"><![CDATA[Last Thursday the search engines Google, Bing and Yahoo announced schema.org, a new initiative for structured data markup on the web. Websites that use this schema to markup their data (more than 100 data types are supported)...]]></summary>
@@ -4256,7 +4256,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Web Tools for Searching the Biomedical Literature – part II]]></title>
-        <id>a543d049-603a-4b7e-96be-6333f6dad392</id>
+        <id>558f84j-r1t9dz9-dfk36fv-dnmwj</id>
         <link href="https://blog.front-matter.io/mfenner/web-tools-for-searching-the-biomedical-literature-part-ii"/>
         <updated>1970-01-16T02:28:19.200Z</updated>
         <summary type="html"><![CDATA[Ten days ago I mentioned a paper by Zhiyong Lu that gives an overview over the available web tools to search the biomedical literature. Most of these tools enhance the PubMed service, and Zhiyong Lu in fact works for the NCBI, the developer of PubMed....]]></summary>
@@ -4279,7 +4279,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Web Tools for Searching the Biomedical Literature – part I]]></title>
-        <id>45a705c9-98af-4581-a57f-5b3ea8b77e27</id>
+        <id>25mw2wk-65f8p0t-aztv7tm-bezh7</id>
         <link href="https://blog.front-matter.io/mfenner/web-tools-for-searching-the-biomedical-literature-part-i"/>
         <updated>1970-01-16T02:13:55.200Z</updated>
         <summary type="html"><![CDATA[Zhiyong Lu recently published an excellent overview of the web tools that are currently available to search the biomedical literature. The article has also a companion web page that allows user to filter for the features they are interested in,...]]></summary>
@@ -4302,7 +4302,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Explaining the ORCID Principles]]></title>
-        <id>77b1e836-2956-4988-942c-af67972c71c9</id>
+        <id>3qp7m3c-aap9649-8b5fcyb-jrwe9</id>
         <link href="https://blog.front-matter.io/mfenner/explaining-the-orcid-principles"/>
         <updated>1970-01-16T01:50:52.800Z</updated>
         <summary type="html"><![CDATA[On Monday I gave a presentation about ORCID, based on the ORCID Principles. The slides are hopefully a good introduction to ORCID and the current status of the initiative.A good in-person update of the ORCID initiative is the next ORCID Participant Meeting that takes place May 18 in Boston....]]></summary>
@@ -4321,7 +4321,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Please help the Nippon Science Support Network]]></title>
-        <id>41871f05-82e1-4eb4-94ee-e9c2a6c3f88d</id>
+        <id>21gwfgb-0q19tt9-9vq9rak-c7y4d</id>
         <link href="https://blog.front-matter.io/mfenner/please-help-the-nippon-science-support-network"/>
         <updated>1970-01-16T01:40:48.000Z</updated>
         <summary type="html"><![CDATA[The recent tragic events in Japan have made it difficult or impossible for many Japanese scientists to continue their work. The newly launched Nippon Science Support Network has therefore established a database of positions and stipends in other countries for Japanese students,...]]></summary>
@@ -4335,7 +4335,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Direct links to figures and tables using component DOIs]]></title>
-        <id>722f34aa-8e01-443d-829b-bba478353b3a</id>
+        <id>3j5wtan-3g18gyr-56xvmhw-3aest</id>
         <link href="https://blog.front-matter.io/mfenner/direct-links-to-figures-and-tables-using-component-dois"/>
         <updated>1970-01-16T01:24:57.600Z</updated>
         <summary type="html"><![CDATA[We are all familiar with digital object identifiers (DOIs) provided by CrossRef to identify (and link to) journal articles. Some of us are familiar with the DOIs issued by DataCite to link to datasets. But most of us don’t know that CrossRef is also...]]></summary>
@@ -4352,7 +4352,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Zotero 2.1 released with support for CSL 1.0]]></title>
-        <id>95d722c5-c2cf-47f5-a459-d3a64ab74f29</id>
+        <id>4ntwhcb-gpf8ztt-8pekms5-beks9</id>
         <link href="https://blog.front-matter.io/mfenner/zotero-2-1-released-with-support-for-csl-1-0"/>
         <updated>1970-01-16T01:19:12.000Z</updated>
         <summary type="html"><![CDATA[Version 2.1 of the reference manager Zotero was released last Friday. The biggest change for me is the support of Citation Style Language (CSL) 1.0. CSL is an open XML-based standard for citations and bibliographies. Older versions of Zotero used CSL 0.8.1,...]]></summary>
@@ -4366,7 +4366,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[A very brief history of Scholarly HTML]]></title>
-        <id>e4c4ffe1-71dc-451c-bcb4-72433455c5ad</id>
+        <id>74rkzy2-wew8meb-sd3j8ct-5bhdd</id>
         <link href="https://blog.front-matter.io/mfenner/a-very-brief-history-of-scholarly-html"/>
         <updated>1970-01-16T01:14:52.800Z</updated>
         <summary type="html"><![CDATA[The history of HTML begins 1989 at CERN, the European Laboratory for Particle Physics in Geneva. <strong><strong>Tim Berners-Lee</strong></strong>, <strong><strong>Robert Cailliau</strong></strong> and colleagues invented HTML (as well as the transport protocol HTTP and the web browser)...]]></summary>
@@ -4407,7 +4407,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Discussing science with microformats]]></title>
-        <id>1f5ce8de-ccd1-48a2-9ac0-ceaa9549cf53</id>
+        <id>zbkmdxk-6h92h9n-g6enaam-kktk</id>
         <link href="https://blog.front-matter.io/mfenner/discussing-science-with-microformats"/>
         <updated>1970-01-16T01:09:07.200Z</updated>
         <summary type="html"><![CDATA[The best and quickest discussions of a scientific paper now sometimes happen in science blogs rather than in the peer-reviewed literature. Whereas we have a number of scholarly databases that track citations between papers, we don’t have the same tools for science blogs....]]></summary>
@@ -4428,7 +4428,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[Papers 2: the reference manager made with love]]></title>
-        <id>187b8591-bc27-44a4-9128-25fafbc46608</id>
+        <id>rfe2s3f-178jj92-a15zbxw-8sg8</id>
         <link href="https://blog.front-matter.io/mfenner/papers-2-the-reference-manager-made-with-love"/>
         <updated>1970-01-16T00:59:02.400Z</updated>
         <summary type="html"><![CDATA[The reference management software Papers has been a regular topic on this blog. I wrote about Papers in one of my first blog posts in May 2008, interviewed main developer Alex Griekspoor in October 2008,...]]></summary>
@@ -4457,7 +4457,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[The Trouble with Bibliographies]]></title>
-        <id>bca81936-dbbf-4177-bcf1-c7184a9fc092</id>
+        <id>5wn0ckd-pxz85vv-swe7315-9zg4j</id>
         <link href="https://blog.front-matter.io/mfenner/the-trouble-with-bibliographies"/>
         <updated>1970-01-16T00:57:36.000Z</updated>
         <summary type="html"><![CDATA[The bibliography of a scholarly paper is interesting and important reading material. You can see whether the authors have cited the relevant literature, and you often find references to interesting papers you didn’t know about....]]></summary>
@@ -4478,7 +4478,7 @@ The Howard Hughes Medical Institute, the Max Planck Society and the Wellcome Tru
     </entry>
     <entry>
         <title type="html"><![CDATA[How to use Citation Typing Ontology (CiTO) in your blog posts]]></title>
-        <id>552198aa-590c-4bde-af70-9468efe061c4</id>
+        <id>2n46cam-p8c9ffa-yw4md3q-y0re4</id>
         <link href="https://blog.front-matter.io/mfenner/how-to-use-citation-typing-ontology-cito-in-your-blog-posts"/>
         <updated>1970-01-16T00:27:21.600Z</updated>
         <summary type="html"><![CDATA[One of the annoyances with bibliographies as we use them for scholarly papers is that is usually unclear why a particular paper was cited. It is often possible for readers to gather this information by looking at the citation in the context of the surrounding text,...]]></summary>
@@ -4500,7 +4500,7 @@ CiTO, the Citation Typing Ontology, is an ontology for describing the nature of 
     </entry>
     <entry>
         <title type="html"><![CDATA[OPDS: RSS for ePub or how to distribute ePub files]]></title>
-        <id>b2f9082a-831f-4e25-94f4-f5ed5ac8184d</id>
+        <id>5jz442n-0rz9rjs-9x7nxnd-cg62d</id>
         <link href="https://blog.front-matter.io/mfenner/opds-rss-for-epub-or-how-to-distribute-epub-files"/>
         <updated>1970-01-16T00:15:50.400Z</updated>
         <summary type="html"><![CDATA[ePub is a great format for scholarly content, and there are a number of tools to create ePub files. But creating content is only half the story, at least as important is an easy mechanism for distribution. This is particularly true if your ePub files are not books,...]]></summary>
@@ -4520,7 +4520,7 @@ CiTO, the Citation Typing Ontology, is an ontology for describing the nature of 
     </entry>
     <entry>
         <title type="html"><![CDATA[Discussing WordPress for Scientists]]></title>
-        <id>2063143a-3d89-4b80-a0a1-416f0273cc95</id>
+        <id>10cca3m-fc99e0a-18a1dw1-77k4n</id>
         <link href="https://blog.front-matter.io/mfenner/discussing-wordpress-for-scientists"/>
         <updated>1970-01-16T00:12:57.600Z</updated>
         <summary type="html"><![CDATA[Regular readers of this blog know about my current interest in WordPress as a tool to create scholarly content. In the last few weeks I have released several WordPress plugins for reference management and to create ePub files....]]></summary>
@@ -4543,7 +4543,7 @@ CiTO, the Citation Typing Ontology, is an ontology for describing the nature of 
     </entry>
     <entry>
         <title type="html"><![CDATA[ePub WordPress plugin released today]]></title>
-        <id>8da8d969-cec4-4318-a56a-06c300deca70</id>
+        <id>4dn3cpk-kp48cca-atg6rc0-dxjkg</id>
         <link href="https://blog.front-matter.io/mfenner/epub-wordpress-plugin-released-today"/>
         <updated>1970-01-16T00:08:38.400Z</updated>
         <summary type="html"><![CDATA[The Beyond the PDF workshop took place a little over a week ago. One take-home message for me was that ePub is a very interesting document format for scholarly publishing and has several advantages over PDF. The workshop had a wonderful spirit <em><em>to do something</em></em>,...]]></summary>
@@ -4562,7 +4562,7 @@ CiTO, the Citation Typing Ontology, is an ontology for describing the nature of 
     </entry>
     <entry>
         <title type="html"><![CDATA[Nature.com iPad app released today]]></title>
-        <id>07cde2fb-e874-403b-867b-e3bce1dc7c23</id>
+        <id>7sqhfqt-3m80xrc-yz3qkgx-rz13</id>
         <link href="https://blog.front-matter.io/mfenner/nature-com-ipad-app-released-today"/>
         <updated>1970-01-15T23:57:07.200Z</updated>
         <summary type="html"><![CDATA[Today nature.com released their iPad reader application. The app gives users access to<em><em> Nature News</em></em> and abstracts from <em><em>Nature</em></em>, <em><em>Nature Genetics</em></em>, <em><em>Nature Medicine</em></em>, <em><em>Nature Biotechnology</em></em>,...]]></summary>
@@ -4606,7 +4606,7 @@ CiTO, the Citation Typing Ontology, is an ontology for describing the nature of 
     </entry>
     <entry>
         <title type="html"><![CDATA[Beyond the PDF … is ePub]]></title>
-        <id>25900da6-90ac-44bc-8d98-919a50dc3b2e</id>
+        <id>15j06td-45c8jy8-v64hk98-drese</id>
         <link href="https://blog.front-matter.io/mfenner/beyond-the-pdf-is-epub"/>
         <updated>1970-01-15T23:55:40.800Z</updated>
         <summary type="html"><![CDATA[Having breakfast at the end of a conference is a good way to recap what was discussed and can help to generate new ideas. Two years ago at ScienceOnline09 a conversation with Cameron Neylon that followed up on the session Reputation, authority and incentives....]]></summary>
@@ -4643,7 +4643,7 @@ ePub should become the standard document format for authoring, distributing and 
     </entry>
     <entry>
         <title type="html"><![CDATA[DataCite: visit their new blog]]></title>
-        <id>841f21e6-e269-47ff-857d-d26e59aa62f8</id>
+        <id>443wgyd-rk98zzr-azejdsc-tmrqr</id>
         <link href="https://blog.front-matter.io/mfenner/datacite-visit-their-new-blog"/>
         <updated>1970-01-15T23:42:43.200Z</updated>
         <summary type="html"><![CDATA[DataCite is an international consortium for data citation. DataCite originally started as a project at the German National Library of Science and Technology (TIB).Since 2005 the TIB was providing digital object identifiers (DOIs) to research datasets....]]></summary>
@@ -4664,7 +4664,7 @@ ePub should become the standard document format for authoring, distributing and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Having fun with citations at ScienceOnline2011]]></title>
-        <id>9a49ee2c-e9d3-409d-be6d-0da667d546de</id>
+        <id>4t97q2s-tek82ev-wv8dmsk-xahpy</id>
         <link href="https://blog.front-matter.io/mfenner/having-fun-with-citations-at-scienceonline2011"/>
         <updated>1970-01-15T23:38:24.000Z</updated>
         <summary type="html"><![CDATA[ScienceOnline2011, the fifth annual international meeting on Science and the Web, is only two days away. I am very excited for many reasons, most importantly because it gives me the chance to meet many online friends in person – again or for the first...]]></summary>
@@ -4683,7 +4683,7 @@ ePub should become the standard document format for authoring, distributing and 
     </entry>
     <entry>
         <title type="html"><![CDATA[New journal “Nature ONE” launched today]]></title>
-        <id>386d5000-0b81-422a-b000-bdfdf568e08a</id>
+        <id>1rdn800-2w188nb-005xzqt-phr4a</id>
         <link href="https://blog.front-matter.io/mfenner/new-journal-nature-one-launched-today"/>
         <updated>1970-01-15T23:31:12.000Z</updated>
         <summary type="html"><![CDATA[It’s very unusual for me to post two blog posts in a single day, and even more so when both posts are based on press releases by the same organization. But this is important news for everybody interested in scholarly publishing.In a press release earlier today,...]]></summary>
@@ -4710,7 +4710,7 @@ ePub should become the standard document format for authoring, distributing and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Now in your DeepDyve store: Nature papers to rent]]></title>
-        <id>8bca494d-1898-4f95-86ec-a6371e8e3d7f</id>
+        <id>4bs94mt-64r9yar-dv566wf-8wfbz</id>
         <link href="https://blog.front-matter.io/mfenner/now-in-your-deepdyve-store-nature-papers-to-rent"/>
         <updated>1970-01-15T23:31:12.000Z</updated>
         <summary type="html"><![CDATA[Articles published in <em><em>Nature</em></em>, <em><em>Nature Biotechnology</em></em>, <em><em>Nature Cell Biology</em></em>, <em><em>Nature Medicine</em></em> or <em><em>Nature Chemical Biology</em></em> are now available for renting from DeepDyve....]]></summary>
@@ -4725,7 +4725,7 @@ ePub should become the standard document format for authoring, distributing and 
     </entry>
     <entry>
         <title type="html"><![CDATA[HTML5 or messages from beyond the PDF]]></title>
-        <id>c0065fbd-200b-4f08-8b4e-6b89b22ada75</id>
+        <id>600sfvt-80b9w48-pkkbh6s-2npkn</id>
         <link href="https://blog.front-matter.io/mfenner/html5-or-messages-from-beyond-the-pdf"/>
         <updated>1970-01-15T23:29:45.600Z</updated>
         <summary type="html"><![CDATA[In 1990 Tim Berners-Lee and others started HTML and the world wide web to facilitate scientific communications at CERN, the world’s largest particle physics laboratory.<em><em>xmos_basser by .M., on Flickr,...]]></summary>
@@ -4754,7 +4754,7 @@ ePub should become the standard document format for authoring, distributing and 
     </entry>
     <entry>
         <title type="html"><![CDATA[Author Identifier Overview]]></title>
-        <id>82ccedbd-c900-4aeb-8b3d-56509c3b63ec</id>
+        <id>42skpvv-j809bnr-pfapa2e-3przc</id>
         <link href="https://blog.front-matter.io/mfenner/author-identifier-overview"/>
         <updated>1970-01-15T23:25:26.400Z</updated>
         <summary type="html"><![CDATA[Today I posted the pre-print of a paper titled <strong><strong>Author Identifier Overview</strong></strong> that I submitted to the journal Libreas. This is the abstract:Unique identifiers for scholarly authors are still not commonly used,...]]></summary>
@@ -4771,7 +4771,7 @@ Unique identifiers for scholarly authors are still not commonly used, but provid
     </entry>
     <entry>
         <title type="html"><![CDATA[WordPress for Reference Management]]></title>
-        <id>3b8f3a04-4a71-44b6-9645-6cef6ecfcce9</id>
+        <id>1vhwx08-jkh8jv9-chbcxxq-czk79</id>
         <link href="https://blog.front-matter.io/mfenner/wordpress-for-reference-management"/>
         <updated>1970-01-15T23:18:14.400Z</updated>
         <summary type="html"><![CDATA[One of the more complicated aspects of scientific writing is reference management – an important limitation of online collaborative tools such as <em><em>Google Docs</em></em>. I have argued before that WordPress has the potential to become a great scientific writing tool....]]></summary>
@@ -4801,7 +4801,7 @@ Unique identifiers for scholarly authors are still not commonly used, but provid
     </entry>
     <entry>
         <title type="html"><![CDATA[Paperpile: an open source reference manager for Mac and Linux]]></title>
-        <id>826d0791-4187-4120-9216-560c17021337</id>
+        <id>42dm3s2-gc784g9-45jp1gb-g44sq</id>
         <link href="https://blog.front-matter.io/mfenner/paperpile-an-open-source-reference-manager-for-mac-and-linux"/>
         <updated>1970-01-15T23:11:02.400Z</updated>
         <summary type="html"><![CDATA[Last week the first public beta (version 0.5) of Paperpile was released (available for Mac and Linux). Paperpile is a desktop reference manager with typical features: search in PubMed, Google Scholar or ArXiv, import PDF files,...]]></summary>
@@ -4818,7 +4818,7 @@ Unique identifiers for scholarly authors are still not commonly used, but provid
     </entry>
     <entry>
         <title type="html"><![CDATA[New and emerging technologies for reference software]]></title>
-        <id>355bbe52-e077-4174-a979-96b015755d8b</id>
+        <id>1nbez55-r3q85ta-jycpp0a-qaqcb</id>
         <link href="https://blog.front-matter.io/mfenner/new-and-emerging-technologies-for-reference-software"/>
         <updated>1970-01-15T23:11:02.400Z</updated>
         <summary type="html"><![CDATA[Jason Rollins gave a presentation with that topic at the recent STM Innovations Seminar in London. The video of his presentation has now been made available by River Valley TV, and his slides are here.Jason talks about some recent trends in reference management software....]]></summary>
@@ -4833,7 +4833,7 @@ Unique identifiers for scholarly authors are still not commonly used, but provid
     </entry>
     <entry>
         <title type="html"><![CDATA[Digital Science launched: closing the gap between science and technology?]]></title>
-        <id>febbc513-bfc8-4944-a3f9-4836fc76d1d3</id>
+        <id>7yqf2h7-fy8952a-7ya86vy-7dmek</id>
         <link href="https://blog.front-matter.io/mfenner/digital-science-launched-closing-the-gap-between-science-and-technology"/>
         <updated>1970-01-15T23:03:50.400Z</updated>
         <summary type="html"><![CDATA[Two weeks ago <strong><strong>Eva Amsen</strong></strong> wrote in a thoughtful blog post:There’s a gap between science and technology, and it’s growing.Eva argues that – contrary to popular belief – there is actually a divide between science and technology....]]></summary>
@@ -4865,7 +4865,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Occam’s Typewriter: please welcome a new science blogging network]]></title>
-        <id>51d1b0e0-e1cd-4f8f-9b62-c9131efbba08</id>
+        <id>2ht6re1-red9y7s-prp92cf-fqeg8</id>
         <link href="https://blog.front-matter.io/mfenner/occams-typewriter-please-welcome-a-new-science-blogging-network"/>
         <updated>1970-01-15T22:56:38.400Z</updated>
         <summary type="html"><![CDATA[Last Friday the latest science blogging network officially launched: Occam’s Typewriter. The independent blogging network started out with eight bloggers and one guest blog, all of them well characterized by Bob O’Hara. Most of the bloggers have moved their blog from Nature Network,...]]></summary>
@@ -4882,7 +4882,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Citations are links, so where is the problem?]]></title>
-        <id>dd6b0f67-4f5e-46f8-a97b-6137bebc2287</id>
+        <id>6xdc7pe-kty8vwa-jyv16yz-br8m7</id>
         <link href="https://blog.front-matter.io/mfenner/citations-are-links-so-where-is-the-problem"/>
         <updated>1970-01-15T22:53:45.600Z</updated>
         <summary type="html"><![CDATA[Citations are a fundamental concept of scholarly works. Unfortunately they are also difficult to do. Traditional writing tools such as Microsoft Word can’t really handle them in a way that is appropriate for a scientific manuscript,...]]></summary>
@@ -4913,7 +4913,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Submission Fees for Open Access Journals?]]></title>
-        <id>622903c9-6ed3-44db-8d0f-2dd3164d9364</id>
+        <id>32541wj-vpk8kdr-t3sdtcb-4v4v4</id>
         <link href="https://blog.front-matter.io/mfenner/submission-fees-for-open-access-journals"/>
         <updated>1970-01-15T22:52:19.200Z</updated>
         <summary type="html"><![CDATA[In early December Knowledge Exchange, a partnership of JISC (United Kingdom), SURF (Netherlands), DEFF (Denmark) and DFG (Germany) released a report on submission fees that they had commissioned to Mark Ware Consulting....]]></summary>
@@ -4933,7 +4933,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Blogging Beyond the PDF]]></title>
-        <id>f57b5c5b-ff1d-4388-95da-1db220ba85a0</id>
+        <id>7nfde5q-zrx8e49-bpgxp8g-bn1d0</id>
         <link href="https://blog.front-matter.io/mfenner/blogging-beyond-the-pdf"/>
         <updated>1970-01-15T22:45:07.200Z</updated>
         <summary type="html"><![CDATA[Four weeks ago I wrote about the Beyond the PDF workshop that is planned for January in San Diego. The goal of the workshop is to identify a set of requirements, and a group of willing participants to develop open source code to accelerate scientific knowledge sharing....]]></summary>
@@ -4963,7 +4963,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Medical Information Matters]]></title>
-        <id>d4385a02-c1fb-42be-b59e-ad8d287dbe3d</id>
+        <id>6m71d05-gfv8azb-b7ndhmm-7vfhx</id>
         <link href="https://blog.front-matter.io/mfenner/medical-information-matters"/>
         <updated>1970-01-15T22:42:14.400Z</updated>
         <summary type="html"><![CDATA[In December I am hosting the blog carnival Medical Information Matters, a blog carnival about – <strong><strong>medical information</strong></strong>. The deadline for submissions is next Tuesday, and I have already received a number of interesting posts....]]></summary>
@@ -4976,7 +4976,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Repositories: Researcher Perspective]]></title>
-        <id>54472f42-d15c-4296-abf0-c1f2985545ff</id>
+        <id>2m8wqm5-maw8aba-qw61yac-5ahfz</id>
         <link href="https://blog.front-matter.io/mfenner/repositories-researcher-perspective"/>
         <updated>1970-01-15T22:37:55.200Z</updated>
         <summary type="html"><![CDATA[Earlier today I gave this presentation at the DINI/Helmholtz Repositories Workshop in Berlin. I’m looking forward to the second day tomorrow....]]></summary>
@@ -4989,7 +4989,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Researchers’ reasons for publishing their work]]></title>
-        <id>f91d783e-c826-4fb4-901d-52cd56d32f12</id>
+        <id>7s3nw3x-j169yt9-07ajsnb-d6brj</id>
         <link href="https://blog.front-matter.io/mfenner/researchers-reasons-for-publishing-their-work"/>
         <updated>1970-01-15T22:35:02.400Z</updated>
         <summary type="html"><![CDATA[When we want to change something, we have to look at the incentives for those involved.ReferencesSwan, A. (2006) The culture of Open Access: researchers’ views and responses. In: <em><em>Open Access: Key Strategic, Technical and Economic Aspects</em></em>,...]]></summary>
@@ -5007,7 +5007,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Making your study public before you start can be fun]]></title>
-        <id>d6d0837c-f258-4ff0-ae84-9a5b7a954010</id>
+        <id>6pt21qs-wjr9zra-x14tbdx-9ag0g</id>
         <link href="https://blog.front-matter.io/mfenner/making-your-study-public-before-you-start-can-be-fun"/>
         <updated>1970-01-15T22:33:36.000Z</updated>
         <summary type="html"><![CDATA[On Monday I was finally able to start the clinical trial <strong><strong>Everolimus for patients with relapsed/refractory germ cell cancer</strong></strong> (RADIT), and I’m now looking forward to recruit the first patient....]]></summary>
@@ -5022,7 +5022,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Evolving English at the British Library]]></title>
-        <id>e55744a5-df35-43dd-a3df-62d43a3046d8</id>
+        <id>75ax2ab-qsn8fet-7qv2tgx-30hpr</id>
         <link href="https://blog.front-matter.io/mfenner/evolving-english-at-the-british-library"/>
         <updated>1970-01-15T22:29:16.800Z</updated>
         <summary type="html"><![CDATA[On Saturday I went to see the exhibition Evolving English at the British Library in London. The exhibition explores the English language in all its diversity and was recommended to me by Matt Brown, expert on all things London (his review for the Londonist is here)....]]></summary>
@@ -5047,7 +5047,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[UK PubMed Central explained in Nucleic Acids Research Paper]]></title>
-        <id>a27e0862-d320-48cd-90e5-f232196419d8</id>
+        <id>52fr465-ms0936s-1sfj68c-p86er</id>
         <link href="https://blog.front-matter.io/mfenner/uk-pubmed-central-explained-in-nucleic-acids-research-paper"/>
         <updated>1970-01-15T22:14:52.800Z</updated>
         <summary type="html"><![CDATA[Last Tuesday <em><em>Nucleic Acids Research</em></em> published a nice paper describing the UK PubMed Central (UKPMC) database (McEntyre 2010). UKPMC was started in 2007, the enhanced version described in the paper was launched January 2010....]]></summary>
@@ -5066,7 +5066,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Scientific Attribution Presentation]]></title>
-        <id>fba274ea-519d-47f2-a23a-a83590b4ee2b</id>
+        <id>7vm9tem-mcx8zsa-4en86p8-b9vhb</id>
         <link href="https://blog.front-matter.io/mfenner/scientific-attribution-presentation"/>
         <updated>1970-01-15T22:12:00.000Z</updated>
         <summary type="html"><![CDATA[Earlier today I gave a short presentation about the Scientific Attribution Principles I posted here two weeks ago....]]></summary>
@@ -5079,7 +5079,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[More Gobbledygook at PLoS Blogs]]></title>
-        <id>bc6bbbc0-4283-43d7-84ad-599215a6b9c7</id>
+        <id>5wdexw0-gm38fbr-9basj8a-tdee7</id>
         <link href="https://blog.front-matter.io/mfenner/more-gobbledygook-at-plos-blogs"/>
         <updated>1970-01-15T21:59:02.400Z</updated>
         <summary type="html"><![CDATA[Thanks to a lot of hard work both at <strong><strong>Nature Network</strong></strong> and here at <strong><strong>PLoS Blogs</strong></strong>, all blog posts and comments from my former blog at Nature Network (August 2007 to August 2010)...]]></summary>
@@ -5092,7 +5092,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[An ORCID discussion group for researchers]]></title>
-        <id>4e1670f8-9c6e-45d5-ade2-76da40f2faeb</id>
+        <id>2e2srfh-73e8qat-vrkpv90-f5yqb</id>
         <link href="https://blog.front-matter.io/mfenner/an-orcid-discussion-group-for-researchers"/>
         <updated>1970-01-15T21:57:36.000Z</updated>
         <summary type="html"><![CDATA[The Open Researcher &amp; Contributor ID (ORCID) initiative is working on a unique researcher identifier for the creation of a clear and unambiguous scholarly record. The initiative is supported by more than 140 universities, research institutes,...]]></summary>
@@ -5108,7 +5108,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[NCBI adds searchable images database]]></title>
-        <id>ca3b1519-1d6a-45f1-9a9b-68d3cd7b89fc</id>
+        <id>6a7cahj-7ba8qrs-n6v8tf6-qq2fw</id>
         <link href="https://blog.front-matter.io/mfenner/ncbi-adds-searchable-images-database"/>
         <updated>1970-01-15T21:51:50.400Z</updated>
         <summary type="html"><![CDATA[On Wednesday the NCBI released an Images database, compiled from full text resources at the NCBI – initially PubMed Central articles. The images can be searched by several parameters, e.g. figure caption or author.Using this database,...]]></summary>
@@ -5125,7 +5125,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Some thoughts on principles for scientific attribution]]></title>
-        <id>94e4260d-2f34-4dc9-9aca-8c78f374fbf0</id>
+        <id>4mwgk0t-bsm9q4s-njmcf3s-q9yzg</id>
         <link href="https://blog.front-matter.io/mfenner/some-thoughts-on-principles-for-scientific-attribution"/>
         <updated>1970-01-15T21:50:24.000Z</updated>
         <summary type="html"><![CDATA[Today I posted a document that should help define a set of principles for scientific attribution. These principles will be presented and discussed at the National Science Foundation workshop <strong><strong>Changing the Conduct of Science in the Information Age</strong></strong> on November 12....]]></summary>
@@ -5138,7 +5138,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Self-motivated vs. mandated archiving]]></title>
-        <id>50b21f02-0900-4960-a3f2-dec177d08561</id>
+        <id>2gp8fg4-28095ga-7wpyr5v-x11b1</id>
         <link href="https://blog.front-matter.io/mfenner/self-motivated-vs-mandated-archiving"/>
         <updated>1970-01-15T21:47:31.200Z</updated>
         <summary type="html"><![CDATA[My post last week about citation rates of mandated vs. self-selected Open Access resulted in an interesting discussion thanks to some good arguments made by Stevan Harnad. One personal conclusion for me: mandates for self-archiving are not a good idea....]]></summary>
@@ -5169,7 +5169,7 @@ Digital Science will focus on providing world-class software tools and services 
     </entry>
     <entry>
         <title type="html"><![CDATA[Having an impact (factor) and other stories from Gregory Petsko]]></title>
-        <id>ddb9e2a4-038a-4bd6-be71-a2d44c676b9b</id>
+        <id>6xq7ha8-0wa9fbb-wwd2th6-6etwv</id>
         <link href="https://blog.front-matter.io/mfenner/having-an-impact-factor-and-other-stories-from-gregory-petsko"/>
         <updated>1970-01-15T21:44:38.400Z</updated>
         <summary type="html"><![CDATA[Biologist Gregory Petsko has written a monthly column for the journal <em><em>Genome Biology</em></em> since the journal launched in 2000. To mark the 10th anniversary of the column and the journal, <em><em>Genome Biology</em></em> created an eBook (iPad/iPhone: free,...]]></summary>
@@ -5196,7 +5196,7 @@ https://doi.org/<a href="https://web.archive.org/web/20101124191225/http://dx.do
     </entry>
     <entry>
         <title type="html"><![CDATA[Helping researchers create scholarly content]]></title>
-        <id>295ad04d-c96e-465e-ad69-addd6110be53</id>
+        <id>19bb84v-jbe8sfa-ttddvng-h1fjk</id>
         <link href="https://blog.front-matter.io/mfenner/helping-researchers-create-scholarly-content"/>
         <updated>1970-01-15T21:38:52.800Z</updated>
         <summary type="html"><![CDATA[Two weeks ago I gave a presentation at the STM Annual Conference 2010 in Frankfurt (STM is the International Association of Scientific, Technical and Medical Publishers). I told the audience that publishers could do a much better job helping researchers...]]></summary>
@@ -5210,7 +5210,7 @@ https://doi.org/<a href="https://web.archive.org/web/20101124191225/http://dx.do
     </entry>
     <entry>
         <title type="html"><![CDATA[New in PLoS ONE: Citation rates of self-selected vs. mandated Open Access]]></title>
-        <id>05d008b8-cfad-4ccc-ad1d-eb70ec097f97</id>
+        <id>5t04bhk-xd9k6at-7fbe3p0-jzwq</id>
         <link href="https://blog.front-matter.io/mfenner/new-in-plos-one-citation-rates-of-self-selected-vs-mandated-open-access"/>
         <updated>1970-01-15T21:36:00.000Z</updated>
         <summary type="html"><![CDATA[<em><em>PLoS ONE</em></em> today published a paper very relevant to Open Access Week (which started today):<strong><strong>Gargouri Y, Hajjem C, Larivière V, Gingras Y, Carr L, Brody T, Harnad S</strong></strong>. Self-Selected or Mandated,...]]></summary>
@@ -5235,7 +5235,7 @@ https://doi.org/<a href="https://web.archive.org/web/20101124191225/http://dx.do
     </entry>
     <entry>
         <title type="html"><![CDATA[Start Open Access Week with Kick-Off Video]]></title>
-        <id>f30b5c43-c582-4102-a1f0-9df6092bda30</id>
+        <id>7k1de47-hc2841a-3w4xyr4-jqphg</id>
         <link href="https://blog.front-matter.io/mfenner/start-open-access-week-with-kick-off-video"/>
         <updated>1970-01-15T21:36:00.000Z</updated>
         <summary type="html"><![CDATA[Open Access Week 2010 from SPARC on Vimeo.Find out more at the Open Access Week website. And watch this blog for another Open Access story later today....]]></summary>
@@ -5256,7 +5256,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[In which I suggest a preprint archive for clinical trials]]></title>
-        <id>66ca6f4a-6716-461d-a3da-28da03727497</id>
+        <id>36s9qmm-srp8ret-7ph8v81-q4x4q</id>
         <link href="https://blog.front-matter.io/mfenner/in-which-i-suggest-a-preprint-archive-for-clinical-trials"/>
         <updated>1970-01-15T21:33:07.200Z</updated>
         <summary type="html"><![CDATA[The ArXiv preprint archive for research articles in physics, mathematics, computer science and related disciplines was initiated by Paul Ginsparg in 1991. ArXiv enables the rapid dissemination of research articles prior to peer review,...]]></summary>
@@ -5280,7 +5280,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[Today I started a new blogging network]]></title>
-        <id>946af79e-8f20-40ac-9164-b7f7adc1c79b</id>
+        <id>4mdbvsx-3s082p9-2s5qyyp-w3hwv</id>
         <link href="https://blog.front-matter.io/mfenner/today-i-started-a-new-blogging-network"/>
         <updated>1970-01-15T21:31:40.800Z</updated>
         <summary type="html"><![CDATA[In the last few weeks I haven’t seen any announcement for a new science blogging network (the last one was probably Scientific American in September). So I thought today would be a good day to start a new one. Earlier today I wrote the first post on the first blog hosted by my institution....]]></summary>
@@ -5298,7 +5298,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[Nature.com iPhone app updated]]></title>
-        <id>6af39f23-9f66-4ae7-bb84-d85c13ea4cf9</id>
+        <id>3ayefj7-7v69bkv-q16rbg9-ymk7s</id>
         <link href="https://blog.front-matter.io/mfenner/nature-com-iphone-app-updated"/>
         <updated>1970-01-15T21:28:48.000Z</updated>
         <summary type="html"><![CDATA[Earlier this year I wrote about the Nature.com iPhone application that was released in February. Two weeks ago the app was updated with the following changes:Access to abstracts from additional journals: <em><em>Nature Genetics</em></em>,...]]></summary>
@@ -5317,7 +5317,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[Survey asks for feedback about ORCID unique researcher identifier]]></title>
-        <id>073caffd-a6ea-47da-9a5c-398f0896b156</id>
+        <id>77jqzv9-qa8zd9m-q1shw49-dcap</id>
         <link href="https://blog.front-matter.io/mfenner/survey-asks-for-feedback-about-orcid-unique-researcher-identifier"/>
         <updated>1970-01-15T21:27:21.600Z</updated>
         <summary type="html"><![CDATA[The ORCID initiative for unique researcher identifiers yesterday started a survey that everybody interested in ORCID should fill out.<em><em>Flickr image</em></em><em><em> from Wessex Arachaeology.</em></em>The survey asks questions about the main services that users expect from ORCID,...]]></summary>
@@ -5339,7 +5339,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[Registration for ScienceOnline2011 starts today]]></title>
-        <id>db24fe22-e3d4-435f-b5fd-f2a0f6d68e5b</id>
+        <id>6v4kz25-rym8dfv-bzfjm3v-dd3jv</id>
         <link href="https://blog.front-matter.io/mfenner/registration-for-scienceonline2011-starts-today"/>
         <updated>1970-01-15T21:24:28.800Z</updated>
         <summary type="html"><![CDATA[Registration for the ScienceOnline2011 conference starts today at 12 noon EST. This is the fifth annual conference on science and the web, and will be held January 13-15, 2011 in Research Triangle Park,...]]></summary>
@@ -5361,7 +5361,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[New on Arxiv: first report of SOAP open access publishing project]]></title>
-        <id>cf1ce988-76a7-451d-aae6-67e5ab9677bc</id>
+        <id>6f3kmrg-xn78met-nsk7wpn-scxxw</id>
         <link href="https://blog.front-matter.io/mfenner/new-on-arxiv-first-report-of-soap-open-access-publishing-project"/>
         <updated>1970-01-15T21:23:02.400Z</updated>
         <summary type="html"><![CDATA[Practically all papers in high-energy physics (&gt; 90% since the late 1990s) are first published on the ArXiv preprint server. Several related disciplines also have a long ArXiv tradition. But ArXiv is also an excellent source of interesting papers about scientific publishing,...]]></summary>
@@ -5376,7 +5376,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[Paper published: Reference Management meets Web 2.0]]></title>
-        <id>ffffdb58-4bfc-4232-83e2-ab5328819144</id>
+        <id>7zzzdng-jzw88s8-7rnbacm-834a4</id>
         <link href="https://blog.front-matter.io/mfenner/paper-published-reference-management-meets-web-2-0"/>
         <updated>1970-01-15T21:21:36.000Z</updated>
         <summary type="html"><![CDATA[<em><em>Cellular Therapy and Transplantation</em></em> today published my paper Reference Management meets Web 2.0. Regular readers of this blog probably know about most of the things I talk about in the paper,...]]></summary>
@@ -5391,7 +5391,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[Reference Management with the iPad]]></title>
-        <id>b3c5feeb-24b6-4523-8185-8d5185a1273e</id>
+        <id>5krqzep-95p8mhr-31cda62-t29sy</id>
         <link href="https://blog.front-matter.io/mfenner/reference-management-with-the-ipad"/>
         <updated>1970-01-15T21:18:43.200Z</updated>
         <summary type="html"><![CDATA[The iPad was released six months ago, and we already have several reference managers available for the platform. Reading the PDF of a scientific paper on an iPad is a positive experience, and to me very different from reading the PDF on a regular computer....]]></summary>
@@ -5418,7 +5418,7 @@ Play
     </entry>
     <entry>
         <title type="html"><![CDATA[Beyond the PDF – it is time for a workshop]]></title>
-        <id>69727061-108e-45a8-a1c7-c94ae12cf78d</id>
+        <id>39e9r62-44e8pma-3hy99bg-jsxwd</id>
         <link href="https://blog.front-matter.io/mfenner/beyond-the-pdf-it-is-time-for-a-workshop"/>
         <updated>1970-01-15T21:18:43.200Z</updated>
         <summary type="html"><![CDATA[PDF has become the standard way we consume scientific papers, but in fact is not a good format for this purpose at all. Or as Martin Robbins said at the recent Science Online London conference: <em><em>PDF is an insult to science</em></em>....]]></summary>
@@ -5454,7 +5454,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[ReaderMeter: researcher-level metrics based on readership]]></title>
-        <id>3a3cc416-df24-43df-8463-281cd729d5c4</id>
+        <id>1t7k21d-qs48ffr-8rs83kb-jkne4</id>
         <link href="https://blog.front-matter.io/mfenner/readermeter-researcher-level-metrics-based-on-readership"/>
         <updated>1970-01-15T21:14:24.000Z</updated>
         <summary type="html"><![CDATA[In a blog post last week, Dario Taraborelli officially announced ReaderMeter. ReaderMeter takes the usage data from reference managers (starting with Mendeley) to analyze the impact of publications by a particular author.ReaderMeter is a welcome addition to other metrics of researcher impact,...]]></summary>
@@ -5474,7 +5474,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Advice for scientists who want to become Wikipedia editors]]></title>
-        <id>ce185c3a-f448-4fc6-826b-15114ff6b1ff</id>
+        <id>6e31e3n-x289z38-4trn257-zdcfz</id>
         <link href="https://blog.front-matter.io/mfenner/advice-for-scientists-who-want-to-become-wikipedia-editors"/>
         <updated>1970-01-15T21:12:57.600Z</updated>
         <summary type="html"><![CDATA[This week <em><em>PLoS Computational Biology</em></em> published another helpful editorial in their 10 Simple Rules collection (https://doi.org/10.1371/journal.pcbi.1000941): <em>Ten Simple Rules for Editing Wikipedia. </em>I have very rarely edited Wikipedia articles myself,...]]></summary>
@@ -5489,7 +5489,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Why can’t I reuse these tables and figures?]]></title>
-        <id>2d4ae654-a0f2-4db3-8e74-1cb8257025e3</id>
+        <id>1d9bk59-87j9psr-wx0wq0j-q09f3</id>
         <link href="https://blog.front-matter.io/mfenner/why-cant-i-reuse-these-tables-and-figures"/>
         <updated>1970-01-15T21:10:04.800Z</updated>
         <summary type="html"><![CDATA[Tables and figures contain the data of a scientific paper in condensed (and often visually appealing) form. This is why they are among the first thing we look at, and why they are often reused when we discuss the paper in a presentation or blog...]]></summary>
@@ -5519,7 +5519,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Paper retractions do not induce citation mutations]]></title>
-        <id>a94dacae-4c14-4fa4-94d4-2a8149b88e0e</id>
+        <id>599ppaw-k0m9yj9-9n1ag54-vh3ge</id>
         <link href="https://blog.front-matter.io/mfenner/paper-retractions-do-not-induce-citation-mutations"/>
         <updated>1970-01-15T21:04:19.200Z</updated>
         <summary type="html"><![CDATA[Dear Christian Specht,Thank you very much for your detailed response in <em><em>The Scientist</em></em> to our previous letter regarding citation mutations. You clarified several issues that were raised in your original study,...]]></summary>
@@ -5540,7 +5540,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Citation Style Language: An Interview with Rintze Zelle and Ian Mulvany]]></title>
-        <id>01b3b686-c4ed-42a3-9943-8da2f2c812bc</id>
+        <id>1pev8dh-7d8ahsj-gwdmbsc-g4nw</id>
         <link href="https://blog.front-matter.io/mfenner/citation-style-language-an-interview-with-rintze-zelle-and-ian-mulvany"/>
         <updated>1970-01-15T21:01:26.400Z</updated>
         <summary type="html"><![CDATA[Citation styles are one of the greater mysteries for the novice manuscript writer. There are numerous ways that authors, title, journal, etc. can be arranged and formatted (see examples below), and in bibliographies citations can be ordered either...]]></summary>
@@ -5590,7 +5590,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Zotero soon is Everywhere]]></title>
-        <id>22172c41-4ee6-46f1-8076-621eb793c5f9</id>
+        <id>122wp42-kq68vrr-0xk23tv-s7hfs</id>
         <link href="https://blog.front-matter.io/mfenner/zotero-soon-is-everywhere"/>
         <updated>1970-01-15T20:58:33.600Z</updated>
         <summary type="html"><![CDATA[Whereas most reference managers are either standalone applications and/or web-based, Zotero works as a Firefox plugin. This approach has many advantages, but is not for everybody. So today Zotero announced Zotero Everywhere:A browser pluging for Microsoft Internet Explorer,...]]></summary>
@@ -5608,7 +5608,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Letter to The Scientist]]></title>
-        <id>68c13cf5-6b15-44cc-8a8c-86059106e065</id>
+        <id>38r4yfa-trn8k68-n3460p8-gdr35</id>
         <link href="https://blog.front-matter.io/mfenner/letter-to-the-scientist"/>
         <updated>1970-01-15T20:55:40.800Z</updated>
         <summary type="html"><![CDATA[Dear Scientist,last week you published an interesting article by <strong><strong>Christian Specht</strong></strong> about Mutations of citations. Dr. Specht found more than 600 wrong citations for the paper by Laemmli (Laemmli 1970),...]]></summary>
@@ -5633,7 +5633,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Update of Reference Manager Overview Chart]]></title>
-        <id>556ee8e8-20da-4930-9fae-9fab7452a255</id>
+        <id>2ndvmeg-86t94r9-zbmzndt-558jn</id>
         <link href="https://blog.front-matter.io/mfenner/update-of-reference-manager-overview-chart"/>
         <updated>1970-01-15T20:54:14.400Z</updated>
         <summary type="html"><![CDATA[In March 2009 I posted an overview chart of how popular reference managers have implemented some important features. I’ve since updated this chart several times, and the chart probably has outgrown the format of a blog post....]]></summary>
@@ -5651,7 +5651,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[And who are you?]]></title>
-        <id>5d929cab-6f43-4b5c-aaac-daf9716a9f80</id>
+        <id>2xjaeap-vt39dea-nb6tz5r-pn7w0</id>
         <link href="https://blog.front-matter.io/mfenner/and-who-are-you"/>
         <updated>1970-01-15T20:51:21.600Z</updated>
         <summary type="html"><![CDATA[Dear reader,two weeks ago I moved this blog from Nature Network to <strong><strong>PLoS Blogs</strong></strong>. I hope that most of my old readers have followed me here, and that I might even have a few new readers.<em><em>Flickr image by grewlike.</em></em>Ed...]]></summary>
@@ -5678,7 +5678,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Starting a reading list for Gobbledygook]]></title>
-        <id>22d21c1b-7401-4135-bf9b-acd588d10f88</id>
+        <id>12t8e1p-x0184tv-z6xctp4-d23w8</id>
         <link href="https://blog.front-matter.io/mfenner/starting-a-reading-list-for-goobledygook"/>
         <updated>1970-01-15T20:49:55.200Z</updated>
         <summary type="html"><![CDATA[All science bloggers do a lot of reading for background information, or write blog posts based on a (newly published) paper, blog post or news item. So I thought that it would be a good idea to collect those references in a single place.Flickr photo by margolove.Reading lists are perfect for this,...]]></summary>
@@ -5701,7 +5701,7 @@ have several important shortcomings. I suggest the following changes:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Peer Review at the Scholarly Kitchen]]></title>
-        <id>d9e2c91c-8d44-4734-be5c-1cf318c7e3e1</id>
+        <id>6swb4hs-3a48wtb-wq0wycc-cfrz1</id>
         <link href="https://blog.front-matter.io/mfenner/peer-review-at-the-scholarly-kitchen"/>
         <updated>1970-01-15T20:47:02.400Z</updated>
         <summary type="html"><![CDATA[The Scholarly Kitchen is a group blog started by the Society for Scholarly Publishing in 2008. The blog posts by authors Kent Anderson, Phil Davis, David Crotty, Michael Clarke, etc. are an always interesting – and often thought-provoking – read about scholarly publishing....]]></summary>
@@ -5722,7 +5722,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Data is the new soil]]></title>
-        <id>0d365b34-4ec8-4de5-938a-f746fefa234c</id>
+        <id>d6sdk8k-p89qjs7-2qq8vzf-m8tc</id>
         <link href="https://blog.front-matter.io/mfenner/data-is-the-new-soil"/>
         <updated>1970-01-15T20:45:36.000Z</updated>
         <summary type="html"><![CDATA[One of the main themes at the Science Online London Conference last weekend was <strong><strong>data</strong></strong>, with several sessions devoted to publishing primary research data, connecting scientific data from various resources,...]]></summary>
@@ -5736,7 +5736,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Lanyrd: a new Twitter mashup for conferences]]></title>
-        <id>8771a7ea-2d90-434f-b935-9d64677931b0</id>
+        <id>47e6kym-bcg8d7v-jdcxchk-qjcdg</id>
         <link href="https://blog.front-matter.io/mfenner/lanyrd-a-new-twitter-mashup-for-conferences"/>
         <updated>1970-01-15T20:44:09.600Z</updated>
         <summary type="html"><![CDATA[Lanyrd is a new social directory for conferences launched just a few days ago. It integrates with Twitter to allow you to list conferences you are organizing, speaking at, attending, or just following. It is a social directory in the sense that everyone...]]></summary>
@@ -5754,7 +5754,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Peer review is not a piece of cake]]></title>
-        <id>c06b9473-9515-43c9-b006-f356158e38e2</id>
+        <id>60dea77-58n8f4v-01qkara-rwe72</id>
         <link href="https://blog.front-matter.io/mfenner/peer-review-is-not-a-piece-of-cake"/>
         <updated>1970-01-15T20:39:50.400Z</updated>
         <summary type="html"><![CDATA[On Monday <strong><strong>Jenny Rohn</strong></strong> published a blog post Peer review is no picnic that concludes:<em><em><em><em><em><em><em><em>So the next time you hear someone asserting that scientists aren’t critical, of their own work or that of their colleagues,...]]></summary>
@@ -5772,7 +5772,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[BioMed Central drafts position statement on open data]]></title>
-        <id>2a9edc27-ab49-4a69-ba22-2a1279c79bf6</id>
+        <id>1akve2f-at999mv-m8ha29w-wf6zp</id>
         <link href="https://blog.front-matter.io/mfenner/biomed-central-drafts-position-statement-on-open-data"/>
         <updated>1970-01-15T20:38:24.000Z</updated>
         <summary type="html"><![CDATA[Last week <strong><strong>BioMed Central</strong></strong> published a draft position statement on open data (PDF). <strong><strong>Iain Hrynaszkiewicz</strong></strong> explained the statement on the BioMed Central Blog,...]]></summary>
@@ -5793,7 +5793,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[ORCID as unique author identifier: what is it good for and should we worry or be happy?]]></title>
-        <id>1419da41-5f52-491d-92c9-d2399ff2e1b0</id>
+        <id>m37d42q-tj94es5-jej76fz-5rdg</id>
         <link href="https://blog.front-matter.io/mfenner/orcid-as-unique-author-identifier-what-is-it-good-for-and-should-we-worry-or-be-happy"/>
         <updated>1970-01-15T20:36:57.600Z</updated>
         <summary type="html"><![CDATA[This was the title of the session with <strong><strong>Geoff Bilder</strong></strong>, <strong><strong>Gudmundur Thorisson</strong></strong> and myself at the Science Online London Conference last Saturday. Geoff first introduced the ORCID initiative,...]]></summary>
@@ -5825,7 +5825,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[The Great Science Online London Tweetup]]></title>
-        <id>6485959f-2df2-4b84-8292-acb9af557afe</id>
+        <id>34gpasy-bfj9e28-54ncq6q-nayqy</id>
         <link href="https://blog.front-matter.io/mfenner/the-great-science-online-london-tweetup"/>
         <updated>1970-01-15T20:35:31.200Z</updated>
         <summary type="html"><![CDATA[The 3rd Annual Science Online London Conference took place last Friday and Saturday. For me it was again a fantastic event. Matt Brown is collecting all blog posts, pictures, videos, etc. over at this Nature Network post....]]></summary>
@@ -5856,7 +5856,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Flipboard: PLoS BLOGs on the iPad]]></title>
-        <id>7b99f148-56b4-4036-bffa-e685afde2e7c</id>
+        <id>3vk7rmg-nnm80vb-zyq6gpq-xwbkw</id>
         <link href="https://blog.front-matter.io/mfenner/flipboard-plos-blogs-on-the-ipad"/>
         <updated>1970-01-15T20:34:04.800Z</updated>
         <summary type="html"><![CDATA[The iPad owners among the PLoS BLOGs readers can use the free Flipboard application to read all the great content that is written by my fellow ploggers PLoGsters (as suggested by David Kroll). In Flipboard simply create a new section and then add content...]]></summary>
@@ -5873,7 +5873,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Unmeasurable Science]]></title>
-        <id>200fde29-34bd-4bc2-8681-05df9fe6ade4</id>
+        <id>101zf2j-d5x9f18-d085vyf-ydbf4</id>
         <link href="https://blog.front-matter.io/mfenner/unmeasurable-science"/>
         <updated>1970-01-15T20:32:38.400Z</updated>
         <summary type="html"><![CDATA[On Wednesday PLoS BLOGs launched with a splash. We (both PLoS BLOGs as a whole and me individually) got a lot of positive feedback and words of encouragement – so we are off to a good start. As both our community manager Brian Mossop and myself are...]]></summary>
@@ -5901,7 +5901,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome to Gobbledygook]]></title>
-        <id>9a28381f-b575-4b90-88ed-ccc0891c166f</id>
+        <id>4t50w1z-dbn9e88-hvecr24-hr5kf</id>
         <link href="https://blog.front-matter.io/mfenner/welcome-to-gobbledygook"/>
         <updated>1970-01-15T20:28:19.200Z</updated>
         <summary type="html"><![CDATA[<em><em>Flickr photo by {Away until inspiration comes}.</em></em>In his introductory post, PLoS community manager Brian Mossop talks about how PLoS Blogs came to life, and the lessons learned from other blogging networks....]]></summary>
@@ -5927,7 +5927,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Bye-Bye Nature Network]]></title>
-        <id>08341060-3e8f-4966-bbe6-fb719735af01</id>
+        <id>86g860f-mf95kbq-sqve6bk-bbr1</id>
         <link href="https://blog.front-matter.io/mfenner/bye-bye-nature-network"/>
         <updated>1970-01-15T20:28:19.200Z</updated>
         <summary type="html"><![CDATA[This is my last post for this Nature Network blog. Later today, I will start a new blog somewhere else – also called Gobbledygook and covering the same topics.Writing this blog here on Nature Network since August 2007 has been an incredible experience,...]]></summary>
@@ -5971,7 +5971,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Elsevier launches SciVerse, integrates ScienceDirect + Scopus + More]]></title>
-        <id>ba707f10-d046-43c5-b2b3-5ec184c1c28d</id>
+        <id>5te1zh1-m268f2v-5ctyr62-c3gmd</id>
         <link href="https://blog.front-matter.io/mfenner/elsevier-launches-sciverse-integrates-sciencedirect-scopus-more"/>
         <updated>1970-01-15T20:24:00.000Z</updated>
         <summary type="html"><![CDATA[Elsevier on Saturday launched SciVerse, the new Elsevier platform that combines <em><em>ScienceDirect</em></em> (full-text journal articles) and <em><em>Scopus</em></em> (abstract and citation database of peer-reviewed literature)....]]></summary>
@@ -5990,7 +5990,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Supplementary Information: should I stay or should I go?]]></title>
-        <id>e51ac28e-de7c-417b-8198-e4fbec9b5501</id>
+        <id>753b18x-qkw85xr-3674zfp-9pn81</id>
         <link href="https://blog.front-matter.io/mfenner/supplementary-information-should-i-stay-or-should-i-go"/>
         <updated>1970-01-15T20:21:07.200Z</updated>
         <summary type="html"><![CDATA[On August 11, the <em><em>Journal of Neuroscience</em></em> published an Announcement Regarding Supplemental Material by Editor-in-Chief John Maunsell. In it John Maunsell announces that the journal in November will stop accepting supplementary material in article submissions....]]></summary>
@@ -6033,7 +6033,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Book Review: Cognitive Surplus by Clay Shirky]]></title>
-        <id>81b6732b-b3a6-410a-8c36-4648e1267942</id>
+        <id>41pssjq-cx68458-rdj693g-jcya2</id>
         <link href="https://blog.front-matter.io/mfenner/book-review-cognitive-surplus-by-clay-shirky"/>
         <updated>1970-01-15T20:02:24.000Z</updated>
         <summary type="html"><![CDATA[In his new book <em><em>Cognitive Surplus</em></em> Clay Shirky argues that in the last 50 years many of those living in industrialized countries have seen a dramatic increase in free time, paired with better education and a higher standard of living....]]></summary>
@@ -6051,7 +6051,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[What comes after Google Wave?]]></title>
-        <id>66714a9e-90d4-4498-87cd-a96ee1d6a4fe</id>
+        <id>36e559x-46m8jc8-fkd9dvg-xd97y</id>
         <link href="https://blog.front-matter.io/mfenner/what-comes-after-google-wave"/>
         <updated>1970-01-15T19:55:12.000Z</updated>
         <summary type="html"><![CDATA[Google announced last week that they will stop further development of Google Wave, and essentially shut down the service by the end of the year. Some of the more exciting parts of Wave will be reused in other Google products or – since many parts of...]]></summary>
@@ -6071,7 +6071,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Endnote: Interview with Jason Rollins]]></title>
-        <id>5d1eb596-e83c-4e06-989b-8be0b45b67ed</id>
+        <id>2x3ttsd-t1w9r39-h6wbw2t-5pszd</id>
         <link href="https://blog.front-matter.io/mfenner/endnote-interview-with-jason-rollins"/>
         <updated>1970-01-15T19:46:33.600Z</updated>
         <summary type="html"><![CDATA[Reference management is a frequent topic on this blog. The last few years we have seen both a large increase in the number of available tools, but also big changes in how we use reference management software....]]></summary>
@@ -6118,7 +6118,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Flipboard changes the way we use Twitter]]></title>
-        <id>0dbbfb35-918b-42ca-a234-9a1d2f09a0c4</id>
+        <id>dqfxkb4-cb8b5a4-d4t3mqg-k864</id>
         <link href="https://blog.front-matter.io/mfenner/flipboard-changes-the-way-we-use-twitter"/>
         <updated>1970-01-15T19:43:40.800Z</updated>
         <summary type="html"><![CDATA[Flipboard is a <em><em>personalized social magazine</em></em> for the iPad. The free application was released on July 22, and instantly created a lot of buzz. Because of the overwhelming interest, they had to create a waitlist for the personal features...]]></summary>
@@ -6166,7 +6166,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Yet another look at blogging networks]]></title>
-        <id>5c50b44a-98a6-49ee-b8c9-0869006dc525</id>
+        <id>2wa2t4n-65697qb-hj88d40-6vh95</id>
         <link href="https://blog.front-matter.io/mfenner/yet-another-look-at-blogging-networks"/>
         <updated>1970-01-15T19:35:02.400Z</updated>
         <summary type="html"><![CDATA[The last few days we have seen a number of blog posts reflecting on the pros and cons of science blogging networks. Bora Zivkovic last week announced his departure from scienceblogs.com, and in his must-read post reflected on the history of science...]]></summary>
@@ -6190,7 +6190,7 @@ I would define post-publication review as the process whereby scientists and oth
     </entry>
     <entry>
         <title type="html"><![CDATA[Discuss Papers with JournalFire]]></title>
-        <id>d9c6d26a-caba-48f7-8734-d4b82e1ebb34</id>
+        <id>6srv96n-jnt93vr-ed6mq0q-1xesm</id>
         <link href="https://blog.front-matter.io/mfenner/discuss-papers-with-journalfire"/>
         <updated>1970-01-15T19:04:48.000Z</updated>
         <summary type="html"><![CDATA[About a year ago I wrote a blog post about how to use Web 2.0 tools for a journal club (Recipe: Distributing papers for a journal club). Although reference management tools such as <em><em>CiteULike</em></em> and <em><em>Mendeley</em></em> can be used for journal clubs,...]]></summary>
@@ -6214,7 +6214,7 @@ JournalFire has a bookmarklet similar to what other reference managers offer, an
     </entry>
     <entry>
         <title type="html"><![CDATA[Innovations in Reference Management]]></title>
-        <id>ac2f0e96-1a36-4d9d-a508-cd893cbbb08e</id>
+        <id>5c5w79c-6hp9pet-a26dh4y-bqc4e</id>
         <link href="https://blog.front-matter.io/mfenner/innovations-in-reference-management"/>
         <updated>1970-01-15T18:46:04.800Z</updated>
         <summary type="html"><![CDATA[Earlier today I attended the fabulous Innovations in Reference Management workshop in Birmingham organized by Owen Stephens from Open University. Owen has written some blog posts summarizing the sessions almost in real time....]]></summary>
@@ -6239,7 +6239,7 @@ JournalFire has a bookmarklet similar to what other reference managers offer, an
     </entry>
     <entry>
         <title type="html"><![CDATA[Using Twitter at the ASCO Conference]]></title>
-        <id>a4c021fb-4e5f-4ce2-9a43-8911b0e81b2f</id>
+        <id>54r0gzp-kjz9kh9-mgw926r-eg6sf</id>
         <link href="https://blog.front-matter.io/mfenner/using-twitter-at-the-asco-conference"/>
         <updated>1970-01-15T18:36:00.000Z</updated>
         <summary type="html"><![CDATA[Last week I attended the annual meeting of the American Society of Clinical Oncology (ASCO) in Chicago. For my work it is the most important scientific meeting of the year, and it is also by far the biggest with more than 30.000 participants.Chicago last Thursday....]]></summary>
@@ -6262,7 +6262,7 @@ JournalFire has a bookmarklet similar to what other reference managers offer, an
     </entry>
     <entry>
         <title type="html"><![CDATA[On Privacy]]></title>
-        <id>dd9ce9fc-9988-4812-ae2a-7ef91df6ea27</id>
+        <id>6xkkmzs-6c8909a-wakyz4e-zdth7</id>
         <link href="https://blog.front-matter.io/mfenner/on-privacy"/>
         <updated>1970-01-15T18:04:19.200Z</updated>
         <summary type="html"><![CDATA[Social media and privacy have a complicated relationship, as using social media implies giving up at least some privacy. And the value of a social networking site is directly related not only to the number of users, but also the extend of personal data that the site has collected....]]></summary>
@@ -6298,7 +6298,7 @@ JournalFire has a bookmarklet similar to what other reference managers offer, an
     </entry>
     <entry>
         <title type="html"><![CDATA[What is a reference manager?]]></title>
-        <id>c1996550-cd4b-4ce7-aa88-58a5f7d5dc54</id>
+        <id>61k5jn1-kab9kkt-n22rmqv-xbq2m</id>
         <link href="https://blog.front-matter.io/mfenner/what-is-a-reference-manager"/>
         <updated>1970-01-15T17:57:07.200Z</updated>
         <summary type="html"><![CDATA[Next month I will participate in the Innovations in Reference Management event organized by Owen Stevens from the Open University. My own presentation has the title <em><em>Trends in Reference Management</em></em>,...]]></summary>
@@ -6349,7 +6349,7 @@ JournalFire has a bookmarklet similar to what other reference managers offer, an
     </entry>
     <entry>
         <title type="html"><![CDATA[Action points]]></title>
-        <id>50a2b54f-1a82-4156-9e2a-fce5383a5cb1</id>
+        <id>2gmatmy-6m285b9-waqwwmw-3mq5h</id>
         <link href="https://blog.front-matter.io/mfenner/action-points"/>
         <updated>1970-01-15T17:45:36.000Z</updated>
         <summary type="html"><![CDATA[Last weekend was <em><em>BibCamp Hannover</em></em>, a “BarCamp for librarians and other hackers”. If you understand German, you can read about the sessions, discussions and people in the Blog, Wiki, and FriendFeed Room....]]></summary>
@@ -6378,7 +6378,7 @@ JournalFire has a bookmarklet similar to what other reference managers offer, an
     </entry>
     <entry>
         <title type="html"><![CDATA[BibApp: Mashups for Universities]]></title>
-        <id>a1c4e777-f7b3-4b9e-bab4-4eae11aa25f8</id>
+        <id>51rkkqf-xxk9efb-nd2enr8-tm9fr</id>
         <link href="https://blog.front-matter.io/mfenner/bibapp-mashups-for-universities"/>
         <updated>1970-01-15T17:34:04.800Z</updated>
         <summary type="html"><![CDATA[Friday afternoon discussions can be dangerous. Last Friday I talked with Heinz Pampel from the Helmholtz Open Access Initiative via email about the upcoming BibCamp Hannover (a barcamp for librarians and others interested in online science that will take place this weekend)....]]></summary>
@@ -6401,7 +6401,7 @@ JournalFire has a bookmarklet similar to what other reference managers offer, an
     </entry>
     <entry>
         <title type="html"><![CDATA[ResearcherID: Interview with Renny Guida]]></title>
-        <id>c624cf86-0cf0-4224-8dba-b8a0bf2a3820</id>
+        <id>664k7rc-37g88j8-venrm2z-jme10</id>
         <link href="https://blog.front-matter.io/mfenner/researcherid-interview-with-renny-guida"/>
         <updated>1970-01-15T17:24:00.000Z</updated>
         <summary type="html"><![CDATA[<em><em>Open Researcher and Contributor ID</em></em> or ORCID is a community effort to standardize researcher identification. The initiative was first announced last December, and is supported by a growing number of publishers, scholarly societies and academic institutions....]]></summary>
@@ -6459,7 +6459,7 @@ JournalFire has a bookmarklet similar to what other reference managers offer, an
     </entry>
     <entry>
         <title type="html"><![CDATA[Standards for the Conduct of Science in the Information Age]]></title>
-        <id>7729b858-f9b7-4af1-a98d-045309f98995</id>
+        <id>3q56w5h-ydq9brt-k384ac4-zk2cn</id>
         <link href="https://blog.front-matter.io/mfenner/standards-for-the-conduct-of-science-in-the-information-age"/>
         <updated>1970-01-15T17:11:02.400Z</updated>
         <summary type="html"><![CDATA[Assuming our airports are again open next weekend, I will be attending a meeting organized by the NSF (National Science Foundation) and EuroHORCS (European Heads of Research Councils) on <em><em>Changing the Conduct of Science in the Information Age</em></em> in Washington on April 26....]]></summary>
@@ -6488,7 +6488,7 @@ The Public Library of Science (PLoS) <a href="https://web.archive.org/web/201206
     </entry>
     <entry>
         <title type="html"><![CDATA[Editorial Peer Reviewers’ Recommendations at a General Medical Journal: Are They Reliable and Do Editors Care?]]></title>
-        <id>820b0e9d-518b-47e3-ba24-862575e0de9e</id>
+        <id>421c79t-mcb8zhv-m9464nt-y1qmy</id>
         <link href="https://blog.front-matter.io/mfenner/editorial-peer-reviewers-recommendations-at-a-general-medical-journal-are-they-reliable-and-do-editors-care"/>
         <updated>1970-01-15T17:03:50.400Z</updated>
         <summary type="html"><![CDATA[Peer review is central to how we evaluate science and therefore how journal papers, grants and jobs are awarded. Peer review is done in many different ways, and has dramatically changed in the last 25 years....]]></summary>
@@ -6530,7 +6530,7 @@ The Public Library of Science (PLoS) <a href="https://web.archive.org/web/201206
     </entry>
     <entry>
         <title type="html"><![CDATA[Lst wk I had g8t fun @ #hcsmeucamp]]></title>
-        <id>2025b1d0-ea26-4c6a-93ad-172d0d5b2b59</id>
+        <id>104prx1-th69hn9-7b8q5m6-npats</id>
         <link href="https://blog.front-matter.io/mfenner/lst-wk-i-had-g8t-fun-hcsmeucamp"/>
         <updated>1970-01-15T16:53:45.600Z</updated>
         <summary type="html"><![CDATA[Last Wednesday I attended the Health Care Social Media Camp in Berlin. Healthcare Social Media in Europe – <em><em>#hcsmeu</em></em> for short – is a community of healthcare twitterers and social media users from Europe, started in August 2009 by Silja Chouquet and Andrew Spong....]]></summary>
@@ -6563,7 +6563,7 @@ The Public Library of Science (PLoS) <a href="https://web.archive.org/web/201206
     </entry>
     <entry>
         <title type="html"><![CDATA[Let’s make science metrics more scientific]]></title>
-        <id>31ea8d5d-6433-4205-b08d-e7107a0b2d8b</id>
+        <id>1hxa6nt-s1k882v-13f721x-0pbcb</id>
         <link href="https://blog.front-matter.io/mfenner/lets-make-science-metrics-more-scientific"/>
         <updated>1970-01-15T16:43:40.800Z</updated>
         <summary type="html"><![CDATA[In the March 25 edition of <em><em>Nature</em></em>, Julia Lane, Program Director of the Science of Science and Innovation Policy Program at the National Science Foundation, wrote an interesting opinion piece about the assessment of scientific performance....]]></summary>
@@ -6608,7 +6608,7 @@ The Public Library of Science (PLoS) <a href="https://web.archive.org/web/201206
     </entry>
     <entry>
         <title type="html"><![CDATA[Cancer and the media]]></title>
-        <id>0513379f-da11-4b9d-a519-bbef072c5188</id>
+        <id>52cvszp-gh9eeta-6dvxw3j-rmc8</id>
         <link href="https://blog.front-matter.io/mfenner/cancer-and-the-media"/>
         <updated>1970-01-15T16:33:36.000Z</updated>
         <summary type="html"><![CDATA[Last Tuesday the <em><em>Archives of Internal Medicine</em></em> released a study that analyzed the news reporting about cancer in 8 large-readership newspapers and 5 national magazines in the United States....]]></summary>
@@ -6640,7 +6640,7 @@ The Public Library of Science (PLoS) <a href="https://web.archive.org/web/201206
     </entry>
     <entry>
         <title type="html"><![CDATA[Chances and problems of doing science online]]></title>
-        <id>e425d457-1cdd-4cec-a9e3-dc6f2cd5f782</id>
+        <id>744qa5e-76x9kpa-krywdwp-dbxw2</id>
         <link href="https://blog.front-matter.io/mfenner/chances-and-problems-of-doing-science-online"/>
         <updated>1970-01-15T16:23:31.200Z</updated>
         <summary type="html"><![CDATA[Last month (shortly after ScienceOnline2010) <em><em>David Crotty</em></em> wrote in a blog post Science and Web 2.0: Talking About Science vs. Doing Science:<em><em>Nearly all of the more visible attempts (of science and Web 2.0)...]]></summary>
@@ -6688,7 +6688,7 @@ The Public Library of Science (PLoS) <a href="https://web.archive.org/web/201206
     </entry>
     <entry>
         <title type="html"><![CDATA[How do researchers use online journals?]]></title>
-        <id>758226a3-b239-4343-a16e-b1b68e520fd6</id>
+        <id>3ng8ka7-chs8d1t-2vnhpt7-543yp</id>
         <link href="https://blog.front-matter.io/mfenner/how-do-researchers-use-online-journals"/>
         <updated>1970-01-15T16:13:26.400Z</updated>
         <summary type="html"><![CDATA[Last Monday I was listening to a very interesting presentation by Ian Rowlands, reader in scholarly communication in the Department of Information Studies at University College London. He and his colleagues are interested in how researchers find and use information,...]]></summary>
@@ -6725,7 +6725,7 @@ The Public Library of Science (PLoS) <a href="https://web.archive.org/web/201206
     </entry>
     <entry>
         <title type="html"><![CDATA[German Research Foundation says that numbers aren’t everything]]></title>
-        <id>8ccbebf5-9550-4104-8f1d-e08558126d2f</id>
+        <id>4csfnzb-5ag8428-y7f0gnc-14v9f</id>
         <link href="https://blog.front-matter.io/mfenner/german-research-foundation-says-that-numbers-arent-everything"/>
         <updated>1970-01-15T16:03:21.600Z</updated>
         <summary type="html"><![CDATA[Last Tuesday the <em><em>German Research Foundation</em></em> (DFG) announced changes to the grant application process, going in effect in July. Researchers are no longer allowed to list all their publications in their grant proposals....]]></summary>
@@ -6765,7 +6765,7 @@ This is a <em><em>Nature</em></em> correspondence, included here only to show th
     </entry>
     <entry>
         <title type="html"><![CDATA[There is still so much to learn in reference management]]></title>
-        <id>0557f48b-f4a1-42c6-8e17-474a37b6e9d6</id>
+        <id>5azt8qx-518b38w-5t798vv-dtep</id>
         <link href="https://blog.front-matter.io/mfenner/there-is-still-so-much-to-learn-in-reference-management"/>
         <updated>1970-01-15T15:53:16.800Z</updated>
         <summary type="html"><![CDATA[Last week Lambert Heller and myself did a two-day workshop <em><em>Reference Management in Times of Web 2.0</em></em> for a group of German librarians. We introduced and tested the following five programs:RefWorksZoteroCiteULikeMendeleyEndnoteThe goal...]]></summary>
@@ -6811,7 +6811,7 @@ This is a <em><em>Nature</em></em> correspondence, included here only to show th
     </entry>
     <entry>
         <title type="html"><![CDATA[ScienceFeed: Interview with Ijad Madisch]]></title>
-        <id>3b5cf96a-aa68-4622-b5f6-72ea58c94d54</id>
+        <id>1vbkwpn-ak88rhb-bxkjx9c-cjkam</id>
         <link href="https://blog.front-matter.io/mfenner/sciencefeed-interview-with-ijad-madisch"/>
         <updated>1970-01-15T15:43:12.000Z</updated>
         <summary type="html"><![CDATA[Microblogging is blogging of short text messages, photos or other media and is best exemplified by <em><em>Twitter</em></em>. Twitter use has grown tremendously in 2009, and this also includes many scientists.1 <em><em>FriendFeed</em></em> is a another...]]></summary>
@@ -6860,7 +6860,7 @@ This is a <em><em>Nature</em></em> correspondence, included here only to show th
     </entry>
     <entry>
         <title type="html"><![CDATA[Happy third birthday Nature Network!]]></title>
-        <id>dfa99dbd-48e6-4cff-82d6-8b219ff92563</id>
+        <id>6zn6evt-j769kzr-5nmb46f-zj9b3</id>
         <link href="https://blog.front-matter.io/mfenner/happy-third-birthday-nature-network"/>
         <updated>1970-01-15T15:41:45.600Z</updated>
         <summary type="html"><![CDATA[Nature Network turns 3 years old today, and it has been a very interesting ride. I wasn't around when Nature Network started, but posted by first Gobbledygook blog post (the blog had a different name back then) in August 2007....]]></summary>
@@ -6878,7 +6878,7 @@ This is a <em><em>Nature</em></em> correspondence, included here only to show th
     </entry>
     <entry>
         <title type="html"><![CDATA[Nature.com iPhone app in pictures]]></title>
-        <id>c0e5d8f7-58bf-4365-a8a6-a6b3045d7b9a</id>
+        <id>60wqcfe-p5z8djt-h9n6pc2-5tywt</id>
         <link href="https://blog.front-matter.io/mfenner/nature-com-iphone-app-in-pictures"/>
         <updated>1970-01-15T15:33:07.200Z</updated>
         <summary type="html"><![CDATA[Just four weeks ago I wrote a blog post titled How do you read papers? 2010 will be different. Not only have we since seen the announcement of the Apple iPad, but last Monday the free Nature.com iPhone app was launched....]]></summary>
@@ -6925,7 +6925,7 @@ This is a <em><em>Nature</em></em> correspondence, included here only to show th
     </entry>
     <entry>
         <title type="html"><![CDATA[A digital preservation primer for scientists]]></title>
-        <id>44e07384-ddcd-43bd-9a80-65eb2dfbc683</id>
+        <id>24w1sr9-qed8eys-n035xcp-zqhm3</id>
         <link href="https://blog.front-matter.io/mfenner/a-digital-preservation-primer-for-scientists"/>
         <updated>1970-01-15T15:23:02.400Z</updated>
         <summary type="html"><![CDATA[<em>This weeks's blog post is a guest post on the Biomedicine on Display blog – I was kindly invited by Thomas Soderqvist from the Medical Museum of the University of Copenhagen.</em>The first email was sent in 1964, but that first email has been lost forever....]]></summary>
@@ -6966,7 +6966,7 @@ The first email was sent in 1964, but that first email has been lost forever. - 
     </entry>
     <entry>
         <title type="html"><![CDATA[Scientists and librarians: friend or foe?]]></title>
-        <id>a063e781-5b0a-492b-89d4-27e96cfe29d9</id>
+        <id>50cfkr2-pra94nr-kn17x5p-fwaes</id>
         <link href="https://blog.front-matter.io/mfenner/scientists-and-librarians-friend-or-foe"/>
         <updated>1970-01-15T15:11:31.200Z</updated>
         <summary type="html"><![CDATA[Following the <em><em>ScienceOnlin</em>e<em>2010</em></em> conference, librarian Dorothea Salo wrote on her blog:This disconnect is the number one threat to science librarianship today – perhaps to all academic librarianship....]]></summary>
@@ -7010,7 +7010,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[ScienceOnline2010 – I wish I was there]]></title>
-        <id>e745cc7a-8959-4fca-bfd2-db92b7693abd</id>
+        <id>778q67n-2as9z5b-zmpvjav-pjenx</id>
         <link href="https://blog.front-matter.io/mfenner/scienceonline2010-i-wish-i-was-there"/>
         <updated>1970-01-15T15:01:26.400Z</updated>
         <summary type="html"><![CDATA[ScienceOnline2010 just finished a few hours ago, and from what everyone was saying it was yet another wonderful meeting. I attended last year and moderated a session called Providing public health and medical information to all, but unfortunately could not come this year....]]></summary>
@@ -7034,7 +7034,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[How do you read papers? 2010 will be different]]></title>
-        <id>f402c338-3acb-43df-912c-fbc32cb950b2</id>
+        <id>7m0b1kg-epb8ffs-2b7vrcp-bjm5j</id>
         <link href="https://blog.front-matter.io/mfenner/how-do-you-read-papers-2010-will-be-different"/>
         <updated>1970-01-15T14:51:21.600Z</updated>
         <summary type="html"><![CDATA[In November 2008 I wrote a blog post called How do you read papers? The blog post was actually about different strategies to <em><em>find</em></em> interesting papers, e.g. browsing journal tables of content (TOC), different search strategies,...]]></summary>
@@ -7072,7 +7072,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[ORCID or how to build a unique identifier for scientists in 10 easy steps]]></title>
-        <id>1baed5cd-c206-4ef4-a163-5ed02945766d</id>
+        <id>vnvawvg-g69vta2-rtyt0mm-axkd</id>
         <link href="https://blog.front-matter.io/mfenner/orcid-or-how-to-build-a-unique-identifier-for-scientists-in-10-easy-steps"/>
         <updated>1970-01-15T14:41:16.800Z</updated>
         <summary type="html"><![CDATA[ORCID stands for <em><em>Open Researcher and Contributor ID</em></em> and was announced in early December. This blog post tries to summarize some of the problems that have to be solved to develop a unique identifier for scientists.1....]]></summary>
@@ -7111,7 +7111,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[Science and Sustainability]]></title>
-        <id>90bda30c-9224-4ef5-8a62-b067c1ad9600</id>
+        <id>4gqphgs-4h49vtr-mrngcz0-tv5g0</id>
         <link href="https://blog.front-matter.io/mfenner/science-and-sustainability"/>
         <updated>1970-01-15T14:31:12.000Z</updated>
         <summary type="html"><![CDATA[Sustainability in science is nothing new. The term sustainability science was probably first used in 2001 (see Wikipedia entry), and the title of this blog post was already used by a 2002 editorial in <em><em>Science</em></em>....]]></summary>
@@ -7144,7 +7144,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[Increased cancer risk following computed tomography scans]]></title>
-        <id>dc51e60a-ec1d-4635-80fd-1b29d76a7079</id>
+        <id>6wa7k0n-v0x8rtr-1z8v57b-pmw3s</id>
         <link href="https://blog.front-matter.io/mfenner/increased-cancer-risk-following-computed-tomography-scans"/>
         <updated>1970-01-15T14:21:07.200Z</updated>
         <summary type="html"><![CDATA[Two papers (this and this) and an editorial in the latest issue of <em><em>Archives of Internal Medicine</em></em> examine the cancer risks associated with the use of computed tomography (CT) examinations.1Ionizing radiation increases the risk for developing cancer....]]></summary>
@@ -7171,7 +7171,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[On giving a talk about Open Access in my department]]></title>
-        <id>a3abb5a7-b85c-43f0-a971-2393b4ee6707</id>
+        <id>53nettf-e2w8fra-jw93jet-ewsr7</id>
         <link href="https://blog.front-matter.io/mfenner/on-giving-a-talk-about-open-access-in-my-department"/>
         <updated>1970-01-15T14:11:02.400Z</updated>
         <summary type="html"><![CDATA[Earlier this month I gave this talk in my department. It is basically a summary of two blog posts that I wrote in October during <strong><strong>Open Access Week</strong></strong> (Open Access Week: a researcher's perspective part I and part II),...]]></summary>
@@ -7194,7 +7194,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[Nature Communications: Interview with Lesley Anson]]></title>
-        <id>809705dd-5dcc-4382-9542-63d04d6a93c6</id>
+        <id>40jw2xt-qec8e19-agk3t16-pn4y6</id>
         <link href="https://blog.front-matter.io/mfenner/nature-communications-interview-with-lesley-anson"/>
         <updated>1970-01-15T13:46:33.600Z</updated>
         <summary type="html"><![CDATA[Nature Communications is a new journal that will launch in Spring 2010. The journal will publish papers in all areas of the physical, chemical and biological sciences and is open for submissions.The Nature Publishing Group publishes one fully open access journal (Molecular Systems Biology)...]]></summary>
@@ -7237,7 +7237,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[Publication bias in clinical trials]]></title>
-        <id>1a8a7ffd-caa8-440e-b161-bf839dc12c35</id>
+        <id>th9zzvj-n88g7b2-rdzgeew-2b1n</id>
         <link href="https://blog.front-matter.io/mfenner/publication-bias-in-clinical-trials"/>
         <updated>1970-01-15T13:35:02.400Z</updated>
         <summary type="html"><![CDATA[Last week the <em><em>New England Journal of Medicine</em></em> (<em><em>NEJM</em></em>) published a paper on selective outcome reporting in clinical trials (Vedula et al. 2009). The primary and secondary outcome(s)...]]></summary>
@@ -7260,7 +7260,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[Moving article-level metrics forward]]></title>
-        <id>a04ebbf0-f3e5-4a86-bfb0-f6b560d9e664</id>
+        <id>509txz1-wz59a3b-zc7ppng-dksk4</id>
         <link href="https://blog.front-matter.io/mfenner/moving-article-level-metrics-forward"/>
         <updated>1970-01-15T13:24:57.600Z</updated>
         <summary type="html"><![CDATA[In September <em><em>PLoS</em></em> started to show usage data (downloads, citations, but also use of social bookmarking services and blog posts) for all their published papers (article-level metrics at PLoS: addition of usage data)....]]></summary>
@@ -7288,7 +7288,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[UK PubMed Central: Interview with Phil Vaughan]]></title>
-        <id>ac3cc70d-1574-41f3-8565-46197d2fade6</id>
+        <id>5c7k3gt-5bm87sr-asa635y-jzbf6</id>
         <link href="https://blog.front-matter.io/mfenner/uk-pubmed-central-interview-with-phil-vaughan"/>
         <updated>1970-01-15T13:14:52.800Z</updated>
         <summary type="html"><![CDATA[PubMed Central was launched in February 2000 by the U.S. National Institutes of Health (NIH) as a free digital archive of journal articles. Just as PubMed, PubMed Central covers research in the life sciences, but not other areas of research, e.g....]]></summary>
@@ -7337,7 +7337,7 @@ This disconnect is the number one threat to science librarianship today – perh
     </entry>
     <entry>
         <title type="html"><![CDATA[Open Access Week: a researcher’s perspective part II]]></title>
-        <id>2a65bf06-9dd2-4fb7-86fd-6135b09f8787</id>
+        <id>1acpzgd-7ej9yvr-dzb16pr-9z1w7</id>
         <link href="https://blog.front-matter.io/mfenner/open-access-week-a-researchers-perspective-part-ii"/>
         <updated>1970-01-15T12:57:36.000Z</updated>
         <summary type="html"><![CDATA[This week (October 19-23) is Open Access Week – a good opportunity to think and write about this topic. On Monday I wrote in a blog post:Open Access can be looked at from many different angles, including the researcher, the science library, the institution,...]]></summary>
@@ -7373,7 +7373,7 @@ Open Access can be looked at from many different angles, including the researche
     </entry>
     <entry>
         <title type="html"><![CDATA[Open Access Week: a researcher’s perspective]]></title>
-        <id>e35ac35e-168e-47ca-8130-53d160c37d8d</id>
+        <id>73bb1nw-5me8z58-2c2kt5g-c6zcd</id>
         <link href="https://blog.front-matter.io/mfenner/open-access-week-a-researchers-perspective"/>
         <updated>1970-01-15T12:50:24.000Z</updated>
         <summary type="html"><![CDATA[This week (October 19-23) is Open Access Week:Open Access Week is an opportunity to broaden awareness and understanding of Open Access to research, including access policies from all types of research funders,...]]></summary>
@@ -7419,7 +7419,7 @@ Open Access Week is an opportunity to broaden awareness and understanding of Ope
     </entry>
     <entry>
         <title type="html"><![CDATA[Thoughts on the PubMed Redesign]]></title>
-        <id>666d847f-0867-4a8e-8d20-d1080235b2b9</id>
+        <id>36dp27y-2379a78-t86h101-3bcns</id>
         <link href="https://blog.front-matter.io/mfenner/thoughts-on-the-pubmed-redesign"/>
         <updated>1970-01-15T12:40:19.200Z</updated>
         <summary type="html"><![CDATA[It was Anna Kushnir who started it all. Frustrated with the limitations of PubMed when finishing her PhD thesis, she wrote a blog post in March 2008 (I Am Not Yelling. Not Out Loud.) about her experience. The blog post created quite a stir in the blogosphere,...]]></summary>
@@ -7487,7 +7487,7 @@ Although the current engine works well for some users and some queries, I unders
     </entry>
     <entry>
         <title type="html"><![CDATA[Conference Blogging: Interview with Alex Knoll]]></title>
-        <id>cf6d3950-b99d-47b3-9aec-f1173c5950b6</id>
+        <id>6fdmwn1-ecx8yss-nv7h2wy-5jm5p</id>
         <link href="https://blog.front-matter.io/mfenner/conference-blogging-interview-with-alex-knoll"/>
         <updated>1970-01-15T12:25:55.200Z</updated>
         <summary type="html"><![CDATA[Blogging is a great way to report from a scientific conference. This could be done either with regular blog posts written in the evening or after the conference, and/or live-blogging using tools such as Friendfeed or Twitter....]]></summary>
@@ -7530,7 +7530,7 @@ Although the current engine works well for some users and some queries, I unders
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session V and VII]]></title>
-        <id>fe0e4add-7991-43b8-8dc8-626cab34d1b0</id>
+        <id>7y1s5dt-ych8ew8-vj32djn-k9mdg</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-v-and-vii"/>
         <updated>1970-01-15T12:23:02.400Z</updated>
         <summary type="html"><![CDATA[<em><em>The final guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>Session VFriday ended with two talks in session V, the first by Tony Hyman from the Max Planck Institute for Cell Biology and Genetics in Dresden....]]></summary>
@@ -7551,7 +7551,7 @@ Ueli Grossniklaus then talked about epigenetics in the struggle between the two 
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session VI]]></title>
-        <id>7840e30e-97ff-4763-b46e-6094cc801e89</id>
+        <id>3r83hgx-5zz8xhv-8vk0jk6-807m9</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-vi"/>
         <updated>1970-01-15T12:17:16.800Z</updated>
         <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>Saturday had two more sessions before the end of the meeting. Irina Stancheva from the Wellcome Trust Centre for Cell Biology at the...]]></summary>
@@ -7567,7 +7567,7 @@ Ueli Grossniklaus then talked about epigenetics in the struggle between the two 
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session Plant Genetics II]]></title>
-        <id>023847f2-1587-4bd3-880b-2884ab08d61b</id>
+        <id>2713z45-c79f9rg-2s8gjng-hngv</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-plant-genetics-ii"/>
         <updated>1970-01-15T12:15:50.400Z</updated>
         <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>As promised, I attended the second Plant Genetics session of the meeting, thus missing the Epigenetics session.I learned an important lesson...]]></summary>
@@ -7589,7 +7589,7 @@ Ueli Grossniklaus then talked about epigenetics in the struggle between the two 
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session III]]></title>
-        <id>a70195f0-dafb-4462-b643-affe6983f0c6</id>
+        <id>5706az1-pqv8hhb-cgxfzsm-r7w66</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-iii"/>
         <updated>1970-01-15T12:15:50.400Z</updated>
         <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>The last session on Thursday was split into two talks by Philippe Sansonetti from the Institute Pasteur in Paris and Julian Parkhill from the Sanger Institute in Hinxton,...]]></summary>
@@ -7607,7 +7607,7 @@ The talk was also a lesson in technological progress: While the sequencing of th
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session Cellular Genetic Mechanisms]]></title>
-        <id>3f340aba-0af6-478a-a9c5-571305f56fae</id>
+        <id>1z6g5bm-2qp8y5a-khaq2c2-zavxe</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-cellular-genetic-mechanisms"/>
         <updated>1970-01-15T12:12:57.600Z</updated>
         <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>Both sessions had some interesting talks, so it was really hard to decide between attending Cellular Genetic Mechanisms or Human Genetics,...]]></summary>
@@ -7627,7 +7627,7 @@ The talk was also a lesson in technological progress: While the sequencing of th
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session IV]]></title>
-        <id>c98d3768-6c64-4bd2-8c8c-0d7b4408fcd6</id>
+        <id>69hmvpg-v349f98-s30dfd2-0hz6p</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-iv"/>
         <updated>1970-01-15T12:11:31.200Z</updated>
         <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>The first session on Friday started with a talk by Frauke Melchior from the ZMBP in Heidelberg on SUMO. Apart from being interesting to work with,...]]></summary>
@@ -7650,7 +7650,7 @@ The talk was also a lesson in technological progress: While the sequencing of th
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Society Meeting 2009: Evolution Session]]></title>
-        <id>255e2d70-c08a-45a9-8ddc-09076cbb9e11</id>
+        <id>15brpq1-g4a8pmr-vq090xp-bq7gh</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-evolution-session"/>
         <updated>1970-01-15T12:10:04.800Z</updated>
         <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>Just after lunch the next decision: Neurogenetics or Evolution? Here I went with the topic that is less far from my field,...]]></summary>
@@ -7672,7 +7672,7 @@ Add in the possibility to exchange one of several different chloroplast genomes 
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Society Meeting 2009: Development Session]]></title>
-        <id>e7f740a1-f361-4269-a6f6-f4b1a5ac9fea</id>
+        <id>77yx0a3-wv189mt-dxqmp6j-ts7za</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-development-session"/>
         <updated>1970-01-15T12:08:38.400Z</updated>
         <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>This time I had to decide between two parallel sessions for the first time at this meeting. Plant genetics or Development?...]]></summary>
@@ -7692,7 +7692,7 @@ Add in the possibility to exchange one of several different chloroplast genomes 
     </entry>
     <entry>
         <title type="html"><![CDATA[German Genetics Conference 2009: Session II]]></title>
-        <id>d5bc5e84-6b5e-49e0-8c4f-dc9861614260</id>
+        <id>6nqhf88-tty97g8-rkywk1g-p2gk0</id>
         <link href="https://blog.front-matter.io/mfenner/german-genetics-conference-2009-session-ii"/>
         <updated>1970-01-15T12:07:12.000Z</updated>
         <summary type="html"><![CDATA[<em><em>Another guest post from Alex Knoll reporting from the German Genetics Conference in Cologne.</em></em>Dusko Ehrlich fom Jouy en Josas in France started off the second session of the meeting. He is working with the MetaHIT project,...]]></summary>

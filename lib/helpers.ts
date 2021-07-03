@@ -21,6 +21,17 @@ export const pluralize = (
   return resultNumber + resultString
 }
 
+// base32 (cockroft) encode uuid
+// insert hyphen every 6 characters
+export const uuid2base32 = (uuid: string) => {
+  const UuidEncoder = require('uuid-encoder')
+  const encoder = new UuidEncoder('base32')
+  return encoder
+    .encode(uuid)
+    .match(/.{1,7}/g)
+    .join('-')
+}
+
 // Helper method to wait for a middleware to execute before continuing
 // And to throw an error when an error happens in a middleware
 export const initMiddleware = (middleware) => {

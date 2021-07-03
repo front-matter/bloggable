@@ -32,7 +32,7 @@ export default function Pricing() {
               Ghost is a blogging platform, designed to simplify the process of
               online publishing.
               <p className="mt-2 text-sm font-sans">
-                Original authors John O'Nolan, Hannah Wolfe
+                Original authors John O&apos;Nolan, Hannah Wolfe
               </p>
             </dd>
           </div>
@@ -123,7 +123,7 @@ export default function Pricing() {
               Citation Style Language (CSL) automates the formatting of
               citations and bibliographies.
               <p className="mt-2 text-sm font-sans">
-                Original authors Bruce D'Arcus, Frank Bennett, Rintze Zelle
+                Original authors Bruce D&apos;Arcus, Frank Bennett, Rintze Zelle
               </p>
             </dd>
           </div>

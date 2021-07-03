@@ -1,8 +1,9 @@
+import React from 'react'
 import OpenSource from '../components/OpenSource'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-const OpenSourcePage = (props) => {
+const OpenSourcePage = () => {
   return (
     <>
       <Header />

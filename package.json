@@ -28,7 +28,7 @@
     "date-fns": "^2.22.1",
     "feed": "^4.2.2",
     "lodash": "^4.17.21",
-    "next": "^11.0.0",
+    "next": "^11.0.1",
     "next-compose-plugins": "^2.2.1",
     "next-fonts": "^1.5.1",
     "next-images": "^1.8.1",
@@ -46,6 +46,7 @@
     "sanitize-html": "^2.4.0",
     "typesense": "^0.12.1",
     "typesense-instantsearch-adapter": "^1.1.1",
+    "uuid-encoder": "^1.2.0",
     "webpack": "^5.39.0"
   },
   "scripts": {
@@ -54,6 +55,7 @@
     "postbuild": "next-sitemap",
     "build:index": "next build",
     "dev": "next dev",
+    "lint": "next lint",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "install:pandoc": "cd /home && yum install wget tar gzip texlive-xetex -y && wget https://github.com/jgm/pandoc/releases/download/2.12/pandoc-2.12-linux-amd64.tar.gz && tar -xvf pandoc-2.12-linux-amd64.tar.gz && ln -s /home/pandoc-2.12/bin/pandoc /usr/bin/pandoc && pandoc -v",
@@ -61,9 +63,6 @@
     "build:tailwind": "tailwind build assets/styles/index.css -o assets/styles/tailwind.css",
     "export": "next export",
     "deploy": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run build:tailwind && npm run build && npm run export && cp -r ./assets ./out/assets && touch out/.nojekyll && git add . && git commit -m \"ready to deploy\" && git push && git subtree push --prefix out origin gh-pages"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -84,7 +83,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
-    "eslint-config-next": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-config-next": "^11.0.1",
     "next-sitemap": "^1.6.116",
     "pandoc-url2cite": "^0.6.7",
     "postcss": "^8.3.4",

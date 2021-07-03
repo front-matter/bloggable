@@ -10,7 +10,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css' // Import the CSS
 config.autoAddCss = false
 
 export default class MyApp extends App {
-  static async getInitialProps({ Component, router, ctx }) {
+  static async getInitialProps({ Component, ctx }) {
     let pageProps = {}
 
     if (Component.getInitialProps) {

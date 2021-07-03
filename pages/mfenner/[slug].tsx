@@ -30,8 +30,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export async function getStaticProps(context) {
-  let post = await getSinglePostBySlug(context.params.slug)
-  let similarPosts = await getSimilarPosts(
+  const post = await getSinglePostBySlug(context.params.slug)
+  const similarPosts = await getSimilarPosts(
     post.hits[0].document.title + ' ' + post.hits[0].document.tags.join(' '),
     post.hits[0].document.id
   )
@@ -63,7 +63,7 @@ const Post = (props) => {
           name="citation_publication_date"
           content={new Date(hit.published * 1000).toLocaleDateString('en-US')}
         />
-        <meta name="citation_journal_title" content="Gobbledygook" />
+        <meta name="citation_journal_title" content="FronMatter" />
         <meta name="citation_language" content="en" />
         {hit.tags && (
           <meta name="citation_keywords" content={hit.tags.join(', ')} />
@@ -87,9 +87,9 @@ const Post = (props) => {
               {hit.tags.map((tag, index) => (
                 <>
                   <Link key={tag} href={`/categories/${tag}`}>
-                    <a className="border-b-0 hover:border-b hover:border-green-600">
+                    <span className="border-b-0 hover:border-b hover:border-green-600">
                       {tag.split('-').join(' ')}
-                    </a>
+                    </span>
                   </Link>
                   {index + 1 < hit.tags.length ? ' · ' : ''}
                 </>

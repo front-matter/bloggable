@@ -16,7 +16,11 @@ const Byline: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <div className="flex flex-row pt-2 pb-4">
-      <img className="h-10 shadow rounded-full mr-2" src={author.imageUrl} />
+      <img
+        className="h-10 shadow rounded-full mr-2"
+        src={author.imageUrl}
+        alt={''}
+      />
       <div className="">
         <div className="font-bold font-sans uppercase text-sm">
           {author.name}

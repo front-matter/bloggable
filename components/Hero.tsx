@@ -35,16 +35,6 @@ export default function Hero(tag) {
           )}
           {tag && tag.tag.featured && (
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-              <div className="rounded-md shadow mr-6">
-                <Link href="/features" passHref>
-                  <a
-                    href="dummy"
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 font-sans"
-                  >
-                    Learn More
-                  </a>
-                </Link>
-              </div>
               <div className="rounded-md shadow">
                 <Link href="mailto:info@front-matter.io" passHref>
                   <a

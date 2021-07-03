@@ -16,7 +16,7 @@ import Footer from '../components/Footer'
 import Byline from '../components/Byline'
 import Pagination from '../components/Pagination'
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const posts = await getAllPosts()
 
   if (!posts) {
@@ -30,7 +30,7 @@ export async function getStaticProps(context) {
   }
 }
 
-const PostsPage = ({ posts }) => {
+const PostsPage = () => {
   const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     server: {
       apiKey: process.env.NEXT_PUBLIC_TYPESENSE_API_KEY,

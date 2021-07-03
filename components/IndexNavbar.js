@@ -3,8 +3,6 @@ import Link from 'next/link'
 import { connectSearchBox } from 'react-instantsearch-dom'
 
 export default function Navbar(props) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false)
-
   const SearchBox = ({ currentRefinement, refine }) => (
     <div className="relative flex flex-wrap lg:ml-auto text-base">
       <i className="fas fa-search absolute ml-3 mt-3 text-gray-700"></i>
@@ -39,10 +37,8 @@ export default function Navbar(props) {
         </div>
         <div
           className={
-            'lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none' +
-            (navbarOpen ? ' block' : ' hidden')
+            'lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none block'
           }
-          id="example-navbar-warning"
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto mt-4">
             <li className="flex items-center">

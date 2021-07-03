@@ -2,12 +2,13 @@ import { Client } from 'typesense'
 import { getGhostPosts } from './posts'
 import { generateHtml } from './pandoc'
 import trimText from './trimText'
+import { uuid2base32 } from './helpers'
 import sanitizeHtml from 'sanitize-html'
 import { getTime, parseISO } from 'date-fns'
 const fs = require('fs')
 
 export async function updateIndex() {
-  let client = new Client({
+  const client = new Client({
     nodes: [
       {
         host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,
@@ -20,7 +21,7 @@ export async function updateIndex() {
   })
 
   const posts = await getGhostPosts()
-  let documents = []
+  const documents = []
 
   for (const post of posts) {
     const description = trimText(
@@ -32,8 +33,10 @@ export async function updateIndex() {
       300
     )[0]
 
+    const id = uuid2base32(post.uuid)
+
     const document = {
-      id: post.uuid,
+      id: id,
       blogId: 'mfenner',
       title: post.title,
       slug: post.slug,
@@ -55,7 +58,7 @@ export async function updateIndex() {
       schemaOrg: {
         '@context': 'http://schema.org',
         '@type': 'BlogPosting',
-        '@id': 'https://blog.front-matter.io/' + post.uuid,
+        '@id': 'https://blog.front-matter.io/' + id,
         url: 'https://blog.front-matter.io/mfenner/' + post.slug,
         name: post.title,
         headline: post.title,
@@ -68,7 +71,7 @@ export async function updateIndex() {
             ? 'https:' + post.primary_author.profile_image
             : null
         },
-        publisher: { '@type': 'Organization', name: 'Gobbledygook' },
+        publisher: { '@type': 'Organization', name: 'Front Matter' },
         keywords: post.tags
           ? post.tags.map((tag) => tag.name).join(', ')
           : null,
@@ -80,8 +83,8 @@ export async function updateIndex() {
       }
     }
     // ignore null values
-    let cleanedDocument = Object.fromEntries(
-      Object.entries(document).filter(([_, v]) => v != null)
+    const cleanedDocument = Object.fromEntries(
+      Object.entries(document).filter(([, v]) => v != null)
     )
 
     await client
@@ -98,7 +101,7 @@ export async function updateIndex() {
 }
 
 export async function updateSchema() {
-  let schema = {
+  const schema = {
     name: 'front-matter',
     fields: [
       {
@@ -178,7 +181,7 @@ export async function updateSchema() {
     default_sorting_field: 'published'
   }
 
-  let client = new Client({
+  const client = new Client({
     nodes: [
       {
         host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,

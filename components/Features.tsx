@@ -16,16 +16,9 @@ import {
   faFileArchive,
   faServer,
   faSearch,
-  faComments,
-  faFolderPlus
+  faComments
 } from '@fortawesome/free-solid-svg-icons'
-import {
-  faGithub,
-  faTwitter,
-  faYoutube,
-  faDiscourse
-} from '@fortawesome/free-brands-svg-icons'
-import Link from 'next/link'
+import { faDiscourse } from '@fortawesome/free-brands-svg-icons'
 
 export default function Features() {
   return (
@@ -80,8 +73,10 @@ export default function Features() {
 
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
-              <a id="editor" />
-              <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+              <h3
+                id="editor"
+                className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl"
+              >
                 Easy-to-use powerful editor
               </h3>
               <p className="mt-3 mr-16 text-lg text-gray-500">
@@ -241,8 +236,10 @@ export default function Features() {
           <div className="relative mt-12 sm:mt-16 lg:mt-24">
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="lg:col-start-2">
-                <a id="scientific" />
-                <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                <h3
+                  id="scientific"
+                  className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl"
+                >
                   Editing scientific content
                 </h3>
                 <p className="mt-3 text-lg text-gray-500">
@@ -358,8 +355,10 @@ export default function Features() {
 
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
-              <a id="publishing" />
-              <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+              <h3
+                id="publishing"
+                className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl"
+              >
                 Flexible publishing options
               </h3>
               <p className="mt-3 mr-16 text-lg text-gray-500">
@@ -490,8 +489,10 @@ export default function Features() {
           <div className="relative mt-12 sm:mt-16 lg:mt-24">
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="lg:col-start-2">
-                <a id="discovery" />
-                <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                <h3
+                  id="discovery"
+                  className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl"
+                >
                   Discovery, discussion and reuse
                 </h3>
                 <p className="mt-3 text-lg text-gray-500">

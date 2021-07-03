@@ -2,7 +2,7 @@ import GhostContentAPI from '@tryghost/content-api'
 // import { id } from 'date-fns/locale'
 import { Client } from 'typesense'
 
-let client = new Client({
+const client = new Client({
   nodes: [
     {
       host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,

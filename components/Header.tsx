@@ -63,30 +63,9 @@ export default function Navbar(props) {
                     Posts
                   </a>
                 </Link>
-                <Link href="/features" passHref>
-                  <a
-                    href="dummy"
-                    className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 text-sm font-medium"
-                  >
-                    Features
-                  </a>
-                </Link>
               </div>
             </div>
             {props.searchBox && <CustomSearchBox />}
-          </div>
-        </div>
-
-        <div className="lg:hidden" id="mobile-menu">
-          <div className="pt-2 pb-3 space-y-1">
-            <Link href="/features" passHref>
-              <a
-                href="dummy"
-                className="text-gray-500 border-b-0 hover:text-gray-400 inline-flex items-center px-1 pt-1 text-sm font-medium"
-              >
-                Features
-              </a>
-            </Link>
           </div>
         </div>
       </nav>

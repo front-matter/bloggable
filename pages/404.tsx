@@ -15,6 +15,7 @@ const ErrorPage = () => {
       <div className="container px-4 pt-16 flex flex-wrap mx-auto h-screen">
         <h1 className="text-red-500">404 Page Not Found</h1>
       </div>
+      <Footer />
     </>
   )
 }

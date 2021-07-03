@@ -3,7 +3,7 @@ import nodePandoc from 'node-pandoc-promise'
 // const fs = require('filesync')
 
 export async function generateHtml(input: string) {
-  let args = [
+  const args = [
     '-f',
     'html',
     '-t',
