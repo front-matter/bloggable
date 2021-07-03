@@ -15,7 +15,7 @@ export default function Categories(tags) {
             </p>
           </div>
           <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
-            {tags.tags.map((tag) => (
+            {tags.map((tag) => (
               <li key={tag.id} className="list-none">
                 <div className="space-y-4">
                   <div className="aspect-w-3 aspect-h-2">
@@ -25,7 +25,6 @@ export default function Categories(tags) {
                       alt=""
                     />
                   </div>
-
                   <div className="space-y-2">
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <Link href={`/categories/${tag.slug}`}>
