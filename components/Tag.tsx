@@ -40,6 +40,7 @@ export default function Tag({ posts }) {
                             }.jpg`
                       }
                       alt=""
+                      layout="intrinsic"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
@@ -106,6 +107,7 @@ export default function Tag({ posts }) {
                             }.jpg`
                       }
                       alt=""
+                      layout="intrinsic"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
@@ -172,6 +174,7 @@ export default function Tag({ posts }) {
                             }.jpg`
                       }
                       alt=""
+                      layout="intrinsic"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
@@ -238,6 +241,7 @@ export default function Tag({ posts }) {
                             }.jpg`
                       }
                       alt=""
+                      layout="intrinsic"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
@@ -304,6 +308,7 @@ export default function Tag({ posts }) {
                             }.jpg`
                       }
                       alt=""
+                      layout="intrinsic"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
@@ -370,6 +375,7 @@ export default function Tag({ posts }) {
                             }.jpg`
                       }
                       alt=""
+                      layout="intrinsic"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
@@ -436,6 +442,7 @@ export default function Tag({ posts }) {
                             }.jpg`
                       }
                       alt=""
+                      layout="intrinsic"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
