@@ -215,7 +215,7 @@
       "source": "/2015/03/20/metadata-in-microsoft-word-documents",
       "destination": "/mfenner/metadata-in-microsoft-word-documents"
     },
-        {
+    {
       "source": "/2015/03/20/metadata-in-microsoft-word-documents",
       "destination": "/mfenner/metadata-in-microsoft-word-documents"
     },
@@ -290,6 +290,14 @@
     {
       "source": "/about",
       "destination": "/"
+    },
+    {
+      "source": "/mfenner/:slug",
+      "has": [{
+        "type": "host",
+        "value": "front-matter.io"
+      }],
+      "destination": "https://blog.front-matter.io/mfenner/:slug"
     }
   ]
 }
