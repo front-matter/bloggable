@@ -26,7 +26,7 @@ export default class MyApp extends App {
 
     return (
       <>
-        <PlausibleProvider domain="front-matter.io">
+        <PlausibleProvider domain="blog.front-matter.io">
           <Head>
             <meta
               name="viewport"
