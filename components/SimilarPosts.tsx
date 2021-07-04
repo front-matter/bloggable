@@ -36,6 +36,7 @@ export default function SimilarPosts({ posts }) {
                       }
                       alt=""
                       key={post.document.id}
+                      layout="intrinsic"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
