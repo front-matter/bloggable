@@ -1,5 +1,4 @@
 import GhostContentAPI from '@tryghost/content-api'
-// import { id } from 'date-fns/locale'
 import { Client } from 'typesense'
 
 const client = new Client({
@@ -11,7 +10,9 @@ const client = new Client({
     }
   ],
   apiKey: process.env.NEXT_PUBLIC_TYPESENSE_API_KEY,
-  connectionTimeoutSeconds: 2
+  connectionTimeoutSeconds: 10,
+  numRetries: 3,
+  retryIntervalSeconds: 3
 })
 
 export async function getPosts(
@@ -66,7 +67,7 @@ export async function getPostsByTag(
     .collections('front-matter')
     .documents()
     .search({
-      q: query,
+      q: query.replace(/-/g, ''),
       query_by: 'tags',
       per_page: hitsPerPage ? hitsPerPage : 25,
       page: page > 0 ? page : 1
