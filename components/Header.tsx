@@ -44,11 +44,8 @@ export default function Navbar(props) {
                       className="block lg:hidden h-8 w-auto"
                       src={logo}
                       alt="Front Matter"
-                    />
-                    <Image
-                      className="hidden lg:block h-8 w-auto"
-                      src={logo}
-                      alt="Front Matter"
+                      height={32}
+                      width={32}
                     />
                     <span className="text-lg font-semibold pl-1 pt-1">
                       Front Matter

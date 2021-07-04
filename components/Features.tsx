@@ -197,7 +197,8 @@ export default function Features() {
               </svg>
               <Image
                 className="relative mt-16 mx-auto shadow-md"
-                width="720"
+                width={720}
+                height={480}
                 src={ghostEditor}
                 alt="Ghost editor"
               />
@@ -350,7 +351,8 @@ export default function Features() {
                 </svg>
                 <Image
                   className="relative mx-auto mr-16 shadow-md"
-                  width="720"
+                  width={720}
+                  height={480}
                   src={dataWrapper}
                   alt=""
                 />
@@ -484,7 +486,8 @@ export default function Features() {
               </svg>
               <Image
                 className="relative mt-16 mx-auto shadow-md"
-                width="680"
+                width={680}
+                height={516}
                 src={pdfExport}
                 alt="PDF Export"
               />
@@ -645,7 +648,8 @@ export default function Features() {
                 </svg>
                 <Image
                   className="relative mx-auto mr-16 shadow-md"
-                  width="720"
+                  width={720}
+                  height={480}
                   src={discourse}
                   alt="discourse"
                 />

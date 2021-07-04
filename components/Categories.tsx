@@ -25,6 +25,7 @@ export default function Categories({ tags }) {
                         className="object-cover shadow-lg rounded-lg"
                         src={tag.feature_image}
                         alt=""
+                        layout="intrinsic"
                       />
                     </div>
                   )}
