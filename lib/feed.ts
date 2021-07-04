@@ -1,5 +1,6 @@
 import { Feed } from 'feed'
 import { getAllPosts } from './posts'
+import { fromUnixTime } from 'date-fns'
 const fs = require('fs')
 
 export async function generateAtomFeed() {
@@ -16,7 +17,7 @@ export async function generateAtomFeed() {
     },
     author: {
       name: 'Martin Fenner',
-      email: 'martin@front-matter.iod'
+      email: 'martin@front-matter.io'
     }
   })
 
@@ -39,7 +40,7 @@ export async function generateAtomFeed() {
         post.document.slug,
       description: post.document.description,
       content: post.document.content,
-      date: new Date(post.document.published)
+      date: fromUnixTime(post.document.published)
     })
   })
 
