@@ -132,9 +132,8 @@ export async function getSinglePostBySlug(slug: string) {
     .collections('front-matter')
     .documents()
     .search({
-      q: '*',
-      query_by: 'title, description, content',
-      filter_by: 'slug:' + slug,
+      q: slug.replace(/-/g, ''),
+      query_by: 'slug',
       per_page: 1,
       page: 1
     })

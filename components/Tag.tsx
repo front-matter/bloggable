@@ -5,6 +5,10 @@ import Byline from './Byline'
 import Pagination from './Pagination'
 
 export default function Tag({ posts }) {
+  if (!posts) {
+    return null
+  }
+
   return (
     <>
       <div className="relative bg-gray-50 pt-16 pb-16 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8">

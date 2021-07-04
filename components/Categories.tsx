@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Categories(tags) {
+export default function Categories({ tags }) {
   return (
     <div className="bg-white">
       <div className="mx-auto py-4 px-4 max-w-7xl sm:px-6 lg:px-8 lg:pt-16 lg:pb-8">
@@ -18,13 +18,15 @@ export default function Categories(tags) {
             {tags.map((tag) => (
               <li key={tag.id} className="list-none">
                 <div className="space-y-4">
-                  <div className="aspect-w-3 aspect-h-2">
-                    <img
-                      className="object-cover shadow-lg rounded-lg"
-                      src={tag.feature_image}
-                      alt=""
-                    />
-                  </div>
+                  {tag && tag.feature_image && (
+                    <div className="aspect-w-3 aspect-h-2">
+                      <img
+                        className="object-cover shadow-lg rounded-lg"
+                        src={tag.feature_image}
+                        alt=""
+                      />
+                    </div>
+                  )}
                   <div className="space-y-2">
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <Link href={`/categories/${tag.slug}`}>
