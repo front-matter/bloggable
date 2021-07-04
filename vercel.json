@@ -290,14 +290,6 @@
     {
       "source": "/about",
       "destination": "/"
-    },
-    {
-      "source": "/mfenner/:slug",
-      "has": [{
-        "type": "host",
-        "value": "front-matter.io"
-      }],
-      "destination": "https://blog.front-matter.io/mfenner/:slug"
     }
   ]
 }
