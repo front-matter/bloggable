@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Categories({ tags }) {
   return (
@@ -20,7 +21,7 @@ export default function Categories({ tags }) {
                 <div className="space-y-4">
                   {tag && tag.feature_image && (
                     <div className="aspect-w-3 aspect-h-2">
-                      <img
+                      <Image
                         className="object-cover shadow-lg rounded-lg"
                         src={tag.feature_image}
                         alt=""

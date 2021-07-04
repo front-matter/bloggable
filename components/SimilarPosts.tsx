@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactHtmlParser from 'react-html-parser'
 import Link from 'next/link'
+import Image from 'next/image'
 import Byline from './Byline'
 
 export default function SimilarPosts({ posts }) {
@@ -24,7 +25,7 @@ export default function SimilarPosts({ posts }) {
                   key={post.document.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
+                    <Image
                       className="h-48 w-full object-contain"
                       src={
                         post.document.featureImage

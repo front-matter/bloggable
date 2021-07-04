@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactHtmlParser from 'react-html-parser'
 import Link from 'next/link'
+import Image from 'next/image'
 import Byline from './Byline'
 import Pagination from './Pagination'
 
@@ -29,7 +30,7 @@ export default function Tag({ posts }) {
                   key={post.document.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
+                    <Image
                       className="h-48 w-full object-contain"
                       src={
                         post.document.featureImage
@@ -95,7 +96,7 @@ export default function Tag({ posts }) {
                   key={post.document.id}
                 >
                   <div className="flex-shrink-0 bg-white py-6 px-6">
-                    <img
+                    <Image
                       className="h-96 w-full object-contain object-left"
                       src={
                         post.document.featureImage
@@ -161,7 +162,7 @@ export default function Tag({ posts }) {
                   key={post.document.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
+                    <Image
                       className="h-48 w-full object-contain"
                       src={
                         post.document.featureImage
@@ -227,7 +228,7 @@ export default function Tag({ posts }) {
                   key={post.document.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
+                    <Image
                       className="h-48 w-full object-contain"
                       src={
                         post.document.featureImage
@@ -293,7 +294,7 @@ export default function Tag({ posts }) {
                   key={post.document.id}
                 >
                   <div className="flex-shrink-0 bg-white py-6 px-6">
-                    <img
+                    <Image
                       className="h-96 w-full object-contain object-left"
                       src={
                         post.document.featureImage
@@ -359,7 +360,7 @@ export default function Tag({ posts }) {
                   key={post.document.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-2 px-6">
-                    <img
+                    <Image
                       className="h-48 w-full object-contain"
                       src={
                         post.document.featureImage
@@ -425,7 +426,7 @@ export default function Tag({ posts }) {
                   key={post.document.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
+                    <Image
                       className="h-48 w-full object-contain"
                       src={
                         post.document.featureImage

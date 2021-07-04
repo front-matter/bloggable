@@ -1,5 +1,5 @@
 module.exports = {
   siteUrl: 'https://blog.front-matter.io',
   generateRobotsTxt: true,
-  exclude: ['/features', '/pricing', '/resources']
+  exclude: ['/features', '/pricing', '/resources', '/open-source']
 }

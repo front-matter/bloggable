@@ -6,7 +6,7 @@ type Props = {
     imageUrl: string
   }
   published: Date
-  readingTime: Number
+  readingTime: number
 }
 
 const Byline: React.FunctionComponent<Props> = ({

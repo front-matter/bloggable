@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { connectSearchBox } from 'react-instantsearch-dom'
+import logo from '../public/img/logo.svg'
 
 export default function Navbar(props) {
   const SearchBox = ({ currentRefinement, refine }) => (
@@ -38,14 +40,14 @@ export default function Navbar(props) {
               <div className="flex-shrink-0 flex items-center">
                 <Link href="/" passHref>
                   <a href="dummy" className="text-green-600 border-b-0 flex">
-                    <img
+                    <Image
                       className="block lg:hidden h-8 w-auto"
-                      src="/img/logo.svg"
+                      src={logo}
                       alt="Front Matter"
                     />
-                    <img
+                    <Image
                       className="hidden lg:block h-8 w-auto"
-                      src="/img/logo.svg"
+                      src={logo}
                       alt="Front Matter"
                     />
                     <span className="text-lg font-semibold pl-1 pt-1">

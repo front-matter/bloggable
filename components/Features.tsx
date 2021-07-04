@@ -19,6 +19,11 @@ import {
   faComments
 } from '@fortawesome/free-solid-svg-icons'
 import { faDiscourse } from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image'
+import ghostEditor from '../public/img/ghost-editor.png'
+import dataWrapper from '../public/img/datawrapper.png'
+import pdfExport from '../public/img/pdf-export.png'
+import discourse from '../public/img/discourse.png'
 
 export default function Features() {
   return (
@@ -190,10 +195,10 @@ export default function Features() {
                   fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"
                 />
               </svg>
-              <img
+              <Image
                 className="relative mt-16 mx-auto shadow-md"
                 width="720"
-                src="https://assets.front-matter.io/ghost/ghost-editor.png"
+                src={ghostEditor}
                 alt="Ghost editor"
               />
             </div>
@@ -343,10 +348,10 @@ export default function Features() {
                     fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"
                   />
                 </svg>
-                <img
+                <Image
                   className="relative mx-auto mr-16 shadow-md"
                   width="720"
-                  src="https://assets.front-matter.io/ghost/datawrapper.png"
+                  src={dataWrapper}
                   alt=""
                 />
               </div>
@@ -477,10 +482,10 @@ export default function Features() {
                   fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"
                 />
               </svg>
-              <img
+              <Image
                 className="relative mt-16 mx-auto shadow-md"
                 width="680"
-                src="https://assets.front-matter.io/ghost/pdf-export.png"
+                src={pdfExport}
                 alt="PDF Export"
               />
             </div>
@@ -638,10 +643,10 @@ export default function Features() {
                     fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"
                   />
                 </svg>
-                <img
+                <Image
                   className="relative mx-auto mr-16 shadow-md"
                   width="720"
-                  src="https://assets.front-matter.io/ghost/discourse.png"
+                  src={discourse}
                   alt="discourse"
                 />
               </div>
