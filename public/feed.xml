@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-07-04T17:20:39.369Z</updated>
+    <updated>2021-07-10T13:21:39.213Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -12,6 +12,436 @@
     <link rel="self" href="https://blog.front-matter.io/feed.xml"/>
     <subtitle>Front Matter is a science blogging platform.</subtitle>
     <rights>Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
+    <entry>
+        <title type="html"><![CDATA[Reference Lists and Tables of Content]]></title>
+        <id>57eeex2-c0s9mmr-vr1e296-y19sp</id>
+        <link href="https://blog.front-matter.io/mfenner/reference-lists-and-tables-of-content"/>
+        <updated>2016-12-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog post was originally published on the DataCite blog.Geoff Bilder from CrossRef likes to show the following slide at scholarly conferences, and then asks the audience what they see:Most of us probably immediately recognize this document as a scholarly article....]]></summary>
+        <content type="html"><![CDATA[<p>This blog post was <a href="https://doi.org/10.5438/5aeg-weev">originally published</a> on the DataCite blog.</p>
+<p><a href="https://twitter.com/gbilder">Geoff Bilder</a> from CrossRef likes to show the following slide at scholarly conferences, and then asks the audience what they see:</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/08/article-1.png" class="kg-image" />
+</figure>
+<p>Most of us probably immediately recognize this document as a scholarly article. This immediate recognition includes essential parts of an article such as the title - or the reference list:</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/08/article2-1.png" class="kg-image" alt="Paper 2" /><figcaption aria-hidden="true">Paper 2</figcaption>
+</figure>
+<p>This immediate recognition is a powerful concept, it makes it easy for the reader to navigate a scholarly document, e.g. to quickly jump to the abstract or references.</p>
+<p>We don't have the same immediate recognition for datasets. Given that a large number of datasets in DataCite are in CSV (comma separated values) format, the closest we come to a immediately recognized document is probably the spreadsheet:</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Spreadsheet_animation.gif" class="kg-image" alt="Container.From: Wikimedia Commons, licensed under CC BY-SA 3.0." /><figcaption aria-hidden="true">Container.<em>From: <a href="https://commons.wikimedia.org/wiki/File:Spreadsheet_animation.gif">Wikimedia Commons</a>, licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>.</em></figcaption>
+</figure>
+<p>A canonical format for datasets goes beyond immediate recognition of the essential parts by the user, it would also greatly facilitate reuse of data. As <a href="https://twitter.com/nickstenning">Nick Stenning</a> from the Open Knowledge Foundation (OKFN) pointed out at CSV.conf last year, the cost of shipping of goods is in large part determined by the cost of loading and unloading, and the container has dramatically changed that equation. He argued that common formats such as the OKFN <a href="https://frictionlessdata.io/specs/data-package/">data package</a> could do the same for data reuse.</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/08/break-bulk-sacks.png" class="kg-image" alt="Bulk parcels. From: Wikimedia Commons, licensed under CC BY-SA 3.0." /><figcaption aria-hidden="true">Bulk parcels. <em>From: <a href="https://commons.wikimedia.org/wiki/File:Hafenarbeiter_bei_der_Verladung_von_Sackgut_-_MS_Rothenstein_NDL,_Port_Sudan_1960.png">Wikimedia Commons</a>, licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>.</em></figcaption>
+</figure>
+<p>Unfortunately there are at least three problems with using spreadsheets as canonical format for datasets:</p>
+<ul>
+<li>not every dataset can be represented as a CSV file, there are many specialized formats (including of course Excel <code>.xlsx</code>)</li>
+<li>we can't include descriptive metadata (not even authors or document title) in a CSV file</li>
+<li>many datasets actually include a collecting of files: not only in CSV format, but also other data formats and support files such as a README.</li>
+</ul>
+<p>The approach taken by the OKFN data package format - and related formats such as the <a href="https://researchobject.github.io/specifications/bundle/">Research Object Bundle</a> - is to put all data files (in CSV or other formats) into a folder, together with a standardized machine-readable file that includes the metadata (e.g. title, authors, publication date and license). This folder can then compressed with <code>zip</code>, again yielding a single file (a very common approach used for example for <code>epub</code> and <code>docx</code>).</p>
+<p>The concept described here (a collection of documents in a larger container, and a listing of all included documents) is of course at least as old as the scholarly article: the <strong><strong>book</strong></strong> as a canonical format for collections (of texts), and the <strong><strong>table of contents</strong></strong> to describe what is in the book.</p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Table_of_Contents_PANARCHIE_published_in_1860.JPG" class="kg-image" alt="Table of contents. From: Wikimedia Commons, licensed under CC BY-SA 3.0." /><figcaption aria-hidden="true">Table of contents. <em>From: <a href="https://commons.wikimedia.org/wiki/File:Table_of_Contents_PANARCHIE_published_in_1860.JPG">Wikimedia Commons</a>, licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>.</em></figcaption>
+</figure>
+<p>The approach described here would not only help package datasets into a more reusable standard format, but the scholarly article would also greatly benefit from migrating to a container format. We all know that the concept of the scholarly article described at the beginning of this posts is falling apart - an article is simply no longer a single text document. We have not only associated figures and tables, but also associated files that can't be easily included into the article PDF, in particular files that contain the data underlying the findings of the article, but also other supplementary information.</p>
+<p>There are currently three common approaches referencing the underlying data in a scholarly article:</p>
+<ul>
+<li>inclusion in supporting information files without any specific linking</li>
+<li>informal citation in the article text, most commonly in the materials and methods section</li>
+<li>formal citation with inclusion in the reference list</li>
+</ul>
+<p>Until not too long ago I was a big proponent of including all data associated with an article in the reference list, mainly to make it easier to find the data. But the reference list isn't the appropriate place for something that is really part of the article - or as colleague <a href="http://bio.unc.edu/people/faculty/vision/">Todd Vision</a> puts it: the data generated for an article are another <strong><strong>output</strong></strong> rather than an <strong><strong>input</strong></strong>. Reference lists summarize all the inputs to an article, whereas outputs belong into a <strong><strong>table of contents</strong></strong>. A table of contents isn't a standard feature of scholarly articles yet, but to me is a logical next step for the journal article format, together with using the underlying concept of a container format described earlier in this post. Extracting references to datasets from a table of contents should be as easy as extracting them from a reference list, in particular if we make sure that this table of contents is openly available.</p>
+<p>Journal Article Tag Suite (<a href="http://jats.nlm.nih.gov/">JATS</a>) is the standard machine-readable format for journal articles in the life sciences (and increasingly other sciences). At <a href="http://jats.nlm.nih.gov/jats-con/">JATS-CON</a> in April this year I proposed (starting at minute 210) to extend JATS by providing it also as a container format:</p>
+<figure>
+<img src="https://videocast.nih.gov/favicon.ico" class="kg-bookmark-icon" alt="JATS-CON 2015 Day 2" /><figcaption aria-hidden="true">JATS-CON 2015 Day 2</figcaption>
+</figure>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Infrastructure Tips for the Non-Profit Startup]]></title>
+        <id>45yrr4x-acd82z8-e1sbv01-97wdg</id>
+        <link href="https://blog.front-matter.io/mfenner/infrastructure-tips-for-the-non-profit-startup"/>
+        <updated>2015-12-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When I started as DataCite Technical Director four months ago, my first post (Fenner, 2015) on this blog was about what I called <strong><strong>Data-Driven Development</strong></strong>. The post included a lot of ideas on how to approach development and technical infrastructure....]]></summary>
+        <content type="html"><![CDATA[<p>When I started as DataCite Technical Director four months ago, my first post (Fenner, <a href="https://blog.datacite.org/tips-for-the-non-profit-startup/#ref-https://blog.datacite.org/data-driven-development">2015</a>) on this blog was about what I called <strong><strong>Data-Driven Development</strong></strong>. The post included a lot of ideas on how to approach development and technical infrastructure. In this post I want to take a second look.</p>
+<p>While I think the ideas expressed in the blog post are still true, I also learned that the focus of a Technical Director working for a small non-profit is somewhere else. The main challenge might be to properly run infrastructure and technical development with limited resources, both in terms of staff and money. While DataCite isn't a startup (the organization turned six years old this month), we face many of the same challenges. And as a non-profit, we can't take the approach of the typical startup, which in the early stages might have a small staff, but usually can spend more money than it is taking in.</p>
+<h3 id="automate-as-much-as-possible">Automate as much as possible</h3>
+<p>The biggest cost is obviously staff, so it is very important to automate the technical infrastructure as much as possible. Luckily many powerful services and best practices have been developed in the last few years, under the umbrella term <a href="http://theagileadmin.com/what-is-devops/">DevOps</a>. The first step is to go with a cloud infrastructure provider rather than hosting your own servers. While the cost seems higher on paper, it is much easier to automate infrastructure using a cloud provider if you have a small technical team. DataCite infrastructure has been hosted by <strong><strong>Amazon Web Services</strong></strong> (AWS) since the beginning, and we currently see have no plans to change that.</p>
+<p>A large number of tools integrate with AWS, three services that have become essential for DataCite in the past few months are <a href="https://terraform.io/">Terraform</a>, <a href="https://www.packer.io/">Packer</a> and <a href="https://blog.datacite.org/tips-for-the-non-profit-startup/">Chef</a>:</p>
+<ul>
+<li><strong><strong>Terraform</strong></strong> treats infrastructure as code and allows us to have our AWS configuration (EC2 instances, Virtual Private Network, Security Groups, etc.) managed with a set of configuration files stored in a private git repo, e.g.</li>
+</ul>
+<pre><code>resource &quot;aws_route_table&quot; &quot;production&quot; {
+    vpc_id = &quot;${aws_vpc.production.id}&quot;
+    route {
+        cidr_block = &quot;0.0.0.0/0&quot;
+        gateway_id = &quot;${aws_internet_gateway.production.id}&quot;
+    }
+
+    tags {
+        Name = &quot;production&quot;
+    }
+}
+
+resource &quot;aws_main_route_table_association&quot; &quot;production&quot; {
+    vpc_id = &quot;${aws_vpc.production.id}&quot;
+    route_table_id = &quot;${aws_route_table.production.id}&quot;
+}
+
+resource &quot;aws_route_table_association&quot; &quot;production&quot; {
+    subnet_id = &quot;${aws_subnet.production.id}&quot;
+    route_table_id = &quot;${aws_route_table.production.id}&quot;
+}
+
+resource &quot;aws_security_group&quot; &quot;production&quot; {
+  name = &quot;production&quot;
+  description = &quot;production&quot;
+  vpc_id = &quot;${aws_vpc.production.id}&quot;</code></pre>
+<ul>
+<li><strong><strong>Packer</strong></strong> automates the creation of machine and container images. We use Packer to automatically build Amazon Machine Images (AMIs) that we then deploy as EC2 instances using terraform</li>
+</ul>
+<figure>
+<img src="https://blog.datacite.org/images/2015/12/Bildschirmfoto-2015-12-23-um-11-29-50.png" class="kg-image" alt="Packer" /><figcaption aria-hidden="true">Packer</figcaption>
+</figure>
+<ul>
+<li><strong><strong>Chef</strong></strong> for automated configuration management. We use Chef to help Packer build AMIs.</li>
+</ul>
+<pre><code>==&gt; default: [2015-12-22T23:03:53+00:00] INFO: template[/etc/nginx/sites-enabled/dlm.conf] updated file contents /etc/nginx/sites-enabled/dlm.conf
+==&gt; default:
+==&gt; default: - update content in file /etc/nginx/sites-enabled/dlm.conf from c2a428 to fe08d6
+==&gt; default:
+==&gt; default: --- /etc/nginx/sites-enabled/dlm.conf  2015-12-22 22:31:52.136854399 +0000
+==&gt; default:
+==&gt; default: +++ /etc/nginx/sites-enabled/.dlm.conf20151222-13309-1bw1o6p 2015-12-22 23:03:53.161869265 +0000
+==&gt; default:
+==&gt; default: @@ -1,4 +1,4 @@
+==&gt; default:
+==&gt; default: -upstream $backend {
+==&gt; default:</code></pre>
+<p>Terraform, Packer and Chef are open source. We use <a href="https://hashicorp.com/atlas.html">Atlas</a> (commercial, but free for small installations) to combine them into a web-based team workflow. We hope to complete the migration for all DataCite services in the coming months.</p>
+<h3 id="think-carefully-about-build-vs-buy">Think carefully about Build vs. Buy</h3>
+<p>A common approach in the commercial startup world is to focus on the particular product or service that the organization wants to build, and then outsource almost everything else. This is important when there is only a small number of staff and you want to move fast. While this approach also applies to non-profit organizations, the decision of <strong><strong>build vs. buy</strong></strong> will sometimes be different, because some of these outsourced services would just be too expensive, or create a lock-in that would be a problem later on.</p>
+<p>But for the most part I think the risk of trying to build too much yourself is bigger, in particular since many external services have monthly plans, and there are often several alternatives. The biggest consideration is the risk of lock-in, which is of course what all service providers are aiming for.</p>
+<h3 id="open-source-where-it-is-important">Open Source where it is important</h3>
+<p>The software written by DataCite staff to run the DataCite services is all open source, hosted in a <a href="https://github.com/datacite">public Github repository</a>. This is important for a number of reasons, best explained in the Principles of Open Scholarly Infrastructures (Bilder, Lin, &amp; Neylon, <a href="https://blog.datacite.org/tips-for-the-non-profit-startup/#ref-https://doi.org/10.6084/M9.FIGSHARE.1314859">2015</a>). One nice side effect is that a number of important external services are free for open source projects, for example Github or the <a href="https://travis-ci.org/">Travis CI</a> continuous integration service.</p>
+<p>What this doesn't mean is that all software that DataCite uses should be open source. I like the approach that ORCID has taken in the ORCID Principles (“Our principles,” <a href="https://blog.datacite.org/tips-for-the-non-profit-startup/#ref-https://orcid.org/about/what-is-orcid/principles">2011</a>):</p>
+<blockquote>
+All software developed by ORCID will be publicly released under an Open Source Software license approved by the Open Source Initiative. For the software it adopts, ORCID will prefer Open Source.
+</blockquote>
+<p>Some of the services mentioned above (e.g. Google Apps, Slack, AWS) are obviously not open source, and that is ok if they don't create a lock-in or serious dependency for running the DataCite infrastructure. An interesting approach is hosted open source software, such as this blog. We are currently paying <a href="https://ghost.org/">ghost.org</a> a small amount of money to host the blog for us, but we can always move the blog somewhere else or start hosting it ourselves. Our use of AWS is more complex, but similar, all the software (databases, web servers, etc.) we are running is open source, and we can move to a different hosting provider if that is ever needed.</p>
+<h3 id="get-non-profit-discounts">Get Non-Profit Discounts</h3>
+<p>Some organizations provide their infrastructure services for free or a discount to non-profit organizations. DataCite started using <a href="https://apps.google.com/">Google Apps</a> and <a href="https://slack.com/">Slack</a> in August. Both are free for eligible non-profits, for other services such as <a href="https://products.office.com/en-us/nonprofit/office-365-nonprofit">Office 365</a> we get a deep discount.</p>
+<p>Slack has become an essential internal communication tool. Not only because the current five staff members are in three different countries, but also because Slack nicely integrates with a large number of services. This greatly helps with keeping everyone on the same page.</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/12/Bildschirmfoto-2015-12-23-um-11-26-47.png" class="kg-image" alt="Slack" /><figcaption aria-hidden="true">Slack</figcaption>
+</figure>
+<h3 id="start-small-but-make-changes-easy">Start small but make changes easy</h3>
+<p>One trap you can fall into is to think too big when starting out. You should build or buy what you need now or in the near future. At the same time you should make sure that whatever solution you come up with will scale up when needed.</p>
+<p>There are a number of services out there that provide wonderful value, but are not really appropriate for a small non-profit. They solve problems of much larger organizations, e.g. auto-scaling of servers or centralized data analytics.</p>
+<h3 id="cooperate-with-other-non-profit-organizations">Cooperate with other non-profit organizations</h3>
+<p>One important advantage that non-profits have over commercial startups is that it is easier for them to cooperate with other organizations. In the case of DataCite this primarily means with DataCite members and CrossRef.</p>
+<p>Cooperation takes time and effort, and staff time is usually limited when you are a small organization and also have a lot of technical work on your plate. But it is still a worthwhile investment. And I think non-profit organizations in the scholarly communication space could cooperate much more. While there are many cooperations around specific projects and initiatives, I think most of the basics of running the organization, and the technical infrastructure in particular, are not really discussed much. Small non-profits such as DataCite face particular challenges that are different from both commercial organizations and larger non-profits such as academic institutions. I want to spend more time in 2016 working on this, so please contact me if you are interested to help.</p>
+<h2 id="references">References</h2>
+<p>Bilder, G., Lin, J., &amp; Neylon, C. (2015). Principles for open scholarly infrastructures-v1. Retrieved from <a href="https://doi.org/10.6084/M9.FIGSHARE.1314859">https://doi.org/10.6084/M9.FIGSHARE.1314859</a></p>
+<p>Fenner, M. (2015). Data-driven development. DataCite Blog. Retrieved from <a href="https://blog.datacite.org/data-driven-development">https://blog.datacite.org/data-driven-development</a></p>
+<p>Our principles. (2011). ORCID. Retrieved from <a href="https://orcid.org/about/what-is-orcid/principles">https://orcid.org/about/what-is-orcid/principles</a></p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Auto-Update Has Arrived!]]></title>
+        <id>753vqtk-w458aqt-r4ps75m-ww7k4</id>
+        <link href="https://blog.front-matter.io/mfenner/auto-update-has-arrived"/>
+        <updated>2015-10-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog post was originally published on the DataCite blog.<em>This post has been cross-posted from the ORCID blog. We will follow up with a blog post later this week explaining the DataCite auto-update implementation.</em>Since ORCID’s inception,...]]></summary>
+        <content type="html"><![CDATA[<p>This blog post was <a href="https://doi.org/10.5438/ferw-cwhq">originally published</a> on the DataCite blog.</p>
+<p><em>This post has been cross-posted from the <a href="http://orcid.org/blog/2015/10/26/auto-update-has-arrived-orcid-records-move-next-level">ORCID blog</a>. We will follow up with a blog post later this week explaining the DataCite auto-update implementation.</em></p>
+<p>Since ORCID’s inception, our key goal has been to unambiguously identify researchers and provide tools to automate the connection between researchers and their creative works. We are taking a big step towards achieving this goal today, with the launch of <a href="http://orcid.org/blog/2014/11/21/new-functionality-friday-auto-update-your-orcid-record">Auto-Update</a> functionality in collaboration with <a href="http://www.crossref.org/">Crossref</a> and <a href="https://www.datacite.org/">DataCite</a>.</p>
+<p>There’s already been a lot of excitement about Auto-Update: <a href="https://www.crossref.org/blog/crossref-to-auto-update-orcid-records/">Crossref’s recent announcement</a> about the imminent launch generated a flurry of discussion and celebration on social media. Our own <a href="https://twitter.com/ORCID_Org/status/647020600192581633">tweet</a> on the topic was viewed over 10,500 times and retweeted by 60 other accounts.</p>
+<p>So why all the fuss? We think Auto-Update will transform the way researchers manage their scholarly record. Until now, researchers have had to manually maintain their record, connecting new activities as they are made public. In ORCID, that meant using <a href="https://support.orcid.org/hc/en-us/articles/360006973653-Add-works-by-direct-import-from-other-systems">Search &amp; Link</a> tools developed by our member organizations to claim works manually. Researchers frequently ask, “Why, if I include my ORCID iD when I submit a manuscript or dataset, isn’t my ORCID record “automagically” updated when the work is published?”</p>
+<p>With the launch of Auto-Update, that is just what will happen.</p>
+<p><strong><strong>It might seem like magic but there are a few steps to make it work</strong></strong>:</p>
+<ul>
+<li><strong><strong>Researchers</strong></strong>. You need to do two things: (1) use your ORCID iD when submitting a paper or dataset, and (2) authorize Crossref and DataCite to update your ORCID record. In keeping with our commitment to ensuring that researchers maintain full control of their ORCID record, you may revoke this permission at any time, and may also choose privacy settings for the information posted on your record.</li>
+<li><strong><strong>Publishers and data centers</strong></strong>. These organizations also have two things to do: (1) collect ORCID identifiers during the submission workflow, using a process that involves authentication (not a type-in field!), and (2) embed the iD in the published paper and include the iD when submitting information to Crossref or DataCite.</li>
+<li><strong><strong>Crossref and DataCite</strong></strong>. Upon receipt of data from a publisher or data center with a valid identifier, Crossref or DataCite can automatically push that information to the researcher’s ORCID record. More information about how to opt out of this service can be found here: <a href="https://support.orcid.org/hc/en-us/articles/360006972953">the ORCID Inbox</a>.</li>
+</ul>
+<figure>
+<img src="https://blog.datacite.org/images/2015/10/graph.png" class="kg-image" alt="Automagically" /><figcaption aria-hidden="true">Automagically</figcaption>
+</figure>
+<h3 id="why-is-this-so-revolutionary">Why is this so revolutionary?</h3>
+<p>A bit of background, first. Crossref and DataCite, both non-profit organizations, are leaders in minting DOIs (Digital Object Identifiers) for research publications and datasets. A <a href="http://www.crossref.org/01company/16fastfacts.html#sthash.o7NGwOnP.dpuf">DOI</a> is a unique alphanumeric string assigned to a digital object – in this case, an electronic journal article, book chapter, or a dataset. Each DOI is associated with a set of basic metadata and a URL pointer to the full text, so that it uniquely identifies the content item and provides a persistent link to its location on the internet.</p>
+<p>Crossref, working with over a thousand scholarly publishers, has generated well over 75 million DOIs for journal articles and book chapters. DataCite works with nearly 600 data centers worldwide and has generated over 6.5 million DOIs to date. Between them, Crossref and DataCite have already received almost a half a million works from publishers and data centers that include an ORCID iD validated by the author/contributor. With Auto-Update functionality in place, information about these articles can transit (with the author’s permission) to the author’s ORCID record.</p>
+<p>Auto-Update doesn’t stop at a researcher’s ORCID record. Systems that have integrated ORCID APIs and have a researcher’s ORCID record connected to that system -- their faculty profile system, library repository, webpage, funder reporting system -- can receive alerts from ORCID. Information can move easily and unambiguously across systems.</p>
+<p>This is the beginning of the end for the endless rekeying of information that plagues researchers -- and anyone involved in research reporting. Surely something to celebrate!</p>
+<p><strong><strong>Questions you may have</strong></strong>:</p>
+<h4 id="q-what-do-i-need-to-do-to-sign-up-for-auto-update">Q. What do I need to do to sign up for auto-update?</h4>
+<p>You need to grant permission to Crossref and DataCite to post information to your ORCID record. You can do this today by using the Search and Link wizard for DataCite available through the ORCID Registry or the <a href="https://search.datacite.org/">DataCite Search</a> page. We also have added a new ORCID Inbox, so that you can receive a message from Crossref or DataCite if they receive a datafile with your iD, and you can grant permission directly. See <a href="https://support.orcid.org/hc/en-us/articles/360006972953">more on the ORCID Inbox</a>.</p>
+<h4 id="q-will-crossref-and-datacite-be-able-to-update-my-orcid-record-with-already-published-works-for-which-i-did-not-use-my-orcid-id">Q. Will Crossref and DataCite be able to update my ORCID record with already published works for which I did not use my ORCID iD?</h4>
+<p>No. The auto-update process only applies to those works that these organizations receive that include your ORCID iD. For previous works that did not include your ORCID iD, you will need to use the DataCite and Crossref Search and Link wizards to connect information with your iD.</p>
+<h4 id="q-what-information-will-be-posted-to-my-record">Q. What information will be posted to my record?</h4>
+<p>With your permission, basic information about the article (such as title, list of contributors, journal or publisher) or dataset (such as data center name and date of publication) will be posted, along with a DOI that allows users to navigate to the source paper or dataset landing page.</p>
+<h4 id="q-what-if-my-journal-or-data-center-doesn%E2%80%99t-collect-orcid-ids">Q. What if my journal or data center doesn’t collect ORCID iDs?</h4>
+<p>Ask them too! This simple step can be accomplished using either the Public or Member ORCID APIs. Information about integrating ORCID iDs in <a href="http://members.orcid.org/publisher-workflow">publishing</a> and <a href="http://members.orcid.org/repository-systems">repository</a> workflows is publicly available.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Software Citation Workflows]]></title>
+        <id>1gxaeew-mv98qkv-q5yhqda-j8e1c</id>
+        <link href="https://blog.front-matter.io/mfenner/software-citation-workflows"/>
+        <updated>2015-10-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog post was originally published on the DataCite blog.<em>This blog post provides more detail for a short presentation I will give today at the Software Credit Workshop in London. The aim is to look at the infrastructure pieces needed for software discovery and credit,...]]></summary>
+        <content type="html"><![CDATA[<p>This blog post was <a href="https://doi.org/10.5438/1h7n-3cen">originally published</a> on the DataCite blog.</p>
+<p><em>This blog post provides more detail for a short presentation I will give today at the <a href="http://www.software.ac.uk/software-credit">Software Credit Workshop</a> in London. The aim is to look at the infrastructure pieces needed for software discovery and credit, and at the workflows linking these different parts of the infrastructure.</em></p>
+<h3 id="code-repository">Code Repository</h3>
+<p>Code repositories are the places where the actual work on software takes place, and for scientific software this often means that it happens in public with the use of an open license. Code repositories are increasingly integrated with additional services from issue trackers to continuous integration testing.</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/10/code_repositories.png" class="kg-image" alt="Code repositories" /><figcaption aria-hidden="true">Code repositories</figcaption>
+</figure>
+<p>One big problem with code repositories is that they are not intended as long-term archives for code. Github and Bitbucket didn't even exist 8 years ago, and Google Code will be <a href="http://google-opensource.blogspot.de/2015/03/farewell-to-google-code.html">shut down in January 2016</a>.</p>
+<h3 id="data-repository">Data Repository</h3>
+<p>Long-term archiving of software is best done in dedicated data repositories, the two most popular in terms of DataCite DOIs are <a href="https://zenodo.org/">Zenodo</a> (close to <a href="https://search.datacite.org/?query=%2A&amp;resourceType_facet=Software&amp;datacentre_facet=CERN.ZENODO+-+ZENODO+-+Research.+Shared.">5000</a> DOIs for software) and <a href="https://nanohub.org/">NanoHub</a> (about <a href="https://search.datacite.org/?query=%2A&amp;resourceType_facet=Software&amp;datacentre_facet=PURDUE.EZID+-+Purdue+University">2,000</a> DOIs for software). NanoHub uses the open source <a href="https://hubzero.org/">HubZero</a> software that integrates a subversion code repository, whereas Zenodo has built an integration with Github, described in this <a href="https://guides.github.com/activities/citable-code/">guide</a>.</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/10/Bildschirmfoto-2015-10-18-um-14-01-39.png" class="kg-image" alt="Making your code citable" /><figcaption aria-hidden="true">Making your code citable</figcaption>
+</figure>
+<p>Providing a long-term archive for code is needed to properly cite software, similarly to what we expect for research data and scholarly articles. We of course don't have to use DOIs for this, but DOIs make citation easier by requiring basic citation metadata, are supported by reference managers, and we can provide formatted citations via <a href="http://www.crosscite.org/">DOI content negotiation</a>, e.g. in <a href="https://search.datacite.org/?query=10.5281/ZENODO.32193">DataCite Labs Search</a>:</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/10/Bildschirmfoto-2015-10-18-um-13-59-34.png" class="kg-image" alt="Citation style" /><figcaption aria-hidden="true">Citation style</figcaption>
+</figure>
+<p>The Github/Zenodo integration assigns a DOI to a particular <a href="https://github.com/blog/1547-release-your-software">Github release</a> of a software repo. This is perfect for a citation, which should be specific for the software version used in a particular research project. In addition, users of software and software authors want to know who is citing or otherwise re-using all versions of the software. In order for this to work we need to think beyond a specific release and link that release to other releases and to the Github repository itself. The repository has no DOI attached to it in the current workflow, so this has to be done in a service separate from the DataCite Metadata Store.</p>
+<h3 id="claim-store">Claim Store</h3>
+<p>We can expand the DataCite Data-Level Metrics service or Claim Store <a href="https://blog.datacite.org/announcing-data-level-metrics-in-datacite-labs/">described in an earlier post</a> to properly handle Github repositories, and the first implementation is <a href="https://eventdata.test.datacite.org/">available now</a> in DataCite Labs. Continuing with the earlier example of the Python <strong><strong>librosa</strong></strong> library, the DataCite Claim store tracks links between release, repository and repository owner:</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/10/Bildschirmfoto-2015-10-18-um-17-07-48.png" class="kg-image" alt="Claim store" /><figcaption aria-hidden="true">Claim store</figcaption>
+</figure>
+<p>These links are made available in DataCite Labs Search (<a href="https://search.datacite.org/?query=librosa+python">link</a>), so that users can go directly to either the specific release or the code repository landing page instead of the archived version on Zenodo:</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/10/Bildschirmfoto-2015-10-18-um-17-40-51.png" class="kg-image" alt="Zenodo" /><figcaption aria-hidden="true">Zenodo</figcaption>
+</figure>
+<p>We can use the claim store to not only store those links, but also to track metrics around the software package over time, e.g. the number of Github stars and forks (349 and 68 for a combined 417 in this case):</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/10/Bildschirmfoto-2015-10-18-um-17-11-46.png" class="kg-image" alt="GitHub" /><figcaption aria-hidden="true">GitHub</figcaption>
+</figure>
+<p>We will be building out this service in the coming months with the goal of tracking all software packages with DOIs linked to a Github release. Future iterations may also show the number of Github stars and forks directly in the search results. And because the Claim Store provides an open API, this information can also be integrated in other places, most obviously Zenodo.</p>
+<h3 id="language-and-domain-repository">Language and Domain Repository</h3>
+<p>Language-specific repositories hold all software packages from a particular language, e.g. <a href="https://pypi.python.org/pypi">pypi</a> for Python or <a href="https://cran.r-project.org/">CRAN</a> for R, with a search interface for discovery and a specific format that allows for automatic installation. Although not all scientific software is submitted to these repositories, they are usually the place that software developers go to first for discovery and installation, using a package manager working with these repositories.</p>
+<p>Domain-specific repositories such as the Astrophysics Source Code Library (<a href="http://ascl.net/">ASCL</a>) or <a href="https://www.bioconductor.org/">Bioconductor</a> serve important roles for discovery and community building. Both their strength and limitation is their domain-specific nature. They complement the source code repositories mentioned above. One important function of domain-specific repositories is to act as a filter for scientific software. Other approaches to identify software as scientific include:</p>
+<ul>
+<li>software that has a DOI (Zenodo, above)</li>
+<li>software using specific tags (Depsy, see below)</li>
+<li>software cited in the scholarly literature (ScienceToolbox)</li>
+</ul>
+<h3 id="metrics-data-provider">Metrics Data Provider</h3>
+<p>Language-specific repositories provide the detailed information that is needed to more extensively track reuse of a software package. <a href="http://depsy.org/">Depsy</a> is a new software metrics data provider by the Impactstory Team that will launch later this month, and will provide detailed information about reuse, including citations in the scholarly literature. Again using <strong><strong>librosa</strong></strong> as an example, Depsy provides the following information:</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/10/Bildschirmfoto-2015-10-18-um-12-14-48.png" class="kg-image" alt="Depsy" /><figcaption aria-hidden="true">Depsy</figcaption>
+</figure>
+<p>Of particular interest is how Depsy tracks reuse, as the service follows all the dependencies and dependencies of dependencies of a software package, described as transitive credit by Dan Katz (<a href="https://blog.datacite.org/software-citation-workflows/#ref-https://doi.org/10.5334/jors.be">2014</a>). Depsy is currently tracking software packages in <strong><strong>pypi</strong></strong> and <strong><strong>CRAN</strong></strong>, and an open API is available. Once Depsy has launched, it would of course be of great interest to integrate data from the service into the DataCite Claim Store, and Depsy is providing an open API for this.</p>
+<h2 id="references">References</h2>
+<p>Katz, D. (2014). Transitive credit as a means to address social and technological concerns stemming from citation and attribution of digital products. <em>Journal of Open Research Software</em>, <em>2</em>(1), e20. Retrieved from <a href="https://doi.org/10.5334/jors.be">https://doi.org/10.5334/jors.be</a></p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Persistent Identifiers: Enabling Services for Data Intensive Research]]></title>
+        <id>29x4qq5-5as8akb-3x52k3y-khhdy</id>
+        <link href="https://blog.front-matter.io/mfenner/persistent-identifiers-enabling-services-for-data-intensive-research"/>
+        <updated>2015-09-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog post was originally published on the DataCite blog.Yesterday DataCite and ePIC co-hosted the workshop Persistent Identifiers: Enabling Services for Data Intensive Research. Below is a short summary of the tweets,...]]></summary>
+        <content type="html"><![CDATA[<p>This blog post was <a href="https://doi.org/10.5438/jm9f-325f">originally published</a> on the DataCite blog.</p>
+<p>Yesterday DataCite and <a href="http://www.pidconsortium.eu/">ePIC</a> co-hosted the workshop <a href="http://www.eventbrite.com/e/persistent-identifiers-enabling-services-for-data-intensive-research-tickets-17500184523">Persistent Identifiers: Enabling Services for Data Intensive Research</a>. Below is a short summary of the tweets, all using the hashtag <a href="https://twitter.com/hashtag/pid_paris?src=hash">#pid_paris</a>.</p>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<blockquote>
+Emerging theme: the number of PID solutions is overwhelming to researchers. What we need to provide are reliable suggestions. <a href="https://twitter.com/hashtag/pid_paris?src=hash">#pid_paris</a>(<strong><strong>???</strong></strong>) <a href="https://twitter.com/elisedunham/status/645970130627887105">September 21, 2015</a>
+</blockquote>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<div class="iframe">
+<div id="app">
+
+</div>
+</div>
+<p>The last tweet shows the views from the reception. If you have any questions or comments about the event, use the hashtag <a href="https://twitter.com/hashtag/pid_paris?src=hash">#pid_paris</a> on Twitter, or use the comments of this blog.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adding References to the DataCite Blog]]></title>
+        <id>fscfb1t-dr9q2v8-h63qpxc-m2hy</id>
+        <link href="https://blog.front-matter.io/mfenner/adding-references-to-the-datacite-blog"/>
+        <updated>2015-09-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog post was originally published on the DataCite blog.We launched this blog six weeks ago on a hosted version of Ghost, the open source blogging platform. Ghost doesn't have all the features of Wordpress or other more mature blogging platforms,...]]></summary>
+        <content type="html"><![CDATA[<p>This blog post was <a href="https://doi.org/10.5438/2wfx-2hz1">originally published</a> on the DataCite blog.</p>
+<p>We launched this blog six weeks ago on a hosted version of <a href="https://ghost.org/">Ghost</a>, the open source blogging platform. Ghost doesn't have all the features of Wordpress or other more mature blogging platforms, but it is a pleasure to use. The other alternative would have been to put the blog up on the Drupal-based main <a href="http://www.datacite.org/">DataCite website</a>, but Drupal is really a content-management system and usually not the best choice for a serious blog.</p>
+<p>What all the above systems (Ghost, Wordpress, Drupal) have in common is that they need a web server and database backend. This is fine for the standard blog, but it becomes a problem once you start thinking about customizing your blog. In the case of the DataCite blog I want to be able to provide the following:</p>
+<ul>
+<li>the addition of proper citations and references</li>
+<li>a PDF (and possibly ePub) version for downloading and archiving</li>
+<li>a register blog posts with a DOI</li>
+</ul>
+<p>Since DataCite is in the business of providing DOI names for scholarly content, the above is a pretty obvious wish list. Some people might argue about the content of this blog needing a DOI, but DOIs have been used for similar content for many years, whether it is for frontmatter content (editorials, opinion pieces, etc.) in journals, or in services such as <a href="https://www.nature.com/news">Nature News</a>.</p>
+<p>Out of the box the standard blogging platforms mentioned above don't support references or DOI registration, so a bit of extra work is needed. The easiest way to do this is to switch to a simpler blogging platform. Luckily there are a lot of choices among these so-called <strong><strong>static site generators</strong></strong>, which don't need a database and simply generate HTML files. Adding the features from the above wish list then becomes a straightforward process and that is what I have started doing.</p>
+<p>As of this week, we support references, as you can see in this blog post(<strong><strong>???</strong></strong>) from two weeks ago.</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/09/Bildschirmfoto-2015-09-15-um-20-19-48.png" class="kg-image" alt="References" /><figcaption aria-hidden="true">References</figcaption>
+</figure>
+<p>The picture is from the PDF version of the post, where the integration with the blog is still ongoing.</p>
+<p>The <em>DataCite Labs Blog</em> looks very similar to the <em>DataCite Blog</em>, but under the hood is using the <a href="https://github.com/jekyll/jekyll">Jekyll</a> static site generator, and the <a href="http://pandoc.org/README.html">Pandoc</a> document conversion software. This is a popular combination used by several scholarly bloggers, e.g. <a href="http://www.carlboettiger.info/2015/01/07/automated-knitr-in-jekyll.html">Carl Boettiger</a>. Jekyll is written in Ruby, and there are at least two Ruby gems that allow automatic deposition in Zenodo (<a href="https://github.com/sprotocols/zenodo">zenodo gem</a>), or the DataCite Metadata Store (<a href="https://github.com/datacite/datacite_doi_ify">datacite_doi_ify gem</a>) to automate archiving and DOI registration.</p>
+<p>Of course DOI registration doesn't all of the sudden make blog content more ​​<em>scholarly</em>​, but it can make it easier to find. For example, blog posts can be found by searching CrossRef or DataCite's metadata, and links can be discovered between blog posts and scholarly articles (or datasets) by using the DataCite metrics pilot, which we <a href="https://blog.datacite.org/announcing-data-level-metrics-in-datacite-labs">announced last week</a>. To facilitate this we need to deposit the references with the metadata we send to DataCite, e.g. for the three scholarly articles, one software repository, one dataset and one data paper you see in the picture above.</p>
+<p>A little more work is needed before the <em>Labs Blog</em> can become the official <em>DataCite Blog</em>, and as always we appreciate your feedback. The blog itself is stored in a <a href="https://github.com/datacite/blog">public Github repository</a>, so feel free to reuse any of the code. We use the <a href="https://travis-ci.org/">Travis</a> continuous integration tool to automatically generate the HTML pages for the blog, and then push the newly generated HTML content to <a href="https://aws.amazon.com/s3/">Amazon S3</a> for hosting.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Pilot to Service]]></title>
+        <id>1ht5dmd-mrg848r-e0ka5ef-5hxf8</id>
+        <link href="https://blog.front-matter.io/mfenner/from-pilot-to-service"/>
+        <updated>2015-08-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<em>This blog post was originally published on the DataCite blog.</em>Today I am pleased to announce the launch of a new service, DataCite Labs Search – the service is available immediately at https://search.datacite.org/....]]></summary>
+        <content type="html"><![CDATA[<p><em>This blog post was <a href="https://doi.org/10.5438/s8gf-0ck9">originally published</a> on the DataCite blog.</em></p>
+<p>Today I am pleased to announce the launch of a new service, DataCite Labs Search – the service is available immediately at <a href="https://search.datacite.org/">https://search.datacite.org/</a>. This is one of <a href="http://project-thor.eu/">THOR</a>’s first services and is based on work in the earlier EC-funded <a href="http://odin-project.eu/">ODIN Project</a>.</p>
+<p>The ODIN project <a href="http://odin-project.eu/2013/05/13/new-orcid-integrated-data-citation-tool/">launched the DataCite/ORCID claiming tool</a> in June 2013. The DataCite/ORCID claiming tool allows users to add works from the DataCite Metadata Store (MDS) to their ORCID profile. This was a successful pilot, enabling researchers to add their datasets to the ORCID service infrastructure.</p>
+<p>THOR, the follow-up project to ODIN, started in June 2015. One of the goals of THOR is to build sustainable persistent identifier services based upon the piloting work done in ODIN.</p>
+<p>The new DataCite Labs Search includes all functionality of the DataCite/ORCID claiming tool, but we have made some additional changes:</p>
+<ul>
+<li>re-deployed the service in the DataCite data center,</li>
+<li>merged the code repository back with the original CrossRef repo, and</li>
+<li>started work on making the service the default DataCite search.</li>
+</ul>
+<p><a href="http://blog.datacite.org/overcoming-development-pain/">Last week</a> I spoke a bit about the differences between how to deploy a pilot project and a production service.</p>
+<h3 id="crosscite">Crosscite</h3>
+<p>The DataCite/ORCID claim tool was started in 2013 as a fork of the <a href="https://github.com/CrossRef/cr-search">open source code</a> for the <a href="http://search.crossref.org/">CrossRef Metadata Search</a>. There are some subtle, but important differences between the CrossRef and DataCite Search API, and some other changes were introduced as well. Going forward we wanted to bring the two code bases together again, both for faster development and to make it easier for users: there shouldn't for example be much of a difference for a user between claiming a work to your ORCID profile from the CrossRef Metadata Search and the DataCite Labs Search. Since this month development happens in a common code repository in the <strong><strong>Crosscite</strong></strong> Github organization, and the project has been renamed to <a href="https://github.com/crosscite/doi-metadata-search">doi-metadata-search</a>. You can follow along development via Github Issues or <a href="https://waffle.io/crosscite/doi-metadata-search">this waffle.io board</a>:</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/08/Bildschirmfoto-2015-08-17-um-15-27-14.png" class="kg-image" alt="Waffle.io" /><figcaption aria-hidden="true">Waffle.io</figcaption>
+</figure>
+<h3 id="search">Search</h3>
+<p>Allowing users to add works with DataCite DOIs to their ORCID profile should not be done in a separate service, but is ideally part of the standard search interface to DataCite that users use anyway. We therefore have to make <a href="https://search.datacite.org/">DataCite Labs Search</a> at least as good as the current DataCite Search. Both services use the DataCite Search API as their backend, but the user interface they provide is different. Some of the differences in Labs Search include:</p>
+<ul>
+<li>a single search box</li>
+<li>all information is shown in a list view, no linking to pages on data.datacite.org</li>
+<li>citation formatter</li>
+<li>filter results by Creative Commons license</li>
+<li>an updated user interface</li>
+</ul>
+<figure>
+<img src="https://blog.datacite.org/images/2015/08/Bildschirmfoto-2015-08-17-um-14-05-16.png" class="kg-image" alt="DataCite Search" /><figcaption aria-hidden="true">DataCite Search</figcaption>
+</figure>
+<p>The single input field for searching should be appropriate for most queries, but Labs Search also supports <a href="https://cwiki.apache.org/confluence/display/solr/The+DisMax+Query+Parser">DisMax</a> query syntax for more complex searches, and automatically detects DOI and ORCID names. Try some more complex queries, e.g. all presentations by a particular person.</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/08/Bildschirmfoto-2015-08-17-um-14-13-09.png" class="kg-image" alt="Citation" /><figcaption aria-hidden="true">Citation</figcaption>
+</figure>
+<p>Providing the metadata as formatted citation is an important feature that facilitates data citation. With BibTeX and RIS two standard import formats for reference managers are also supported. This feature is basically unchanged since 2013, and relies on the <a href="http://crosscite.org/">DOI content negotiation</a> API provided by several DOI registration agencies. In addition, COinS is supported, allowing the import of multiple items at once, e.g. into a reference manager.</p>
+<figure>
+<img src="https://blog.datacite.org/images/2015/08/Bildschirmfoto-2015-08-17-um-14-22-48.png" class="kg-image" alt="COinS" /><figcaption aria-hidden="true">COinS</figcaption>
+</figure>
+<p>Allowing users to search for content based on what they are allowed to do with it is another important feature of Labs Search. We are using the <strong><strong>rightsURI</strong></strong> metadata field and the standard Creative Commons licenses. You can for example limit your search to content that uses the standard Wikipedia license <a href="https://en.wikipedia.org/wiki/Wikipedia:CC_BY-SA_Compliance">CC-BY-SA</a> (see above), or you might exclude content that doesn't allow commercial reuse and/or derivative works. The <strong><strong>rightsURI</strong></strong> field allows for multiple licenses, but unfortunately less than 25% of DataCite DOI metadata include a Creative Commons license.</p>
+<h3 id="labs">Labs</h3>
+<p>We are launching this updated tool as a DataCite Labs service instead of replacing the production service at search.datacite.org. There are two reasons: a) there are still some rough edges and possibly bugs, and b) we need to collect broader feedback from users before this can replace the current DataCite search. We plan to do this switch in the next 1-3 months, depending on user feedback. Please comment on this blog post, open a <a href="https://github.com/crosscite/doi-metadata-search/issues">Github issue</a>, tweet about it mentioning <strong><strong>(<strong><strong>???</strong></strong>)</strong></strong>, or send an email to <strong><strong>support@datacite.org</strong></strong>.</p>
+<p>Expect to see more new/updated DataCite services first appearing as DataCite Labs in the future.</p>
+<h3 id="thanks">Thanks</h3>
+<p>This is a collaborative effort and I want to thank the DataCite and THOR teams, and in particular Karl Ward, Gudmundur Thorisson, Sebastian Peters, Rob Peters, Laura Rueda, Tom Demeranville, Geoff Bilder, Laure Haak and Laura Paglione.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Thank you PLOS]]></title>
         <id>5ee13mc-vp69p8b-29prg83-06v9f</id>
@@ -799,6 +1229,31 @@ One Ring to rule them all, One Ring to find them, One Ring to bring them all and
 <li>list all books with a Creative Commons CC-BY license that were published this year</li>
 </ul>
 <p>Funder (via FundRef) information is also included, but is still incomplete. Another interesting result is the number of <a href="https://sensiblescience.io/mfenner/direct-links-to-figures-and-tables-using-component-dois/">component DOIs</a> (DOIs for figures, tables or other parts of a document) per year:</p>
+<div class="iframe">
+<div id="__svelte-dw" class="dw-chart chart vis-height-fit theme-datawrapper-data vis-column-chart">
+<div id="header" class="dw-chart-header">
+<h1 class="block headline-block" id="component-dois-per-year"><span class="block-inner">Component DOIs per year</span></h1>
+<p><span class="block-inner">Number of component DOIs (DOIs for figures, tables or other parts of a document) per year.</span></p>
+</div>
+<div id="chart" class="dw-chart-body" aria-hidden="false">
+
+</div>
+<div id="footer" class="dw-chart-footer">
+<div class="footer-left">
+<span class="footer-block source-block"> <span class="block-inner"><span class="source-caption">Source:</span> <span class="source">Crossref</span></span> </span><span class="separator separator-before-get-the-data"></span> <span class="footer-block get-the-data-block"> <span class="block-inner"><a href="data" class="dw-data-link">Get the data</a></span> </span>
+</div>
+<div class="footer-center">
+
+</div>
+<div class="footer-right">
+
+</div>
+</div>
+<div class="dw-after-body">
+
+</div>
+</div>
+</div>
 <p>For my specific use case I wanted an API call that returns all articles published by PLOS (or any other publisher) in the last day which I can then run regularly. To get all DOIs from a specific publisher, use their CrossRef member ID - DOI prefixes don’t work, as publishers can own more than one DOI prefix. To make this task a little easier I built a CrossRef member search interface into the ALM application:</p>
 <figure>
 <img src="https://assets.front-matter.io/ghost/2021/April/10th/crossref_api.png" class="kg-image" width="1170" height="774" />
@@ -834,6 +1289,17 @@ One Ring to rule them all, One Ring to find them, One Ring to bring them all and
 <img src="https://assets.front-matter.io/ghost/2021/April/9th/okfest-2014-logo.png" class="kg-image" width="900" height="344" />
 </figure>
 <p>Of all the things that were discussed I want to pick one theme that resonated in particular with me. It surfaced in many places, but was articulated particularly well by <a href="https://twitter.com/erichysen">Eric Hysen</a> - who heads the <a href="http://www.google.com/elections/ed/us">Google Politics &amp; Elections Group</a> - in his keynote yesterday (starting at 54:52, but please also watch the keynote by Neelie Kroes, Vice-President of the European Commission):</p>
+<div class="iframe">
+<div id="player">
+
+</div>
+<section id="an-error-occurred." class="message player-unavailable">
+<h1 class="message">An error occurred.</h1>
+<div class="submessage">
+<a href="https://www.youtube.com/watch?v=0UNRZEsLxKc">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
+</div>
+</section>
+</div>
 <p>In his keynote he described how travel from Cambridge to London in the 18th and early 19th century improved mainly as a result of better roads, made possible by changes in how these roads were financed. Translated to today, he urged the audience to think more about the infrastructure and less about the end products:</p>
 <blockquote>
 Ecosystems, not apps – Eric Hysen
@@ -1948,6 +2414,32 @@ Play
 An open source tool helping anyone to create simple, correct and embeddable charts in minutes.
 </blockquote>
 <p>Datawrapper uses the <strong><strong>d3.js</strong></strong> and <strong><strong>Highcharts</strong></strong> Javascript libraries for data visualizations, and the service is easy to use. It took me for example about 15 min to generate the chart below. The data used for the chart are embedded (click <strong><strong>Get the data</strong></strong>) and you can hover over the chart to see the actual numbers by month.</p>
+<div class="iframe">
+<div id="__svelte-dw" class="dw-chart chart vis-height-fit theme-datawrapper-data vis-d3-lines">
+<div id="header" class="dw-chart-header">
+<h1 class="block headline-block" id="monthly-article-views-over-time"><span class="block-inner">Monthly Article Views Over Time</span></h1>
+<p><span class="block-inner">Monthly HTML views from the PLOS website for two PLOS Medicine articles published July 21, 2009. The striking difference in usage between "Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement" (https://doi.org/10.1371/journal.pmed.1000097) and "Can the Relationship between Doctors and Drug Companies Ever Be a Healthy One?" (https://doi.org/<a href="https://doi.org/10.1371/journal.pmed.1000075" class="id-link">10.1371/journal.pmed.1000075</a>) becomes apparent only 18 months after publication.<br />
+</span></p>
+</div>
+<div id="chart" class="dw-chart-body" aria-hidden="false">
+
+</div>
+<div id="footer" class="dw-chart-footer">
+<div class="footer-left">
+<span class="footer-block byline-block"> <span class="block-inner"><span class="byline-caption">Chart:</span> Martin Fenner </span> </span><span class="separator separator-before-source"></span> <span class="footer-block source-block"> <span class="block-inner"><span class="source-caption">Source:</span> <a href="http://www.plosmedicine.org/" class="source">PLOS</a></span> </span><span class="separator separator-before-get-the-data"></span> <span class="footer-block get-the-data-block"> <span class="block-inner"><a href="data" class="dw-data-link">Get the data</a></span> </span>
+</div>
+<div class="footer-center">
+
+</div>
+<div class="footer-right">
+
+</div>
+</div>
+<div class="dw-after-body">
+
+</div>
+</div>
+</div>
 <p>Most journal articles see the highest usage immediately after publication, and the light purple line shows this pattern for Darcy et al. (2009). The dark purple line for Moher et al. (2009) – published on the same day – on the other hand shows a highly unusual usage pattern, as the usage actually increases over time, starting about 1 1/2 years after publication. The article is a guideline for reporting systematic reviews and meta-analyses, and is now viewed more often than directly after publication four years ago.</p>
 <p>Datawrapper does three things: it makes it easy to generate charts, it allows you to embed them directly into your webpage (using an <code>&lt;iframe&gt;</code> tag), and it is Open Source software (MIT license, Github repo <a href="https://github.com/datawrapper/datawrapper">here</a>) so that you can help improve the code and host this service on your own. DataWrapper was written in Javascript and PHP by a group of German journalists, and the main focus is data journalism where the service has become really <a href="http://blog.datawrapper.de/2013/datawrapper-crosses-mark-of-10-million-visits/">popular</a> with more than 3.5 million views of embedded charts in May 2013 alone.</p>
 <p>Datawrapper is a perfect tool for science blogs and websites with scientific content, but it can also enhance the charts in scientific articles. We need a few additional chart types, error bars and more flexible labeling. And we might want to add a license picker, making it easy to add a Creative Commons license so that it is clear how the chart can be reused. Datawrapper is intended for online use, but the service can also save the charts as PNG or PDF. We would want to add saving to SVG (already used for online rendering) for easier embedding into the XML and ePub versions of articles.</p>
@@ -7559,152 +8051,6 @@ Ueli Grossniklaus then talked about epigenetics in the struggle between the two 
 <p>Saturday had two more sessions before the end of the meeting. Irina Stancheva from the Wellcome Trust Centre for Cell Biology at the University of Edinburgh started us into the day with a talk on epigenetics in mouse development.</p>
 <p>One form of epigenetic silencing is methylation of cytosine bases in DNA. This is done by DNA methyltransferases like Dnmt1 for maintenance methylation, or Dnmt3a and Dnmt3b for de novo methylation, at CpG sequences enriched at promoters. During mouse embryonic development, DNA methylation is essential, for a loss of either of the DNA methyltransferases is embryonically lethal. Methylation and demethylation during development is surprisingly dynamic, with loss and new gain, and differences between the embryo and the trophectoderm. Besides the Dnmts, there are further proteins involved in the regulation of methylation levels. One interesting protein here is Lsh, a chromatin remodelling ATPase belonging to the SNF2 family. It seems to have a low ATPase activity in vitro, but it cooperates with several known factors like the DNA methyltransferases and Histone deacetylases. With mouse promoter microarrays, Irina Stancheva's group compared wildtype and Lsh knockout cells, and found a reduction in promoter methylation when Lsh is missing. The patterns of DNA methylation observed in Lsh null cells suggest that this protein has a role in developmentally-programmed methylation events in the early mouse embryo.</p>
 <p>Dominique Soldati-Favre from the University of Geneva in Switzerland gave an interesting talk about her work on apicomplexan parasites. This phylum includes important human and animal pathogens such as Toxoplasma gondii and Plasmodium falciparum causing toxoplasmosis and malaria respectively. They belong to the clade of Chromalveolates, whose ancestor acquired a plastid organelle by the secondary endosymbiosis of an alga. While some members of this clade are free living organisms or predators the Apicomplexa have evolved as obligate intracellular parasites. These parasites have developed an elaborated strategy to actively penetrate the host cells by a mechanism distinct from phagocytosis and involving gliding motility. This active mode of entry is favorable to the parasites, because this way they can evade the host cell defense mechanisms. To identify and study the molecular components of the vital process leading to host invasion, the Soldati's group has developed genetic tools beginning from reliable DNA transfection up to the establishment of an inducible expression system for the malaria parasites based on transcription machinery elements similar to those found in plants. Studies performed on T. gondii have established that the mechanism of host cell entry is the result of a concerted action of adhesins involved in the attachment of the parasite to the host cell, the actin cytoskeleton and myosin motors that relocalize these adhesins from anterior to posterior pole of the parasite, and proteases that finally release these adhesins from the parasite surface.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session Plant Genetics II]]></title>
-        <id>2713z45-c79f9rg-2s8gjng-hngv</id>
-        <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-plant-genetics-ii"/>
-        <updated>2009-09-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>As promised, I attended the second Plant Genetics session of the meeting, thus missing the Epigenetics session.I learned an important lesson...]]></summary>
-        <content type="html"><![CDATA[<p><em><em>Another guest post by <a href="https://web.archive.org/web/20120611033114/http://network.nature.com/people/alexander-knoll/profile">Alex Knoll</a> reporting from the German Genetics Society Meeting in Cologne.</em></em></p>
-<p>As promised, I attended the second Plant Genetics session of the meeting, thus missing the Epigenetics session.</p>
-<p>I learned an important lesson at the first talk by Juliette de Meaux from the Max Planck Institute for Plant Breeding Research: Bring sweets for the audience, and you have everyone on your side! Her research is on the molecular basis of variation in the life cycle of the model plant species <em><em>Arabidopsis thaliana</em></em>. Natural Arabidopsis strains grow in very different climates, and therefore have to adapt their annual life cycle to the environmental conditions: germinating their seeds early or late, flowering quickly after germinating or growing vegetatively for months. The ability not to germinate although there are good conditions is called seed dormancy. This can be a very important trait, for example if the Arabidopsis strain grows at a location where a short favorable period is followed by a recurring period detrimental to the growth of the plant. Then the plants which did not germinate even during the short favorable period have an advantage. But such changes in seed germination time need the whole life cycle to be fine-tuned: For the seeds of the following season to be ready before winter, the growth rate has to faster, or the flowering time shorter.</p>
-<p>Because of the varying locations where Arabidopsis grows, there should be variation in life history strategies to be found for selection to act upon. For the model system of germination rate, Juliette de Meaux' lab found a high variations in 180 natural genotypes they looked at. Some strains germinated at the day of harvest, while others didn't germinate at all even 250 days after harvest, and most somewhere in between. If seeds were exposed to a cold treatment 250 days after harvest (to simulate winter), the strains that didn't germinate after the 250 days suddenly started to germinate, while others decreased in their germination rate at longer times of cold exposure. Such and other measurements allowed for the analysis of a very complex dataset to derive the different strategies of life history in Arabidopsis. For example, there is a correlation of growth rate and flowering time to be found, but only in strains growing to the north (of Europe), not in the southern strains. They also looked at the molecular basis of this life history variation, and the consequences of it, which were interesting parts of the talk in and of themselves.</p>
-<p>The second talk was by Rüdiger Simon from the Institute of Genetics at the University of Düsseldorf. Plants also possess stem cells, and they are located in niches (in plants called meristems) at the tips of the shoot and the root. For the shoot apical meristem (SAM), it is already known that it is composed of the stem cells and an organizing center underneath. The stem cell proliferation is regulated by a negative feedback loop: Cells in the organizing center express Wuschel, which promotes stem cell fate, but stem cells express Clavata3, that represses Wuschel via the receptors Clavata1 and Clavata2. Apart from that, there is a second negative feedback mechanism of regulating Wuschel activity known. But according to computer simulations by Rüdiger Simon and his colleagues, there are further factors needed to explain the observed distributions of cells and gene expression. They looked for such factors, and found the coryne mutant, which resembles known clavata mutants; it must be in the same pathway.</p>
-<p>Rüdiger Simon's lab also looked at the root tip stem cell niche, if it is perhaps also regulated by a Clavata-like pathway. Interestingly, they were able to find a Clavata3-related peptide in Cle40, that regulates the Wuschel homolog WOX5. While this is similar to the situation in the SAM, there are also differences: WOX5 is produced in the QC, which resembles the organizing centre that expresses Wuschel , but Cle40 is not produced by the stem cells, but by already differentiated cells derived from those stem cells.</p>
-<p>Next, Bhupendra Chaudary from Gautam Buddha University in Greater Noida, India, gave a short presentation on the fate of duplicated genes in polyploid cotton. After a genome duplication event, the evolutionary constraints on duplicated genes are relaxed, and one way change is possible is by generating differences in expression, allowing for subfunctionalization or neofunctionalization. They looked at expression differences in homoeologous genes (pairs of genes duplicated by a polyploidization event) in species of the cotton Gossypium, where parental diploid genomes as well as allopolyploids can be found. Interestingly, none of the parental genomes showed a dominant expression in the hybrids globally, but some tissue-specific transcriptional subfunctionalization.</p>
-<p>The last talk of the session was given by Frank Kempken from the University of Kiel on mitochondrial mRNA editing in plants. Mitochondria possess their own rudimentary transcription and translation machinery, and in between they change the mRNAs in a way the nucleus doesn't: they edit the mRNA sequence, usually by exchanging a C for an U to create novel stop codons, or to modify the amino acid sequence. How this is done is largely unknown.</p>
-<p>Frank Kempken's lab developed a system to work with isolated mitochondria, because genetic engineering of them in plants is not possible, and <em><em>in vitro</em></em> approaches have serious drawbacks. In their '<em><em>in organello</em></em>' system, they can electroporate the isolated mitochondria in buffer, and observe the editing done to the expressed mRNAs. This allowed them to observe correct recognition of editing sites of Arabidopsis mRNAs in the mitochondria of maize, for example, or that mRNAs from chloroplasts are not edited in mitochondria. This would at least partially be expected, but somehow the plastid transcripts are not recognized by the editing machinery in the mitochondria.</p>
-<p>Using a novel binding assay (which requires 10 liters of Arabidopsis cell culture per experiment, whew!) they were able to find proteins that bind to mRNAs at editing sites. A knockout mutant of one of them leads to growth retardation and smaller plants, exactly what one would expect when mitochondria don't function properly anymore.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session III]]></title>
-        <id>5706az1-pqv8hhb-cgxfzsm-r7w66</id>
-        <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-iii"/>
-        <updated>2009-09-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>The last session on Thursday was split into two talks by Philippe Sansonetti from the Institute Pasteur in Paris and Julian Parkhill from the Sanger Institute in Hinxton,...]]></summary>
-        <content type="html"><![CDATA[<p><em><em>Another guest post by <a href="https://web.archive.org/web/20120611033341/http://network.nature.com/people/alexander-knoll/profile">Alex Knoll</a> reporting from the German Genetics Society Meeting in Cologne.</em></em></p>
-<p>The last session on Thursday was split into two talks by Philippe Sansonetti from the Institute Pasteur in Paris and Julian Parkhill from the Sanger Institute in Hinxton, Great Britain. Both talked about pathogenic microbes, but from a different perspective.</p>
-<p>After Philippe Sansonetti told us about <em><em>Shigella</em></em> and the innate immune system during invasion of the gut epithelium, Julian Parkhill gave us some insights into two (genomically) very different organisms. <em><em>Salmonella typhi</em></em>, responsible for typhoid fever, has evolved relatively recently by changing its niche; it went from being a gut pathogen to a systemic pathogen. This can be seen in its genome, because its evolution is not characterized by the gain of genes, but actually by the loss of many genes through single mutations. For bacteria, <em><em>Salmonella typhi</em></em> is rather strange: There is almost no recombination between strains, so there are very few SNPs that can by typed. By looking at 200 genes in about 200 strains, they found 88 SNPs in total! Evolutionarily, their data point to mostly long-term neutral mutations, with only very few genes to be found that show evidence of positive selection. But the SNP data they acquired could be put to good use nonetheless: They were able to do an epidemiological analysis in the field by collecting S. typhi strains around Kathmandu.</p>
-<p>The opposite of <em><em>S. typhi</em></em> in terms of recombination and SNPs is <em><em>Staphylococcus aureus</em></em>, which comprises a hugely diverse group of freely recombining strains. With next generation sequencing, they were able to track the appearance and travels of a specific strain around the world. They even got enough SNPs in their dataset to be able to distinguish strains from different wards in a single hospital!<br />
-The talk was also a lesson in technological progress: While the sequencing of the <em><em>Salmonella typhi</em></em> genome a few years ago took 1.5 years, the next generation sequencing of <em><em>Staphylococcus aureus</em></em> allowed the analysis of 66 genomes per run and week. Finally, we had a glimpse into the future: They are getting into single cell genome sequencing by doing laser capture microsdissection, and are already able to reach about 98% coverage!</p>
-<p>Following this last talk of the day, the German Genetics Society awarded the honorary membership to Rolf Knippers. At least German speaking biologists should know him by name because of his well-known (and great, in my opinion) textbook <em><em>Molekulare Genetik</em></em> (Molecular Genetics), which first appeared in the early 1970s. But that was not the only reason for the award. Actually, Rolf Knippers has been a very good researcher and teacher, too! I didn't know him apart from his textbook before, but the laudatio and his acceptance speech (which he started by humbly asking if he deserved the award) made me wish I had met him earlier, perhaps as a student or even as a member of his lab.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session Cellular Genetic Mechanisms]]></title>
-        <id>1z6g5bm-2qp8y5a-khaq2c2-zavxe</id>
-        <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-cellular-genetic-mechanisms"/>
-        <updated>2009-09-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>Both sessions had some interesting talks, so it was really hard to decide between attending Cellular Genetic Mechanisms or Human Genetics,...]]></summary>
-        <content type="html"><![CDATA[<p><em><em>Another guest post by <a href="https://web.archive.org/web/20120611032931/http://network.nature.com/people/alexander-knoll/profile">Alex Knoll</a> reporting from the German Genetics Society Meeting in Cologne.</em></em></p>
-<p>Both sessions had some interesting talks, so it was really hard to decide between attending Cellular Genetic Mechanisms or Human Genetics, but in the end I went to the former.</p>
-<p>The first talk by Marina Rodnina from the Max Planck Institute for Biophysical Chemistry is not easy to put into words. Not because of a bad presentation, I should add! Her work on biochemical properties of translation involves kinetic data of a row of proteins involved in the phases of translation: initiation, elongation, termination and ribosome recycling.</p>
-<p>I'll give you a short summary of the initiation of translation in bacteria: First the 30S subunit of the ribosome binds a mRNA and the initiator tRNA with the help of effector proteins to form the 30S initiation complex. The 50S subunit then binds to that to form the 70S initiation complex. By fluorescently labelling all of the components of the complex, they were able to measure the rate constants (how do they bind and dissociate from the ribosome) and then calculate the binding rates to find the order of binding. This is hardest to establish for the mRNA, because of control elements like the composition of the Shine-Dalgarno sequence or secondary structures. But ignoring all of these elements, the most significant factor at this step is the mRNA concentration. Looking at secondary structure, the unfolding of the mRNA is the slow step after a quick binding. This represents a kind of stability switch to enable correct start codon recognition. Not only during initiation, but also for elongation Marina Rodnina's lab could show that a lot of checks are kinetic in nature. Essentially, this can be summarized by the concept of induced fit: correct substrates are selectively stabilized by accelerating their forward steps.</p>
-<p>Following was a short presentation by Matthias Schäfer on unpublished research. At the ETH Zürich in Switzerland, he is looking into the molecular role of protection against reactive oxygen species (ROS) in the epidermis.</p>
-<p>Aria Baniahmad fom the Jena University Hospital, Germany, talked about an interesting connection of telomerase activity and androgens in prostate cancer. There, telomerase is usually active, as in many cancers to allow the cancer cell to divide indefinitely. Androgens repress telomerase activity, which is probably one reason why prostate cancer occurs later in life, when androgen levels decrease in men.</p>
-<p>The decrease of telomerase activity is based on binding of the androgen receptor to the promoter of the catalytic telomerase subunit hTERT. In many prostate cancers, an androgen receptor with a specific point mutation can be found. This mutated AR's binding to the telomerase promoter is weaker, which results in increased telomerase expression.</p>
-<p>The session was closed with a talk by Thorsten Hoppe from the Institute for Genetics of Köln University, who presented intruiging, but unpublished data about his research on ubiquitin and ageing in <em><em>C. elegans</em></em>.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[German Genetics Society Meeting 2009: Session IV]]></title>
-        <id>69hmvpg-v349f98-s30dfd2-0hz6p</id>
-        <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-session-iv"/>
-        <updated>2009-09-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>The first session on Friday started with a talk by Frauke Melchior from the ZMBP in Heidelberg on SUMO. Apart from being interesting to work with,...]]></summary>
-        <content type="html"><![CDATA[<p><em><em>Another guest post by <a href="https://web.archive.org/web/20120611032512/http://network.nature.com/people/alexander-knoll/profile">Alex Knoll</a> reporting from the German Genetics Society Meeting in Cologne.</em></em></p>
-<p>The first session on Friday started with a talk by Frauke Melchior from the ZMBP in Heidelberg on SUMO. Apart from being interesting to work with, it also is good for some rather funny paper titles</p>
-<figure>
-<img src="https://web.archive.org/web/20120611032512im_/http://blogs.plos.org/mfenner/wp-includes/images/smilies/icon_wink.gif" class="kg-image" />
-</figure>
-<p>At the start, she gave a short introduction on the proterties of SUMO. It is similar to Ubiquitin (it stands for Small Ubiquitin-like MOdifier) and gets covalently bound to lysines of hundreds of proteins to change their protein or DNA interactions, localization, or activity. A good example I also know from my work is the yeast DNA repair helicase Srs2, which only interacts with the SUMOylated form of the replication protein PCNA at the replication fork to suppress recombination. Many protein-protein interactions that are dependent on SUMOylation can be traced back to non-covalent recognition of a SUMO-interaction motif, SIM.</p>
-<p>Like with ubiquitin, there is an enzymatic cascade to bind a SUMO unit to a target protein; however, there is only one E1 activating and one E2 conjugating enzyme, and a handful of E3 SUMO ligases (compared to hundreds for the ubiquitin pathway). Target recognition is not understood very well, but there is a known consensus site wich is recognized by the E2 enyzme for SUMOylation. The problem is: many proteins are SUMOylated at non-consensus sites. Another mechanism turns the usual direction of the pathway on its head: The target proteins interacts with SUMO via a SIM, while it is still bound to the E2 enzyme. This allows the E2 to transfer SUMO to the target protein.</p>
-<p>Finally, Frauke Melchior told us about an interesting pair of proteins that are involved in SUMOylation: RanGAP (RanGTPase activating protein) interacts with RanBP2 at the nuclear pore complex after it gets SUMOylated. RanBP2 itself is a SUMO E3 ligase, but not for RanGAP. Without going into too much detail (unpublished data), the story unraveled by Frauke Melchior and her coworkers showed a really complex and intriguing picture of the role SUMO plays in regulating the activity of this complex and the effect on nuclear transport.</p>
-<p>In the second talk of the session, Chris Wylie from the Developmental Biology division of the Cincinnati Children's hospital threw out the simple model of germ cell migration in mouse embryos found in the textbooks: During embryo development, the stem cells of the gametes, the germ line stem cells, have to migrate to their niche in the gonads. They start their travels in a structure called the allantois, go through the hindgut and from there to the genital ridges, where the gonads will form. Classically, it was thought that long range signals guide their migration. But this is problematic, because the target organ supposed to produce the guiding signal is not formed when the germ cells start their migration, and during the migration the surroundings and distances will change dramatically! That means there must be short range signals for guidance.</p>
-<p>A nice example to test this is the trip from the midline above the gut to the genital ridges. Germ cells that stay at the midline will die by apoptosis. The previously known stem cell survival factor Steel is involved in preventing apoptosis in the cells. Its concentration decreases from the ridges to the midline; adding Steel everywhere experimentally saves the midline germ cells from apoptosis, while blocking Steel everywhere kills the germ cells laterally. They were able to show that Steel is not only involved in apoptosis, but also in the migration and proliferation of the germ cells. Steel is not only required at the late migration from the midline to the genital ridges; from the start in the allantois, loss of Steel leads to loss of germ cell number and migration.</p>
-<p>Essentially, this means that not only is Steel one (of probably many) short range signals, but it also travels with the germ cells along their migration route, giving them a mobile stem cell niche!</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[German Genetics Society Meeting 2009: Evolution Session]]></title>
-        <id>15brpq1-g4a8pmr-vq090xp-bq7gh</id>
-        <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-evolution-session"/>
-        <updated>2009-09-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>Just after lunch the next decision: Neurogenetics or Evolution? Here I went with the topic that is less far from my field,...]]></summary>
-        <content type="html"><![CDATA[<p><em><em>Another guest post by <a href="https://web.archive.org/web/20120611031744/http://network.nature.com/people/alexander-knoll/profile">Alex Knoll</a> reporting from the German Genetics Society Meeting in Cologne.</em></em></p>
-<p>Just after lunch the next decision: Neurogenetics or Evolution? Here I went with the topic that is less far from my field, and attended the evolution session. Welcome to the modern times, because next generation sequencing and high throughput are the way to go!</p>
-<p>These were the methods of choice for Julia Zeitlinger from the Stowers Institute for Medical Research in Kansas City to compare transcription factor binding sites between several Drosophila species. This goes back to the question, which process contributes more to evolution: mutations in the protein-coding parts of genes, or the sequences needed for the transcriptional regulation of these genes, the so-called cis-regulatory elements. There is evidence in some organisms of a high turnover of transcription factor binding sites, and Julia Zeitlinger wanted to compare these in the genus Drosophila. This was done with chromatin immunoprecipitation approaches, where you analyze the sequence of DNA fragments to which a target protein like a transcription factor is bound. Earlier, this was followed by hybidisation of microarrays (ChIP-chip), today these DNA fragments can be directly sequenced with next generation methods (ChIP-seq). They chose the dorso-ventral patterning in the Drosophila embryo as a model system, with transcription factors like Twist that are well studied, and that have conserved binding sites. Surprisingly, they found that Twist binds to about 8 times more positions than were expected; sometimes Twist bound at more than one position at target genes.</p>
-<p>Across Drosophila species the binding sites of Twist were very similar, especially near transcriptional start sites the positions are mostly conserved. Although movements of binding sites exist, they are rare. So it seems that there is evolutionary pressure to maintain the sites.</p>
-<p>Also about the evolutionary contributions of cis-regulatory regions was the talk by Diethard Tautz from the Max Planck Institute for Evolutionary Biology in Plants, Germany. But he addressed them with population genetics of wild house mouse strains. With microarray and qPCR experiments, his lab was able to find that the majority of genes they looked at follow a neutral evolution. When this is not the case, most of those genes show only tissue-specific changes in expression, which points to cis-regulatory elements.</p>
-<p>They also found a newly evolved gene in the mouse: In a region that is completely free of annotated transcripts in other mammals, one transcript can be found in the mouse. Poldi, as it is called, is expressed in the mouse testis and encodes a non-protein coding RNA. They were able to follow its birth in the genus Mus, where it appeared about 2.5 million years ago by changes in promoter regions. And although Poldi appeared relatively recently, it plays a role in the mouse. A knockout results in mice with reduced sperm motility and smaller testis, because several chromatin-regulating proteins show different expression levels in the absence of Poldi.</p>
-<p>Now on to some computational biology by Andrew Hufton from the Max Planck Institute for Molecular Genetics in Berlin. He analyzed a special kind of cis-regulatory elements: the so-called conserved non-coding elements (CNEs), that don't show much chance even over great evolutionary distances. Why do they exist? There are two competing hypotheses; either the CNEs repress genome rearrangements, or they promote the retention of duplicate genes nearby. To test both hypotheses, Andrew Hufton identified so-called phylogenetically conserved non-coding elements. These are elements associated with gene families and are not biased for one of the hypotheses. With experiments in zebrafish, he found that most of the PCNEs are enhancers, sequences involved in the regulation of gene expression.</p>
-<p>Concerning the two competing hypotheses, he found a strong association between PCNE and synteny conservation – the first hypothesis: the PCNEs are enriched around genes with an ancient gene order. For the retention of duplicated genes, he showed us an alternative model.</p>
-<p>In the last short talk of this session, Stephan Greiner told us about a plant with a strange inheritance. At the Max Planck Institute for Molecular Plant Physiology at Potsdam-Golm in Germany, he is working on the Evening Primrose Oenothera. It combines some very interesting genetic features like easy crossings between species, fertility of the resulting hybrids, biparental transmission of chloroplasts (that are usually inherited maternally) and something very strange called permanent-translocation heterozygosity: The chromosomes of Oenothera easily break at the centromeres, so that translocations of chromosome arms happen. This leads to rings or chains of chromosomes during meiosis that suppress homologous recombination and the intermixing of haploid chromosomes. In the end, there are a handful of stable genomes that a transmitted stably, and a hybrid plant with a combination of two of these genomes will always have hybrid offspring.<br />
-Add in the possibility to exchange one of several different chloroplast genomes in only two generations, and you will be able to generate compatibility charts of nuclear and chloroplast genomes, where lethal combinations and less severe phenotypes occur. Taken one step further, it is possible to identify speciation genes in the chloroplast genome.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[German Genetics Society Meeting 2009: Development Session]]></title>
-        <id>77yx0a3-wv189mt-dxqmp6j-ts7za</id>
-        <link href="https://blog.front-matter.io/mfenner/german-genetics-society-meeting-2009-development-session"/>
-        <updated>2009-09-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em>This time I had to decide between two parallel sessions for the first time at this meeting. Plant genetics or Development?...]]></summary>
-        <content type="html"><![CDATA[<p><em><em>Another guest post by Alex Knoll reporting from the German Genetics Society Meeting in Cologne.</em></em></p>
-<p>This time I had to decide between two parallel sessions for the first time at this meeting. Plant genetics or Development? Coming from plant molecular genetics myself, there perhaps was a ready-made decision, but I decided otherwise. There will be a second plant genetics session, and work with the axolotl and spiders lured me to the developmental biologists. But I had a rather hard time following all the new information, so please bear with me! To get at least a little bit of information about the plant genetics session, take a look into the meeting program for the abstracts (<a href="https://web.archive.org/web/20120611031830/http://conventus.de/fileadmin/media/2009/genetik/PDF/2009_09_14_Genetik_2009_Programm_klein.pdf">PDF</a>).</p>
-<p>Elly Tanaka from the Center for Regenerative Therapies in Dresden, Germany is working with the axolotl, a salamander, as her model to research the molecular and cellular events needed for spinal cord regeneration. Choosing the axolotl was a good idea because it can regenerate lots of tissues and organs, it even grows back whole legs and its tail. On the other hand, her group had to develop all of the molecular genetics fresh from the start, which was quite a lot of work I guess. But they did it, and now have EST sequences, can do single cell electroporation for gene transformations, morpholino knockdown of gene expression is possible. They were able to get transgenes transferred through the germline, can express genes in specific tissues and establish cell cultures. Quite a set, isn't it?</p>
-<p>This enabled Elly Tanaka's lab to look at the events after the axolotl loses its tail by a cut, specifically how the spinal cord is able to grow back. There are two basic ideas how this is done: either it grows from the end, or it expands by cell division within the spinal cord. They found that the second hypothesis is true, because a about 500 Âµm long zone right after the cut gives rise to the cells of the regenerated spinal cord. By looking at molecular markers at this zone, they were able to determine that the glial cells are the progenitors for the regeneration, and they need to revert to a more primitive state.</p>
-<p>The second invited speaker of this session, Thomas Klein from the Institute of Genetics at the University of Düsseldorf, spoke about the newly analyzed gene Lgd in the fly <em><em>Drosophila melanogaster</em></em> that regulates the activity of the well-known Notch gene by a new mechanism. Since this is about unpublished work, I won't go into more detail here.</p>
-<p>Of the three short presentations in this session, the talk of Annegret Bördlein from the Institute of Human Genetics in Erlangen, Germany, also contained essentially unpublished data.</p>
-<p>Luckily, I am free to write about the other two talks! Thomas Widmann from the Max Planck Institute for Cell Biology and Genetics in Dresden looked at the cell shape changes in the imaginal disc in Drosophila. This structure of the fly larva will later give rise to parts of the outside of the adult body, including the wings (who would have guessed?). In the wing disc epithelium there are to cell layers that chance their shape during development: One flattens, the other elongates to columns. Thomas Widmann was able to find the two transcription factors Dpp and Wingless implicated in this shape change, since columnar cells lacking these factors are shorter. How is this done in the cell? The actin-myosin cytoskeleton builds a meshwork underneath the plasma membrane to generate tension, and the amount of force is controlled by Rho1 that can phosphorylate Myosin II. By downregulating Rho1, the cell get elongated, its overexpression shortens them. Dpp is one factor that enhances the activity of Rho1. That way, Dpp and Rho1 maintain the length in these cells.</p>
-<p>Finally Wim Damen told us about his work on the developmental processes in the spider <em><em>Achaearanea tepidariorum</em></em>. At the Deparment of Genetics at the University of Jena, he is looking into segmentation processes. What happens during segmentation is very well understood in Drosophila, where a gene cascade forms all of the segments at approximately the same time. In vertebrates, the somites are comparable as a segmentation process, but here one forms after the other. Wim Damen found that in the spider, the anterior and central segments are formed like in insects rapidly and almost at the same time, but the posterior segments are formed one by one like in vertebrates. Here are even homologous genes like Notch and Wnt8 required for the segmentation. In the central region, Hunchback is essential for the production of the spider's legs. After RNAi knockdown of Hunchback, the spiders lack some of their legs because the L1, 2 and 4 segments don't form. This combination of insect and vertebrate-like processes during segmentation probably means that also their last common ancestor possessed both mechanisms.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[German Genetics Conference 2009: Session II]]></title>
-        <id>6nqhf88-tty97g8-rkywk1g-p2gk0</id>
-        <link href="https://blog.front-matter.io/mfenner/german-genetics-conference-2009-session-ii"/>
-        <updated>2009-09-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<em><em>Another guest post from Alex Knoll reporting from the German Genetics Conference in Cologne.</em></em>Dusko Ehrlich fom Jouy en Josas in France started off the second session of the meeting. He is working with the MetaHIT project,...]]></summary>
-        <content type="html"><![CDATA[<p><em><em>Another guest post from Alex Knoll reporting from the German Genetics Conference in Cologne.</em></em></p>
-<p>Dusko Ehrlich fom Jouy en Josas in France started off the second session of the meeting. He is working with the <a href="https://web.archive.org/web/20151003105714/http://www.metahit.eu/">MetaHIT project</a>, which tries to do a metagenomic analysis of the human intestinal tract. This is interesting because each individual human carries about ten times more microbial cell in the gut than there are human cells in the whole body! These microbes provide the interface between the food we take in and the epithelial cells of the gut. There, they play many roles not only in metabolising materials and molecules we are not capable of, but they also produce vitamins for us and help the immune system. It is therefore very important to understand this further organ of our body, as Dusko Ehrlich called it.</p>
-<p>The MetaHIT project takes many approaches to understand the interaction between the human intestinal microbes and human phenotypes like obesity ore bowel diseases. For example, they want to sequence a reference gene set and then look for associations of these genes with diseases. The reference gene set is produced by Solexa paired-end sequencing of samples from 124 individuals, which produced almost 0.6 terabases of sequence in total already! From these sequences contigs are produced and ORFs are predicted, which are almost completey of bacterial origin. This then allows for the comparison of bacterial genes and genomes between the sampled individuals, and also the establishment of a 'minimal metagenome' of the gut ecosystem for absolutely required functions.</p>
-<p>The second talk was really interesting to me: In <em><em>Drosophila melanogaster</em></em> the male flies perform a courtship dance to win over the female. Barry Dickson from the Institute of Molecular Pathology in Vienna is looking for the genetic neurobiologic basis of this behaviour.</p>
-<p>The fruitless gene, which produces a transcription factor, is absolutely required for the courtship of male flies; females don't produce a protein product due to alternative splicing. But when females carry the male form of the fru gene, they show the typical male courtship behaviour. This means fruitless is some kind of molecular switch for male behaviour in Drosophila by programming the nervous system. So they looked at neurons that express the fru gene with the help of reporter genes and found sensory, central and motor neurons that need to be active for male courtship. Dickson's lab was able to assemble a digital atlas of fru neurons, with stunning pictures, and were able to derive a 'wiring diagram'. Just six easy steps: Starting from fru-expressing olfactory receptor neurons that specifically sense pheromones it only takes this few neural connections to motor output in wing muscles that are required for the courtship song!</p>
-<p>Now the group is trying to go the high throughput route by teaching a computer to analyze the courtship behaviour by itself, and the first results look very promising.</p>
-<p>The third talk by Andrei Lupas of the Max Planck Institute for Developmental Biology in Tübingen, Germany, was about the genetic basis of protein fold evolution. Autonomously folding units in proteins are called domains, and usually the fold of a domain is conserved with a high evolutionary permanence.</p>
-<p>Surprisingly for me, there are only about 10Â³ basic folds, that all were established around the time of the last universal common ancestor of all living organisms.<br />
-But there is the potential for a fold change in domains by specific alterations that go back to point mutations, deletions, insertions or recombination at the level of DNA. To understand how these changes come about, Lupas' group is looking at experimental changes and their outcome. For example, beta-propellers are structures that arise by repeating a single 'blade' a certain number of times. Actually, all present beta-propellers probably all go back to one ancestral blade that was amplified several times. How large can a propeller domain become? The biggest propeller in databases has 10 blades, a 14-blade propeller in yeast forms a split between blades 7 and 8. But Lupas was able to produce a 12-bladed propeller.</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
