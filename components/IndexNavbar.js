@@ -44,7 +44,7 @@ export default function Navbar(props) {
             <li className="flex items-center">
               <a
                 className="hover:text-gray-600 text-gray-800 px-3 py-8 lg:py-2 flex items-center text-xs uppercase font-bold border-b-0"
-                href="https://twitter.com/sens_science"
+                href="https://twitter.com/front_matter"
                 target="_blank"
                 rel="noopener noreferrer"
               >

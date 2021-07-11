@@ -35,7 +35,7 @@ export async function getStaticProps() {
 
 const IndexPage = ({ posts, tags }) => {
   const tag = {
-    name: 'All Science needs Front Matter',
+    name: 'Scholarship needs Front Matter',
     description: 'Launching August 2nd.',
     feature_image: '/img/hero.jpg',
     featured: true

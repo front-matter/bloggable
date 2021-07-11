@@ -66,13 +66,13 @@ export default function Features() {
 
           <div className="relative">
             <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              A better way of communicating Science
+              A better way of communicating Scholarship
             </h2>
             <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
               Publishing, reading and re-using scholarly content is too
               complicated, too expensive, and too exclusive. Front Matter tries
               to help address these barriers, allowing authors and readers to
-              instead focus on the science.
+              instead focus on the scholarship.
             </p>
           </div>
 
