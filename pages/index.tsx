@@ -2,7 +2,7 @@ import React from 'react'
 import { getGhostTags, getFeaturedPosts } from '../lib/posts'
 import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
-// import { updateIndex } from '../lib/typesense'
+import { updateIndex } from '../lib/typesense'
 // import { updateSchema } from '../lib/typesense'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -26,7 +26,7 @@ export async function getStaticProps() {
   // await generatePdf()
   // await generateJats()
   // await updateSchema()
-  // await updateIndex()
+  await updateIndex()
 
   return {
     props: { posts, tags }
