@@ -35,7 +35,7 @@ const CategoryPage = ({ posts, tag }) => {
     <>
       <Header />
       <Hero tag={tag} />
-      <Tag posts={posts} />
+      <Tag posts={posts} featured={false} />
       <Footer />
     </>
   )

@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 export default function Hero({ tag }) {
   return (
@@ -35,20 +34,6 @@ export default function Hero({ tag }) {
                 {tag && tag.description}
               </span>
             </p>
-          )}
-          {tag && tag.featured && (
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-              <div className="rounded-md shadow">
-                <Link href="mailto:info@front-matter.io" passHref>
-                  <a
-                    href="dummy"
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 font-sans"
-                  >
-                    Contact Us
-                  </a>
-                </Link>
-              </div>
-            </div>
           )}
         </div>
       </div>

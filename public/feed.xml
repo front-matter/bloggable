@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-07-11T05:03:52.759Z</updated>
+    <updated>2021-07-11T07:11:20.838Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -637,6 +637,17 @@
     }
   }
 }</code></pre>
+<div class="iframe">
+<div id="player">
+
+</div>
+<section id="an-error-occurred." class="message player-unavailable">
+<h1 class="message">An error occurred.</h1>
+<div class="submessage">
+<a href="https://www.youtube.com/watch?v=efvxGfU_oVM">Try watching this video on www.youtube.com</a>, or enable JavaScript if it is disabled in your browser.
+</div>
+</section>
+</div>
 <p>After this short introduction it should have become clearer how GraphQL works differently from your typical REST API, and that GraphQL is a perfect fit for the kinds of queries one might want to do with the PID Graph. Now that you have had an introduction to the DataCite GraphQL API, you can try your own queries.</p>
 <p>The DataCite GraphQL API is a pre-release version, which means it's not yet final. It may contain bugs or might be missing functionality you expect. In particular more complex queries of the PID Graph are not yet supported. Your feedback is valuable for improving the API, so we encourage you to try it out and let us know what you think. Please use the <a href="https://www.pidforum.org/c/pid-graph">PID Graph section in the PID Forum</a> to ask questions or suggest features. We'll keep updating the API, and we aim to get a final release out sometime later this year.</p>
 <h2 id="references">References</h2>
@@ -3827,6 +3838,31 @@ One Ring to rule them all, One Ring to find them, One Ring to bring them all and
 <li>list all books with a Creative Commons CC-BY license that were published this year</li>
 </ul>
 <p>Funder (via FundRef) information is also included, but is still incomplete. Another interesting result is the number of <a href="https://sensiblescience.io/mfenner/direct-links-to-figures-and-tables-using-component-dois/">component DOIs</a> (DOIs for figures, tables or other parts of a document) per year:</p>
+<div class="iframe">
+<div id="__svelte-dw" class="dw-chart chart vis-height-fit theme-datawrapper-data vis-column-chart">
+<div id="header" class="dw-chart-header">
+<h1 class="block headline-block" id="component-dois-per-year"><span class="block-inner">Component DOIs per year</span></h1>
+<p><span class="block-inner">Number of component DOIs (DOIs for figures, tables or other parts of a document) per year.</span></p>
+</div>
+<div id="chart" class="dw-chart-body" aria-hidden="false">
+
+</div>
+<div id="footer" class="dw-chart-footer">
+<div class="footer-left">
+<span class="footer-block source-block"> <span class="block-inner"><span class="source-caption">Source:</span> <span class="source">Crossref</span></span> </span><span class="separator separator-before-get-the-data"></span> <span class="footer-block get-the-data-block"> <span class="block-inner"><a href="data" class="dw-data-link">Get the data</a></span> </span>
+</div>
+<div class="footer-center">
+
+</div>
+<div class="footer-right">
+
+</div>
+</div>
+<div class="dw-after-body">
+
+</div>
+</div>
+</div>
 <p>For my specific use case I wanted an API call that returns all articles published by PLOS (or any other publisher) in the last day which I can then run regularly. To get all DOIs from a specific publisher, use their CrossRef member ID - DOI prefixes don’t work, as publishers can own more than one DOI prefix. To make this task a little easier I built a CrossRef member search interface into the ALM application:</p>
 <figure>
 <img src="https://assets.front-matter.io/ghost/2021/April/10th/crossref_api.png" class="kg-image" width="1170" height="774" />
@@ -3862,6 +3898,17 @@ One Ring to rule them all, One Ring to find them, One Ring to bring them all and
 <img src="https://assets.front-matter.io/ghost/2021/April/9th/okfest-2014-logo.png" class="kg-image" width="900" height="344" />
 </figure>
 <p>Of all the things that were discussed I want to pick one theme that resonated in particular with me. It surfaced in many places, but was articulated particularly well by <a href="https://twitter.com/erichysen">Eric Hysen</a> - who heads the <a href="http://www.google.com/elections/ed/us">Google Politics &amp; Elections Group</a> - in his keynote yesterday (starting at 54:52, but please also watch the keynote by Neelie Kroes, Vice-President of the European Commission):</p>
+<div class="iframe">
+<div id="player">
+
+</div>
+<section id="an-error-occurred." class="message player-unavailable">
+<h1 class="message">An error occurred.</h1>
+<div class="submessage">
+<a href="https://www.youtube.com/watch?v=0UNRZEsLxKc">Try watching this video on www.youtube.com</a>, or enable JavaScript if it is disabled in your browser.
+</div>
+</section>
+</div>
 <p>In his keynote he described how travel from Cambridge to London in the 18th and early 19th century improved mainly as a result of better roads, made possible by changes in how these roads were financed. Translated to today, he urged the audience to think more about the infrastructure and less about the end products:</p>
 <blockquote>
 Ecosystems, not apps – Eric Hysen
@@ -4976,6 +5023,32 @@ Play
 An open source tool helping anyone to create simple, correct and embeddable charts in minutes.
 </blockquote>
 <p>Datawrapper uses the <strong><strong>d3.js</strong></strong> and <strong><strong>Highcharts</strong></strong> Javascript libraries for data visualizations, and the service is easy to use. It took me for example about 15 min to generate the chart below. The data used for the chart are embedded (click <strong><strong>Get the data</strong></strong>) and you can hover over the chart to see the actual numbers by month.</p>
+<div class="iframe">
+<div id="__svelte-dw" class="dw-chart chart vis-height-fit theme-datawrapper-data vis-d3-lines">
+<div id="header" class="dw-chart-header">
+<h1 class="block headline-block" id="monthly-article-views-over-time"><span class="block-inner">Monthly Article Views Over Time</span></h1>
+<p><span class="block-inner">Monthly HTML views from the PLOS website for two PLOS Medicine articles published July 21, 2009. The striking difference in usage between "Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement" (https://doi.org/10.1371/journal.pmed.1000097) and "Can the Relationship between Doctors and Drug Companies Ever Be a Healthy One?" (https://doi.org/<a href="https://doi.org/10.1371/journal.pmed.1000075" class="id-link">10.1371/journal.pmed.1000075</a>) becomes apparent only 18 months after publication.<br />
+</span></p>
+</div>
+<div id="chart" class="dw-chart-body" aria-hidden="false">
+
+</div>
+<div id="footer" class="dw-chart-footer">
+<div class="footer-left">
+<span class="footer-block byline-block"> <span class="block-inner"><span class="byline-caption">Chart:</span> Martin Fenner </span> </span><span class="separator separator-before-source"></span> <span class="footer-block source-block"> <span class="block-inner"><span class="source-caption">Source:</span> <a href="http://www.plosmedicine.org/" class="source">PLOS</a></span> </span><span class="separator separator-before-get-the-data"></span> <span class="footer-block get-the-data-block"> <span class="block-inner"><a href="data" class="dw-data-link">Get the data</a></span> </span>
+</div>
+<div class="footer-center">
+
+</div>
+<div class="footer-right">
+
+</div>
+</div>
+<div class="dw-after-body">
+
+</div>
+</div>
+</div>
 <p>Most journal articles see the highest usage immediately after publication, and the light purple line shows this pattern for Darcy et al. (2009). The dark purple line for Moher et al. (2009) – published on the same day – on the other hand shows a highly unusual usage pattern, as the usage actually increases over time, starting about 1 1/2 years after publication. The article is a guideline for reporting systematic reviews and meta-analyses, and is now viewed more often than directly after publication four years ago.</p>
 <p>Datawrapper does three things: it makes it easy to generate charts, it allows you to embed them directly into your webpage (using an <code>&lt;iframe&gt;</code> tag), and it is Open Source software (MIT license, Github repo <a href="https://github.com/datawrapper/datawrapper">here</a>) so that you can help improve the code and host this service on your own. DataWrapper was written in Javascript and PHP by a group of German journalists, and the main focus is data journalism where the service has become really <a href="http://blog.datawrapper.de/2013/datawrapper-crosses-mark-of-10-million-visits/">popular</a> with more than 3.5 million views of embedded charts in May 2013 alone.</p>
 <p>Datawrapper is a perfect tool for science blogs and websites with scientific content, but it can also enhance the charts in scientific articles. We need a few additional chart types, error bars and more flexible labeling. And we might want to add a license picker, making it easy to add a Creative Commons license so that it is clear how the chart can be reused. Datawrapper is intended for online use, but the service can also save the charts as PNG or PDF. We would want to add saving to SVG (already used for online rendering) for easier embedding into the XML and ePub versions of articles.</p>

@@ -2,7 +2,7 @@ import React from 'react'
 import { getGhostTags, getFeaturedPosts } from '../lib/posts'
 import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
-import { updateIndex } from '../lib/typesense'
+// import { updateIndex } from '../lib/typesense'
 // import { updateSchema } from '../lib/typesense'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -26,7 +26,7 @@ export async function getStaticProps() {
   // await generatePdf()
   // await generateJats()
   // await updateSchema()
-  await updateIndex()
+  // await updateIndex()
 
   return {
     props: { posts, tags }
@@ -36,7 +36,7 @@ export async function getStaticProps() {
 const IndexPage = ({ posts, tags }) => {
   const tag = {
     name: 'All Science needs Front Matter',
-    description: 'Coming soon.',
+    description: 'Launching August 2nd.',
     feature_image: '/img/hero.jpg',
     featured: true
   }
@@ -46,7 +46,7 @@ const IndexPage = ({ posts, tags }) => {
       <Header />
       <Hero tag={tag} />
       <Categories tags={tags} />
-      <Tag posts={posts} />
+      <Tag posts={posts} featured={true} />
       <Footer />
     </>
   )
