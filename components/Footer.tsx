@@ -53,7 +53,7 @@ export default function Footer() {
                     </a>
                   </Link>
 
-                  <Link href="https://front-matter.io/feed.xml" passHref>
+                  <Link href="https://blog.front-matter.io/feed.xml" passHref>
                     <a
                       href="dummy"
                       className="text-gray-500 hover:text-gray-400 border-b-0"
