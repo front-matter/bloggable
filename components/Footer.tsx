@@ -20,6 +20,12 @@ export default function Footer() {
             <h3 className="text-base font-semibold text-gray-400 tracking-wider uppercase">
               Front Matter
             </h3>
+            <p className="text-sm text-gray-500 mt-2">
+              Finkenstrasse 16
+              <br /> 48147 Münster
+              <br />
+              Germany
+            </p>
             <ul className="mt-1 list-none">
               <li>
                 <div className="flex space-x-3 mb-3">
@@ -118,6 +124,16 @@ export default function Footer() {
               About
             </h3>
             <ul className="mt-1 list-none">
+              <li>
+                <Link href="/team" passHref>
+                  <a
+                    href="dummy"
+                    className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
+                  >
+                    Team
+                  </a>
+                </Link>
+              </li>
               <li>
                 <Link href="/open-source" passHref>
                   <a

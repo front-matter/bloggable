@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Pricing() {
+export default function OpenSource() {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
