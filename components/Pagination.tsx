@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function Pagination({
-  currentRefinement = null,
+  // currentRefinement = null,
   nbPages = 1,
   showFirst = false
 }) {
@@ -21,7 +21,7 @@ export default function Pagination({
       </div>
       <div className="flex-1 flex justify-between sm:justify-end">
         {showFirst && (
-          <Link href="#">
+          <Link href="currentRefinement">
             <a
               href="/dummy"
               className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
