@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-08-02T05:44:32.755Z</updated>
+    <updated>2021-08-02T10:34:38.705Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -12,6 +12,31 @@
     <link rel="self" href="https://blog.front-matter.io/feed.xml"/>
     <subtitle>Front Matter is a science blogging platform.</subtitle>
     <rights>Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
+    <entry>
+        <title type="html"><![CDATA[Front Matter officially launches today]]></title>
+        <id>726q3a1-fyj8d3v-jwhgha4-qxcph</id>
+        <link href="https://blog.front-matter.io/mfenner/front-matter-officially-launches-today"/>
+        <updated>2021-08-02T10:22:32.000Z</updated>
+        <summary type="html"><![CDATA[Front Matter describes the content preceding the main text of a book or journal. In science, several research journals, including <em>PLOS Biology</em>, <em>Nature</em> and <em>Science</em>, have Front Matter sections, used for news, opinions,...]]></summary>
+        <content type="html"><![CDATA[<p>Front Matter describes the content preceding the main text of a book or journal. In science, several research journals, including <em>PLOS Biology</em>, <em>Nature</em> and <em>Science</em>, have Front Matter sections, used for news, opinions, and other content that are not a research articles. Front Matter is also the name of the company that I registered last month, as I think it is a good fit for what I am trying to accomplish, after leaving the DOI registration agency DataCite in July 2021 (<a href="https://doi.org/10.5438/zx3k-3923">Farewell to DataCite</a>) having been their Technical Director for six years.</p>
+<p>I sincerely believe that there is a need for more venues that talk about emerging scholarly content types such as research data, research software or preprints as scholarly outputs. The Front Matter Blog hopes to become such a venue. As a starting point I have added (almost) all my blog posts since 2007, collected from my previous blogging locations (<em>Nature Network</em>, <em>PLOS Blogs,</em> my Personal Blog, and the DataCite blog<em>)</em>, and I hope at least some of them still make an interesting read all these years later. Technically, the blog uses <a href="https://ghost.org/">Ghost</a> and the Ghost Editor as a backend, and a frontend built with <a href="https://nextjs.org/">Next.js</a>, a common <a href="https://jamstack.org/">Jamstack</a> setup:</p>
+<figure>
+<img src="https://assets.front-matter.io/ghost/2021/August/2nd/jamstack-javascript-apis-markup.png" class="kg-image" width="850" height="394" alt="Jamstack, via Snipcart." /><figcaption aria-hidden="true">Jamstack, via <a href="https://snipcart.com/blog/jamstack">Snipcart</a>.</figcaption>
+</figure>
+<p>Two features of the Front Matter Blog are particularly important to me:</p>
+<ul>
+<li>full-text search of all blog posts (with the help of  <a href="https://typesense.org/">Typesense</a>), as tags, categories, and search by title allow only limited content discovery, and  </li>
+<li>comments using a mature and open commenting system (<a href="https://www.discourse.org/">Discourse</a>).</li>
+</ul>
+<p>There is more work planned for the coming months, with the next milestone being the registration of DOIs for all blog posts.</p>
+<p>But Front Matter is more than a blogging platform. It is also a consulting business, which will help with building and hosting scholarly infrastructure. To kick this off, I am involved with development work for the <a href="https://inveniosoftware.org/products/rdm/">invenioRDM</a> data management repository platform. More on that in the next blog post on Thursday.</p>
+<p><em>Special thanks to <a href="https://orcid.org/0000-0002-9317-6819">Christine Ferguson</a> for reviewing the blog post before publishing.</em></p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Farewell to DataCite]]></title>
         <id>7ec2qd6-wd09zmr-jqcqb91-3hzaf</id>
@@ -932,71 +957,6 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Welcome to the DataCite Team, Robin!]]></title>
-        <id>4hv0jzf-b6k829r-jm9p4f8-j5jn0</id>
-        <link href="https://blog.front-matter.io/mfenner/welcome-to-the-datacite-team-robin"/>
-        <updated>2018-05-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[DataCite is pleased to welcome Robin Dasler to our team. Robin joined DataCite as product manager in March. Get to know her better via this interview.Robin DaslerCan you tell us a little bit about what you did before you started working for DataCite?I began my career as a science liaison librarian,...]]></summary>
-        <content type="html"><![CDATA[<p>DataCite is pleased to welcome Robin Dasler to our team. Robin joined DataCite as product manager in March. Get to know her better via this interview.</p>
-<figure>
-<img src="https://blog.datacite.org/images/robin.png" class="kg-image" alt="Robin Dasler" /><figcaption aria-hidden="true">Robin Dasler</figcaption>
-</figure>
-<h2 id="can-you-tell-us-a-little-bit-about-what-you-did-before-you-started-working-for-datacite">Can you tell us a little bit about what you did before you started working for DataCite?</h2>
-<p>I began my career as a science liaison librarian, mostly in the physical sciences and math, and I made the jump to data librarian roles once they came on the scene. My most recent position prior to DataCite was at the European Organization for Nuclear Research (CERN), where I worked on requirements and policies for our various data sharing portals, like CERN Open Data (<a href="http://opendata.cern.ch/">http://opendata.cern.ch/</a>) and CERN Analysis Preservation (Chen et al. (<a href="https://blog.datacite.org/welcome-to-team-robin/#ref-https://doi.org/10.1007/978-3-319-43997-6_27">2016</a>)). While there, I also led the sustainability and evaluation piece (Dasler (<a href="https://blog.datacite.org/welcome-to-team-robin/#ref-https://doi.org/10.5281/zenodo.46761">2016</a>)) of the EU-funded THOR project (<a href="https://project-thor.eu/">https://project-thor.eu/</a>). I've always had an interest in analytics and in how processes can be made better by focusing on necessary and measurable service priorities, so product management for research data software projects seems like a natural fit.</p>
-<h2 id="what-interested-you-in-the-job-at-datacite-any-particular-problems-that-you-would-like-to-work-on">What interested you in the job at DataCite? Any particular problems that you would like to work on?</h2>
-<p>Being a process-oriented person, what most interested me about DataCite was the opportunities presented by its small size. Working for a small specialized organization like DataCite means working for an organization with a very specific focus in terms of the problems it seeks to solve. This gives us the potential to make a large impact on a specific corner of the research data community. But at the same time, DataCite's small team size also means that each of us needs to know a bit about everything that's going on, and I like having that kind of informed view of the work from all angles.</p>
-<p>In terms of particular problems for DataCite operations, I'd like to ensure that we can continue to balance all our different projects and partnerships so that we can remain effective and efficient as we scale up. As for problems in the wider data space that DataCite or persistent identifiers could potentially solve, I think it could be fun to explore distributed conference proceedings.</p>
-<h2 id="why-do-you-think-product-management-is-important-for-datacite">Why do you think product management is important for DataCite?</h2>
-<p>DataCite is in a phase of rapid growth. This means that we're in a good place to consider new opportunities for scaling up our operations. To be successful balancing this growth, we'll need to stay on top of our product roadmap, as well as the member priorities that inform that roadmap. Introducing a product management role to the team adds an important link between our technical priorities and our communication strategy. This will hopefully provide us with a more holistic view going forward that can help us to efficiently develop new products and services without losing sight of what it takes to maintain our existing membership.</p>
-<h2 id="any-particular-challenges-you-see-with-this-role">Any particular challenges you see with this role?</h2>
-<p>DataCite is currently involved in several projects with other external organizations. While it's great to be part of this collaborative experience and to be tackling bigger problems than we could on our own, it can be tricky to balance all of the separate priorities (and deadlines) that come from having your fingers in all the pies. I think a particular challenge for me will be to make sure we stay true to all of our external commitments while keeping on top of our service priorities for our members.</p>
-<h2 id="where-do-you-want-to-see-datacite-in-three-years">Where do you want to see DataCite in three years?</h2>
-<p>I'd like to see DataCite be financially sustainable on member fees alone, and I think with our current growth we're poised to reach that goal. From a product standpoint, this would enable us to exercise some additional selectivity in the external research and development projects we take on, letting us focus on those projects that would best improve our member experience and allowing us more control over our development timeline.</p>
-<p><em>This blog post was <a href="https://doi.org/10.5438/4cna-aq40">originally published</a> on the DataCite Blog.</em></p>
-<h2 id="references">References</h2>
-<p>Chen, X., Dallmeier-Tiessen, S., Dani, A., Dasler, R., Fernández, J. D., Fokianos, P., … Šimko, T. (2016). CERN analysis preservation: A novel digital library service to enable reusable and reproducible research. In <em>Research and advanced technology for digital libraries</em> (pp. 347–356). Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-43997-6_27">https://doi.org/10.1007/978-3-319-43997-6_27</a></p>
-<p>Dasler, R. (2016). Thor: Metrics and tools. <em>Zenodo</em>. <a href="https://doi.org/10.5281/zenodo.46761">https://doi.org/10.5281/zenodo.46761</a></p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Welcome to the DataCite Team, Richard!]]></title>
-        <id>4jwd9t5-0wv9s7s-7zvw41c-f2d4s</id>
-        <link href="https://blog.front-matter.io/mfenner/welcome-to-the-datacite-team-richard"/>
-        <updated>2018-01-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[DataCite is pleased to welcome Richard Hallett to our team. Richard joined DataCite as application developer in December. Get to know him better via this interview.Richard HallettCan you tell us a little bit about what you did before you started working...]]></summary>
-        <content type="html"><![CDATA[<p>DataCite is pleased to welcome Richard Hallett to our team. Richard joined DataCite as application developer in December. Get to know him better via this interview.</p>
-<figure>
-<img src="https://blog.datacite.org/images/2018/01/rhallett.jpg" class="kg-image" alt="Richard Hallett" /><figcaption aria-hidden="true">Richard Hallett</figcaption>
-</figure>
-<h2 id="can-you-tell-us-a-little-bit-about-what-you-did-before-you-started-working-for-datacite">Can you tell us a little bit about what you did before you started working for DataCite?</h2>
-<p>I’ve been working in software development for a variety of different organisations and industries over the years, from large multinational companies, to small web agencies, to not for profits and then back into the commercial sector with e-commerce.</p>
-<p>Most recently I worked on delivering a platform that provided services to retailers for their respective online presences, this involved a lot of technology challenges from high availability of services to handling new requirements from constant market changes.</p>
-<h2 id="what-lessons-learned-from-working-in-the-e-commerce-sector-could-benefit-datacite">What lessons learned from working in the e-commerce sector could benefit DataCite?</h2>
-<p>Availability is key in e-commerce, your services have to be up, any downtime is potential lost sales and unhappy customers. For DataCite I think the important bit here is the unhappy customers, having a mindset of ensuring you provide the best possible service to your end users is key regardless of domain. In the technology aspect a lot is very transferable, for example, a key component of e-commerce is searchable product data, this mirrors very nicely to the search services DataCite provides.</p>
-<h2 id="what-interested-you-in-the-job-at-datacite-any-particular-problems-that-you-would-like-to-work-on">What interested you in the job at DataCite? Any particular problems that you would like to work on?</h2>
-<p>I’ve always had a deep interest in technology and how it can be used to solve a variety of problems in different domains, DataCite struck me as a forward thinking organization that embraces technology to deliver its services.</p>
-<p>Given my background is one primarily in software development, I really like the fact that DataCite is a proponent of open source and I really hope we can work in helping the wider technology community which in turn helps DataCite achieve its own goals.</p>
-<p>I also think the work done by DataCite to help connect researchers with data fits nicely with my own personal ideas of sharing data and providing access to content, helping people solve problems in a variety of fields.</p>
-<h2 id="being-relatively-new-to-the-world-of-open-science-and-open-data-what-is-your-initial-impression">Being relatively new to the world of Open Science and Open Data, what is your initial impression?</h2>
-<p>I think what’s great is the core principles of being open and collaborative really seem embedded in a lot of what I’ve seen so far and the people I’ve met across different organisations seem more of a community than competition.</p>
-<h2 id="what-aspects-of-application-development-are-you-particularly-interested-in">What aspects of application development are you particularly interested in?</h2>
-<p>I like to solve problems, preferably the ones that are complex large architectural multi-user problems, but I’m equally at home solving a small thing that helps just a few. I try whenever I’m developing to reduce complexity when possible, to ensure simplicity in both usability and maintainability, the latter being especially important for other developers but also my future self.</p>
-<h2 id="how-could-we-reduce-complexity-in-how-we-register-manage-and-provide-dois-and-associated-metadata">How could we reduce complexity in how we register, manage and provide DOIs and associated metadata?</h2>
-<p>That’s a really hard question, I think the important thing is to be pragmatic about the services offered but also consistency, one quote I’ve always liked was “There should be one and preferably only one, obvious way to do it” I think this can be applied to all kinds of things, in this case providing a cohesive product offering for DOI services. I also think in tandem to reducing complexity of our own services, there is room for more outreach to help others build tools upon our services, either through technology provided by us or outreach workshops.</p>
-<h2 id="any-particular-programming-language-andor-framework-you-would-like-to-learnunderstand-better-while-working-at-datacite">Any particular programming language and/or framework you would like to learn/understand better while working at DataCite?</h2>
-<p>I’ve recently taken an interest in functional programming, it’s a very different way of solving problems but one that I think can provide a lot of benefits, I hope I can learn more about this and ways we can use functional techniques to improve DataCite’s services.</p>
-<p><em>This blog post was <a href="https://doi.org/10.5438/prvv-nv23">originally published</a> on the DataCite Blog.</em></p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Announcing DataCite DOI Fabrica]]></title>
         <id>3xbpw23-kw99j1v-v30n9cb-dfdtg</id>
         <link href="https://blog.front-matter.io/mfenner/announcing-datacite-doi-fabrica"/>
@@ -1816,17 +1776,13 @@ Copy embed code
 </div>
 <div class="sd-player-share-menu-action" data-selected-by="share" data-group="type">
 <div class="sd-player-share-menu-action active js-sd-player-share-start" data-selected-by="beginning" data-group="start">
-<div class="fb-share-button">
-
-</div>
+<img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiBpY29uLWZhY2Vib29rICI+PHVzZSB4bGluazpocmVmPSIvaWNvbnMvaWNvbnMuc3ZnI2ljb24tZmFjZWJvb2siPjwvdXNlPjwvc3ZnPg==" class="icon icon-facebook" /> Share
 <div class="twitter-share-button">
 
 </div>
 </div>
 <div class="sd-player-share-menu-action js-sd-player-share-slide" data-selected-by="slide" data-group="start">
-<div class="fb-share-button">
-
-</div>
+<img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiBpY29uLWZhY2Vib29rICI+PHVzZSB4bGluazpocmVmPSIvaWNvbnMvaWNvbnMuc3ZnI2ljb24tZmFjZWJvb2siPjwvdXNlPjwvc3ZnPg==" class="icon icon-facebook" /> Share
 <div class="twitter-share-button">
 
 </div>
@@ -8842,6 +8798,24 @@ I would define post-publication review as the process whereby scientists and oth
 </figure>
 <p>The Lanyrd blog launched yesterday and <a href="https://web.archive.org/web/20120525041249/http://lanyrd.com/blog/2010/welcome/">the first post</a> contains some interesting background information. Lanyrd is a joint project by web developers and newly-weds Simon Willison and Natalie Downe. They launched Lanyrd from Morocco while on an extended honeymoon and don’t plan to be back to England before the end of next year.</p>
 <p>Sites such as <strong><strong>Eventbrite</strong></strong>, <strong><strong>Upcoming</strong></strong> or <strong><strong>Slideshare</strong></strong> have been around for a while. Twitter is becoming an increasingly useful tool for conferences (<a href="https://web.archive.org/web/20120525041249/http://blogs.plos.org/mfenner/2010/09/12/lanyrd-a-new-twitter-mashup-for-conferences/The%20Great%20Science%20Online%20London%20Tweetup">The Great Science Online London Tweetup</a>). And Lanyrd is one of the nicest examples that I have seen so far that integrates Twitter into a service targeted at conference attendees.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Peer review is not a piece of cake]]></title>
+        <id>60dea77-58n8f4v-01qkara-rwe72</id>
+        <link href="https://blog.front-matter.io/mfenner/peer-review-is-not-a-piece-of-cake"/>
+        <updated>2010-09-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[On Monday <strong><strong>Jenny Rohn</strong></strong> published a blog post Peer review is no picnic that concludes:<em><em><em><em><em><em><em><em>So the next time you hear someone asserting that scientists aren’t critical, of their own work or that of their colleagues,...]]></summary>
+        <content type="html"><![CDATA[<p>On Monday <strong><strong>Jenny Rohn</strong></strong> published a blog post <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/blog/2010/sep/06/peer-review">Peer review is no picnic</a> that concludes:</p>
+<blockquote>
+<em><em><em><em><em><em><em><em>So the next time you hear someone asserting that scientists aren’t critical, of their own work or that of their colleagues, remember that if a finding has made its way into a reputable journal, it’s most likely despite every last objection that the researcher and all of his lab-mates could come up with – to say nothing of those nasty peer reviewers.</em></em></em></em></em></em></em></em>
+</blockquote>
+<p>As always with Jenny’s blog posts, the discussion is as interesting as the blog post itself. Joe Dunckley, Maxine Clarke, Austin Elliott, David Colquhoun, and others wrote thoughtful comments about peer review (the comments are now closed). Peer review is an important topic that I want to write more about on this blog (I wrote <a href="https://web.archive.org/web/20120525040917/http://blogs.nature.com/mfenner/2009/07/13/the-value-of-peer-review">The Value of Peer Review</a> after attending SciFoo 2009).</p>
+<p>Jenny normally writes at Nature Network (<a href="https://web.archive.org/web/20120525040917/http://blogs.nature.com/ue19877e8/">Mind the Gap</a>), but for this post was invited as guest blogger for the <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/series/blog-festival">Guardian science blogs</a>. They launched just last week and for the <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/series/blog-festival">Blog Festival</a> blog have started to invite guest bloggers such as <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/blog/2010/sep/03/amateur-astronomy-telescope-night-sky">Stephen Curry</a> (Nature Network) and <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/blog/2010/sep/01/psychedelic-drugs-mental-illness">Mo Costandi</a> (scienceblogs.com).</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
