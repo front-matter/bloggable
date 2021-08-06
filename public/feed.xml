@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-08-02T10:47:52.336Z</updated>
+    <updated>2021-08-06T09:03:10.102Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -12,6 +12,50 @@
     <link rel="self" href="https://blog.front-matter.io/feed.xml"/>
     <subtitle>Front Matter is a science blogging platform.</subtitle>
     <rights>Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
+    <entry>
+        <title type="html"><![CDATA[First InvenioRDM Long-Term Support (LTS) version released today – and Front Matter is joining as a participating partner]]></title>
+        <id>7x0afvb-64y9spv-8x7e211-ybnjr</id>
+        <link href="https://blog.front-matter.io/mfenner/inveniordm-lts-announced"/>
+        <updated>2021-08-05T17:15:49.000Z</updated>
+        <summary type="html"><![CDATA[The open source research data management platform InvenioRDM today announced the first Long-Term Support (LTS) release, usable on production services. And I am joining the effort as a participating partner via Front Matter,...]]></summary>
+        <content type="html"><![CDATA[<p>The open source research data management platform InvenioRDM <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v6.0.0/%20%20%20">today announced</a> the first Long-Term Support (LTS) release, usable on production services. And I am joining the effort as a participating partner via <a href="https://front-matter.io">Front Matter</a>, the organization I started this week.</p>
+<p>InvenioRDM was <a href="https://inveniosoftware.org/blog/2019-04-29-rdm/">first announced in April 2019</a>:</p>
+<blockquote>
+Our vision in the next five-years, is to make InvenioRDM a world-leading extensible research data management platform used by research institutions all around the world and with businesses providing services, support and customizations on top of InvenioRDM.
+</blockquote>
+<p>The first concrete set of goals was defined as</p>
+<ul>
+<li>A stable InvenioRDM platform - A research data management platform based on <a href="https://zenodo.org/">Zenodo</a> and the <a href="https://inveniosoftware.org/">Invenio v3 Framework</a>.</li>
+<li>A community of public and private institutions to sustain InvenioRDM.</li>
+<li>Minimum two existing repositories migrated to InvenioRDM, with Zenodo being one of them.</li>
+</ul>
+<p>Today's release brings invenioRDM much closer to achieving these goals. The next major milestone for InvenioRDM is to migrate <a href="https://zenodo.org">Zenodo</a> to run on top of InvenioRDM.</p>
+<p>In the coming two months I will not only try to get up to speed with the invenioRDM project and start working with the CERN team and the other participating partners, but I also have the specific task of making sure invenioRDM fully supports the data citation roadmap for scholarly data repositories, work done by the <a href="https://www.force11.org/group/dcip">Force11 DCIP project</a> with Merce Crosas and me as co-leads, and described in a 2019 <em>Scientific Data</em> paper (Fenner <em>et al</em>. 2019):</p>
+<h3 id="guidelines-for-repositories-1-5-required-6-9-recommended-10-11-optional">Guidelines for Repositories (1-5 required, 6-9 recommended, 10-11 optional)</h3>
+<ol>
+<li>All datasets intended for citation must have a globally unique persistent identifier that can be expressed as an unambiguous URL.</li>
+<li>Persistent identifiers for datasets must support multiple levels of granularity, where appropriate.</li>
+<li>The persistent identifier expressed as an URL must resolve to a landing page specific for that dataset, and that landing page must contain metadata describing the dataset.</li>
+<li>The persistent identifier must be embedded in the landing page in machine-readable format.</li>
+<li>The repository must provide documentation and support for data citation.</li>
+<li>The landing page should include metadata required for citation, and ideally also metadata facilitating discovery, in human-readable and machine-readable format.</li>
+<li>The machine-readable metadata should use schema.org markup in JSON-LD format.</li>
+<li>Metadata should be made available via HTML meta tags to facilitate use by reference managers.</li>
+<li>Metadata should be made available for download in BibTeX and/or another standard bibliographic format.</li>
+<li>Content negotiation for schema.org/JSON-LD and other content types may be supported so that the persistent identifier expressed as URL resolves directly to machine-readable metadata.</li>
+<li>HTTP link headers may be supported to advertise content negotiation options</li>
+</ol>
+<p>Several of these recommendations are of course already addressed by invenioRDM, but there is more work needed in the details, e.g. how metadata are exposed in dataset landing pages using schema.org. And these recommendations have evolved, e.g. as described in the output of the <a href="https://www.rd-alliance.org/groups/research-metadata-schemas-wg">Research Data Alliance (RDA) Research Metadata Schemas Working Group</a> published in June (Wu <em>et al.</em> 2021).</p>
+<p>Please reach out to me in the comments or via email if you have any questions or suggestions regarding this upcoming work, or more generally my new involvement in invenioRDM.</p>
+<h3 id="references">References</h3>
+<p>Fenner, M., Crosas, M., Grethe, J. S., Kennedy, D., Hermjakob, H., Rocca-Serra, P., Durand, G., Berjon, R., Karcher, S., Martone, M., &amp; Clark, T. (2019). A data citation roadmap for scholarly data repositories. <em>Scientific Data</em>, <em>6</em>(1). <a href="https://doi.org/10.1038/S41597-019-0031-8">https://doi.org/10.1038/S41597-019-0031-8</a></p>
+<p>Wu, M., Juty, N., RDA Research Metadata Schemas WG , Collins, J., Duerr, R., Ridsdale, C., Shepherd, A., Verhey, C., &amp; Castro, L. J. (2021). <em>Guidelines for publishing structured metadata on the Web</em>. <a href="https://doi.org/10.15497/RDA00066">https://doi.org/10.15497/RDA00066</a></p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Front Matter officially launches today]]></title>
         <id>726q3a1-fyj8d3v-jwhgha4-qxcph</id>
@@ -661,17 +705,6 @@
     }
   }
 }</code></pre>
-<div class="iframe">
-<div id="player">
-
-</div>
-<section id="an-error-occurred." class="message player-unavailable">
-<h1 class="message">An error occurred.</h1>
-<div class="submessage">
-<a href="https://www.youtube.com/watch?v=efvxGfU_oVM">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
-</div>
-</section>
-</div>
 <p>After this short introduction it should have become clearer how GraphQL works differently from your typical REST API, and that GraphQL is a perfect fit for the kinds of queries one might want to do with the PID Graph. Now that you have had an introduction to the DataCite GraphQL API, you can try your own queries.</p>
 <p>The DataCite GraphQL API is a pre-release version, which means it's not yet final. It may contain bugs or might be missing functionality you expect. In particular more complex queries of the PID Graph are not yet supported. Your feedback is valuable for improving the API, so we encourage you to try it out and let us know what you think. Please use the <a href="https://www.pidforum.org/c/pid-graph">PID Graph section in the PID Forum</a> to ask questions or suggest features. We'll keep updating the API, and we aim to get a final release out sometime later this year.</p>
 <p><em>This blog post was <a href="https://doi.org/10.5438/qab1-n315">originally published</a> on the DataCite Blog.</em></p>
@@ -8798,24 +8831,6 @@ I would define post-publication review as the process whereby scientists and oth
 </figure>
 <p>The Lanyrd blog launched yesterday and <a href="https://web.archive.org/web/20120525041249/http://lanyrd.com/blog/2010/welcome/">the first post</a> contains some interesting background information. Lanyrd is a joint project by web developers and newly-weds Simon Willison and Natalie Downe. They launched Lanyrd from Morocco while on an extended honeymoon and don’t plan to be back to England before the end of next year.</p>
 <p>Sites such as <strong><strong>Eventbrite</strong></strong>, <strong><strong>Upcoming</strong></strong> or <strong><strong>Slideshare</strong></strong> have been around for a while. Twitter is becoming an increasingly useful tool for conferences (<a href="https://web.archive.org/web/20120525041249/http://blogs.plos.org/mfenner/2010/09/12/lanyrd-a-new-twitter-mashup-for-conferences/The%20Great%20Science%20Online%20London%20Tweetup">The Great Science Online London Tweetup</a>). And Lanyrd is one of the nicest examples that I have seen so far that integrates Twitter into a service targeted at conference attendees.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Peer review is not a piece of cake]]></title>
-        <id>60dea77-58n8f4v-01qkara-rwe72</id>
-        <link href="https://blog.front-matter.io/mfenner/peer-review-is-not-a-piece-of-cake"/>
-        <updated>2010-09-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[On Monday <strong><strong>Jenny Rohn</strong></strong> published a blog post Peer review is no picnic that concludes:<em><em><em><em><em><em><em><em>So the next time you hear someone asserting that scientists aren’t critical, of their own work or that of their colleagues,...]]></summary>
-        <content type="html"><![CDATA[<p>On Monday <strong><strong>Jenny Rohn</strong></strong> published a blog post <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/blog/2010/sep/06/peer-review">Peer review is no picnic</a> that concludes:</p>
-<blockquote>
-<em><em><em><em><em><em><em><em>So the next time you hear someone asserting that scientists aren’t critical, of their own work or that of their colleagues, remember that if a finding has made its way into a reputable journal, it’s most likely despite every last objection that the researcher and all of his lab-mates could come up with – to say nothing of those nasty peer reviewers.</em></em></em></em></em></em></em></em>
-</blockquote>
-<p>As always with Jenny’s blog posts, the discussion is as interesting as the blog post itself. Joe Dunckley, Maxine Clarke, Austin Elliott, David Colquhoun, and others wrote thoughtful comments about peer review (the comments are now closed). Peer review is an important topic that I want to write more about on this blog (I wrote <a href="https://web.archive.org/web/20120525040917/http://blogs.nature.com/mfenner/2009/07/13/the-value-of-peer-review">The Value of Peer Review</a> after attending SciFoo 2009).</p>
-<p>Jenny normally writes at Nature Network (<a href="https://web.archive.org/web/20120525040917/http://blogs.nature.com/ue19877e8/">Mind the Gap</a>), but for this post was invited as guest blogger for the <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/series/blog-festival">Guardian science blogs</a>. They launched just last week and for the <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/series/blog-festival">Blog Festival</a> blog have started to invite guest bloggers such as <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/blog/2010/sep/03/amateur-astronomy-telescope-night-sky">Stephen Curry</a> (Nature Network) and <a href="https://web.archive.org/web/20120525040917/http://www.guardian.co.uk/science/blog/2010/sep/01/psychedelic-drugs-mental-illness">Mo Costandi</a> (scienceblogs.com).</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
