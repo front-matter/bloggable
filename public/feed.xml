@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-08-06T09:03:10.102Z</updated>
+    <updated>2021-08-09T13:34:01.532Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -18,7 +18,7 @@
         <link href="https://blog.front-matter.io/mfenner/inveniordm-lts-announced"/>
         <updated>2021-08-05T17:15:49.000Z</updated>
         <summary type="html"><![CDATA[The open source research data management platform InvenioRDM today announced the first Long-Term Support (LTS) release, usable on production services. And I am joining the effort as a participating partner via Front Matter,...]]></summary>
-        <content type="html"><![CDATA[<p>The open source research data management platform InvenioRDM <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v6.0.0/%20%20%20">today announced</a> the first Long-Term Support (LTS) release, usable on production services. And I am joining the effort as a participating partner via <a href="https://front-matter.io">Front Matter</a>, the organization I started this week.</p>
+        <content type="html"><![CDATA[<p>The open source research data management platform InvenioRDM <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v6.0.0/">today announced</a> the first Long-Term Support (LTS) release, usable on production services. And I am joining the effort as a participating partner via <a href="https://front-matter.io">Front Matter</a>, the organization I started this week.</p>
 <p>InvenioRDM was <a href="https://inveniosoftware.org/blog/2019-04-29-rdm/">first announced in April 2019</a>:</p>
 <blockquote>
 Our vision in the next five-years, is to make InvenioRDM a world-leading extensible research data management platform used by research institutions all around the world and with businesses providing services, support and customizations on top of InvenioRDM.
