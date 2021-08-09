@@ -19,6 +19,7 @@ export default function Support() {
               />{' '}
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.buymeacoffee.com/frontmatter"
               >
                 Buy me a coffee
