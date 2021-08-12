@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-08-10T14:22:53.861Z</updated>
+    <updated>2021-08-12T14:58:39.458Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -13,12 +13,42 @@
     <subtitle>Front Matter is a science blogging platform.</subtitle>
     <rights>Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
     <entry>
+        <title type="html"><![CDATA[How readers can support the Front Matter blog]]></title>
+        <id>3kg9325-wss8khv-xaddcc6-zkg2a</id>
+        <link href="https://blog.front-matter.io/mfenner/how-readers-can-support"/>
+        <updated>2021-08-10T14:19:57.000Z</updated>
+        <summary type="html"><![CDATA[The Front Matter blog launched last week and while the content is currently only written by me, I hope this will change in the coming months to include one-time guest posts and regular writers. One challenge is to figure out how to finance the blog in the long run....]]></summary>
+        <content type="html"><![CDATA[<p>The Front Matter blog <a href="https://blog.front-matter.io/mfenner/front-matter-officially-launches-today">launched last week</a> and while the content is currently only written by me, I hope this will change in the coming months to include one-time guest posts and regular writers. One challenge is to figure out how to finance the blog in the long run. Running blog infrastructure is not overtly expensive, and in the case of the Front Matter blog amounts to about 120€/$140 a month:</p>
+<ul>
+<li>hosting Ghost blog editor 15€/month (<a href="https://www.digitalocean.com/">Digital Ocean</a>)</li>
+<li>hosting Next.js frontend 20€/month (<a href="https://vercel.com/">Vercel</a>)</li>
+<li>hosting full-text search index 35€/month (<a href="https://typesense.org/">Typesense</a>)</li>
+<li>hosting Discourse commenting platform 15€/month (<a href="https://www.digitalocean.com/">Digital Ocean</a>)</li>
+<li>web analytics €5/month (<a href="https://plausible.io/">Plausible</a>)</li>
+<li>registration domain name 35€/year (<a href="https://dnsimple.com/">DNSimple</a>)</li>
+<li>DOI registration €300/year (estimate, <a href="https://www.crossref.org/">Crossref</a>)</li>
+</ul>
+<p>The cost not reflected above, is of course staff time for writing blog posts, but also editing, deciding on topics, reaching out to potential writers, etc. A reasonable goal would be to pay for an editor one day a week, which would add about 1280€/1500$ to the monthly cost running the blog. How can this be supported financially?</p>
+<p>While there is always the hope of finding an organization (funder, publisher, institution, infrastructure provider, etc.) that cares enough about Open Science to pay for running this blog, a more realistic alternative is to depend on reader contributions, combined with volunteer donations.</p>
+<p>Advertisements are a very painful way to recover even a fraction of the costs for running a blog that caters to a relatively small audience (scholarly communication). In response several platforms, including <a href="https://medium.com/">Medium</a>, <a href="https://ghost.org/">Ghost</a> and <a href="https://substack.com/">Substack</a>, have evolved with a business model focused on providing exclusive content to paying subscribers. This is obviously not an option for an Open Science blog, where the assumption is that content is free to read and reuse under a Creative Commons license.</p>
+<p>Today the Front Matter blog is starting a newsletter with a small monthly subscription fee (3€/month or 30€/year). The newsletter does not provide exclusive content, but rather is a convenience for users to directly receive content in their email inbox rather than via the <a href="https://blog.front-matter.io/feed.xml">the Front Matter RSS Feed</a>. In addition, users can give one-time donations to support the Front Matter blog. These payment options are provided by <a href="https://www.buymeacoffee.com/">Buy Me a Coffee</a>, with a <a href="https://blog.front-matter.io/support">link</a> to the membership/support page in the footer of every Front Matter page  (see screenshot below).</p>
+<figure>
+<img src="https://assets.front-matter.io/ghost/2021/August/9th/Bildschirmfoto%202021-08-09%20um%2020.21.20.png" class="kg-image" width="2210" height="1252" alt="Buy Me a Coffee page for Front Matter" /><figcaption aria-hidden="true"><a href="https://www.buymeacoffee.com/frontmatter">Buy Me a Coffee page</a> for Front Matter</figcaption>
+</figure>
+<p>I hope that by the end of the year, some revenue will accrue that can support the Front Matter blog. It would definitely be a strong motivation to write regular Open Science blog posts with interesting content. A related aim of course is to nurture active and engaged readers who write comments in response to the posts, suggest topics to write about, and generally tell me via comments or email how Front Matter can do better.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[First InvenioRDM Long-Term Support (LTS) version released today – and Front Matter is joining as a participating partner]]></title>
         <id>7x0afvb-64y9spv-8x7e211-ybnjr</id>
         <link href="https://blog.front-matter.io/mfenner/inveniordm-lts-announced"/>
         <updated>2021-08-05T17:15:49.000Z</updated>
         <summary type="html"><![CDATA[The open source research data management platform InvenioRDM today announced the first Long-Term Support (LTS) release, usable on production services. And I am joining the effort as a participating partner via Front Matter,...]]></summary>
-        <content type="html"><![CDATA[<p>The open source research data management platform InvenioRDM <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v6.0.0/">today announced</a> the first Long-Term Support (LTS) release, usable on production services. And I am joining the effort as a participating partner via <a href="https://front-matter.io">Front Matter</a>, the organization I started this week.</p>
+        <content type="html"><![CDATA[<p>The open source research data management platform InvenioRDM <a href="https://inveniordm.docs.cern.ch/releases/versions/version-v6.0.0/%20%20%20">today announced</a> the first Long-Term Support (LTS) release, usable on production services. And I am joining the effort as a participating partner via <a href="https://front-matter.io">Front Matter</a>, the organization I started this week.</p>
 <p>InvenioRDM was <a href="https://inveniosoftware.org/blog/2019-04-29-rdm/">first announced in April 2019</a>:</p>
 <blockquote>
 Our vision in the next five-years, is to make InvenioRDM a world-leading extensible research data management platform used by research institutions all around the world and with businesses providing services, support and customizations on top of InvenioRDM.
@@ -705,6 +735,17 @@ Our vision in the next five-years, is to make InvenioRDM a world-leading extensi
     }
   }
 }</code></pre>
+<div class="iframe">
+<div id="player">
+
+</div>
+<section id="an-error-occurred." class="message player-unavailable">
+<h1 class="message">An error occurred.</h1>
+<div class="submessage">
+<a href="https://www.youtube.com/watch?v=efvxGfU_oVM">Sieh dir dieses Video auf www.youtube.com an</a> oder aktiviere JavaScript, falls es in deinem Browser deaktiviert sein sollte.
+</div>
+</section>
+</div>
 <p>After this short introduction it should have become clearer how GraphQL works differently from your typical REST API, and that GraphQL is a perfect fit for the kinds of queries one might want to do with the PID Graph. Now that you have had an introduction to the DataCite GraphQL API, you can try your own queries.</p>
 <p>The DataCite GraphQL API is a pre-release version, which means it's not yet final. It may contain bugs or might be missing functionality you expect. In particular more complex queries of the PID Graph are not yet supported. Your feedback is valuable for improving the API, so we encourage you to try it out and let us know what you think. Please use the <a href="https://www.pidforum.org/c/pid-graph">PID Graph section in the PID Forum</a> to ask questions or suggest features. We'll keep updating the API, and we aim to get a final release out sometime later this year.</p>
 <p><em>This blog post was <a href="https://doi.org/10.5438/qab1-n315">originally published</a> on the DataCite Blog.</em></p>
@@ -8813,24 +8854,6 @@ I would define post-publication review as the process whereby scientists and oth
         <summary type="html"><![CDATA[One of the main themes at the Science Online London Conference last weekend was <strong><strong>data</strong></strong>, with several sessions devoted to publishing primary research data, connecting scientific data from various resources,...]]></summary>
         <content type="html"><![CDATA[<p>One of the main themes at the <a href="https://web.archive.org/web/20120525101008/http://www.scienceonlinelondon.org/programme.php">Science Online London Conference</a> last weekend was <strong><strong>data</strong></strong>, with several sessions devoted to publishing primary research data, connecting scientific data from various resources, and a scientific experiment taking place before and during the conference (<a href="https://web.archive.org/web/20120525101008/http://scienceonlinelondon.wikidot.com/topics:green-chain-reaction">Green Chain reaction</a>).</p>
 <p><a href="https://web.archive.org/web/20120525101008/http://www.informationisbeautiful.net/visualizations/">David McCandless</a> talked about Data Visualization, a fascinating way to filter and make sense of the enormous amounts of data that we produce. This is of course also very relevant to science. Those that couldn’t attend the conference, or were in one of the parallel sessions like myself (<a href="https://web.archive.org/web/20120525101008/http://blogs.plos.org/mfenner/2010/09/07/orcid-as-unique-author-identifier-what-is-it-good-for-and-should-we-worry-or-be-happy/">speaking about author identifiers</a>), can watch this video of a <a href="https://web.archive.org/web/20120525101008/http://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization.html">TED talk</a> that David gave in July:</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Lanyrd: a new Twitter mashup for conferences]]></title>
-        <id>47e6kym-bcg8d7v-jdcxchk-qjcdg</id>
-        <link href="https://blog.front-matter.io/mfenner/lanyrd-a-new-twitter-mashup-for-conferences"/>
-        <updated>2010-09-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lanyrd is a new social directory for conferences launched just a few days ago. It integrates with Twitter to allow you to list conferences you are organizing, speaking at, attending, or just following. It is a social directory in the sense that everyone...]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://web.archive.org/web/20120525041249/http://lanyrd.com/">Lanyrd</a> is a new social directory for conferences launched just a few days ago. It integrates with Twitter to allow you to list conferences you are organizing, speaking at, attending, or just following. It is a social directory in the sense that everyone can edit this information (I don’t know who started the <a href="https://web.archive.org/web/20120525041249/http://lanyrd.com/2010/science-online-london/">Science Online London 2010</a> page), and that you can see the conferences of your Twitter contacts. Future versions of Lanyrd will do a lot more (you can see some of the upcoming features at the <a href="https://web.archive.org/web/20120525041249/http://lanyrd.com/2010/dconstruct/">dConstruct 2010</a> page), but the site is already useful and just looks gorgeous.</p>
-<figure>
-<img src="https://web.archive.org/web/20120525041249im_/http://lanyrd.com/static/img/logo/lanyrd-158x158.png" class="kg-image" />
-</figure>
-<p>The Lanyrd blog launched yesterday and <a href="https://web.archive.org/web/20120525041249/http://lanyrd.com/blog/2010/welcome/">the first post</a> contains some interesting background information. Lanyrd is a joint project by web developers and newly-weds Simon Willison and Natalie Downe. They launched Lanyrd from Morocco while on an extended honeymoon and don’t plan to be back to England before the end of next year.</p>
-<p>Sites such as <strong><strong>Eventbrite</strong></strong>, <strong><strong>Upcoming</strong></strong> or <strong><strong>Slideshare</strong></strong> have been around for a while. Twitter is becoming an increasingly useful tool for conferences (<a href="https://web.archive.org/web/20120525041249/http://blogs.plos.org/mfenner/2010/09/12/lanyrd-a-new-twitter-mashup-for-conferences/The%20Great%20Science%20Online%20London%20Tweetup">The Great Science Online London Tweetup</a>). And Lanyrd is one of the nicest examples that I have seen so far that integrates Twitter into a service targeted at conference attendees.</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
