@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-08-24T17:35:51.767Z</updated>
+    <updated>2021-09-06T07:55:32.731Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -17,9 +17,9 @@
         <id>a0zcvjr-909bht8-kcsq1sd-87fh</id>
         <link href="https://blog.front-matter.io/mfenner/step-forward-for-software-citation"/>
         <updated>2021-08-24T16:57:24.000Z</updated>
-        <summary type="html"><![CDATA[<em>Cross-posted from the Force11 blog. Authors: Martin Fenner, Stephan Druskat, Neil Chue Hong, Daniel S. Katz, Morane Gruenpeter, Arfon Smith, Tom Morell and Robert Haines</em>On August 19, GitHub announced software citation support in GitHub repositories....]]></summary>
-        <content type="html"><![CDATA[<p><em><a href="https://www.force11.org/blog/step-forward-software-citation-githubs-enhanced-software-citation-support">Cross-posted</a> from the Force11 blog. Authors: Martin Fenner, Stephan Druskat, Neil Chue Hong, Daniel S. Katz, Morane Gruenpeter, Arfon Smith, Tom Morell and Robert Haines</em></p>
-<p>On August 19, <a href="https://github.blog/2021-08-19-enhanced-support-citations-github/">GitHub announced</a> software citation support in GitHub repositories. Citation information provided by users (using a CITATION.cff YAML file in the root directory of the default branch) is parsed and made available as bibtex file or formatted citation, currently supporting the APA citation style. The APA style is a good start as it is the only popular citation style that labels software with the string <code>[Computer software]</code> but we hope to see support for more citation styles – including those popular in computer science – to be supported going forward. Going forward we also hope to see support for biblatex and potentially <code>@software</code> as the bibtex entry type.</p>
+        <summary type="html"><![CDATA[<em>Cross-posted from the FORCE11 blog. Authors: Martin Fenner, Stephan Druskat, Neil Chue Hong, Daniel S. Katz, Morane Gruenpeter, Arfon Smith, Tom Morell and Robert Haines</em>On August 19, GitHub announced software citation support in GitHub repositories....]]></summary>
+        <content type="html"><![CDATA[<p><em><a href="https://www.force11.org/blog/step-forward-software-citation-githubs-enhanced-software-citation-support">Cross-posted</a> from the FORCE11 blog. Authors: Martin Fenner, Stephan Druskat, Neil Chue Hong, Daniel S. Katz, Morane Gruenpeter, Arfon Smith, Tom Morell and Robert Haines</em></p>
+<p>On August 19, <a href="https://github.blog/2021-08-19-enhanced-support-citations-github/">GitHub announced</a> software citation support in GitHub repositories. Citation information provided by users (using a CITATION.cff YAML file in the root directory of the default branch) is parsed and made available as bibtex file or formatted citation, currently supporting the APA citation style. The APA style is a good start as it is the only popular citation style that labels software with the string <code>[Computer software]</code> but we hope to see support for more citation styles – including those popular in computer science – going forward. Going forward we also hope to see support for biblatex and potentially <code>@software</code> as the bibtex entry type.</p>
 <figure>
 <img src="https://assets.front-matter.io/ghost/2021/August/24th/Bildschirmfoto%202021-08-24%20um%2018.16.55.png" class="kg-image" width="792" height="626" alt="Cite this repository GitHub example" /><figcaption aria-hidden="true">Cite this repository GitHub example</figcaption>
 </figure>
