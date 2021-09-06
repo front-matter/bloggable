@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-09-06T07:55:32.731Z</updated>
+    <updated>2021-09-06T08:18:36.550Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -12,6 +12,25 @@
     <link rel="self" href="https://blog.front-matter.io/feed.xml"/>
     <subtitle>Front Matter is a science blogging platform.</subtitle>
     <rights>Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
+    <entry>
+        <title type="html"><![CDATA[Editorial by more than 200 health journals: Call for emergency action to limit global temperature increases, restore biodiversity, and protect health]]></title>
+        <id>31z2jfe-fx19tr9-t8cbp4p-fbx70</id>
+        <link href="https://blog.front-matter.io/mfenner/editorial-by-more-than-200-call-for-emergency-action-to-limit-global-temperature-increases-restore-biodiversity-and-protect-health"/>
+        <updated>2021-09-06T07:50:05.000Z</updated>
+        <summary type="html"><![CDATA[More than 200 health journals today published an editorial calling for urgent action to keep average global temperature increases below 1.5°C, halt the destruction of nature, and protect health. The editorial can be read for example here (published under a CC-BY Open Access license),...]]></summary>
+        <content type="html"><![CDATA[<p>More than 200 health journals today published an editorial calling for urgent action to keep average global temperature increases below 1.5°C, halt the destruction of nature, and protect health. The editorial can be read for example <a href="https://doi.org/10.1136/bmj.n1734">here</a> (published under a CC-BY Open Access license), and the full list of participating journals can be found <a href="https://www.bmj.com/content/full-list-authors-and-signatories-climate-emergency-editorial-september-2021">here</a>.</p>
+<blockquote>
+The greatest threat to global public health is the continued failure of world leaders to keep the global temperature rise below 1.5°C and to restore nature. Urgent, society-wide changes must be made and will lead to a fairer and healthier world. We, as editors of health journals, call for governments and other leaders to act, marking 2021 as the year that the world finally changes course.
+</blockquote>
+<p>The COVID Pandemic is currently taking up all our attention. But we should not loose time addressing the environmental crisis triggered by climate change, and having a significant negative impact on global health, both via direct effects of global heating and extreme weather events, and indirectly via reduced food production.</p>
+<p>This joint editorial by more than 200 health journals worldwide is yet another clear sign of the urgency of the situation, and the need for action. And we should not forget that health is just one aspect of how the climate crisis is seriously affecting all our lives, in particular those most vulnerable.</p>
+<p>The editorial makes a strong point that the time for action is now, and that wealthy nations must do much more, and much faster. It is also an opportunity to think about what we as individuals can do, whether it is about re-evaluating our individual carbon footprint, thinking about what political parties we support (Germany where I live for example has a federal election in three weeks), and whether the organizations we work for can do more to slow down global warming.</p>
+]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[A step forward for software citation: GitHub's enhanced software citation support]]></title>
         <id>a0zcvjr-909bht8-kcsq1sd-87fh</id>
@@ -8858,29 +8877,6 @@ have several important shortcomings. I suggest the following changes:</p>
 <li>How could I make Gobbledygook better for you?</li>
 </ul>
 <p>It would be kind if you could provide some feedback in the comments section below.</p>
-]]></content>
-        <author>
-            <name>Martin Fenner</name>
-            <uri>https://orcid.org/0000-0003-1419-2405</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Starting a reading list for Gobbledygook]]></title>
-        <id>12t8e1p-x0184tv-z6xctp4-d23w8</id>
-        <link href="https://blog.front-matter.io/mfenner/starting-a-reading-list-for-goobledygook"/>
-        <updated>2010-09-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[All science bloggers do a lot of reading for background information, or write blog posts based on a (newly published) paper, blog post or news item. So I thought that it would be a good idea to collect those references in a single place.Flickr photo by margolove.Reading lists are perfect for this,...]]></summary>
-        <content type="html"><![CDATA[<p>All science bloggers do a lot of reading for background information, or write blog posts based on a (newly published) paper, blog post or news item. So I thought that it would be a good idea to collect those references in a single place.</p>
-<figure>
-<img src="https://assets.front-matter.io/ghost/2021/April/17th/1252522330_78b53d7e16.jpeg" class="kg-image" width="500" height="380" alt="Flickr photo by margolove." /><figcaption aria-hidden="true">Flickr photo by margolove.</figcaption>
-</figure>
-<p>Reading lists are perfect for this, and they are easy to create and maintain with web-based reference managers. Reading lists are used in teaching, e.g. to provide a list of required reading material for a class. But I can also see a number of benefits for science blogs:</p>
-<ul>
-<li>they help the blogger to organize his background material for writing</li>
-<li>they help the reader find and keep referenced material</li>
-<li>they can provide additional reading not mentioned in the blog post</li>
-</ul>
-<p>There are several good tools for reading lists. I decided to use <a href="https://web.archive.org/web/20120604134625/http://www.citeulike.org/">CiteULike</a>, because what I really want here is a social bookmarking tool that understands references. My Goobledygook reading list is <a href="https://web.archive.org/web/20120604134625/http://www.citeulike.org/group/13987/library">here</a>, the RSS feed is <a href="https://web.archive.org/web/20120604134625/http://www.citeulike.org/rss/group/13987/library">here</a>, and the most recent items in the reading list are also shown in a new sidebar to the right. I started with references to papers, but plan to also include blog posts and other web resources.</p>
 ]]></content>
         <author>
             <name>Martin Fenner</name>
