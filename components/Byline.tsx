@@ -2,6 +2,7 @@ import React from 'react'
 
 type Props = {
   author: {
+    id: string
     name: string
     imageUrl: string
   }

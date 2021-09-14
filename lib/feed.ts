@@ -1,6 +1,6 @@
 import { Feed } from 'feed'
 import { getAllPosts } from './posts'
-import { fromUnixTime } from 'date-fns'
+import { parseISO } from 'date-fns'
 const fs = require('fs')
 
 export async function generateAtomFeed() {
@@ -25,22 +25,18 @@ export async function generateAtomFeed() {
 
   posts.forEach((post) => {
     feed.addItem({
-      title: post.document.title,
+      title: post.title,
       author: [
         {
-          name: post.document.author.name,
-          link: post.document.author.id
+          name: post.primary_author.name,
+          link: post.primary_author.website
         }
       ],
-      id: post.document.id,
-      link:
-        'https://blog.front-matter.io/' +
-        post.document.blogId +
-        '/' +
-        post.document.slug,
-      description: post.document.description,
-      content: post.document.content,
-      date: fromUnixTime(post.document.published)
+      id: post.id,
+      link: 'https://blog.front-matter.io/mfenner/' + post.slug,
+      description: post.description,
+      content: post.html,
+      date: parseISO(post.published_at)
     })
   })
 

@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactHtmlParser from 'react-html-parser'
+import { parseISO } from 'date-fns'
 import Link from 'next/link'
 // import Image from 'next/image'
 import Byline from './Byline'
 import Pagination from './Pagination'
+import { sanitizeDescription } from '../lib/helpers'
 
 export default function Tag({ posts, featured }) {
   if (!posts) {
@@ -29,14 +31,14 @@ export default function Tag({ posts, featured }) {
               {posts.slice(0, 3).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.document.id}
+                  key={post.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
                     <img
                       className="h-48 w-full object-contain"
                       src={
-                        post.document.featureImage
-                          ? post.document.featureImage
+                        post.feature_image
+                          ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -47,44 +49,45 @@ export default function Tag({ posts, featured }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.document.tags.map((tag, index) => (
+                        {post.tags.map((tag, index) => (
                           <>
                             <Link
-                              key={tag}
-                              href={`/categories/${tag}`}
+                              key={tag.slug}
+                              href={`/categories/${tag.slug}`}
                               passHref
                             >
                               <a
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.split('-').join(' ')}
+                                {tag.slug}
                               </a>
                             </Link>
-                            {index + 1 < post.document.tags.length ? ' · ' : ''}
+                            {index + 1 < post.tags.length ? ' · ' : ''}
                           </>
                         ))}
                       </p>
                       <a
-                        href={'/mfenner/' + post.document.slug}
+                        href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.document.title}
+                          {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.document.description)}
+                          {sanitizeDescription(post.html)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
-                          name: post.document.author.name,
-                          imageUrl: post.document.author.imageUrl
+                          id: post.primary_author.website,
+                          name: post.primary_author.name,
+                          imageUrl: post.primary_author.profile_image
                         }}
-                        published={new Date(post.document.published * 1000)}
-                        readingTime={post.document.readingTime}
+                        published={parseISO(post.published_at)}
+                        readingTime={post.reading_time}
                       />
                     </div>
                   </div>
@@ -95,14 +98,14 @@ export default function Tag({ posts, featured }) {
               {posts.slice(3, 4).map((post) => (
                 <div
                   className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
-                  key={post.document.id}
+                  key={post.id}
                 >
                   <div className="flex-shrink-0 bg-white py-6 px-6">
                     <img
                       className="h-96 w-full object-contain object-left"
                       src={
-                        post.document.featureImage
-                          ? post.document.featureImage
+                        post.feature_image
+                          ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -113,44 +116,45 @@ export default function Tag({ posts, featured }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <p className="text-sm mt-2 font-medium uppercase font-sans text-green-600">
-                        {post.document.tags.map((tag, index) => (
+                        {post.tags.map((tag, index) => (
                           <>
                             <Link
-                              key={tag}
-                              href={`/categories/${tag}`}
+                              key={tag.slug}
+                              href={`/categories/${tag.slug}`}
                               passHref
                             >
                               <a
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.split('-').join(' ')}
+                                {tag.slug}
                               </a>
                             </Link>
-                            {index + 1 < post.document.tags.length ? ' · ' : ''}
+                            {index + 1 < post.tags.length ? ' · ' : ''}
                           </>
                         ))}
                       </p>
                       <a
-                        href={'/mfenner/' + post.document.slug}
+                        href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.document.title}
+                          {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.document.description)}
+                          {sanitizeDescription(post.html)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
-                          name: post.document.author.name,
-                          imageUrl: post.document.author.imageUrl
+                          id: post.primary_author.website,
+                          name: post.primary_author.name,
+                          imageUrl: post.primary_author.profile_image
                         }}
-                        published={new Date(post.document.published * 1000)}
-                        readingTime={post.document.readingTime}
+                        published={parseISO(post.published_at)}
+                        readingTime={post.reading_time}
                       />
                     </div>
                   </div>
@@ -161,14 +165,14 @@ export default function Tag({ posts, featured }) {
               {posts.slice(4, 7).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.document.id}
+                  key={post.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
                     <img
                       className="h-48 w-full object-contain"
                       src={
-                        post.document.featureImage
-                          ? post.document.featureImage
+                        post.feature_image
+                          ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -179,44 +183,45 @@ export default function Tag({ posts, featured }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.document.tags.map((tag, index) => (
+                        {post.tags.map((tag, index) => (
                           <>
                             <Link
-                              key={tag}
-                              href={`/categories/${tag}`}
+                              key={tag.slug}
+                              href={`/categories/${tag.slug}`}
                               passHref
                             >
                               <a
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.split('-').join(' ')}
+                                {tag.slug}
                               </a>
                             </Link>
-                            {index + 1 < post.document.tags.length ? ' · ' : ''}
+                            {index + 1 < post.tags.length ? ' · ' : ''}
                           </>
                         ))}
                       </p>
                       <a
-                        href={'/mfenner/' + post.document.slug}
+                        href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.document.title}
+                          {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.document.description)}
+                          {sanitizeDescription(post.html)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
-                          name: post.document.author.name,
-                          imageUrl: post.document.author.imageUrl
+                          id: post.primary_author.website,
+                          name: post.primary_author.name,
+                          imageUrl: post.primary_author.profile_image
                         }}
-                        published={new Date(post.document.published * 1000)}
-                        readingTime={post.document.readingTime}
+                        published={parseISO(post.published_at)}
+                        readingTime={post.reading_time}
                       />
                     </div>
                   </div>
@@ -227,14 +232,14 @@ export default function Tag({ posts, featured }) {
               {posts.slice(7, 9).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.document.id}
+                  key={post.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
                     <img
                       className="h-48 w-full object-contain"
                       src={
-                        post.document.featureImage
-                          ? post.document.featureImage
+                        post.feature_image
+                          ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -245,44 +250,45 @@ export default function Tag({ posts, featured }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.document.tags.map((tag, index) => (
+                        {post.tags.map((tag, index) => (
                           <>
                             <Link
-                              key={tag}
-                              href={`/categories/${tag}`}
+                              key={tag.slug}
+                              href={`/categories/${tag.slug}`}
                               passHref
                             >
                               <a
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.split('-').join(' ')}
+                                {tag.slug}
                               </a>
                             </Link>
-                            {index + 1 < post.document.tags.length ? ' · ' : ''}
+                            {index + 1 < post.tags.length ? ' · ' : ''}
                           </>
                         ))}
                       </p>
                       <a
-                        href={'/mfenner/' + post.document.slug}
+                        href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.document.title}
+                          {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.document.description)}
+                          {sanitizeDescription(post.html)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
-                          name: post.document.author.name,
-                          imageUrl: post.document.author.imageUrl
+                          id: post.primary_author.website,
+                          name: post.primary_author.name,
+                          imageUrl: post.primary_author.profile_image
                         }}
-                        published={new Date(post.document.published * 1000)}
-                        readingTime={post.document.readingTime}
+                        published={parseISO(post.published_at)}
+                        readingTime={post.reading_time}
                       />
                     </div>
                   </div>
@@ -293,14 +299,14 @@ export default function Tag({ posts, featured }) {
               {posts.slice(9, 10).map((post) => (
                 <div
                   className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
-                  key={post.document.id}
+                  key={post.id}
                 >
                   <div className="flex-shrink-0 bg-white py-6 px-6">
                     <img
                       className="h-96 w-full object-contain object-left"
                       src={
-                        post.document.featureImage
-                          ? post.document.featureImage
+                        post.feature_image
+                          ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -311,44 +317,45 @@ export default function Tag({ posts, featured }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <p className="text-sm mt-2 font-medium uppercase font-sans text-green-600">
-                        {post.document.tags.map((tag, index) => (
+                        {post.tags.map((tag, index) => (
                           <>
                             <Link
-                              key={tag}
-                              href={`/categories/${tag}`}
+                              key={tag.slug}
+                              href={`/categories/${tag.slug}`}
                               passHref
                             >
                               <a
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.split('-').join(' ')}
+                                {tag.slug}
                               </a>
                             </Link>
-                            {index + 1 < post.document.tags.length ? ' · ' : ''}
+                            {index + 1 < post.tags.length ? ' · ' : ''}
                           </>
                         ))}
                       </p>
                       <a
-                        href={'/mfenner/' + post.document.slug}
+                        href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.document.title}
+                          {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.document.description)}
+                          {sanitizeDescription(post.html)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
-                          name: post.document.author.name,
-                          imageUrl: post.document.author.imageUrl
+                          id: post.primary_author.website,
+                          name: post.primary_author.name,
+                          imageUrl: post.primary_author.profile_image
                         }}
-                        published={new Date(post.document.published * 1000)}
-                        readingTime={post.document.readingTime}
+                        published={parseISO(post.published_at)}
+                        readingTime={post.reading_time}
                       />
                     </div>
                   </div>
@@ -359,14 +366,14 @@ export default function Tag({ posts, featured }) {
               {posts.slice(10, 13).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.document.id}
+                  key={post.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-2 px-6">
                     <img
                       className="h-48 w-full object-contain"
                       src={
-                        post.document.featureImage
-                          ? post.document.featureImage
+                        post.feature_image
+                          ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -377,44 +384,45 @@ export default function Tag({ posts, featured }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.document.tags.map((tag, index) => (
+                        {post.tags.map((tag, index) => (
                           <>
                             <Link
-                              key={tag}
-                              href={`/categories/${tag}`}
+                              key={tag.slug}
+                              href={`/categories/${tag.slug}`}
                               passHref
                             >
                               <a
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.split('-').join(' ')}
+                                {tag.slug}
                               </a>
                             </Link>
-                            {index + 1 < post.document.tags.length ? ' · ' : ''}
+                            {index + 1 < post.tags.length ? ' · ' : ''}
                           </>
                         ))}
                       </p>
                       <a
-                        href={'/mfenner/' + post.document.slug}
+                        href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.document.title}
+                          {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.document.description)}
+                          {sanitizeDescription(post.html)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
-                          name: post.document.author.name,
-                          imageUrl: post.document.author.imageUrl
+                          id: post.primary_author.website,
+                          name: post.primary_author.name,
+                          imageUrl: post.primary_author.profile_image
                         }}
-                        published={new Date(post.document.published * 1000)}
-                        readingTime={post.document.readingTime}
+                        published={parseISO(post.published_at)}
+                        readingTime={post.reading_time}
                       />
                     </div>
                   </div>
@@ -425,14 +433,14 @@ export default function Tag({ posts, featured }) {
               {posts.slice(13, 15).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.document.id}
+                  key={post.id}
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
                     <img
                       className="h-48 w-full object-contain"
                       src={
-                        post.document.featureImage
-                          ? post.document.featureImage
+                        post.feature_image
+                          ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -443,44 +451,45 @@ export default function Tag({ posts, featured }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.document.tags.map((tag, index) => (
+                        {post.tags.map((tag, index) => (
                           <>
                             <Link
-                              key={tag}
-                              href={`/categories/${tag}`}
+                              key={tag.slug}
+                              href={`/categories/${tag.slug}`}
                               passHref
                             >
                               <a
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.split('-').join(' ')}
+                                {tag.slug}
                               </a>
                             </Link>
-                            {index + 1 < post.document.tags.length ? ' · ' : ''}
+                            {index + 1 < post.tags.length ? ' · ' : ''}
                           </>
                         ))}
                       </p>
                       <a
-                        href={'/mfenner/' + post.document.slug}
+                        href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.document.title}
+                          {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.document.description)}
+                          {sanitizeDescription(post.html)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
-                          name: post.document.author.name,
-                          imageUrl: post.document.author.imageUrl
+                          id: post.primary_author.website,
+                          name: post.primary_author.name,
+                          imageUrl: post.primary_author.profile_image
                         }}
-                        published={new Date(post.document.published * 1000)}
-                        readingTime={post.document.readingTime}
+                        published={parseISO(post.published_at)}
+                        readingTime={post.reading_time}
                       />
                     </div>
                   </div>

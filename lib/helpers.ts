@@ -1,5 +1,8 @@
 import '@formatjs/intl-numberformat/polyfill'
 import '@formatjs/intl-numberformat/locale-data/en'
+import sanitizeHtml from 'sanitize-html'
+import ReactHtmlParser from 'react-html-parser'
+import trimText from './trimText'
 
 export const compactNumbers = (num: number, compact: boolean = false) => {
   let options = {}
@@ -44,4 +47,17 @@ export const initMiddleware = (middleware) => {
         return resolve(result)
       })
     })
+}
+
+export const sanitizeDescription = (description: string) => {
+  return ReactHtmlParser(
+    trimText(
+      sanitizeHtml(description, {
+        allowedTags: ['b', 'i', 'em', 'strong']
+      }),
+      200,
+      250,
+      300
+    )[0] + ' ...'
+  )
 }

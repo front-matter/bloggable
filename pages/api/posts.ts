@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
 import omit from 'lodash/omit'
-import { getPosts } from '../../lib/posts'
+import { getAllPosts } from '../../lib/posts'
 import { initMiddleware } from '../../lib/helpers'
 
 // Initialize the cors middleware
@@ -18,11 +18,7 @@ export default async function handler(
   // Run cors
   await cors(req, res)
 
-  const posts = await getPosts(
-    req.query['query'] as string,
-    req.query['page'] as any,
-    req.query['hitsPerPage'] as any
-  )
+  const posts = await getAllPosts()
 
   // if there is an error
   if (posts && posts.name) {

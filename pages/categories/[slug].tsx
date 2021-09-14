@@ -1,5 +1,5 @@
 import React from 'react'
-import { getPostsByTag, getGhostTags, getSingleGhostTag } from '../../lib/posts'
+import { getPostsByTag, getAllTags, getSingleTag } from '../../lib/posts'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
@@ -7,7 +7,7 @@ import Tag from '../../components/Tag'
 import { GetStaticPaths } from 'next'
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const tags = await getGhostTags()
+  const tags = await getAllTags()
   const paths = tags.map((tag) => ({
     params: { slug: tag.slug }
   }))
@@ -16,9 +16,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export async function getStaticProps(context) {
-  const tag = await getSingleGhostTag(context.params.slug)
+  const tag = await getSingleTag(context.params.slug)
   const posts = await getPostsByTag(context.params.slug, tag.count.posts)
 
+  console.log(posts.slice(0))
   if (!posts || !tag) {
     return {
       props: { notFound: true }
@@ -26,7 +27,7 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { posts, tag }
+    props: { posts: posts.slice(0, -2), tag }
   }
 }
 
