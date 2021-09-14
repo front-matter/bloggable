@@ -19,6 +19,7 @@ import {
   getRecommendedPosts
 } from '../../lib/posts'
 import Byline from '../../components/Byline'
+import { sanitizeDescription, uuid2base32 } from '../../lib/helpers'
 import DiscourseForum from '../../lib/discourse-forum.js'
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -48,10 +49,41 @@ export async function getStaticProps(context) {
 const Post = (props) => {
   if (!props.post) return <div>Not found</div>
 
+  const pid = uuid2base32(props.post.id)
+  const description = sanitizeDescription(props.post.html)
+  const schemaOrg = {
+    '@context': 'http://schema.org',
+    '@type': 'BlogPosting',
+    '@id': 'https://blog.front-matter.io/' + pid,
+    url: 'https://blog.front-matter.io/mfenner/' + props.post.slug,
+    name: props.post.title,
+    headline: props.post.title,
+    description: description,
+    author: {
+      '@type': 'Person',
+      '@id': props.post.primary_author.website,
+      name: props.post.primary_author.name,
+      image: props.post.primary_author.profile_image
+        ? 'https:' + props.post.primary_author.profile_image
+        : null
+    },
+    publisher: { '@type': 'Organization', name: 'Front Matter' },
+    keywords: props.post.tags
+      ? props.post.tags.map((tag) => tag.slug).join(', ')
+      : null,
+    inLanguage: 'en',
+    license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
+    dateCreated: props.post.created_at,
+    dateModified: props.post.updated_at,
+    datePublished: props.post.published_at
+  }
+
   return (
     <>
       <Head>
         <title>{props.post.title}</title>
+
+        <meta name="description" content={description} />
 
         <meta name="citation_title" content={props.post.title} />
         <meta name="citation_author" content={props.post.primary_author.name} />
@@ -61,7 +93,7 @@ const Post = (props) => {
             'en-US'
           )}
         />
-        <meta name="citation_journal_title" content="FronMatter" />
+        <meta name="citation_journal_title" content="Front Matter" />
         <meta name="citation_language" content="en" />
         {props.post.tags && (
           <meta
@@ -77,10 +109,9 @@ const Post = (props) => {
         />
 
         <meta name="og:title" content={props.post.title} />
-        <meta name="og:description" content={props.post.description} />
-        <script type="application/ld+json">
-          {JSON.stringify(props.post.schemaOrg)}
-        </script>
+        <meta name="og:description" content={description} />
+
+        <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
       </Head>
       <Header />
       <div className="container mx-4 md:mx-auto px-6 py-8 flex flex-wrap justify-center">
