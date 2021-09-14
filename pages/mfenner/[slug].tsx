@@ -84,6 +84,10 @@ const Post = (props) => {
         <title>{props.post.title}</title>
 
         <meta name="DC.identifier" content={pid} />
+        <meta
+          name="DC.rights"
+          content="https://creativecommons.org/licenses/by/4.0/legalcode"
+        />
         <meta name="description" content={description} />
 
         <meta name="citation_title" content={props.post.title} />
