@@ -79,7 +79,7 @@ export default function RecommendedPosts({ posts }) {
                         author={{
                           id: post.primary_author.website,
                           name: post.primary_author.name,
-                          imageUrl: post.primary_author.website
+                          imageUrl: post.primary_author.profile_image
                         }}
                         published={parseISO(post.published_at)}
                         readingTime={post.reading_time}
