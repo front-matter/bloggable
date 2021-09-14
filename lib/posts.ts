@@ -36,8 +36,12 @@ export async function getRecommendedPosts(tag, id) {
   return api.posts
     .browse({
       filter: 'tag:' + tag.slug + '+id:-' + id,
-      limit: 3,
+      limit: 25,
       include: 'tags,authors'
+    })
+    .then((posts) => {
+      const randomPosts = posts.sort(() => 0.5 - Math.random())
+      return randomPosts.slice(0, 3)
     })
     .catch((err) => {
       console.error(err)
