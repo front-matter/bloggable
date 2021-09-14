@@ -30,6 +30,18 @@ export async function getFeaturedPosts() {
     })
 }
 
+export async function getRecommendedPosts(tag, id) {
+  return api.posts
+    .browse({
+      filter: 'tag:' + tag.slug + '+id:-' + id,
+      limit: 3,
+      include: 'tags,authors'
+    })
+    .catch((err) => {
+      console.error(err)
+    })
+}
+
 export async function getPostsByTag(tag, limit) {
   return api.posts
     .browse({

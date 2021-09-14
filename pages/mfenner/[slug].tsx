@@ -5,6 +5,7 @@ import ReactHtmlParser from 'react-html-parser'
 import { parseISO } from 'date-fns'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import RecommendedPosts from '../../components/RecommendedPosts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCreativeCommons,
@@ -12,7 +13,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 import { GetStaticPaths } from 'next'
-import { getAllPosts, getSinglePost } from '../../lib/posts'
+import {
+  getAllPosts,
+  getSinglePost,
+  getRecommendedPosts
+} from '../../lib/posts'
 import Byline from '../../components/Byline'
 import DiscourseForum from '../../lib/discourse-forum.js'
 
@@ -27,6 +32,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   const post = await getSinglePost(context.params.slug)
+  const recommendedPosts = await getRecommendedPosts(post.primary_tag, post.id)
 
   if (!post) {
     return {
@@ -35,7 +41,7 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { post }
+    props: { post, recommendedPosts }
   }
 }
 
@@ -124,6 +130,7 @@ const Post = (props) => {
           <DiscourseForum post={props.post} />
         </div>
       </div>
+      <RecommendedPosts posts={props.recommendedPosts} />
       <Footer />
     </>
   )

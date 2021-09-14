@@ -19,7 +19,6 @@ export async function getStaticProps(context) {
   const tag = await getSingleTag(context.params.slug)
   const posts = await getPostsByTag(context.params.slug, tag.count.posts)
 
-  console.log(posts.slice(0))
   if (!posts || !tag) {
     return {
       props: { notFound: true }

@@ -1,10 +1,11 @@
 import React from 'react'
 import { sanitizeDescription } from '../lib/helpers'
+import { parseISO } from 'date-fns'
 import Link from 'next/link'
 // import Image from 'next/image'
 import Byline from './Byline'
 
-export default function SimilarPosts({ posts }) {
+export default function RecommendedPosts({ posts }) {
   return (
     <>
       <div className="relative bg-gray-50 pt-16 pb-16 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8">
@@ -15,7 +16,7 @@ export default function SimilarPosts({ posts }) {
           <div className="relative max-w-7xl mx-auto">
             <div className="text-center">
               <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-                Related Posts
+                Recommended Posts
               </h2>
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
@@ -28,8 +29,8 @@ export default function SimilarPosts({ posts }) {
                     <img
                       className="h-48 w-full object-contain"
                       src={
-                        post.featureImage
-                          ? post.featureImage
+                        post.feature_image
+                          ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -44,15 +45,15 @@ export default function SimilarPosts({ posts }) {
                         {post.tags.map((tag, index) => (
                           <>
                             <Link
-                              key={tag.name}
-                              href={`/categories/${tag.name}`}
+                              key={tag.slug}
+                              href={`/categories/${tag.slug}`}
                               passHref
                             >
                               <a
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.name}
+                                {tag.slug}
                               </a>
                             </Link>
                             {index + 1 < post.tags.length ? ' · ' : ''}
@@ -78,8 +79,8 @@ export default function SimilarPosts({ posts }) {
                           name: post.primary_author.name,
                           imageUrl: post.primary_author.website
                         }}
-                        published={new Date(post.published * 1000)}
-                        readingTime={post.readingTime}
+                        published={parseISO(post.published_at)}
+                        readingTime={post.reading_time}
                       />
                     </div>
                   </div>
