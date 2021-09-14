@@ -83,6 +83,7 @@ const Post = (props) => {
       <Head>
         <title>{props.post.title}</title>
 
+        <meta name="DC.identifier" content={pid} />
         <meta name="description" content={description} />
 
         <meta name="citation_title" content={props.post.title} />
