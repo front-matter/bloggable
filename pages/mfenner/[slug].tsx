@@ -32,12 +32,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   const post = await getSinglePost(context.params.slug)
-  const recommendedPosts = await getRecommendedPosts(post.primary_tag, post.id)
 
   if (!post) {
     return {
       props: { notFound: true }
     }
+  }
+
+  let recommendedPosts = null
+  if (post && post.tag) {
+    recommendedPosts = await getRecommendedPosts(post.primary_tag, post.id)
   }
 
   return {
@@ -130,7 +134,9 @@ const Post = (props) => {
           <DiscourseForum post={props.post} />
         </div>
       </div>
-      <RecommendedPosts posts={props.recommendedPosts} />
+      {props.recommendedPosts && (
+        <RecommendedPosts posts={props.recommendedPosts} />
+      )}
       <Footer />
     </>
   )
