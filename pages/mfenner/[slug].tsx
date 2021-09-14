@@ -39,11 +39,7 @@ export async function getStaticProps(context) {
     }
   }
 
-  let recommendedPosts = null
-  if (post && post.tag) {
-    recommendedPosts = await getRecommendedPosts(post.primary_tag, post.id)
-  }
-
+  const recommendedPosts = await getRecommendedPosts(post.primary_tag, post.id)
   return {
     props: { post, recommendedPosts }
   }
@@ -134,9 +130,7 @@ const Post = (props) => {
           <DiscourseForum post={props.post} />
         </div>
       </div>
-      {props.recommendedPosts && (
-        <RecommendedPosts posts={props.recommendedPosts} />
-      )}
+      <RecommendedPosts posts={props.recommendedPosts} />
       <Footer />
     </>
   )

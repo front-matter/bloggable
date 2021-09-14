@@ -31,6 +31,8 @@ export async function getFeaturedPosts() {
 }
 
 export async function getRecommendedPosts(tag, id) {
+  if (!tag || !id) return []
+
   return api.posts
     .browse({
       filter: 'tag:' + tag.slug + '+id:-' + id,
