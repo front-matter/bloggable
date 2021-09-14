@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactHtmlParser from 'react-html-parser'
 import { parseISO } from 'date-fns'
 import Link from 'next/link'
 // import Image from 'next/image'

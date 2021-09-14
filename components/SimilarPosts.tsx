@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactHtmlParser from 'react-html-parser'
+import { sanitizeDescription } from '../lib/helpers'
 import Link from 'next/link'
 // import Image from 'next/image'
 import Byline from './Byline'
@@ -67,13 +67,14 @@ export default function SimilarPosts({ posts }) {
                           {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {ReactHtmlParser(post.description)}
+                          {sanitizeDescription(post.html)}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
                         author={{
+                          id: post.primary_author.website,
                           name: post.primary_author.name,
                           imageUrl: post.primary_author.website
                         }}
