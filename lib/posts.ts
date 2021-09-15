@@ -31,11 +31,11 @@ export async function getFeaturedPosts() {
 }
 
 export async function getRecommendedPosts(tag, id) {
-  if (!tag || !id) return []
+  const tagName = tag ? tag.slug : 'news'
 
   return api.posts
     .browse({
-      filter: 'tag:' + tag.slug + '+id:-' + id,
+      filter: 'tag:' + tagName + '+id:-' + id,
       limit: 25,
       include: 'tags,authors'
     })
