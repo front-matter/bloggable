@@ -1,6 +1,5 @@
 import React from 'react'
 import { parseISO } from 'date-fns'
-import Link from 'next/link'
 import Byline from './Byline'
 import Pagination from './Pagination'
 import { sanitizeDescription } from '../lib/helpers'
