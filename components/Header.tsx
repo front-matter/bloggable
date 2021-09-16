@@ -21,7 +21,7 @@ export default function Navbar({ tags }) {
                       width={32}
                     />
                     <span className="text-lg font-semibold pl-1 pt-1">
-                      Front Matter
+                      Front Matter Blog
                     </span>
                   </a>
                 </Link>
