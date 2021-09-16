@@ -137,11 +137,7 @@ const Post = (props) => {
           )}
           <h1 className="mt-0 mb-2 text-green-600">{props.post.title}</h1>
           <Byline
-            author={{
-              id: props.post.primary_author.website,
-              name: props.post.primary_author.name,
-              imageUrl: props.post.primary_author.profile_image
-            }}
+            authors={props.post.authors}
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
           />

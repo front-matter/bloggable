@@ -1,32 +1,29 @@
 import React from 'react'
 
 type Props = {
-  author: {
-    id: string
-    name: string
-    imageUrl: string
-  }
+  authors: Author[]
   published: Date
   readingTime: number
 }
 
+interface Author {
+  website: string
+  name: string
+  profile_image: string
+}
+
 const Byline: React.FunctionComponent<Props> = ({
-  author,
+  authors,
   published,
   readingTime
 }) => {
   return (
     <div className="flex flex-row pt-2 pb-4">
-      <img
-        className="h-10 shadow rounded-full mr-2"
-        src={author.imageUrl}
-        alt={''}
-      />
       <div className="">
         <div className="font-bold font-sans uppercase text-sm">
-          {author.name}
+          {authors.map((author) => author.name).join(', ')}
         </div>
-        <div className="uppercase font-sans text-sm text-gray-600">
+        <div className="font-sans text-sm text-gray-600">
           {published.toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',

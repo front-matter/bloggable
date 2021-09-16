@@ -1,7 +1,6 @@
 import React from 'react'
 import { parseISO } from 'date-fns'
 import Link from 'next/link'
-// import Image from 'next/image'
 import Byline from './Byline'
 import Pagination from './Pagination'
 import { sanitizeDescription } from '../lib/helpers'
@@ -80,11 +79,7 @@ export default function Tag({ posts, featured }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        author={{
-                          id: post.primary_author.website,
-                          name: post.primary_author.name,
-                          imageUrl: post.primary_author.profile_image
-                        }}
+                        authors={post.authors}
                         published={parseISO(post.published_at)}
                         readingTime={post.reading_time}
                       />
@@ -147,11 +142,7 @@ export default function Tag({ posts, featured }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        author={{
-                          id: post.primary_author.website,
-                          name: post.primary_author.name,
-                          imageUrl: post.primary_author.profile_image
-                        }}
+                        authors={post.authors}
                         published={parseISO(post.published_at)}
                         readingTime={post.reading_time}
                       />
@@ -214,11 +205,7 @@ export default function Tag({ posts, featured }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        author={{
-                          id: post.primary_author.website,
-                          name: post.primary_author.name,
-                          imageUrl: post.primary_author.profile_image
-                        }}
+                        authors={post.authors}
                         published={parseISO(post.published_at)}
                         readingTime={post.reading_time}
                       />
@@ -281,11 +268,7 @@ export default function Tag({ posts, featured }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        author={{
-                          id: post.primary_author.website,
-                          name: post.primary_author.name,
-                          imageUrl: post.primary_author.profile_image
-                        }}
+                        authors={post.authors}
                         published={parseISO(post.published_at)}
                         readingTime={post.reading_time}
                       />
@@ -348,11 +331,7 @@ export default function Tag({ posts, featured }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        author={{
-                          id: post.primary_author.website,
-                          name: post.primary_author.name,
-                          imageUrl: post.primary_author.profile_image
-                        }}
+                        authors={post.authors}
                         published={parseISO(post.published_at)}
                         readingTime={post.reading_time}
                       />
@@ -415,11 +394,7 @@ export default function Tag({ posts, featured }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        author={{
-                          id: post.primary_author.website,
-                          name: post.primary_author.name,
-                          imageUrl: post.primary_author.profile_image
-                        }}
+                        authors={post.authors}
                         published={parseISO(post.published_at)}
                         readingTime={post.reading_time}
                       />
@@ -482,11 +457,7 @@ export default function Tag({ posts, featured }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        author={{
-                          id: post.primary_author.website,
-                          name: post.primary_author.name,
-                          imageUrl: post.primary_author.profile_image
-                        }}
+                        authors={post.authors}
                         published={parseISO(post.published_at)}
                         readingTime={post.reading_time}
                       />
