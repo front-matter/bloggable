@@ -51,7 +51,7 @@ export default function Tag({ posts }) {
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.slug}
+                                {tag.name}
                               </a>
                             </Link>
                             {index + 1 < post.tags.length ? ' · ' : ''}
@@ -114,7 +114,7 @@ export default function Tag({ posts }) {
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.slug}
+                                {tag.name}
                               </a>
                             </Link>
                             {index + 1 < post.tags.length ? ' · ' : ''}
@@ -177,7 +177,7 @@ export default function Tag({ posts }) {
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.slug}
+                                {tag.name}
                               </a>
                             </Link>
                             {index + 1 < post.tags.length ? ' · ' : ''}
@@ -240,7 +240,7 @@ export default function Tag({ posts }) {
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.slug}
+                                {tag.name}
                               </a>
                             </Link>
                             {index + 1 < post.tags.length ? ' · ' : ''}
@@ -303,7 +303,7 @@ export default function Tag({ posts }) {
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.slug}
+                                {tag.name}
                               </a>
                             </Link>
                             {index + 1 < post.tags.length ? ' · ' : ''}
@@ -366,7 +366,7 @@ export default function Tag({ posts }) {
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.slug}
+                                {tag.name}
                               </a>
                             </Link>
                             {index + 1 < post.tags.length ? ' · ' : ''}
@@ -429,7 +429,7 @@ export default function Tag({ posts }) {
                                 href="dummy"
                                 className="border-b-0 hover:border-b hover:border-green-600"
                               >
-                                {tag.slug}
+                                {tag.name}
                               </a>
                             </Link>
                             {index + 1 < post.tags.length ? ' · ' : ''}
