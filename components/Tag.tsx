@@ -39,25 +39,6 @@ export default function Tag({ posts }) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.tags.map((tag, index) => (
-                          <>
-                            <Link
-                              key={tag.slug}
-                              href={`/categories/${tag.slug}`}
-                              passHref
-                            >
-                              <a
-                                href="dummy"
-                                className="border-b-0 hover:border-b hover:border-green-600"
-                              >
-                                {tag.name}
-                              </a>
-                            </Link>
-                            {index + 1 < post.tags.length ? ' · ' : ''}
-                          </>
-                        ))}
-                      </p>
                       <a
                         href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
@@ -102,25 +83,6 @@ export default function Tag({ posts }) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm mt-2 font-medium uppercase font-sans text-green-600">
-                        {post.tags.map((tag, index) => (
-                          <>
-                            <Link
-                              key={tag.slug}
-                              href={`/categories/${tag.slug}`}
-                              passHref
-                            >
-                              <a
-                                href="dummy"
-                                className="border-b-0 hover:border-b hover:border-green-600"
-                              >
-                                {tag.name}
-                              </a>
-                            </Link>
-                            {index + 1 < post.tags.length ? ' · ' : ''}
-                          </>
-                        ))}
-                      </p>
                       <a
                         href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
@@ -165,25 +127,6 @@ export default function Tag({ posts }) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.tags.map((tag, index) => (
-                          <>
-                            <Link
-                              key={tag.slug}
-                              href={`/categories/${tag.slug}`}
-                              passHref
-                            >
-                              <a
-                                href="dummy"
-                                className="border-b-0 hover:border-b hover:border-green-600"
-                              >
-                                {tag.name}
-                              </a>
-                            </Link>
-                            {index + 1 < post.tags.length ? ' · ' : ''}
-                          </>
-                        ))}
-                      </p>
                       <a
                         href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
@@ -228,25 +171,6 @@ export default function Tag({ posts }) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.tags.map((tag, index) => (
-                          <>
-                            <Link
-                              key={tag.slug}
-                              href={`/categories/${tag.slug}`}
-                              passHref
-                            >
-                              <a
-                                href="dummy"
-                                className="border-b-0 hover:border-b hover:border-green-600"
-                              >
-                                {tag.name}
-                              </a>
-                            </Link>
-                            {index + 1 < post.tags.length ? ' · ' : ''}
-                          </>
-                        ))}
-                      </p>
                       <a
                         href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
@@ -291,25 +215,6 @@ export default function Tag({ posts }) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm mt-2 font-medium uppercase font-sans text-green-600">
-                        {post.tags.map((tag, index) => (
-                          <>
-                            <Link
-                              key={tag.slug}
-                              href={`/categories/${tag.slug}`}
-                              passHref
-                            >
-                              <a
-                                href="dummy"
-                                className="border-b-0 hover:border-b hover:border-green-600"
-                              >
-                                {tag.name}
-                              </a>
-                            </Link>
-                            {index + 1 < post.tags.length ? ' · ' : ''}
-                          </>
-                        ))}
-                      </p>
                       <a
                         href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
@@ -354,25 +259,6 @@ export default function Tag({ posts }) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.tags.map((tag, index) => (
-                          <>
-                            <Link
-                              key={tag.slug}
-                              href={`/categories/${tag.slug}`}
-                              passHref
-                            >
-                              <a
-                                href="dummy"
-                                className="border-b-0 hover:border-b hover:border-green-600"
-                              >
-                                {tag.name}
-                              </a>
-                            </Link>
-                            {index + 1 < post.tags.length ? ' · ' : ''}
-                          </>
-                        ))}
-                      </p>
                       <a
                         href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
@@ -417,25 +303,6 @@ export default function Tag({ posts }) {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm font-medium uppercase font-sans text-green-600">
-                        {post.tags.map((tag, index) => (
-                          <>
-                            <Link
-                              key={tag.slug}
-                              href={`/categories/${tag.slug}`}
-                              passHref
-                            >
-                              <a
-                                href="dummy"
-                                className="border-b-0 hover:border-b hover:border-green-600"
-                              >
-                                {tag.name}
-                              </a>
-                            </Link>
-                            {index + 1 < post.tags.length ? ' · ' : ''}
-                          </>
-                        ))}
-                      </p>
                       <a
                         href={'/mfenner/' + post.slug}
                         className="block mt-2 border-b-0"
