@@ -151,7 +151,8 @@ const Post = (props) => {
               <FontAwesomeIcon icon={faCreativeCommonsBy} />
             </span>
             Copyright © {parseISO(props.post.published_at).getFullYear()}{' '}
-            {props.post.primary_author.name}. Distributed under the terms of the{' '}
+            {props.post.authors.map((author) => author.name).join(', ')}.
+            Distributed under the terms of the{' '}
             <a
               className="border-b-0"
               href="https://creativecommons.org/licenses/by/4.0/legalcode"
