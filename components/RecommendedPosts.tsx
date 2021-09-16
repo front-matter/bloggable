@@ -1,6 +1,6 @@
 import React from 'react'
 import { sanitizeDescription } from '../lib/helpers'
-import { parseISO } from 'date-fns
+import { parseISO } from 'date-fns'
 import Byline from './Byline'
 
 export default function RecommendedPosts({ posts }) {
