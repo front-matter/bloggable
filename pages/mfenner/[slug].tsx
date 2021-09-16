@@ -127,7 +127,7 @@ const Post = (props) => {
                 <>
                   <Link key={tag.slug} href={`/categories/${tag.slug}`}>
                     <span className="border-b-0 hover:border-b hover:border-green-600">
-                      {tag.slug}
+                      {tag.name}
                     </span>
                   </Link>
                   {index + 1 < props.post.tags.length ? ' · ' : ''}
