@@ -17,6 +17,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   const tag = await getSingleTag(context.params.slug)
+  const tags = await getAllTags()
   const posts = await getPostsByTag(context.params.slug, tag.count.posts)
 
   if (!posts || !tag) {
@@ -26,16 +27,16 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { posts: posts.slice(0, -2), tag }
+    props: { posts: posts.slice(0, -2), tags, tag }
   }
 }
 
-const CategoryPage = ({ posts, tag }) => {
+const CategoryPage = ({ posts, tags, tag }) => {
   return (
     <>
-      <Header />
+      <Header tags={tags} />
       <Hero tag={tag} />
-      <Tag posts={posts} featured={false} />
+      <Tag posts={posts} />
       <Footer />
     </>
   )

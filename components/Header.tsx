@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/img/logo.svg'
 
-export default function Navbar() {
+export default function Navbar({ tags }) {
   return (
     <>
       <nav className="bg-white">
@@ -25,6 +25,18 @@ export default function Navbar() {
                     </span>
                   </a>
                 </Link>
+              </div>
+              <div className="hidden ml-10 mt-5 space-x-8 lg:block">
+                {tags &&
+                  tags.map((tag) => (
+                    <a
+                      key={tag.name}
+                      href={'/categories/' + tag.slug}
+                      className="text-base font-medium text-green-600 hover:text-green-500 border-b-0"
+                    >
+                      {tag.name}
+                    </a>
+                  ))}
               </div>
             </div>
           </div>

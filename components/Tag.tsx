@@ -5,7 +5,7 @@ import Byline from './Byline'
 import Pagination from './Pagination'
 import { sanitizeDescription } from '../lib/helpers'
 
-export default function Tag({ posts, featured }) {
+export default function Tag({ posts }) {
   if (!posts) {
     return null
   }
@@ -18,14 +18,7 @@ export default function Tag({ posts, featured }) {
             <div className="bg-white h-1/3 sm:h-2/3"></div>
           </div>
           <div className="relative max-w-7xl mx-auto">
-            {featured && (
-              <div className="text-center">
-                <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-                  Featured Posts
-                </h2>
-              </div>
-            )}
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
               {posts.slice(0, 3).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"

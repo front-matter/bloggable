@@ -5,7 +5,6 @@ import { generateAtomFeed } from '../lib/feed'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
-import Categories from '../components/Categories'
 import Tag from '../components/Tag'
 // import Newsletter from '../components/Newsletter'
 
@@ -31,18 +30,17 @@ export async function getStaticProps() {
 
 const IndexPage = ({ posts, tags }) => {
   const tag = {
-    name: 'Scholarship needs Front Matter',
-    description: null,
+    name: 'Front Matter Blog',
+    description: 'Where Open Science matters',
     feature_image: '/img/hero.jpg',
     featured: true
   }
 
   return (
     <>
-      <Header />
+      <Header tags={tags} />
       <Hero tag={tag} />
-      <Categories tags={tags} />
-      <Tag posts={posts} featured={true} />
+      <Tag posts={posts} />
       <Footer />
     </>
   )
