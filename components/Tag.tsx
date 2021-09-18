@@ -39,7 +39,7 @@ export default function Tag({ posts }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
@@ -83,7 +83,7 @@ export default function Tag({ posts }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
@@ -127,7 +127,7 @@ export default function Tag({ posts }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
@@ -171,7 +171,7 @@ export default function Tag({ posts }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
@@ -215,7 +215,7 @@ export default function Tag({ posts }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
@@ -259,7 +259,7 @@ export default function Tag({ posts }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
@@ -303,7 +303,7 @@ export default function Tag({ posts }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">
@@ -347,7 +347,7 @@ export default function Tag({ posts }) {
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
-                        href={'/mfenner/' + post.slug}
+                        href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
                         <p className="text-xl font-semibold font-sans text-gray-900">

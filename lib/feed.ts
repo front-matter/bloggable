@@ -33,7 +33,7 @@ export async function generateAtomFeed() {
         }
       ],
       id: post.id,
-      link: 'https://blog.front-matter.io/mfenner/' + post.slug,
+      link: 'https://blog.front-matter.io/posts/' + post.slug,
       description: post.description,
       content: post.html,
       date: parseISO(post.published_at)

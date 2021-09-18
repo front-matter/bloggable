@@ -57,7 +57,7 @@ const Post = (props) => {
     '@context': 'http://schema.org',
     '@type': 'BlogPosting',
     '@id': 'https://blog.front-matter.io/' + pid,
-    url: 'https://blog.front-matter.io/mfenner/' + props.post.slug,
+    url: 'https://blog.front-matter.io/posts/' + props.post.slug,
     name: props.post.title,
     headline: props.post.title,
     description: description,
