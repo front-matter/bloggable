@@ -52,7 +52,7 @@ export default function Navbar({ tags, tag }) {
                       id="search"
                       name="search"
                       className="block w-full bg-white border border-gray-300 rounded-md py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:outline-none focus:text-gray-900 focus:placeholder-gray-400 focus:ring-1 focus:ring-green-600 focus:border-green-600 sm:text-sm font-sans"
-                      placeholder="Search"
+                      placeholder="Under construction..."
                       type="search"
                     />
                   </div>
@@ -100,7 +100,7 @@ export default function Navbar({ tags, tag }) {
                 {tags.map((item) => (
                   <a
                     key={item.name}
-                    href={item.href}
+                    href={'/categories/' + item.slug}
                     className={classNames(
                       item.slug == tag.slug
                         ? 'text-gray-600 font-semibold'
