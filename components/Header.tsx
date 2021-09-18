@@ -70,7 +70,7 @@ export default function Navbar({ tags, tag }) {
                 </Disclosure.Button>
               </div>
             </div>
-            {tags.length > 0 && (
+            {tags && tags.length > 0 && (
               <nav
                 className="hidden py-2 space-x-6 lg:block"
                 aria-label="Global"
