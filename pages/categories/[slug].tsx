@@ -34,7 +34,7 @@ export async function getStaticProps(context) {
 const CategoryPage = ({ posts, tags, tag }) => {
   return (
     <>
-      <Header tags={tags} />
+      <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
       <Tag posts={posts} />
       <Footer />

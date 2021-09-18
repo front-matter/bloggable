@@ -15,6 +15,7 @@ import {
 import { GetStaticPaths } from 'next'
 import {
   getAllPosts,
+  getAllTags,
   getSinglePost,
   getRecommendedPosts
 } from '../../lib/posts'
@@ -33,6 +34,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   const post = await getSinglePost(context.params.slug)
+  const tags = await getAllTags()
 
   if (!post) {
     return {
@@ -42,7 +44,7 @@ export async function getStaticProps(context) {
 
   const recommendedPosts = await getRecommendedPosts(post.primary_tag, post.id)
   return {
-    props: { post, recommendedPosts }
+    props: { post, tags, recommendedPosts }
   }
 }
 
@@ -118,7 +120,7 @@ const Post = (props) => {
 
         <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
       </Head>
-      <Header tags={null} />
+      <Header tags={props.tags} tag={{}} />
       <div className="container mx-4 md:mx-auto px-6 py-8 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
           {props.post.tags && (

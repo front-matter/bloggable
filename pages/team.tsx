@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 const TeamPage = () => {
   return (
     <>
-      <Header tags={null} />
+      <Header tags={[]} tag={{}} />
       <Team />
       <Footer />
     </>

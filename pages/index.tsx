@@ -38,7 +38,7 @@ const IndexPage = ({ posts, tags }) => {
 
   return (
     <>
-      <Header tags={tags} />
+      <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
       <Tag posts={posts} />
       <Footer />

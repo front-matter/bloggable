@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 const PricingPage = () => {
   return (
     <>
-      <Header tags={null} />
+      <Header tags={[]} tag={{}} />
       <Pricing />
       <Footer />
     </>
