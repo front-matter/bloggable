@@ -1,5 +1,6 @@
-import React from 'react'
-import { Fragment } from 'react'
+import React, { createElement, Fragment, useEffect, useRef } from 'react'
+import { render } from 'react-dom'
+import { autocomplete } from '@algolia/autocomplete-js'
 import { Disclosure } from '@headlessui/react'
 import { SearchIcon } from '@heroicons/react/solid'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
@@ -119,4 +120,28 @@ export default function Navbar({ tags, tag }) {
       )}
     </Disclosure>
   )
+}
+
+export function Autocomplete(props) {
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    if (!containerRef.current) {
+      return undefined
+    }
+    const search = autocomplete({
+      container: containerRef.current,
+      renderer: { createElement, Fragment },
+      render({ children }, root) {
+        render(children, root)
+      },
+      ...props
+    })
+
+    return () => {
+      search.destroy()
+    }
+  }, [props])
+
+  return <div ref={containerRef} />
 }
