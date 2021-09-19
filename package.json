@@ -6,6 +6,7 @@
   "repository": "https://github.com/front-matter/bloggable",
   "license": "MIT",
   "dependencies": {
+    "@algolia/autocomplete-js": "^1.4.0",
     "@babel/runtime": "^7.14.6",
     "@cypress/react": "^5.10.0",
     "@formatjs/intl-numberformat": "^7.1.4",
@@ -39,11 +40,13 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-html-parser": "^2.0.2",
+    "react-instantsearch": "^6.12.1",
     "react-markdown": "^6.0.2",
     "react-scripts": "^4.0.3",
     "remark": "^13.0.0",
     "remark-gfm": "^1.0.0",
     "sanitize-html": "^2.4.0",
+    "typesense": "^0.14.0",
     "uuid-encoder": "^1.2.0",
     "webpack": "^5.39.0"
   },

@@ -26,3 +26,4 @@ yarn-error.log*
 .next/
 
 public/typesense.json
+public/feed.xml

@@ -238,7 +238,7 @@ export default function Tag({ posts }) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
-              {posts.slice(7, 9).map((post) => (
+              {posts.slice(10, 12).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.id}
@@ -282,7 +282,7 @@ export default function Tag({ posts }) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {posts.slice(10, 13).map((post) => (
+              {posts.slice(12, 15).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.id}
@@ -326,7 +326,7 @@ export default function Tag({ posts }) {
               ))}
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
-              {posts.slice(13, 15).map((post) => (
+              {posts.slice(15, 18).map((post) => (
                 <div
                   className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                   key={post.id}

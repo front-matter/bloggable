@@ -2,11 +2,12 @@ import React from 'react'
 import { getAllTags, getFeaturedPosts } from '../lib/posts'
 import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
+import { refreshIndex } from '../lib/typesense'
+// import { updateSchema } from '../lib/typesense'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Tag from '../components/Tag'
-// import Newsletter from '../components/Newsletter'
 
 export async function getStaticProps() {
   const tags = await getAllTags()
@@ -22,6 +23,8 @@ export async function getStaticProps() {
   // await generateEpub()
   // await generatePdf()
   // await generateJats()
+  // await updateSchema()
+  await refreshIndex()
 
   return {
     props: { posts, tags }

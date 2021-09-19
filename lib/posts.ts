@@ -1,4 +1,5 @@
 import GhostContentAPI from '@tryghost/content-api'
+import { Client } from 'typesense'
 
 // Create API instance with site credentials
 const api = new GhostContentAPI({
@@ -91,5 +92,79 @@ export async function getSingleTag(tagSlug) {
     })
     .catch((err) => {
       console.error(err)
+    })
+}
+
+// Typesense integrations
+
+const client = new Client({
+  nearestNode: {
+    host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_0,
+    port: '443',
+    protocol: 'https'
+  },
+  nodes: [
+    {
+      host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,
+      port: '443',
+      protocol: 'https'
+    },
+    {
+      host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_2,
+      port: '443',
+      protocol: 'https'
+    },
+    {
+      host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_3,
+      port: '443',
+      protocol: 'https'
+    }
+  ],
+  apiKey: process.env.NEXT_PUBLIC_TYPESENSE_API_KEY,
+  connectionTimeoutSeconds: 10,
+  numRetries: 3,
+  retryIntervalSeconds: 3
+})
+
+export async function getIndexedPosts(
+  query: string,
+  hitsPerPage?: number,
+  page?: number
+) {
+  return client
+    .collections('front-matter')
+    .documents()
+    .search({
+      q: query,
+      query_by: 'tags,title,content',
+      per_page: hitsPerPage ? hitsPerPage : 25,
+      page: page > 0 ? page : 1
+    })
+    .then(({ hits }) => {
+      return hits
+    })
+    .catch((err) => {
+      console.error(err)
+      return err
+    })
+}
+
+export async function getSimilarIndexedPosts(query: string, recordId: string) {
+  return client
+    .collections('front-matter')
+    .documents()
+    .search({
+      q: query,
+      query_by: 'title,content,tags',
+      hidden_hits: recordId,
+      per_page: 3,
+      page: 1
+    })
+    .then(({ hits }) => {
+      return hits
+    })
+    .catch((err) => {
+      console.error(err)
+      return err
     })
 }
