@@ -17,14 +17,14 @@ export default function Pagination({ tag, page, pages, prev, next }) {
       </div>
       <div className="flex-1 flex justify-between sm:justify-end">
         {prev && (
-          <Link href={'/' + tag.slug + '/?page=' + page}>
+          <Link href={'/' + tag.slug + '/?page=' + prev}>
             <a className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:bg-gray-50">
               Previous
             </a>
           </Link>
         )}
         {next && (
-          <Link href={'/' + tag.slug + '/?page=' + page}>
+          <Link href={'/' + tag.slug + '/?page=' + next}>
             <a className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:bg-gray-50">
               Next
             </a>
