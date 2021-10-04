@@ -18,7 +18,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export async function getStaticProps(context) {
   const tag = await getSingleTag(context.params.slug)
   const tags = await getAllTags()
-  const posts = await getPostsByTag(context.params.slug, tag.count.posts)
+  const page = 1
+  const posts = await getPostsByTag(context.params.slug, tag.count.posts, page)
 
   if (!posts || !tag) {
     return {
@@ -27,7 +28,7 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { posts: posts.slice(0, -2), tags, tag }
+    props: { posts, tags, tag }
   }
 }
 

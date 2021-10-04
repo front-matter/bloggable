@@ -29,7 +29,7 @@ export async function refreshIndex() {
       }
     ],
     apiKey: process.env.NEXT_PUBLIC_TYPESENSE_ADMIN_API_KEY,
-    connectionTimeoutSeconds: 5
+    connectionTimeoutSeconds: 10
   })
 
   const posts = await getAllPosts()
@@ -211,7 +211,7 @@ export async function updateSchema() {
       }
     ],
     apiKey: process.env.NEXT_PUBLIC_TYPESENSE_ADMIN_API_KEY,
-    connectionTimeoutSeconds: 2
+    connectionTimeoutSeconds: 10
   })
 
   client
