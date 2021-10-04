@@ -39,11 +39,19 @@ const IndexPage = ({ posts, tags }) => {
     featured: true
   }
 
+  const pagination = {
+    page: 1,
+    pages: 1,
+    total: posts.length,
+    prev: null,
+    next: null
+  }
+
   return (
     <>
       <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
-      <Tag posts={posts} />
+      <Tag posts={posts} tag={tag} pagination={pagination} />
       <Footer />
     </>
   )

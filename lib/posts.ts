@@ -49,13 +49,16 @@ export async function getRecommendedPosts(tag, id) {
     })
 }
 
-export async function getPostsByTag(tag, limit, page) {
+export async function getPostsByTag(tag, page) {
   return api.posts
     .browse({
       filter: 'tag:' + tag,
-      limit: limit,
+      limit: 15,
       page: page,
       include: 'tags,authors'
+    })
+    .then((posts) => {
+      return posts
     })
     .catch((err) => {
       console.error(err)

@@ -18,8 +18,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export async function getStaticProps(context) {
   const tag = await getSingleTag(context.params.slug)
   const tags = await getAllTags()
-  const page = 1
-  const posts = await getPostsByTag(context.params.slug, tag.count.posts, page)
+  const page = context.params.page || 1
+  const posts = await getPostsByTag(context.params.slug, page)
 
   if (!posts || !tag) {
     return {
@@ -28,16 +28,16 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { posts, tags, tag }
+    props: { posts, tags, tag, pagination: posts.meta.pagination }
   }
 }
 
-const CategoryPage = ({ posts, tags, tag }) => {
+const CategoryPage = ({ posts, tags, tag, pagination }) => {
   return (
     <>
       <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
-      <Tag posts={posts} />
+      <Tag posts={posts} tag={tag} pagination={pagination} />
       <Footer />
     </>
   )

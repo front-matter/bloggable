@@ -4,19 +4,9 @@ import Byline from './Byline'
 import Pagination from './Pagination'
 import { sanitizeDescription } from '../lib/helpers'
 
-export default function Tag({ posts }) {
+export default function Tag({ posts, tag, pagination }) {
   if (!posts) {
     return null
-  }
-
-  let page = 1
-  let pages = 1
-  const prev = null
-  const next = null
-
-  if (posts.meta && posts.meta['pagination']) {
-    page = posts.meta['pagination']['page']
-    pages = posts.meta['pagination']['pages']
   }
 
   return (
@@ -335,7 +325,13 @@ export default function Tag({ posts }) {
                 </div>
               ))}
             </div>
-            <Pagination page={page} pages={pages} prev={prev} next={next} />
+            <Pagination
+              tag={tag}
+              page={pagination.page}
+              pages={pagination.pages}
+              prev={pagination.prev}
+              next={pagination.next}
+            />
           </div>
         </div>
       </div>
