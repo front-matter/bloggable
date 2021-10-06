@@ -50,9 +50,11 @@ export async function getRecommendedPosts(tag, id) {
 }
 
 export async function getPostsByTag(tag, page) {
+  const tagName = tag ? tag.slug : 'news'
+
   return api.posts
     .browse({
-      filter: 'tag:' + tag,
+      filter: 'tag:' + tagName,
       limit: 15,
       page: page,
       include: 'tags,authors'

@@ -17,14 +17,16 @@ export default function Tag({ posts, tag, pagination }) {
   const [pageIndex, setPageIndex] = useState(0)
 
   // The API URL includes the page index, which is a React state.
+  // featured posts on the homepage are handled differently
+  const filter = tag.featured ? 'featured:true' : 'tag:' + tag.slug
   const { data } = useSWR(
-    `https://editor.front-matter.io/ghost/api/v4/content/posts?limit=15&include=authors,tags&filter=tag:${tag.slug}&page=${pageIndex}&key=${process.env.NEXT_PUBLIC_GHOST_API_KEY}`,
+    `https://editor.front-matter.io/ghost/api/v4/content/posts?limit=15&include=authors,tags&filter=${filter}&page=${pageIndex}&key=${process.env.NEXT_PUBLIC_GHOST_API_KEY}`,
     fetcher
   )
 
   // ... handle loading and error states
   if (!data) {
-    return <div>loading</div>
+    return null
   } else {
     posts = data.posts
     pagination = data.meta.pagination
@@ -82,270 +84,282 @@ export default function Tag({ posts, tag, pagination }) {
                 </div>
               ))}
             </div>
-            <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {posts.slice(1, 4).map((post) => (
-                <div
-                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.id}
-                >
-                  <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
-                      className="h-48 w-full object-contain"
-                      src={
-                        post.feature_image
-                          ? post.feature_image
-                          : `https://assets.front-matter.io/ghost/news${
-                              Math.floor(Math.random() * 3) + 1
-                            }.jpg`
-                      }
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                    <div className="flex-1">
-                      <a
-                        href={'/posts/' + post.slug}
-                        className="block mt-2 border-b-0"
-                      >
-                        <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.title}
-                        </p>
-                        <p className="mt-3 text-base text-gray-500">
-                          {sanitizeDescription(post.html)}
-                        </p>
-                      </a>
-                    </div>
-                    <div className="mt-0 flex items-center">
-                      <Byline
-                        authors={post.authors}
-                        published={parseISO(post.published_at)}
-                        readingTime={post.reading_time}
+            {posts.length > 1 && (
+              <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                {posts.slice(1, 4).map((post) => (
+                  <div
+                    className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    key={post.id}
+                  >
+                    <div className="flex-shrink-0 bg-white pt-6 px-6">
+                      <img
+                        className="h-48 w-full object-contain"
+                        src={
+                          post.feature_image
+                            ? post.feature_image
+                            : `https://assets.front-matter.io/ghost/news${
+                                Math.floor(Math.random() * 3) + 1
+                              }.jpg`
+                        }
+                        alt=""
                       />
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
-              {posts.slice(4, 6).map((post) => (
-                <div
-                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.id}
-                >
-                  <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
-                      className="h-48 w-full object-contain"
-                      src={
-                        post.feature_image
-                          ? post.feature_image
-                          : `https://assets.front-matter.io/ghost/news${
-                              Math.floor(Math.random() * 3) + 1
-                            }.jpg`
-                      }
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                    <div className="flex-1">
-                      <a
-                        href={'/posts/' + post.slug}
-                        className="block mt-2 border-b-0"
-                      >
-                        <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.title}
-                        </p>
-                        <p className="mt-3 text-base text-gray-500">
-                          {sanitizeDescription(post.html)}
-                        </p>
-                      </a>
+                    <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                      <div className="flex-1">
+                        <a
+                          href={'/posts/' + post.slug}
+                          className="block mt-2 border-b-0"
+                        >
+                          <p className="text-xl font-semibold font-sans text-gray-900">
+                            {post.title}
+                          </p>
+                          <p className="mt-3 text-base text-gray-500">
+                            {sanitizeDescription(post.html)}
+                          </p>
+                        </a>
+                      </div>
+                      <div className="mt-0 flex items-center">
+                        <Byline
+                          authors={post.authors}
+                          published={parseISO(post.published_at)}
+                          readingTime={post.reading_time}
+                        />
+                      </div>
                     </div>
-                    <div className="mt-0 flex items-center">
-                      <Byline
-                        authors={post.authors}
-                        published={parseISO(post.published_at)}
-                        readingTime={post.reading_time}
+                  </div>
+                ))}
+              </div>
+            )}
+            {posts.length > 4 && (
+              <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
+                {posts.slice(4, 6).map((post) => (
+                  <div
+                    className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    key={post.id}
+                  >
+                    <div className="flex-shrink-0 bg-white pt-6 px-6">
+                      <img
+                        className="h-48 w-full object-contain"
+                        src={
+                          post.feature_image
+                            ? post.feature_image
+                            : `https://assets.front-matter.io/ghost/news${
+                                Math.floor(Math.random() * 3) + 1
+                              }.jpg`
+                        }
+                        alt=""
                       />
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
-              {posts.slice(6, 7).map((post) => (
-                <div
-                  className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
-                  key={post.id}
-                >
-                  <div className="flex-shrink-0 bg-white py-6 px-6">
-                    <img
-                      className="h-96 w-full object-contain object-left"
-                      src={
-                        post.feature_image
-                          ? post.feature_image
-                          : `https://assets.front-matter.io/ghost/news${
-                              Math.floor(Math.random() * 3) + 1
-                            }.jpg`
-                      }
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                    <div className="flex-1">
-                      <a
-                        href={'/posts/' + post.slug}
-                        className="block mt-2 border-b-0"
-                      >
-                        <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.title}
-                        </p>
-                        <p className="mt-3 text-base text-gray-500">
-                          {sanitizeDescription(post.html)}
-                        </p>
-                      </a>
+                    <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                      <div className="flex-1">
+                        <a
+                          href={'/posts/' + post.slug}
+                          className="block mt-2 border-b-0"
+                        >
+                          <p className="text-xl font-semibold font-sans text-gray-900">
+                            {post.title}
+                          </p>
+                          <p className="mt-3 text-base text-gray-500">
+                            {sanitizeDescription(post.html)}
+                          </p>
+                        </a>
+                      </div>
+                      <div className="mt-0 flex items-center">
+                        <Byline
+                          authors={post.authors}
+                          published={parseISO(post.published_at)}
+                          readingTime={post.reading_time}
+                        />
+                      </div>
                     </div>
-                    <div className="mt-0 flex items-center">
-                      <Byline
-                        authors={post.authors}
-                        published={parseISO(post.published_at)}
-                        readingTime={post.reading_time}
+                  </div>
+                ))}
+              </div>
+            )}
+            {posts.length > 6 && (
+              <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
+                {posts.slice(6, 7).map((post) => (
+                  <div
+                    className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
+                    key={post.id}
+                  >
+                    <div className="flex-shrink-0 bg-white py-6 px-6">
+                      <img
+                        className="h-96 w-full object-contain object-left"
+                        src={
+                          post.feature_image
+                            ? post.feature_image
+                            : `https://assets.front-matter.io/ghost/news${
+                                Math.floor(Math.random() * 3) + 1
+                              }.jpg`
+                        }
+                        alt=""
                       />
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {posts.slice(7, 10).map((post) => (
-                <div
-                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.id}
-                >
-                  <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
-                      className="h-48 w-full object-contain"
-                      src={
-                        post.feature_image
-                          ? post.feature_image
-                          : `https://assets.front-matter.io/ghost/news${
-                              Math.floor(Math.random() * 3) + 1
-                            }.jpg`
-                      }
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                    <div className="flex-1">
-                      <a
-                        href={'/posts/' + post.slug}
-                        className="block mt-2 border-b-0"
-                      >
-                        <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.title}
-                        </p>
-                        <p className="mt-3 text-base text-gray-500">
-                          {sanitizeDescription(post.html)}
-                        </p>
-                      </a>
+                    <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                      <div className="flex-1">
+                        <a
+                          href={'/posts/' + post.slug}
+                          className="block mt-2 border-b-0"
+                        >
+                          <p className="text-xl font-semibold font-sans text-gray-900">
+                            {post.title}
+                          </p>
+                          <p className="mt-3 text-base text-gray-500">
+                            {sanitizeDescription(post.html)}
+                          </p>
+                        </a>
+                      </div>
+                      <div className="mt-0 flex items-center">
+                        <Byline
+                          authors={post.authors}
+                          published={parseISO(post.published_at)}
+                          readingTime={post.reading_time}
+                        />
+                      </div>
                     </div>
-                    <div className="mt-0 flex items-center">
-                      <Byline
-                        authors={post.authors}
-                        published={parseISO(post.published_at)}
-                        readingTime={post.reading_time}
+                  </div>
+                ))}
+              </div>
+            )}
+            {posts.length > 7 && (
+              <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                {posts.slice(7, 10).map((post) => (
+                  <div
+                    className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    key={post.id}
+                  >
+                    <div className="flex-shrink-0 bg-white pt-6 px-6">
+                      <img
+                        className="h-48 w-full object-contain"
+                        src={
+                          post.feature_image
+                            ? post.feature_image
+                            : `https://assets.front-matter.io/ghost/news${
+                                Math.floor(Math.random() * 3) + 1
+                              }.jpg`
+                        }
+                        alt=""
                       />
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {posts.slice(11, 14).map((post) => (
-                <div
-                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.id}
-                >
-                  <div className="flex-shrink-0 bg-white pt-2 px-6">
-                    <img
-                      className="h-48 w-full object-contain"
-                      src={
-                        post.feature_image
-                          ? post.feature_image
-                          : `https://assets.front-matter.io/ghost/news${
-                              Math.floor(Math.random() * 3) + 1
-                            }.jpg`
-                      }
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                    <div className="flex-1">
-                      <a
-                        href={'/posts/' + post.slug}
-                        className="block mt-2 border-b-0"
-                      >
-                        <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.title}
-                        </p>
-                        <p className="mt-3 text-base text-gray-500">
-                          {sanitizeDescription(post.html)}
-                        </p>
-                      </a>
+                    <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                      <div className="flex-1">
+                        <a
+                          href={'/posts/' + post.slug}
+                          className="block mt-2 border-b-0"
+                        >
+                          <p className="text-xl font-semibold font-sans text-gray-900">
+                            {post.title}
+                          </p>
+                          <p className="mt-3 text-base text-gray-500">
+                            {sanitizeDescription(post.html)}
+                          </p>
+                        </a>
+                      </div>
+                      <div className="mt-0 flex items-center">
+                        <Byline
+                          authors={post.authors}
+                          published={parseISO(post.published_at)}
+                          readingTime={post.reading_time}
+                        />
+                      </div>
                     </div>
-                    <div className="mt-0 flex items-center">
-                      <Byline
-                        authors={post.authors}
-                        published={parseISO(post.published_at)}
-                        readingTime={post.reading_time}
+                  </div>
+                ))}
+              </div>
+            )}
+            {posts.length > 11 && (
+              <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                {posts.slice(11, 14).map((post) => (
+                  <div
+                    className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    key={post.id}
+                  >
+                    <div className="flex-shrink-0 bg-white pt-2 px-6">
+                      <img
+                        className="h-48 w-full object-contain"
+                        src={
+                          post.feature_image
+                            ? post.feature_image
+                            : `https://assets.front-matter.io/ghost/news${
+                                Math.floor(Math.random() * 3) + 1
+                              }.jpg`
+                        }
+                        alt=""
                       />
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
-              {posts.slice(14, 16).map((post) => (
-                <div
-                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                  key={post.id}
-                >
-                  <div className="flex-shrink-0 bg-white pt-6 px-6">
-                    <img
-                      className="h-48 w-full object-contain"
-                      src={
-                        post.feature_image
-                          ? post.feature_image
-                          : `https://assets.front-matter.io/ghost/news${
-                              Math.floor(Math.random() * 3) + 1
-                            }.jpg`
-                      }
-                      alt=""
-                    />
-                  </div>
-                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                    <div className="flex-1">
-                      <a
-                        href={'/posts/' + post.slug}
-                        className="block mt-2 border-b-0"
-                      >
-                        <p className="text-xl font-semibold font-sans text-gray-900">
-                          {post.title}
-                        </p>
-                        <p className="mt-3 text-base text-gray-500">
-                          {sanitizeDescription(post.html)}
-                        </p>
-                      </a>
+                    <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                      <div className="flex-1">
+                        <a
+                          href={'/posts/' + post.slug}
+                          className="block mt-2 border-b-0"
+                        >
+                          <p className="text-xl font-semibold font-sans text-gray-900">
+                            {post.title}
+                          </p>
+                          <p className="mt-3 text-base text-gray-500">
+                            {sanitizeDescription(post.html)}
+                          </p>
+                        </a>
+                      </div>
+                      <div className="mt-0 flex items-center">
+                        <Byline
+                          authors={post.authors}
+                          published={parseISO(post.published_at)}
+                          readingTime={post.reading_time}
+                        />
+                      </div>
                     </div>
-                    <div className="mt-0 flex items-center">
-                      <Byline
-                        authors={post.authors}
-                        published={parseISO(post.published_at)}
-                        readingTime={post.reading_time}
+                  </div>
+                ))}
+              </div>
+            )}
+            {posts.length > 13 && (
+              <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
+                {posts.slice(14, 16).map((post) => (
+                  <div
+                    className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    key={post.id}
+                  >
+                    <div className="flex-shrink-0 bg-white pt-6 px-6">
+                      <img
+                        className="h-48 w-full object-contain"
+                        src={
+                          post.feature_image
+                            ? post.feature_image
+                            : `https://assets.front-matter.io/ghost/news${
+                                Math.floor(Math.random() * 3) + 1
+                              }.jpg`
+                        }
+                        alt=""
                       />
                     </div>
+                    <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                      <div className="flex-1">
+                        <a
+                          href={'/posts/' + post.slug}
+                          className="block mt-2 border-b-0"
+                        >
+                          <p className="text-xl font-semibold font-sans text-gray-900">
+                            {post.title}
+                          </p>
+                          <p className="mt-3 text-base text-gray-500">
+                            {sanitizeDescription(post.html)}
+                          </p>
+                        </a>
+                      </div>
+                      <div className="mt-0 flex items-center">
+                        <Byline
+                          authors={post.authors}
+                          published={parseISO(post.published_at)}
+                          readingTime={post.reading_time}
+                        />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
 
             <nav
               className="mx-0 px-6 py-4 flex items-center justify-between"
