@@ -268,9 +268,9 @@ export default function Tag({ posts, tag, pagination }) {
                 ))}
               </div>
             )}
-            {posts.length > 11 && (
+            {posts.length > 10 && (
               <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-                {posts.slice(11, 14).map((post) => (
+                {posts.slice(10, 13).map((post) => (
                   <div
                     className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
@@ -316,7 +316,7 @@ export default function Tag({ posts, tag, pagination }) {
             )}
             {posts.length > 13 && (
               <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
-                {posts.slice(14, 16).map((post) => (
+                {posts.slice(13, 16).map((post) => (
                   <div
                     className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
