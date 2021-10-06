@@ -23,6 +23,7 @@ export default function Tag({ posts, tag, pagination }) {
   )
 
   // ... handle loading and error states
+  if (!data) return 'loading'
 
   posts = data.posts
   pagination = data.meta.pagination
