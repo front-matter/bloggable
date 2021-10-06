@@ -21,8 +21,11 @@ export default function Tag({ posts, tag, pagination }) {
     `https://editor.front-matter.io/ghost/api/v4/content/posts?limit=15&include=authors,tags&filter=tag:${tag.slug}&page=${pageIndex}&key=${process.env.NEXT_PUBLIC_GHOST_API_KEY}`,
     fetcher
   )
-  console.log(data)
+
   // ... handle loading and error states
+
+  posts = data.posts
+  pagination = data.meta.pagination
 
   return (
     <>
