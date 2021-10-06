@@ -1,13 +1,28 @@
 import React from 'react'
+import { useState } from 'react'
 import { parseISO } from 'date-fns'
+import useSWR from 'swr'
+import fetch from 'unfetch'
+
 import Byline from './Byline'
-import Pagination from './Pagination'
 import { sanitizeDescription } from '../lib/helpers'
+
+const fetcher = (url) => fetch(url).then((r) => r.json())
 
 export default function Tag({ posts, tag, pagination }) {
   if (!posts) {
     return null
   }
+
+  const [pageIndex, setPageIndex] = useState(0)
+
+  // The API URL includes the page index, which is a React state.
+  const { data } = useSWR(
+    `https://editor.front-matter.io/ghost/api/v4/content/posts?limit=15&include=authors,tags&filter=tag:${tag.slug}&page=${pageIndex}&key=${process.env.NEXT_PUBLIC_GHOST_API_KEY}`,
+    fetcher
+  )
+  console.log(data)
+  // ... handle loading and error states
 
   return (
     <>
@@ -325,13 +340,35 @@ export default function Tag({ posts, tag, pagination }) {
                 </div>
               ))}
             </div>
-            <Pagination
-              tag={tag}
-              page={pagination.page}
-              pages={pagination.pages}
-              prev={pagination.prev}
-              next={pagination.next}
-            />
+
+            <nav
+              className="mx-0 px-6 py-4 flex items-center justify-between"
+              aria-label="Pagination"
+            >
+              <div className="hidden sm:block">
+                <p className="text-sm text-gray-700">
+                  Showing <span className="font-medium">{pagination.page}</span>{' '}
+                  of <span className="font-medium">{pagination.pages}</span>{' '}
+                  pages
+                </p>
+              </div>
+              <div className="flex-1 flex justify-between sm:justify-end">
+                {pagination.prev && (
+                  <button onClick={() => setPageIndex(pagination.prev)}>
+                    <a className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:bg-gray-50">
+                      Previous
+                    </a>
+                  </button>
+                )}
+                {pagination.next && (
+                  <button onClick={() => setPageIndex(pagination.next)}>
+                    <a className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:bg-gray-50">
+                      Next
+                    </a>
+                  </button>
+                )}
+              </div>
+            </nav>
           </div>
         </div>
       </div>

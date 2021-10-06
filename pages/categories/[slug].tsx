@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
 import Tag from '../../components/Tag'
 import { GetStaticPaths } from 'next'
+import { GetStaticProps } from 'next'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const tags = await getAllTags()
@@ -15,7 +16,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: true }
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context) => {
   const tag = await getSingleTag(context.params.slug)
   const tags = await getAllTags()
   const page = context.params.page || 1
