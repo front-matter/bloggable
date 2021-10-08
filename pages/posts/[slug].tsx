@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import ReactHtmlParser from 'react-html-parser'
 import { parseISO } from 'date-fns'
+import { BlogPosting } from 'schema-dts'
+import { jsonLdScriptProps } from 'react-schemaorg'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import RecommendedPosts from '../../components/RecommendedPosts'
@@ -53,32 +55,6 @@ const Post = (props) => {
 
   const pid = process.env.NEXT_PUBLIC_PREFIX + '/' + uuid2base32(props.post.id)
   const description = sanitizeDescription(props.post.html)
-  const schemaOrg = {
-    '@context': 'http://schema.org',
-    '@type': 'BlogPosting',
-    '@id': 'https://doi.org/' + pid,
-    url: 'https://blog.front-matter.io/posts/' + props.post.slug,
-    name: props.post.title,
-    headline: props.post.title,
-    description: description,
-    author: {
-      '@type': 'Person',
-      '@id': props.post.primary_author.website,
-      name: props.post.primary_author.name,
-      image: props.post.primary_author.profile_image
-        ? 'https:' + props.post.primary_author.profile_image
-        : null
-    },
-    publisher: { '@type': 'Organization', name: 'Front Matter' },
-    keywords: props.post.tags
-      ? props.post.tags.map((tag) => tag.slug).join(', ')
-      : null,
-    inLanguage: 'en',
-    license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
-    dateCreated: props.post.created_at,
-    dateModified: props.post.updated_at,
-    datePublished: props.post.published_at
-  }
 
   return (
     <>
@@ -117,8 +93,35 @@ const Post = (props) => {
 
         <meta name="og:title" content={props.post.title} />
         <meta name="og:description" content={description} />
-
-        <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
+        <script
+          type="application/ld+json"
+          {...jsonLdScriptProps<BlogPosting>({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            '@id': 'https://doi.org/' + pid,
+            url: 'https://blog.front-matter.io/posts/' + props.post.slug,
+            name: props.post.title,
+            headline: props.post.title,
+            description: description,
+            author: {
+              '@type': 'Person',
+              '@id': props.post.primary_author.website,
+              name: props.post.primary_author.name,
+              image: props.post.primary_author.profile_image
+                ? 'https:' + props.post.primary_author.profile_image
+                : null
+            },
+            publisher: { '@type': 'Organization', name: 'Front Matter' },
+            keywords: props.post.tags
+              ? props.post.tags.map((tag) => tag.slug).join(', ')
+              : null,
+            inLanguage: 'en',
+            license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
+            dateCreated: props.post.created_at,
+            dateModified: props.post.updated_at,
+            datePublished: props.post.published_at
+          })}
+        />
       </Head>
       <Header tags={props.tags} tag={{}} />
       <div className="container mx-4 md:mx-auto px-6 py-8 flex flex-wrap justify-center">
