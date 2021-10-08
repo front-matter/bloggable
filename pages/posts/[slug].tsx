@@ -51,12 +51,12 @@ export async function getStaticProps(context) {
 const Post = (props) => {
   if (!props.post) return <div>Not found</div>
 
-  const pid = uuid2base32(props.post.id)
+  const pid = process.env.NEXT_PUBLIC_PREFIX + '/' + uuid2base32(props.post.id)
   const description = sanitizeDescription(props.post.html)
   const schemaOrg = {
     '@context': 'http://schema.org',
     '@type': 'BlogPosting',
-    '@id': 'https://blog.front-matter.io/' + pid,
+    '@id': 'https://doi.org/' + pid,
     url: 'https://blog.front-matter.io/posts/' + props.post.slug,
     name: props.post.title,
     headline: props.post.title,
