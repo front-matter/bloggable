@@ -117,9 +117,9 @@ const Post = (props) => {
               : null,
             inLanguage: 'en',
             license: 'https://creativecommons.org/licenses/by/4.0/legalcode',
-            dateCreated: props.post.created_at,
-            dateModified: props.post.updated_at,
-            datePublished: props.post.published_at
+            dateCreated: props.post.created_at.split('.')[0] + 'Z',
+            dateModified: props.post.updated_at.split('.')[0] + 'Z',
+            datePublished: props.post.published_at.split('.')[0] + 'Z'
           })}
         />
       </Head>
