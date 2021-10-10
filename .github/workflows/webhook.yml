@@ -37,5 +37,5 @@ jobs:
            client-payload: '{ "url": "https://blog.front-matter.io/posts/editorial-by-more-than-200-call-for-emergency-action-to-limit-global-temperature-increases-restore-biodiversity-and-protect-health" }'
        - name: Generate metadata
          run: |
-           bundle exec bolognese -f schema_org -t crossref ${{ client-payload.url }}
+           bundle exec bolognese -f schema_org -t crossref https://blog.front-matter.io/posts/editorial-by-more-than-200-call-for-emergency-action-to-limit-global-temperature-increases-restore-biodiversity-and-protect-health
   
