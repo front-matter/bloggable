@@ -22,5 +22,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       - name: Install and run bolognese
+        run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
