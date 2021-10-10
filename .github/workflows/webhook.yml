@@ -15,11 +15,6 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.6.x'
-      - uses: actions/cache@v2
-        with:
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
       - name: Install and run bolognese
         run: |
           gem install bundler
