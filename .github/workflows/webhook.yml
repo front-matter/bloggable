@@ -21,3 +21,6 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+      - name: Install and run bolognese
+          gem install bundler
+          bundle install --jobs 4 --retry 3
