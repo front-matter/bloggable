@@ -1,1 +1,1 @@
-gem "bolognese", "~> 1.9", "https://github.com/front-matter/bolognese.git"
+gem "bolognese", "~> 1.9.12", git: "https://github.com/front-matter/bolognese.git"
