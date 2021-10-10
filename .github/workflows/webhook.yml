@@ -19,5 +19,5 @@ jobs:
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
-          bundle exec bolognese https://doi.org/10.5438/jvmx-7e44
+          bundle exec bolognese -f schema_org -t crossref https://blog.front-matter.io/posts/editorial-by-more-than-200-call-for-emergency-action-to-limit-global-temperature-increases-restore-biodiversity-and-protect-health
   
