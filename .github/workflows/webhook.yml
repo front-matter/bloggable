@@ -34,8 +34,9 @@ jobs:
          with:
            token: ${{ secrets.PERSONAL_ACCESS_TOKEN_WRITE }}
            event-type: publish
-           client-payload: '{ "url": "https://blog.front-matter.io/posts/editorial-by-more-than-200-call-for-emergency-action-to-limit-global-temperature-increases-restore-biodiversity-and-protect-health" }'
        - name: Generate metadata
          run: |
-           bundle exec bolognese -f schema_org -t crossref https://blog.front-matter.io/posts/editorial-by-more-than-200-call-for-emergency-action-to-limit-global-temperature-increases-restore-biodiversity-and-protect-health
+           sitemaps = bundle exec Maremma.get("https://blog.front-matter.io/sitemap.xml")
+
+           # bundle exec bolognese -f schema_org -t crossref https://blog.front-matter.io/posts/editorial-by-more-than-200-call-for-emergency-action-to-limit-global-temperature-increases-restore-biodiversity-and-protect-health
   
