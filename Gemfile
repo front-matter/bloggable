@@ -1,0 +1,1 @@
+gem "bolognese", "~> 1.9", "https://github.com/front-matter/bolognese.git"
