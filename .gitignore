@@ -27,3 +27,6 @@ yarn-error.log*
 
 public/typesense.json
 public/feed.xml
+
+# Sentry
+.sentryclirc
