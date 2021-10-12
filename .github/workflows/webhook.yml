@@ -34,7 +34,3 @@ jobs:
          with:
            token: ${{ secrets.PERSONAL_ACCESS_TOKEN_WRITE }}
            event-type: publish
-       - name: Generate metadata
-         run: |
-           sitemaps = bundle exec Maremma.get("https://blog.front-matter.io/sitemap.xml")
-           puts sitemaps.inspect
