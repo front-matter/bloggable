@@ -38,7 +38,7 @@ const Byline: React.FunctionComponent<Props> = ({
               &bull;{' '}
               <a
                 className="border-b-0"
-                href="{doi}"
+                href={doi}
                 target="_blank"
                 rel="noopener noreferrer"
               >
