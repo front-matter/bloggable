@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 type Props = {
   authors: Author[]
@@ -36,12 +37,7 @@ const Byline: React.FunctionComponent<Props> = ({
             <>
               {' '}
               &bull;{' '}
-              <a
-                className="border-b-0"
-                href={doi}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a className="border-b-0" href={doi}>
                 {doi}
               </a>
             </>
