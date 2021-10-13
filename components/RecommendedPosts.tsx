@@ -57,6 +57,7 @@ export default function RecommendedPosts({ posts }) {
                       <Byline
                         authors={post.authors}
                         published={parseISO(post.published_at)}
+                        doi={null}
                         readingTime={post.reading_time}
                       />
                     </div>

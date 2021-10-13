@@ -77,6 +77,7 @@ export default function Tag({ posts, tag, pagination }) {
                       <Byline
                         authors={post.authors}
                         published={parseISO(post.published_at)}
+                        doi={post.doi}
                         readingTime={post.reading_time}
                       />
                     </div>
@@ -122,6 +123,7 @@ export default function Tag({ posts, tag, pagination }) {
                         <Byline
                           authors={post.authors}
                           published={parseISO(post.published_at)}
+                          doi={post.doi}
                           readingTime={post.reading_time}
                         />
                       </div>
@@ -168,6 +170,7 @@ export default function Tag({ posts, tag, pagination }) {
                         <Byline
                           authors={post.authors}
                           published={parseISO(post.published_at)}
+                          doi={post.doi}
                           readingTime={post.reading_time}
                         />
                       </div>
@@ -214,6 +217,7 @@ export default function Tag({ posts, tag, pagination }) {
                         <Byline
                           authors={post.authors}
                           published={parseISO(post.published_at)}
+                          doi={post.doi}
                           readingTime={post.reading_time}
                         />
                       </div>
@@ -260,6 +264,7 @@ export default function Tag({ posts, tag, pagination }) {
                         <Byline
                           authors={post.authors}
                           published={parseISO(post.published_at)}
+                          doi={post.doi}
                           readingTime={post.reading_time}
                         />
                       </div>
@@ -306,6 +311,7 @@ export default function Tag({ posts, tag, pagination }) {
                         <Byline
                           authors={post.authors}
                           published={parseISO(post.published_at)}
+                          doi={post.doi}
                           readingTime={post.reading_time}
                         />
                       </div>
@@ -352,6 +358,7 @@ export default function Tag({ posts, tag, pagination }) {
                         <Byline
                           authors={post.authors}
                           published={parseISO(post.published_at)}
+                          doi={post.doi}
                           readingTime={post.reading_time}
                         />
                       </div>

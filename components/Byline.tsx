@@ -3,6 +3,7 @@ import React from 'react'
 type Props = {
   authors: Author[]
   published: Date
+  doi: string
   readingTime: number
 }
 
@@ -15,6 +16,7 @@ interface Author {
 const Byline: React.FunctionComponent<Props> = ({
   authors,
   published,
+  doi,
   readingTime
 }) => {
   return (
@@ -30,6 +32,20 @@ const Byline: React.FunctionComponent<Props> = ({
             day: 'numeric'
           })}{' '}
           &bull; {readingTime} min read
+          {doi && (
+            <>
+              {' '}
+              &bull;{' '}
+              <a
+                className="border-b-0"
+                href="{doi}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {doi}
+              </a>
+            </>
+          )}
         </div>
       </div>
     </div>
