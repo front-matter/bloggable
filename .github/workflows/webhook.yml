@@ -24,11 +24,3 @@ jobs:
           gem install bundler
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-  build:
-    runs-on: ubuntu-latest
-    steps:
-       - name: Repository Dispatch
-         uses: peter-evans/repository-dispatch@v1
-         with:
-           token: ${{ secrets.PERSONAL_ACCESS_TOKEN_WRITE }}
-           event-type: publish
