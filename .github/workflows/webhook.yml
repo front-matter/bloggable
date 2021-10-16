@@ -33,4 +33,4 @@ jobs:
           echo "::set-output name=XML::$(bundle exec bolognese https://blog.front-matter.io/posts/the-front-matter-blog-now-uses-dois -t crossref)"
         id: extract_variables
       - name: Print XML
-        run: echo ${{ steps.extract_variable.outputs.XML }}"
+        run: echo ${{ steps.extract_variable.outputs.XML }}
