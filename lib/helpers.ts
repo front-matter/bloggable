@@ -53,7 +53,7 @@ export const sanitizeDescription = (description: string) => {
   return ReactHtmlParser(
     trimText(
       sanitizeHtml(description, {
-        allowedTags: ['b', 'i', 'em', 'strong']
+        allowedTags: []
       }),
       200,
       250,

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-10-14T11:33:37.039Z</updated>
+    <updated>2021-10-14T16:46:07.574Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -12,6 +12,17 @@
     <link rel="self" href="https://blog.front-matter.io/feed.xml"/>
     <subtitle>Front Matter is a science blogging platform.</subtitle>
     <rights>Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
+    <entry>
+        <title type="html"><![CDATA[The Front Matter blog now uses DOIs]]></title>
+        <id>6167ef00149d573936a81ef1</id>
+        <link href="https://blog.front-matter.io/posts/the-front-matter-blog-now-uses-dois"/>
+        <updated>2021-10-14T13:43:48.000Z</updated>
+        <content type="html"><![CDATA[<p>Yesterday I started registering DOIs for all Front Matter blog posts. I have registered 100 blog posts by now, and will have completed the registration process for all 450 blog posts on Monday. The DOIs are registered with Crossref which Front Matter joined in August. The blog posts are registered as <a href="https://www.crossref.org/documentation/content-registration/content-types-intro/posted-content-includes-preprints">posted content</a>, and this is done via the metadata in <a href="https://schema.org/">schema.org</a> format exposed on each blog page. Besides the required metadata we also register some optional metadata: currently abstract, keywords, license and author ORCID ID – which Crossref uses to automatically push the blog post metadata into the ORCID record. The main metadata missing are references, but that is much more work and something I want to address in 2022. All the required metadata are available from the blogging platform (<a href="https://ghost.org/">Ghost</a> in our case), with a little bit of extra work needed for some:</p><ul><li>DOIs are generated from the prefix assigned to Front Matter (10.53731) combined with a suffix auto-generated from the database ID for the blog post – using the <a href="https://github.com/salieri/uuid-encoder">uuid-encoder</a> javascript library to turn the ID into a shorter string in base32 format. This for example turns the ID 6125186c149d573936a81d1b into the DOI 10.53731/r9531p1-97aq74v-ag78v.</li><li>The ORCID ID from each author is pulled from the <code>homepage</code> field in the author database.</li><li>The keyword(s) are taken from the tags configured for the blog and used in a particular post.</li><li>The abstract is the beginning of the full text (stripping all tags with the exception of &lt;b&gt;, &lt;i&gt;, &lt;em&gt; and &lt;strong&gt;, and limited to 250 characters). </li><li>The license is the same for every blog post, Creative Commons Attribution 4.0 International (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>).</li></ul><p>As you can see in the Crossref participating reports, this approach compares favorably with other Crossref members in terms of metadata completeness</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://assets.front-matter.io/ghost/2021/October/14th/Bildschirmfoto 2021-10-14 um 15.34.06.png" class="kg-image" alt loading="lazy" width="1023" height="1091"><figcaption>Participation report Front Matter October 14, 2021.</figcaption></figure><p>The current focus is on registering all existing blog posts, going forward we will put a workflow in place that automatically registers a DOI when a new blog post is published. This DOI registration will be triggered by a webhook, and I am working on a freely available <a href="https://github.com/features/actions">GitHub Action</a> for this. If you have an account with Crossref or DataCite, and your blog exposes the required DOI metadata as schema.org, you will be able to use this webhook. But if you rather don't want to get into the technical details but focus on writing meaningful blog posts, <a href="mailto:info@front-matter.io">reach out to Front Matter</a> and we can set up a blog for you that automatically registers a DOI for each blog post, together with some other unique features such as a full-text search.</p>]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Editorial by more than 200 health journals: Call for emergency action to limit global temperature increases, restore biodiversity, and protect health]]></title>
         <id>6135bf4d149d573936a81d7c</id>
