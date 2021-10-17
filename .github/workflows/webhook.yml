@@ -31,7 +31,7 @@ jobs:
       - name: Extract variables
         shell: bash
         run: |
-          (bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref) > xmlfile
+          (bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref) >> xmlfile
 
           echo "::set-output name=BRANCH::$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')"
           echo "::set-output name=TAG::$(git tag --points-at HEAD)"
