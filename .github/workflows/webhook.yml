@@ -65,7 +65,7 @@ jobs:
         with:
           channel: '#ops'
           color: 'good'
-          text: 'A new blog post is been deployed.'
+          text: 'A blog post is being updated: https://blog.front-matter.io/posts/${{ github.event.inputs.slug }}.'
           failure_text: '${env.GITHUB_WORKFLOW} (${env.GITHUB_RUN_NUMBER}) build failed'
           fields: |
             [{ "title": "Commit message", "value": "${{ steps.extract_variables.outputs.MESSAGE }}" },
