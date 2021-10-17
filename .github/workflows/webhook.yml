@@ -1,6 +1,11 @@
 name: Webhook
 on:
   workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Slug of blog post'     
+        required: true
+        default: 'the-front-matter-blog-now-uses-dois'
 
   # Allows external webhook trigger
   repository_dispatch:
@@ -31,12 +36,21 @@ jobs:
       - name: Generate XML
         run: |
           mkdir -p upload
-          bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref > upload/the-trouble-with-keynotes
+          bundle exec bolognese https://blog.front-matter.io/posts/${{ github.event.inputs.slug }} -t crossref > upload/${{ github.event.inputs.slug }}
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
           name: uploads
-          path: upload/the-trouble-with-keynotes         
+          path: upload/${{ github.event.inputs.slug }}         
+      - name: Download
+        uses: actions/download-artifact@v2
+        with:
+          name: uploads
+      - name: curl
+        uses: wei/curl@v1
+        id: api
+        with:
+          args: -X POST -F "operation=doMDUpload" -F "login_id=${{ secrets.CROSSREF_USERNAME_WITH_ROLE }}" -F "login_passwd=${{ secrets.CROSSREF_PASSWORD }}" -F "fname=@upload/${{ github.event.inputs.slug }} https://doi.crossref.org/servlet/deposit
       - name: Extract variables
         shell: bash
         run: |
@@ -46,16 +60,6 @@ jobs:
           echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
           echo "::set-output name=MESSAGE::$(git log --format=%B -n 1 ${{ github.event.after }})"
         id: extract_variables
-      - name: Download
-        uses: actions/download-artifact@v2
-        with:
-          name: uploads
-      - name: curl
-        uses: wei/curl@v1
-        id: api
-        with:
-          args: -X POST -F "operation=doMDUpload" -F "login_id=${{ secrets.CROSSREF_USERNAME_WITH_ROLE }}" -F "login_passwd=${{ secrets.CROSSREF_PASSWORD }}" -F "fname=@upload/the-trouble-with-keynotes https://doi.crossref.org/servlet/deposit
-      
       - name: Notify Slack
         uses: edge/simple-slack-notify@master
         with:
