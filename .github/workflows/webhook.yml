@@ -49,7 +49,7 @@ jobs:
       - name: Download
         uses: actions/download-artifact@v2
         with:
-          name: upload/the-trouble-with-keynotes
+          name: uploads
       - name: curl
         uses: wei/curl@v1
         id: api
