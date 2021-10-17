@@ -33,6 +33,7 @@ jobs:
       - name: Generate XML
         run: |
           bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref > upload/the-trouble-with-keynotes
+      - name: Upload
         uses: actions/upload-artifact@v2
         with:
           name: uploads
