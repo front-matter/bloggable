@@ -26,11 +26,29 @@ jobs:
           gem install bundler
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-          bundle exec bolognese https://blog.front-matter.io/posts/the-front-matter-blog-now-uses-dois -t crossref >> xml
       - name: Extract variables
         shell: bash
         run: | 
-          echo "::set-output name=XML::$(xml)"
+          echo "::set-output name=BRANCH::$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')"
+          echo "::set-output name=TAG::$(git tag --points-at HEAD)"
+          echo "::set-output name=GIT_SHA::$(git rev-parse HEAD)"
+          echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
+          echo "::set-output name=MESSAGE::$(git log --format=%B -n 1 ${{ github.event.after }})"
+          echo "::set-output name=XML::$(bundle exec bolognese https://blog.front-matter.io/posts/the-front-matter-blog-now-uses-dois -t crossref)"
         id: extract_variables
       - name: Print XML
         run: echo "${{ steps.extract_variables.outputs.XML }}"
+
+      - name: Notify Slack
+        uses: edge/simple-slack-notify@master
+        with:
+          channel: '#ops'
+          color: 'good'
+          text: 'A new blog post is been deployed.'
+          failure_text: '${env.GITHUB_WORKFLOW} (${env.GITHUB_RUN_NUMBER}) build failed'
+          fields: |
+            [{ "title": "Commit message", "value": "${{ steps.extract_variables.outputs.MESSAGE }}" },
+             { "title": "Committed by", "value": "<https://github.com/${{ github.repository }}/commits?author=${{ github.actor }}|${{ github.actor }}>", "short": true },
+             { "title": "Commit SHA", "value": "<https://github.com/${{ github.repository }}/commit/${{ steps.extract_variables.outputs.GIT_SHA }}|${{ steps.extract_variables.outputs.GIT_SHA_SHORT }}>", "short": true },
+             { "title": "Repository", "value": "<https://github.com/${{ github.repository }}|${{ github.repository }}>", "short": true },
+             { "title": "Branch", "value": "<https://github.com/${{ github.repository }}/tree/${{ steps.extract_variables.outputs.BRANCH }}|${{ steps.extract_variables.outputs.BRANCH }}>", "short": true }]
