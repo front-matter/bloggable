@@ -45,6 +45,7 @@ jobs:
       - name: Print XML
         run: echo "XML is ${{ steps.extract_variables.outputs.POST }}"
   post:
+    needs: install
     name: 'Register DOI'
     runs-on: ubuntu-latest
     steps:
