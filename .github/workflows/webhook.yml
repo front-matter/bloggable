@@ -42,13 +42,13 @@ jobs:
           echo "::set-output name=MESSAGE::$(git log --format=%B -n 1 ${{ github.event.after }})"
           echo "::set-output name=POST::$xml"
         id: extract_variables
-      - name: Print XML
-        run: echo "XML is ${{ steps.extract_variables.outputs.POST }}"
   post:
     needs: install
     name: 'Register DOI'
     runs-on: ubuntu-latest
     steps:
+      - name: Print XML
+        run: echo "XML is ${{ steps.extract_variables.outputs.POST }}"
       - name: curl
         uses: wei/curl@v1
         id: api
