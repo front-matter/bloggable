@@ -12,9 +12,7 @@ jobs:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
-      - uses: actions/checkout@v2
-        run: |
-          mkdir -p upload
+      - uses: actions/checkout@v2          
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -32,6 +30,7 @@ jobs:
           bundle install --jobs 4 --retry 3
       - name: Generate XML
         run: |
+          mkdir -p upload
           bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref > upload/the-trouble-with-keynotes
       - name: Upload
         uses: actions/upload-artifact@v2
