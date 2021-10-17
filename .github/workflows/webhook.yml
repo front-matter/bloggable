@@ -13,6 +13,8 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@v2
+        run: |
+          mkdir -p upload
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -27,28 +29,32 @@ jobs:
         run: |
           gem install bundler
           bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3          
+          bundle install --jobs 4 --retry 3
+      - name: Generate XML
+        run: |
+          bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref > upload/the-trouble-with-keynotes
+        uses: actions/upload-artifact@v2
+        with:
+          name: uploads
+          path: upload/the-trouble-with-keynotes         
       - name: Extract variables
         shell: bash
         run: |
-          xml="$(bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref)"
-          xml="${xml//'%'/'%25'}"
-          xml="${xml//$'\n'/'%0A'}"
-          xml="${xml//$'\r'/'%0D'}"
           echo "::set-output name=BRANCH::$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')"
           echo "::set-output name=TAG::$(git tag --points-at HEAD)"
           echo "::set-output name=GIT_SHA::$(git rev-parse HEAD)"
           echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
           echo "::set-output name=MESSAGE::$(git log --format=%B -n 1 ${{ github.event.after }})"
-          echo "::set-output name=POST::$xml"
         id: extract_variables
-      - name: Save XML as temporary file
-        run: echo "${{ steps.extract_variables.outputs.POST }}" > tempfile
+      - name: Download
+        uses: actions/download-artifact@v2
+        with:
+          name: upload/the-trouble-with-keynotes
       - name: curl
         uses: wei/curl@v1
         id: api
         with:
-          args: -X POST -F "operation=doMDUpload" -F "login_id=${{ secrets.CROSSREF_USERNAME_WITH_ROLE }}" -F "login_passwd=${{ secrets.CROSSREF_PASSWORD }}" -F "fname=$tempfile https://doi.crossref.org/servlet/deposit
+          args: -X POST -F "operation=doMDUpload" -F "login_id=${{ secrets.CROSSREF_USERNAME_WITH_ROLE }}" -F "login_passwd=${{ secrets.CROSSREF_PASSWORD }}" -F "fname=$upload/the-trouble-with-keynotes https://doi.crossref.org/servlet/deposit
       
       - name: Notify Slack
         uses: edge/simple-slack-notify@master
