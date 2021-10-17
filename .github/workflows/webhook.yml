@@ -28,7 +28,7 @@ jobs:
           gem install bundler
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-          xml=$(bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref)
+          echo "xml=$(bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref)" >> $GITHUB_ENV
       - name: Extract variables
         shell: bash
         run: | 
@@ -37,10 +37,9 @@ jobs:
           echo "::set-output name=GIT_SHA::$(git rev-parse HEAD)"
           echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
           echo "::set-output name=MESSAGE::$(git log --format=%B -n 1 ${{ github.event.after }})"
-          echo "::set-output name=XML::$(xml)"
         id: extract_variables
       - name: Print XML
-        run: echo "${{ steps.extract_variables.outputs.XML }}"
+        run: echo "XML is ${{env.xml}}"
 
       - name: Notify Slack
         uses: edge/simple-slack-notify@master
