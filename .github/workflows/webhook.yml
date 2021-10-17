@@ -7,8 +7,10 @@ on:
     types:
       - publish
 jobs:
-  install:
+  register:
     runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
@@ -29,28 +31,17 @@ jobs:
       - name: Extract variables
         shell: bash
         run: |
-          xml="$(bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref)"
-          xml="${xml//'%'/'%25'}"
-          xml="${xml//$'\n'/'%0A'}"
-          xml="${xml//$'\r'/'%0D'}"
+          bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref > xmlfile
+
           echo "::set-output name=BRANCH::$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')"
           echo "::set-output name=TAG::$(git tag --points-at HEAD)"
           echo "::set-output name=GIT_SHA::$(git rev-parse HEAD)"
           echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
           echo "::set-output name=MESSAGE::$(git log --format=%B -n 1 ${{ github.event.after }})"
-          echo "::set-output name=POST::$xml"
+          echo "::set-output name=POST::$xmlfile"
         id: extract_variables
       - name: Print XML
-        run: echo "XML is ${{ steps.extract_variables.outputs.POST }}"
-  post:
-    needs: install
-    name: 'Register DOI'
-    runs-on: ubuntu-latest
-    env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    steps:
-      - name: Print XML
-        run: echo "XML is ${{ steps.extract_variables.outputs.POST }}"
+        run: echo "XML filename is ${{ steps.extract_variables.outputs.POST }}"
       - name: curl
         uses: wei/curl@v1
         id: api
