@@ -26,11 +26,11 @@ jobs:
           gem install bundler
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-          
+          bundle exec bolognese https://blog.front-matter.io/posts/the-front-matter-blog-now-uses-dois -t crossref >> xml
       - name: Extract variables
         shell: bash
         run: | 
-          echo "::set-output name=XML::$(bundle exec bolognese https://blog.front-matter.io/posts/the-front-matter-blog-now-uses-dois -t crossref)"
+          echo "::set-output name=XML::$(xml)"
         id: extract_variables
       - name: Print XML
         run: echo "${{ steps.extract_variables.outputs.XML }}"
