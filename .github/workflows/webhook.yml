@@ -36,7 +36,7 @@ jobs:
           echo "::set-output name=GIT_SHA::$(git rev-parse HEAD)"
           echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
           echo "::set-output name=MESSAGE::$(git log --format=%B -n 1 ${{ github.event.after }})"
-          echo "::set-output name=POST::$(bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref > xmlfile)"
+          echo "::set-output name=POST::$(bundle exec bolognese https://blog.front-matter.io/posts/the-trouble-with-keynotes -t crossref)"
         id: extract_variables
       - name: Print XML
         run: echo "XML filename is ${{ steps.extract_variables.outputs.POST }}"
@@ -44,7 +44,7 @@ jobs:
         uses: wei/curl@v1
         id: api
         with:
-          args: -X POST -F "operation=doMDUpload" -F "login_id=${{ secrets.CROSSREF_USERNAME_WITH_ROLE }}" -F "login_passwd=${{ secrets.CROSSREF_PASSWORD }}" -F "fname=@xmlname" https://doi.crossref.org/servlet/deposit
+          args: -X POST -F "operation=doMDUpload" -F "login_id=${{ secrets.CROSSREF_USERNAME_WITH_ROLE }}" -F "login_passwd=${{ secrets.CROSSREF_PASSWORD }}" -F "fname=${{ steps.extract_variables.outputs.POST }}" https://doi.crossref.org/servlet/deposit
       
       - name: Notify Slack
         uses: edge/simple-slack-notify@master
