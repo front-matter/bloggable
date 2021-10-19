@@ -111,6 +111,11 @@ const Post = (props) => {
                 ? 'https:' + props.post.primary_author.profile_image
                 : null
             },
+            isPartOf: {
+              '@type': 'Blog',
+              name: 'Front Matter',
+              issn: process.env.NEXT_PUBLIC_ISSN
+            },
             publisher: { '@type': 'Organization', name: 'Front Matter' },
             keywords: props.post.tags
               ? props.post.tags.map((tag) => tag.slug).join(', ')

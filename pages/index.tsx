@@ -1,4 +1,6 @@
 import React from 'react'
+import Head from 'next/head'
+import { jsonLdScriptProps } from 'react-schemaorg'
 import { getAllTags, getFeaturedPosts } from '../lib/posts'
 import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
@@ -8,6 +10,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Tag from '../components/Tag'
+import { Blog } from 'schema-dts'
 
 export async function getStaticProps() {
   const tags = await getAllTags()
@@ -49,6 +52,21 @@ const IndexPage = ({ posts, tags }) => {
 
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          {...jsonLdScriptProps<Blog>({
+            '@context': 'https://schema.org',
+            '@type': 'Blog',
+            url: 'https://blog.front-matter.io/',
+            name: 'Front Matter',
+            issn: process.env.NEXT_PUBLIC_ISSN,
+            publisher: { '@type': 'Organization', name: 'Front Matter' },
+            inLanguage: 'en',
+            license: 'https://creativecommons.org/licenses/by/4.0/legalcode'
+          })}
+        />
+      </Head>
       <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
       <Tag posts={posts} tag={tag} pagination={pagination} />
