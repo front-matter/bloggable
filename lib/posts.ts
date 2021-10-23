@@ -132,22 +132,37 @@ const client = new Client({
   retryIntervalSeconds: 3
 })
 
-export async function getIndexedPosts(
-  query: string,
-  hitsPerPage?: number,
-  page?: number
-) {
+export async function getIndexedPosts(query: string, page?: number) {
   return client
     .collections('front-matter')
     .documents()
     .search({
       q: query,
       query_by: 'tags,title,content',
-      per_page: hitsPerPage ? hitsPerPage : 25,
+      per_page: 15,
       page: page > 0 ? page : 1
     })
-    .then(({ hits }) => {
-      return hits
+    .then((posts) => {
+      return posts
+    })
+    .catch((err) => {
+      console.error(err)
+      return err
+    })
+}
+
+export async function getIndexedPostsByTag(tag: string, page?: number) {
+  return client
+    .collections('front-matter')
+    .documents()
+    .search({
+      q: tag,
+      query_by: 'tags',
+      per_page: 15,
+      page: page > 0 ? page : 1
+    })
+    .then((posts) => {
+      return posts
     })
     .catch((err) => {
       console.error(err)

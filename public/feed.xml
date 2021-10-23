@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.front-matter.io/</id>
     <title>Front Matter</title>
-    <updated>2021-10-19T17:09:38.249Z</updated>
+    <updated>2021-10-23T16:32:44.199Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Martin Fenner</name>
@@ -12,6 +12,49 @@
     <link rel="self" href="https://blog.front-matter.io/feed.xml"/>
     <subtitle>Front Matter is a science blogging platform.</subtitle>
     <rights>Copyright © 2021 Front Matter. Distributed under the terms of the Creative Commons Attribution 4.0 License.</rights>
+    <entry>
+        <title type="html"><![CDATA[Registering content with Crossref or DataCite]]></title>
+        <id>61728554149d573936a82021</id>
+        <link href="https://blog.front-matter.io/posts/registering-content-with-crossref-or-datacite"/>
+        <updated>2021-10-22T10:36:23.000Z</updated>
+        <content type="html"><![CDATA[<p>This blog started registering DOIs for its content with Crossref last week, and all 450+ blog posts so far were registered by Monday morning. This enables the easy import into reference managers (here using Zotero):</p><figure class="kg-card kg-image-card kg-width-wide kg-card-hascaption"><img src="https://assets.front-matter.io/ghost/2021/October/22nd/Bildschirmfoto 2021-10-22 um 11.53.48.png" class="kg-image" alt loading="lazy" width="666" height="1140"><figcaption>Zotero entry</figcaption></figure><p>Using Zotero or any other reference manager this blog post can now be easily cited:</p><p>1. 	Fenner M. The Front Matter blog now uses DOIs. Front Matter. Published online October 14, 2021. doi:10.53731/rb7xw01-97aq74v-ag7qh</p><p>And as the author ORCID ID(s) are included in the Crossref metadata, <a href="https://support.orcid.org/hc/en-us/articles/360006971293-Auto-updates-in-third-party-systems-Crossref">Crossref Auto-Update</a> was automatically updating <a href="https://orcid.org/0000-0003-1419-2405">my ORCID record</a>:</p><figure class="kg-card kg-image-card"><img src="https://assets.front-matter.io/ghost/2021/October/22nd/Bildschirmfoto 2021-10-22 um 11.47.52.png" class="kg-image" alt loading="lazy" width="2046" height="1134"></figure><p>It is too early to say whether the inclusion in the Crossref search index has increased the discoverability of the Front Matter blog. It is also too early to find any Front Matter blog posts referenced in <a href="https://www.crossref.org/services/event-data/">Crossref Event Data</a>, e.g. tweets or Wikipedia pages. We will have some answers in a few months. But it is clear that DOIs can facilitate the discussion around scholarly content, which is the whole point of registering DOIs for blog posts.</p><p>DOI registration for blog posts is not very common. I started DOI registration for the DataCite blog in <a href="https://doi.org/10.5438/0000-00cc">January 2017</a>, and have now simplified the registration workflow for the Front Matter blog:</p><ol><li>Expose blog post schema.org metadata in JSON-LD format on blog post landing page</li><li>Convert metadata to DataCite XML or Crossref XML</li><li>Submit XML to DOI registration agency</li></ol><p>The initial work involves generating metadata in schema.org format:</p><!--kg-card-begin: markdown--><pre><code>{
+    &quot;@context&quot;: &quot;https://schema.org&quot;,
+    &quot;@type&quot;: &quot;BlogPosting&quot;,
+    &quot;@id&quot;: &quot;https://doi.org/10.53731/rb7xw01-97aq74v-ag7qh&quot;,
+    &quot;url&quot;: &quot;https://blog.front-matter.io/posts/the-front-matter-blog-now-uses-dois&quot;,
+    &quot;name&quot;: &quot;The Front Matter blog now uses DOIs&quot;,
+    &quot;headline&quot;: &quot;The Front Matter blog now uses DOIs&quot;,
+    &quot;description&quot;: [
+        &quot;Yesterday I started registering DOIs for all Front Matter blog posts. I have registered 100 blog posts by now, and will have completed the registration process for all 450 blog posts on Monday. The DOIs are registered with Crossref which Front Matter joined in August. ...&quot;
+    ],
+    &quot;author&quot;: {
+        &quot;@type&quot;: &quot;Person&quot;,
+        &quot;@id&quot;: &quot;https://orcid.org/0000-0003-1419-2405&quot;,
+        &quot;name&quot;: &quot;Martin Fenner&quot;,
+        &quot;image&quot;: &quot;https://www.gravatar.com/avatar/8adea77ad740876f5cb832f92d49f08d?s=250&amp;amp;d=mm&amp;amp;r=x&quot;
+    },
+    &quot;isPartOf&quot;: {
+        &quot;@type&quot;: &quot;Blog&quot;,
+        &quot;name&quot;: &quot;Front Matter&quot;,
+        &quot;issn&quot;: &quot;2749-9952&quot;
+    },
+    &quot;publisher&quot;: {
+        &quot;@type&quot;: &quot;Organization&quot;,
+        &quot;name&quot;: &quot;Front Matter&quot;
+    },
+    &quot;keywords&quot;: &quot;news&quot;,
+    &quot;inLanguage&quot;: &quot;en&quot;,
+    &quot;license&quot;: &quot;https://creativecommons.org/licenses/by/4.0/legalcode&quot;,
+    &quot;dateCreated&quot;: &quot;2021-10-14T08:49:04Z&quot;,
+    &quot;dateModified&quot;: &quot;2021-10-14T14:14:52Z&quot;,
+    &quot;datePublished&quot;: &quot;2021-10-14T13:43:48Z&quot;
+}</code></pre>
+<!--kg-card-end: markdown--><p>It makes sense to not only think about metadata required for DOI registration, but also include recommended metadata such as license, language, description and ORCID ID.</p><p>For steps 2. and 3. I have written a <a href="https://github.com/front-matter/bloggable/blob/main/.github/workflows/webhook.yml">GitHub Action</a> that fully automates the DOI registration, triggered by a webhook when the blog post is published. As part of this work I had to enable Crossref XML generation in the <a href="https://github.com/datacite/bolognese">bolognese</a> Ruby gem, this pull requests is currently awaiting review. I hope that I can publish the GitHub Action in a few weeks.</p>]]></content>
+        <author>
+            <name>Martin Fenner</name>
+            <uri>https://orcid.org/0000-0003-1419-2405</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The Front Matter blog now uses DOIs]]></title>
         <id>6167ef00149d573936a81ef1</id>
