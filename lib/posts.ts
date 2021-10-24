@@ -145,35 +145,6 @@ export async function getIndexedPostsByTag(tag: string, page?: number) {
     })
 }
 
-export async function getIndexedFeaturedPosts() {
-  return client
-    .collections('front-matter')
-    .documents()
-    .search({
-      q: true,
-      query_by: 'featured',
-      per_page: 15
-    })
-    .then((posts) => {
-      const pages = Math.ceil(posts.found / 15)
-
-      return {
-        posts: posts.hits.map((hit) => hit.document),
-        meta: {
-          page: posts.page,
-          pages: pages,
-          total: posts.found,
-          prev: posts.page > 1 ? posts.page - 1 : null,
-          next: posts.page < pages ? posts.page + 1 : null
-        }
-      }
-    })
-    .catch((err) => {
-      console.error(err)
-      return err
-    })
-}
-
 export async function getSimilarIndexedPosts(query: string, recordId: string) {
   return client
     .collections('front-matter')

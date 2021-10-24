@@ -32,7 +32,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 
   return {
-    props: { posts, tags, tag, pagination: posts.meta }
+    props: { posts: posts.posts, tags, tag, pagination: posts.meta }
   }
 }
 
