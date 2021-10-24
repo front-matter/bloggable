@@ -21,7 +21,7 @@ export default function Hero({ tag }) {
                 (tag && tag.accent_color ? 'text-white' : 'text-gray-900')
               }
             >
-              {tag && tag.name}
+              {tag && tag.name + ' (' + tag.count.posts + ')'}
             </span>
           </h1>
           {tag && tag.description && (
