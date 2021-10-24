@@ -1,5 +1,5 @@
 import React from 'react'
-import { getPostsByTag, getAllTags, getSingleTag } from '../../lib/posts'
+import { getIndexedPostsByTag, getAllTags, getSingleTag } from '../../lib/posts'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
@@ -20,7 +20,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const tag = await getSingleTag(context.params.slug)
   const tags = await getAllTags()
   const page = context.params.page || 1
-  const posts = await getPostsByTag(context.params.slug, page)
+  const posts = await getIndexedPostsByTag(
+    context.params.slug as string,
+    page as number
+  )
 
   if (!posts || !tag) {
     return {
@@ -29,7 +32,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 
   return {
-    props: { posts, tags, tag, pagination: posts.meta.pagination }
+    props: { posts, tags, tag, pagination: posts.meta }
   }
 }
 

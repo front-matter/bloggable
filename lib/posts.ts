@@ -162,7 +162,17 @@ export async function getIndexedPostsByTag(tag: string, page?: number) {
       page: page > 0 ? page : 1
     })
     .then((posts) => {
-      return posts
+      const pages = Math.ceil(posts.found / 15)
+
+      return {
+        posts: posts.hits.map((hit) => hit.document),
+        meta: {
+          page: posts.page,
+          pages: pages,
+          prev: posts.page > 1 ? posts.page - 1 : null,
+          next: posts.page < pages ? posts.page + 1 : null
+        }
+      }
     })
     .catch((err) => {
       console.error(err)
