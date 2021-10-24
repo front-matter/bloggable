@@ -31,42 +31,6 @@ export async function getFeaturedPosts() {
     })
 }
 
-export async function getRecommendedPosts(tag, id) {
-  const tagName = tag ? tag.slug : 'news'
-
-  return api.posts
-    .browse({
-      filter: 'tag:' + tagName + '+id:-' + id,
-      limit: 25,
-      include: 'tags,authors'
-    })
-    .then((posts) => {
-      const randomPosts = posts.sort(() => 0.5 - Math.random())
-      return randomPosts.slice(0, 3)
-    })
-    .catch((err) => {
-      console.error(err)
-    })
-}
-
-export async function getPostsByTag(tag, page) {
-  const tagName = tag ? tag.slug : 'news'
-
-  return api.posts
-    .browse({
-      filter: 'tag:' + tagName,
-      limit: 15,
-      page: page,
-      include: 'tags,authors'
-    })
-    .then((posts) => {
-      return posts
-    })
-    .catch((err) => {
-      console.error(err)
-    })
-}
-
 export async function getSinglePost(postSlug) {
   return api.posts
     .read({
@@ -156,8 +120,8 @@ export async function getIndexedPostsByTag(tag: string, page?: number) {
     .collections('front-matter')
     .documents()
     .search({
-      q: tag,
-      query_by: 'tags',
+      q: '*',
+      filter_by: tag,
       per_page: 15,
       page: page > 0 ? page : 1
     })
@@ -169,6 +133,36 @@ export async function getIndexedPostsByTag(tag: string, page?: number) {
         meta: {
           page: posts.page,
           pages: pages,
+          total: posts.found,
+          prev: posts.page > 1 ? posts.page - 1 : null,
+          next: posts.page < pages ? posts.page + 1 : null
+        }
+      }
+    })
+    .catch((err) => {
+      console.error(err)
+      return err
+    })
+}
+
+export async function getIndexedFeaturedPosts() {
+  return client
+    .collections('front-matter')
+    .documents()
+    .search({
+      q: true,
+      query_by: 'featured',
+      per_page: 15
+    })
+    .then((posts) => {
+      const pages = Math.ceil(posts.found / 15)
+
+      return {
+        posts: posts.hits.map((hit) => hit.document),
+        meta: {
+          page: posts.page,
+          pages: pages,
+          total: posts.found,
           prev: posts.page > 1 ? posts.page - 1 : null,
           next: posts.page < pages ? posts.page + 1 : null
         }

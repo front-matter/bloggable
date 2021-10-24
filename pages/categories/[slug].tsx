@@ -21,7 +21,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const tags = await getAllTags()
   const page = context.params.page || 1
   const posts = await getIndexedPostsByTag(
-    context.params.slug as string,
+    ('tags:' + context.params.slug) as string,
     page as number
   )
 

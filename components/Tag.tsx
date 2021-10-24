@@ -1,11 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
-import { parseISO } from 'date-fns'
+import { fromUnixTime } from 'date-fns'
 import useSWR from 'swr'
 import fetch from 'unfetch'
 
 import Byline from './Byline'
-import { sanitizeDescription } from '../lib/helpers'
 
 const fetcher = (url) => fetch(url).then((r) => r.json())
 
@@ -14,22 +13,29 @@ export default function Tag({ posts, tag, pagination }) {
     return null
   }
 
-  const [pageIndex, setPageIndex] = useState(0)
+  const [pageIndex, setPageIndex] = useState(1)
 
   // The API URL includes the page index, which is a React state.
   // featured posts on the homepage are handled differently
-  const filter = tag.featured ? 'featured:true' : 'tag:' + tag.slug
-  const { data } = useSWR(
-    `https://editor.front-matter.io/ghost/api/v4/content/posts?limit=15&include=authors,tags&filter=${filter}&page=${pageIndex}&key=${process.env.NEXT_PUBLIC_GHOST_API_KEY}`,
-    fetcher
-  )
+  const filter = tag.featured ? 'featured:true' : 'tags:' + tag.slug
+  const query = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/front-matter/documents/search/?q=*&filter_by=${filter}&sort_by=published:desc&per_page=15&page=${pageIndex}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
+  const { data } = useSWR(query, fetcher)
 
   // ... handle loading and error states
   if (!data) {
     return null
-  } else {
-    posts = data.posts
-    pagination = data.meta.pagination
+  }
+
+  // duplication from lib/posts
+  const pages = Math.ceil(data.found / 15)
+
+  posts = data.hits.map((hit) => hit.document)
+  pagination = {
+    page: data.page,
+    pages: pages,
+    total: data.found,
+    prev: data.page > 1 ? data.page - 1 : null,
+    next: data.page < pages ? data.page + 1 : null
   }
 
   return (
@@ -50,8 +56,8 @@ export default function Tag({ posts, tag, pagination }) {
                     <img
                       className="h-96 w-full object-contain object-left"
                       src={
-                        post.feature_image
-                          ? post.feature_image
+                        post.featureImage
+                          ? post.featureImage
                           : `https://assets.front-matter.io/ghost/news${
                               Math.floor(Math.random() * 3) + 1
                             }.jpg`
@@ -69,16 +75,16 @@ export default function Tag({ posts, tag, pagination }) {
                           {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {sanitizeDescription(post.html)}
+                          {post.description}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        authors={post.authors}
-                        published={parseISO(post.published_at)}
-                        doi={post.doi}
-                        readingTime={post.reading_time}
+                        authors={[post.author]}
+                        published={fromUnixTime(post.published)}
+                        doi={null}
+                        readingTime={post.readingTime}
                       />
                     </div>
                   </div>
@@ -96,8 +102,8 @@ export default function Tag({ posts, tag, pagination }) {
                       <img
                         className="h-48 w-full object-contain"
                         src={
-                          post.feature_image
-                            ? post.feature_image
+                          post.featureImage
+                            ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
                                 Math.floor(Math.random() * 3) + 1
                               }.jpg`
@@ -115,16 +121,16 @@ export default function Tag({ posts, tag, pagination }) {
                             {post.title}
                           </p>
                           <p className="mt-3 text-base text-gray-500">
-                            {sanitizeDescription(post.html)}
+                            {post.description}
                           </p>
                         </a>
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors}
-                          published={parseISO(post.published_at)}
-                          doi={post.doi}
-                          readingTime={post.reading_time}
+                          authors={[post.author]}
+                          published={fromUnixTime(post.published)}
+                          doi={null}
+                          readingTime={post.readingTime}
                         />
                       </div>
                     </div>
@@ -143,8 +149,8 @@ export default function Tag({ posts, tag, pagination }) {
                       <img
                         className="h-48 w-full object-contain"
                         src={
-                          post.feature_image
-                            ? post.feature_image
+                          post.featureImage
+                            ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
                                 Math.floor(Math.random() * 3) + 1
                               }.jpg`
@@ -162,16 +168,16 @@ export default function Tag({ posts, tag, pagination }) {
                             {post.title}
                           </p>
                           <p className="mt-3 text-base text-gray-500">
-                            {sanitizeDescription(post.html)}
+                            {post.description}
                           </p>
                         </a>
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors}
-                          published={parseISO(post.published_at)}
-                          doi={post.doi}
-                          readingTime={post.reading_time}
+                          authors={[post.author]}
+                          published={fromUnixTime(post.published)}
+                          doi={null}
+                          readingTime={post.readingTime}
                         />
                       </div>
                     </div>
@@ -190,8 +196,8 @@ export default function Tag({ posts, tag, pagination }) {
                       <img
                         className="h-96 w-full object-contain object-left"
                         src={
-                          post.feature_image
-                            ? post.feature_image
+                          post.featureImage
+                            ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
                                 Math.floor(Math.random() * 3) + 1
                               }.jpg`
@@ -209,16 +215,16 @@ export default function Tag({ posts, tag, pagination }) {
                             {post.title}
                           </p>
                           <p className="mt-3 text-base text-gray-500">
-                            {sanitizeDescription(post.html)}
+                            {post.description}
                           </p>
                         </a>
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors}
-                          published={parseISO(post.published_at)}
-                          doi={post.doi}
-                          readingTime={post.reading_time}
+                          authors={[post.author]}
+                          published={fromUnixTime(post.published)}
+                          doi={null}
+                          readingTime={post.readingTime}
                         />
                       </div>
                     </div>
@@ -237,8 +243,8 @@ export default function Tag({ posts, tag, pagination }) {
                       <img
                         className="h-48 w-full object-contain"
                         src={
-                          post.feature_image
-                            ? post.feature_image
+                          post.featureImage
+                            ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
                                 Math.floor(Math.random() * 3) + 1
                               }.jpg`
@@ -256,16 +262,16 @@ export default function Tag({ posts, tag, pagination }) {
                             {post.title}
                           </p>
                           <p className="mt-3 text-base text-gray-500">
-                            {sanitizeDescription(post.html)}
+                            {post.description}
                           </p>
                         </a>
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors}
-                          published={parseISO(post.published_at)}
-                          doi={post.doi}
-                          readingTime={post.reading_time}
+                          authors={[post.author]}
+                          published={fromUnixTime(post.published)}
+                          doi={null}
+                          readingTime={post.readingTime}
                         />
                       </div>
                     </div>
@@ -284,8 +290,8 @@ export default function Tag({ posts, tag, pagination }) {
                       <img
                         className="h-48 w-full object-contain"
                         src={
-                          post.feature_image
-                            ? post.feature_image
+                          post.featureImage
+                            ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
                                 Math.floor(Math.random() * 3) + 1
                               }.jpg`
@@ -303,16 +309,16 @@ export default function Tag({ posts, tag, pagination }) {
                             {post.title}
                           </p>
                           <p className="mt-3 text-base text-gray-500">
-                            {sanitizeDescription(post.html)}
+                            {post.description}
                           </p>
                         </a>
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors}
-                          published={parseISO(post.published_at)}
-                          doi={post.doi}
-                          readingTime={post.reading_time}
+                          authors={[post.author]}
+                          published={fromUnixTime(post.published)}
+                          doi={null}
+                          readingTime={post.readingTime}
                         />
                       </div>
                     </div>
@@ -331,8 +337,8 @@ export default function Tag({ posts, tag, pagination }) {
                       <img
                         className="h-48 w-full object-contain"
                         src={
-                          post.feature_image
-                            ? post.feature_image
+                          post.featureImage
+                            ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
                                 Math.floor(Math.random() * 3) + 1
                               }.jpg`
@@ -350,16 +356,16 @@ export default function Tag({ posts, tag, pagination }) {
                             {post.title}
                           </p>
                           <p className="mt-3 text-base text-gray-500">
-                            {sanitizeDescription(post.html)}
+                            {post.description}
                           </p>
                         </a>
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors}
-                          published={parseISO(post.published_at)}
-                          doi={post.doi}
-                          readingTime={post.reading_time}
+                          authors={[post.author]}
+                          published={fromUnixTime(post.published)}
+                          doi={null}
+                          readingTime={post.readingTime}
                         />
                       </div>
                     </div>
