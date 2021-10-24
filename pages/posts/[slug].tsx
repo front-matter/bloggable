@@ -19,7 +19,7 @@ import {
   getAllPosts,
   getAllTags,
   getSinglePost,
-  getRecommendedPosts
+  getSimilarIndexedPosts
 } from '../../lib/posts'
 import Byline from '../../components/Byline'
 import { sanitizeDescription, uuid2base32 } from '../../lib/helpers'
@@ -44,7 +44,10 @@ export async function getStaticProps(context) {
     }
   }
 
-  const recommendedPosts = await getRecommendedPosts(post.primary_tag, post.id)
+  const recommendedPosts = await getSimilarIndexedPosts(
+    post.title + ' ' + post.tags.map((tag) => tag.name).join(' '),
+    post.id
+  )
   return {
     props: { post, tags, recommendedPosts }
   }

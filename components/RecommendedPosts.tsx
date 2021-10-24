@@ -1,6 +1,5 @@
 import React from 'react'
-import { sanitizeDescription } from '../lib/helpers'
-import { parseISO } from 'date-fns'
+import { fromUnixTime } from 'date-fns'
 import Byline from './Byline'
 
 export default function RecommendedPosts({ posts }) {
@@ -49,16 +48,16 @@ export default function RecommendedPosts({ posts }) {
                           {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
-                          {sanitizeDescription(post.html)}
+                          {post.description}
                         </p>
                       </a>
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        authors={post.authors}
-                        published={parseISO(post.published_at)}
+                        authors={[post.author]}
+                        published={fromUnixTime(post.published)}
                         doi={null}
-                        readingTime={post.reading_time}
+                        readingTime={post.readingTime}
                       />
                     </div>
                   </div>

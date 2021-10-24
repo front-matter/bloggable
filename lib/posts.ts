@@ -182,7 +182,7 @@ export async function getSimilarIndexedPosts(query: string, recordId: string) {
       page: 1
     })
     .then(({ hits }) => {
-      return hits
+      return hits.map((hit) => hit.document)
     })
     .catch((err) => {
       console.error(err)
