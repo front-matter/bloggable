@@ -59,7 +59,7 @@ export default function Tag({ posts, tag, pagination }) {
                         post.featureImage
                           ? post.featureImage
                           : `https://assets.front-matter.io/ghost/news${
-                              Math.floor(Math.random() * 3) + 1
+                              Math.floor(Math.random() * 5) + 1
                             }.jpg`
                       }
                       alt=""
@@ -105,7 +105,7 @@ export default function Tag({ posts, tag, pagination }) {
                           post.featureImage
                             ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
-                                Math.floor(Math.random() * 3) + 1
+                                Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
                         alt=""
@@ -152,7 +152,7 @@ export default function Tag({ posts, tag, pagination }) {
                           post.featureImage
                             ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
-                                Math.floor(Math.random() * 3) + 1
+                                Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
                         alt=""
@@ -199,7 +199,7 @@ export default function Tag({ posts, tag, pagination }) {
                           post.featureImage
                             ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
-                                Math.floor(Math.random() * 3) + 1
+                                Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
                         alt=""
@@ -246,7 +246,7 @@ export default function Tag({ posts, tag, pagination }) {
                           post.featureImage
                             ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
-                                Math.floor(Math.random() * 3) + 1
+                                Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
                         alt=""
@@ -293,7 +293,7 @@ export default function Tag({ posts, tag, pagination }) {
                           post.featureImage
                             ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
-                                Math.floor(Math.random() * 3) + 1
+                                Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
                         alt=""
@@ -340,7 +340,7 @@ export default function Tag({ posts, tag, pagination }) {
                           post.featureImage
                             ? post.featureImage
                             : `https://assets.front-matter.io/ghost/news${
-                                Math.floor(Math.random() * 3) + 1
+                                Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
                         alt=""

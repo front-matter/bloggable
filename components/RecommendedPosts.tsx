@@ -31,7 +31,7 @@ export default function RecommendedPosts({ posts }) {
                         post.feature_image
                           ? post.feature_image
                           : `https://assets.front-matter.io/ghost/news${
-                              Math.floor(Math.random() * 3) + 1
+                              Math.floor(Math.random() * 5) + 1
                             }.jpg`
                       }
                       alt=""
