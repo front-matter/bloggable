@@ -34,13 +34,12 @@ export async function getStaticProps() {
   }
 }
 
-const IndexPage = ({ posts, tags }) => {
+=> {
   const tag = {
     name: 'Front Matter Blog',
     description: 'Where Open Science matters',
     feature_image: '/img/hero.jpg',
-    featured: true,
-    count: { posts: posts.length }
+    featured: true
   }
 
   const pagination = {

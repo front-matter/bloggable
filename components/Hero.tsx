@@ -22,7 +22,6 @@ export default function Hero({ tag }) {
               }
             >
               {tag && tag.name}
-              {tag && tag.featured ? '' : ' (' + tag.count.posts + ')'}
             </span>
           </h1>
           {tag && tag.description && (
