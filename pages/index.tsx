@@ -34,7 +34,7 @@ export async function getStaticProps() {
   }
 }
 
-=> {
+const IndexPage = ({ posts, tags }) => {
   const tag = {
     name: 'Front Matter Blog',
     description: 'Where Open Science matters',
