@@ -58,7 +58,7 @@ export default function Tag({ posts, tag, pagination }) {
                       src={
                         post.featureImage
                           ? post.featureImage
-                          : `https://assets.front-matter.io/ghost/news${
+                          : `https://assets.front-matter.io/1/news${
                               Math.floor(Math.random() * 5) + 1
                             }.jpg`
                       }
@@ -104,7 +104,7 @@ export default function Tag({ posts, tag, pagination }) {
                         src={
                           post.featureImage
                             ? post.featureImage
-                            : `https://assets.front-matter.io/ghost/news${
+                            : `https://assets.front-matter.io/1/news${
                                 Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
@@ -151,7 +151,7 @@ export default function Tag({ posts, tag, pagination }) {
                         src={
                           post.featureImage
                             ? post.featureImage
-                            : `https://assets.front-matter.io/ghost/news${
+                            : `https://assets.front-matter.io/1/news${
                                 Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
@@ -198,7 +198,7 @@ export default function Tag({ posts, tag, pagination }) {
                         src={
                           post.featureImage
                             ? post.featureImage
-                            : `https://assets.front-matter.io/ghost/news${
+                            : `https://assets.front-matter.io/1/news${
                                 Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
@@ -245,7 +245,7 @@ export default function Tag({ posts, tag, pagination }) {
                         src={
                           post.featureImage
                             ? post.featureImage
-                            : `https://assets.front-matter.io/ghost/news${
+                            : `https://assets.front-matter.io/1/news${
                                 Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
@@ -292,7 +292,7 @@ export default function Tag({ posts, tag, pagination }) {
                         src={
                           post.featureImage
                             ? post.featureImage
-                            : `https://assets.front-matter.io/ghost/news${
+                            : `https://assets.front-matter.io/1/news${
                                 Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
@@ -339,7 +339,7 @@ export default function Tag({ posts, tag, pagination }) {
                         src={
                           post.featureImage
                             ? post.featureImage
-                            : `https://assets.front-matter.io/ghost/news${
+                            : `https://assets.front-matter.io/1/news${
                                 Math.floor(Math.random() * 5) + 1
                               }.jpg`
                         }
