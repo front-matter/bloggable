@@ -46,7 +46,7 @@ export async function getStaticProps(context) {
 
   const recommendedPosts = await getSimilarIndexedPosts(
     post.title + ' ' + post.tags.map((tag) => tag.name).join(' '),
-    uuid2base32(post.uuid)
+    post.id
   )
   return {
     props: { post, tags, recommendedPosts }

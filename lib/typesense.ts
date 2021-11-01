@@ -48,7 +48,7 @@ export async function refreshIndex() {
         name: post.primary_author.name,
         imageUrl: 'https:' + post.primary_author.profile_image
       },
-      description: description,
+      description: description + '',
       content: await generateHtml(post.html),
       readingTime: post.reading_time,
       tags: post.tags && post.tags.map((tag) => tag.slug),
@@ -65,7 +65,7 @@ export async function refreshIndex() {
         url: 'https://blog.front-matter.io/mfenner/' + post.slug,
         name: post.title,
         headline: post.title,
-        description: description + '...',
+        description: description + '',
         author: {
           '@type': 'Person',
           '@id': post.primary_author.website,

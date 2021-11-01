@@ -7,7 +7,7 @@ const { withSentryConfig } = require('@sentry/nextjs')
 
 const moduleExports = {
   reactStrictMode: true,
-  staticPageGenerationTimeout: 120,
+  staticPageGenerationTimeout: 300,
   images: {
     domains: ['assets.front-matter.io', 'images.unsplash.com']
   }
