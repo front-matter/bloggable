@@ -4,7 +4,7 @@ import { jsonLdScriptProps } from 'react-schemaorg'
 import { getAllTags, getIndexedPostsByTag } from '../lib/posts'
 import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
-import { refreshIndex } from '../lib/typesense'
+// import { refreshIndex } from '../lib/typesense'
 // import { updateSchema } from '../lib/typesense'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -27,7 +27,7 @@ export async function getStaticProps() {
   // await generatePdf()
   // await generateJats()
   // await updateSchema()
-  await refreshIndex()
+  // await refreshIndex()
 
   return {
     props: { posts: posts.posts, tags }

@@ -138,7 +138,11 @@ const Post = (props) => {
             <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
               {props.post.tags.map((tag, index) => (
                 <>
-                  <Link key={tag.slug} href={`/categories/${tag.slug}`}>
+                  <Link
+                    key={tag.slug}
+                    href={`/categories/${tag.slug}`}
+                    passHref
+                  >
                     <span className="border-b-0 hover:border-b hover:border-green-600">
                       {tag.name}
                     </span>

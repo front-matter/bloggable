@@ -7,7 +7,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/eslint-recommended'
+    'plugin:@typescript-eslint/eslint-recommended',
+    'next'
   ],
   globals: {
     Atomics: 'readonly',
@@ -28,6 +29,8 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    '@next/next/no-img-element': 'off',
+    'react-hooks/rules-of-hooks': 'off'
   }
 }

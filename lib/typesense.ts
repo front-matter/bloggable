@@ -37,7 +37,7 @@ export async function refreshIndex() {
 
   for (const post of posts) {
     const description = sanitizeDescription(post.html)
-    const id = uuid2base32(post.uuid)
+    const id = uuid2base32(post.id)
 
     const document = {
       id: id,
@@ -48,7 +48,7 @@ export async function refreshIndex() {
         name: post.primary_author.name,
         imageUrl: 'https:' + post.primary_author.profile_image
       },
-      description: description + '...',
+      description: description,
       content: await generateHtml(post.html),
       readingTime: post.reading_time,
       tags: post.tags && post.tags.map((tag) => tag.slug),
@@ -90,6 +90,7 @@ export async function refreshIndex() {
         datePublished: getTime(parseISO(post.published_at)) * 0.001
       }
     }
+
     // ignore null values
     const cleanedDocument = Object.fromEntries(
       Object.entries(document).filter(([, v]) => v != null)
