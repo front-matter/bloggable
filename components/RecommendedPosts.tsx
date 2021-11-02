@@ -58,6 +58,7 @@ export default function RecommendedPosts({ posts }) {
                         published={fromUnixTime(post.published)}
                         doi={null}
                         readingTime={post.readingTime}
+                        readingEaseScore={post.readingEaseScore}
                       />
                     </div>
                   </div>

@@ -45,6 +45,7 @@
     "react-markdown": "^6.0.2",
     "react-schemaorg": "^2.0.0",
     "react-scripts": "^4.0.3",
+    "readability-cyr": "^1.0.8",
     "remark": "^13.0.0",
     "remark-gfm": "^1.0.0",
     "sanitize-html": "^2.4.0",

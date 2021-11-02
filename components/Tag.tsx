@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { fromUnixTime } from 'date-fns'
 import useSWR from 'swr'
 import fetch from 'unfetch'
-
+import { fleshReadingEase } from '../lib/helpers'
 import Byline from './Byline'
 
 const fetcher = (url) => fetch(url).then((r) => r.json())
@@ -85,6 +85,7 @@ export default function Tag({ posts, tag, pagination }) {
                         published={fromUnixTime(post.published)}
                         doi={null}
                         readingTime={post.readingTime}
+                        readingEaseScore={fleshReadingEase(post.content)}
                       />
                     </div>
                   </div>
@@ -131,6 +132,7 @@ export default function Tag({ posts, tag, pagination }) {
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
+                          readingEaseScore={fleshReadingEase(post.content)}
                         />
                       </div>
                     </div>
@@ -178,6 +180,7 @@ export default function Tag({ posts, tag, pagination }) {
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
+                          readingEaseScore={fleshReadingEase(post.content)}
                         />
                       </div>
                     </div>
@@ -225,6 +228,7 @@ export default function Tag({ posts, tag, pagination }) {
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
+                          readingEaseScore={fleshReadingEase(post.content)}
                         />
                       </div>
                     </div>
@@ -272,6 +276,7 @@ export default function Tag({ posts, tag, pagination }) {
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
+                          readingEaseScore={fleshReadingEase(post.content)}
                         />
                       </div>
                     </div>
@@ -319,6 +324,7 @@ export default function Tag({ posts, tag, pagination }) {
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
+                          readingEaseScore={fleshReadingEase(post.content)}
                         />
                       </div>
                     </div>
@@ -366,6 +372,7 @@ export default function Tag({ posts, tag, pagination }) {
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
+                          readingEaseScore={fleshReadingEase(post.content)}
                         />
                       </div>
                     </div>
