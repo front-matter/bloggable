@@ -83,7 +83,7 @@ export default function Navbar({ tags, tag }) {
                     className={classNames(
                       item.slug == tag.slug
                         ? 'text-gray-600 font-semibold'
-                        : 'text-green-600 hover:text-green-500',
+                        : 'text-green-600 border-b-0 hover:border-b hover:border-green-600',
                       'text-base font-medium border-b-0'
                     )}
                     aria-current={item.current ? 'page' : undefined}
