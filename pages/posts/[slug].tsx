@@ -143,7 +143,7 @@ const Post = (props) => {
                     href={`/categories/${tag.slug}`}
                     passHref
                   >
-                    <span className="border-b-0 hover:border-b hover:border-green-600">
+                    <span className="border-b-0 hover:border-b hover:border-green-600 cursor-pointer">
                       {tag.name}
                     </span>
                   </Link>
