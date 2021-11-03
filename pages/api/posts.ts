@@ -16,7 +16,7 @@ export default async function handler(
 ) {
   // Run cors
   await cors(req, res)
-  console.log(req.query)
+
   const query = req.query.query as string
   const page = req.query.page as unknown
   const perPage = req.query.perPage as unknown
