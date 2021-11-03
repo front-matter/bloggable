@@ -36,9 +36,9 @@ export const uuid2base32 = (uuid: string) => {
     .join('-')
 }
 
-// calculate Flesch Reading Ease score with one decimal point
-export const fleshReadingEase = (content: string) => {
-  return scoreFleschKincaidEase(content).toFixed(1)
+// calculate Flesch Reading Ease score
+export const readabilityScore = (content: string) => {
+  return scoreFleschKincaidEase(content)
 }
 
 // Helper method to wait for a middleware to execute before continuing

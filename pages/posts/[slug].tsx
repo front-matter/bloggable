@@ -7,7 +7,7 @@ import { BlogPosting } from 'schema-dts'
 import { jsonLdScriptProps } from 'react-schemaorg'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import { fleshReadingEase } from '../../lib/helpers'
+import { readabilityScore } from '../../lib/helpers'
 import RecommendedPosts from '../../components/RecommendedPosts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -158,7 +158,7 @@ const Post = (props) => {
             authors={props.post.authors}
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
-            readingEaseScore={fleshReadingEase(props.post.html)}
+            readabilityScore={readabilityScore(props.post.html)}
             doi={'https://doi.org/' + pid}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>

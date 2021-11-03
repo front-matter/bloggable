@@ -5,7 +5,7 @@ type Props = {
   published: Date
   doi: string
   readingTime: number
-  readingEaseScore: number
+  readabilityScore: number
 }
 
 interface Author {
@@ -19,7 +19,7 @@ const Byline: React.FunctionComponent<Props> = ({
   published,
   doi,
   readingTime,
-  readingEaseScore
+  readabilityScore
 }) => {
   return (
     <div className="flex flex-row pt-2 pb-4">
@@ -34,7 +34,7 @@ const Byline: React.FunctionComponent<Props> = ({
             day: 'numeric'
           })}{' '}
           &bull; {readingTime} min read &bull; readability score{' '}
-          {readingEaseScore}
+          {readabilityScore.toFixed(1)}
           {doi && (
             <>
               {' '}

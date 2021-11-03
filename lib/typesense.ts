@@ -1,7 +1,7 @@
 import { Client } from 'typesense'
 import { getAllPosts } from './posts'
 import { generateHtml } from './pandoc'
-import { uuid2base32, sanitizeDescription } from './helpers'
+import { uuid2base32, sanitizeDescription, readabilityScore } from './helpers'
 import { getTime, parseISO } from 'date-fns'
 
 export async function refreshIndex() {
@@ -51,6 +51,7 @@ export async function refreshIndex() {
       description: description + '',
       content: await generateHtml(post.html),
       readingTime: post.reading_time,
+      readabilityScore: readabilityScore(post.html),
       tags: post.tags && post.tags.map((tag) => tag.slug),
       featured: post.featured,
       featureImage: post.feature_image,
@@ -148,6 +149,11 @@ export async function updateSchema() {
       },
       {
         name: 'readingTime',
+        type: 'int32',
+        facet: true
+      },
+      {
+        name: 'readabilityScore',
         type: 'int32',
         facet: true
       },

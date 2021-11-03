@@ -1,7 +1,7 @@
 import React from 'react'
 import { fromUnixTime } from 'date-fns'
 import Byline from './Byline'
-import { fleshReadingEase } from '../lib/helpers'
+import { readabilityScore } from '../lib/helpers'
 
 export default function RecommendedPosts({ posts }) {
   if (!posts) return null
@@ -59,7 +59,7 @@ export default function RecommendedPosts({ posts }) {
                         published={fromUnixTime(post.published)}
                         doi={null}
                         readingTime={post.readingTime}
-                        readingEaseScore={fleshReadingEase(post.content)}
+                        readabilityScore={post.readabilityScore}
                       />
                     </div>
                   </div>
