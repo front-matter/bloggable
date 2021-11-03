@@ -111,7 +111,7 @@ export async function getIndexedPosts(
       page: page > 0 ? page : 1
     })
     .then((posts) => {
-      const pages = Math.ceil(posts.found / 15)
+      const pages = Math.ceil(posts.found / (perPage ? perPage : 15))
 
       return {
         posts: posts.hits.map((hit) => hit.document),
@@ -130,18 +130,22 @@ export async function getIndexedPosts(
     })
 }
 
-export async function getIndexedPostsByTag(tag: string, page?: number) {
+export async function getIndexedPostsByTag(
+  tag: string,
+  page?: number,
+  perPage?: number
+) {
   return client
     .collections('front-matter')
     .documents()
     .search({
       q: '*',
       filter_by: tag,
-      per_page: 15,
+      per_page: perPage ? perPage : 15,
       page: page > 0 ? page : 1
     })
     .then((posts) => {
-      const pages = Math.ceil(posts.found / 15)
+      const pages = Math.ceil(posts.found / (perPage ? perPage : 15))
 
       return {
         posts: posts.hits.map((hit) => hit.document),
