@@ -16,8 +16,11 @@ export default async function handler(
 ) {
   // Run cors
   await cors(req, res)
-
-  const posts = await getIndexedPosts('*')
+  console.log(req.query)
+  const query = req.query.query as string
+  const page = req.query.page as unknown
+  const perPage = req.query.perPage as unknown
+  const posts = await getIndexedPosts(query, page as number, perPage as number)
   const response = posts
   res.status(200).json(response)
 }
