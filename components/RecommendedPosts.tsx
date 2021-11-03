@@ -1,7 +1,6 @@
 import React from 'react'
 import { fromUnixTime } from 'date-fns'
 import Byline from './Byline'
-import { readabilityScore } from '../lib/helpers'
 
 export default function RecommendedPosts({ posts }) {
   if (!posts) return null
