@@ -96,18 +96,33 @@ const client = new Client({
   retryIntervalSeconds: 3
 })
 
-export async function getIndexedPosts(query: string, page?: number) {
+export async function getIndexedPosts(
+  query: string,
+  page?: number,
+  perPage?: number
+) {
   return client
     .collections('front-matter')
     .documents()
     .search({
       q: query,
       query_by: 'tags,title,content',
-      per_page: 15,
+      per_page: perPage ? perPage : 15,
       page: page > 0 ? page : 1
     })
     .then((posts) => {
-      return posts
+      const pages = Math.ceil(posts.found / 15)
+
+      return {
+        posts: posts.hits.map((hit) => hit.document),
+        meta: {
+          page: posts.page,
+          pages: pages,
+          total: posts.found,
+          prev: posts.page > 1 ? posts.page - 1 : null,
+          next: posts.page < pages ? posts.page + 1 : null
+        }
+      }
     })
     .catch((err) => {
       console.error(err)
