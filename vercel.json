@@ -308,6 +308,22 @@
       "destination": "/posts/farewell-to-datacite"
     },
     {
+      "source": "/mfenner/conference-blogging-interview-with-alex-knoll",
+      "destination": "/posts/conference-blogging-interview-with-alex-knoll"
+    },
+    {
+      "source": "/mfenner/reference-lists-and-tables-of-content",
+      "destination": "/posts/reference-lists-and-tables-of-content"
+    },
+    {
+      "source": "/mfenner/today-i-started-a-new-blogging-network",
+      "destination": "/posts/today-i-started-a-new-blogging-network"
+    },
+    {
+      "source": "/mfenner/book-review-cognitive-surplus-by-clay-shirky",
+      "destination": "/posts/book-review-cognitive-surplus-by-clay-shirky"
+    },
+    {
       "source": "/about",
       "destination": "/"
     }
