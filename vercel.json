@@ -324,6 +324,10 @@
       "destination": "/posts/book-review-cognitive-surplus-by-clay-shirky"
     },
     {
+      "source": "/mfenner/first-analysis-of-software-metrics",
+      "destination": "/posts/first-analysis-of-software-metrics"
+    },
+    {
       "source": "/about",
       "destination": "/"
     }
