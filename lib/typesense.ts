@@ -62,8 +62,10 @@ export async function refreshIndex() {
       schemaOrg: {
         '@context': 'http://schema.org',
         '@type': 'BlogPosting',
-        '@id': 'https://blog.front-matter.io/' + id,
-        url: 'https://blog.front-matter.io/mfenner/' + post.slug,
+        '@id': process.env.NEXT_PUBLIC_PREFIX
+          ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + id
+          : 'https://blog.front-matter.io/' + id,
+        url: 'https://blog.front-matter.io/posts/' + post.slug,
         name: post.title,
         headline: post.title,
         description: description + '',
