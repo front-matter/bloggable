@@ -60,7 +60,7 @@ const Post = (props) => {
   const pid = process.env.NEXT_PUBLIC_PREFIX
     ? process.env.NEXT_PUBLIC_PREFIX + '/' + uuid2base32(props.post.id)
     : null
-  const description = sanitizeDescription(props.post.html)
+  const description = sanitizeDescription(props.post.html) + ''
 
   return (
     <>
