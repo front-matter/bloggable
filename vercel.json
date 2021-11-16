@@ -328,6 +328,10 @@
       "destination": "/posts/first-analysis-of-software-metrics"
     },
     {
+      "source": "/mfenner/announcing-the-sciencecard-relaunch",
+      "destination": "/posts/announcing-the-sciencecard-relaunch"
+    },
+    {
       "source": "/about",
       "destination": "/"
     }
