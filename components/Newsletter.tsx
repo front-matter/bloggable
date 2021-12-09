@@ -34,9 +34,9 @@ export default function Newsletter() {
     event.target.reset()
   }
 
-  let colorName = 'red-300'
+  let colorName = 'red-400'
   if (message && message.startsWith('Please check your email')) {
-    colorName = 'green-300'
+    colorName = 'green-400'
   }
 
   return (
