@@ -4,6 +4,8 @@ import { generateHtml } from './pandoc'
 import { uuid2base32, sanitizeDescription, readabilityScore } from './helpers'
 import { getTime, parseISO } from 'date-fns'
 
+const typesenseCollection = process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION
+
 export async function refreshIndex() {
   const client = new Client({
     nearestNode: {
@@ -101,7 +103,7 @@ export async function refreshIndex() {
 
     // empty index
     await client
-      .collections('front-matter')
+      .collections(typesenseCollection)
       .documents()
       .delete({ filter_by: 'visibility:true' })
       .catch((err) => {
@@ -110,7 +112,7 @@ export async function refreshIndex() {
 
     // insert new documents
     await client
-      .collections('front-matter')
+      .collections(typesenseCollection)
       .documents()
       .upsert(cleanedDocument)
       .catch((err) => {
@@ -122,7 +124,7 @@ export async function refreshIndex() {
 
 export async function updateSchema() {
   const schema = {
-    name: 'front-matter',
+    name: typesenseCollection,
     fields: [
       {
         name: 'id',

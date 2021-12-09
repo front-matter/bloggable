@@ -10,6 +10,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Tag from '../components/Tag'
+import Newsletter from '../components/Newsletter'
 import { Blog } from 'schema-dts'
 
 export async function getStaticProps() {
@@ -70,6 +71,7 @@ const IndexPage = ({ posts, tags }) => {
       <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
       <Tag posts={posts} tag={tag} pagination={pagination} />
+      <Newsletter />
       <Footer />
     </>
   )

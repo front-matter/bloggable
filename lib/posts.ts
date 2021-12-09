@@ -1,11 +1,18 @@
 import GhostContentAPI from '@tryghost/content-api'
+import GhostAdminAPI from '@tryghost/admin-api'
 import { Client } from 'typesense'
 
 // Create API instance with site credentials
 const api = new GhostContentAPI({
-  url: 'https://editor.front-matter.io',
+  url: process.env.NEXT_PUBLIC_GHOST_API_URL,
   key: process.env.NEXT_PUBLIC_GHOST_API_KEY,
   version: 'v4'
+})
+
+const admin = new GhostAdminAPI({
+  url: process.env.NEXT_PUBLIC_GHOST_API_URL,
+  key: process.env.NEXT_PUBLIC_GHOST_ADMIN_API_KEY,
+  version: 'v3'
 })
 
 export async function getAllPosts() {
@@ -62,6 +69,18 @@ export async function getSingleTag(tagSlug) {
     })
     .catch((err) => {
       console.error(err)
+    })
+}
+
+// subscribe new member. name is optional
+export async function addMember(member) {
+  return admin.members
+    .add(member, {
+      send_email: true,
+      email_type: 'subscribe'
+    })
+    .catch((err) => {
+      return err
     })
 }
 
