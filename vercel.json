@@ -332,6 +332,14 @@
       "destination": "/posts/announcing-the-sciencecard-relaunch"
     },
     {
+      "source": "/mfenner/citations-are-links-so-where-is-the-problem",
+      "destination": "/posts/citations-are-links-so-where-is-the-problem"
+    },
+    {
+      "source": "/mfenner/its-all-about-relations",
+      "destination": "/posts/its-all-about-relations"
+    },
+    {
       "source": "/about",
       "destination": "/"
     }
