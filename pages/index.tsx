@@ -49,7 +49,7 @@ const IndexPage = ({ posts, tags }) => {
     total: posts.length,
     prev: null,
     next: null
-  
+  }
 
   return (
     <>
@@ -71,7 +71,7 @@ const IndexPage = ({ posts, tags }) => {
       <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
       <Tag posts={posts} tag={tag} pagination={pagination} />
-      {process.env.GIT_BRANCH !== "main" && <Newsletter />}
+      {process.env.GIT_BRANCH !== 'main' && <Newsletter />}
       <Footer />
     </>
   )
