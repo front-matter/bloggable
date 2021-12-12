@@ -43,7 +43,7 @@ const CategoryPage = ({ posts, tags, tag, pagination }) => {
       <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
       <Tag posts={posts} tag={tag} pagination={pagination} />
-      {process.env.GIT_BRANCH !== 'main' && <Newsletter />}
+      <Newsletter />
       <Footer />
     </>
   )
