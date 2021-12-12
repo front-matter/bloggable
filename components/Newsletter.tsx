@@ -5,7 +5,7 @@ export default function Newsletter() {
   const [message, setMessage] = useState('')
   const [email, setEmail] = useState('')
 
-  async function fetchData() {
+  async function fetchData(email) {
     const response = await fetch('/api/subscribe', {
       method: 'POST',
       headers: {
@@ -25,12 +25,12 @@ export default function Newsletter() {
   }
 
   useEffect(() => {
-    fetchData()
-  }, [])
+    fetchData(email)
+  }, [email])
 
   const subscribeMember = (event) => {
     event.preventDefault()
-    fetchData()
+    fetchData(email)
     event.target.reset()
   }
 
