@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Hero from '../../components/Hero'
 import Tag from '../../components/Tag'
+import Newsletter from '../../components/Newsletter'
 import { GetStaticPaths } from 'next'
 import { GetStaticProps } from 'next'
 
@@ -42,6 +43,7 @@ const CategoryPage = ({ posts, tags, tag, pagination }) => {
       <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
       <Tag posts={posts} tag={tag} pagination={pagination} />
+      {process.env.GIT_BRANCH !== 'main' && <Newsletter />}
       <Footer />
     </>
   )
