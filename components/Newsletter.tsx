@@ -1,36 +1,36 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 // import Link from 'next/link'
 
 export default function Newsletter() {
-  const [message, setMessage] = useState(null)
+  const [message, setMessage] = useState('')
+  const [email, setEmail] = useState('')
 
-  const subscribeMember = async (event) => {
-    event.preventDefault()
-
-    const member = { email: event.target['email-address'].value }
-
+  async function fetchData() {
     const response = await fetch('/api/subscribe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(member)
+      body: JSON.stringify({ email: email })
     })
-
-    const data = await response.json()
-    console.log(data)
-    let dataMessage = ''
-
-    // different message if there is an error
-    if (data && data.email) {
-      dataMessage =
+    let data = ''
+    if (response.ok) {
+      data =
         'Please check your email inbox and confirm your Front Matter subscription.'
-    } else if (data && data.error) {
-      dataMessage = data.error
+    } else {
+      // show error message from API
+      data = await response.json().then((data) => data.error)
     }
+    setMessage(data)
+  }
 
-    setMessage(dataMessage)
-    console.log(message)
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+  const subscribeMember = (event) => {
+    event.preventDefault()
+    fetchData()
     event.target.reset()
   }
 
@@ -72,6 +72,7 @@ export default function Newsletter() {
               required
               className="w-full px-3 py-2 border font-sans border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-green-600 focus:border-green-600 sm:max-w-xs rounded-md"
               placeholder="Enter your email"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
