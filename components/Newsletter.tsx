@@ -20,6 +20,12 @@ export default function Newsletter() {
     } else {
       // show error message from API
       data = await response.json().then((data) => data.error)
+      if (
+        data.startsWith('Validation (isEmail) failed') ||
+        data.startsWith('Validation failed for email')
+      ) {
+        data = ''
+      }
     }
     setMessage(data)
   }
@@ -32,11 +38,6 @@ export default function Newsletter() {
     event.preventDefault()
     fetchData(email)
     event.target.reset()
-  }
-
-  let colorName = 'red-400'
-  if (message && message.startsWith('Please check your email')) {
-    colorName = 'green-400'
   }
 
   return (
@@ -52,7 +53,11 @@ export default function Newsletter() {
           </p>
           {message && (
             <div
-              className={`bg-${colorName} font-sans px-3 py-2 rounded-md relative`}
+              className={
+                message.startsWith('Please check your email')
+                  ? 'bg-green-400 font-sans px-3 py-2 rounded-md relative'
+                  : 'bg-red-400 font-sans px-3 py-2 rounded-md relative'
+              }
               role="alert"
             >
               <span className="block sm:inline">{message}</span>
