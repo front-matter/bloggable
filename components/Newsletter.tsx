@@ -20,12 +20,6 @@ export default function Newsletter() {
     } else {
       // show error message from API
       data = await response.json().then((data) => data.error)
-      if (
-        data.startsWith('Validation (isEmail) failed') ||
-        data.startsWith('Validation failed for email')
-      ) {
-        data = ''
-      }
     }
     setMessage(data)
   }
@@ -36,8 +30,9 @@ export default function Newsletter() {
 
   const subscribeMember = (event) => {
     event.preventDefault()
-    fetchData(email)
+    setEmail(event.target['email-address'].value)
     event.target.reset()
+    fetchData(email)
   }
 
   return (
@@ -55,8 +50,8 @@ export default function Newsletter() {
             <div
               className={
                 message.startsWith('Please check your email')
-                  ? 'bg-green-400 font-sans px-3 py-2 rounded-md relative'
-                  : 'bg-red-400 font-sans px-3 py-2 rounded-md relative'
+                  ? 'bg-green-600 font-sans text-white px-3 py-2 rounded-md relative'
+                  : 'bg-red-600 font-sans text-white px-3 py-2 rounded-md relative'
               }
               role="alert"
             >
@@ -77,7 +72,6 @@ export default function Newsletter() {
               required
               className="w-full px-3 py-2 border font-sans border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-green-600 focus:border-green-600 sm:max-w-xs rounded-md"
               placeholder="Enter your email"
-              onChange={(e) => setEmail(e.target.value)}
             />
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
