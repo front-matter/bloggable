@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
-// import Link from 'next/link'
 
 export default function Newsletter() {
   const [message, setMessage] = useState('')
   const [email, setEmail] = useState('')
 
-  async function fetchData(email) {
+  // pass email as parameter to trigger useEffect hook
+  async function fetchData(emailAddress) {
     const response = await fetch('/api/subscribe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ email: email })
+      body: JSON.stringify({ email: emailAddress })
     })
     let data = ''
     if (response.ok) {
