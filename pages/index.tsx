@@ -71,7 +71,7 @@ const IndexPage = ({ posts, tags }) => {
       <Header tags={tags} tag={tag} />
       <Hero tag={tag} />
       <Tag posts={posts} tag={tag} pagination={pagination} />
-      {process.env.GIT_BRANCH !== 'main' && <Newsletter />}
+      {process.env.GIT_BRANCH === 'staging' && <Newsletter />}
       <Footer />
     </>
   )
