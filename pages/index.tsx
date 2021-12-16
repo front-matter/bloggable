@@ -35,6 +35,8 @@ export async function getStaticProps() {
   }
 }
 
+console.log(process.env.GIT_BRANCH)
+
 const IndexPage = ({ posts, tags }) => {
   const tag = {
     name: 'Front Matter Blog',
