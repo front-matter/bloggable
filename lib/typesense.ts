@@ -45,11 +45,8 @@ export async function refreshIndex() {
       id: id,
       title: post.title,
       slug: post.slug,
-      author: {
-        id: post.primary_author.website,
-        name: post.primary_author.name,
-        imageUrl: 'https:' + post.primary_author.profile_image
-      },
+      author_ids: post.authors && post.authors.map((author) => author.slug),
+      authors: post.authors && post.authors.map((author) => author.name),
       description: description + '',
       content: await generateHtml(post.html),
       readingTime: post.reading_time,

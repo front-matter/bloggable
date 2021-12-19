@@ -1,13 +1,18 @@
 import React from 'react'
 import { useState } from 'react'
 import { fromUnixTime } from 'date-fns'
+import Link from 'next/link'
+import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faOrcid } from '@fortawesome/free-brands-svg-icons'
+
 import useSWR from 'swr'
 import fetch from 'unfetch'
 import Byline from './Byline'
 
 const fetcher = (url) => fetch(url).then((r) => r.json())
 
-export default function Tag({ posts, tag, pagination }) {
+export default function Author({ posts, author, pagination }) {
   if (!posts) {
     return null
   }
@@ -15,8 +20,8 @@ export default function Tag({ posts, tag, pagination }) {
   const [pageIndex, setPageIndex] = useState(1)
 
   // The API URL includes the page index, which is a React state.
-  const filter = tag ? '&filter_by=tags:' + tag.slug : ''
-  const query = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?q=*${filter}&sort_by=published:desc&per_page=15&page=${pageIndex}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
+  const filter = 'author_ids:' + author.slug
+  const query = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?q=*&filter_by=${filter}&sort_by=published:desc&per_page=15&page=${pageIndex}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
   const { data } = useSWR(query, fetcher)
 
   // ... handle loading and error states
@@ -38,13 +43,62 @@ export default function Tag({ posts, tag, pagination }) {
 
   return (
     <>
-      <div className="relative bg-gray-50 pt-8 pb-8 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8">
+      <div className="bg-gray-100">
+        <div className="container flex mx-auto py-8 px-20 max-w-7xl sm:px-6 lg:px-20">
+          <div className="space-y-4 sm:space-y-0">
+            <div className="aspect-w-2 aspect-h-2 sm:aspect-w-2 sm:aspect-h-2">
+              {author.profile_image && (
+                <Image
+                  className="mx-auto h-40 w-40 inline-block rounded-full xl:w-56 xl:h-56"
+                  src={author.profile_image}
+                  alt={'image ' + author.name}
+                  layout="fill"
+                />
+              )}
+            </div>
+
+            <div className="text-xl pt-2 leading-6 font-medium font-sans space-y-1">
+              <div>{author.name}</div>
+            </div>
+
+            <ul className="flex space-x-5 mt-1 list-none">
+              {author.website && (
+                <li>
+                  <Link href={author.website} passHref>
+                    <a
+                      href="dummy"
+                      className="text-gray-500 hover:text-gray-400 border-b-0"
+                    >
+                      <span className="sr-only">ORCID</span>
+                      <FontAwesomeIcon icon={faOrcid} />
+                    </a>
+                  </Link>
+                </li>
+              )}
+              {author.twitter && (
+                <li>
+                  <Link href={'https://twitter.com/' + author.twitter} passHref>
+                    <a
+                      href="dummy"
+                      className="text-gray-500 hover:text-gray-400 border-b-0"
+                    >
+                      <span className="sr-only">Twitter</span>
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                  </Link>
+                </li>
+              )}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="relative bg-gray-50 pt-8 pb-8 px-4 sm:px-6 lg:pt-4 lg:pb-8 lg:px-8">
         <div className="container mx-auto flex flex-auto items-center justify-between">
           <div className="absolute inset-0">
             <div className="bg-white h-1/3 sm:h-2/3"></div>
           </div>
           <div className="relative max-w-7xl mx-auto">
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
+            <div className="max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
               {posts.slice(0, 1).map((post) => (
                 <div
                   className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
@@ -64,12 +118,12 @@ export default function Tag({ posts, tag, pagination }) {
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                    <div className="flex-1">
+                    <div className="flex-1 ">
                       <a
                         href={'/posts/' + post.slug}
                         className="block mt-2 border-b-0"
                       >
-                        <p className="text-xl font-semibold font-sans text-gray-900">
+                        <p className="text-xl font-semibold font-sans text-force-blue">
                           {post.title}
                         </p>
                         <p className="mt-3 text-base text-gray-500">
@@ -121,7 +175,7 @@ export default function Tag({ posts, tag, pagination }) {
                           href={'/posts/' + post.slug}
                           className="block mt-2 border-b-0"
                         >
-                          <p className="text-xl font-semibold font-sans text-gray-900">
+                          <p className="text-xl font-semibold font-sans text-force-blue">
                             {post.title}
                           </p>
                           <p className="mt-3 text-base text-gray-500">
@@ -131,12 +185,7 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
-                          }))}
+                          authors={post.author}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -184,12 +233,7 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
-                          }))}
+                          authors={post.author}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -237,12 +281,7 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
-                          }))}
+                          authors={post.author}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -290,12 +329,7 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
-                          }))}
+                          authors={post.author}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -343,12 +377,7 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
-                          }))}
+                          authors={post.author}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -396,12 +425,7 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
-                          }))}
+                          authors={post.author}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}

@@ -157,7 +157,12 @@ const Post = (props) => {
           )}
           <h1 className="mt-0 mb-2 text-green-600">{props.post.title}</h1>
           <Byline
-            authors={props.post.authors}
+            authors={props.post.authors.map((author) => ({
+              name: author
+              // slug: props.post.author_ids[idx],
+              // website: null,
+              // profile_image: null
+            }))}
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
             readabilityScore={readabilityScore(props.post.html)}
