@@ -427,17 +427,17 @@ export default function Tag({ posts, tag, pagination }) {
                   total pages
                 </p>
               </div>
-              <div className="flex-1 flex justify-between sm:justify-end">
+              <div className="flex-1 flex justify-between sm:justify-end px-4">
                 {pagination.prev && (
                   <button onClick={() => setPageIndex(pagination.prev)}>
-                    <a className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-500 hover:border-green-500 hover:bg-gray-50">
+                    <a className="relative inline-flex items-center h-8 mx-2 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 hover:bg-gray-50">
                       Previous
                     </a>
                   </button>
                 )}
                 {pagination.next && (
                   <button onClick={() => setPageIndex(pagination.next)}>
-                    <a className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-500 hover:border-green-500 hover:bg-gray-50">
+                    <a className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 hover:bg-gray-50">
                       Next
                     </a>
                   </button>
