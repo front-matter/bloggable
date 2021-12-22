@@ -42,7 +42,7 @@ const Byline: React.FunctionComponent<Props> = ({
             })}{' '}
             &bull; {readingTime} min read &bull;{' '}
             <a
-              className="border-b-0 hover:border-b hover:border-force-blue"
+              className="border-b-0 hover:border-b hover:border-green-600"
               href="https://blog.front-matter.io/posts/on-readability"
               target="_blank"
               rel="noopener noreferrer"
