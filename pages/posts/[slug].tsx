@@ -67,7 +67,12 @@ const Post = (props) => {
       <Head>
         <title>{props.post.title}</title>
 
-        <meta name="DC.identifier" content={pid} />
+        {pid && (
+          <>
+            <meta name="DC.identifier" content={pid} />
+            <meta name="citation_doi" content={pid} />
+          </>
+        )}
         <meta
           name="DC.rights"
           content="https://creativecommons.org/licenses/by/4.0/legalcode"
@@ -99,6 +104,9 @@ const Post = (props) => {
 
         <meta name="og:title" content={props.post.title} />
         <meta name="og:description" content={description} />
+        {props.post.feature_image && (
+          <meta name="og:image" content={props.post.feature_image} />
+        )}
         <script
           type="application/ld+json"
           {...jsonLdScriptProps<BlogPosting>({
@@ -134,11 +142,11 @@ const Post = (props) => {
           })}
         />
       </Head>
-      <Header tags={props.tags} tag={{}} />
-      <div className="container mx-4 md:mx-auto px-6 py-8 flex flex-wrap justify-center">
+      <Header />
+      <div className="md:container mx-6 md:mx-auto py-8 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
           {props.post.tags && (
-            <p className="text-sm font-medium uppercase font-sans mb-0 text-green-600">
+            <p className="font-medium uppercase font-sans mb-0 text-green-600">
               {props.post.tags.map((tag, index) => (
                 <>
                   <Link
@@ -157,12 +165,7 @@ const Post = (props) => {
           )}
           <h1 className="mt-0 mb-2 text-green-600">{props.post.title}</h1>
           <Byline
-            authors={props.post.authors.map((author) => ({
-              name: author
-              // slug: props.post.author_ids[idx],
-              // website: null,
-              // profile_image: null
-            }))}
+            authors={props.post.authors}
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
             readabilityScore={readabilityScore(props.post.html)}
@@ -183,7 +186,7 @@ const Post = (props) => {
             {props.post.authors.map((author) => author.name).join(', ')}.
             Distributed under the terms of the{' '}
             <a
-              className="border-b-0"
+              className="border-b-0 hover:border-b hover:border-green-600"
               href="https://creativecommons.org/licenses/by/4.0/legalcode"
             >
               Creative Commons Attribution 4.0 License.
@@ -192,7 +195,9 @@ const Post = (props) => {
           <DiscourseForum post={props.post} />
         </div>
       </div>
-      <RecommendedPosts posts={props.recommendedPosts} />
+      {props.recommendedPosts.length > 0 && (
+        <RecommendedPosts posts={props.recommendedPosts} />
+      )}
       <Footer />
     </>
   )

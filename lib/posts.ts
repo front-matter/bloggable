@@ -26,18 +26,6 @@ export async function getAllPosts() {
     })
 }
 
-export async function getFeaturedPosts() {
-  return api.posts
-    .browse({
-      filter: 'featured:true',
-      limit: 15,
-      include: 'tags,authors'
-    })
-    .catch((err) => {
-      console.error(err)
-    })
-}
-
 export async function getSinglePost(postSlug) {
   return api.posts
     .read({
@@ -115,22 +103,24 @@ const client = new Client({
   retryIntervalSeconds: 3
 })
 
+const typesenseCollection = process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION;
+
 export async function getIndexedPosts(
   query: string,
   page?: number,
   perPage?: number
 ) {
   return client
-    .collections('front-matter')
+    .collections(typesenseCollection)
     .documents()
     .search({
       q: query,
-      query_by: 'tags,title,content',
+      query_by: "tags,title,content",
       per_page: perPage ? perPage : 15,
-      page: page > 0 ? page : 1
+      page: page > 0 ? page : 1,
     })
     .then((posts) => {
-      const pages = Math.ceil(posts.found / (perPage ? perPage : 15))
+      const pages = Math.ceil(posts.found / (perPage ? perPage : 15));
 
       return {
         posts: posts.hits.map((hit) => hit.document),
@@ -139,14 +129,14 @@ export async function getIndexedPosts(
           pages: pages,
           total: posts.found,
           prev: posts.page > 1 ? posts.page - 1 : null,
-          next: posts.page < pages ? posts.page + 1 : null
-        }
-      }
+          next: posts.page < pages ? posts.page + 1 : null,
+        },
+      };
     })
     .catch((err) => {
-      console.error(err)
-      return err
-    })
+      console.error(err);
+      return err;
+    });
 }
 
 export async function getIndexedPostsByTag(
@@ -155,12 +145,12 @@ export async function getIndexedPostsByTag(
   perPage?: number
 ) {
   return client
-    .collections('front-matter')
+    .collections(typesenseCollection)
     .documents()
     .search({
       q: '*',
       filter_by: tag,
-      per_page: perPage ? perPage : 15,
+      per_page: perPage ? perPage : 3,
       page: page > 0 ? page : 1
     })
     .then((posts) => {
@@ -185,7 +175,7 @@ export async function getIndexedPostsByTag(
 
 export async function getSimilarIndexedPosts(query: string, recordId: string) {
   return client
-    .collections('front-matter')
+    .collections(typesenseCollection)
     .documents()
     .search({
       q: query,

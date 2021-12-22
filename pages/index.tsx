@@ -40,7 +40,7 @@ const IndexPage = ({ posts, tags }) => {
     name: 'Front Matter Blog',
     description: 'Where Open Science matters',
     feature_image: '/img/hero.jpg',
-    featured: true
+    slug: null
   }
 
   const pagination = {

@@ -54,7 +54,12 @@ export default function RecommendedPosts({ posts }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        authors={[post.author]}
+                        authors={post.authors.map((author, idx) => ({
+                          name: author,
+                          slug: post.author_ids[idx],
+                          website: null,
+                          profile_image: null
+                        }))}
                         published={fromUnixTime(post.published)}
                         doi={null}
                         readingTime={post.readingTime}

@@ -15,7 +15,7 @@ export default function Tag({ posts, tag, pagination }) {
   const [pageIndex, setPageIndex] = useState(1)
 
   // The API URL includes the page index, which is a React state.
-  const filter = tag ? '&filter_by=tags:' + tag.slug : ''
+  const filter = tag.slug ? '&filter_by=tags:' + tag.slug : ''
   const query = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?q=*${filter}&sort_by=published:desc&per_page=15&page=${pageIndex}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
   const { data } = useSWR(query, fetcher)
 
@@ -184,11 +184,11 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
+                          authors={post.authors.map((author) => ({
+                            name: author
+                            // slug: post.author_ids[idx],
+                            // website: null,
+                            // profile_image: null
                           }))}
                           published={fromUnixTime(post.published)}
                           doi={null}
@@ -237,12 +237,13 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
-                          }))}
+                          authors={post.authors}
+                          // .map((author) => ({
+                          //   name: author
+                          //   // slug: post.author_ids[idx],
+                          //   // website: null,
+                          //   // profile_image: null
+                          // }))}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -290,11 +291,11 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
+                          authors={post.authors.map((author) => ({
+                            name: author
+                            // slug: post.author_ids[idx],
+                            // website: null,
+                            // profile_image: null
                           }))}
                           published={fromUnixTime(post.published)}
                           doi={null}
@@ -343,11 +344,11 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
+                          authors={post.authors.map((author) => ({
+                            name: author
+                            // slug: post.author_ids[idx],
+                            // website: null,
+                            // profile_image: null
                           }))}
                           published={fromUnixTime(post.published)}
                           doi={null}
@@ -396,11 +397,11 @@ export default function Tag({ posts, tag, pagination }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
-                            name: author,
-                            slug: post.author_ids[idx],
-                            website: null,
-                            profile_image: null
+                          authors={post.authors.map((author) => ({
+                            name: author
+                            // slug: post.author_ids[idx],
+                            // website: null,
+                            // profile_image: null
                           }))}
                           published={fromUnixTime(post.published)}
                           doi={null}
