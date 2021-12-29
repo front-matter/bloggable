@@ -1,7 +1,5 @@
-import React, { Suspense, Fragment } from 'react'
+import React from 'react'
 import Head from 'next/head'
-import useSWR from 'swr'
-import fetch from 'unfetch'
 import { jsonLdScriptProps } from 'react-schemaorg'
 import { getAllTags } from '../lib/posts'
 import { generateAtomFeed } from '../lib/feed'

@@ -12,25 +12,25 @@ function classNames(...classes) {
 }
 
 const Header: React.FunctionComponent<Props> = ({ tags, tag }) => {
-  const [query, setQuery] = useQueryState('query')
+  const [query] = useQueryState('query')
 
-  const onSubmit = (event) => {
-    const setQuery = event.currentTarget.value
-  }
+  // const onSubmit = (event) => {
+  //   const setQuery = event.currentTarget.value
+  // }
 
-  const onKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      onSearchChange(event.currentTarget.value)
-    }
-  }
+  // const onKeyDown = (event) => {
+  //   if (event.key === 'Enter') {
+  //     onSearchChange(event.currentTarget.value)
+  //   }
+  // }
 
-  const onSearchChange = (e: React.FormEvent<HTMLInputElement>): void => {
-    setQuery(e.currentTarget.value)
-  }
+  // const onSearchChange = (e: React.FormEvent<HTMLInputElement>): void => {
+  //   setQuery(e.currentTarget.value)
+  // }
 
-  const onSearchClear = () => {
-    setQuery('')
-  }
+  // const onSearchClear = () => {
+  //   setQuery('')
+  // }
 
   return (
     <Disclosure as="header" className="bg-white shadow">

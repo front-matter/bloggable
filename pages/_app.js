@@ -1,4 +1,4 @@
-import React, { Fragment, Suspense } from 'react'
+import React from 'react'
 import App from 'next/app'
 import Head from 'next/head'
 import PlausibleProvider from 'next-plausible'
