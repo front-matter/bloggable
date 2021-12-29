@@ -1,18 +1,37 @@
-import React, { createElement, Fragment, useEffect, useRef } from 'react'
-import { render } from 'react-dom'
-import { autocomplete } from '@algolia/autocomplete-js'
+import React from 'react'
 import { Disclosure } from '@headlessui/react'
-// import { SearchIcon } from '@heroicons/react/solid'
+import { SearchIcon } from '@heroicons/react/solid'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/img/logo.svg'
+import { useQueryState } from 'next-usequerystate'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar({ tags, tag }) {
+const Header: React.FunctionComponent<Props> = ({ tags, tag }) => {
+  const [query, setQuery] = useQueryState('query')
+
+  const onSubmit = (event) => {
+    const setQuery = event.currentTarget.value
+  }
+
+  const onKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      onSearchChange(event.currentTarget.value)
+    }
+  }
+
+  const onSearchChange = (e: React.FormEvent<HTMLInputElement>): void => {
+    setQuery(e.currentTarget.value)
+  }
+
+  const onSearchClear = () => {
+    setQuery('')
+  }
+
   return (
     <Disclosure as="header" className="bg-white shadow">
       {({ open }) => (
@@ -37,8 +56,9 @@ export default function Navbar({ tags, tag }) {
                   </Link>
                 </div>
               </div>
-              {/* <div className="relative z-0 flex-1 px-2 flex items-center justify-center sm:absolute sm:inset-0">
-                  <div className="w-full sm:max-w-xs">
+              <div className="relative z-0 flex-1 px-2 flex items-center justify-center sm:absolute sm:inset-0">
+                {tag && tag.name &&  
+                  (<div className="w-full sm:max-w-xs">
                     <label htmlFor="search" className="sr-only">
                       Search
                     </label>
@@ -53,12 +73,16 @@ export default function Navbar({ tags, tag }) {
                         id="search"
                         name="search"
                         className="block w-full bg-white border border-gray-300 rounded-md py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:outline-none focus:text-gray-900 focus:placeholder-gray-400 focus:ring-1 focus:ring-green-600 focus:border-green-600 sm:text-sm font-sans"
-                        placeholder="Under construction..."
+                        placeholder="Search..."
                         type="search"
+                        value={query}
+                        onChange={onSearchChange}
+                        onKeyDown={onKeyDown}
                       />
                     </div>
                   </div>
-                </div> */}
+                )}
+              </div>
               <div className="relative z-10 flex items-center lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -71,7 +95,7 @@ export default function Navbar({ tags, tag }) {
                 </Disclosure.Button>
               </div>
             </div>
-            {tags && tags.length > 0 && (
+            {tags && tags.length > 0 && tag.name && (
               <nav
                 className="hidden py-2 space-x-6 lg:block"
                 aria-label="Global"
@@ -79,7 +103,7 @@ export default function Navbar({ tags, tag }) {
                 {tags.map((item) => (
                   <a
                     key={item.name}
-                    href={'/categories/' + item.slug}
+                    href={'?tag=' + item.slug}
                     className={classNames(
                       item.slug == tag.slug
                         ? 'text-gray-600 font-semibold'
@@ -96,12 +120,12 @@ export default function Navbar({ tags, tag }) {
           </div>
 
           <Disclosure.Panel as="nav" className="lg:hidden" aria-label="Global">
-            {tags && (
+            {tags && tags.length > 0 && (
               <div className="pt-2 pb-3 px-2 space-y-1">
                 {tags.map((item) => (
                   <a
                     key={item.name}
-                    href={'/categories/' + item.slug}
+                    href={'?tag=' + item.slug}
                     className={classNames(
                       item.slug == tag.slug
                         ? 'text-gray-600 font-semibold'
@@ -122,26 +146,4 @@ export default function Navbar({ tags, tag }) {
   )
 }
 
-export function Autocomplete(props) {
-  const containerRef = useRef(null)
-
-  useEffect(() => {
-    if (!containerRef.current) {
-      return undefined
-    }
-    const search = autocomplete({
-      container: containerRef.current,
-      renderer: { createElement, Fragment },
-      render({ children }, root) {
-        render(children, root)
-      },
-      ...props
-    })
-
-    return () => {
-      search.destroy()
-    }
-  }, [props])
-
-  return <div ref={containerRef} />
-}
+export default Header

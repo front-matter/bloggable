@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { Suspense, Fragment } from 'react'
 import Head from 'next/head'
+import useSWR from 'swr'
+import fetch from 'unfetch'
 import { jsonLdScriptProps } from 'react-schemaorg'
-import { getAllTags, getIndexedPosts } from '../lib/posts'
+import { getAllTags } from '../lib/posts'
 import { generateAtomFeed } from '../lib/feed'
 // import { generateEpub, generatePdf, generateJats } from '../lib/pandoc'
 import { refreshIndex } from '../lib/typesense'
@@ -12,17 +14,12 @@ import Hero from '../components/Hero'
 import Tag from '../components/Tag'
 import Newsletter from '../components/Newsletter'
 import { Blog } from 'schema-dts'
+import { useQueryState } from 'next-usequerystate'
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
+  // this needs to be loaded only at startup
   const tags = await getAllTags()
-  const posts = await getIndexedPosts('*')
-
-  if (!posts.posts || !tags) {
-    return {
-      props: { notFound: true }
-    }
-  }
-
+  
   await generateAtomFeed()
   // await generateEpub()
   // await generatePdf()
@@ -31,48 +28,43 @@ export async function getStaticProps() {
   await refreshIndex()
 
   return {
-    props: { posts: posts.posts, tags }
+    props: { tags }
   }
 }
 
-const IndexPage = ({ posts, tags }) => {
-  const tag = {
+const IndexPage = ({ tags }) => {
+  const [tagString] = useQueryState('tag')
+  console.log(tagString)
+
+  const tag = tags.find(({ slug }) => slug === tagString) || {
     name: 'Front Matter Blog',
     description: 'Where Open Science matters',
     feature_image: '/img/hero.jpg',
     featured: true
   }
 
-  const pagination = {
-    page: 1,
-    pages: 1,
-    total: posts.length,
-    prev: null,
-    next: null
-  }
-
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          {...jsonLdScriptProps<Blog>({
-            '@context': 'https://schema.org',
-            '@type': 'Blog',
-            url: 'https://blog.front-matter.io/',
-            name: 'Front Matter',
-            issn: process.env.NEXT_PUBLIC_ISSN,
-            publisher: { '@type': 'Organization', name: 'Front Matter' },
-            inLanguage: 'en',
-            license: 'https://creativecommons.org/licenses/by/4.0/legalcode'
-          })}
-        />
-      </Head>
-      <Header tags={tags} tag={tag} />
-      <Hero tag={tag} />
-      <Tag posts={posts} tag={tag} pagination={pagination} />
-      {process.env.GIT_BRANCH === 'staging' && <Newsletter />}
-      <Footer />
+        <Head>
+          <script
+            type="application/ld+json"
+            {...jsonLdScriptProps<Blog>({
+              '@context': 'https://schema.org',
+              '@type': 'Blog',
+              url: 'https://blog.front-matter.io/',
+              name: 'Front Matter',
+              issn: process.env.NEXT_PUBLIC_ISSN,
+              publisher: { '@type': 'Organization', name: 'Front Matter' },
+              inLanguage: 'en',
+              license: 'https://creativecommons.org/licenses/by/4.0/legalcode'
+            })}
+          />
+        </Head>
+        <Header tags={tags} tag={tag} />
+        <Hero tag={tag} />
+        <Tag tag={tag} />
+        {process.env.GIT_BRANCH === 'staging' && <Newsletter />}
+        <Footer />
     </>
   )
 }

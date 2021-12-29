@@ -346,6 +346,38 @@
     {
       "source": "/rss.xml",
       "destination": "/feed.xml"
+    },
+    {
+      "source": "/categories/feature",
+      "destination": "/?tag=feature"
+    },
+    {
+      "source": "/categories/news",
+      "destination": "/?tag=news"
+    },
+    {
+      "source": "/categories/meeting-report",
+      "destination": "/?tag=meeting-report"
+    },
+    {
+      "source": "/categories/perspective",
+      "destination": "/?tag=perspective"
+    },
+    {
+      "source": "/categories/interview",
+      "destination": "/?tag=interview"
+    },
+    {
+      "source": "/categories/chart",
+      "destination": "/?tag=chart"
+    },
+    {
+      "source": "/categories/science-hack",
+      "destination": "/?tag=science-hack"
+    },
+    {
+      "source": "/categories/book-review",
+      "destination": "/?tag=book-review"
     }
   ]
 }

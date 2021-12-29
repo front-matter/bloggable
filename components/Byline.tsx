@@ -21,11 +21,12 @@ const Byline: React.FunctionComponent<Props> = ({
   readingTime,
   readabilityScore
 }) => {
+  console.log(authors)
   return (
     <div className="flex flex-row pt-2 pb-4">
       <div className="">
         <div className="font-bold font-sans uppercase text-sm">
-          {authors.map((author) => author.name).join(', ')}
+          {authors.map((author) => author !== undefined ? author.name : '').join(', ')}
         </div>
         <div className="font-sans text-sm text-gray-600">
           {published.toLocaleDateString('en-US', {

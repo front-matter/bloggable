@@ -89,23 +89,23 @@ export async function addMember(member) {
 const client = new Client({
   nearestNode: {
     host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_0,
-    port: '443',
+    port: 443,
     protocol: 'https'
   },
   nodes: [
     {
       host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,
-      port: '443',
+      port: 443,
       protocol: 'https'
     },
     {
       host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_2,
-      port: '443',
+      port: 443,
       protocol: 'https'
     },
     {
       host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_3,
-      port: '443',
+      port: 443,
       protocol: 'https'
     }
   ],

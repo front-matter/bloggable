@@ -1,23 +1,27 @@
 import React from 'react'
-import { useState } from 'react'
+import Link from 'next/link'
 import { fromUnixTime } from 'date-fns'
 import useSWR from 'swr'
 import fetch from 'unfetch'
 import Byline from './Byline'
+import { useQueryState } from 'next-usequerystate'
 
 const fetcher = (url) => fetch(url).then((r) => r.json())
 
-export default function Tag({ posts, tag, pagination }) {
-  if (!posts) {
-    return null
-  }
+export default function Tag({ tag }) {
+  const [queryString] = useQueryState('query')
+  const [pageIndex] = useQueryState('page')
 
-  const [pageIndex, setPageIndex] = useState(1)
+  console.log(queryString)
+  console.log(pageIndex)
 
-  // The API URL includes the page index, which is a React state.
-  const filter = tag ? '&filter_by=tags:' + tag.slug : ''
-  const query = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/upstream/documents/search/?q=*${filter}&sort_by=published:desc&per_page=15&page=${pageIndex}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
-  const { data } = useSWR(query, fetcher)
+  // The API URL includes pageIndex, which is a React state.
+  const filter = tag.slug ? '&filter_by=tags:' + tag.slug : ''
+  const query = queryString ? queryString + '&query_by=tags,title,content' : '*'
+  const page = pageIndex ? pageIndex : 1
+  const typesenseQuery = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?q=${query}${filter}&sort_by=published:desc&per_page=15&page=${page}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
+  const { data } = useSWR(typesenseQuery, fetcher)
+  console.log(data)
 
   // ... handle loading and error states
   if (!data) {
@@ -26,9 +30,8 @@ export default function Tag({ posts, tag, pagination }) {
 
   // duplication from lib/posts
   const pages = Math.ceil(data.found / 15)
-
-  posts = data.hits.map((hit) => hit.document)
-  pagination = {
+  const posts = data.hits.map((hit) => hit.document)
+  const pagination = {
     page: data.page,
     pages: pages,
     total: data.found,
@@ -428,18 +431,18 @@ export default function Tag({ posts, tag, pagination }) {
               </div>
               <div className="flex-1 flex justify-between sm:justify-end">
                 {pagination.prev && (
-                  <button onClick={() => setPageIndex(pagination.prev)}>
-                    <a className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-500 hover:border-green-500 hover:bg-gray-50">
+                  <Link href={"/?page=" + pagination.prev} passHref>
+                    <a href="dummy" className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 active:text-green-600 active:border-green-600">
                       Previous
                     </a>
-                  </button>
+                  </Link>
                 )}
                 {pagination.next && (
-                  <button onClick={() => setPageIndex(pagination.next)}>
-                    <a className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-500 hover:border-green-500 hover:bg-gray-50">
+                  <Link href={"/?page=" + pagination.next}  passHref>
+                    <a href="dummy" className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 active:text-green-600 active:border-green-600">
                       Next
                     </a>
-                  </button>
+                  </Link>
                 )}
               </div>
             </nav>

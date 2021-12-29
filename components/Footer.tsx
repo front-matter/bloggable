@@ -144,16 +144,6 @@ export default function Footer() {
                   </a>
                 </Link>
               </li>
-              <li>
-                <Link href="/support" passHref>
-                  <a
-                    href="dummy"
-                    className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                  >
-                    Support Front Matter
-                  </a>
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

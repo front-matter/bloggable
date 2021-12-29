@@ -37,6 +37,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   const post = await getSinglePost(context.params.slug)
+
+  // this needs to be loaded only at startup
   const tags = await getAllTags()
 
   if (!post) {
@@ -143,12 +145,14 @@ const Post = (props) => {
                 <>
                   <Link
                     key={tag.slug}
-                    href={`/categories/${tag.slug}`}
+                    href={'/?tag=' + tag.slug}
                     passHref
                   >
-                    <span className="border-b-0 hover:border-b hover:border-green-600 cursor-pointer">
+                    <a
+                      href="dummy"
+                      className="border-b-0 hover:border-b hover:border-green-600">
                       {tag.name}
-                    </span>
+                    </a>
                   </Link>
                   {index + 1 < props.post.tags.length ? ' · ' : ''}
                 </>
