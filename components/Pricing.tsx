@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
@@ -47,12 +48,14 @@ export default function Pricing() {
                     /mo
                   </span>
                 </p>
-                <a
-                  href="/"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                >
-                  Sign up for Invidual
-                </a>
+                <Link href="/" passHref>
+                  <a
+                    href="dummy"
+                    className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                  >
+                    Sign up for Invidual
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
@@ -90,12 +93,14 @@ export default function Pricing() {
                     /mo
                   </span>
                 </p>
-                <a
-                  href="/"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                >
-                  Sign up for Team
-                </a>
+                <Link href="/" passHref>
+                  <a
+                    href="dummy"
+                    className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                  >
+                    Sign up for Team
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
@@ -140,12 +145,14 @@ export default function Pricing() {
                     /mo
                   </span>
                 </p>
-                <a
-                  href="/"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                >
-                  Sign up for Organization
-                </a>
+                <Link href="/" passHref>
+                  <a
+                    href="dummy"
+                    className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                  >
+                    Sign up for Organization
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
