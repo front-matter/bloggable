@@ -16,10 +16,7 @@ export default function Tag({ tag }) {
   // const [pageIndex] = useQueryState('page')
 
   const [queryString] = useAtom(queryAtom)
-  const [pageIndex] = useAtom(pageAtom)
-
-  console.log(queryString)
-  console.log(pageIndex)
+  const [pageIndex, setPageIndex] = useAtom(pageAtom)
 
   // The API URL includes pageIndex, which is a React state.
   const filter = tag.slug ? '&filter_by=tags:' + tag.slug : ''
@@ -437,18 +434,18 @@ export default function Tag({ tag }) {
               </div>
               <div className="flex-1 flex justify-between sm:justify-end">
                 {pagination.prev && (
-                  <Link href={"/?page=" + pagination.prev} passHref>
-                    <a href="dummy" className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 active:text-green-600 active:border-green-600">
+                  <button onClick={() => setPageIndex(pagination.prev)}>
+                    <a className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 active:text-green-600 active:border-green-600">
                       Previous
                     </a>
-                  </Link>
+                  </button>
                 )}
                 {pagination.next && (
-                  <Link href={"/?page=" + pagination.next}  passHref>
-                    <a href="dummy" className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 active:text-green-600 active:border-green-600">
+                  <button onClick={() => setPageIndex(pagination.next)}>
+                    <a className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 active:text-green-600 active:border-green-600">
                       Next
                     </a>
-                  </Link>
+                  </button>
                 )}
               </div>
             </nav>
