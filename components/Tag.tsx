@@ -6,8 +6,8 @@ import fetch from 'unfetch'
 import Byline from './Byline'
 // import { useQueryState } from 'next-usequerystate'
 import { useAtom} from "jotai"
-import { queryAtom } from '../lib/atoms'
-import { pageAtom } from '../lib/atoms'
+import { queryAtom } from '../lib/atoms'
+import { pageAtom } from '../lib/atoms'
 
 const fetcher = (url) => fetch(url).then((r) => r.json())
 

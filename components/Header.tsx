@@ -7,7 +7,7 @@ import Image from 'next/image'
 import logo from '../public/img/logo.svg'
 // import { useQueryState } from 'next-usequerystate'
 import { useAtom} from "jotai"
-import { queryAtom } from '../lib/atoms'
+import { queryAtom } from '../lib/atoms'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
