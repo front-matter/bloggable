@@ -4,13 +4,19 @@ import { fromUnixTime } from 'date-fns'
 import useSWR from 'swr'
 import fetch from 'unfetch'
 import Byline from './Byline'
-import { useQueryState } from 'next-usequerystate'
+// import { useQueryState } from 'next-usequerystate'
+import { useAtom} from "jotai"
+import { queryAtom } from '../lib/atoms'
+import { pageAtom } from '../lib/atoms'
 
 const fetcher = (url) => fetch(url).then((r) => r.json())
 
 export default function Tag({ tag }) {
-  const [queryString] = useQueryState('query')
-  const [pageIndex] = useQueryState('page')
+  // const [queryString] = useQueryState('query')
+  // const [pageIndex] = useQueryState('page')
+
+  const [queryString] = useAtom(queryAtom)
+  const [pageIndex] = useAtom(pageAtom)
 
   console.log(queryString)
   console.log(pageIndex)
@@ -21,7 +27,7 @@ export default function Tag({ tag }) {
   const page = pageIndex ? pageIndex : 1
   const typesenseQuery = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?q=${query}${filter}&sort_by=published:desc&per_page=15&page=${page}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
   const { data } = useSWR(typesenseQuery, fetcher)
-  console.log(data)
+  console.log(typesenseQuery)
 
   // ... handle loading and error states
   if (!data) {
@@ -82,12 +88,12 @@ export default function Tag({ tag }) {
                     </div>
                     <div className="mt-0 flex items-center">
                       <Byline
-                        authors={post.authors.map((author, idx) => ({
+                        authors={post.authors !== undefined ? post.authors.map((author, idx) => ({
                           name: author,
                           slug: post.author_ids[idx],
                           website: null,
                           profile_image: null
-                        }))}
+                        })) : []}
                         published={fromUnixTime(post.published)}
                         doi={null}
                         readingTime={post.readingTime}
@@ -134,12 +140,12 @@ export default function Tag({ tag }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
+                          authors={post.authors !== undefined ? post.authors.map((author, idx) => ({
                             name: author,
                             slug: post.author_ids[idx],
                             website: null,
                             profile_image: null
-                          }))}
+                          })) : []}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -187,12 +193,12 @@ export default function Tag({ tag }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
+                          authors={post.authors !== undefined ? post.authors.map((author, idx) => ({
                             name: author,
                             slug: post.author_ids[idx],
                             website: null,
                             profile_image: null
-                          }))}
+                          })) : []}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -240,12 +246,12 @@ export default function Tag({ tag }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
+                          authors={post.authors !== undefined ? post.authors.map((author, idx) => ({
                             name: author,
                             slug: post.author_ids[idx],
                             website: null,
                             profile_image: null
-                          }))}
+                          })) : []}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -293,12 +299,12 @@ export default function Tag({ tag }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
+                          authors={post.authors !== undefined ? post.authors.map((author, idx) => ({
                             name: author,
                             slug: post.author_ids[idx],
                             website: null,
                             profile_image: null
-                          }))}
+                          })) : []}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -346,12 +352,12 @@ export default function Tag({ tag }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
+                          authors={post.authors !== undefined ? post.authors.map((author, idx) => ({
                             name: author,
                             slug: post.author_ids[idx],
                             website: null,
                             profile_image: null
-                          }))}
+                          })) : []}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}
@@ -399,12 +405,12 @@ export default function Tag({ tag }) {
                       </div>
                       <div className="mt-0 flex items-center">
                         <Byline
-                          authors={post.authors.map((author, idx) => ({
+                          authors={post.authors !== undefined ? post.authors.map((author, idx) => ({
                             name: author,
                             slug: post.author_ids[idx],
                             website: null,
                             profile_image: null
-                          }))}
+                          })) : []}
                           published={fromUnixTime(post.published)}
                           doi={null}
                           readingTime={post.readingTime}

@@ -30,7 +30,7 @@ const nextConfig = {
     GIT_BRANCH: currentGitBranchName()
   },
   reactStrictMode: true,
-  staticPageGenerationTimeout: 600,
+  staticPageGenerationTimeout: 900,
   images: {
     domains: ['assets.front-matter.io', 'images.unsplash.com']
   }

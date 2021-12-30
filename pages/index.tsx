@@ -12,7 +12,9 @@ import Hero from '../components/Hero'
 import Tag from '../components/Tag'
 import Newsletter from '../components/Newsletter'
 import { Blog } from 'schema-dts'
-import { useQueryState } from 'next-usequerystate'
+// import { useQueryState } from 'next-usequerystate'
+import { useAtom} from "jotai"
+import { tagAtom } from '../lib/atoms'
 
 export async function getStaticProps() {
   // this needs to be loaded only at startup
@@ -31,7 +33,8 @@ export async function getStaticProps() {
 }
 
 const IndexPage = ({ tags }) => {
-  const [tagString] = useQueryState('tag')
+  // const [tagString] = useQueryState('tag')
+  const [tagString] = useAtom(tagAtom)
   console.log(tagString)
 
   const tag = tags.find(({ slug }) => slug === tagString) || {

@@ -5,14 +5,18 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/img/logo.svg'
-import { useQueryState } from 'next-usequerystate'
+// import { useQueryState } from 'next-usequerystate'
+import { useAtom} from "jotai"
+import { queryAtom } from '../lib/atoms'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 const Header = ({ tags, tag }) => {
-  const [query] = useQueryState('query')
+  // const [query] = useQueryState('query')
+
+  const [query, setQuery] = useAtom(queryAtom)
 
   // const onSubmit = (event) => {
   //   const setQuery = event.currentTarget.value
@@ -24,9 +28,9 @@ const Header = ({ tags, tag }) => {
   //   }
   // }
 
-  // const onSearchChange = (e: React.FormEvent<HTMLInputElement>): void => {
-  //   setQuery(e.currentTarget.value)
-  // }
+  const onSearchChange = (e: React.FormEvent<HTMLInputElement>): void => {
+    setQuery(e.currentTarget.value)
+  }
 
   // const onSearchClear = () => {
   //   setQuery('')
@@ -76,7 +80,7 @@ const Header = ({ tags, tag }) => {
                         placeholder="Search..."
                         type="search"
                         value={query}
-                        // onChange={onSearchChange}
+                        onChange={onSearchChange}
                         // onKeyDown={onKeyDown}
                       />
                     </div>
