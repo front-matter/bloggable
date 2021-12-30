@@ -11,7 +11,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-const Header: React.FunctionComponent<Props> = ({ tags, tag }) => {
+const Header = ({ tags, tag }) => {
   const [query] = useQueryState('query')
 
   // const onSubmit = (event) => {
@@ -76,8 +76,8 @@ const Header: React.FunctionComponent<Props> = ({ tags, tag }) => {
                         placeholder="Search..."
                         type="search"
                         value={query}
-                        onChange={onSearchChange}
-                        onKeyDown={onKeyDown}
+                        // onChange={onSearchChange}
+                        // onKeyDown={onKeyDown}
                       />
                     </div>
                   </div>

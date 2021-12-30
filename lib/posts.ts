@@ -159,6 +159,7 @@ export async function getIndexedPostsByTag(
     .documents()
     .search({
       q: '*',
+      query_by: 'tags,title,content',
       filter_by: tag,
       per_page: perPage ? perPage : 15,
       page: page > 0 ? page : 1

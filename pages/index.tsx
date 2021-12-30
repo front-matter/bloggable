@@ -14,7 +14,7 @@ import Newsletter from '../components/Newsletter'
 import { Blog } from 'schema-dts'
 import { useQueryState } from 'next-usequerystate'
 
-export const getStaticProps: GetStaticProps = async () => {
+export async function getStaticProps() {
   // this needs to be loaded only at startup
   const tags = await getAllTags()
   

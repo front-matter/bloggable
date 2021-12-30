@@ -129,37 +129,44 @@ export async function updateSchema() {
       {
         name: 'id',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'title',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'slug',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'description',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'content',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'readingTime',
         type: 'int32',
-        facet: true
+        facet: true,
+        optional: false
       },
       {
         name: 'readabilityScore',
         type: 'int32',
-        facet: true
+        facet: true,
+        optional: false
       },
       {
         name: 'tags',
@@ -182,22 +189,26 @@ export async function updateSchema() {
       {
         name: 'visibility',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'created',
         type: 'int32',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'published',
         type: 'int32',
-        facet: true
+        facet: true,
+        optional: false
       },
       {
         name: 'updated',
         type: 'int32',
-        facet: false
+        facet: false,
+        optional: false
       }
     ],
     default_sorting_field: 'published'
