@@ -22,11 +22,9 @@ const Header = ({ tags, tag }) => {
   }
 
   const onKeyDown = (event) => {
-    event.preventDefault()
     if (event.key === 'Enter') {
       onSubmit(event)
     }
-    event.target.reset()
   }
 
   // const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
