@@ -13,14 +13,14 @@ function classNames(...classes) {
 
 const Header = ({ tags, tag }) => {
   const [query, setQuery] = useQueryState('query')
-  const [pageIndex, setPageIndex] = useQueryState('page')
+  // const [pageIndex, setPageIndex] = useQueryState('page')
 
   const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
     event.preventDefault();
     setQuery(event.currentTarget.value)
-    if (parseInt(pageIndex) > 1) { 
-      setPageIndex('1')
-    }
+    // if (parseInt(pageIndex) > 1) { 
+    //   setPageIndex('1')
+    // }
   }
 
   // const onSearchClear = () => {
