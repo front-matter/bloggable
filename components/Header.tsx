@@ -29,6 +29,12 @@ const Header = ({ tags, tag }) => {
     event.target.reset()
   }
 
+  const onSearchChange = (event) => {
+    event.preventDefault()
+    // setQuery(event.currentTarget.value)
+    event.target.reset()
+  }
+
   // const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
   //   event.preventDefault();
   //   setQuery(event.currentTarget.value)
@@ -85,7 +91,7 @@ const Header = ({ tags, tag }) => {
                         placeholder="Search..."
                         type="search"
                         value={query}
-                        // onChange={onSearchChange}
+                        onChange={onSearchChange}
                         onSubmit={onSubmit}
                         onKeyDown={onKeyDown}
                       />
