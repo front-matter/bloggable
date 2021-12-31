@@ -14,8 +14,8 @@ function classNames(...classes) {
 const Header = ({ tags, tag }) => {
   const [query, setQuery] = useQueryState('query')
 
-  const onSubmit = (event) => {
-    setQuery(event.currentTarget.value)
+  const onSubmit = (queryString) => {
+    setQuery(queryString)
   }
 
   const onKeyDown = (event) => {
@@ -25,7 +25,7 @@ const Header = ({ tags, tag }) => {
   }
 
   const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
-    setQuery(event.currentTarget.value)
+    // setQuery(event.currentTarget.value)
   }
 
   // const onSearchClear = () => {

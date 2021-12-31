@@ -32,7 +32,6 @@ export async function getStaticProps() {
 
 const IndexPage = ({ tags }) => {
   const [tagString] = useQueryState('tag')
-  console.log(tagString)
 
   const tag = tags.find(({ slug }) => slug === tagString) || {
     name: 'Front Matter Blog',
@@ -59,7 +58,6 @@ const IndexPage = ({ tags }) => {
           />
         </Head>
         <Header tags={tags} tag={tag} />
-        <Hero tag={tag} />
         <Tag tag={tag} />
         {process.env.GIT_BRANCH === 'staging' && <Newsletter />}
         <Footer />

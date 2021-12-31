@@ -1,16 +1,16 @@
 import React from 'react'
+import Image from "next/image";
 
 export default function Hero({ tag }) {
   return (
     <div className="relative">
       <div className="shadow-xl sm:rounded-2xl sm:overflow-hidden">
         {tag && tag.feature_image && (
-          <div
-            className="absolute bg-cover inset-0"
-            style={{
-              backgroundImage: `url(${tag.feature_image})`
-            }}
-          ></div>
+          <Image
+            className="absolute object-cover bg-cover inset-0"
+            src={tag.feature_image}
+            layout='fill'
+          />
         )}
 
         <div className="relative px-4 mt-48 pt-32 pb-8 sm:px-6 sm:py-24 lg:px-8 xl:pt-60 xl:pb-16 justify-center">

@@ -18,8 +18,8 @@ export default function Tag({ tag }) {
   const page = pageIndex ? '&page=' + pageIndex : ''
   const typesenseQuery = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?${query}${filter}&sort_by=published:desc&per_page=15${page}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
   const { data } = useSWR(typesenseQuery, fetcher)
-  console.log(typesenseQuery)
 
+  console.log(query)
   // ... handle loading and error states
   if (!data) {
     return null
@@ -38,11 +38,11 @@ export default function Tag({ tag }) {
 
   return (
     <>
-      <div className="relative bg-gray-50 pt-8 pb-8 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8">
+      <div className="relative bg-gray-50 py-4 px-4 sm:px-6 lg:px-8">
+        <div classname="px-12">
+          <h1>{pagination.total + ' Posts'}</h1>
+        </div>
         <div className="container mx-auto flex flex-auto items-center justify-between">
-          <div className="absolute inset-0">
-            <div className="bg-white h-1/3 sm:h-2/3"></div>
-          </div>
           <div className="relative max-w-7xl mx-auto">
             <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
               {posts.slice(0, 1).map((post) => (
