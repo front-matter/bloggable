@@ -5,18 +5,14 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/img/logo.svg'
-// import { useQueryState } from 'next-usequerystate'
-import { useAtom} from "jotai"
-import { queryAtom } from '../lib/atoms'
+import { useQueryState } from 'next-usequerystate'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 const Header = ({ tags, tag }) => {
-  // const [query] = useQueryState('query')
-
-  const [query, setQuery] = useAtom(queryAtom)
+  const [query, setQuery] = useQueryState('query')
 
   // const onSubmit = (event) => {
   //   const setQuery = event.currentTarget.value

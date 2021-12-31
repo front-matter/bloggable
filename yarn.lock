@@ -9620,11 +9620,6 @@ jest@26.6.0:
     import-local "^3.0.2"
     jest-cli "^26.6.0"
 
-jotai@^1.4.9:
-  version "1.4.9"
-  resolved "https://registry.yarnpkg.com/jotai/-/jotai-1.4.9.tgz#e16dec961260995879d412c7809710b38d49b3e1"
-  integrity sha512-NHh3UIIelfUBUjcJi+oXHoL9rISkj8LZu3eeXR5KL1VBYLOuPVK0TTTDfbgdwm5B83zpxNAhTlhb/aKlJBtP0g==
-
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -11506,10 +11501,10 @@ pandoc-filter@^2.0.2:
   dependencies:
     get-stdin "~7.0.0"
 
-pandoc-url2cite@^0.6.7:
-  version "0.6.7"
-  resolved "https://registry.yarnpkg.com/pandoc-url2cite/-/pandoc-url2cite-0.6.7.tgz#d3ae7881160dc1f58469a8b2b334cf2d67efb036"
-  integrity sha512-2EJ1DsdlTer4WfQ2ZlId47NcdkHIF5aPSqL/hWnMCwlRG+kZ6kx8R/MzJDtM63gcVBxW7KjOYd37rmmZ2lG3lQ==
+pandoc-url2cite@^0.6.16:
+  version "0.6.16"
+  resolved "https://registry.yarnpkg.com/pandoc-url2cite/-/pandoc-url2cite-0.6.16.tgz#87443a03d5afc368cb7f7f067a02cd667892c09b"
+  integrity sha512-ciO6v++ma2ZXmRwEt25UpjZ0GZcqRTzw+qpsyLPkp88MhEHvOOOM/OPy1mXo4pyIBifhh9env61c8/IVTd96aQ==
   dependencies:
     node-fetch "^2.6.1"
     pandoc-filter "^2.0.2"

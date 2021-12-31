@@ -31,7 +31,6 @@
     "cypress": "^8.4.1",
     "date-fns": "^2.22.1",
     "feed": "^4.2.2",
-    "jotai": "^1.4.9",
     "lodash": "^4.17.21",
     "next": "12.0.7",
     "next-compose-plugins": "^2.2.1",

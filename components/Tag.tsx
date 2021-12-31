@@ -4,19 +4,13 @@ import { fromUnixTime } from 'date-fns'
 import useSWR from 'swr'
 import fetch from 'unfetch'
 import Byline from './Byline'
-// import { useQueryState } from 'next-usequerystate'
-import { useAtom} from "jotai"
-import { queryAtom } from '../lib/atoms'
-import { pageAtom } from '../lib/atoms'
+import { useQueryState } from 'next-usequerystate'
 
 const fetcher = (url) => fetch(url).then((r) => r.json())
 
 export default function Tag({ tag }) {
-  // const [queryString] = useQueryState('query')
-  // const [pageIndex] = useQueryState('page')
-
-  const [queryString] = useAtom(queryAtom)
-  const [pageIndex, setPageIndex] = useAtom(pageAtom)
+  const [queryString] = useQueryState('query')
+  const [pageIndex, setPageIndex] = useQueryState('page')
 
   // The API URL includes pageIndex, which is a React state.
   const filter = tag.slug ? '&filter_by=tags:' + tag.slug : ''
