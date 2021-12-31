@@ -19,7 +19,6 @@ export default function Tag({ tag }) {
   const typesenseQuery = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?${query}${filter}&sort_by=published:desc&per_page=15${page}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
   const { data } = useSWR(typesenseQuery, fetcher)
 
-  console.log(query)
   // ... handle loading and error states
   if (!data) {
     return null
@@ -412,7 +411,7 @@ export default function Tag({ tag }) {
             )}
 
             <nav
-              className="mx-0 px-6 py-4 flex items-center justify-between"
+              className="mx-0 px-6 py-4 mb-20 flex items-center justify-between"
               aria-label="Pagination"
             >
               <div className="hidden sm:block">

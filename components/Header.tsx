@@ -13,19 +13,14 @@ function classNames(...classes) {
 
 const Header = ({ tags, tag }) => {
   const [query, setQuery] = useQueryState('query')
-
-  const onSubmit = (queryString) => {
-    setQuery(queryString)
-  }
-
-  const onKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      onSubmit(event.currentTarget.value)
-    }
-  }
+  const [pageIndex, setPageIndex] = useQueryState('page')
 
   const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
+    event.preventDefault();
     setQuery(event.currentTarget.value)
+    if (parseInt(pageIndex) > 1) { 
+      setPageIndex('1')
+    }
   }
 
   // const onSearchClear = () => {
@@ -77,8 +72,8 @@ const Header = ({ tags, tag }) => {
                         type="search"
                         value={query}
                         onChange={onSearchChange}
-                        onSubmit={onSubmit}
-                        onKeyDown={onKeyDown}
+                        // onSubmit={onSubmit}
+                        // onKeyDown={onKeyDown}
                       />
                     </div>
                   </div>
