@@ -14,9 +14,9 @@ export default function Tag({ tag }) {
 
   // The API URL includes pageIndex, which is a React state.
   const filter = tag.slug ? '&filter_by=tags:' + tag.slug : ''
-  const query = queryString ? queryString + '&query_by=tags,title,content' : '*'
-  const page = pageIndex ? pageIndex : 1
-  const typesenseQuery = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?q=${query}${filter}&sort_by=published:desc&per_page=15&page=${page}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
+  const query = queryString ? 'q=' + queryString + '&query_by=tags,title,content' : 'q=*'
+  const page = pageIndex ? '&page=' + pageIndex : ''
+  const typesenseQuery = `https://${process.env.NEXT_PUBLIC_TYPESENSE_HOST_0}/collections/${process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION}/documents/search/?${query}${filter}&sort_by=published:desc&per_page=15${page}&x-typesense-api-key=${process.env.NEXT_PUBLIC_TYPESENSE_API_KEY}`
   const { data } = useSWR(typesenseQuery, fetcher)
   console.log(typesenseQuery)
 
