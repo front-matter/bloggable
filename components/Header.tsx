@@ -15,13 +15,25 @@ const Header = ({ tags, tag }) => {
   const [query, setQuery] = useQueryState('query')
   // const [pageIndex, setPageIndex] = useQueryState('page')
 
-  const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
-    event.preventDefault();
-    setQuery(event.currentTarget.value)
-    // if (parseInt(pageIndex) > 1) { 
-    //   setPageIndex('1')
-    // }
+  const onSubmit = (event) => {
+    // event.preventDefault()
+    setQuery(event)
+    // event.target.reset()
   }
+
+  const onKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      onSubmit(event.currentTarget.value)
+    }
+  }
+
+  // const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
+  //   event.preventDefault();
+  //   setQuery(event.currentTarget.value)
+  //   // if (parseInt(pageIndex) > 1) { 
+  //   //   setPageIndex('1')
+  //   // }
+  // }
 
   // const onSearchClear = () => {
   //   setQuery('')
@@ -71,9 +83,9 @@ const Header = ({ tags, tag }) => {
                         placeholder="Search..."
                         type="search"
                         value={query}
-                        onChange={onSearchChange}
-                        // onSubmit={onSubmit}
-                        // onKeyDown={onKeyDown}
+                        // onChange={onSearchChange}
+                        onSubmit={onSubmit}
+                        onKeyDown={onKeyDown}
                       />
                     </div>
                   </div>
