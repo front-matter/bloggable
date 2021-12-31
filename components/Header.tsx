@@ -30,7 +30,8 @@ const Header = ({ tags, tag }) => {
   }
 
   const onSearchChange = (event) => {
-    event.preventDefault()
+    // event.preventDefault()
+    console.log(event)
     // setQuery(event.currentTarget.value)
   }
 
