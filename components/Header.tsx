@@ -91,7 +91,7 @@ const Header = ({ tags, tag }) => {
                 </Disclosure.Button>
               </div>
             </div>
-            {tags && tags.length > 0 && tag.name && (
+            {tags && tags.length > 0 && (
               <nav
                 className="hidden py-2 space-x-6 lg:block"
                 aria-label="Global"
