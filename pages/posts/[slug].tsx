@@ -86,7 +86,7 @@ const Post = (props) => {
         />
         <meta name="citation_journal_title" content="Front Matter" />
         <meta name="citation_language" content="en" />
-        {props.post.tags && (
+        {props.post.tags.length > 0 && (
           <meta
             name="citation_keywords"
             content={props.post.tags.map((tag) => tag.slug).join(', ')}
@@ -125,7 +125,7 @@ const Post = (props) => {
               issn: process.env.NEXT_PUBLIC_ISSN
             },
             publisher: { '@type': 'Organization', name: 'Front Matter' },
-            keywords: props.post.tags
+            keywords: props.post.tags.length > 0
               ? props.post.tags.map((tag) => tag.slug).join(', ')
               : null,
             inLanguage: 'en',
