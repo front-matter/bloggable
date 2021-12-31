@@ -24,9 +24,9 @@ const Header = ({ tags, tag }) => {
     }
   }
 
-  // const onSearchChange = (e: React.FormEvent<HTMLInputElement>): void => {
-  //   setQuery(e.currentTarget.value)
-  // }
+  const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
+    setQuery(event.currentTarget.value)
+  }
 
   // const onSearchClear = () => {
   //   setQuery('')
@@ -76,7 +76,7 @@ const Header = ({ tags, tag }) => {
                         placeholder="Search..."
                         type="search"
                         value={query}
-                        //onChange={onSearchChange}
+                        onChange={onSearchChange}
                         onSubmit={onSubmit}
                         onKeyDown={onKeyDown}
                       />
