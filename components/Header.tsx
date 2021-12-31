@@ -32,7 +32,6 @@ const Header = ({ tags, tag }) => {
   const onSearchChange = (event) => {
     event.preventDefault()
     // setQuery(event.currentTarget.value)
-    event.target.reset()
   }
 
   // const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
