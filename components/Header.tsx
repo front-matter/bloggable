@@ -18,7 +18,6 @@ const Header = ({ tags, tag }) => {
   const onSubmit = (event) => {
     event.preventDefault()
     setQuery(event.currentTarget.value)
-    event.target.reset()
   }
 
   const onKeyDown = (event) => {
@@ -27,7 +26,7 @@ const Header = ({ tags, tag }) => {
     }
   }
 
-  const onSearchChange = (event) => {
+  const onChange = (event) => {
     // event.preventDefault()
     console.log(event)
     // setQuery(event.currentTarget.value)
@@ -89,7 +88,7 @@ const Header = ({ tags, tag }) => {
                         placeholder="Search..."
                         type="search"
                         value={query}
-                        onChange={onSearchChange}
+                        onChange={onChange}
                         onSubmit={onSubmit}
                         onKeyDown={onKeyDown}
                       />
