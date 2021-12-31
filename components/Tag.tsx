@@ -39,7 +39,7 @@ export default function Tag({ tag }) {
   return (
     <>
       <div className="relative bg-gray-50 py-4 px-4 sm:px-6 lg:px-8">
-        <div classname="px-12">
+        <div className="px-12">
           <h1>{pagination.total + ' Posts'}</h1>
         </div>
         <div className="container mx-auto flex flex-auto items-center justify-between">
