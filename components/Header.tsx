@@ -25,7 +25,7 @@ const Header = ({ tags, tag }) => {
   }
 
   const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
-    // setQuery(event.currentTarget.value)
+    setQuery(event.currentTarget.value)
   }
 
   // const onSearchClear = () => {
