@@ -47,10 +47,10 @@ export default function Tag({ tag }) {
             <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
               {posts.slice(0, 1).map((post) => (
                 <div
-                  className="grid gap-5 lg:grid-cols-2 rounded-lg shadow-lg overflow-hidden"
+                  className="grid gap-5 lg:grid-cols-2 bg-white rounded-lg shadow-lg overflow-hidden"
                   key={post.id}
                 >
-                  <div className="flex-shrink-0 bg-white py-6 px-6">
+                  <div className="flex-shrink-0 py-6 px-6">
                     <img
                       className="h-96 w-full object-contain object-left"
                       src={
@@ -63,7 +63,7 @@ export default function Tag({ tag }) {
                       alt=""
                     />
                   </div>
-                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1 p-6 flex flex-col justify-between">
                     <div className="flex-1">
                       <a
                         href={'/posts/' + post.slug}
@@ -149,13 +149,13 @@ export default function Tag({ tag }) {
               </div>
             )}
             {posts.length > 4 && (
-              <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
+              <div className="mt-4 max-w-lg mx-auto grid gap-5 bg-white lg:grid-cols-2 lg:max-w-none">
                 {posts.slice(4, 6).map((post) => (
                   <div
                     className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
                   >
-                    <div className="flex-shrink-0 bg-white pt-6 px-6">
+                    <div className="flex-shrink-0 pt-6 px-6">
                       <img
                         className="h-48 w-full object-contain"
                         src={
@@ -168,7 +168,7 @@ export default function Tag({ tag }) {
                         alt=""
                       />
                     </div>
-                    <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div className="flex-1 p-6 flex flex-col justify-between">
                       <div className="flex-1">
                         <a
                           href={'/posts/' + post.slug}
