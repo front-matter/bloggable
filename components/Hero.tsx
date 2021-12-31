@@ -9,6 +9,7 @@ export default function Hero({ tag }) {
           <Image
             className="absolute object-cover bg-cover inset-0"
             src={tag.feature_image}
+            alt=''
             layout='fill'
           />
         )}

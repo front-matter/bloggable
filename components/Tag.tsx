@@ -39,12 +39,12 @@ export default function Tag({ tag }) {
   return (
     <>
       <div className="relative bg-gray-50 py-4 px-4 sm:px-6 lg:px-8">
-        <div className="px-12">
-          <h1>{pagination.total + ' Posts'}</h1>
+        <div className="px-10">
+          <h1>{pagination.total + ' Blog Posts'}</h1>
         </div>
         <div className="container mx-auto flex flex-auto items-center justify-between">
           <div className="relative max-w-7xl mx-auto">
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
+            <div className="mt-4 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
               {posts.slice(0, 1).map((post) => (
                 <div
                   className="grid gap-5 lg:grid-cols-2 bg-white rounded-lg shadow-lg overflow-hidden"
