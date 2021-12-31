@@ -16,15 +16,17 @@ const Header = ({ tags, tag }) => {
   // const [pageIndex, setPageIndex] = useQueryState('page')
 
   const onSubmit = (event) => {
-    // event.preventDefault()
-    setQuery(event)
-    // event.target.reset()
+    event.preventDefault()
+    setQuery(event.currentTarget.value)
+    event.target.reset()
   }
 
   const onKeyDown = (event) => {
+    event.preventDefault()
     if (event.key === 'Enter') {
-      onSubmit(event.currentTarget.value)
+      onSubmit(event)
     }
+    event.target.reset()
   }
 
   // const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
