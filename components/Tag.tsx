@@ -428,14 +428,14 @@ export default function Tag({ tag }) {
               </div>
               <div className="flex-1 flex justify-between sm:justify-end space-x-1">
                 {pagination.prev && (
-                  <button onClick={() => setPageIndex(pagination.prev)}>
+                  <button onClick={() => setPageIndex(pagination.prev.toString())}>
                     <a className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 active:text-green-600 active:border-green-600">
                       Previous
                     </a>
                   </button>
                 )}
                 {pagination.next && (
-                  <button onClick={() => setPageIndex(pagination.next)}>
+                  <button onClick={() => setPageIndex(pagination.next.toString())}>
                     <a className="relative inline-flex items-center h-8 px-4 py-1 border border-gray-300 text-sm font-medium rounded-md text-gray-700 hover:text-green-600 hover:border-green-600 active:text-green-600 active:border-green-600">
                       Next
                     </a>
