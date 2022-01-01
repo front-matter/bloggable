@@ -10,23 +10,23 @@ export async function refreshIndex() {
   const client = new Client({
     nearestNode: {
       host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_0,
-      port: '443',
+      port: 443,
       protocol: 'https'
     },
     nodes: [
       {
         host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,
-        port: '443',
+        port: 443,
         protocol: 'https'
       },
       {
         host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_2,
-        port: '443',
+        port: 443,
         protocol: 'https'
       },
       {
         host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_3,
-        port: '443',
+        port: 443,
         protocol: 'https'
       }
     ],
@@ -126,37 +126,44 @@ export async function updateSchema() {
       {
         name: 'id',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'title',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'slug',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'description',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'content',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'readingTime',
         type: 'int32',
-        facet: true
+        facet: true,
+        optional: false
       },
       {
         name: 'readabilityScore',
         type: 'int32',
-        facet: true
+        facet: true,
+        optional: false
       },
       {
         name: 'tags',
@@ -179,22 +186,26 @@ export async function updateSchema() {
       {
         name: 'visibility',
         type: 'string',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'created',
         type: 'int32',
-        facet: false
+        facet: false,
+        optional: false
       },
       {
         name: 'published',
         type: 'int32',
-        facet: true
+        facet: true,
+        optional: false
       },
       {
         name: 'updated',
         type: 'int32',
-        facet: false
+        facet: false,
+        optional: false
       }
     ],
     default_sorting_field: 'published'
@@ -203,23 +214,23 @@ export async function updateSchema() {
   const client = new Client({
     nearestNode: {
       host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_0,
-      port: '443',
+      port: 443,
       protocol: 'https'
     },
     nodes: [
       {
         host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_1,
-        port: '443',
+        port: 443,
         protocol: 'https'
       },
       {
         host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_2,
-        port: '443',
+        port: 443,
         protocol: 'https'
       },
       {
         host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_3,
-        port: '443',
+        port: 443,
         protocol: 'https'
       }
     ],

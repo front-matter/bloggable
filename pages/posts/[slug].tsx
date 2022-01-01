@@ -37,6 +37,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export async function getStaticProps(context) {
   const post = await getSinglePost(context.params.slug)
+
+  // this needs to be loaded only at startup
   const tags = await getAllTags()
 
   if (!post) {
@@ -89,7 +91,7 @@ const Post = (props) => {
         />
         <meta name="citation_journal_title" content="Front Matter" />
         <meta name="citation_language" content="en" />
-        {props.post.tags && (
+        {props.post.tags.length > 0 && (
           <meta
             name="citation_keywords"
             content={props.post.tags.map((tag) => tag.slug).join(', ')}
@@ -131,7 +133,7 @@ const Post = (props) => {
               issn: process.env.NEXT_PUBLIC_ISSN
             },
             publisher: { '@type': 'Organization', name: 'Front Matter' },
-            keywords: props.post.tags
+            keywords: props.post.tags.length > 0
               ? props.post.tags.map((tag) => tag.slug).join(', ')
               : null,
             inLanguage: 'en',
@@ -151,12 +153,14 @@ const Post = (props) => {
                 <>
                   <Link
                     key={tag.slug}
-                    href={`/categories/${tag.slug}`}
+                    href={'/?tag=' + tag.slug}
                     passHref
                   >
-                    <span className="border-b-0 hover:border-b hover:border-green-600 cursor-pointer">
+                    <a
+                      href="dummy"
+                      className="border-b-0 hover:border-b hover:border-green-600">
                       {tag.name}
-                    </span>
+                    </a>
                   </Link>
                   {index + 1 < props.post.tags.length ? ' · ' : ''}
                 </>

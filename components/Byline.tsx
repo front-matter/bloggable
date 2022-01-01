@@ -27,12 +27,7 @@ const Byline: React.FunctionComponent<Props> = ({
       <div className="flex flex-row pt-2 pb-4">
         <div className="">
           <div className="font-bold font-sans uppercase text-sm">
-            {authors.map((author, idx) => (
-              <>
-                {author && author.name}
-                {idx + 1 < authors.length ? ", " : ""}
-              </>
-            ))}
+            {authors.map((author) => author !== undefined ? author.name : '').join(', ')}
           </div>
           <div className="font-sans text-sm text-gray-600">
             {published.toLocaleDateString('en-US', {
@@ -40,23 +35,13 @@ const Byline: React.FunctionComponent<Props> = ({
               month: 'long',
               day: 'numeric'
             })}{' '}
-            &bull; {readingTime} min read &bull;{' '}
-            <a
-              className="border-b-0 hover:border-b hover:border-green-600"
-              href="https://blog.front-matter.io/posts/on-readability"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              readability score {readabilityScore.toFixed(1)}
-            </a>
+            &bull; {readingTime} min read &bull; readability score{' '}
+            {readabilityScore.toFixed(1)}
             {doi && (
               <>
                 {' '}
                 &bull; <br />
-                <a
-                  className="border-b-0 hover:border-b hover:border-green-600"
-                  href={doi}
-                >
+                <a className="border-b-0" href={doi}>
                   {doi}
                 </a>
               </>
