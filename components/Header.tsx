@@ -12,7 +12,7 @@ function classNames(...classes) {
 }
 
 const Header = ({ tags, tag }) => {
-  let searchInput = ''
+  // let searchInput = ''
   const [query, setQuery] = useQueryState('query')
 
   const onSubmit = (event) => {
@@ -26,10 +26,10 @@ const Header = ({ tags, tag }) => {
     }
   }
 
-  const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
-    console.log(event.currentTarget.value)
-    searchInput = event.currentTarget.value
-  }
+  // const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
+  //   console.log(event.currentTarget.value)
+  //   searchInput = event.currentTarget.value
+  // }
 
   // const onSearchClear = () => {
   //   setQuery('')
@@ -78,8 +78,9 @@ const Header = ({ tags, tag }) => {
                         className="block w-full bg-white border border-gray-300 rounded-md py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:outline-none focus:text-gray-900 focus:placeholder-gray-400 focus:ring-1 focus:ring-green-600 focus:border-green-600 sm:text-sm font-sans"
                         placeholder="Search..."
                         type="search"
-                        value={searchInput}
-                        onChange={onSearchChange}
+                        defaultValue=''
+                        // value={searchInput}
+                        // onChange={onSearchChange}
                         onSubmit={onSubmit}
                         onKeyDown={onKeyDown}
                       />
