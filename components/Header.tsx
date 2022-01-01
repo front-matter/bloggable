@@ -16,13 +16,13 @@ const Header = ({ tags, tag }) => {
   const [query, setQuery] = useQueryState('query')
 
   const onSubmit = (event) => {
-    setQuery(event.currentTarget.value)
-    console.log(query)
+    console.log(event.target.value)
+    setQuery(event.target.value)
   }
 
   const onKeyDown = (event) => {
     if (event.key === 'Enter') {
-      onSubmit(event.currentTarget.value)
+      onSubmit(event.target.value)
     }
   }
 
