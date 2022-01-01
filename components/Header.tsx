@@ -33,7 +33,7 @@ const Header = ({ tags, tag }) => {
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
             <div className="relative h-16 flex justify-between">
-              <div className="relative z-10 px-2 flex lg:px-0">
+              <div className="relative px-2 flex lg:px-0">
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/" passHref>
                     <a href="dummy" className="text-green-600 border-b-0 flex">
@@ -44,16 +44,16 @@ const Header = ({ tags, tag }) => {
                         height={32}
                         width={32}
                       />
-                      <span className="text-lg font-semibold font-sans pl-1 pt-1">
+                      <span className="text-lg font-semibold font-sans pl-1 pt-1 hidden md:inline">
                         Front Matter Blog
                       </span>
                     </a>
                   </Link>
                 </div>
               </div>
-              <div className="relative z-0 flex-1 px-2 flex items-center justify-center sm:absolute sm:inset-0">
+              <div className="px-2 flex items-center xl:justify-center sm:inset-0">
                 {tag && tag.name &&  
-                  (<div className="w-full sm:max-w-xs">
+                  (<div className="sm:max-w-xs md:w-48 lg:w-72">
                     <label htmlFor="search" className="sr-only">
                       Search
                     </label>
@@ -71,8 +71,6 @@ const Header = ({ tags, tag }) => {
                         placeholder="Search..."
                         type="search"
                         defaultValue=''
-                        // value={searchInput}
-                        // onChange={onSearchChange}
                         onSubmit={onSubmit}
                         onKeyDown={onKeyDown}
                         ref={inputRef}
@@ -81,7 +79,7 @@ const Header = ({ tags, tag }) => {
                   </div>
                 )}
               </div>
-              <div className="relative z-10 flex items-center lg:hidden">
+              <div className="relative flex items-center lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Open menu</span>
