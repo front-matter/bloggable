@@ -12,7 +12,6 @@ function classNames(...classes) {
 }
 
 const Header = ({ tags, tag }) => {
-  // let searchInput = ''
   const [query, setQuery] = useQueryState('query')
 
   const inputRef = useRef<HTMLInputElement>(null)
@@ -27,15 +26,6 @@ const Header = ({ tags, tag }) => {
       onSubmit()
     }
   }
-
-  // const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
-  //   console.log(event.currentTarget.value)
-  //   searchInput = event.currentTarget.value
-  // }
-
-  // const onSearchClear = () => {
-  //   setQuery('')
-  // }
 
   return (
     <Disclosure as="header" className="bg-white shadow">
