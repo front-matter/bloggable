@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { SearchIcon } from '@heroicons/react/solid'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
@@ -15,14 +15,16 @@ const Header = ({ tags, tag }) => {
   // let searchInput = ''
   const [query, setQuery] = useQueryState('query')
 
-  const onSubmit = (event) => {
-    console.log(event.target.value)
-    setQuery(event.target.value)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  const onSubmit = () => {
+    setQuery(inputRef.current?.value)
+    console.log(query)
   }
 
   const onKeyDown = (event) => {
     if (event.key === 'Enter') {
-      onSubmit(event.target.value)
+      onSubmit()
     }
   }
 
@@ -83,6 +85,7 @@ const Header = ({ tags, tag }) => {
                         // onChange={onSearchChange}
                         onSubmit={onSubmit}
                         onKeyDown={onKeyDown}
+                        ref={inputRef}
                       />
                     </div>
                   </div>
