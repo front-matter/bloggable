@@ -152,7 +152,7 @@ export async function getIndexedPostsByTag(
       query_by: 'tags,title,content',
       filter_by: tag,
       per_page: perPage ? perPage : 3,
-      page: page > 0 ? page : 1
+      page: page > 0 ? page : 0
     })
     .then((posts) => {
       const pages = Math.ceil(posts.found / (perPage ? perPage : 15))
