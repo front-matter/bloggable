@@ -12,33 +12,23 @@ function classNames(...classes) {
 }
 
 const Header = ({ tags, tag }) => {
+  let searchInput = ''
   const [query, setQuery] = useQueryState('query')
-  // const [pageIndex, setPageIndex] = useQueryState('page')
 
   const onSubmit = (event) => {
-    event.preventDefault()
     setQuery(event.currentTarget.value)
+    console.log(query)
   }
 
   const onKeyDown = (event) => {
     if (event.key === 'Enter') {
-      onSubmit(event)
+      onSubmit(event.currentTarget.value)
     }
   }
 
-  const onChange = (event) => {
-    // event.preventDefault()
-    console.log(event)
-    // setQuery(event.currentTarget.value)
+  const onSearchChange = (e: React.FormEvent<HTMLInputElement>): void => {
+    searchInput = e.currentTarget.value
   }
-
-  // const onSearchChange = (event: React.FormEvent<HTMLInputElement>): void => {
-  //   event.preventDefault();
-  //   setQuery(event.currentTarget.value)
-  //   // if (parseInt(pageIndex) > 1) { 
-  //   //   setPageIndex('1')
-  //   // }
-  // }
 
   // const onSearchClear = () => {
   //   setQuery('')
@@ -87,8 +77,8 @@ const Header = ({ tags, tag }) => {
                         className="block w-full bg-white border border-gray-300 rounded-md py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:outline-none focus:text-gray-900 focus:placeholder-gray-400 focus:ring-1 focus:ring-green-600 focus:border-green-600 sm:text-sm font-sans"
                         placeholder="Search..."
                         type="search"
-                        value={query}
-                        onChange={onChange}
+                        value={searchInput}
+                        onChange={onSearchChange}
                         onSubmit={onSubmit}
                         onKeyDown={onKeyDown}
                       />
@@ -108,7 +98,7 @@ const Header = ({ tags, tag }) => {
                 </Disclosure.Button>
               </div>
             </div>
-            {tags && tags.length > 0 && (
+            {tags && tags.length > 0 && tag.name && (
               <nav
                 className="hidden py-2 space-x-6 lg:block"
                 aria-label="Global"
