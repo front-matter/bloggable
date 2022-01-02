@@ -58,7 +58,9 @@ const IndexPage = ({ tags }) => {
           />
         </Head>
         <Header tags={tags} tag={tag} />
-        <Tag tag={tag} />
+        <div className="min-h-screen">
+          <Tag tag={tag} />
+        </div>
         {process.env.GIT_BRANCH === 'staging' && <Newsletter />}
         <Footer />
     </>

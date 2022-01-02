@@ -37,7 +37,7 @@ export default function Tag({ tag }) {
 
   return (
     <>
-      <div className="relative bg-gray-50 py-4 px-4 sm:px-6 lg:px-8 min-h-screen">
+      <div className="relative bg-gray-50 py-4 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto flex flex-auto items-center justify-between">
           <div className="relative max-w-7xl mx-auto">
             <div className="mt-6 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
