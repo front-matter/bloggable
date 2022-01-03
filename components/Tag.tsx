@@ -37,7 +37,7 @@ export default function Tag({ tag }) {
 
   return (
     <>
-      <div className="relative bg-gray-50 py-4 px-4 sm:px-6 lg:px-8">
+      <div className="relative bg-gray-50 py-4 px-4 lg:px-8">
         <div className="container mx-auto flex flex-auto items-center justify-between">
           <div className="relative max-w-7xl mx-auto">
             <div className="mt-6 max-w-lg mx-auto grid gap-5 grid-cols-1 lg:max-w-none">
@@ -48,7 +48,7 @@ export default function Tag({ tag }) {
                 >
                   <div className="flex-shrink-0 py-6 px-6">
                     <img
-                      className="h-96 w-full object-contain object-left"
+                      className="h-48 md:h-96 w-full object-contain object-left"
                       src={
                         post.featureImage
                           ? post.featureImage
@@ -206,7 +206,7 @@ export default function Tag({ tag }) {
                   >
                     <div className="flex-shrink-0 py-6 px-6">
                       <img
-                        className="h-96 w-full object-contain object-left"
+                        className="h-48 md:h-96 w-full object-contain object-left"
                         src={
                           post.featureImage
                             ? post.featureImage
