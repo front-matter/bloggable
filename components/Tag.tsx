@@ -48,7 +48,7 @@ export default function Tag({ tag }) {
                 >
                   <div className="flex-shrink-0 py-6 px-6">
                     <img
-                      className="h-48 md:h-96 w-full object-contain object-left"
+                      className="h-48 md:h-96 w-full object-contain lg:object-left"
                       src={
                         post.featureImage
                           ? post.featureImage
@@ -206,7 +206,7 @@ export default function Tag({ tag }) {
                   >
                     <div className="flex-shrink-0 py-6 px-6">
                       <img
-                        className="h-48 md:h-96 w-full object-contain object-left"
+                        className="h-48 md:h-96 w-full object-contain lg:object-left"
                         src={
                           post.featureImage
                             ? post.featureImage
