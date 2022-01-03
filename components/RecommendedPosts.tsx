@@ -62,7 +62,7 @@ export default function RecommendedPosts({ posts }) {
                         }))}
                         published={fromUnixTime(post.published)}
                         doi={
-                          process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                          process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
                         }
                         readingTime={post.readingTime}
                         readabilityScore={post.readabilityScore}
