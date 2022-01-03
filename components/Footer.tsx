@@ -82,7 +82,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="mt-2 md:mt-0">
+          <div className="mt-2 mx-6 md:mt-0">
             <h3 className="text-base font-semibold text-gray-400 tracking-wider uppercase">
               Services
             </h3>
@@ -119,7 +119,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="mt-2 md:mt-0">
+          <div className="mt-2 mx-6 md:mt-0">
             <h3 className="text-base font-semibold text-gray-400 tracking-wider uppercase">
               About
             </h3>
