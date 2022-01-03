@@ -61,7 +61,9 @@ export default function RecommendedPosts({ posts }) {
                           profile_image: null
                         }))}
                         published={fromUnixTime(post.published)}
-                        doi={null}
+                        doi={
+                          process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                        }
                         readingTime={post.readingTime}
                         readabilityScore={post.readabilityScore}
                       />

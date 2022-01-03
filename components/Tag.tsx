@@ -82,7 +82,9 @@ export default function Tag({ tag }) {
                           profile_image: null
                         })) : []}
                         published={fromUnixTime(post.published)}
-                        doi={null}
+                        doi={
+                          process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                        }
                         readingTime={post.readingTime}
                         readabilityScore={post.readabilityScore}
                       />
@@ -134,7 +136,9 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={null}
+                          doi={
+                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                          }
                           readingTime={post.readingTime}
                           readabilityScore={post.readabilityScore}
                         />
@@ -187,7 +191,9 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={null}
+                          doi={
+                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                          }
                           readingTime={post.readingTime}
                           readabilityScore={post.readabilityScore}
                         />
@@ -240,7 +246,9 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={null}
+                          doi={
+                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                          }
                           readingTime={post.readingTime}
                           readabilityScore={post.readabilityScore}
                         />
@@ -293,7 +301,9 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={null}
+                          doi={
+                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                          }
                           readingTime={post.readingTime}
                           readabilityScore={post.readabilityScore}
                         />
@@ -346,7 +356,9 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={null}
+                          doi={
+                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                          }
                           readingTime={post.readingTime}
                           readabilityScore={post.readabilityScore}
                         />
@@ -399,7 +411,9 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={null}
+                          doi={
+                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + post.id : null
+                          }
                           readingTime={post.readingTime}
                           readabilityScore={post.readabilityScore}
                         />
