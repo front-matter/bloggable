@@ -43,9 +43,15 @@ const Header = ({ tags, tag }) => {
                         height={32}
                         width={32}
                       />
+                      {tag && tag.name ? (
+                        <span className="text-lg font-semibold font-sans pl-1 pt-1 hidden md:inline">
+                          Front Matter Blog
+                        </span>
+                      ) : (
                         <span className="text-lg font-semibold font-sans pl-1 pt-1">
                           Front Matter Blog
                         </span>
+                      )}
                     </a>
                   </Link>
                 </div>
