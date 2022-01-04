@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/img/logo.svg'
 import { useQueryState } from 'next-usequerystate'
+import useWindowDimensions from '../lib/useWindowDimensions.js'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -18,7 +19,6 @@ const Header = ({ tags, tag }) => {
 
   const onSubmit = () => {
     setQuery(inputRef.current?.value)
-    console.log(query)
   }
 
   const onKeyDown = (event) => {
@@ -27,7 +27,9 @@ const Header = ({ tags, tag }) => {
     }
   }
 
-  console.log(tag)
+  // get current screen width
+  const windowDimensions: any = useWindowDimensions()
+  const windowWidth = windowDimensions.width
 
   return (
     <Disclosure as="header" className="bg-white shadow">
@@ -47,7 +49,7 @@ const Header = ({ tags, tag }) => {
                         width={32}
                       />
                         <span className="text-lg font-semibold font-sans pl-1 pt-1">
-                          {tag && tag.name ? '' : 'Front Matter Blog' }
+                          {tag && tag.name && windowWidth < 768 ? '' : 'Front Matter Blog' }
                         </span>
                     </a>
                   </Link>
