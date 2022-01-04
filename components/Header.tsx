@@ -6,7 +6,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/img/logo.svg'
 import { useQueryState } from 'next-usequerystate'
-import useWindowDimensions from '../lib/useWindowDimensions'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -27,10 +26,6 @@ const Header = ({ tags, tag }) => {
     }
   }
 
-  // get current screen width
-  const windowDimensions: any = useWindowDimensions()
-  const windowWidth = windowDimensions.width
-
   return (
     <Disclosure as="header" className="bg-white shadow">
       {({ open }) => (
@@ -49,7 +44,7 @@ const Header = ({ tags, tag }) => {
                         width={32}
                       />
                         <span className="text-lg font-semibold font-sans pl-1 pt-1">
-                          {tag && tag.name && windowWidth < 768 ? '' : 'Front Matter Blog' }
+                          Front Matter Blog
                         </span>
                     </a>
                   </Link>
@@ -57,7 +52,7 @@ const Header = ({ tags, tag }) => {
               </div>
               <div className="px-2 flex items-center lg:justify-center sm:inset-0">
                 {tag && tag.name &&  
-                  (<div className="sm:max-w-xs md:w-48 lg:w-72">
+                  (<div className="xs:max-w-xs md:w-48 lg:w-72">
                     <label htmlFor="search" className="sr-only">
                       Search
                     </label>
