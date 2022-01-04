@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/img/logo.svg'
 import { useQueryState } from 'next-usequerystate'
-import useWindowDimensions from '../lib/useWindowDimensions.js'
+import useWindowDimensions from '../lib/useWindowDimensions'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
