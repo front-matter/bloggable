@@ -40,8 +40,6 @@ const IndexPage = ({ tags }) => {
     slug: null
   }
 
-  console.log('M: ' + process.env.GIT_BRANCH)
-
   return (
     <>
         <Head>
@@ -63,7 +61,7 @@ const IndexPage = ({ tags }) => {
         <div className="min-h-screen">
           <Tag tag={tag} />
         </div>
-        {process.env.GIT_BRANCH === 'staging' && <Newsletter />}
+        {process.env.GIT_BRANCH !== 'main' && <Newsletter />}
         <Footer />
     </>
   )
