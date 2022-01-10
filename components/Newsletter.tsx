@@ -40,7 +40,7 @@ export default function Newsletter() {
 
   return (
     <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-4 px-4 md:px-14 lg:flex lg:items-center">
+      <div className="max-w-7xl mx-auto py-4 px-4 md:px-6 lg:flex lg:items-center">
         <div className="lg:w-0 lg:flex-1">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             Subscribe to Front Matter
@@ -85,6 +85,12 @@ export default function Newsletter() {
               </button>
             </div>
           </form>
+          <p className="mt-3 text-sm text-gray-500">
+            We care about the protection of your data. Read our{' '}
+            <a href="/pages/privacy-policy" className="font-medium border-b-0 hover:border-b hover:border-force-blue">
+              Privacy Policy.
+            </a>
+          </p>
         </div>
       </div>
     </div>

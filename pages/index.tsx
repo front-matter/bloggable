@@ -61,7 +61,7 @@ const IndexPage = ({ tags }) => {
         <div className="min-h-screen">
           <Tag tag={tag} />
         </div>
-        {process.env.GIT_BRANCH !== 'main' && <Newsletter />}
+        <Newsletter />
         <Footer />
     </>
   )
