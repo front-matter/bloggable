@@ -144,6 +144,16 @@ export default function Footer() {
                   </a>
                 </Link>
               </li>
+              <li>
+                <Link href="/pages/privacy-policy" passHref>
+                  <a
+                    href="dummy"
+                    className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
+                  >
+                    Privacy Policy
+                  </a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
