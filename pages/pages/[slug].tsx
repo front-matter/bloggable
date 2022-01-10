@@ -105,7 +105,7 @@ const Page = (props) => {
           })}
         />
       </Head>
-      <Header tag={{}} />
+      <Header tag={{}} tags={{}} />
       <div className="md:container mx-6 md:mx-auto py-8 flex flex-wrap justify-center min-h-screen">
         <div className="w-full md:w-8/12 ">
           <h1 className="mt-0 mb-2 text-green-600">{props.page.title}</h1>
