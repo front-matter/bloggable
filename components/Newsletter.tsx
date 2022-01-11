@@ -87,7 +87,7 @@ export default function Newsletter() {
           </form>
           <p className="mt-3 text-sm text-gray-500">
             We care about the protection of your data. Read our{' '}
-            <a href="/pages/privacy-policy" className="font-medium border-b-0 hover:border-b hover:border-green-600">
+            <a href="/pages/privacy-policy" className="font-medium text-green-600 border-b-0 hover:border-b hover:border-green-600">
               Privacy Policy.
             </a>
           </p>
