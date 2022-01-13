@@ -177,6 +177,15 @@ const Post = (props) => {
               process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + pid : null
             }
           />
+          <div className="flex-shrink-0 bg-white pt-6 px-6">
+            {props.post.feature_image && (
+              <img
+                className="h-48 w-full object-contain"
+                src={props.post.feature_image}
+                alt=""
+              />
+            )}
+          </div>
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
           <div
             className="text-base leading-snug text-gray-600 py-1 font-sans"
