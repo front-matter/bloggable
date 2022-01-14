@@ -150,7 +150,7 @@ const Post = (props) => {
           {props.post.feature_image && (
             <div className="flex-shrink-0 bg-white py-6">
               <img
-                className="object-cover h-48 md:h-72 lg:h-96 w-full"
+                className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                 src={props.post.feature_image}
                 alt=""
               />
