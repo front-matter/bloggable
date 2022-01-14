@@ -147,6 +147,15 @@ const Post = (props) => {
       <Header tags={[]} tag={{}} />
       <div className="md:container mx-6 md:mx-auto py-8 flex flex-wrap justify-center">
         <div className="w-full md:w-8/12 ">
+          {props.post.feature_image && (
+            <div className="flex-shrink-0 bg-white py-6">
+              <img
+                className="object-cover h-48 md:h-72 w-full"
+                src={props.post.feature_image}
+                alt=""
+              />
+            </div>
+          )}
           {props.post.tags && (
             <p className="font-medium uppercase font-sans mb-0 text-green-600">
               {props.post.tags.map((tag, index) => (
@@ -177,15 +186,6 @@ const Post = (props) => {
               process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + pid : null
             }
           />
-          <div className="flex-shrink-0 bg-white pt-6 px-6">
-            {props.post.feature_image && (
-              <img
-                className="h-48 w-full object-contain"
-                src={props.post.feature_image}
-                alt=""
-              />
-            )}
-          </div>
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
           <div
             className="text-base leading-snug text-gray-600 py-1 font-sans"
