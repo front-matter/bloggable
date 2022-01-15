@@ -5,6 +5,8 @@ import Byline from './Byline'
 export default function RecommendedPosts({ posts }) {
   if (!posts) return null
 
+  console.log(posts)
+
   return (
     <>
       <div className="relative bg-gray-50 pt-16 pb-16 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8">
@@ -28,8 +30,8 @@ export default function RecommendedPosts({ posts }) {
                     <img
                       className="h-48 w-full object-contain"
                       src={
-                        post.feature_image
-                          ? post.feature_image
+                        post.featureImage
+                          ? post.featureImage
                           : `https://assets.front-matter.io/1/news${
                               Math.floor(Math.random() * 5) + 1
                             }.jpg`
