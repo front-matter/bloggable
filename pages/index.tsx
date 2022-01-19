@@ -43,6 +43,7 @@ const IndexPage = ({ tags }) => {
   return (
     <>
         <Head>
+          <link rel="alternate" type="application/rss+xml" title="Upstream" href="/feed.xml" />
           <script
             type="application/ld+json"
             {...jsonLdScriptProps<Blog>({
