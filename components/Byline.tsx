@@ -42,7 +42,7 @@ const Byline: React.FunctionComponent<Props> = ({
             month: "long",
             day: "numeric",
           })}{" "}
-          &bull; {readingTime} min read &bull;{" "}
+          &bull; {readingTime} min read
           {doi && (
             <>
               {" "}
