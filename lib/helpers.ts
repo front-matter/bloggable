@@ -3,7 +3,6 @@ import '@formatjs/intl-numberformat/locale-data/en'
 import sanitizeHtml from 'sanitize-html'
 import ReactHtmlParser from 'react-html-parser'
 import trimText from './trimText'
-const { scoreFleschKincaidEase } = require('readability-cyr')
 
 export const compactNumbers = (num: number, compact: boolean = false) => {
   let options = {}
@@ -34,11 +33,6 @@ export const uuid2base32 = (uuid: string) => {
     .encode(uuid)
     .match(/.{1,7}/g)
     .join('-')
-}
-
-// calculate Flesch Reading Ease score
-export const readabilityScore = (content: string) => {
-  return scoreFleschKincaidEase(content)
 }
 
 // Helper method to wait for a middleware to execute before continuing

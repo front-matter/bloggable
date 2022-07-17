@@ -1,7 +1,7 @@
 import { Client } from 'typesense'
 import { getAllPosts } from './posts'
 import { generateHtml } from './pandoc'
-import { uuid2base32, sanitizeDescription, readabilityScore } from './helpers'
+import { uuid2base32, sanitizeDescription } from './helpers'
 import { getTime, parseISO } from 'date-fns'
 
 const typesenseCollection = process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION
@@ -50,7 +50,6 @@ export async function refreshIndex() {
       description: description + '',
       content: await generateHtml(post.html),
       readingTime: post.reading_time,
-      readabilityScore: readabilityScore(post.html),
       tags: post.tags && post.tags.map((tag) => tag.slug),
       featured: post.featured,
       featureImage: post.feature_image,

@@ -5,7 +5,6 @@ type Props = {
   published: Date;
   doi: string;
   readingTime: number;
-  readabilityScore: number;
 };
 
 interface Author {
@@ -20,7 +19,6 @@ const Byline: React.FunctionComponent<Props> = ({
   published,
   doi,
   readingTime,
-  readabilityScore,
 }) => {
   return (
     <div className="flex flex-row pt-2 pb-4">
@@ -45,14 +43,6 @@ const Byline: React.FunctionComponent<Props> = ({
             day: "numeric",
           })}{" "}
           &bull; {readingTime} min read &bull;{" "}
-          <a
-            className="border-b-0 hover:border-b hover:border-force-blue"
-            href="https://blog.front-matter.io/posts/on-readability"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            readability score {readabilityScore.toFixed(1)}
-          </a>
           {doi && (
             <>
               {" "}

@@ -86,7 +86,6 @@ export default function Tag({ tag }) {
                           process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
                         }
                         readingTime={post.readingTime}
-                        readabilityScore={post.readabilityScore}
                       />
                     </div>
                   </div>
@@ -140,7 +139,6 @@ export default function Tag({ tag }) {
                             process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
                           }
                           readingTime={post.readingTime}
-                          readabilityScore={post.readabilityScore}
                         />
                       </div>
                     </div>
@@ -195,7 +193,6 @@ export default function Tag({ tag }) {
                             process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
                           }
                           readingTime={post.readingTime}
-                          readabilityScore={post.readabilityScore}
                         />
                       </div>
                     </div>
@@ -250,7 +247,6 @@ export default function Tag({ tag }) {
                             process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
                           }
                           readingTime={post.readingTime}
-                          readabilityScore={post.readabilityScore}
                         />
                       </div>
                     </div>
@@ -305,7 +301,6 @@ export default function Tag({ tag }) {
                             process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
                           }
                           readingTime={post.readingTime}
-                          readabilityScore={post.readabilityScore}
                         />
                       </div>
                     </div>
@@ -360,7 +355,6 @@ export default function Tag({ tag }) {
                             process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
                           }
                           readingTime={post.readingTime}
-                          readabilityScore={post.readabilityScore}
                         />
                       </div>
                     </div>
@@ -415,7 +409,6 @@ export default function Tag({ tag }) {
                             process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
                           }
                           readingTime={post.readingTime}
-                          readabilityScore={post.readabilityScore}
                         />
                       </div>
                     </div>

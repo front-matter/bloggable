@@ -7,7 +7,6 @@ import { BlogPosting } from 'schema-dts'
 import { jsonLdScriptProps } from 'react-schemaorg'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import { readabilityScore } from '../../lib/helpers'
 import RecommendedPosts from '../../components/RecommendedPosts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -181,7 +180,6 @@ const Post = (props) => {
             authors={props.post.authors}
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
-            readabilityScore={readabilityScore(props.post.html)}
             doi={
               process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + pid : null
             }
