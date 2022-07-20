@@ -159,12 +159,6 @@ export async function updateSchema() {
         optional: false
       },
       {
-        name: 'readabilityScore',
-        type: 'int32',
-        facet: true,
-        optional: false
-      },
-      {
         name: 'tags',
         type: 'string[]',
         facet: true,
