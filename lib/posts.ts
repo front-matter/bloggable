@@ -6,13 +6,13 @@ import { Client } from 'typesense'
 const api = new GhostContentAPI({
   url: process.env.NEXT_PUBLIC_GHOST_API_URL,
   key: process.env.NEXT_PUBLIC_GHOST_API_KEY,
-  version: 'v4'
+  version: 'v5.0'
 })
 
 const admin = new GhostAdminAPI({
   url: process.env.NEXT_PUBLIC_GHOST_API_URL,
   key: process.env.NEXT_PUBLIC_GHOST_ADMIN_API_KEY,
-  version: 'v3'
+  version: 'v5.0'
 })
 
 export async function getAllPosts() {
