@@ -42,9 +42,7 @@ export async function getStaticProps(context) {
 const Page = (props) => {
   if (!props.page) return <div>Not found</div>;
 
-  const pid = process.env.NEXT_PUBLIC_PREFIX
-    ? process.env.NEXT_PUBLIC_PREFIX + "/" + uuid2base32(props.page.id)
-    : null;
+  const pid = process.env.NEXT_PUBLIC_PREFIX + "/" + uuid2base32(props.page.id);
   const description = sanitizeDescription(props.page.html);
 
   return (

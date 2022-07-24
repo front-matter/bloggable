@@ -58,9 +58,7 @@ export async function getStaticProps(context) {
 const Post = (props) => {
   if (!props.post) return <div>Not found</div>
 
-  const pid = process.env.NEXT_PUBLIC_PREFIX
-    ? process.env.NEXT_PUBLIC_PREFIX + '/' + uuid2base32(props.post.id)
-    : null
+  const pid =  process.env.NEXT_PUBLIC_PREFIX + '/' + uuid2base32(props.post.id)
   const description = sanitizeDescription(props.post.html) + ''
 
   return (
@@ -181,7 +179,7 @@ const Post = (props) => {
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
             doi={
-              process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + pid : null
+              process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + pid
             }
           />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>

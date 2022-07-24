@@ -1,6 +1,7 @@
 import React from 'react'
 import { fromUnixTime } from 'date-fns'
 import Byline from './Byline'
+import { faPooStorm } from '@fortawesome/free-solid-svg-icons'
 
 export default function RecommendedPosts({ posts }) {
   if (!posts) return null
@@ -63,9 +64,7 @@ export default function RecommendedPosts({ posts }) {
                           profile_image: null
                         }))}
                         published={fromUnixTime(post.published)}
-                        doi={
-                          process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
-                        }
+                        doi={post.doi}
                         readingTime={post.readingTime}
                       />
                     </div>

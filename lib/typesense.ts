@@ -40,11 +40,13 @@ export async function refreshIndex() {
   for (const post of posts) {
     const description = sanitizeDescription(post.html)
     const id = uuid2base32(post.id)
+    const doi = post.canonical_url || 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + id
 
     const document = {
       id: id,
       title: post.title,
       slug: post.slug,
+      doi: doi,
       author_ids: post.authors && post.authors.map((author) => author.slug),
       authors: post.authors && post.authors.map((author) => author.name),
       description: description + '',
@@ -60,9 +62,7 @@ export async function refreshIndex() {
       schemaOrg: {
         '@context': 'http://schema.org',
         '@type': 'BlogPosting',
-        '@id': process.env.NEXT_PUBLIC_PREFIX
-          ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + id
-          : 'https://blog.front-matter.io/' + id,
+        '@id': doi,
         url: 'https://blog.front-matter.io/posts/' + post.slug,
         name: post.title,
         headline: post.title,
@@ -136,6 +136,12 @@ export async function updateSchema() {
       },
       {
         name: 'slug',
+        type: 'string',
+        facet: false,
+        optional: false
+      },
+      {
+        name: 'doi',
         type: 'string',
         facet: false,
         optional: false

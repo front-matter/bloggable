@@ -82,9 +82,7 @@ export default function Tag({ tag }) {
                           profile_image: null
                         })) : []}
                         published={fromUnixTime(post.published)}
-                        doi={
-                          process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
-                        }
+                        doi={post.doi}
                         readingTime={post.readingTime}
                       />
                     </div>
@@ -135,9 +133,7 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={
-                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
-                          }
+                          doi={post.doi}
                           readingTime={post.readingTime}
                         />
                       </div>
@@ -189,9 +185,7 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={
-                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
-                          }
+                          doi={post.doi}
                           readingTime={post.readingTime}
                         />
                       </div>
@@ -243,9 +237,7 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={
-                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
-                          }
+                          doi={post.doi}
                           readingTime={post.readingTime}
                         />
                       </div>
@@ -297,9 +289,7 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={
-                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
-                          }
+                          doi={post.doi}
                           readingTime={post.readingTime}
                         />
                       </div>
@@ -351,9 +341,7 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={
-                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
-                          }
+                          doi={post.doi}
                           readingTime={post.readingTime}
                         />
                       </div>
@@ -405,9 +393,7 @@ export default function Tag({ tag }) {
                             profile_image: null
                           })) : []}
                           published={fromUnixTime(post.published)}
-                          doi={
-                            process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + post.id : null
-                          }
+                          doi={post.doi}
                           readingTime={post.readingTime}
                         />
                       </div>
