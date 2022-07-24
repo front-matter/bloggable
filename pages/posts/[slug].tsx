@@ -178,9 +178,7 @@ const Post = (props) => {
             authors={props.post.authors}
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
-            doi={
-              process.env.NEXT_PUBLIC_PREFIX ? 'https://doi.org/' + pid
-            }
+            doi={'https://doi.org/' + pid}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
           <div

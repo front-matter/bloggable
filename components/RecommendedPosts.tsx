@@ -1,7 +1,6 @@
 import React from 'react'
 import { fromUnixTime } from 'date-fns'
 import Byline from './Byline'
-import { faPooStorm } from '@fortawesome/free-solid-svg-icons'
 
 export default function RecommendedPosts({ posts }) {
   if (!posts) return null
