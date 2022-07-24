@@ -40,7 +40,7 @@ export async function refreshIndex() {
   for (const post of posts) {
     const description = sanitizeDescription(post.html)
     const id = uuid2base32(post.id)
-    const doi = post.canonical_url || 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + id
+    const doi = post.canonical_url || 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + id
 
     const document = {
       id: id,
