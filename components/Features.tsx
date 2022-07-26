@@ -15,8 +15,7 @@ import {
   faBarcode,
   faFileArchive,
   faServer,
-  faSearch,
-  faComments
+  faSearch
 } from '@fortawesome/free-solid-svg-icons'
 import { faDiscourse } from '@fortawesome/free-brands-svg-icons'
 import Image from 'next/image'
