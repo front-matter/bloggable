@@ -9,7 +9,7 @@ export default function RecommendedPosts({ posts }) {
 
   return (
     <>
-      <div className="relative bg-gray-50 pt-16 pb-16 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8">
+      <div className="relative bg-gray-50 pt-16 pb-16 px-4 sm:px-6 lg:pt-6 lg:pb-6 lg:px-8">
         <div className="container mx-auto flex flex-auto items-center justify-between">
           <div className="absolute inset-0">
             <div className="bg-white h-1/3 sm:h-2/3"></div>
@@ -28,7 +28,7 @@ export default function RecommendedPosts({ posts }) {
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
                     <img
-                      className="h-48 w-full object-contain"
+                      className="h-48 w-full object-contain shadow-lg rounded-lg"
                       src={
                         post.featureImage
                           ? post.featureImage
