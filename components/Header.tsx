@@ -13,6 +13,7 @@ function classNames(...classes) {
 
 const Header = ({ tags, tag }) => {
   const [query, setQuery] = useQueryState('query')
+  console.log(query)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const onSubmit = () => {
