@@ -58,17 +58,17 @@ const Post = (props) => {
   if (!props.post) return <div>Not found</div>
 
   const description = sanitizeDescription(props.post.html) + ''
-  const pid = props.post.canonical_url
+  const doi = props.post.canonical_url
 
   return (
     <>
       <Head>
         <title>{props.post.title}</title>
 
-        {pid && (
+        {doi && (
           <>
-            <meta name="DC.identifier" content={pid} />
-            <meta name="citation_doi" content={pid} />
+            <meta name="DC.identifier" content={doi} />
+            <meta name="citation_doi" content={doi} />
           </>
         )}
         <meta
@@ -110,7 +110,7 @@ const Post = (props) => {
           {...jsonLdScriptProps<BlogPosting>({
             '@context': 'https://schema.org',
             '@type': 'BlogPosting',
-            '@id': pid,
+            '@id': doi,
             url: 'https://blog.front-matter.io/posts/' + props.post.slug,
             name: props.post.title,
             headline: props.post.title,
@@ -177,7 +177,7 @@ const Post = (props) => {
             authors={props.post.authors}
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
-            doi={pid}
+            doi={doi}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
           <div
