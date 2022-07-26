@@ -5,8 +5,6 @@ import Byline from './Byline'
 export default function RecommendedPosts({ posts }) {
   if (!posts) return null
 
-  console.log(posts)
-
   return (
     <>
       <div className="relative bg-gray-50 pt-16 pb-16 px-4 sm:px-6 lg:pt-6 lg:pb-6 lg:px-8">

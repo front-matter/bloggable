@@ -15,7 +15,7 @@ import {
 
 import { GetStaticPaths } from "next";
 import { getSinglePage, getAllPages } from "../../lib/posts";
-import { sanitizeDescription, uuid2base32 } from "../../lib/helpers";
+import { sanitizeDescription } from "../../lib/helpers";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const pages = await getAllPages();
@@ -42,7 +42,7 @@ export async function getStaticProps(context) {
 const Page = (props) => {
   if (!props.page) return <div>Not found</div>;
 
-  const pid = process.env.NEXT_PUBLIC_PREFIX + "/" + uuid2base32(props.page.id);
+  const doi = props.page.canonical_url
   const description = sanitizeDescription(props.page.html);
 
   return (
@@ -74,7 +74,7 @@ const Page = (props) => {
           {...jsonLdScriptProps<BlogPosting>({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "@id": "https://doi.org/" + pid,
+            "@id": doi,
             url: "https://blog.front-matter.io/pages/" + props.page.slug,
             name: props.page.title,
             headline: props.page.title,

@@ -1,7 +1,7 @@
 import { Client } from 'typesense'
 import { getAllPosts } from './posts'
 import { generateHtml } from './pandoc'
-import { uuid2base32, sanitizeDescription } from './helpers'
+import { sanitizeDescription } from './helpers'
 import { getTime, parseISO } from 'date-fns'
 
 const typesenseCollection = process.env.NEXT_PUBLIC_TYPESENSE_COLLECTION
@@ -39,11 +39,10 @@ export async function refreshIndex() {
 
   for (const post of posts) {
     const description = sanitizeDescription(post.html)
-    const id = uuid2base32(post.id)
-    const doi = post.canonical_url || 'https://doi.org/' + process.env.NEXT_PUBLIC_PREFIX + '/' + id
+    const doi = post.canonical_url
 
     const document = {
-      id: id,
+      id: post.id,
       title: post.title,
       slug: post.slug,
       doi: doi,
@@ -144,7 +143,7 @@ export async function updateSchema() {
         name: 'doi',
         type: 'string',
         facet: false,
-        optional: false
+        optional: true
       },
       {
         name: 'description',

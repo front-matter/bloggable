@@ -22,7 +22,7 @@ import {
   getSimilarIndexedPosts
 } from '../../lib/posts'
 import Byline from '../../components/Byline'
-import { sanitizeDescription, uuid2base32 } from '../../lib/helpers'
+import { sanitizeDescription } from '../../lib/helpers'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getAllPosts()
@@ -47,7 +47,7 @@ export async function getStaticProps(context) {
 
   const recommendedPosts = await getSimilarIndexedPosts(
     post.title + ' ' + post.tags.map((tag) => tag.name).join(' '),
-    uuid2base32(post.id)
+    post.canonical_url
   )
   return {
     props: { post, tags, recommendedPosts }
@@ -57,8 +57,8 @@ export async function getStaticProps(context) {
 const Post = (props) => {
   if (!props.post) return <div>Not found</div>
 
-  const pid =  process.env.NEXT_PUBLIC_PREFIX + '/' + uuid2base32(props.post.id)
   const description = sanitizeDescription(props.post.html) + ''
+  const pid = props.post.canonical_url
 
   return (
     <>
@@ -110,7 +110,7 @@ const Post = (props) => {
           {...jsonLdScriptProps<BlogPosting>({
             '@context': 'https://schema.org',
             '@type': 'BlogPosting',
-            '@id': 'https://doi.org/' + pid,
+            '@id': pid,
             url: 'https://blog.front-matter.io/posts/' + props.post.slug,
             name: props.post.title,
             headline: props.post.title,
@@ -177,7 +177,7 @@ const Post = (props) => {
             authors={props.post.authors}
             published={parseISO(props.post.published_at)}
             readingTime={props.post.reading_time}
-            doi={'https://doi.org/' + pid}
+            doi={pid}
           />
           <div className="text-lg">{ReactHtmlParser(props.post.html)}</div>
           <div
