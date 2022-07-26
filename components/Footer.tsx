@@ -49,16 +49,6 @@ export default function Footer() {
                     </a>
                   </Link>
 
-                  <Link href="https://discuss.front-matter.io" passHref>
-                    <a
-                      href="dummy"
-                      className="text-gray-500 hover:text-gray-400 border-b-0"
-                    >
-                      <span className="sr-only">Discourse</span>
-                      <FontAwesomeIcon icon={faDiscourse} />
-                    </a>
-                  </Link>
-
                   <Link href="https://blog.front-matter.io/feed.xml" passHref>
                     <a
                       href="dummy"
@@ -94,16 +84,6 @@ export default function Footer() {
                     className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
                   >
                     Blog
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="https://discuss.front-matter.io" passHref>
-                  <a
-                    href="dummy"
-                    className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
-                  >
-                    Discussion Forum
                   </a>
                 </Link>
               </li>

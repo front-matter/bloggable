@@ -39,28 +39,6 @@ export default function OpenSource() {
 
           <div className="relative">
             <dt>
-              <Link href="https://github.com/TryGhost/Ghost" passHref>
-                <a
-                  href="dummy"
-                  className="ml-9 text-xl leading-6 font-bold font-sans text-green-600 border-b-0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Discourse
-                </a>
-              </Link>
-            </dt>
-            <dd className="mt-0 ml-9 text-base text-gray-500">
-              Discourse is the discussion platform built for the next decade of
-              the Internet.
-              <p className="mt-2 text-sm font-sans">
-                Original authors Jeff Atwood, Robin Ward, Sam Saffron
-              </p>
-            </dd>
-          </div>
-
-          <div className="relative">
-            <dt>
               <Link href="https://github.com/vercel/next.js/" passHref>
                 <a
                   href="dummy"

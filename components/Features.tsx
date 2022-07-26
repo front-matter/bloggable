@@ -536,36 +536,6 @@ export default function Features() {
                   <div className="relative">
                     <dt>
                       <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
-                        <FontAwesomeIcon icon={faComments} />
-                      </div>
-                      <p className="mx-16 mb-0 text-xl text-bold leading-6 font-medium text-gray-900 font-sans">
-                        Discussions
-                      </p>
-                    </dt>
-                    <dd className="mt-1 ml-16 text-base text-gray-500">
-                      Commenting and further discussion is provided by the Front
-                      Matter{' '}
-                      <a
-                        href="https://discuss.front-matter.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        discussion forum
-                      </a>
-                      , powered by the Open Source software{' '}
-                      <a
-                        href="https://discourse.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Discourse
-                      </a>
-                      .
-                    </dd>
-                  </div>
-                  <div className="relative">
-                    <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-600 text-white">
                         <FontAwesomeIcon icon={faChartLine} />
                       </div>
                       <p className="mx-16 mb-0 text-xl text-bold leading-6 font-medium text-gray-900 font-sans">
