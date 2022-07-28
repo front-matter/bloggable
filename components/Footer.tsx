@@ -87,6 +87,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/discord" passHref>
+                  <a
+                    href="dummy"
+                    className="text-sm border-b-0 text-gray-500 hover:text-gray-400"
+                  >
+                    Discord
+                  </a>
+                </Link>
+              </li>
+              <li>
                 <Link href="https://plausible.io/blog.front-matter.io" passHref>
                   <a
                     href="dummy"

@@ -198,6 +198,21 @@ const Post = (props) => {
               Creative Commons Attribution 4.0 License.
             </a>
           </div>
+          <div
+            className="text-lg text-gray-600 py-1 mt-2"
+          >
+            For comments or other feedback, join the 
+              <Link
+                href="/discord"
+                passHref
+              >
+                <a
+                  href="dummy"
+                  className="border-b-0 hover:border-b hover:border-green-600">
+                  Front Matter Discord Server
+                </a>
+              </Link>.
+          </div>
         </div>
       </div>
       {props.recommendedPosts.length > 0 && (
