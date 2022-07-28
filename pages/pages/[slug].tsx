@@ -157,7 +157,7 @@ const Page = (props) => {
                   href="dummy"
                   className="border-b border-bgreen-600 hover:border-green-800">
                   Front Matter              
-                  <span className="text-lg text-gray-900 mx-0.5">
+                  <span className="text-lg text-gray-900 ml-1 mr-0.5">
                     <FontAwesomeIcon icon={faDiscord} />
                   </span>
                   Discord Server
