@@ -4,7 +4,7 @@
 
 @layer base {
   a {
-    @apply pb-0.5 border-b border-blue-600 hover:border-blue-800 visited:border-blue-600;
+    @apply pb-0.5 border-b border-green-600 hover:border-green-800 visited:border-green-600;
   }
   body {
     @apply font-serif;

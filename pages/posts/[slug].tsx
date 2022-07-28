@@ -163,7 +163,7 @@ const Post = (props) => {
                   >
                     <a
                       href="dummy"
-                      className="border-b-0 hover:border-b hover:border-green-600">
+                      className="border-b border-green-600 hover:border-green-800">
                       {tag.name}
                     </a>
                   </Link>
@@ -199,16 +199,16 @@ const Post = (props) => {
             </a>
           </div>
           <div
-            className="text-lg text-gray-600 py-1 mt-2"
+            className="text-lg text-gray-600 py-1 mt-2 font-sans"
           >
-            For comments or other feedback, join the 
+            For comments or other feedback, join the{' '}
               <Link
                 href="/discord"
                 passHref
               >
                 <a
                   href="dummy"
-                  className="border-b-0 hover:border-b hover:border-green-600">
+                  className="border-b border-bgreen-600 hover:border-green-800">
                   Front Matter Discord Server
                 </a>
               </Link>.
