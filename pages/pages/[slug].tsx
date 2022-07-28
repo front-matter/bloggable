@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCreativeCommons,
   faCreativeCommonsBy,
+  faDiscord
 } from "@fortawesome/free-brands-svg-icons";
 
 import { GetStaticPaths } from "next";
@@ -147,7 +148,21 @@ const Page = (props) => {
               href="https://creativecommons.org/licenses/by/4.0/legalcode"
             >
               Creative Commons Attribution 4.0 License.
-            </a>
+            </a>{' '}For comments or other feedback, join the{' '}
+              <Link
+                href="/discord"
+                passHref
+              >
+                <a
+                  href="dummy"
+                  className="border-b border-bgreen-600 hover:border-green-800">
+                  Front Matter              
+                  <span className="text-lg text-gray-900 mx-0.5">
+                    <FontAwesomeIcon icon={faDiscord} />
+                  </span>
+                  Discord Server
+                </a>
+              </Link>.
           </div>
         </div>
       </div>

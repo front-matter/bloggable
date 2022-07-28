@@ -1,5 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDiscord
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Discord() {
   return (
@@ -12,6 +16,9 @@ export default function Discord() {
             </h1>
             <div className="mt-5 text-xl text-gray-500">
               <p>
+                <span className="text-lg text-gray-900 mr-0.5">
+                    <FontAwesomeIcon icon={faDiscord} />
+                  </span>
                 Discord is a popular instant messaging social platform.{' '}
                 <Link href="https://discord.gg/9wnkmWwDWx" passHref>
                   <a

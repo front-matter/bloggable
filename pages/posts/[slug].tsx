@@ -197,15 +197,7 @@ const Post = (props) => {
               href="https://creativecommons.org/licenses/by/4.0/legalcode"
             >
               Creative Commons Attribution 4.0 License.
-            </a>
-          </div>
-          <div
-            className="text-base text-gray-600 py-1 mt-2 font-sans"
-          >
-            For comments or other feedback, join the{' '}
-              <span className="text-lg text-gray-900 mr-1">
-                <FontAwesomeIcon icon={faDiscord} />{' '}
-              </span>
+            </a>{' '}For comments or other feedback, join the{' '}
               <Link
                 href="/discord"
                 passHref
@@ -213,7 +205,11 @@ const Post = (props) => {
                 <a
                   href="dummy"
                   className="border-b border-bgreen-600 hover:border-green-800">
-                  Front Matter Discord Server
+                  Front Matter              
+                  <span className="text-lg text-gray-900 mx-0.5">
+                    <FontAwesomeIcon icon={faDiscord} />
+                  </span>
+                  Discord Server
                 </a>
               </Link>.
           </div>
