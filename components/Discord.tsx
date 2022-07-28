@@ -19,9 +19,9 @@ export default function Discord() {
                     className="text-gray-500 border-b border-green-600 hover:border-green-800"
                   >
                     Join the Front Matter Discord server
-                  </a>{' '}
+                  </a>
                 </Link>
-                for comments and other feedback related to the Front Matter Blog,
+                {' '}for comments and other feedback related to the Front Matter Blog,
                 or to contact Front Matter staff.
               </p>
             </div>
