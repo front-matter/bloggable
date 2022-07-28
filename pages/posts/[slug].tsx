@@ -11,7 +11,8 @@ import RecommendedPosts from '../../components/RecommendedPosts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCreativeCommons,
-  faCreativeCommonsBy
+  faCreativeCommonsBy,
+  faDiscord
 } from '@fortawesome/free-brands-svg-icons'
 
 import { GetStaticPaths } from 'next'
@@ -199,9 +200,12 @@ const Post = (props) => {
             </a>
           </div>
           <div
-            className="text-lg text-gray-600 py-1 mt-2 font-sans"
+            className="text-base text-gray-600 py-1 mt-2 font-sans"
           >
             For comments or other feedback, join the{' '}
+              <span className="text-lg text-gray-900 mr-1">
+                <FontAwesomeIcon icon={faDiscord} />{' '}
+              </span>
               <Link
                 href="/discord"
                 passHref
