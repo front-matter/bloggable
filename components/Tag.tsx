@@ -46,7 +46,7 @@ export default function Tag({ tag }) {
                   className="grid gap-5 lg:grid-cols-2 bg-white rounded-lg shadow-lg overflow-hidden"
                   key={post.id}
                 >
-                  <div className="flex-shrink-0 bg-white pt-6 px-6">
+                  <div className="flex-shrink-0 bg-white py-6 px-6">
                     <img
                       className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                       src={
@@ -201,7 +201,7 @@ export default function Tag({ tag }) {
                     className="grid gap-5 lg:grid-cols-2 bg-white rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
                   >
-                    <div className="flex-shrink-0 bg-white pt-6 px-6">  
+                    <div className="flex-shrink-0 bg-white py-6 px-6">  
                       <img
                         className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                         src={
