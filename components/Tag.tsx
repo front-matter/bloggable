@@ -46,9 +46,9 @@ export default function Tag({ tag }) {
                   className="grid gap-5 lg:grid-cols-2 bg-white rounded-lg shadow-lg overflow-hidden"
                   key={post.id}
                 >
-                  <div className="flex-shrink-0 py-6 px-6">
+                  <div className="flex-shrink-0 bg-white py-6">
                     <img
-                      className="h-48 md:h-96 w-full object-contain lg:object-left"
+                      className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                       src={
                         post.featureImage
                           ? post.featureImage
@@ -97,9 +97,9 @@ export default function Tag({ tag }) {
                     className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
                   >
-                    <div className="flex-shrink-0 bg-white pt-6 px-6">
+                    <div className="flex-shrink-0 bg-white py-6">
                       <img
-                        className="h-48 w-full object-contain"
+                        className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                         src={
                           post.featureImage
                             ? post.featureImage
@@ -149,9 +149,9 @@ export default function Tag({ tag }) {
                     className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
                   >
-                    <div className="flex-shrink-0 pt-6 px-6">
+                    <div className="flex-shrink-0 bg-white py-6">
                       <img
-                        className="h-48 w-full object-contain"
+                        className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                         src={
                           post.featureImage
                             ? post.featureImage
@@ -201,9 +201,9 @@ export default function Tag({ tag }) {
                     className="grid gap-5 lg:grid-cols-2 bg-white rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
                   >
-                    <div className="flex-shrink-0 py-6 px-6">
+                    <div className="flex-shrink-0 bg-white py-6">  
                       <img
-                        className="h-48 md:h-96 w-full object-contain lg:object-left"
+                        className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                         src={
                           post.featureImage
                             ? post.featureImage
@@ -253,9 +253,9 @@ export default function Tag({ tag }) {
                     className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
                   >
-                    <div className="flex-shrink-0 bg-white pt-6 px-6">
+                    <div className="flex-shrink-0 bg-white py-6">
                       <img
-                        className="h-48 w-full object-contain"
+                        className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                         src={
                           post.featureImage
                             ? post.featureImage
@@ -305,9 +305,9 @@ export default function Tag({ tag }) {
                     className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
                   >
-                    <div className="flex-shrink-0 bg-white pt-2 px-6">
+                    <div className="flex-shrink-0 bg-white py-6">
                       <img
-                        className="h-48 w-full object-contain"
+                        className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                         src={
                           post.featureImage
                             ? post.featureImage
@@ -357,9 +357,9 @@ export default function Tag({ tag }) {
                     className="flex flex-col rounded-lg shadow-lg overflow-hidden"
                     key={post.id}
                   >
-                    <div className="flex-shrink-0 bg-white pt-6 px-6">
+                    <div className="flex-shrink-0 bg-white py-6">
                       <img
-                        className="h-48 w-full object-contain"
+                        className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                         src={
                           post.featureImage
                             ? post.featureImage
