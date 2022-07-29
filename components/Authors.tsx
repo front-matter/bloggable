@@ -37,7 +37,7 @@ export default function Authors({ authors }) {
                       <Link href={"/authors/" + author.slug} passHref>
                         <a
                           href="dummy"
-                          className="text-gray-500 text-base font-medium font-sans border-b-0 hover:border-b hover:border-force-blue"
+                          className="text-gray-500 text-base font-medium font-sans border-b-0 hover:border-b hover:border-green-600"
                         >
                           {author.name}
                         </a>

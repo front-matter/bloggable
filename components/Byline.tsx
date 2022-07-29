@@ -27,7 +27,7 @@ const Byline: React.FunctionComponent<Props> = ({
           {authors !== undefined ? authors.map((author, idx) => (
             <>
               <a
-                className="border-b-0 hover:border-b hover:border-force-blue"
+                className="border-b-0 hover:border-b hover:border-green-600"
                 href={"/authors/" + author.slug}
               >
                 {author.name}
@@ -48,7 +48,7 @@ const Byline: React.FunctionComponent<Props> = ({
               {" "}
               &bull; <br />
               <a
-                className="border-b-0 hover:border-b hover:border-force-blue"
+                className="border-b-0 hover:border-b hover:border-green-600"
                 href={doi}
               >
                 {doi}

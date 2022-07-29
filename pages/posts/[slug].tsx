@@ -164,7 +164,7 @@ const Post = (props) => {
                   >
                     <a
                       href="dummy"
-                      className="hover:border-b hover:border-green-600">
+                      className="border-b-0 hover:border-b hover:border-green-600">
                       {tag.name}
                     </a>
                   </Link>
