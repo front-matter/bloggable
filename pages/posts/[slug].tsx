@@ -7,6 +7,7 @@ import { BlogPosting } from 'schema-dts'
 import { jsonLdScriptProps } from 'react-schemaorg'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import Newsletter from '../../components/Newsletter'
 import RecommendedPosts from '../../components/RecommendedPosts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -218,6 +219,7 @@ const Post = (props) => {
       {props.recommendedPosts.length > 0 && (
         <RecommendedPosts posts={props.recommendedPosts} />
       )}
+      <Newsletter />
       <Footer />
     </>
   )
