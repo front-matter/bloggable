@@ -26,7 +26,7 @@ export default function RecommendedPosts({ posts }) {
                 >
                   <div className="flex-shrink-0 bg-white pt-6 px-6">
                     <img
-                      className="h-48 w-full object-contain"
+                      className="object-cover h-48 md:h-72 lg:h-96 w-full shadow-lg rounded-lg"
                       src={
                         post.featureImage
                           ? post.featureImage
