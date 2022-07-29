@@ -43,7 +43,7 @@ export default function Newsletter() {
       <div className="max-w-7xl mx-auto py-4 px-4 md:px-20 lg:flex lg:items-center">
         <div className="lg:w-0 lg:flex-1">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Subscribe to the Front Matter Blog
+            Subscribe
           </h2>
           <p className="mt-3 max-w-3xl text-lg text-gray-500">
             Subscribe to the Front Matter Blog to receive all blog posts and occasional
