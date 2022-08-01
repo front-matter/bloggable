@@ -1,5 +1,5 @@
 # bloggable
-A Next.js application that powers the Front Matter blog, with a Ghost.org-powered backend editor, and a full-text search index via Typesense.
+A Next.js application that powers the Front Matter blog, with a Ghost.org-powered backend editor and a full-text search index via Typesense.
 
 ## License
 
