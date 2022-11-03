@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.3.1)
+    activesupport (7.0.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -13,7 +13,7 @@ GEM
     benchmark_methods (0.7)
     bibtex-ruby (6.0.0)
       latex-decode (~> 0.0)
-    briard (2.4.2)
+    briard (2.6.6)
       activesupport (>= 4.2.5)
       base32-url (>= 0.5.0, < 1)
       benchmark_methods (~> 0.7)
@@ -92,7 +92,7 @@ GEM
       multi_json (~> 1.15)
       rack (~> 2.2)
       rdf (~> 3.2, >= 3.2.9)
-    json-ld-preloaded (3.2.0)
+    json-ld-preloaded (3.2.2)
       json-ld (~> 3.2)
       rdf (~> 3.2)
     jsonlint (0.3.0)
@@ -100,7 +100,7 @@ GEM
       optimist (~> 3)
     latex-decode (0.4.0)
     link_header (0.0.8)
-    loofah (2.18.0)
+    loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     maremma (4.9.8)
@@ -119,11 +119,11 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.2.3)
     namae (1.1.1)
-    nokogiri (1.13.8-arm64-darwin)
+    nokogiri (1.13.9-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-darwin)
+    nokogiri (1.13.9-x86_64-darwin)
       racc (~> 1.4)
-    oj (3.13.21)
+    oj (3.13.22)
     oj_mimic_json (1.0.1)
     optimist (3.0.1)
     postrank-uri (1.0.24)
@@ -152,22 +152,22 @@ GEM
     rdf-turtle (3.2.1)
       ebnf (~> 2.3)
       rdf (~> 3.2)
-    rdf-vocab (3.2.1)
+    rdf-vocab (3.2.3)
       rdf (~> 3.2, >= 3.2.4)
     rdf-xsd (3.2.1)
       rdf (~> 3.2)
       rexml (~> 3.2)
     rexml (3.2.5)
     scanf (1.0.0)
-    sxp (1.2.2)
-      matrix
+    sxp (1.2.3)
+      matrix (~> 0.4)
       rdf (~> 3.2)
-    temple (0.8.2)
+    temple (0.9.1)
     thor (1.2.1)
     tilt (2.0.11)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    unicode-types (1.7.0)
+    unicode-types (1.8.0)
     unicode_utils (1.4.0)
 
 PLATFORMS
@@ -176,7 +176,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
-  briard (~> 2.0)
+  briard (~> 2.6.6)
 
 BUNDLED WITH
    2.3.16
