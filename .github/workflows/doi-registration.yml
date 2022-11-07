@@ -1,4 +1,4 @@
-name: Webhook
+name: DOI Registration
 on:
   workflow_dispatch:
     inputs:

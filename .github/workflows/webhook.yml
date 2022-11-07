@@ -1,4 +1,4 @@
-name: Webhook
+name: DOI Registration Front Matter
 on:
   workflow_dispatch:
     inputs:
