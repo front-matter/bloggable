@@ -2,10 +2,16 @@ name: DOI Registration
 on:
   workflow_dispatch:
     inputs:
-      slug:
-        description: 'Slug of blog post'     
+      blog:
+        description: 'Name of the blog'
+        type: choice
+        options: 
+        - I.D.E.A.S
+        - Donny Winston
         required: true
-        default: 'implementing-the-fair-principles-through-fair-enabling-artifacts-and-services'
+      slug:
+        description: 'Slug of the blog post'     
+        required: true
 
   # Allows external webhook trigger
   repository_dispatch:
@@ -50,30 +56,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: uploads
-      - name: curl
-        uses: wei/curl@v1
-        id: api
-        with:
-          args: -X POST -F "operation=doMDUpload" -F "login_id=${{ secrets.CROSSREF_USERNAME_WITH_ROLE }}" -F "login_passwd=${{ secrets.CROSSREF_PASSWORD }}" -F "fname=@upload/${{ github.event.inputs.slug }} https://doi.crossref.org/servlet/deposit
-      - name: Extract variables
-        shell: bash
-        run: |
-          echo "::set-output name=BRANCH::$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')"
-          echo "::set-output name=TAG::$(git tag --points-at HEAD)"
-          echo "::set-output name=GIT_SHA::$(git rev-parse HEAD)"
-          echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
-          echo "::set-output name=MESSAGE::$(git log --format=%B -n 1 ${{ github.event.after }})"
-        id: extract_variables
-      - name: Notify Slack
-        uses: edge/simple-slack-notify@master
-        with:
-          channel: '#ops'
-          color: 'good'
-          text: 'A blog post is being updated: https://blog.front-matter.io/posts/${{ github.event.inputs.slug }}.'
-          failure_text: '${env.GITHUB_WORKFLOW} (${env.GITHUB_RUN_NUMBER}) build failed'
-          fields: |
-            [{ "title": "Commit message", "value": "${{ steps.extract_variables.outputs.MESSAGE }}" },
-             { "title": "Committed by", "value": "<https://github.com/${{ github.repository }}/commits?author=${{ github.actor }}|${{ github.actor }}>", "short": true },
-             { "title": "Commit SHA", "value": "<https://github.com/${{ github.repository }}/commit/${{ steps.extract_variables.outputs.GIT_SHA }}|${{ steps.extract_variables.outputs.GIT_SHA_SHORT }}>", "short": true },
-             { "title": "Repository", "value": "<https://github.com/${{ github.repository }}|${{ github.repository }}>", "short": true },
-             { "title": "Branch", "value": "<https://github.com/${{ github.repository }}/tree/${{ steps.extract_variables.outputs.BRANCH }}|${{ steps.extract_variables.outputs.BRANCH }}>", "short": true }]
+      # - name: curl
+      #   uses: wei/curl@v1
+      #   id: api
+      #   with:
+      #     args: -X POST -F "operation=doMDUpload" -F "login_id=${{ secrets.CROSSREF_USERNAME_WITH_ROLE }}" -F "login_passwd=${{ secrets.CROSSREF_PASSWORD }}" -F "fname=@upload/${{ github.event.inputs.slug }} https://doi.crossref.org/servlet/deposit
