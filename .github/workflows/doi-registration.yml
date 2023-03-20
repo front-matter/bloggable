@@ -1,4 +1,4 @@
-name: DOI Registration
+name: DOI Registration Rogue Scholar
 on:
   workflow_dispatch:
     inputs:
