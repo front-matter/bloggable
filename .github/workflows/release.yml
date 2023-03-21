@@ -41,12 +41,12 @@ jobs:
           echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
         id: extract_variables
 
-      - name: Vercel deploy
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.ORG_ID}}
-          vercel-project-id: ${{ secrets.PROJECT_ID}}
-          vercel-args: '--prod'
-          scope: ${{ secrets.TEAM_ID}}
-          vercel-project-name: 'bloggable'
+      # - name: Vercel deploy
+      #   uses: amondnet/vercel-action@v25
+      #   with:
+      #     vercel-token: ${{ secrets.VERCEL_TOKEN }}
+      #     vercel-org-id: ${{ secrets.ORG_ID}}
+      #     vercel-project-id: ${{ secrets.PROJECT_ID}}
+      #     vercel-args: '--prod'
+      #     scope: ${{ secrets.TEAM_ID}}
+      #     vercel-project-name: 'bloggable'

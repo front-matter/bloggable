@@ -41,13 +41,13 @@ jobs:
           echo "::set-output name=GIT_SHA_SHORT::$(git rev-parse --short HEAD)"
         id: extract_variables
 
-      - name: Vercel deploy
-        uses: amondnet/vercel-action@v20.0.0
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.ORG_ID}}
-          vercel-project-id: ${{ secrets.PROJECT_ID}}
-          scope: ${{ secrets.TEAM_ID}}
-          vercel-project-name: 'bloggable'
-          alias-domains: |
-            blog.front-matter.io
+      # - name: Vercel deploy
+      #   uses: amondnet/vercel-action@v20.0.0
+      #   with:
+      #     vercel-token: ${{ secrets.VERCEL_TOKEN }}
+      #     vercel-org-id: ${{ secrets.ORG_ID}}
+      #     vercel-project-id: ${{ secrets.PROJECT_ID}}
+      #     scope: ${{ secrets.TEAM_ID}}
+      #     vercel-project-name: 'bloggable'
+      #     alias-domains: |
+      #       blog.front-matter.io
