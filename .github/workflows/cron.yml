@@ -1,0 +1,13 @@
+name: "Daily - Front Matter Blog"
+on:
+  workflow_dispatch:
+  schedule: 
+    - cron: '0 16 * * 1-5'
+jobs:
+  github_blog_daily_parse:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: chrisreddington/rss-parser-action@main
+        with:
+          feed_url: 'https://blog.front-matter.io/rss/'
+          script_output: 'json'
