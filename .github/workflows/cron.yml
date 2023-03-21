@@ -7,4 +7,4 @@ jobs:
   github_blog_daily_parse:
     runs-on: ubuntu-latest
     steps: 
-      - uses: i-valchev/rss-to-json@latest
+      - uses: i-valchev/rss-to-json
