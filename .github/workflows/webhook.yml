@@ -37,7 +37,7 @@ jobs:
         run: |
           mkdir -p upload
           bundle exec commonmeta encode 10.53731
-          bundle exec commonmeta https://blog.front-matter.io/posts/${{ github.event.inputs.slug }} -t crossref_xml --depositor ${{ secrets.CROSSREF_DEPOSITOR_NAME }} --email ${{ secrets.CROSSREF_DEPOSITOR_EMAIL }} --registrant ${{ secrets.CROSSREF_REGISTRANT }} > upload/${{ github.event.inputs.slug }}
+          bundle exec commonmeta https://blog.front-matter.io/posts/${{ github.event.inputs.slug }} -t crossref_xml --depositor "${{ secrets.CROSSREF_DEPOSITOR_NAME }}" --email "${{ secrets.CROSSREF_DEPOSITOR_EMAIL }}" --registrant "${{ secrets.CROSSREF_REGISTRANT }}" > upload/${{ github.event.inputs.slug }}
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
