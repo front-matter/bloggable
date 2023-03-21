@@ -25,7 +25,6 @@ jobs:
           gem install bundler
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
-            runs-on: ubuntu-latest
       - id: fetch-rss
         uses: FaustVX/GetRSSAction@v3
         with:
