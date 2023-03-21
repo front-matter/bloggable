@@ -7,7 +7,4 @@ jobs:
   github_blog_daily_parse:
     runs-on: ubuntu-latest
     steps: 
-      - uses: chrisreddington/rss-parser-action@main
-        with:
-          feed_url: 'https://blog.front-matter.io/rss/'
-          script_output: 'json'
+      - uses: i-valchev/rss-to-json@v1
