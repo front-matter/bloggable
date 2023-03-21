@@ -11,7 +11,7 @@ jobs:
       uses: FaustVX/GetRSSAction@v3
       with:
         url: "https://blog.front-matter.io/rss/"
-        title-regex: "^Announcing \\w+$"
+        title-regex: "^Dodo \\w+$"
         xpath-out-selector: "link"
     - name: Extract variables
       shell: bash
