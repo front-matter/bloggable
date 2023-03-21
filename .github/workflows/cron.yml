@@ -13,3 +13,7 @@ jobs:
         url: "https://blog.front-matter.io/rss/"
         title-regex: "^Announcing \\w+$"
         xpath-out-selector: "link"
+    - name: Extract variables
+      shell: bash
+      run: |
+        echo ${{ steps.fetch-rss.outputs.selection }}
