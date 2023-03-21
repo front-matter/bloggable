@@ -37,7 +37,7 @@ jobs:
       - name: Generate XML
         run: |
           mkdir -p upload
-          bundle exec commonmeta ${{ steps.fetch-rss.outputs.selection }} -t crossref_xml --depositor "$CROSSREF_DEPOSITOR_NAME" --email "$CROSSREF_DEPOSITOR_EMAIL" --registrant "$CROSSREF_REGISTRANT" > upload/temp
+          bundle exec commonmeta ${{ steps.fetch-rss.outputs.selection }} -t crossref_xml > upload/temp
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
