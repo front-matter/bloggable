@@ -1,8 +1,8 @@
 name: DOI Registration Front Matter
 on:
   workflow_dispatch:
-  schedule: 
-    - cron: '0 16 * * 1-5'
+#   schedule: 
+#     - cron: '0 16 * * 1-5'
 jobs:
   register:
     runs-on: ubuntu-latest
