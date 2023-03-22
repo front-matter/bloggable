@@ -33,7 +33,7 @@ jobs:
         with:
           url: "https://blog.front-matter.io/rss/"
           title-regex: "([^\\s]+)"
-          xpath-out-selector: "guid/@isPermaLink"
+          xpath-out-selector: "link"
       - name: Generate XML
         run: |
           mkdir -p upload
