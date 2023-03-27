@@ -42,7 +42,7 @@ jobs:
       - name: Generate XML
         run: |
           mkdir -p upload
-          bundle exec commonmeta https://www.syldavia-gazette.org/${{ github.event.inputs.slug }} -t crossref_xml > upload/${{ github.event.inputs.slug }}
+          bundle exec commonmeta https://syldavia-gazette.org/${{ github.event.inputs.slug }} -t crossref_xml > upload/${{ github.event.inputs.slug }}
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
